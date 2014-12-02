@@ -1,5 +1,3 @@
-*.pyc
-byobu/.ssh-agent
 /config/*
 !/config/Mousepad
 /config/Mousepad/*
