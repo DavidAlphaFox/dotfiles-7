@@ -1,0 +1,20 @@
+[core]
+    editor = vim
+    filemode = true
+    autocrlf = input
+[push]
+    default = current
+[fetch]
+    prune = true
+[help]
+    autocorrect = 30
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[mergetool]
+    prompt = false
+    keepBackup = false
+[difftool]
+    prompt = false
+[diff]
+    tool = vimdiff

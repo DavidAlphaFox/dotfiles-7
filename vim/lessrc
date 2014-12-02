@@ -1,0 +1,10 @@
+
+source ~/.vimrc
+
+" allow 0 lines above cursor
+set so=0
+
+" some convenient shortcuts
+nnoremap <SPACE> <C-F>
+nnoremap q :qa!<CR>
+

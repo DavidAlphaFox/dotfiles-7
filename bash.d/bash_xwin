@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source ~/.bash.d/ssh-agent
+
+screen -UDRR -t " " 2>/dev/null && exit
+

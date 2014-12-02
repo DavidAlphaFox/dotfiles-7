@@ -1,0 +1,4 @@
+#!/bin/bash
+
+git commit -a -m "fixup! $(git log -1 --format=%s)"
+git rebase -i --autosquash HEAD~2

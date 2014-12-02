@@ -1,0 +1,9 @@
+#!/bin/bash
+
+TITLE=$1
+if [ -z "$1" ]; then
+    TITLE=" "
+fi
+
+echo -ne '\033k'$TITLE'\033\\'
+

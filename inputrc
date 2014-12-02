@@ -1,0 +1,188 @@
+
+# Be 8 bit clean.
+set input-meta on
+set output-meta on
+set convert-meta off
+
+# adds punctuation as word delimiters
+set bind-tty-special-chars off
+# try to enable the application keypad when it is called.  Some systems
+# need this to enable the arrow keys.
+set enable-keypad on
+# do not bell on tab-completion
+set bell-style none
+# expand symlinked directories/
+set mark-symlinked-directories on
+# Show all completions as soon as I press tab, even if there's more than one
+set show-all-if-ambiguous on
+# on menu-complete, first display the common prefix,
+# then cycle through the options when hitting TAB
+set menu-complete-display-prefix on
+# don't ask to display all items
+set completion-query-items -1
+# don't page completion options
+set page-completions off
+# classify like ls -F
+set visible-stats on
+set colored-stats on
+# do not insert characters from completion that match characters that follow the cursor
+set skip-completed-text on
+# show the current mode in prompt
+set show-mode-in-prompt on
+
+# for vi mode
+# see /usr/share/doc/bash/inputrc.arrows for other codes of arrow keys
+set editing-mode vi
+$if mode=vi
+
+    set keymap vi-command
+    # vi command mode
+    "\C-g": abort
+    "\C-j": accept-line
+    "\C-m": accept-line
+    "\C-h": backward-char
+    "\eOD": backward-char
+    "\e[D": backward-char
+    "h": backward-char
+    "\eOH": beginning-of-line
+    "\e[1~": beginning-of-line
+    "\e[H": beginning-of-line
+    "0": beginning-of-line
+    "\C-l": clear-screen
+    "\e[3~": delete-char
+    "\eOF": end-of-line
+    "\e[4~": end-of-line
+    "\e[F": end-of-line
+    "$": end-of-line
+    "\eOC": forward-char
+    "\e[C": forward-char
+    " ": forward-char
+    "l": forward-char
+    "\C-s": forward-search-history
+    "\e[A": history-search-backward
+    "\e[B": history-search-forward
+    "#": insert-comment
+    "\C-k": kill-line
+    "\C-n": next-history
+    "\eOB": next-history
+    "+": next-history
+    "j": next-history
+    "\C-p": previous-history
+    "\eOA": previous-history
+    "-": previous-history
+    "k": previous-history
+    "\C-q": quoted-insert
+    "\C-v": quoted-insert
+    "\C-r": reverse-search-history
+    "U": revert-line
+    "\C-t": transpose-chars
+    "\C-u": unix-line-discard
+    "\C-w": unix-word-rubout
+    "A": vi-append-eol
+    "a": vi-append-mode
+    "1": vi-arg-digit
+    "2": vi-arg-digit
+    "3": vi-arg-digit
+    "4": vi-arg-digit
+    "5": vi-arg-digit
+    "6": vi-arg-digit
+    "7": vi-arg-digit
+    "8": vi-arg-digit
+    "9": vi-arg-digit
+    "~": vi-change-case
+    "r": vi-change-char
+    "C": vi-change-to
+    "c": vi-change-to
+    ",": vi-char-search
+    ";": vi-char-search
+    "F": vi-char-search
+    "T": vi-char-search
+    "f": vi-char-search
+    "t": vi-char-search
+    "|": vi-column
+    "x": vi-delete
+    "D": vi-delete-to
+    "d": vi-delete-to
+    "E": vi-end-word
+    "e": vi-end-word
+    "\C-d": vi-eof-maybe
+    "G": vi-fetch-history
+    "^": vi-first-print
+    "`": vi-goto-mark
+    "I": vi-insert-beg
+    "%": vi-match
+    "W": vi-next-word
+    "w": vi-next-word
+    "B": vi-prev-word
+    "b": vi-prev-word
+    "P": vi-put
+    "p": vi-put
+    ".": vi-redo
+    "R": vi-replace
+    "X": vi-rubout
+    "/": vi-search
+    "?": vi-search
+    "N": vi-search-again
+    "n": vi-search-again
+    "m": vi-set-mark
+    "S": vi-subst
+    "s": vi-subst
+    "&": vi-tilde-expand
+    "_": vi-yank-arg
+    "Y": vi-yank-to
+    "y": vi-yank-to
+    "\C-y": yank
+    "q": start-kbd-macro
+    "Q": end-kbd-macro
+    "@": call-last-kbd-macro
+    ";r": print-last-kbd-macro
+    "!": "\eOA^isudo \e"
+    ";ve": "ivim ~/.inputrc\r"
+    ";e": "$ivim "
+    ";vs": re-read-init-file
+    ";gs": "igit status\r"
+    ";gd": "igit diff\r"
+    ";gl": "igit log\r"
+    ";gp": "igit push "
+    ";gc": "igit commit "
+    ";gr": "igit checkout -- "
+
+    set keymap vi-insert
+    # vi insert mode
+    "\C-j": accept-line
+    "\C-m": accept-line
+    "\eOAD": backward-char
+    "\e[D": backward-char
+    "\C-h": backward-delete-char
+    "\C-?": backward-delete-char
+    "\eOH": beginning-of-line
+    "\e[1~": beginning-of-line
+    "\e[H": beginning-of-line
+    "\C-l": clear-screen
+    "\e[3~": delete-char
+    "\eOF": end-of-line
+    "\e[4~": end-of-line
+    "\e[F": end-of-line
+    "\eOC": forward-char
+    "\e[C": forward-char
+    "\C-s": forward-search-history
+    "\e[A": history-search-backward
+    "\e[B": history-search-forward
+    "\C-i": menu-complete
+    "\C-n": menu-complete
+    "\C-p": menu-complete-backward
+    "\e[Z": menu-complete-backward
+    "\eOB": next-history
+    "\eOA": previous-history
+    "\C-v": quoted-insert
+    "\C-r": reverse-search-history
+    "\C-t": transpose-chars
+    "\C-u": unix-line-discard
+    "\C-w": unix-word-rubout
+    "\C-d": vi-eof-maybe
+    "\e": vi-movement-mode
+    "\C-y": yank
+
+$endif
+
+

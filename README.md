@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-dotfiles for bash, vim, git, screen (and more)
+dotfiles for bash, vim, git, screen, xfce4 (and more)
