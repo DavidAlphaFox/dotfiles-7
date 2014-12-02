@@ -1,0 +1,17 @@
+*.pyc
+byobu/.ssh-agent
+/config/*
+!/config/Mousepad
+/config/Mousepad/*
+!/config/Mousepad/mousepadrc
+!/config/xfce4
+/config/xfce4/*
+!/config/xfce4/terminal
+!/config/xfce4/xfconf
+/config/xfce4/xfconf/*
+!/config/xfce4/xfconf/xfce-perchannel-xml
+/config/xfce4/xfconf/xfce-perchannel-xml/*
+!/config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+!/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+!/config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+!/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
