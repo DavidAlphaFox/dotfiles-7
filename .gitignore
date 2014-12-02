@@ -1,7 +1,4 @@
 /config/*
-!/config/Mousepad
-/config/Mousepad/*
-!/config/Mousepad/mousepadrc
 !/config/xfce4
 /config/xfce4/*
 !/config/xfce4/terminal
