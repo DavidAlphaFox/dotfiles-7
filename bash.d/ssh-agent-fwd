@@ -6,5 +6,5 @@ for x in ${SSHV} ; do
     (eval echo $x=\$$x) | sed  's/=/="/
                                 s/$/"/
                                 s/^/export /'
-done 1>$HOME/.ssh-agent.fwd.`hostname`
+done 1>$HOME/.ssh-agent-fwd.`hostname`
 

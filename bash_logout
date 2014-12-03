@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SSH_ENV="$HOME/.ssh-agent.`hostname`"
-SSH_FIX_ENV="$HOME/.ssh-agent.fwd.`hostname`"
+SSH_FIX_ENV="$HOME/.ssh-agent-fwd.`hostname`"
 
 if [ -n "$SSH_AGENT_PID" ]; then
     # remove cached ssh keys
