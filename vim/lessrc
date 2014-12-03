@@ -6,5 +6,5 @@ set so=0
 
 " some convenient shortcuts
 nnoremap <SPACE> <C-F>
-nnoremap q :qa!<CR>
+nnoremap q :q!<CR>
 

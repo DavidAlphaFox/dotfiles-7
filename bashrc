@@ -71,16 +71,18 @@ if [ -f ~/.bash_localrc ]; then
     . ~/.bash_localrc
 fi
 
+T_COLOR="\[\e[m\]"
+F_COLOR="\[\e[33m\]"
 if [ "`id -u`" -eq 0 ]; then
-    W_COLOR="31m"
+    T_COLOR="\[\e[31m\]"
+    F_COLOR="\[\e[35m\]"
 else
     if [ -n "$VIM" ]; then
-        W_COLOR="33m"
-    else
-        W_COLOR="34m"
+        T_COLOR="\[\e[32m\]"
+        F_COLOR="\[\e[33m\]"
     fi
 fi
 
 # prompt settings
-export PS2=" \`if [ \$? = 0 ]; then echo '\[\e[m\]'; else echo '\[\e[31m\]'; fi\`. \[\e[m\]"
-PROMPT_COMMAND='. $HOME/.bash.d/bash_cmd; __git_ps1 " \[\e[$W_COLOR\]\w\[\e[m\] " "\`if [ \$? = 0 ]; then echo \"\[\e[m\]@\"; else echo \"\[\e[31m\]@\"; fi\`\[\e[m\] "'
+export PS2=" \`if [ \$? = 0 ]; then echo $T_COLOR; else echo $F_COLOR; fi\`. \[\e[m\]"
+PROMPT_COMMAND='. $HOME/.bash.d/bash_cmd; __git_ps1 " \[\e[34m\]\w\[\e[m\] " "\`if [ \$? = 0 ]; then echo \"$T_COLOR@\"; else echo \"$F_COLOR@\"; fi\`\[\e[m\] "'
