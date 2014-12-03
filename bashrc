@@ -73,7 +73,7 @@ fi
 
 T_COLOR="\[\e[m\]"
 F_COLOR="\[\e[33m\]"
-W_COLOR="\[\e[34m\]"
+W_COLOR="\[\e[36m\]"
 if [ "`id -u`" -eq 0 ]; then
     T_COLOR="\[\e[31m\]"
     F_COLOR="\[\e[35m\]"
