@@ -14,7 +14,7 @@ alias p='pl c'
 alias bs="source ~/.bashrc"
 alias git-include="git config --file ~/.gitinclude"
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-alias free="free -m"
+alias free="free -mt"
 alias less=$PAGER
 alias zless=$PAGER
 alias st="screen-title"
