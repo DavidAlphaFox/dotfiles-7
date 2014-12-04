@@ -1,4 +1,5 @@
-### starlight/dotfiles
+## starlight/dotfiles
+
 These are my dotfiles, for bash, vim, xfce4, screen, ssh-agent and more.
 
     cd ~
