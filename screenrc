@@ -6,6 +6,7 @@ msgminwait 0
 defutf8 on
 deflogin on
 nethack on
+autodetach on
 
 hardstatus alwayslastline
 
