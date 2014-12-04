@@ -8,7 +8,7 @@ mkdir -p ~/$olddir
 # change to the dotfiles directory
 cd ~
 
-for file in `ls ~/$dir`; do
+for file in `ls ~/$dir | grep -v 'README.md'`; do
     echo ~/$file
     cp -rL ~/.$file ~/$olddir/
     rm -r ~/.$file
