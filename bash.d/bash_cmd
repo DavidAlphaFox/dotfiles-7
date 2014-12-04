@@ -8,3 +8,25 @@ if ! [ -a "${SSH_AUTH_SOCK}" ]; then
     fi
 fi
 
+# prompt colors
+T_COLOR="\[\e[m\]"
+F_COLOR="\[\e[33m\]"
+W_COLOR="\[\e[32m\]"
+if [ "`id -u`" -eq 0 ]; then
+    T_COLOR="\[\e[31m\]"
+    F_COLOR="\[\e[35m\]"
+else
+    if [ -n "$VIM" ]; then
+        T_COLOR="\[\e[32m\]"
+        F_COLOR="\[\e[33m\]"
+    fi
+fi
+
+if [ -O "${PWD}" ]; then
+    W_COLOR="\[\e[34m\]"
+else
+    if ! [ -w "${PWD}" ]; then
+        W_COLOR="\[\e[31m\]"
+    fi
+fi
+
