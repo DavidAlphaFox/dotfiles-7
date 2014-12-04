@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! [ -a "${SSH_AUTH_SOCK}" ]; then
+if ! [ -S "${SSH_AUTH_SOCK}" ]; then
     SSH_FIX_ENV="$HOME/.ssh-agent-fwd.`hostname`"
 
     if [ -f "${SSH_FIX_ENV}" ]; then
