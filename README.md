@@ -1,4 +1,4 @@
-## starlight/dotfiles
+## [starlight](http://starlight.github.io/)/dotfiles
 
 These are my dotfiles, for bash, vim, xfce4, screen, ssh-agent and more.
 
