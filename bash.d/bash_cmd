@@ -17,7 +17,7 @@ if [ "`id -u`" -eq 0 ]; then
     F_COLOR="\[\e[35m\]"
 else
     if [ -n "$VIM" ]; then
-        T_COLOR="\[\e[32m\]"
+        T_COLOR="\[\e[1;35m\]"
         F_COLOR="\[\e[33m\]"
     fi
 fi
