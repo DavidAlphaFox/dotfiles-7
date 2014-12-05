@@ -12,5 +12,7 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
-screen -UDRR -t " " 2>/dev/null && exit
+if [ $(tty) != /dev/tty1 ]; then
+    screen -UDRR -t " " 2>/dev/null && exit
+fi
 
