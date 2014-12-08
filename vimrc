@@ -291,7 +291,7 @@ let g:airline_left_sep='►'
 let g:airline_right_sep='◄'
 let g:airline#extensions#tabline#show_close_button=0
 let g:airline#extensions#tabline#show_tab_nr=0
-let g:airline_section_b='%<%f%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
-let g:airline_section_c='%{getcwd()}'
+let g:airline_section_c='%<%f%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
+let g:airline_section_b='%{getcwd()}'
 let g:airline_section_y='%{airline#util#wrap(airline#extensions#hunks#get_hunks(),0)}%{airline#util#wrap(airline#extensions#branch#get_head(),0)}'
 
