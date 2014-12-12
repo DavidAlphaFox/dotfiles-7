@@ -30,3 +30,7 @@ else
     fi
 fi
 
+# set the terminal window title
+TERM_TITLE="${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}"
+echo -ne "\033]0;${TERM_TITLE}\007"
+
