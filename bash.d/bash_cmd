@@ -31,6 +31,6 @@ else
 fi
 
 # set the terminal window title
-TERM_TITLE="${USER}@${HOSTNAME%%.*}"
+TERM_TITLE="${USER}@${HOSTNAME%%.*} ${WINDOW}"
 echo -ne "\033]0;${TERM_TITLE}\007"
 
