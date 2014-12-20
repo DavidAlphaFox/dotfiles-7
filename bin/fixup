@@ -1,4 +1,5 @@
 #!/bin/bash
 
-git commit -a -m "fixup! $(git log -1 --format=%s)"
-git rebase -i --autosquash HEAD~2
+# creates a commit and squashes it with previous commits, rebase to $1
+git commit -m "fixup! $(git log -1 --format=%s)"
+git rebase -i --autosquash $1
