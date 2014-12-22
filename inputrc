@@ -137,7 +137,7 @@ $if mode=vi
     "@": call-last-kbd-macro
     ":@": print-last-kbd-macro
     "!": "\eOA^isudo "
-    ":vs": re-read-init-file
+    ":so": re-read-init-file
 
     set keymap vi-insert
     # vi insert mode
