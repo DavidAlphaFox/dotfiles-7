@@ -135,17 +135,9 @@ $if mode=vi
     "q": start-kbd-macro
     "Q": end-kbd-macro
     "@": call-last-kbd-macro
-    ";r": print-last-kbd-macro
-    "!": "\eOA^isudo \e"
-    ";ve": "ivim ~/.inputrc\r"
-    ";e": "$ivim "
-    ";vs": re-read-init-file
-    ";gs": "igit status\r"
-    ";gd": "igit diff\r"
-    ";gl": "igit log\r"
-    ";gp": "igit push "
-    ";gc": "igit commit "
-    ";gr": "igit checkout -- "
+    ":@": print-last-kbd-macro
+    "!": "\eOA^isudo "
+    ":vs": re-read-init-file
 
     set keymap vi-insert
     # vi insert mode

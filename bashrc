@@ -73,4 +73,4 @@ fi
 
 # prompt settings
 export PS2=" \`if [ \$? = 0 ]; then echo $T_COLOR; else echo $F_COLOR; fi\`. \[\e[m\]"
-PROMPT_COMMAND='. $HOME/.bash.d/bash_cmd; __git_ps1 " $W_COLOR\w\[\e[m\] " "\`if [ \$? = 0 ]; then echo \"$T_COLOR@\"; else echo \"$F_COLOR@\"; fi\`\[\e[m\] "'
+PROMPT_COMMAND='. $HOME/.bash.d/bash_cmd; __git_ps1 " $W_COLOR\w\[\e[m\] " "\`if [ \$? = 0 ]; then echo \"$T_COLOR\"; else echo \"$F_COLOR\"; fi\`@\[\e[m\] "'
