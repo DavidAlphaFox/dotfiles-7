@@ -20,6 +20,10 @@
 
 scriptencoding utf-8
 
+if !executable('ctags')
+    finish
+endif
+
 if &cp || exists('g:loaded_tagbar')
     finish
 endif
