@@ -8,5 +8,6 @@ These are my dotfiles, for bash, vim, xfce4, screen, ssh-agent and more.
 
 pre-existing dotfiles will be saved to ~/.old_dotfiles
 
-# depends on screen, ssh, ctags and w3m
-# optional: pylint, pyflakes, jshint, xfce4, xfce4-terminal
+# depends on screen, ssh
+# optional: pylint, pyflakes, jshint, xfce4, xfce4-terminal, ctags and w3m
+
