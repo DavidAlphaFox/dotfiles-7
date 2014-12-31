@@ -47,7 +47,6 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
-#!/bin/sh
 if [ "$TERM" = "linux" ]; then
   /bin/echo -e "
   \e]P0000000
