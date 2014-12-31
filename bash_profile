@@ -1,7 +1,6 @@
 #!/bin/bash
 
 export PATH=~/.bin:$PATH
-export TERM=xterm
 
 source ~/.bashrc
 [[ -n $DISPLAY ]] && source ~/.bash.d/bash_xwin
