@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export TERM=xterm
+
 if [ -n "${SSH_AUTH_SOCK}" ]; then
 
     SSH_ENV="$HOME/.bash.d/ssh-agent-fwd"
