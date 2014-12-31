@@ -42,13 +42,18 @@ shopt -s globstar
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
+
 if [ "$TERM" = "linux" ]; then
   /bin/echo -e "
   \e]P0000000
   \e]P1a54242
   \e]P262944e
   \e]P3b3a54c
-  \e]P45f819d
+  \e]P443679e
   \e]P59e729d
   \e]P6689c9c
   \e]P7707880
@@ -63,11 +68,6 @@ if [ "$TERM" = "linux" ]; then
   "
   # get rid of artifacts
   clear
-fi
-
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
 # keep bash aliases in a separate file
