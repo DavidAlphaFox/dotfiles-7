@@ -55,16 +55,16 @@ if [ "$TERM" = "linux" ]; then
   \e]P262944e
   \e]P3b3a54c
   \e]P443679e
-  \e]P59e729d
-  \e]P6439e9d
-  \e]P7707880
+  \e]P59e4d9e
+  \e]P6459e9e
+  \e]P74d4d4d
   \e]P8232323
   \e]P9b87c4a
-  \e]PA525952
-  \e]PB616158
-  \e]PC6a7c8a
-  \e]PD6c71c4
-  \e]PE799292
+  \e]PA4a594a
+  \e]PB616153
+  \e]PC6b6b8a
+  \e]PD7b4ac4
+  \e]PE709292
   \e]PFa3a3a3
   "
   # get rid of artifacts
