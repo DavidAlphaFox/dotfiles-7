@@ -1,8 +1,8 @@
 [Configuration]
-ColorCursor=#8f8f8f8fa4a4
-ColorForeground=#8f8f8f8fa4a4
+ColorCursor=#777777778e8e
+ColorForeground=#b0b0b0b0b0b0
 ColorBackground=#000000000000
-ColorPalette=#000000000000;#a5a557575757;#606094944b4b;#b3b3a7a75b5b;#4f4f6e6e9e9e;#9e9e55559e9e;#51519e9e9e9e;#4d4d4d4d4d4d;#232323232323;#b8b87c7c4a4a;#515159595151;#616161615858;#717171718a8a;#8a8a6262c4c4;#8b8b98989898;#a3a3a3a3a3a3
+ColorPalette=#000000000000;#f2f277777a7a;#9999cccc9999;#eb84bc6a5e35;#66669999cccc;#cccc9999ffff;#6666cccccccc;#a0a0a0a0a0a0;#202020202020;#cccc96826f5f;#3f3f4b4b3f3f;#6161616151cc;#77bf77bf8e8e;#99997333bfff;#87c5a1a1a1a1;#e0e0e0e0e0e0
 Term=xterm-color
 FontName=White Rabbit 14
 MiscAlwaysShowTabs=FALSE
