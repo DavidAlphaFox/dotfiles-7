@@ -59,11 +59,11 @@ if [ "$TERM" = "linux" ]; then
   \e]P7a0a0a0
   \e]P8202020
   \e]P9cc966f
-  \e]PA3f4b3f
-  \e]PB616151
-  \e]PC77778e
+  \e]PA3b4a3b
+  \e]PB61614e
+  \e]PC72728f
   \e]PD9973bf
-  \e]PE87a1a1
+  \e]PE81a1a1
   \e]PFe0e0e0
   "
   # get rid of artifacts
