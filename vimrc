@@ -78,7 +78,7 @@ set shortmess+=I
 " Folding
 set foldmethod=indent
 
-" Add a bit extra margin to the left
+" left margin
 set foldcolumn=0
 
 " don't fold in w3m
@@ -155,6 +155,7 @@ let g:lasttab=1
 nmap <leader>tl :exe "tabn ".g:lasttab<CR>
 autocmd TabLeave * let g:lasttab=tabpagenr()
 
+" Buffer operations
 source ~/.vim/BufOnly.vim
 map <silent> <leader>bo :BufOnly<CR>
 map <leader>bn :bn<CR>
