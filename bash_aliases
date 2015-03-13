@@ -9,8 +9,8 @@ alias la='ls -AF'
 alias l='ls -F'
 alias lt='tree -aFL 1'
 alias df='df -h'
-alias pl='ps -eHo pid,tty,user,args'
-alias p='pl c'
+alias pa='ps -a'
+alias pt="pstree"
 alias bs="source ~/.bashrc"
 alias git-include="git config --file ~/.gitinclude"
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'

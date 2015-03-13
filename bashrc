@@ -29,7 +29,7 @@ HISTFILESIZE=2048
 PROMPT_DIRTRIM=3
 
 # turn off flow-control
-stty -ixon
+#[[ $- == *i* ]] && stty -ixon
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.

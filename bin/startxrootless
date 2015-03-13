@@ -1,0 +1,2 @@
+dbus-run-session -- xinit -- /usr/bin/XWin :0 -rootless -multimonitors
+
