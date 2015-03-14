@@ -71,7 +71,7 @@ fi
 # but only if we recognise the shell
 case $1 in 
  /bin/sh* | /bin/bash* | /bin/pdksh* | /bin/posh* | /bin/tcsh* | /bin/zsh*  | /bin/dash* | /bin/mksh* | /bin/fish* )
-    exec $1;;
+    exec -i $1;;
  * )
     echo Do not recognise $1;;
 esac
