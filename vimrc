@@ -8,8 +8,8 @@ let mapleader=';'
 nmap <silent> <leader>ve :e $MYVIMRC<CR>
 nmap <silent> <leader>vs :so $MYVIMRC<CR>
 
-" :W sudo saves the file
-command! W w !sudo tee % > /dev/null
+" :W sudo saves the file (doesn't work on cygwin)
+" command! W w !sudo tee % > /dev/null
 
 " Set lines to the cursor - when moving vertically using j/k
 set so=6
