@@ -11,9 +11,7 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
-if [ ! -z "${CHERE}" ]; then
-      unset CHERE
-else
+if [ "$PWD" = "$HOME" ]; then
     if [[ $(tty) != /dev/tty* ]]; then
         screen -UDRR -t " " 2>/dev/null && exit
     fi
