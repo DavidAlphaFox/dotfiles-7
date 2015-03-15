@@ -21,5 +21,5 @@ if [ -f "${SSH_FIX_ENV}" ]; then
 fi
 
 # remove cached sudo credentials
-sudo -K
+#sudo -K
 
