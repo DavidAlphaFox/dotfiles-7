@@ -11,7 +11,10 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
-if [[ $(tty) != /dev/tty* ]]; then
-    screen -UDRR -t " " 2>/dev/null && exit
+if [ ! -z "${CHERE}" ]; then
+      unset CHERE
+else
+    if [[ $(tty) != /dev/tty* ]]; then
+        screen -UDRR -t " " 2>/dev/null && exit
+    fi
 fi
-

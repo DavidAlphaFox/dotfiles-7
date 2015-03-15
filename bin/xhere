@@ -45,7 +45,7 @@ fi
 
 # Instead, just set a variable indicating to the login shells not to cd $HOME
 export CHERE_INVOKING=true
-
+export CHERE=true
 # Goto the desired directory.
 # This is necessary when the context menu is opened in the RH pane
 if [ ! -z "$2" ]; then
@@ -71,7 +71,7 @@ fi
 # but only if we recognise the shell
 case $1 in 
  /bin/sh* | /bin/bash* | /bin/pdksh* | /bin/posh* | /bin/tcsh* | /bin/zsh*  | /bin/dash* | /bin/mksh* | /bin/fish* )
-    $1 -i;;
+    exec -l $1;;
  * )
     echo Do not recognise $1;;
 esac
