@@ -1,2 +1,2 @@
-cygstart -- ~/Downloads/setup-x86_64.exe -K http://cygwinports.org/ports.gpg
+cygstart -- ~/Downloads/setup-x86_64.exe -M -K http://cygwinports.org/ports.gpg
 
