@@ -52,13 +52,13 @@ if [ "$TERM" = "linux" ]; then
   \e]P0000000
   \e]P1f2777a
   \e]P299cc99
-  \e]P3ebbc5e
+  \e]P3ffec85
   \e]P46699cc
   \e]P5cc99ff
   \e]P666cccc
   \e]P7a0a0a0
   \e]P8202020
-  \e]P9cc966f
+  \e]P9f1a260
   \e]PA3b4a3b
   \e]PB61614e
   \e]PC72728f
