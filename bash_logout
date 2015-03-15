@@ -12,12 +12,12 @@ fi
 
 if [ -f "${SSH_ENV}" ]; then
     # remove ssh-agent info
-    rm "${SSH_ENV}"
+    rm -v "${SSH_ENV}"
 fi
 
 if [ -f "${SSH_FIX_ENV}" ]; then
     #remove ssh-agent fix info
-    rm "${SSH_FIX_ENV}"
+    rm -v "${SSH_FIX_ENV}"
 fi
 
 # remove cached sudo credentials
