@@ -1,3 +1,2 @@
-xfsettingsd --sync
-xfce4-session
-
+#xfce4-session
+startxfce4
