@@ -1,5 +1,6 @@
 #!/bin/bash
 
 cp ~/.dotfiles/extra/XWin\ Server.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
-ln -s ~/.dotfiles/bin/startxrootless /bin/startxrootless
+
+echo 'dbus-run-session -- xinit -- /usr/bin/XWin :0 -rootless -multimonitors' > /bin/startxrootless
 
