@@ -24,12 +24,13 @@ MiscHighlightUrls=TRUE
 MiscScrollAlternateScreen=TRUE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 TitleMode=TERMINAL_TITLE_REPLACE
-BackgroundDarkness=0.800000
 TitleInitial=terminal
 Encoding=UTF-8
 ColorBold=#93a1a1
 TabActivityColor=#dc322f
-BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
+BackgroundMode=TERMINAL_BACKGROUND_IMAGE
 CommandLoginShell=TRUE
 FontAllowBold=FALSE
+BackgroundImageFile=/home/ihanson/.extra/gallifreyan.png
+BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_CENTERED
 
