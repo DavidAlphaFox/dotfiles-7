@@ -20,6 +20,7 @@ alias free="free -mt"
 alias less=$PAGER
 alias zless=$PAGER
 alias st="screen-title"
+alias say="notify-send -i 'anki'"
 vim_w3m() {
     vim -c ":W3m $@" 
 }
