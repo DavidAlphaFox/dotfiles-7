@@ -15,3 +15,9 @@ for file in `ls ~/$dir | grep -v 'README.md'`; do
     ln -s $dir/$file .$file
 done
 
+cygstart -- ~/Downloads/setup-x86_64.exe -s http://mirrors.kernel.org/sources.redhat.com/cygwinports/ -P "git chere vim ctags screen tree psmisc xfce4-session xfce4-notifyd gtk2.0-engines-murrine libnotify alacarte w3m gcc-g++ make" -d -M -K http://cygwinports.org/ports.gpg
+
+chere-install
+xwin-install
+
+
