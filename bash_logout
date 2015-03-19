@@ -7,7 +7,7 @@ if [ -n "$SSH_AGENT_PID" ]; then
     # remove cached ssh keys
     note ssh-add -D
     # shutdown ssh-agent
-    eval `note ssh-agent -k`
+    eval `ssh-agent -k`
 fi
 
 if [ -f "${SSH_ENV}" ]; then
@@ -21,5 +21,5 @@ if [ -f "${SSH_FIX_ENV}" ]; then
 fi
 
 # remove cached sudo credentials
-note sudo -K
+sudo -K
 
