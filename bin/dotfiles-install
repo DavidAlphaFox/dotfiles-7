@@ -17,7 +17,7 @@ done
 
 ln -s /cygdrive/c/Users/$USER .user
 
-for i in Documents Downloads Pictures Music Videos Diagrams Templates; do ln -s .user/$i $i; done
+for i in Desktop Public Documents Downloads Pictures Music Videos Diagrams Templates; do ln -s .user/$i $i; done
 
 source ~/.bashrc
 ~/.bin/chere-install
