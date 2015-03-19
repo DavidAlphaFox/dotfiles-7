@@ -18,6 +18,13 @@ alacarte
 w3m
 gcc-g++
 make
+wget
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-vcs-plugin
+tumbler
+xarchiver
+xfce4-taskmanager
 --
 .ssh/.gitconfig
 --
