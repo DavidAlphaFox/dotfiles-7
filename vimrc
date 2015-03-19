@@ -11,6 +11,13 @@ nmap <silent> <leader>vs :so $MYVIMRC<CR>
 " :W sudo saves the file (doesn't work on cygwin)
 " command! W w !sudo tee % > /dev/null
 
+" hide gvim toolbar, menubar, scrollbar
+set go-=T
+set go-=r
+
+" gvim font
+set guifont=White\ Rabbit\ 14
+
 " Set lines to the cursor - when moving vertically using j/k
 set so=6
 
