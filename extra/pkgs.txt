@@ -1,0 +1,25 @@
+cygstart -- ./setup-x86_64.exe -K http://cygwinports.org/ports.gpg
+http://mirrors.kernel.org/sources.redhat.com/cygwinports
+--
+git
+git-completion
+chere
+vim
+vim-common
+ctags
+screen
+tree
+psmisc
+xfce4-session
+xfce4-notifyd
+gtk2.0-engines-murrine
+libnotify
+alacarte
+w3m
+gcc-g++
+make
+--
+.ssh/.gitconfig
+--
+git clone -b cygwin git@github.com:starlight/dotfiles .dotfiles
+.dotfiles/bin/dotfiles-install

@@ -1,2 +1,2 @@
-cygstart -- ~/Downloads/setup-x86_64.exe -s http://mirrors.kernel.org/sources.redhat.com/cygwinports/ -o -n -M -K http://cygwinports.org/ports.gpg
+cygstart -- ~/Downloads/setup-x86_64.exe -o -n -M -K http://cygwinports.org/ports.gpg
 
