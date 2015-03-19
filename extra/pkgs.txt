@@ -16,9 +16,6 @@ xfce4-notifyd
 gtk2.0-engines-murrine
 libnotify
 alacarte
-w3m
-gcc-g++
-make
 wget
 thunar-archive-plugin
 tumbler
