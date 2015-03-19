@@ -16,6 +16,7 @@ for file in `ls ~/$dir | grep -v 'README.md'`; do
 done
 
 ln -s /cygdrive/c/Users/$USER .user
+ln -s $HOME /home/.admin
 
 for i in Desktop Public Documents Downloads Pictures Music Videos Diagrams Templates; do ln -s .user/$i $i; done
 
