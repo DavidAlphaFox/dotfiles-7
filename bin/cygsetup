@@ -1,5 +1,7 @@
 
-cd /tmp
+CACHE=/var/cache/cygsetup
+mkdir -p $CACHE
+cd $CACHE
 wget -N http://cygwin.com/setup-x86_64.exe
 chmod +x ./setup-x86_64.exe
-cygstart -- ./setup-x86_64.exe -o -g -n -M -K http://cygwinports.org/ports.gpg 
+cygstart -- ./setup-x86_64.exe -o -g -n -K http://cygwinports.org/ports.gpg $@

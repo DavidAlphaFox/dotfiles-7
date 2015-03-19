@@ -21,6 +21,9 @@ alias less=$PAGER
 alias zless=$PAGER
 alias st="screen-title"
 alias say="notify-send -i 'anki'"
+alias cygupdate="cygsetup -q"
+alias cyginstall="cygsetup -M"
+
 vim_w3m() {
     vim -c ":W3m $@" 
 }

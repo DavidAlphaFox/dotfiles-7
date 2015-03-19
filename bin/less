@@ -289,6 +289,7 @@ less_vim() {
 				-u "${vimrc}" \
 				--cmd 'let vimpager=1 | source ~/.vim/less.vim | set nocp' \
 				-c "set foldlevel=999 | set nonu | silent! set nornu" \
+				-i NONE \
 				"${@:--}"
 			;;
 		*) # gvim or mvim GUI
@@ -309,6 +310,7 @@ less_vim() {
 				--cmd 'let vimpager=1 | source ~/.vim/less.vim | set nocp' \
 				-c "set foldlevel=999 | set nonu | silent! set nornu |
 				    ${colors:-echo} | ${restore:-echo} | set lines=${lines} | set columns=${cols}" \
+				-i NONE \
 				"${@:--}" &
 			;;
 	esac

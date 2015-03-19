@@ -8,6 +8,7 @@ mkdir -p ~/$olddir
 # change to the dotfiles directory
 cd ~
 
+# symlink dotfiles, making backup of existing
 for file in `ls ~/$dir | grep -v 'README.md'`; do
     echo ~/$file
     cp -rL ~/.$file ~/$olddir/
@@ -15,13 +16,21 @@ for file in `ls ~/$dir | grep -v 'README.md'`; do
     ln -s $dir/$file .$file
 done
 
+# home directory symlinks
 ln -s /cygdrive/c/Users/$USER .user
 ln -s $HOME /home/.admin
 
+# symlinks into windows User directory
 for i in Desktop Public Documents Downloads Pictures Music Videos Diagrams Templates; do ln -s .user/$i $i; done
 
 source ~/.bashrc
-~/.bin/chere-install
-~/.bin/xwin-install
 
+# install shell context-menu
+chere -u
+chere -icm -t mintty -s bash -e 'Shell...'
+
+# install XWin to Windows Startup
+cp ~/$dir/extra/XWin\ Server.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
+
+echo 'dbus-run-session -- xinit -- /usr/bin/XWin :0 -rootless -multimonitors' > /bin/startxrootless
 

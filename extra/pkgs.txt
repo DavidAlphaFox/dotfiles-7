@@ -4,6 +4,7 @@ http://mirrors.kernel.org/sources.redhat.com/cygwinports
 git
 git-completion
 chere
+gvim
 vim
 vim-common
 ctags
@@ -23,6 +24,7 @@ thunar-archive-plugin
 tumbler
 xarchiver
 xfce4-taskmanager
+dos2unix
 --
 .ssh/.gitconfig
 --
