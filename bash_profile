@@ -11,6 +11,7 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
+[[ -n "$DISPLAY" ]] && note ssh-add -l
 if [[ $(tty) != /dev/tty* ]]; then
     screen -UDRR -t " " 2>/dev/null && exit
 fi
