@@ -1,3 +1,5 @@
 
-wget -O /tmp/setup-x86_64.exe -N http://cygwin.com/setup-x86_64.exe
-cygstart -- /tmp/setup-x86_64.exe -o -g -n -M -K http://cygwinports.org/ports.gpg 
+cd /tmp
+wget -N http://cygwin.com/setup-x86_64.exe
+chmod +x ./setup-x86_64.exe
+cygstart -- ./setup-x86_64.exe -o -g -n -M -K http://cygwinports.org/ports.gpg 
