@@ -8,6 +8,7 @@ mkdir -p ~/$olddir
 # change to the dotfiles directory
 cd ~
 
+# symlink dotfiles, making backup of existing
 for file in `ls ~/$dir | grep -v 'README.md'`; do
     echo ~/$file
     cp -rL ~/.$file ~/$olddir/
