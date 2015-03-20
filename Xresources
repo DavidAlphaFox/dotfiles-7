@@ -9,14 +9,14 @@
 
 ! red
 *.color1:       #f2777a
-*.color9:       #cc966f
+*.color9:       #f1a260
 
 ! green
 *.color2:       #99cc99
 *.color10:      #3b4a3b
 
 ! yellow
-*.color3:       #ebbc5e
+*.color3:       #ffec85
 *.color11:      #61614e
 
 ! blue
@@ -34,3 +34,4 @@
 ! white
 *.color7:       #a0a0a0
 *.color15:      #e0e0e0
+
