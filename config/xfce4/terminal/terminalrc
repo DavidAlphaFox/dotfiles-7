@@ -31,6 +31,7 @@ TabActivityColor=#dc322f
 BackgroundMode=TERMINAL_BACKGROUND_IMAGE
 CommandLoginShell=TRUE
 FontAllowBold=FALSE
-BackgroundImageFile=/home/.admin/.extra/gallifreyan.png
+BackgroundImageFile=/home/.admin/.extra/doctors_name.png
 BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_CENTERED
+BackgroundDarkness=1.000000
 
