@@ -17,11 +17,13 @@ for file in `ls ~/$dir | grep -v 'README.md'`; do
 done
 
 # home directory symlinks
-ln -s /cygdrive/c/Users/$USER .user
+ln -s `cygpath $USERPROFILE` .user
 ln -s $HOME /home/.admin
 
 # symlinks into windows User directory
-for i in Desktop Public Documents Downloads Pictures Music Videos Diagrams Templates; do ln -s .user/$i $i; done
+for i in Desktop Public Documents Downloads Pictures Music Videos Diagrams Templates; do 
+    ln -s .user/$i $i
+done
 
 source ~/.bashrc
 
