@@ -9,11 +9,11 @@ if ! [ -S "${SSH_AUTH_SOCK}" ]; then
 fi
 
 # prompt colors
-T_COLOR="\[\e[32m\]"
-F_COLOR="\[\e[1;31m\]!"
+T_COLOR="\[\e[32m\]@ "
+F_COLOR="\[\e[31m\]@! "
 W_COLOR="\[\e[1;33m\]"
 if [ -n "$VIM" ]; then
-    T_COLOR="\[\e[36m\]^"
+    T_COLOR="\[\e[36m\]@* "
 fi
 
 if [ -O "${PWD}" ]; then
