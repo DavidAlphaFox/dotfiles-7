@@ -6,6 +6,10 @@ case $- in
       *) return;;
 esac
 
+if [ "$(uname -o)" = "Cygwin" ]; then
+    export CYGWIN=true
+fi
+
 export EDITOR="vim"
 export GIT_EDITOR=$EDITOR
 export PAGER=less
@@ -29,7 +33,7 @@ HISTFILESIZE=2048
 PROMPT_DIRTRIM=3
 
 # turn off flow-control
-#[[ $- == *i* ]] && stty -ixon
+[ -z "$CYGWIN" ] && stty -ixon
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
