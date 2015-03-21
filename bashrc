@@ -59,7 +59,7 @@ if [ "$TERM" = "linux" ]; then
   \e]P7a0a0a0
   \e]P8202020
   \e]P9bf8b60
-  \e]PA293329
+  \e]PA394d39
   \e]PB594e2d
   \e]PC3b5880
   \e]PD624f80
