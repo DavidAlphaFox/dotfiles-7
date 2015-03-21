@@ -50,20 +50,20 @@ fi
 if [ "$TERM" = "linux" ]; then
   /bin/echo -e "
   \e]P0000000
-  \e]P1cc6666
-  \e]P299cc99
-  \e]P3ccc170
-  \e]P46699cc
-  \e]P5a37acc
-  \e]P666cccc
+  \e]P1bf6060
+  \e]P28abf8a
+  \e]P3bfb56b
+  \e]P4608bbf
+  \e]P59575bf
+  \e]P659b3b3
   \e]P7a0a0a0
   \e]P8202020
-  \e]P9cc8f52
-  \e]PA394d39
-  \e]PB666652
-  \e]PC626280
-  \e]PD7a5c99
-  \e]PE8bb3b3
+  \e]P9bf8b60
+  \e]PA293329
+  \e]PB594e2d
+  \e]PC3b5880
+  \e]PD624f80
+  \e]PE336666
   \e]PFe0e0e0
   "
   # get rid of artifacts
