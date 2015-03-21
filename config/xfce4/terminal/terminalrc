@@ -2,7 +2,7 @@
 ColorCursor=#66669999cccc
 ColorForeground=#b0b0b0b0b0b0
 ColorBackground=#000000000000
-ColorPalette=#000000000000;#f2f277777a7a;#9999cccc9999;#ffffecb8851e;#66669999cccc;#cccc9999ffff;#6666cccccccc;#a0a0a0a0a0a0;#202020202020;#f1dca2455fe4;#3b3b4a4a3b3b;#616161614e4e;#727272728f8f;#99997373bfbf;#8181a1a1a1a1;#e0e0e0e0e0e0
+ColorPalette=#000000000000;#bfbf60606060;#8a8abfbf8a8a;#bfbfb5b56b6b;#60608b8bbfbf;#95957575bfbf;#5959b3b3b3b3;#a0a0a0a0a0a0;#202020202020;#bfbf8b8b6060;#39394d4d3939;#59594e4e2d2d;#3b3b58588080;#62624f4f8080;#333366666666;#e0e0e0e0e0e0
 Term=xterm-color
 FontName=White Rabbit 14
 MiscAlwaysShowTabs=FALSE

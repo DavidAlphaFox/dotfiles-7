@@ -28,9 +28,6 @@ HISTFILESIZE=2048
 # truncate working directory in prompts
 PROMPT_DIRTRIM=3
 
-# turn off flow-control
-stty -ixon
-
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
@@ -50,20 +47,20 @@ fi
 if [ "$TERM" = "linux" ]; then
   /bin/echo -e "
   \e]P0000000
-  \e]P1f2777a
-  \e]P299cc99
-  \e]P3ffec85
-  \e]P46699cc
-  \e]P5cc99ff
-  \e]P666cccc
+  \e]P1bf6060
+  \e]P28abf8a
+  \e]P3bfb56b
+  \e]P4608bbf
+  \e]P59575bf
+  \e]P659b3b3
   \e]P7a0a0a0
   \e]P8202020
-  \e]P9f1a260
-  \e]PA3b4a3b
-  \e]PB61614e
-  \e]PC72728f
-  \e]PD9973bf
-  \e]PE81a1a1
+  \e]P9bf8b60
+  \e]PA394d39
+  \e]PB594e2d
+  \e]PC3b5880
+  \e]PD624f80
+  \e]PE336666
   \e]PFe0e0e0
   "
   # get rid of artifacts
