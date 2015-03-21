@@ -33,7 +33,5 @@ chere -icm -t mintty -s bash -e 'Shell...'
 cp ~/$dir/extra/cygwinx.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
 
 echo 'dbus-run-session -- xinit -- /usr/bin/XWin :0 -rootless -multimonitors' > /bin/startxrootless
-sudo cp ~/.fonts/whitrabt.ttf `cygpath $SYSTEMROOT`/Fonts/
-sudo reg import ~/.extra/whiterabbit.reg
 sudo reg import ~/.extra/xmouse.reg
 

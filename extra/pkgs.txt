@@ -1,6 +1,7 @@
+install base cygwin
 cygstart -- ./setup-x86_64.exe -K http://cygwinports.org/ports.gpg
-http://mirrors.kernel.org/sources.redhat.com/cygwinports
---
+add cygports mirror: http://mirrors.kernel.org/sources.redhat.com/cygwinports
+-- install --
 git
 chere
 vim
@@ -13,8 +14,9 @@ gtk2.0-engines-murrine
 libnotify
 alacarte
 wget
---
-.ssh/.gitconfig
---
+-- --
+restore .ssh/ and .gitconfig
+-- setup env --
 git clone -b cygwin git@github.com:starlight/dotfiles .dotfiles
 .dotfiles/bin/dotfiles-install
+install .fonts/whitrabt.ttf to windows
