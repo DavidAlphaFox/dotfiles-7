@@ -5,7 +5,7 @@ SSH_FIX_ENV="$HOME/.ssh-agent-fwd.`hostname`"
 
 if [ -n "$SSH_AGENT_PID" ]; then
     # remove cached ssh keys
-    note ssh-add -D
+    [[ -z "$WINDOW" ]] && note ssh-add -D
 fi
 
 if [ -f "${SSH_ENV}" ]; then
