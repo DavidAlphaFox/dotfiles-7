@@ -2,7 +2,6 @@
 ColorCursor=#66669999cccc
 ColorForeground=#b0b0b0b0b0b0
 ColorBackground=#000000000000
-ColorPalette=#000000000000;#f2f277777a7a;#9999cccc9999;#ffffecb8851e;#66669999cccc;#cccc9999ffff;#6666cccccccc;#a0a0a0a0a0a0;#202020202020;#f1dca2455fe4;#3b3b4a4a3b3b;#616161614e4e;#727272728f8f;#99997373bfbf;#8181a1a1a1a1;#e0e0e0e0e0e0
 Term=xterm-color
 FontName=White Rabbit 15
 MiscAlwaysShowTabs=FALSE
@@ -34,4 +33,6 @@ FontAllowBold=FALSE
 BackgroundImageFile=/home/.admin/.extra/doctors_name.png
 BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_CENTERED
 BackgroundDarkness=0.400000
+ColorPalette=#000000000000;#cccc66666666;#9999cccc9999;#ccccc1c17070;#66669999cccc;#a3a37a7acccc;#6666cccccccc;#a0a0a0a0a0a0;#202020202020;#cccc8f8f5252;#39394d4d3939;#666666665252;#626262628080;#7a7a5c5c9999;#8b8bb3b3b3b3;#e0e0e0e0e0e0
+
 
