@@ -2,6 +2,6 @@
 CACHE=/var/cache/cygsetup
 mkdir -p $CACHE
 cd $CACHE
-wget -N http://cygwin.com/setup-x86_64.exe
+wget -nv -N http://cygwin.com/setup-x86_64.exe
 chmod +x ./setup-x86_64.exe
-cygstart -- ./setup-x86_64.exe -l "`cygpath -w $CACHE`" -o -g -n -K http://cygwinports.org/ports.gpg $@
+cygstart -- ./setup-x86_64.exe -q -l "`cygpath -w $CACHE`" -o -g -n -K http://cygwinports.org/ports.gpg $@
