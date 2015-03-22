@@ -1,5 +1,0 @@
-#!/bin/bash
-
-export TERM=xterm
-
-source ~/.bash.d/ssh-agent
