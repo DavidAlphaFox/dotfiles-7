@@ -1,5 +1,5 @@
 [Configuration]
-ColorCursor=#66669999cccc
+ColorCursor=#b0b0b0b0b0b0
 ColorForeground=#b0b0b0b0b0b0
 ColorBackground=#000000000000
 Term=xterm-color
