@@ -2,18 +2,18 @@ install base cygwin
 cygstart -- ./setup-x86_64.exe -K http://cygwinports.org/ports.gpg
 add cygports mirror: http://mirrors.kernel.org/sources.redhat.com/cygwinports
 -- install --
-git
+alacarte
 chere
-vim
 ctags
-screen
-psmisc
-xfce4-session
-xfce4-notifyd
+git
 gtk2.0-engines-murrine
 libnotify
-alacarte
+psmisc
+screen
+vim
 wget
+xfce4-notifyd
+xfce4-session
 -- --
 restore .ssh/ and .gitconfig
 -- setup env --
