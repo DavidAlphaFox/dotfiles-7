@@ -1,22 +1,15 @@
-install base cygwin
-cygstart -- ./setup-x86_64.exe -K http://cygwinports.org/ports.gpg
+%USERPROFILE%\Downloads\setup-x86_64.exe -K http://cygwinports.org/ports.gpg
 add cygports mirror: http://mirrors.kernel.org/sources.redhat.com/cygwinports
--- install --
-alacarte
-chere
-ctags
-git
-gtk2.0-engines-murrine
-libnotify
-psmisc
-screen
-vim
-wget
-xfce4-notifyd
-xfce4-session
--- --
+install base cygwin (default), add git & wget:
+-- then after install, run:
+cygstart -- `cygpath $USERPROFILE`/Downloads/setup-x86_64.exe -q -o -g -n -K http://cygwinports.org/ports.gpg -P alacarte,chere,ctags,git-completion,gtk2.0-engines-murrine,libnotify,psmisc,screen,vim,xfce4-notifyd,xfce4-session
+-- then setup git/ssh configs:
 restore .ssh/ and .gitconfig
--- setup env --
+-- clone the repo and install:
 git clone -b cygwin git@github.com:starlight/dotfiles .dotfiles
 .dotfiles/bin/dotfiles-install
 install .fonts/whitrabt.ttf to windows
+-- after this:
+cygsetup -P pkgname[,pkgname...]  (to install packages)
+cygsetup  (to run upgrades)
+cygsetup -M  (to open the package selector)

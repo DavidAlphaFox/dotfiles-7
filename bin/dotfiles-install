@@ -15,24 +15,23 @@ for file in `ls ~/$dir | grep -v 'README.md'`; do
     rm -r ~/.$file
     ln -s $dir/$file .$file
 done
+mv .profile ~/$olddir/
 
 # home directory symlinks
 ln -s `cygpath $USERPROFILE` .user
-ln -s $HOME /home/.admin
+ln -s $HOME /.admin
 
 # symlinks into windows User directory
 for i in Desktop Public Documents Downloads Pictures Music Videos Diagrams Templates; do 
     ln -s .user/$i $i
 done
 
-source ~/.bashrc
-
 # install shell context-menu
 chere -u
 chere -icm -t mintty -s bash -e 'Shell...'
 
 # install XWin to Windows Startup
-cp ~/$dir/extra/cygwinx.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
+cp $dir/extra/cygwinx.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
 
-sudo reg import ~/.extra/xmouse.reg
+.bin/sudo reg import ~/.extra/xmouse.reg
 

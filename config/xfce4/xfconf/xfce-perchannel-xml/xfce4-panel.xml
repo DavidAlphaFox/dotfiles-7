@@ -19,6 +19,7 @@
         <value type="int" value="5"/>
         <value type="int" value="2"/>
       </property>
+      <property name="autohide" type="bool" value="true"/>
     </property>
   </property>
   <property name="plugins" type="empty">
