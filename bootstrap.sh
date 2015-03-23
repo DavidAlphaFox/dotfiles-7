@@ -15,7 +15,7 @@ if [ ! -f "$CACHE/.required" ]; then
     cd $CACHE
     wget -nv -N $EXEURL
     chmod +x ./$CYGEXE
-
+    echo
     echo "installing required packages, run again when complete"
     cygstart -- $CACHE/$CYGEXE -g -n -K $PORTS_GPG -s $PORTS_MIRROR -s $MIRROR -q -l "$CACHE_WIN" -P $BASE_PKGS
     echo $BASE_PKGS > $CACHE/.required
@@ -31,7 +31,7 @@ else
     echo "backing-up existing dotfiles, setting up symlinks"
     mkdir -p $olddir
     # symlink dotfiles, making backup of existing
-    for file in `ls $dir | grep -v -e 'README.md' -e 'install.sh' -e 'bootstrap.sh'`; do
+    for file in `ls $dir | grep -v -e 'README.md' -e 'bootstrap.sh'`; do
         cp -rL .$file $olddir/ 2>/dev/null
         rm -rf .$file
         ln -s $dir/$file .$file
@@ -59,5 +59,6 @@ else
 
     echo "Setting focus-follows-mouse, no auto-raise in Windows"
     .bin/sudo reg import ~/.extra/xmouse.reg
+    rm $CACHE/http* -r
 fi
 
