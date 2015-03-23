@@ -13,16 +13,16 @@ if [ ! -f "$CACHE/.required" ]; then
 
     mkdir -p $CACHE
     cd $CACHE
-    wget -nv -N $EXEURL
+    wget -q -nv -N $EXEURL
     chmod +x ./$CYGEXE
     echo
-    echo "installing required packages, run again when complete"
+    echo -e "\033[31mInstalling required packages, run again when complete"
     cygstart -- $CACHE/$CYGEXE -g -n -K $PORTS_GPG -s $PORTS_MIRROR -s $MIRROR -q -l "$CACHE_WIN" -P $BASE_PKGS
     touch $CACHE/.required
     exit 0
 else
     if [ -f "$CACHE/.installed" ]; then
-        echo "already installed"
+        echo -e "\033[31mAlready installed"
         exit 1
     fi
     cd $HOME
@@ -32,9 +32,8 @@ else
     dir=.dotfiles                    # dotfiles directory
     olddir=.backup_dotfiles          # old dotfiles backup directory
     
-    echo "backing-up existing dotfiles, setting up symlinks"
+    echo "Backing-up existing dotfiles, setting up symlinks"
     mkdir -p $olddir
-    # symlink dotfiles, making backup of existing
     for file in `ls $dir | grep -v -e 'README.md' -e 'bootstrap.sh'`; do
         cp -rL .$file $olddir/ 2>/dev/null
         rm -rf .$file
@@ -52,18 +51,20 @@ else
         ln -s .user/$i $i
     done
 
-    echo "installing 'Shell...' context menu"
-    # install shell context-menu
+    echo "Installing 'Shell...' context menu"
     chere -u
     chere -icm -t mintty -s bash -e 'Shell...'
-
-    echo "placing XWin shortcut into Startup"
-    # install XWin to Windows Startup
-    cp $dir/extra/cygwinx.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
 
     echo "Setting focus-follows-mouse, no auto-raise in Windows"
     .bin/sudo reg import ~/.extra/xmouse.reg
     rm $CACHE/http* -r
     touch $CACHE/.installed
+
+    echo "Placing XWin shortcut into Startup"
+    cp $dir/extra/cygwinx.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
+
+    echo
+    echo -e "\033[32mReboot/login to start XFCE!"
+    echo "you may want to quit xfdesktop and save the session"
 fi
 
