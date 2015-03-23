@@ -9,7 +9,7 @@ if [ ! -f "$CACHE/.required" ]; then
     MIRROR=http://mirrors.kernel.org/sourceware/cygwin
     PORTS_MIRROR=http://mirrors.kernel.org/sources.redhat.com/cygwinports
     PORTS_GPG=http://cygwinports.org/ports.gpg
-    BASE_PKGS=alacarte,chere,ctags,git,git-completion,gtk2.0-engines-murrine,libnotify,psmisc,screen,vim,xfce4-notifyd,xfce4-session
+    BASE_PKGS=alacarte,chere,git,gtk2.0-engines-murrine,libnotify,psmisc,screen,tree,vim,xfce4-notifyd,xfce4-session
 
     mkdir -p $CACHE
     cd $CACHE
