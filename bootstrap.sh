@@ -22,8 +22,7 @@ if [ ! -f "$CACHE/.required" ]; then
     exit 1
 else
     cd $HOME
-    echo "cloning dotfiles repository"
-    git clone -q -b cygwin https://github.com/starlight/dotfiles.git .dotfiles
+    git clone -b cygwin https://github.com/starlight/dotfiles.git .dotfiles
 
     WINHOME="`cygpath $USERPROFILE`"
     dir=.dotfiles                    # dotfiles directory
@@ -33,11 +32,8 @@ else
     mkdir -p $olddir
     # symlink dotfiles, making backup of existing
     for file in `ls $dir | grep -v -e 'README.md' -e 'install.sh' -e 'bootstrap.sh'`; do
-        echo $file
-        if [ -e "$file" ]; then 
-            cp -rL .$file $olddir/
-            rm -r .$file
-        fi
+        cp -rL .$file $olddir/ 2>/dev/null
+        rm -rf .$file
         ln -s $dir/$file .$file
     done
     mv .profile $olddir/
