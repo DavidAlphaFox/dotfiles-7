@@ -44,7 +44,7 @@ else
 
     # home directory symlinks
     ln -s $WINHOME .user
-    ln -s $HOME /...
+    ln -s $HOME /.root
 
     # symlinks into windows User directory
     for i in Desktop Public Documents Downloads Pictures Music Videos Diagrams Templates; do 
