@@ -18,9 +18,13 @@ if [ ! -f "$CACHE/.required" ]; then
     echo
     echo "installing required packages, run again when complete"
     cygstart -- $CACHE/$CYGEXE -g -n -K $PORTS_GPG -s $PORTS_MIRROR -s $MIRROR -q -l "$CACHE_WIN" -P $BASE_PKGS
-    echo $BASE_PKGS > $CACHE/.required
-    exit 1
+    touch $CACHE/.required
+    exit 0
 else
+    if [ -f "$CACHE/.installed" ]; then
+        echo "already installed"
+        exit 1
+    fi
     cd $HOME
     git clone -b cygwin https://github.com/starlight/dotfiles.git .dotfiles
 
@@ -60,5 +64,6 @@ else
     echo "Setting focus-follows-mouse, no auto-raise in Windows"
     .bin/sudo reg import ~/.extra/xmouse.reg
     rm $CACHE/http* -r
+    touch $CACHE/.installed
 fi
 
