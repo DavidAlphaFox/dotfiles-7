@@ -56,7 +56,7 @@ if [ "$TERM" = "linux" ]; then
   \e]P0000000
   \e]P1bf6060
   \e]P28abf8a
-  \e]P3bfb56b
+  \e]P3bfbf6b
   \e]P4608bbf
   \e]P59575bf
   \e]P659b3b3
@@ -64,7 +64,7 @@ if [ "$TERM" = "linux" ]; then
   \e]P8202020
   \e]P9bf8b60
   \e]PA394d39
-  \e]PB594e2d
+  \e]PB59592d
   \e]PC3b5880
   \e]PD624f80
   \e]PE336666
