@@ -29,6 +29,8 @@ else
     echo "Installing remaining packages while grabbing dotfiles"
     cygstart -- $CACHE/$CYGEXE -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -l "$CACHE_WIN" -P $BASE_PKGS
     git clone -b cygwin https://github.com/starlight/dotfiles.git .dotfiles
+    cd .dotfiles; git checkout -f HEAD
+    cd ..
 
     WINHOME="`cygpath $USERPROFILE`"
     dir=.dotfiles                    # dotfiles directory
