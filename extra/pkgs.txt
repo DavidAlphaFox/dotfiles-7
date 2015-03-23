@@ -1,8 +1,6 @@
-%USERPROFILE%\Downloads\setup-x86_64.exe -K http://cygwinports.org/ports.gpg
-add cygports mirror: http://mirrors.kernel.org/sources.redhat.com/cygwinports
 install base cygwin (default)
 -- then after install, run:
-cygstart -- `cygpath $USERPROFILE`/Downloads/setup-x86_64.exe -q -o -g -n -K http://cygwinports.org/ports.gpg -P alacarte,chere,ctags,git,git-completion,gtk2.0-engines-murrine,libnotify,psmisc,screen,vim,wget,xfce4-notifyd,xfce4-session
+cygstart -- `cygpath $USERPROFILE`/Downloads/setup-x86_64.exe -g -n -K http://cygwinports.org/ports.gpg -s http://mirrors.kernel.org/sources.redhat.com/cygwinports -s http://mirrors.kernel.org/sourceware/cygwin -P alacarte,chere,ctags,git,git-completion,gtk2.0-engines-murrine,libnotify,psmisc,screen,vim,wget,xfce4-notifyd,xfce4-session
 -- then setup git/ssh configs:
 restore .ssh/ and .gitconfig
 -- clone the repo and install:

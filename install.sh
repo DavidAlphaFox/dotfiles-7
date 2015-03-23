@@ -9,7 +9,7 @@ mkdir -p ~/$olddir
 cd ~
 
 # symlink dotfiles, making backup of existing
-for file in `ls ~/$dir | grep -v 'README.md'`; do
+for file in `ls ~/$dir | grep -v -e 'README.md' -e 'install.sh' -e 'bootstrap.sh'`; do
     echo ~/$file
     cp -rL ~/.$file ~/$olddir/
     rm -r ~/.$file
@@ -23,6 +23,7 @@ ln -s $HOME /.admin
 
 # symlinks into windows User directory
 for i in Desktop Public Documents Downloads Pictures Music Videos Diagrams Templates; do 
+    mkdir -p .user/$i
     ln -s .user/$i $i
 done
 
