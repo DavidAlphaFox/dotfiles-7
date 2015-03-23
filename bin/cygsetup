@@ -13,5 +13,5 @@ cd $CACHE
 wget -nv -N $EXEURL
 chmod +x ./$CYGEXE
 
-cygstart -- $CACHE/$CYGEXE -g -n -K $PORTS_GPG -s $PORTS_MIRROR -s $MIRROR -q -l "$CACHE_WIN" $@
+cygstart -- $CACHE/$CYGEXE -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -l "$CACHE_WIN" $@
 

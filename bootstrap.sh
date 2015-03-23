@@ -16,7 +16,7 @@ if [ ! -f "$CACHE/.required" ]; then
     chmod +x ./$CYGEXE
     echo
     echo -e "\033[31mInstalling required packages, run again when complete"
-    cygstart -- $CACHE/$CYGEXE -g -n -K $PORTS_GPG -s $PORTS_MIRROR -s $MIRROR -q -l "$CACHE_WIN" -P $BASE_PKGS
+    cygstart -- $CACHE/$CYGEXE -o -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -l "$CACHE_WIN" -P $BASE_PKGS
     touch $CACHE/.required
     exit 0
 else
@@ -27,7 +27,7 @@ else
     cd $HOME
     BASE_PKGS=alacarte,gtk2.0-engines-murrine,libnotify,psmisc,screen,tree,vim,xfce4-notifyd,xfce4-session
     echo "Installing remaining packages while grabbing dotfiles"
-    cygstart -- $CACHE/$CYGEXE -g -n -K $PORTS_GPG -s $PORTS_MIRROR -s $MIRROR -q -l "$CACHE_WIN" -P $BASE_PKGS
+    cygstart -- $CACHE/$CYGEXE -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -l "$CACHE_WIN" -P $BASE_PKGS
     git clone -b cygwin https://github.com/starlight/dotfiles.git .dotfiles
 
     WINHOME="`cygpath $USERPROFILE`"
