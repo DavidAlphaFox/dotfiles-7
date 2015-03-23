@@ -11,3 +11,7 @@ pre-existing dotfiles will be saved to ~/.old_dotfiles
 ### depends on screen, ssh
 ### optional: pylint, pyflakes, jshint, xfce4, xfce4-terminal, ctags and w3m
 
+
+working on unattended install for full cygwin environment:
+
+    wget -O - https://raw.githubusercontent.com/starlight/dotfiles/cygwin/bootstrap.sh | bash
