@@ -22,7 +22,7 @@ if [ ! -f "$CACHE/.required" ]; then
     exit 1
 else
     cd $HOME
-    git clone https://github.com/starlight/dotfiles.git .dotfiles
+    git clone -b cygwin https://github.com/starlight/dotfiles.git .dotfiles
     bash .dotfiles/install.sh
 fi
 
