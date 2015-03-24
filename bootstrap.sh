@@ -1,7 +1,6 @@
 #!/bin/bash
 
 CACHE=/var/cache/cygsetup
-CACHE_WIN="`cygpath -w $CACHE`"
 CYGEXE=setup-`uname -m`.exe
 EXEURL=http://cygwin.com/$CYGEXE
 MIRROR=http://mirrors.kernel.org/sourceware/cygwin
@@ -16,7 +15,7 @@ if [ ! -f "$CACHE/.required" ]; then
     chmod +x ./$CYGEXE
     echo
     echo -e "\033[31mInstalling required packages, run again when complete"
-    cygstart -- $CACHE/$CYGEXE -o -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -l "$CACHE_WIN" -P $BASE_PKGS
+    cygstart -- $CACHE/$CYGEXE -o -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -P $BASE_PKGS
     touch $CACHE/.required
     exit 0
 else
