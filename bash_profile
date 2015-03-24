@@ -2,10 +2,6 @@
 
 export PATH=~/.bin:$PATH
 
-if [ "$PWD" != "$HOME" ]; then
-    export MINTTY=true
-fi
-
 source ~/.bashrc
 
 export TERM=xterm
