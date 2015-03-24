@@ -7,9 +7,9 @@ EXEURL=http://cygwin.com/$CYGEXE
 MIRROR=http://mirrors.kernel.org/sourceware/cygwin
 PORTS_MIRROR=http://mirrors.kernel.org/sources.redhat.com/cygwinports
 PORTS_GPG=http://cygwinports.org/ports.gpg
+BASE_PKGS="chere,git,gtk2.0-engines-murrine,psmisc,screen,tree,vim,xfce4-session"
 
 if [ ! -f "$CACHE/.required" ]; then
-    BASE_PKGS="chere,git"
     mkdir -p $CACHE
     cd $CACHE
     wget -q -nv -N $EXEURL
@@ -25,9 +25,6 @@ else
         exit 1
     fi
     cd $HOME
-    BASE_PKGS="alacarte,gtk2.0-engines-murrine,libnotify,psmisc,screen,tree,vim,xfce4-notifyd,xfce4-session"
-    echo "Installing remaining packages while grabbing dotfiles"
-    cygstart -- $CACHE/$CYGEXE -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -l "$CACHE_WIN" -P $BASE_PKGS
     git clone -b cygwin https://github.com/starlight/dotfiles.git .dotfiles
     cd .dotfiles; git checkout -f HEAD
     cd ..
