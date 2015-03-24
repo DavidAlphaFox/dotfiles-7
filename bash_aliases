@@ -15,12 +15,10 @@ alias pt='pstree'
 alias pa='pt -a'
 alias bs="source ~/.bashrc"
 alias git-include="git config --file ~/.gitinclude"
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias free="free -mt"
 alias less=$PAGER
 alias zless=$PAGER
 alias st="screen-title"
-alias say="notify-send -i 'anki'"
 alias screen="screen -UDRR"
 vim_w3m() {
     vim -c ":W3m $@" 

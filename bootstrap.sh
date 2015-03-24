@@ -66,5 +66,4 @@ else
 
     echo
     echo -e "\033[32mReboot/login to start XFCE!"
-    echo "you may want to quit xfdesktop and save the session"
 fi
