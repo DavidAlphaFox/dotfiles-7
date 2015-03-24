@@ -6,6 +6,10 @@ case $- in
       *) return;;
 esac
 
+if [ "$(uname -o)" = "Cygwin" ]; then
+    export CYGWIN=true
+fi
+
 export EDITOR="vim"
 export GIT_EDITOR=$EDITOR
 export PAGER=less
@@ -28,6 +32,9 @@ HISTFILESIZE=2048
 # truncate working directory in prompts
 PROMPT_DIRTRIM=3
 
+# turn off flow-control
+[ -z "$CYGWIN" ] && stty -ixon
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
@@ -49,7 +56,7 @@ if [ "$TERM" = "linux" ]; then
   \e]P0000000
   \e]P1bf6060
   \e]P28abf8a
-  \e]P3bfb56b
+  \e]P3bfbf6b
   \e]P4608bbf
   \e]P59575bf
   \e]P659b3b3
@@ -57,7 +64,7 @@ if [ "$TERM" = "linux" ]; then
   \e]P8202020
   \e]P9bf8b60
   \e]PA394d39
-  \e]PB594e2d
+  \e]PB59592d
   \e]PC3b5880
   \e]PD624f80
   \e]PE336666
@@ -90,6 +97,9 @@ fi
 if [ -f ~/.bash_localrc ]; then
     . ~/.bash_localrc
 fi
+
+# mintty title
+echo -ne "\033]0;$USER@$HOSTNAME\007"
 
 # prompt settings
 export PS2=" \`if [ \$? = 0 ]; then echo $T_COLOR; else echo $F_COLOR; fi\`. \[\e[m\]"

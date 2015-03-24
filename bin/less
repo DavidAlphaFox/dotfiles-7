@@ -289,7 +289,7 @@ less_vim() {
 				-u "${vimrc}" \
 				--cmd 'let vimpager=1 | source ~/.vim/less.vim | set nocp' \
 				-c "set foldlevel=999 | set nonu | silent! set nornu" \
-				 -i NONE \
+				-i NONE \
 				"${@:--}"
 			;;
 		*) # gvim or mvim GUI
@@ -489,7 +489,7 @@ fi
 # On cygwin it might be the win32 gvim, but windows paths work for cygwin
 # vim just fine as well.
 if [ -n "${cygwin}" ]; then
-	filename=$(cygpath -w "${filename}")
+	filename=$(cygpath "${filename}")
 fi
 
 less_vim -c "${extra_c:-echo}" --cmd "${extra_cmd:-echo}" "${filename}" </dev/tty

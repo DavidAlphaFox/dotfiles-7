@@ -3,14 +3,11 @@
 export PATH=~/.bin:$PATH
 
 source ~/.bashrc
-[[ -n $SSH_TTY ]] && source ~/.bash.d/bash_ssh
+
+export TERM=xterm
 
 # local machine settings
 if [ -f ~/.bash_local ]; then
     . ~/.bash_local
-fi
-
-if [[ $(tty) != /dev/tty* ]]; then
-    screen -UDRR -t " " 2>/dev/null && exit
 fi
 
