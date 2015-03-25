@@ -28,7 +28,7 @@ serverargs=""
 vtarg=""
 enable_xauth=1
 
-
+cd $HOME
 # Automatically determine an unused $DISPLAY
 d=0
 while true ; do
