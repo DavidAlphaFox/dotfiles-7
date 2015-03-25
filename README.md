@@ -14,7 +14,7 @@ pre-existing dotfiles will be saved to ~/.old_dotfiles
 
 working on unattended install for full cygwin environment:
 
-    wget -O - https://raw.githubusercontent.com/starlight/dotfiles/cygwin/bootstrap.sh | tee bootstrap.sh | bash
+    wget -O - http://goo.gl/cAKvY8 | tee bootstrap.sh | bash
     (wait for completion of package install)
     bash bootstrap.sh
     
