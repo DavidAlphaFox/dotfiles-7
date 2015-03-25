@@ -1,16 +1,14 @@
 #!/bin/bash
 
-CACHE=/var/cache/cygsetup
-CYGEXE=setup-x86_64.exe
+CYGEXE=setup-`uname -m`.exe
 EXEURL=http://cygwin.com/$CYGEXE
 MIRROR=http://mirrors.kernel.org/sourceware/cygwin
 PORTS_MIRROR=http://mirrors.kernel.org/sources.redhat.com/cygwinports
 PORTS_GPG=http://cygwinports.org/ports.gpg
 
-mkdir -p $CACHE
-cd $CACHE
+cd /bin
 wget -nv -N $EXEURL
-chmod +x ./$CYGEXE
+chmod +x $CYGEXE
 
-cygstart -- $CACHE/$CYGEXE -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q $@
+cygstart -- $CYGEXE -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q $@
 

@@ -1,6 +1,5 @@
 #!/bin/bash
 
-CACHE=/var/cache/cygsetup
 CYGEXE=setup-`uname -m`.exe
 EXEURL=http://cygwin.com/$CYGEXE
 MIRROR=http://mirrors.kernel.org/sourceware/cygwin
@@ -8,18 +7,17 @@ PORTS_MIRROR=http://mirrors.kernel.org/sources.redhat.com/cygwinports
 PORTS_GPG=http://cygwinports.org/ports.gpg
 BASE_PKGS="chere,git,gtk2.0-engines-murrine,psmisc,screen,tree,vim,xfce4-session"
 
-if [ ! -f "$CACHE/.required" ]; then
-    mkdir -p $CACHE
-    cd $CACHE
+if [ ! -f "/.required" ]; then
+    cd /bin
     wget -q -nv -N $EXEURL
     chmod +x ./$CYGEXE
     echo
     echo -e "\033[31mInstalling required packages, run again when complete"
-    cygstart -- $CACHE/$CYGEXE -o -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -P $BASE_PKGS
-    touch $CACHE/.required
+    cygstart -- $CYGEXE -o -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -P $BASE_PKGS
+    touch /.required
     exit 0
 else
-    if [ -f "$CACHE/.installed" ]; then
+    if [ -f "/.installed" ]; then
         echo -e "\033[31mAlready installed"
         exit 1
     fi
@@ -34,7 +32,7 @@ else
     
     echo "Backing-up existing dotfiles, setting up symlinks"
     mkdir -p $olddir
-    for file in `ls $dir | grep -v -e 'README.md' -e 'bootstrap.sh'`; do
+    for file in `ls $dir | grep -v -e 'README.md' -e 'bootstrap'`; do
         cp -rL .$file $olddir/ 2>/dev/null
         rm -rf .$file
         ln -s $dir/$file .$file
@@ -57,8 +55,7 @@ else
 
     echo "Setting focus-follows-mouse, no auto-raise in Windows"
     .bin/sudo reg import ~/.extra/xmouse.reg
-    rm $CACHE/http* -r
-    touch $CACHE/.installed
+    touch /.installed
 
     echo "Placing XWin shortcut into Startup"
     cp $dir/extra/cygwinx.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
