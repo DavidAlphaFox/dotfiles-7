@@ -5,8 +5,8 @@
   <property name="panels" type="array">
     <value type="int" value="1"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=9;x=967;y=24"/>
-      <property name="length" type="uint" value="50"/>
+      <property name="position" type="string" value="p=9;x=962;y=24"/>
+      <property name="length" type="uint" value="1"/>
       <property name="position-locked" type="bool" value="false"/>
       <property name="size" type="uint" value="48"/>
       <property name="plugin-ids" type="array">
@@ -27,10 +27,10 @@
     <property name="plugin-1" type="string" value="applicationsmenu">
       <property name="show-menu-icons" type="bool" value="true"/>
       <property name="show-button-title" type="bool" value="false"/>
-      <property name="button-icon" type="string" value="agave"/>
+      <property name="button-icon" type="string" value="anki"/>
     </property>
     <property name="plugin-3" type="string" value="tasklist">
-      <property name="show-labels" type="bool" value="true"/>
+      <property name="show-labels" type="bool" value="false"/>
       <property name="flat-buttons" type="bool" value="true"/>
       <property name="grouping" type="uint" value="1"/>
       <property name="switch-workspace-on-unminimize" type="bool" value="false"/>
