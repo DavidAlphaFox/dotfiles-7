@@ -1,5 +1,5 @@
 BoldAsFont=no
-Transparency=low
+Transparency=medium
 FontHeight=16
 Font=White Rabbit
 Locale=en_US
@@ -34,4 +34,3 @@ Cyan=89,179,179
 BoldCyan=51,102,102
 White=160,160,160
 BoldWhite=224,224,224
-
