@@ -75,8 +75,8 @@ if [ "$TERM" = "linux" ]; then
 fi
 
 # keep bash aliases in a separate file
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.bash.d/bash_aliases ]; then
+    . ~/.bash.d/bash_aliases
 fi
 
 # enable programmable completion features
