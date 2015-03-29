@@ -11,5 +11,3 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
-# this file's presence causes annoying messages
-rm -f /var/run/utmp

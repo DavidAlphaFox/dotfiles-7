@@ -20,7 +20,7 @@ alias less=$PAGER
 alias zless=$PAGER
 alias st="screen-title"
 alias tt="term-title"
-alias screen="screen -UDRR"
+alias screen="rm -f /var/run/utmp; screen -UDRR"
 alias sudo="cygstart --action=runas"
 vim_w3m() {
     vim -c ":W3m $@" 
