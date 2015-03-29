@@ -19,6 +19,7 @@ alias free="free -mt"
 alias less=$PAGER
 alias zless=$PAGER
 alias st="screen-title"
+alias tt="term-title"
 alias screen="screen -UDRR"
 alias sudo="cygstart --action=runas"
 vim_w3m() {
