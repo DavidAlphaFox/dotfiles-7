@@ -76,7 +76,7 @@ if [ -f ~/.bash_localrc ]; then
 fi
 
 # mintty title
-echo -ne "\033]0;`uname -a`\007"
+echo -ne "\033]0;\007"
 
 # prompt settings
 export PS2=" \`if [ \$? = 0 ]; then echo $T_COLOR; else echo $F_COLOR; fi\`. \[\e[m\]"

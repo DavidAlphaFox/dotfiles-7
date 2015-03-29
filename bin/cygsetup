@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# wrap setup.exe to provide package management
+# cygsetup                         // unattended update
+# cygsetup -P pkgname[,pkgname...] // unattended install
+# cygsetup -x pkgname[,pkgname...] // unattended uninstall
+# cygsetup -M                      // semi-attended pkg manager
+
 CYGEXE=setup-`uname -m`.exe
 EXEURL=http://cygwin.com/$CYGEXE
 MIRROR=http://mirrors.kernel.org/sourceware/cygwin
