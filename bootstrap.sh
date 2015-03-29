@@ -54,7 +54,9 @@ else
     chere -icm -t mintty -s bash -e 'Shell...'
 
     echo "Placing XWin shortcut into Startup"
-    cp $dir/extra/cygwinx.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
+    mkshortcut -w "$HOME" -s min -n cygwinx -d startxwin-rootless -a '-w hide /bin/sh.exe ~/.bin/startxwin-rootless' /bin/mintty.exe
+
+    mv cygwinx.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
 
     touch /.installed
 
