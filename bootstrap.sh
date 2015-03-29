@@ -53,12 +53,10 @@ else
     chere -u
     chere -icm -t mintty -s bash -e 'Shell...'
 
-    echo "Setting focus-follows-mouse, no auto-raise in Windows"
-    .bin/sudo reg import ~/.extra/xmouse.reg
-    touch /.installed
-
     echo "Placing XWin shortcut into Startup"
     cp $dir/extra/cygwinx.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
+
+    touch /.installed
 
     echo
     echo -e "\033[32mReboot/login to start XFCE!"
