@@ -20,15 +20,6 @@ set go-=b
 " gvim font
 set guifont=White\ Rabbit\ 14
 
-" hide gvim toolbar, scrollbars
-set go-=T
-set go-=r
-set go-=l
-set go-=b
-
-" gvim font
-set guifont=White\ Rabbit\ 14
-
 " Set lines to the cursor - when moving vertically using j/k
 set so=6
 
