@@ -3,7 +3,8 @@
 <channel name="xfce4-session" version="1.0">
   <property name="general" type="empty">
     <property name="FailsafeSessionName" type="string" value="Failsafe"/>
-    <property name="PromptOnLogout" type="bool" value="false"/>
+    <property name="SaveOnExit" type="empty"/>
+    <property name="PromptOnLogout" type="bool" value="true"/>
   </property>
   <property name="sessions" type="empty">
     <property name="Failsafe" type="empty">
@@ -31,7 +32,7 @@
     </property>
   </property>
   <property name="splash" type="empty">
-    <property name="Engine" type="string" value="cygmice"/>
+    <property name="Engine" type="string" value="mice"/>
     <property name="engines" type="empty">
       <property name="cygbalou" type="empty">
         <property name="Theme" type="string" value="milky"/>
@@ -40,5 +41,13 @@
   </property>
   <property name="compat" type="empty">
     <property name="LaunchGNOME" type="bool" value="true"/>
+  </property>
+  <property name="shutdown" type="empty">
+    <property name="LockScreen" type="bool" value="false"/>
+  </property>
+  <property name="startup" type="empty">
+    <property name="screensaver" type="empty">
+      <property name="type" type="empty"/>
+    </property>
   </property>
 </channel>
