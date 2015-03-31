@@ -27,11 +27,14 @@ TitleInitial=terminal
 Encoding=UTF-8
 ColorBold=#93a1a1
 TabActivityColor=#dc322f
-BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
+BackgroundMode=TERMINAL_BACKGROUND_IMAGE
 CommandLoginShell=TRUE
 FontAllowBold=FALSE
 BackgroundDarkness=0.660000
+BackgroundImageFile=/.root/.extra/doctors_name.png
+BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_CENTERED
 ColorPalette=#000000000000;#bfbf60606060;#8a8abfbf8a8a;#bfbfbf736b6b;#60608b8bbfbf;#95957575bfbf;#5959b3b3b3b3;#a0a0a0a0a0a0;#202020202020;#bfbf8b8b6060;#39394d4d3939;#592959592d2d;#3b3b58588080;#62624f4f8080;#333366666666;#e0e0e0e0e0e0
 ShortcutsNoMnemonics=TRUE
 ShortcutsNoMenukey=TRUE
+CommandUpdateRecords=FALSE
 

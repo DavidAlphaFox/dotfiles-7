@@ -51,32 +51,9 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
-if [ "$TERM" = "linux" ]; then
-  /bin/echo -e "
-  \e]P0000000
-  \e]P1bf6060
-  \e]P28abf8a
-  \e]P3bfbf6b
-  \e]P4608bbf
-  \e]P59575bf
-  \e]P659b3b3
-  \e]P7a0a0a0
-  \e]P8202020
-  \e]P9bf8b60
-  \e]PA394d39
-  \e]PB59592d
-  \e]PC3b5880
-  \e]PD624f80
-  \e]PE336666
-  \e]PFe0e0e0
-  "
-  # get rid of artifacts
-  clear
-fi
-
 # keep bash aliases in a separate file
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.bash.d/bash_aliases ]; then
+    . ~/.bash.d/bash_aliases
 fi
 
 # enable programmable completion features
@@ -99,7 +76,7 @@ if [ -f ~/.bash_localrc ]; then
 fi
 
 # mintty title
-echo -ne "\033]0;$USER@$HOSTNAME\007"
+echo -ne "\033]0;\007"
 
 # prompt settings
 export PS2=" \`if [ \$? = 0 ]; then echo $T_COLOR; else echo $F_COLOR; fi\`. \[\e[m\]"

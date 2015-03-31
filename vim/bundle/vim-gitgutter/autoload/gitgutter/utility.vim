@@ -31,7 +31,7 @@ function! gitgutter#utility#shellescape(arg)
 endfunction
 
 function! gitgutter#utility#current_file()
-  return expand('%:p')
+  return expand('%')
 endfunction
 
 function! gitgutter#utility#set_file(file)

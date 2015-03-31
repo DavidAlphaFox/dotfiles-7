@@ -8,8 +8,17 @@ let mapleader=';'
 nmap <silent> <leader>ve :e $MYVIMRC<CR>
 nmap <silent> <leader>vs :so $MYVIMRC<CR>
 
-" :W sudo saves the file
-command! W w !sudo tee % > /dev/null
+" :W sudo saves the file (doesn't work on cygwin)
+" command! W w !sudo tee % > /dev/null
+
+" hide gvim toolbar, scrollbars
+set go-=T
+set go-=r
+set go-=l
+set go-=b
+
+" gvim font
+set guifont=White\ Rabbit\ 14
 
 " hide gvim toolbar, scrollbars
 set go-=T

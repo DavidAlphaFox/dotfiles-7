@@ -1,3 +1,0 @@
-#notify-send -i anki "$1" "`eval '$@' 2>&1`"
-NOTE="`echo -e \"$@\"`"
-notify-send -i anki "$NOTE" "`eval '$NOTE' 2>&1`"
