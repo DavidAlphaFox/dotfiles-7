@@ -16,6 +16,7 @@
         <value type="int" value="3"/>
         <value type="int" value="7"/>
         <value type="int" value="6"/>
+        <value type="int" value="9"/>
         <value type="int" value="15"/>
         <value type="int" value="5"/>
         <value type="int" value="2"/>
@@ -68,6 +69,15 @@
     </property>
     <property name="plugin-8" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-9" type="string" value="indicator">
+      <property name="known-indicators" type="array">
+        <value type="string" value="libapplication.so"/>
+        <value type="string" value="com.canonical.indicator.messages"/>
+        <value type="string" value="com.canonical.indicator.sound"/>
+      </property>
+      <property name="single-row" type="bool" value="true"/>
+      <property name="align-left" type="bool" value="false"/>
     </property>
   </property>
 </channel>
