@@ -12,8 +12,8 @@
    height="22"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r"
-   sodipodi:docname="audio-output-none-panel.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="audio-volume-high-panel.svg">
   <metadata
      id="metadata46">
     <rdf:RDF>
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -35,17 +35,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="747"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
      id="namedview44"
      showgrid="true"
-     inkscape:zoom="14.292099"
-     inkscape:cx="6.4485518"
-     inkscape:cy="16.608873"
-     inkscape:window-x="0"
-     inkscape:window-y="21"
+     inkscape:zoom="40.424161"
+     inkscape:cx="10.793399"
+     inkscape:cy="9.6470285"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2">
+     inkscape:current-layer="g3091">
     <inkscape:grid
        type="xygrid"
        id="grid3023" />
@@ -120,46 +120,92 @@
     </clipPath>
   </defs>
   <g
-     style="fill:#ececec;fill-opacity:1"
-     id="g3101"
-     transform="matrix(1.0001112,0,0,1,0.9991101,0)">
-    <path
-       sodipodi:nodetypes="cccccccc"
-       style="fill:#ececec;fill-opacity:1"
-       inkscape:connector-curvature="0"
-       id="path40"
-       d="M 6.0010672,5 3,8 l 0,6 3.0010672,3 0,-4 L 8,11 6.0010672,9 Z" />
-    <path
-       sodipodi:nodetypes="ssssccs"
-       style="fill:#ececec;fill-opacity:1"
-       inkscape:connector-curvature="0"
-       id="path42"
-       d="M 1,8 C 0.4769561,8 8.898e-4,8.4981434 8.898e-4,9 l 0,4 c 0,0.579702 0.432648,1 0.9991102,1 l 3.9964407,0 0,-6 z" />
+     id="g3091"
+     transform="matrix(1.0001112,0,0,1,-8.8989898e-4,0)">
+    <g
+       id="g3105"
+       transform="translate(0,1)"
+       style="fill:#000000;fill-opacity:1;opacity:0.3">
+      <path
+         sodipodi:nodetypes="cccccccc"
+         style="fill:#000000;fill-opacity:1"
+         inkscape:connector-curvature="0"
+         id="path3107"
+         d="M 6.0010672,5 3,8 l 0,6 3.0010672,3 0,-4 L 8,11 6.0010672,9 z" />
+      <path
+         sodipodi:nodetypes="ssssccs"
+         style="fill:#000000;fill-opacity:1"
+         inkscape:connector-curvature="0"
+         id="path3109"
+         d="M 1,8 C 0.4769561,8 8.898e-4,8.4981434 8.898e-4,9 l 0,4 c 0,0.579702 0.432648,1 0.9991102,1 l 3.9964407,0 0,-6 z" />
+    </g>
+    <g
+       id="g3101">
+      <path
+         d="M 6.0010672,5 3,8 l 0,6 3.0010672,3 0,-4 L 8,11 6.0010672,9 z"
+         id="path40"
+         inkscape:connector-curvature="0"
+         style="fill:#dcdcdc"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         d="M 1,8 C 0.4769561,8 8.898e-4,8.4981434 8.898e-4,9 l 0,4 c 0,0.579702 0.432648,1 0.9991102,1 l 3.9964407,0 0,-6 z"
+         id="path42"
+         inkscape:connector-curvature="0"
+         style="fill:#dcdcdc"
+         sodipodi:nodetypes="ssssccs" />
+    </g>
   </g>
   <rect
-     style="fill:#ececec;fill-opacity:1"
-     width="3.1428573"
-     height="1.4"
-     x="10"
-     y="10.3"
+     style="opacity:0.3"
+     ry="0.20999999"
+     rx="0.255"
+     y="11"
+     x="8"
+     height="2"
+     width="4"
+     id="rect3029" />
+  <rect
+     style="fill:#dcdcdc"
+     width="4"
+     height="2"
+     x="8"
+     y="10"
      rx="0.255"
      ry="0.20999999"
      id="rect3031" />
   <rect
-     style="fill:#ececec;fill-opacity:1"
+     style="opacity:0.3"
+     width="4"
+     height="2"
+     x="13"
+     y="11"
+     rx="0.255"
+     ry="0.20999999"
+     id="rect3033" />
+  <rect
+     style="fill:#dcdcdc"
      ry="0.20999999"
      rx="0.255"
-     y="10.3"
-     x="13.928572"
-     height="1.4"
-     width="3.1428573"
+     y="10"
+     x="13"
+     height="2"
+     width="4"
      id="rect3035" />
   <rect
-     style="fill:#ececec;fill-opacity:1"
-     width="3.1428573"
-     height="1.4"
-     x="17.857143"
-     y="10.3"
+     style="opacity:0.3"
+     ry="0.20999999"
+     rx="0.255"
+     y="11"
+     x="18"
+     height="2"
+     width="4"
+     id="rect3037" />
+  <rect
+     style="fill:#dcdcdc"
+     width="4"
+     height="2"
+     x="18"
+     y="10"
      rx="0.255"
      ry="0.20999999"
      id="rect3039" />

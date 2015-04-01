@@ -12,9 +12,9 @@
    id="svg7384"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   height="22"
+   height="16"
    sodipodi:docname="pamac-tray-update.svg"
-   width="22">
+   width="16">
   <metadata
      id="metadata90">
     <rdf:RDF>
@@ -29,10 +29,10 @@
   </metadata>
   <sodipodi:namedview
      inkscape:object-paths="true"
-     inkscape:cy="7.7674429"
+     inkscape:cy="8.000001"
      inkscape:current-layer="layer9"
      inkscape:window-width="1280"
-     pagecolor="#ffffff"
+     pagecolor="#555753"
      showborder="false"
      showguides="true"
      inkscape:snap-nodes="false"
@@ -50,11 +50,11 @@
      inkscape:window-y="0"
      gridtolerance="10"
      inkscape:zoom="17.2"
-     inkscape:window-height="998"
+     inkscape:window-height="751"
      borderopacity="1"
      guidetolerance="10"
      inkscape:snap-bbox-midpoints="false"
-     inkscape:cx="8.0604323"
+     inkscape:cx="-2.4628235"
      inkscape:bbox-paths="false"
      inkscape:snap-grids="true"
      inkscape:pageopacity="1"
@@ -74,7 +74,7 @@
   <defs
      id="defs7386" />
   <g
-     transform="translate(-181.0002,-251)"
+     transform="translate(-181.0002,-257)"
      inkscape:groupmode="layer"
      id="layer9"
      inkscape:label="status"
@@ -82,44 +82,44 @@
     <path
        inkscape:connector-curvature="0"
        class="warning"
-       d="m 192.0002,251 -3.13672,4.72657 -4.72656,-1.58985 1.58985,4.72656 -4.72657,3.13672 4.72657,3.13672 -1.58985,4.72656 4.72656,-1.58985 3.13672,4.72657 3.13672,-4.72657 4.72656,1.58985 -1.58985,-4.72656 4.72657,-3.13672 -4.72657,-3.13672 1.58985,-4.72656 -4.72656,1.58985 z m -1.375,5.58594 2.75,0 0,6.83204 -2.75,0 z m 1.41796,7.82031 c 0.97297,0 1.76172,0.78875 1.76172,1.76172 0,0.97297 -0.78875,1.76172 -1.76172,1.76172 -0.97296,0 -1.76171,-0.78875 -1.76171,-1.76172 0,-0.97297 0.78875,-1.76172 1.76171,-1.76172 z"
+       d="m 189,257.05814 -2.26467,3.41252 -3.41252,-1.14785 1.14785,3.41252 -3.41252,2.26467 3.41252,2.26467 -1.14785,3.41252 3.41252,-1.14785 2.26467,3.41252 2.26467,-3.41252 3.41252,1.14785 -1.14785,-3.41252 3.41252,-2.26467 -3.41252,-2.26467 1.14785,-3.41252 -3.41252,1.14785 z m -0.99273,4.03298 1.98546,0 0,4.93264 -1.98546,0 z m 1.02375,5.64616 c 0.70247,0 1.27194,0.56947 1.27194,1.27194 0,0.70247 -0.56947,1.27194 -1.27194,1.27194 -0.70247,0 -1.27194,-0.56947 -1.27194,-1.27194 0,-0.70247 0.56947,-1.27194 1.27194,-1.27194 z"
        id="path16909"
        sodipodi:nodetypes="ccccccccccccccccccccccsssss"
        style="fill:#ef555c;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline;enable-background:new" />
   </g>
   <g
-     transform="translate(-181.0002,-251)"
+     transform="translate(-181.0002,-257)"
      inkscape:groupmode="layer"
      id="layer10"
      inkscape:label="devices" />
   <g
-     transform="translate(-181.0002,-251)"
+     transform="translate(-181.0002,-257)"
      inkscape:groupmode="layer"
      id="layer11"
      inkscape:label="apps" />
   <g
-     transform="translate(-181.0002,-251)"
+     transform="translate(-181.0002,-257)"
      inkscape:groupmode="layer"
      id="layer12"
      inkscape:label="actions" />
   <g
-     transform="translate(-181.0002,-251)"
+     transform="translate(-181.0002,-257)"
      inkscape:groupmode="layer"
      id="layer13"
      inkscape:label="places" />
   <g
-     transform="translate(-181.0002,-251)"
+     transform="translate(-181.0002,-257)"
      inkscape:groupmode="layer"
      id="layer14"
      inkscape:label="mimetypes" />
   <g
-     transform="translate(-181.0002,-251)"
+     transform="translate(-181.0002,-257)"
      inkscape:groupmode="layer"
      id="layer15"
      inkscape:label="emblems"
      style="display:inline" />
   <g
-     transform="translate(-181.0002,-251)"
+     transform="translate(-181.0002,-257)"
      inkscape:groupmode="layer"
      id="g4953"
      inkscape:label="categories"
