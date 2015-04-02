@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Numix-MFU1404
-Comment=A modern flat theme. Modded to remove the "Unity boxes" (Only works in Ubuntu 14.04)
+Name=Numix
+Comment=A modern flat theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Numix-MFU1404
-MetacityTheme=Numix-MFU1404
+GtkTheme=Numix
+MetacityTheme=Numix
 ButtonLayout=:minimize,maximize,close

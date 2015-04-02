@@ -34,7 +34,7 @@
     <property name="Engine" type="string" value="cygmice"/>
     <property name="engines" type="empty">
       <property name="cygbalou" type="empty">
-        <property name="Theme" type="string" value="milky"/>
+        <property name="Theme" type="string" value="Default"/>
       </property>
     </property>
   </property>
