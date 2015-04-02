@@ -5,6 +5,7 @@ EXEURL=http://cygwin.com/$CYGEXE
 MIRROR=http://mirrors.kernel.org/sourceware/cygwin
 PORTS_MIRROR=http://mirrors.kernel.org/sources.redhat.com/cygwinports
 PORTS_GPG=http://cygwinports.org/ports.gpg
+DOTFILES_GIT=https://github.com/starlight/dotfiles.git
 BASE_PKGS="chere,git-completion,psmisc,screen,tree,vim,xfce4-session,gtk2.0-engines-murrine,cygutils-x11,alacarte,unzip,zip,dos2unix"
 
 if [ ! -f "/.required" ]; then
@@ -22,7 +23,7 @@ else
         exit 1
     fi
     cd $HOME
-    git clone -b cygwin https://github.com/starlight/dotfiles.git .dotfiles
+    git clone -b cygwin $DOTFILES_GIT .dotfiles
     cd .dotfiles; git checkout -f HEAD
     cd ..
 
