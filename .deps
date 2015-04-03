@@ -6,7 +6,7 @@
  cygcheck-dep
  cygutils-x11
  dos2unix
- file
+ file-roller
  font-encodings
  garcon
  getent
@@ -24,7 +24,6 @@
  libgnome-menu3_0
  libmcpp0
  libpng-doc
- libpopt0
  libxfce4util-common
  libXRes1
  login
@@ -32,17 +31,15 @@
  mcpp
  mintty
  openssl
- popt
  psmisc
  rebase
  screen
  seahorse
  tree
- unzip
  vim
  vim-minimal
  which
  xfce4-session
  xfconfd
- zip
+ zoo
  _autorebase
