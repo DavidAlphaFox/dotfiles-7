@@ -9,7 +9,7 @@ nmap <silent> <leader>ve :e $MYVIMRC<CR>
 nmap <silent> <leader>vs :so $MYVIMRC<CR>
 
 " :W sudo saves the file (doesn't work on cygwin)
-" command! W w !sudo tee % > /dev/null
+command! W w !sudo tee % > /dev/null
 
 " hide gvim toolbar, scrollbars
 set go-=T
