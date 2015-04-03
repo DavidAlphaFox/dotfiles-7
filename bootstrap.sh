@@ -6,7 +6,7 @@ MIRROR=http://mirrors.kernel.org/sourceware/cygwin
 PORTS_MIRROR=http://mirrors.kernel.org/sources.redhat.com/cygwinports
 PORTS_GPG=http://cygwinports.org/ports.gpg
 DOTFILES_GIT=https://github.com/starlight/dotfiles.git
-BASE_PKGS="chere,git-completion,psmisc,screen,tree,vim,gvim,xfce4-session,gtk2.0-engines-murrine,cygutils-x11,alacarte,file-roller,dos2unix,seahorse"
+BASE_PKGS="chere,git-completion,psmisc,screen,tree,vim,gvim,xfce4-session,gtk2.0-engines-murrine,cygutils-x11,alacarte,file-roller,dos2unix,seahorse,seahorse-tool"
 
 if [ ! -f "/.required" ]; then
     cd /bin
