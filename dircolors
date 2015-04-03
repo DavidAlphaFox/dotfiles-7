@@ -244,6 +244,6 @@ EXEC 01;32
 .xspf 00;36
 
 # encrypted formats
-.gpg 01;30
-.pgp 01;30
+.gpg 00;33
+.pgp 00;33
 
