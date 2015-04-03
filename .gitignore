@@ -1,4 +1,5 @@
 /config/*
+!/config/Thunar
 !/config/gitinclude
 !/config/xfce4
 /config/xfce4/*

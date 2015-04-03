@@ -1,0 +1,36 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1428043808138295-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>file-roller</icon>
+	<name>Archive...</name>
+	<unique-id>1428087666445200-2</unique-id>
+	<command>file-roller -d %F</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>file-roller</icon>
+	<name>Extract...</name>
+	<unique-id>1428087773664188-3</unique-id>
+	<command>file-roller -f %F</command>
+	<description></description>
+	<patterns>*.xz;*.tar;*.bz2;*.gz;*.zip</patterns>
+	<other-files/>
+</action>
+</actions>
