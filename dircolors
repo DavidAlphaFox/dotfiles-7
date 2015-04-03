@@ -249,6 +249,7 @@ EXEC 01;32
 .pub 00;33
 .crt 00;33
 .pem 00;33
+.asc 00;33
 
 # python files
 .py  01;32
