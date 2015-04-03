@@ -16,6 +16,7 @@
  gtk2.0-engines-murrine
  gtk2.0-engines-pixmap
  gvfs
+ gvim
  hostname
  info
  ipc-utils
