@@ -27,10 +27,10 @@
 <action>
 	<icon>file-roller</icon>
 	<name>Extract...</name>
-	<unique-id>1428087773664188-3</unique-id>
+	<unique-id>1428091116108859-4</unique-id>
 	<command>file-roller -f %F</command>
 	<description></description>
-	<patterns>*.xz;*.tar;*.bz2;*.gz;*.zip</patterns>
+	<patterns>*.xz;*.tar;*.bz2;*.gz;*.zip;*.lzma</patterns>
 	<other-files/>
 </action>
 </actions>
