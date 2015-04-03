@@ -1,5 +1,6 @@
 /config/*
 !/config/Thunar
+/config/Thunar/accels.scm
 !/config/gitinclude
 !/config/xfce4
 /config/xfce4/*
