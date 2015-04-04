@@ -33,22 +33,4 @@
 	<patterns>*.xz;*.tar;*.bz2;*.gz;*.zip;*.lzma</patterns>
 	<other-files/>
 </action>
-<action>
-	<icon>seahorse</icon>
-	<name>Decrypt...</name>
-	<unique-id>1428093237381025-1</unique-id>
-	<command>seahorse-tool -d %F</command>
-	<description></description>
-	<patterns>*.gpg;*.pgp</patterns>
-	<other-files/>
-</action>
-<action>
-	<icon>seahorse</icon>
-	<name>Encrypt...</name>
-	<unique-id>1428093321917574-2</unique-id>
-	<command>seahorse-tool -e %F</command>
-	<description></description>
-	<patterns>*</patterns>
-	<other-files/>
-</action>
 </actions>
