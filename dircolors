@@ -117,11 +117,11 @@ EXEC 01;32
 # (and any comments you want to add after a '#')
 
 # If you use DOS-style suffixes, you may want to uncomment the following:
-#.cmd 01;32 # executables (bright green)
-#.exe 01;32
-#.com 01;32
-#.btm 01;32
-#.bat 01;32
+.cmd 01;32 # executables (bright green)
+.exe 01;32
+.com 01;32
+.btm 01;32
+.bat 01;32
 # Or if you want to colorize scripts even if they do not have the
 # executable bit actually set.
 #.sh  01;32
@@ -216,6 +216,7 @@ EXEC 01;32
 .yuv 01;35
 .cgm 01;35
 .emf 01;35
+.ico 01;35
 
 # http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
 .axv 01;35
@@ -244,15 +245,22 @@ EXEC 01;32
 .xspf 00;36
 
 # encrypted/key formats
-.gpg 00;33
-.pgp 00;33
-.pub 00;33
-.crt 00;33
-.pem 00;33
-.asc 00;33
+.gpg 01;33
+.pgp 01;33
+.pub 01;33
+.crt 01;33
+.pem 01;33
+.asc 01;33
 
 # python files
-.py  01;32
-.pyc 01;32
-.pyo 01;32
+.py  00;32
+.pyc 00;32
+.pyo 00;32
+
+# non-executable src
+.c   00;36
+.h   00;36
+
+# documents
+.pdf 00;31
 
