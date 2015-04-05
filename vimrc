@@ -1,6 +1,8 @@
 
 execute pathogen#infect()
 
+let vimpager_use_gvim=1
+
 " change leader key from '\' to ';'
 let mapleader=';'
 

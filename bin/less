@@ -297,19 +297,18 @@ less_vim() {
 
 			# Check if the user maximized the window in ~/_gvimrc on Win32, if
 			# so restore on startup.
-			if [ -n "${gvimrc}" -a \( -n "${cygwin}" -o -n "${msys}" \) ]; then
-				simalt=$(grep simalt "${gvimrc}" 2>/dev/null | head_n 1)
+			#if [ -n "${gvimrc}" -a \( -n "${cygwin}" -o -n "${msys}" \) ]; then
+			#	simalt=$(grep simalt "${gvimrc}" 2>/dev/null | head_n 1)
 
-				if [ -n "${simalt}" ]; then
-					restore="simalt ~r"
-				fi
-			fi
+			#	if [ -n "${simalt}" ]; then
+			#		restore="simalt ~r"
+			#	fi
+			#fi
 
 			${vim_cmd} \
 				-u "${vimrc}" \
 				--cmd 'let vimpager=1 | source ~/.vim/less.vim | set nocp' \
-				-c "set foldlevel=999 | set nonu | silent! set nornu |
-				    ${colors:-echo} | ${restore:-echo} | set lines=${lines} | set columns=${cols}" \
+				-c "set foldlevel=999 | set nonu | silent! set nornu" \
 				-i NONE \
 				"${@:--}" &
 			;;
