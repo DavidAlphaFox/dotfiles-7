@@ -101,7 +101,8 @@ SOCK 01;35	# socket
 DOOR 01;35	# door
 BLK 40;33;01	# block device driver
 CHR 40;33;01	# character device driver
-ORPHAN 40;31;01 # symlink to nonexistent file, or non-stat'able file
+ORPHAN 40;31 # symlink to nonexistent file, or non-stat'able file
+MISSING 40;30;01 # nonexistent file pointed to by symlink
 SETUID 37;41	# file that is setuid (u+s)
 SETGID 30;43	# file that is setgid (g+s)
 CAPABILITY 30;41	# file with capability
@@ -117,11 +118,11 @@ EXEC 01;32
 # (and any comments you want to add after a '#')
 
 # If you use DOS-style suffixes, you may want to uncomment the following:
-.cmd 01;32 # executables (bright green)
-.exe 01;32
-.com 01;32
-.btm 01;32
-.bat 01;32
+#.cmd 01;32 # executables (bright green)
+#.exe 01;32
+#.com 01;32
+#.btm 01;32
+#.bat 01;32
 # Or if you want to colorize scripts even if they do not have the
 # executable bit actually set.
 #.sh  01;32
@@ -252,15 +253,14 @@ EXEC 01;32
 .pem 01;33
 .asc 01;33
 
-# python files
-.py  00;32
-.pyc 00;32
-.pyo 00;32
-
-# non-executable src
-.c   00;36
-.h   00;36
-
 # documents
-.pdf 00;31
+.pdf   00;35
+.doc   00;35
+.docx  00;35
+.odg   00;35
+.odf   00;35
+.xls   00;35
+.xlsx  00;35
+.dia   00;35
+.rtf   00;35
 
