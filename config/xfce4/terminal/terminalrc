@@ -1,7 +1,4 @@
 [Configuration]
-ColorCursor=#b0b0b0b0b0b0
-ColorForeground=#b0b0b0b0b0b0
-ColorBackground=#000000000000
 Term=xterm-color
 FontName=White Rabbit 15
 MiscAlwaysShowTabs=FALSE
@@ -25,15 +22,16 @@ ScrollingBar=TERMINAL_SCROLLBAR_NONE
 TitleMode=TERMINAL_TITLE_REPLACE
 TitleInitial=
 Encoding=UTF-8
-ColorBold=#93a1a1
-TabActivityColor=#dc322f
 BackgroundMode=TERMINAL_BACKGROUND_IMAGE
 CommandLoginShell=TRUE
 FontAllowBold=FALSE
 BackgroundImageFile=/.root/.extra/space-desktop.jpg
 BackgroundDarkness=0.660000
-ColorPalette=#000000000000;#bfbf60606060;#7810b3337810;#fefedfdf8585;#52529191dede;#98e17346ca3d;#648dca3dca3d;#970a970a970a;#202020202020;#e666a17c765d;#39394d4d3939;#592959592d2d;#3b3b58588080;#48483c3c6c6c;#333366666666;#e0e0e0e0e0e0
 ShortcutsNoMnemonics=TRUE
 ShortcutsNoMenukey=TRUE
 CommandUpdateRecords=FALSE
+ColorCursor=#b0b0b0b0b0b0
+ColorForeground=#b0b0b0b0b0b0
+ColorBackground=#000000000000
+ColorPalette=#000000000000;#bfbf60606060;#7878b3b37878;#fefedfdf8585;#52529191dede;#98987373c9c9;#6464c9c9c9c9;#969696969696;#202020202020;#e6e6a1a17676;#3d3d66663d3d;#66665c5c3333;#292947476666;#525233336666;#333366666666;#e0e0e0e0e0e0
 
