@@ -252,6 +252,9 @@ EXEC 01;32
 .crt 01;33
 .pem 01;33
 .asc 01;33
+.3des 01;33
+.aes  01;33
+.enc  01;33
 
 # documents
 .pdf   00;35
@@ -263,4 +266,13 @@ EXEC 01;32
 .xlsx  00;35
 .dia   00;35
 .rtf   00;35
+.dot   00;35
+.dotx  00;35
+.ppt   00;35
+.pptx  00;35
+.fla   00;35
+.psd   00;35
+
+# scripts
+.py    00;32
 
