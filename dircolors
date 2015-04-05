@@ -92,83 +92,85 @@ TERM xterm-debian
 #NORMAL 00	# no color code at all
 #FILE 00	# regular file: use no color at all
 RESET 0		# reset to "normal" color
-DIR 01;34	# directory
-LINK 01;36	# symbolic link.  (If you set this to 'target' instead of a
+DIR 00;34	# directory
+LINK 00;36	# symbolic link.  (If you set this to 'target' instead of a
                 # numerical value, the color is as for the file pointed to.)
 MULTIHARDLINK 00	# regular file with more than one link
-FIFO 40;33	# pipe
-SOCK 01;35	# socket
-DOOR 01;35	# door
-BLK 40;33;01	# block device driver
-CHR 40;33;01	# character device driver
-ORPHAN 40;31;01 # symlink to nonexistent file, or non-stat'able file
-SETUID 37;41	# file that is setuid (u+s)
+FIFO 00;33	# pipe
+SOCK 00;33	# socket
+DOOR 00;33	# door
+BLK 31;01	# block device driver
+CHR 00;33	# character device driver
+ORPHAN 00;31 # symlink to nonexistent file, or non-stat'able file
+MISSING 01;30 # nonexistent file pointed to by symlink
+SETUID 30;41	# file that is setuid (u+s)
 SETGID 30;43	# file that is setgid (g+s)
 CAPABILITY 30;41	# file with capability
 STICKY_OTHER_WRITABLE 30;42 # dir that is sticky and other-writable (+t,o+w)
-OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
-STICKY 37;44	# dir with the sticky bit set (+t) and not other-writable
+OTHER_WRITABLE 00;32 # dir that is other-writable (o+w) and not sticky
+STICKY 30;44	# dir with the sticky bit set (+t) and not other-writable
 
 # This is for files with execute permission:
-EXEC 01;32
+EXEC 01;33
 
 # List any file extensions like '.gz' or '.tar' that you would like ls
 # to colorize below. Put the extension, a space, and the color init string.
 # (and any comments you want to add after a '#')
 
 # If you use DOS-style suffixes, you may want to uncomment the following:
-#.cmd 01;32 # executables (bright green)
-#.exe 01;32
-#.com 01;32
-#.btm 01;32
-#.bat 01;32
+.cmd 01;32 # executables (bright green)
+.exe 01;32
+.com 01;32
+.btm 01;32
+.bat 01;32
 # Or if you want to colorize scripts even if they do not have the
 # executable bit actually set.
-#.sh  01;32
-#.csh 01;32
+.sh  01;32
+.csh 01;32
+.py  01;32
 
  # archives or compressed (bright red)
-.tar 01;31
-.tgz 01;31
-.arc 01;31
-.arj 01;31
-.taz 01;31
-.lha 01;31
-.lz4 01;31
-.lzh 01;31
-.lzma 01;31
-.tlz 01;31
-.txz 01;31
-.tzo 01;31
-.t7z 01;31
-.zip 01;31
-.z   01;31
-.Z   01;31
-.dz  01;31
-.gz  01;31
-.lrz 01;31
-.lz  01;31
-.lzo 01;31
-.xz  01;31
-.bz2 01;31
-.bz  01;31
-.tbz 01;31
-.tbz2 01;31
-.tz  01;31
-.deb 01;31
-.rpm 01;31
-.jar 01;31
-.war 01;31
-.ear 01;31
-.sar 01;31
-.rar 01;31
-.alz 01;31
-.ace 01;31
-.zoo 01;31
-.cpio 01;31
-.7z  01;31
-.rz  01;31
-.cab 01;31
+.tar 01;34
+.tgz 01;34
+.arc 01;34
+.arj 01;34
+.taz 01;34
+.lha 01;34
+.lz4 01;34
+.lzh 01;34
+.lzma 01;34
+.tlz 01;34
+.txz 01;34
+.tzo 01;34
+.t7z 01;34
+.zip 01;34
+.z   01;34
+.Z   01;34
+.dz  01;34
+.gz  01;34
+.lrz 01;34
+.lz  01;34
+.lzo 01;34
+.xz  01;34
+.bz2 01;34
+.bz  01;34
+.tbz 01;34
+.tbz2 01;34
+.tz  01;34
+.deb 01;34
+.rpm 01;34
+.jar 01;34
+.war 01;34
+.ear 01;34
+.sar 01;34
+.rar 01;34
+.alz 01;34
+.ace 01;34
+.zoo 01;34
+.cpio 01;34
+.7z  01;34
+.rz  01;34
+.cab 01;34
 
 # image formats
 .jpg 01;35
@@ -216,6 +218,7 @@ EXEC 01;32
 .yuv 01;35
 .cgm 01;35
 .emf 01;35
+.ico 01;35
 
 # http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
 .axv 01;35
@@ -224,18 +227,18 @@ EXEC 01;32
 .ogx 01;35
 
 # audio formats
-.aac 00;36
-.au 00;36
-.flac 00;36
-.m4a 00;36
-.mid 00;36
-.midi 00;36
-.mka 00;36
-.mp3 00;36
-.mpc 00;36
-.ogg 00;36
-.ra 00;36
-.wav 00;36
+.aac 01;35
+.au 01;35
+.flac 01;35
+.m4a 01;35
+.mid 01;35
+.midi 01;35
+.mka 01;35
+.mp3 01;35
+.mpc 01;35
+.ogg 01;35
+.ra 01;35
+.wav 01;35
 
 # http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
 .axa 00;36
@@ -244,14 +247,30 @@ EXEC 01;32
 .xspf 00;36
 
 # encrypted/key formats
-.gpg 00;33
-.pgp 00;33
-.pub 00;33
-.crt 00;33
-.pem 00;33
+.gpg 01;36
+.pgp 01;36
+.pub 01;36
+.crt 01;36
+.pem 01;36
+.asc 01;36
+.3des 01;36
+.aes  01;36
+.enc  01;36
 
-# python files
-.py  01;32
-.pyc 01;32
-.pyo 01;32
+# documents
+.pdf   00;35
+.doc   00;35
+.docx  00;35
+.odg   00;35
+.odf   00;35
+.xls   00;35
+.xlsx  00;35
+.dia   00;35
+.rtf   00;35
+.dot   00;35
+.dotx  00;35
+.ppt   00;35
+.pptx  00;35
+.fla   00;35
+.psd   00;35
 
