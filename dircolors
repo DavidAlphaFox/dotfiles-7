@@ -100,7 +100,7 @@ FIFO 00;33	# pipe
 SOCK 00;33	# socket
 DOOR 00;33	# door
 BLK 31;01	# block device driver
-CHR 31;01	# character device driver
+CHR 00;33	# character device driver
 ORPHAN 00;31 # symlink to nonexistent file, or non-stat'able file
 MISSING 01;30 # nonexistent file pointed to by symlink
 SETUID 30;41	# file that is setuid (u+s)
