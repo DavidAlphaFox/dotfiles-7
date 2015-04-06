@@ -24,7 +24,8 @@ set completion-query-items -1
 set page-completions off
 # classify like ls -F
 set visible-stats on
-set colored-stats on
+#TODO: reenable after bash bug is fixed (ln=target broken)
+#set colored-stats on
 # do not insert characters from completion that match characters that follow the cursor
 set skip-completed-text on
 # show the current mode in prompt

@@ -27,11 +27,10 @@ BoldGreen=61,102,61
 Yellow=230,230,120
 BoldYellow=102,102,51
 Blue=82,145,222
-BoldBlue=41,71,102
+BoldBlue=56,98,140
 Magenta=152,115,201
-BoldMagenta=82,51,102
+BoldMagenta=102,64,128
 Cyan=100,201,201
 BoldCyan=51,102,102
 White=150,150,150
 BoldWhite=224,224,224
-

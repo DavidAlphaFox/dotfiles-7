@@ -93,14 +93,14 @@ TERM xterm-debian
 #FILE 00	# regular file: use no color at all
 RESET 0		# reset to "normal" color
 DIR 00;34	# directory
-LINK 00;36	# symbolic link.  (If you set this to 'target' instead of a
+LINK target	# symbolic link.  (If you set this to 'target' instead of a
                 # numerical value, the color is as for the file pointed to.)
 MULTIHARDLINK 00	# regular file with more than one link
 FIFO 00;33	# pipe
-SOCK 00;33	# socket
+SOCK 01;31	# socket
 DOOR 00;33	# door
-BLK 31;01	# block device driver
-CHR 00;33	# character device driver
+BLK 00;35	# block device driver
+CHR 01;35	# character device driver
 ORPHAN 00;31 # symlink to nonexistent file, or non-stat'able file
 MISSING 01;30 # nonexistent file pointed to by symlink
 SETUID 30;41	# file that is setuid (u+s)
@@ -111,25 +111,25 @@ OTHER_WRITABLE 00;32 # dir that is other-writable (o+w) and not sticky
 STICKY 30;44	# dir with the sticky bit set (+t) and not other-writable
 
 # This is for files with execute permission:
-EXEC 01;33
+EXEC 00;36
 
 # List any file extensions like '.gz' or '.tar' that you would like ls
 # to colorize below. Put the extension, a space, and the color init string.
 # (and any comments you want to add after a '#')
 
 # If you use DOS-style suffixes, you may want to uncomment the following:
-.cmd 01;32 # executables (bright green)
-.exe 01;32
-.com 01;32
-.btm 01;32
-.bat 01;32
+.cmd 01;36 # executables
+.exe 01;36
+.com 01;36
+.btm 01;36
+.bat 01;36
 # Or if you want to colorize scripts even if they do not have the
 # executable bit actually set.
-.sh  01;32
-.csh 01;32
-.py  01;32
+.sh  01;36
+.csh 01;36
+.py  01;36
 
- # archives or compressed (bright red)
+ # archives or compressed
 .tar 01;34
 .tgz 01;34
 .arc 01;34
@@ -247,15 +247,16 @@ EXEC 01;33
 .xspf 00;36
 
 # encrypted/key formats
-.gpg 01;36
-.pgp 01;36
-.pub 01;36
-.crt 01;36
-.pem 01;36
-.asc 01;36
-.3des 01;36
-.aes  01;36
-.enc  01;36
+.gpg  01;33
+.pgp  01;33
+.pub  01;33
+.crt  01;33
+.pem  01;33
+.asc  01;33
+.3des 01;33
+.aes  01;33
+.enc  01;33
+.sig  01;33
 
 # documents
 .pdf   00;35
@@ -273,4 +274,18 @@ EXEC 01;33
 .pptx  00;35
 .fla   00;35
 .psd   00;35
+
+# source code files
+.c    01;32
+.h    01;32
+.java 01;32
+.js   01;32
+.vim  01;32
+
+# data files
+.json 00;33
+.xml  00;33
+.properties 00;33
+.yml  00;33
+
 
