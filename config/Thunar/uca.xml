@@ -11,9 +11,31 @@
 	<directories/>
 </action>
 <action>
+	<icon>preferences-system-windows</icon>
+	<name>Open Windows Explorer Here</name>
+	<unique-id>1428366686907315-4</unique-id>
+	<command>explorer.exe &quot;`cygpath -w %f`&quot;</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>preferences-system-windows</icon>
+	<name>Open with Windows</name>
+	<unique-id>1428366808575689-5</unique-id>
+	<command>cygstart %F</command>
+	<description></description>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
 	<icon>file-roller</icon>
-	<name>Archive...</name>
-	<unique-id>1428087666445200-2</unique-id>
+	<name>Create Archive...</name>
+	<unique-id>1428366523382071-1</unique-id>
 	<command>file-roller -d %F</command>
 	<description></description>
 	<patterns>*</patterns>
@@ -26,8 +48,8 @@
 </action>
 <action>
 	<icon>file-roller</icon>
-	<name>Extract...</name>
-	<unique-id>1428091116108859-4</unique-id>
+	<name>Extract To...</name>
+	<unique-id>1428366539298094-2</unique-id>
 	<command>file-roller -f %F</command>
 	<description></description>
 	<patterns>*.xz;*.tar;*.bz2;*.gz;*.zip;*.lzma</patterns>
