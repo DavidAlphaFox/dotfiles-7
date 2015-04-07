@@ -46,3 +46,5 @@
  seahorse-tool
  ctags
  cygutils-extra
+ libgnome-keyring0
+
