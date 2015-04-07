@@ -219,6 +219,7 @@ EXEC 00;36
 .cgm 01;35
 .emf 01;35
 .ico 01;35
+.css 01;35
 
 # http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
 .axv 01;35
@@ -274,6 +275,7 @@ EXEC 00;36
 .pptx  00;35
 .fla   00;35
 .psd   00;35
+.html  00;35
 
 # source code files
 .c    01;32
