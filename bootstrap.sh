@@ -6,7 +6,7 @@ MIRROR=http://mirrors.kernel.org/sourceware/cygwin
 PORTS_MIRROR=http://mirrors.kernel.org/sources.redhat.com/cygwinports
 PORTS_GPG=http://cygwinports.org/ports.gpg
 DOTFILES_GIT=https://github.com/starlight/dotfiles.git
-BASE_PKGS="chere,ctags,git-completion,psmisc,screen,tree,vim,gvim,xfce4-session,gtk2.0-engines-murrine,cygutils-extra,cygutils-x11,alacarte,file-roller,dos2unix,seahorse,seahorse-tool"
+BASE_PKGS="ctags,git-completion,psmisc,screen,tree,vim,gvim,xfce4-session,gtk2.0-engines-murrine,cygutils-extra,cygutils-x11,alacarte,file-roller,dos2unix,seahorse,seahorse-tool"
 
 if [ ! -f "/.required" ]; then
     cd /bin
@@ -49,10 +49,6 @@ else
         mkdir -p .user/$i
         ln -s .user/$i $i
     done
-
-    echo "Installing 'Shell...' context menu"
-    chere -u
-    chere -icm -t mintty -s bash -e 'Shell...'
 
     echo "Placing XWin shortcut into Startup"
     mkshortcut -w "$HOME" -s min -n cygwinx -d startxwin-rootless -a '-w hide /bin/sh.exe ~/.bin/startxwin-rootless' /bin/mintty.exe
