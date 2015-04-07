@@ -2,7 +2,6 @@
  alternatives
  base-cygwin
  base-files
- chere
  cygcheck-dep
  cygutils-x11
  dos2unix
@@ -47,4 +46,3 @@
  seahorse-tool
  ctags
  cygutils-extra
-
