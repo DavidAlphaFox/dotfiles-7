@@ -19,4 +19,4 @@
 [diff]
     tool = vimdiff
 [credential]
-	helper = cache --timeout=300
+	helper = cache --timeout=1800
