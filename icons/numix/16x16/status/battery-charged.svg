@@ -13,7 +13,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="battery-100.svg">
+   sodipodi:docname="battery-100-charging.svg">
   <metadata
      id="metadata12">
     <rdf:RDF>
@@ -36,34 +36,33 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="998"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
      id="namedview8"
      showgrid="true"
-     inkscape:zoom="17.205451"
-     inkscape:cx="-4.2201549"
-     inkscape:cy="9.3671476"
+     inkscape:zoom="10.727273"
+     inkscape:cx="9.9462951"
+     inkscape:cy="11.51526"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg2">
     <inkscape:grid
        type="xygrid"
-       id="grid2985"
+       id="grid2989"
        empspacing="5"
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true" />
   </sodipodi:namedview>
   <path
-     id="path3780"
-     d="m 6,2.7647059 0,1.5294117 -2,0 L 4,15 l 8,0 0,-10.7058824 -2,0 0,-1.5294117 -4,0 z m 4.083333,3.8235293 1.25,1.4099264 -4.1666663,4.7077204 c -0.854701,-0.965309 -1.6452992,-1.854544 -2.5,-2.8198528 l 1.25,-1.4099264 1.25,1.4099264 2.9166663,-3.297794 z"
-     style="fill:#000000;fill-opacity:0.30196078"
-     inkscape:connector-curvature="0" />
+     style="opacity:0.3"
+     d="M 6 2.75 L 6 4.28125 L 4 4.28125 L 4 14 L 4 15 L 12 15 L 12 14 L 12 4.28125 L 10 4.28125 L 10 2.75 L 6 2.75 z M 9.34375 5.0625 L 8.65625 8.875 L 10.65625 8.875 L 6.84375 14 L 6.6875 14 L 7.34375 10.40625 L 5.34375 10.40625 L 9.34375 5.0625 z "
+     id="path4" />
   <path
-     style="fill:#dcdcdc;fill-opacity:1"
-     d="m 6,2 0,2 -2,0 0,10 8,0 0,-10 -2,0 0,-2 z m 4.083333,3.8235293 1.25,1.4099264 -4.1666663,4.7077213 c -0.854701,-0.96531 -1.6452992,-1.854545 -2.5,-2.8198537 l 1.25,-1.4099264 1.25,1.4099264 z"
-     id="path2991"
+     d="m 6.0000002,2 0,2 L 4,4 l 0,10 8,0 0,-10 -1.999999,0 0,-2 z M 9.3333335,4.2941176 8.666667,8.117647 l 2,0 -4.0000001,5.352941 0.6666667,-3.8235292 -2.0000002,0 z"
+     id="path6"
      inkscape:connector-curvature="0"
+     style="fill:#dcdcdc"
      sodipodi:nodetypes="cccccccccccccccc" />
 </svg>

@@ -9,7 +9,7 @@ nmap <silent> <leader>ve :e $MYVIMRC<CR>
 nmap <silent> <leader>vs :so $MYVIMRC<CR>
 
 " :W sudo saves the file (doesn't work on cygwin)
-" command! W w !sudo tee % > /dev/null
+command! W w !sudo tee % > /dev/null
 
 " hide gvim toolbar, scrollbars
 set go-=T
@@ -247,7 +247,7 @@ function! VisualSelection(direction, extra_filter) range
 endfunction
 
 " Toggle paste mode on and off
-map <silent> <leader>pp :setlocal paste!<CR>
+map <silent> <leader>p :setlocal paste!<CR>
 
 " activate closetag plugin for xml types
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
