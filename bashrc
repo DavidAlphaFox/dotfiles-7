@@ -35,6 +35,11 @@ PROMPT_DIRTRIM=3
 # turn off flow-control
 [ -z "$CYGWIN" ] && stty -ixon
 
+if [ -n "`groups | grep Administrators`" ]; then
+     SUPERUSER=true
+fi
+
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
