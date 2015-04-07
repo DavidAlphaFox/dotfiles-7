@@ -45,4 +45,6 @@
  zoo
  _autorebase
  seahorse-tool
-ctags
+ ctags
+ cygutils-extra
+
