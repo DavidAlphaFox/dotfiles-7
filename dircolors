@@ -288,3 +288,6 @@ EXEC 00;36
 .properties 00;33
 .yml  00;33
 
+# txt files
+.txt  01;37
+.md   01;37

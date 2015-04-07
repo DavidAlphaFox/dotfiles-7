@@ -16,21 +16,16 @@
         <value type="int" value="3"/>
         <value type="int" value="7"/>
         <value type="int" value="6"/>
+        <value type="int" value="9"/>
         <value type="int" value="15"/>
         <value type="int" value="5"/>
         <value type="int" value="2"/>
       </property>
+      <property name="autohide" type="bool" value="false"/>
       <property name="nrows" type="uint" value="1"/>
       <property name="disable-struts" type="bool" value="true"/>
       <property name="background-style" type="uint" value="0"/>
-      <property name="background-alpha" type="uint" value="24"/>
-      <property name="autohide-behavior" type="uint" value="0"/>
-      <property name="background-color" type="array">
-        <value type="uint" value="65535"/>
-        <value type="uint" value="65535"/>
-        <value type="uint" value="65535"/>
-        <value type="uint" value="65535"/>
-      </property>
+      <property name="background-alpha" type="uint" value="66"/>
     </property>
   </property>
   <property name="plugins" type="empty">
