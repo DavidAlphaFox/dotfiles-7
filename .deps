@@ -1,8 +1,11 @@
+ _autorebase
  alacarte
  alternatives
  base-cygwin
  base-files
+ ctags
  cygcheck-dep
+ cygutils-extra
  cygutils-x11
  dos2unix
  file-roller
@@ -19,10 +22,13 @@
  hostname
  info
  ipc-utils
+ libcryptui-common
  libexif-common
  libexo1-common
+ libgnome-keyring0
  libgnome-menu3_0
  libmcpp0
+ libnotify
  libpng-doc
  libxfce4util-common
  libXRes1
@@ -35,16 +41,13 @@
  rebase
  screen
  seahorse
+ seahorse-daemon
+ seahorse-tool
  tree
  vim
  vim-minimal
  which
+ xfce4-notifyd
  xfce4-session
  xfconfd
  zoo
- _autorebase
- seahorse-tool
- ctags
- cygutils-extra
- libgnome-keyring0
-

@@ -6,7 +6,7 @@ MIRROR=http://mirrors.kernel.org/sourceware/cygwin
 PORTS_MIRROR=http://mirrors.kernel.org/sources.redhat.com/cygwinports
 PORTS_GPG=http://cygwinports.org/ports.gpg
 DOTFILES_GIT=https://github.com/starlight/dotfiles.git
-BASE_PKGS="ctags,git-completion,psmisc,screen,tree,vim,gvim,xfce4-session,gtk2.0-engines-murrine,cygutils-extra,cygutils-x11,alacarte,file-roller,dos2unix,seahorse,seahorse-tool,libgnome-keyring0"
+BASE_PKGS="alacarte,ctags,cygutils-extra,cygutils-x11,dos2unix,file-roller,git-completion,gtk2.0-engines-murrine,gvim,libcryptui-common,libgnome-keyring0,libnotify,psmisc,screen,seahorse,seahorse-daemon,seahorse-tool,tree,vim,xfce4-notifyd,xfce4-session"
 
 if [ ! -f "/.required" ]; then
     cd /bin
@@ -51,9 +51,9 @@ else
     done
 
     echo "Placing XWin shortcut into Startup"
-    mkshortcut -w "$HOME" -s min -n cygwinx -d startxwin-rootless -a '-w hide /bin/sh.exe ~/.bin/startxwin-rootless' /bin/mintty.exe
+    mkshortcut -w "$HOME" -i/bin/run.exe -j2 -s min -n cygwin-xfce -d startxwin-rootless -a '-w hide /bin/sh.exe ~/.bin/startxwin-rootless' /bin/mintty.exe
 
-    mv cygwinx.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
+    mv cygwin-xfce.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
 
     touch /.installed
 
