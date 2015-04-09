@@ -291,6 +291,12 @@ EXEC 00;36
 .yml  00;33
 
 # txt files
-.txt  01;37
-.md   01;37
+.txt     01;37
+.md      01;37
+*README  01;37
+
+# other
+*LICENSE     01;30
+*desktop.ini 01;30
+*Desktop.ini 01;30
 
