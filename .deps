@@ -1,7 +1,6 @@
  _autorebase
  alacarte
  alternatives
- base-cygwin
  base-files
  ctags
  cygcheck-dep
@@ -9,32 +8,17 @@
  cygutils-x11
  dos2unix
  file-roller
- font-encodings
- garcon
  getent
- girepository-Gtk3.0
  git-completion
- gnome-menus
  gtk2.0-engines-murrine
- gtk2.0-engines-pixmap
- gvfs
  gvim
  hostname
  info
  ipc-utils
  libcryptui-common
- libexif-common
- libexo1-common
- libgnome-keyring0
- libgnome-menu3_0
- libmcpp0
  libnotify
- libpng-doc
- libxfce4util-common
- libXRes1
  login
  man-db
- mcpp
  mintty
  openssl
  psmisc
@@ -49,5 +33,3 @@
  which
  xfce4-notifyd
  xfce4-session
- xfconfd
- zoo
