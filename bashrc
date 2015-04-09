@@ -1,5 +1,7 @@
 #!/bin/bash
 
+umask 022
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
