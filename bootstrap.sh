@@ -23,6 +23,7 @@ else
         exit 1
     fi
     cd $HOME
+    umask 022
     git clone -b cygwin $DOTFILES_GIT .dotfiles
     cd .dotfiles; git checkout -f HEAD
     cd ..
