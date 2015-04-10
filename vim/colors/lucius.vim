@@ -556,6 +556,7 @@ else
     if s:contrast == "low"
         hi FoldColumn   guifg=#a8a8a8
         hi Folded       guifg=#a8a8a8
+        hi LineNr                       guibg=NONE
         hi Pmenu                        guibg=#8a8a8a
         hi PmenuSbar    guifg=#8a8a8a   guibg=#bcbcbc
         hi PmenuThumb                   guibg=#585858
@@ -569,6 +570,7 @@ else
     elseif s:contrast == "high"
         hi FoldColumn   guifg=#c6c6c6
         hi Folded       guifg=#c6c6c6
+        hi LineNr                       guibg=NONE
         hi Pmenu                        guibg=#bcbcbc
         hi PmenuSbar    guifg=#bcbcbc   guibg=#dadada
         hi PmenuThumb                   guibg=#8a8a8a
@@ -582,6 +584,7 @@ else
     else
         hi FoldColumn   guifg=#bcbcbc
         hi Folded       guifg=#bcbcbc
+        hi LineNr                       guibg=NONE
         hi Pmenu                        guibg=#b2b2b2
         hi PmenuSbar    guifg=#b2b2b2   guibg=#d0d0d0
         hi PmenuThumb                   guibg=#808080

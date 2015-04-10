@@ -300,10 +300,14 @@ EXEC 1;36
 .md      1;37
 *README  1;37
 
+# log files
+.log   1;35
+
 # other
 *desktop.ini  1;30
 *Desktop.ini  1;30
 *~            1;30
 .ICEauthority 1;30
 .Xauthority   1;30
+.old          1;30
 
