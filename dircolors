@@ -92,211 +92,218 @@ TERM xterm-debian
 #NORMAL 00	# no color code at all
 #FILE 00	# regular file: use no color at all
 RESET 0		# reset to "normal" color
-DIR 00;34	# directory
-LINK target	# symbolic link.  (If you set this to 'target' instead of a
+DIR   0;34	# directory
+LINK  target	# symbolic link.  (If you set this to 'target' instead of a
                 # numerical value, the color is as for the file pointed to.)
-MULTIHARDLINK 00	# regular file with more than one link
-FIFO 00;33	# pipe
-SOCK 01;31	# socket
-DOOR 00;33	# door
-BLK 00;35	# block device driver
-CHR 01;35	# character device driver
-ORPHAN 00;31 # symlink to nonexistent file, or non-stat'able file
-MISSING 01;30 # nonexistent file pointed to by symlink
-SETUID 30;41	# file that is setuid (u+s)
-SETGID 30;43	# file that is setgid (g+s)
-CAPABILITY 30;41	# file with capability
-STICKY_OTHER_WRITABLE 30;42 # dir that is sticky and other-writable (+t,o+w)
-OTHER_WRITABLE 00;32 # dir that is other-writable (o+w) and not sticky
-STICKY 30;44	# dir with the sticky bit set (+t) and not other-writable
+MULTIHARDLINK         0	# regular file with more than one link
+FIFO                  1;33	# pipe
+SOCK                  1;31	# socket
+DOOR                  1;31	# door
+BLK                   1;35	# block device driver
+CHR                   0;35	# character device driver
+ORPHAN                0;31 # symlink to nonexistent file, or non-stat'able file
+MISSING               1;30 # nonexistent file pointed to by symlink
+SETUID                0;30;41	# file that is setuid (u+s)
+SETGID                0;30;45	# file that is setgid (g+s)
+CAPABILITY            0;30;43	# file with capability
+STICKY_OTHER_WRITABLE 0;30;42 # dir that is sticky and other-writable (+t,o+w)
+OTHER_WRITABLE        0;32 # dir that is other-writable (o+w) and not sticky
+STICKY                0;30;44	# dir with the sticky bit set (+t) and not other-writable
 
 # This is for files with execute permission:
-EXEC 00;36
+EXEC 1;36
 
 # List any file extensions like '.gz' or '.tar' that you would like ls
 # to colorize below. Put the extension, a space, and the color init string.
 # (and any comments you want to add after a '#')
 
 # If you use DOS-style suffixes, you may want to uncomment the following:
-.cmd 01;36 # executables
-.exe 01;36
-.com 01;36
-.btm 01;36
-.bat 01;36
+.cmd 0;36 # executables
+.exe 0;36
+.com 0;36
+.btm 0;36
+.bat 0;36
 # Or if you want to colorize scripts even if they do not have the
 # executable bit actually set.
-.sh  01;36
-.csh 01;36
-.py  01;36
+.sh  0;36
+.csh 0;36
+.py  0;36
 
  # archives or compressed
-.tar 01;34
-.tgz 01;34
-.arc 01;34
-.arj 01;34
-.taz 01;34
-.lha 01;34
-.lz4 01;34
-.lzh 01;34
-.lzma 01;34
-.tlz 01;34
-.txz 01;34
-.tzo 01;34
-.t7z 01;34
-.zip 01;34
-.z   01;34
-.Z   01;34
-.dz  01;34
-.gz  01;34
-.lrz 01;34
-.lz  01;34
-.lzo 01;34
-.xz  01;34
-.bz2 01;34
-.bz  01;34
-.tbz 01;34
-.tbz2 01;34
-.tz  01;34
-.deb 01;34
-.rpm 01;34
-.jar 01;34
-.war 01;34
-.ear 01;34
-.sar 01;34
-.rar 01;34
-.alz 01;34
-.ace 01;34
-.zoo 01;34
-.cpio 01;34
-.7z  01;34
-.rz  01;34
-.cab 01;34
+.tar  1;34
+.tgz  1;34
+.arc  1;34
+.arj  1;34
+.taz  1;34
+.lha  1;34
+.lz4  1;34
+.lzh  1;34
+.lzma 1;34
+.tlz  1;34
+.txz  1;34
+.tzo  1;34
+.t7z  1;34
+.zip  1;34
+.z    1;34
+.Z    1;34
+.dz   1;34
+.gz   1;34
+.lrz  1;34
+.lz   1;34
+.lzo  1;34
+.xz   1;34
+.bz2  1;34
+.bz   1;34
+.tbz  1;34
+.tbz2 1;34
+.tz   1;34
+.deb  1;34
+.rpm  1;34
+.jar  1;34
+.war  1;34
+.ear  1;34
+.sar  1;34
+.rar  1;34
+.alz  1;34
+.ace  1;34
+.zoo  1;34
+.cpio 1;34
+.7z   1;34
+.rz   1;34
+.cab  1;34
 
 # image formats
-.jpg 01;35
-.jpeg 01;35
-.gif 01;35
-.bmp 01;35
-.pbm 01;35
-.pgm 01;35
-.ppm 01;35
-.tga 01;35
-.xbm 01;35
-.xpm 01;35
-.tif 01;35
-.tiff 01;35
-.png 01;35
-.svg 01;35
-.svgz 01;35
-.mng 01;35
-.pcx 01;35
-.mov 01;35
-.mpg 01;35
-.mpeg 01;35
-.m2v 01;35
-.mkv 01;35
-.webm 01;35
-.ogm 01;35
-.mp4 01;35
-.m4v 01;35
-.mp4v 01;35
-.vob 01;35
-.qt  01;35
-.nuv 01;35
-.wmv 01;35
-.asf 01;35
-.rm  01;35
-.rmvb 01;35
-.flc 01;35
-.avi 01;35
-.fli 01;35
-.flv 01;35
-.gl 01;35
-.dl 01;35
-.xcf 01;35
-.xwd 01;35
-.yuv 01;35
-.cgm 01;35
-.emf 01;35
-.ico 01;35
-.css 01;35
+.jpg  0;35
+.jpeg 0;35
+.gif  0;35
+.bmp  0;35
+.pbm  0;35
+.pgm  0;35
+.ppm  0;35
+.tga  0;35
+.xbm  0;35
+.xpm  0;35
+.tif  0;35
+.tiff 0;35
+.png  0;35
+.svg  0;35
+.svgz 0;35
+.mng  0;35
+.pcx  0;35
+.mov  0;35
+.mpg  0;35
+.mpeg 0;35
+.m2v  0;35
+.mkv  0;35
+.webm 0;35
+.ogm  0;35
+.mp4  0;35
+.m4v  0;35
+.mp4v 0;35
+.vob  0;35
+.qt   0;35
+.nuv  0;35
+.wmv  0;35
+.asf  0;35
+.rm   0;35
+.rmvb 0;35
+.flc  0;35
+.avi  0;35
+.fli  0;35
+.flv  0;35
+.gl   0;35
+.dl   0;35
+.xcf  0;35
+.xwd  0;35
+.yuv  0;35
+.cgm  0;35
+.emf  0;35
+.ico  0;35
+.css  0;35
 
 # http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
-.axv 01;35
-.anx 01;35
-.ogv 01;35
-.ogx 01;35
+.axv 0;35
+.anx 0;35
+.ogv 0;35
+.ogx 0;35
 
 # audio formats
-.aac 01;35
-.au 01;35
-.flac 01;35
-.m4a 01;35
-.mid 01;35
-.midi 01;35
-.mka 01;35
-.mp3 01;35
-.mpc 01;35
-.ogg 01;35
-.ra 01;35
-.wav 01;35
+.aac  0;35
+.au   0;35
+.flac 0;35
+.m4a  0;35
+.mid  0;35
+.midi 0;35
+.mka  0;35
+.mp3  0;35
+.mpc  0;35
+.ogg  0;35
+.ra   0;35
+.wav  0;35
 
 # http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
-.axa 00;36
-.oga 00;36
-.spx 00;36
-.xspf 00;36
+.axa  1;36
+.oga  1;36
+.spx  1;36
+.xspf 1;36
 
 # encrypted/key formats
-.gpg  01;33
-.pgp  01;33
-.pub  01;33
-.crt  01;33
-.pem  01;33
-.asc  01;33
-.3des 01;33
-.aes  01;33
-.enc  01;33
-.sig  01;33
+.gpg  0;33
+.pgp  0;33
+.pub  0;33
+.crt  0;33
+.pem  0;33
+.asc  0;33
+.3des 0;33
+.aes  0;33
+.enc  0;33
+.sig  0;33
 
 # documents
-.pdf   00;35
-.doc   00;35
-.docx  00;35
-.odg   00;35
-.odf   00;35
-.xls   00;35
-.xlsx  00;35
-.dia   00;35
-.rtf   00;35
-.dot   00;35
-.dotx  00;35
-.ppt   00;35
-.pptx  00;35
-.fla   00;35
-.psd   00;35
-.html  00;35
+.pdf   1;31
+.doc   1;31
+.docx  1;31
+.odg   1;31
+.odt   1;31
+.odf   1;31
+.xls   1;31
+.xlsx  1;31
+.dia   1;31
+.rtf   1;31
+.dot   1;31
+.dotx  1;31
+.ppt   1;31
+.pptx  1;31
+.fla   1;31
+.psd   1;31
+.html  1;31
 
 # source code files
-.c    01;32
-.h    01;32
-.java 01;32
-.js   01;32
-.vim  01;32
+.c    0;32
+.h    0;32
+.java 0;32
+.js   0;32
+.vim  0;32
 
 # data files
-.json 00;33
-.xml  00;33
-.properties 00;33
-.yml  00;33
+.json       1;33
+.xml        1;33
+.iml        1;33
+.properties 1;33
+.yml        1;33
+.conf       1;33
+.config     1;33
+.cfg        1;33
 
 # txt files
-.txt     01;37
-.md      01;37
-*README  01;37
+.txt     1;37
+.md      1;37
+*README  1;37
 
 # other
-*LICENSE     01;30
-*desktop.ini 01;30
-*Desktop.ini 01;30
+*desktop.ini  1;30
+*Desktop.ini  1;30
+*~            1;30
+.ICEauthority 1;30
+.Xauthority   1;30
 
