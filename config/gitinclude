@@ -18,3 +18,5 @@
     prompt = false
 [diff]
     tool = vimdiff
+[credential]
+	helper = gnome-keyring

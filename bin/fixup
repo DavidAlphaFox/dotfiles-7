@@ -1,5 +1,8 @@
 #!/bin/bash
 
 # creates a commit and squashes it with previous commits, rebase to $1
-git commit -m "fixup! $(git log -1 --format=%s)"
-git rebase -i --autosquash $1
+git commit -m "fixup! $(git log -1 --format=%s)" &&
+git stash
+git rebase -i --autosquash $1 &&
+git stash pop
+
