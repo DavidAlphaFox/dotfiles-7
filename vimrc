@@ -93,13 +93,12 @@ set foldcolumn=0
 " don't fold in w3m
 autocmd FileType w3m set foldlevel=999
 
-" solarized colors
+" colorscheme 
 syntax enable
 set background=dark
-let g:solarized_termtrans=1
-colorscheme solarized
-
-set t_Co=256
+colorscheme lucius
+LuciusBlackLowContrast
+let g:lucius_no_term_bg=1
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac

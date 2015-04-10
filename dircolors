@@ -264,6 +264,7 @@ EXEC 00;36
 .doc   00;35
 .docx  00;35
 .odg   00;35
+.odt   00;35
 .odf   00;35
 .xls   00;35
 .xlsx  00;35
@@ -289,6 +290,9 @@ EXEC 00;36
 .xml  00;33
 .properties 00;33
 .yml  00;33
+.conf 00;33
+.config 00;33
+.cfg    00;33
 
 # txt files
 .txt     01;37
@@ -299,4 +303,5 @@ EXEC 00;36
 *LICENSE     01;30
 *desktop.ini 01;30
 *Desktop.ini 01;30
+*~           01;30
 
