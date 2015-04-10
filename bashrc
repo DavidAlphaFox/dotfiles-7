@@ -1,6 +1,6 @@
 #!/bin/bash
 
-umask 137
+umask 037
 
 # If not running interactively, don't do anything
 case $- in

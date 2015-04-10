@@ -10,38 +10,38 @@ fi
 
 # prompt colors
 T_COLOR="\[\e[1;32m\]# "
-F_COLOR="\[\e[1;31m\]#! "
-W_COLOR="\[\e[1;34m\]"
+F_COLOR="\[\e[0;31m\]#! "
+W_COLOR="\[\e[0;34m\]"
 if [ -n "$VIM" ]; then
     T_COLOR="\[\e[1;32m\]#\[\e[0;32m\]* "
 fi
 
 if [ -n "$SUPERUSER" ]; then
-    T_COLOR="\[\e[0;31m\]# "
+    T_COLOR="\[\e[1;35m\]# "
 fi
 
 if [ ! -O "${PWD}" ]; then
     # writable, dont own
-    W_COLOR="\[\e[1;32m\]"
+    W_COLOR="\[\e[0;32m\]"
 fi
 
 if [ -k "${PWD}" ]; then
     if [ -O "${PWD}" ]; then
         # writable, owned, sticky
-        W_COLOR="\[\e[1;44;30m\]"
+        W_COLOR="\[\e[0;44;30m\]"
     else
         # writable, not owned, sticky
-        W_COLOR="\[\e[1;42;30m\]"
+        W_COLOR="\[\e[0;42;30m\]"
     fi
 fi
 
 if [ ! -w "${PWD}" ]; then
     # not writable
-    W_COLOR="\[\e[0;31m\]"
+    W_COLOR="\[\e[0;33m\]"
 fi
 
 if [ ! -e "${PWD}" ]; then
     #non exist
-    W_COLOR="\[\e[1;31m\]"
+    W_COLOR="\[\e[0;31m\]"
 fi
 

@@ -1,6 +1,6 @@
 [Configuration]
 Term=xterm-color
-FontName=White Rabbit 15
+FontName=White Rabbit 16
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
@@ -30,8 +30,7 @@ BackgroundDarkness=0.800000
 ShortcutsNoMnemonics=TRUE
 ShortcutsNoMenukey=TRUE
 CommandUpdateRecords=FALSE
+ColorPalette=#000000000000;#f33261476147;#3b3b7a7a5757;#71714d8527b4;#214850a38000;#78785151a9a9;#000080008000;#969696969696;#2d2d2d2d2d2d;#ffffa4a47474;#a148e6667eb7;#f851e3cb7c29;#4c5e9df8d999;#eb848d50eb84;#48f6f332f332;#ffffffffffff
 ColorCursor=#b0b0b0b0b0b0
 ColorForeground=#b0b0b0b0b0b0
-ColorBackground=#000000000000
-ColorPalette=#000000000000;#71714b4b2323;#3b3b7a7a5757;#ffffa9a97474;#1a1a48487676;#78785151a9a9;#01017d7d7070;#969696969696;#2d2d2d2d2d2d;#fcfc6c6c8585;#8c8cffff9e9e;#fcfce8e88383;#49499797d0d0;#fdfd7e7efdfd;#0101f9f9f9f9;#ffffffffffff
 
