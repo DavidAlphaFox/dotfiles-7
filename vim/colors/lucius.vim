@@ -559,7 +559,7 @@ else
         hi Pmenu                        guibg=#8a8a8a
         hi PmenuSbar    guifg=#8a8a8a   guibg=#bcbcbc
         hi PmenuThumb                   guibg=#585858
-        hi SignColumn   guifg=#8a8a8a
+        hi SignColumn   guifg=#8a8a8a   guibg=NONE
         hi StatusLine                   guibg=#8a8a8a
         hi StatusLineNC                 guibg=#8a8a8a
         hi TabLine                      guibg=#8a8a8a
@@ -572,7 +572,7 @@ else
         hi Pmenu                        guibg=#bcbcbc
         hi PmenuSbar    guifg=#bcbcbc   guibg=#dadada
         hi PmenuThumb                   guibg=#8a8a8a
-        hi SignColumn   guifg=#bcbcbc
+        hi SignColumn   guifg=#bcbcbc   guibg=NONE
         hi StatusLine                   guibg=#bcbcbc
         hi StatusLineNC                 guibg=#bcbcbc
         hi TabLine                      guibg=#bcbcbc
@@ -585,7 +585,7 @@ else
         hi Pmenu                        guibg=#b2b2b2
         hi PmenuSbar    guifg=#b2b2b2   guibg=#d0d0d0
         hi PmenuThumb                   guibg=#808080
-        hi SignColumn   guifg=#b2b2b2
+        hi SignColumn   guifg=#b2b2b2   guibg=NONE
         hi StatusLine                   guibg=#b2b2b2
         hi StatusLineNC                 guibg=#b2b2b2
         hi TabLine                      guibg=#b2b2b2
