@@ -7,6 +7,10 @@ source ~/.bashrc
 export TERM=xterm
 export LC_ALL="C"
 
+if [ -z "$SSH_ASKPASS" ] && [ -n "$DISPLAY" ]; then
+  export SSH_ASKPASS=/usr/lib/seahorse/seahorse-ssh-askpass
+fi
+
 # local machine settings
 if [ -f ~/.bash_local ]; then
     . ~/.bash_local
