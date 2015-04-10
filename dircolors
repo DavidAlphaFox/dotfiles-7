@@ -92,7 +92,7 @@ TERM xterm-debian
 #NORMAL 00	# no color code at all
 #FILE 00	# regular file: use no color at all
 RESET 0		# reset to "normal" color
-DIR   0;34	# directory
+DIR   1;34	# directory
 LINK  target	# symbolic link.  (If you set this to 'target' instead of a
                 # numerical value, the color is as for the file pointed to.)
 MULTIHARDLINK         0	# regular file with more than one link
@@ -104,11 +104,11 @@ CHR                   0;35	# character device driver
 ORPHAN                0;31 # symlink to nonexistent file, or non-stat'able file
 MISSING               1;30 # nonexistent file pointed to by symlink
 SETUID                0;30;41	# file that is setuid (u+s)
-SETGID                0;30;45	# file that is setgid (g+s)
+SETGID                7;1;31;40	# file that is setgid (g+s)
 CAPABILITY            0;30;43	# file with capability
-STICKY_OTHER_WRITABLE 0;30;42 # dir that is sticky and other-writable (+t,o+w)
-OTHER_WRITABLE        0;32 # dir that is other-writable (o+w) and not sticky
-STICKY                0;30;44	# dir with the sticky bit set (+t) and not other-writable
+STICKY_OTHER_WRITABLE 7;1;32;40 # dir that is sticky and other-writable (+t,o+w)
+OTHER_WRITABLE        1;32 # dir that is other-writable (o+w) and not sticky
+STICKY                7;1;40;34	# dir with the sticky bit set (+t) and not other-writable
 
 # This is for files with execute permission:
 EXEC 1;36
@@ -130,47 +130,47 @@ EXEC 1;36
 .py  0;36
 
  # archives or compressed
-.tar  1;34
-.tgz  1;34
-.arc  1;34
-.arj  1;34
-.taz  1;34
-.lha  1;34
-.lz4  1;34
-.lzh  1;34
-.lzma 1;34
-.tlz  1;34
-.txz  1;34
-.tzo  1;34
-.t7z  1;34
-.zip  1;34
-.z    1;34
-.Z    1;34
-.dz   1;34
-.gz   1;34
-.lrz  1;34
-.lz   1;34
-.lzo  1;34
-.xz   1;34
-.bz2  1;34
-.bz   1;34
-.tbz  1;34
-.tbz2 1;34
-.tz   1;34
-.deb  1;34
-.rpm  1;34
-.jar  1;34
-.war  1;34
-.ear  1;34
-.sar  1;34
-.rar  1;34
-.alz  1;34
-.ace  1;34
-.zoo  1;34
-.cpio 1;34
-.7z   1;34
-.rz   1;34
-.cab  1;34
+.tar  0;34
+.tgz  0;34
+.arc  0;34
+.arj  0;34
+.taz  0;34
+.lha  0;34
+.lz4  0;34
+.lzh  0;34
+.lzma 0;34
+.tlz  0;34
+.txz  0;34
+.tzo  0;34
+.t7z  0;34
+.zip  0;34
+.z    0;34
+.Z    0;34
+.dz   0;34
+.gz   0;34
+.lrz  0;34
+.lz   0;34
+.lzo  0;34
+.xz   0;34
+.bz2  0;34
+.bz   0;34
+.tbz  0;34
+.tbz2 0;34
+.tz   0;34
+.deb  0;34
+.rpm  0;34
+.jar  0;34
+.war  0;34
+.ear  0;34
+.sar  0;34
+.rar  0;34
+.alz  0;34
+.ace  0;34
+.zoo  0;34
+.cpio 0;34
+.7z   0;34
+.rz   0;34
+.cab  0;34
 
 # image formats
 .jpg  0;35
