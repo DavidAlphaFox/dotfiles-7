@@ -1,6 +1,9 @@
 
 execute pathogen#infect()
 
+set encoding=utf-8
+set fileencoding=utf-8
+
 " change leader key from '\' to ';'
 let mapleader=';'
 
