@@ -8,7 +8,7 @@ Job	fieldscur=ABcefgjlrstuvyzMKNHIWOPQDX
 	summclr=6, msgsclr=6, headclr=7, taskclr=6
 Mem	fieldscur=ANopqrstuvbcdefgjlmyzWHIKX
 	winflags=32056, sortindx=13, maxtasks=0
-	summclr=6, msgsclr=4, headclr=6, taskclr=6
+	summclr=6, msgsclr=6, headclr=6, taskclr=6
 Usr	fieldscur=ABDECGfhijlopqrstuvyzMKNWX
 	winflags=32057, sortindx=4, maxtasks=0
 	summclr=3, msgsclr=3, headclr=2, taskclr=3
