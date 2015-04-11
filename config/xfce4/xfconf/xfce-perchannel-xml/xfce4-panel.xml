@@ -37,7 +37,7 @@
       <property name="grouping" type="uint" value="1"/>
       <property name="switch-workspace-on-unminimize" type="bool" value="false"/>
       <property name="show-wireframes" type="bool" value="true"/>
-      <property name="window-scrolling" type="bool" value="false"/>
+      <property name="window-scrolling" type="bool" value="true"/>
       <property name="include-all-workspaces" type="bool" value="true"/>
       <property name="show-handle" type="bool" value="false"/>
     </property>

@@ -254,8 +254,9 @@ map <silent> <leader>p :setlocal paste!<CR>
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
 autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
 
-" activate spell check for git commits
+" activate spell check for git commits, and other types
 autocmd FileType gitcommit set spell spelllang=en_us
+autocmd FileType markdown set spell spelllang=en_us
 
 " supertab/autocomplete options
 set omnifunc=syntaxcomplete#Complete
