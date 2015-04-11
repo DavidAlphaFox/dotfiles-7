@@ -1,6 +1,6 @@
 [Configuration]
 Term=xterm-color
-FontName=White Rabbit 14
+FontName=White Rabbit 16
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
@@ -22,15 +22,14 @@ ScrollingBar=TERMINAL_SCROLLBAR_NONE
 TitleMode=TERMINAL_TITLE_REPLACE
 TitleInitial=
 Encoding=UTF-8
-BackgroundMode=TERMINAL_BACKGROUND_IMAGE
 CommandLoginShell=TRUE
-FontAllowBold=FALSE
-BackgroundImageFile=/.root/.extra/space-desktop.jpg
-BackgroundDarkness=0.950000
-ShortcutsNoMnemonics=TRUE
-ShortcutsNoMenukey=TRUE
+BackgroundDarkness=1.000000
 CommandUpdateRecords=FALSE
 ColorPalette=#000000000000;#f33261476147;#3b3b7a7a5757;#71714d8527b4;#214850a38000;#78785151a9a9;#000080008000;#969696969696;#2d2d2d2d2d2d;#ffffa4a47474;#a148e6667eb7;#f851e3cb7c29;#4c5e9df8d999;#eb848d50eb84;#48f6f332f332;#ffffffffffff
 ColorCursor=#b0b0b0b0b0b0
 ColorForeground=#b0b0b0b0b0b0
+FontAllowBold=FALSE
+ScrollingOnOutput=FALSE
+ScrollingLines=2048
+ColorBackground=#121212121212
 

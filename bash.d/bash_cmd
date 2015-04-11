@@ -9,29 +9,29 @@ if ! [ -S "${SSH_AUTH_SOCK}" ]; then
 fi
 
 # prompt colors
-T_COLOR="\[\e[1;32m\]# "
-F_COLOR="\[\e[0;31m\]#! "
-W_COLOR="\[\e[0;34m\]"
+T_COLOR="\[\e[1;32m\]\$ "
+F_COLOR="\[\e[0;31m\]\$! "
+W_COLOR="\[\e[1;34m\]"
 if [ -n "$VIM" ]; then
-    T_COLOR="\[\e[1;32m\]#\[\e[0;32m\]* "
+    T_COLOR="\[\e[1;32m\]\$\[\e[0;32m\]* "
 fi
 
 if [ -n "$SUPERUSER" ]; then
-    T_COLOR="\[\e[1;35m\]# "
+    T_COLOR="\[\e[1;35m\]\$ "
 fi
 
 if [ ! -O "${PWD}" ]; then
     # writable, dont own
-    W_COLOR="\[\e[0;32m\]"
+    W_COLOR="\[\e[1;32m\]"
 fi
 
 if [ -k "${PWD}" ]; then
     if [ -O "${PWD}" ]; then
         # writable, owned, sticky
-        W_COLOR="\[\e[0;44;30m\]"
+        W_COLOR="\[\e[4;1;34;40m\]"
     else
         # writable, not owned, sticky
-        W_COLOR="\[\e[0;42;30m\]"
+        W_COLOR="\[\e[4;1;32;40m\]"
     fi
 fi
 
@@ -42,6 +42,6 @@ fi
 
 if [ ! -e "${PWD}" ]; then
     #non exist
-    W_COLOR="\[\e[0;31m\]"
+    W_COLOR="\[\e[0;31m\]!"
 fi
 
