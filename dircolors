@@ -258,6 +258,7 @@ EXEC 1;36
 .aes  0;33
 .enc  0;33
 .sig  0;33
+*key  0;33
 
 # documents
 .pdf   1;31
@@ -292,8 +293,10 @@ EXEC 1;36
 .properties 1;33
 .yml        1;33
 .conf       1;33
-.config     1;33
+*config     1;33
 .cfg        1;33
+*rc         1;33
+.db         1;33
 
 # txt files
 .txt     1;37
