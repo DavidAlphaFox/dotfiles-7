@@ -34,5 +34,5 @@ activity ""
 fit
 
 # Window tabs, second to last line
-hardstatus string '%{= kb} %?%-Lw%50L>%?%{=r}%n*%f %t%?(%u)%?%{-}%?%+Lw%? %=%H%<'
+hardstatus string '%{= Kd} %?%-Lw%50L>%?%{=r }%n*%f %t%?(%u)%?%{-}%?%+Lw%? %=%H%<'
 
