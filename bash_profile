@@ -5,7 +5,6 @@ export PATH=~/.bin:$PATH
 source ~/.bashrc
 
 export TERM=xterm
-export LC_ALL=C
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LC_NUMERIC=en_US.UTF-8
