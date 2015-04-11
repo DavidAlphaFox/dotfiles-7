@@ -93,12 +93,11 @@ set foldcolumn=0
 " don't fold in w3m
 autocmd FileType w3m set foldlevel=999
 
-" colorscheme 
+" colorscheme
 syntax enable
 set background=dark
 colorscheme lucius
 LuciusBlackLowContrast
-let g:lucius_no_term_bg=1
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
@@ -293,7 +292,7 @@ let g:syntastic_auto_loc_list=1
 
 " airline status theme
 set showtabline=1
-let g:airline_theme='bubblegum'
+let g:airline_theme='lucius'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#show_buffers=0
 let g:airline#extensions#tabline#tab_min_count=2
