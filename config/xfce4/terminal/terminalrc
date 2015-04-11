@@ -1,6 +1,6 @@
 [Configuration]
 Term=xterm-color
-FontName=White Rabbit 16
+FontName=White Rabbit 14
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
@@ -26,7 +26,7 @@ BackgroundMode=TERMINAL_BACKGROUND_IMAGE
 CommandLoginShell=TRUE
 FontAllowBold=FALSE
 BackgroundImageFile=/.root/.extra/space-desktop.jpg
-BackgroundDarkness=0.900000
+BackgroundDarkness=0.950000
 ShortcutsNoMnemonics=TRUE
 ShortcutsNoMenukey=TRUE
 CommandUpdateRecords=FALSE
