@@ -6,8 +6,8 @@ Def	fieldscur=AEHIOQTWKNMbcdfgjplrsuvyzX
 Job	fieldscur=ABcefgjlrstuvyzMKNHIWOPQDX
 	winflags=64825, sortindx=0, maxtasks=0
 	summclr=6, msgsclr=6, headclr=7, taskclr=6
-Mem	fieldscur=ANopqrstuvbcdefgjlmyzWHIKX
-	winflags=32056, sortindx=13, maxtasks=0
+Mem	fieldscur=ANopQrstuvbcdEfglmyzHIWKJX
+	winflags=32184, sortindx=13, maxtasks=0
 	summclr=6, msgsclr=6, headclr=6, taskclr=6
 Usr	fieldscur=ABDECGfhijlopqrstuvyzMKNWX
 	winflags=32057, sortindx=4, maxtasks=0
