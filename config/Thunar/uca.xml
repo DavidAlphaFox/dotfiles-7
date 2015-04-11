@@ -11,26 +11,13 @@
 	<directories/>
 </action>
 <action>
-	<icon>preferences-system-windows</icon>
-	<name>Open Windows Explorer Here</name>
-	<unique-id>1428366686907315-4</unique-id>
-	<command>explorer.exe &quot;`cygpath -w %f`&quot;</command>
+	<icon>file-roller</icon>
+	<name>Extract To...</name>
+	<unique-id>1428366539298094-2</unique-id>
+	<command>file-roller -f %F</command>
 	<description></description>
-	<patterns>*</patterns>
-	<directories/>
-</action>
-<action>
-	<icon>preferences-system-windows</icon>
-	<name>Open with Windows</name>
-	<unique-id>1428366808575689-5</unique-id>
-	<command>cygstart %F</command>
-	<description></description>
-	<patterns>*</patterns>
-	<audio-files/>
-	<image-files/>
+	<patterns>*.xz;*.tar;*.bz2;*.gz;*.zip;*.lzma</patterns>
 	<other-files/>
-	<text-files/>
-	<video-files/>
 </action>
 <action>
 	<icon>file-roller</icon>
@@ -47,12 +34,25 @@
 	<video-files/>
 </action>
 <action>
-	<icon>file-roller</icon>
-	<name>Extract To...</name>
-	<unique-id>1428366539298094-2</unique-id>
-	<command>file-roller -f %F</command>
+	<icon>preferences-system-windows</icon>
+	<name>Open with Windows</name>
+	<unique-id>1428366808575689-5</unique-id>
+	<command>cygstart %F</command>
 	<description></description>
-	<patterns>*.xz;*.tar;*.bz2;*.gz;*.zip;*.lzma</patterns>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
 	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>preferences-system-windows</icon>
+	<name>Open Windows Explorer Here</name>
+	<unique-id>1428366686907315-4</unique-id>
+	<command>explorer.exe &quot;`cygpath -w %f`&quot;</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
 </action>
 </actions>
