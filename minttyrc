@@ -16,8 +16,8 @@ ClickTargetMod=alt
 PgUpDnScroll=no
 Printer=Microsoft XPS Document Writer
 BackgroundColour=18,18,18
-ForegroundColour=176,176,176
-CursorColour=176,176,176
+ForegroundColour=150,150,150
+CursorColour=150,150,150
 Black=0,0,0
 BoldBlack=45,45,45
 Red=242,121,121
@@ -33,5 +33,5 @@ BoldMagenta=230,149,230
 Cyan=38,128,128
 BoldCyan=97,242,242
 White=150,150,150
-BoldWhite=255,255,255
+BoldWhite=240,240,240
 
