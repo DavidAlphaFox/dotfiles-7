@@ -21,7 +21,7 @@ set go-=l
 set go-=b
 
 " gvim font
-set guifont=White\ Rabbit\ 14
+set guifont=White\ Rabbit\ 16
 
 " Set lines to the cursor - when moving vertically using j/k
 set so=6
