@@ -17,7 +17,7 @@ if [ -n "$VIM" ]; then
 fi
 
 if [ -n "$SUPERUSER" ]; then
-    T_COLOR="\[\033[1;35m\]\\$ "
+    T_COLOR="\[\033[1;31m\]\\$ "
 fi
 
 if [ ! -O "${PWD}" ]; then
