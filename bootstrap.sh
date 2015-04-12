@@ -18,7 +18,7 @@ if [ ! -f "/.required" ]; then
     touch /.required
     exit 0
 else
-    if [ -f "/.installed" ]; then
+    if [ -f "/etc/setup/.cygwin-xfce" ]; then
         echo -e "\033[31mAlready installed"
         exit 1
     fi
@@ -56,8 +56,8 @@ else
 
     mv cygwin-xfce.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
 
-    touch /.installed
+    ~/.bin/cygleaf > /etc/setup/.cygwin-xfce
 
     echo
-    echo -e "\033[32mReboot/login to start XFCE!"
+    echo -e "\033[32Re-login to start cygwin-xfce"
 fi

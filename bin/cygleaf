@@ -1,7 +1,11 @@
 #!/bin/bash
 
-CYGPIPE="/tmp/cygorphan"
+CYGPIPE="/tmp/cygleaf"
+CYGDEPS="/etc/setup/.cygwin-xfce"
+if [ ! -f "$CYGDEPS" ]; then
+    touch $CYGDEPS
+fi
 mkfifo $CYGPIPE
 echo "checking dependencies, please wait" >&2
-cygcheck-dep -pl | tee $CYGPIPE | cat - .dotfiles/.deps | sort | uniq -u | cat $CYGPIPE - | sort | uniq -d
+cygcheck-dep -pl | tee $CYGPIPE | cat - $CYGDEPS | sort | uniq -u | cat $CYGPIPE - | sort | uniq -d
 rm $CYGPIPE
