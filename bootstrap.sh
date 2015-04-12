@@ -46,7 +46,7 @@ else
     ln -s $HOME /.root
 
     # symlinks into windows User directory
-    for i in Desktop Public Documents Downloads Pictures Music Videos Diagrams Templates; do 
+    for i in Desktop Public Documents Downloads Pictures Music Videos; do 
         mkdir -p .user/$i
         ln -s .user/$i $i
     done

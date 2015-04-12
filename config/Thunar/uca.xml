@@ -36,23 +36,15 @@
 <action>
 	<icon>preferences-system-windows</icon>
 	<name>Open with Windows</name>
-	<unique-id>1428366808575689-5</unique-id>
-	<command>cygstart %F</command>
+	<unique-id>1428863875436960-2</unique-id>
+	<command>cygstart -- %F</command>
 	<description></description>
 	<patterns>*</patterns>
+	<directories/>
 	<audio-files/>
 	<image-files/>
 	<other-files/>
 	<text-files/>
 	<video-files/>
-</action>
-<action>
-	<icon>preferences-system-windows</icon>
-	<name>Open Windows Explorer Here</name>
-	<unique-id>1428366686907315-4</unique-id>
-	<command>explorer.exe &quot;`cygpath -w %f`&quot;</command>
-	<description></description>
-	<patterns>*</patterns>
-	<directories/>
 </action>
 </actions>
