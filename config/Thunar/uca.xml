@@ -11,6 +11,15 @@
 	<directories/>
 </action>
 <action>
+	<icon>preferences-system-windows</icon>
+	<name>Open Command Prompt Here</name>
+	<unique-id>1428877317619263-2</unique-id>
+	<command>cygstart -- cmd.exe /K cd `cygpath -w %f`</command>
+	<description>run windows cmd.exe</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
 	<icon>file-roller</icon>
 	<name>Extract To...</name>
 	<unique-id>1428366539298094-2</unique-id>
