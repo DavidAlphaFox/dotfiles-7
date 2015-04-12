@@ -118,16 +118,17 @@ EXEC 1;36
 # (and any comments you want to add after a '#')
 
 # If you use DOS-style suffixes, you may want to uncomment the following:
-.cmd 0;36 # executables
-.exe 0;36
-.com 0;36
-.btm 0;36
-.bat 0;36
+.cmd  0;36 # executables
+.exe  0;36
+.com  0;36
+.btm  0;36
+.bat  0;36
 # Or if you want to colorize scripts even if they do not have the
 # executable bit actually set.
-.sh  0;36
-.csh 0;36
-.py  0;36
+.sh   0;36
+.csh  0;36
+.fish 0;36
+.dash 0;36
 
  # archives or compressed
 .tar  0;34
@@ -258,6 +259,7 @@ EXEC 1;36
 .aes  0;33
 .enc  0;33
 .sig  0;33
+*key  0;33
 
 # documents
 .pdf   1;31
@@ -284,16 +286,21 @@ EXEC 1;36
 .java 0;32
 .js   0;32
 .vim  0;32
+.py   0;32
 
-# data files
-.json       1;33
-.xml        1;33
-.iml        1;33
-.properties 1;33
-.yml        1;33
-.conf       1;33
-.config     1;33
-.cfg        1;33
+# data/rc files
+.json         1;33
+.xml          1;33
+.iml          1;33
+.properties   1;33
+.yml          1;33
+.conf         1;33
+*config       1;33
+.cfg          1;33
+*rc           1;33
+.db           1;33
+*bash_logout  1;33
+*bash_profile 1;33
 
 # txt files
 .txt     1;37
