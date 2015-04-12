@@ -1,0 +1,7 @@
+#!/bin/bash
+
+CYGPIPE="/tmp/cygorphan"
+mkfifo $CYGPIPE
+echo "checking dependencies, please wait" >&2
+cygcheck-dep -pl | tee $CYGPIPE | cat - .dotfiles/.deps | sort | uniq -u | cat $CYGPIPE - | sort | uniq -d
+rm $CYGPIPE
