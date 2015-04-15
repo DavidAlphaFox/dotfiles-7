@@ -32,4 +32,5 @@ FontAllowBold=FALSE
 ScrollingOnOutput=FALSE
 ScrollingLines=2048
 ColorBackground=#121212121212
+WordChars=-A-Za-z0-9?%&#:_=+@~
 
