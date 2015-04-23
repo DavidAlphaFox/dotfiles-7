@@ -316,3 +316,5 @@ let g:w3m#external_browser = 'chrome'
 let g:w3m#homepage = "http://www.google.com/"
 let g:w3m#lang = 'en_US'
 
+let g:syntastic_javascript_checkers=['jscs', 'jshint']
+
