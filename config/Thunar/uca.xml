@@ -34,6 +34,18 @@
 	<video-files/>
 </action>
 <action>
+	<icon>vim</icon>
+	<name>Open with Vim</name>
+	<unique-id>1429813148236127-2</unique-id>
+	<command>gvim %F</command>
+	<description></description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
 	<icon>file-roller</icon>
 	<name>Extract To...</name>
 	<unique-id>1428950660946004-1</unique-id>

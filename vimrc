@@ -293,7 +293,13 @@ let NERDTreeIgnore=['\.pyc$[[file]]','\.so$[[file]]','\.class$[[file]]']
 let NERDTreeQuitOnOpen=1
 
 " open syntastic error window on errors
-let g:syntastic_auto_loc_list=1
+let g:syntastic_javascript_checkers=['jscs', 'jshint']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
 
 " airline status theme
 set showtabline=1
@@ -315,6 +321,4 @@ let g:airline_section_y='%{airline#util#wrap(airline#extensions#hunks#get_hunks(
 let g:w3m#external_browser = 'chrome'
 let g:w3m#homepage = "http://www.google.com/"
 let g:w3m#lang = 'en_US'
-
-let g:syntastic_javascript_checkers=['jscs', 'jshint']
 
