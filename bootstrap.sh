@@ -12,8 +12,8 @@ cd /bin
 
 lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
 chmod +x apt-cyg
-apt-cyg mirror $MIRROR
-apt-cyg install cygcheck-dep cygutils-extra git wget
+bash -c "apt-cyg mirror http://mirrors.kernel.org/sourceware/cygwin"
+bash -c "apt-cyg install cygcheck-dep cygutils-extra git wget"
 rm apt-cyg
 
 cd $HOME
