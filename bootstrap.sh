@@ -11,6 +11,7 @@ BASE_PKGS="alacarte,ctags,cygutils-x11,dos2unix,file-roller,git-completion,gtk2.
 cd /bin
 
 lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
+chmod +x apt-cyg
 apt-cyg mirror $MIRROR
 apt-cyg install cygcheck-dep cygutils-extra git wget
 rm apt-cyg
