@@ -12,9 +12,7 @@ nmap <silent> <leader>ve :e $MYVIMRC<CR>
 nmap <silent> <leader>vs :so $MYVIMRC<CR>
 
 " :W sudo saves the file (doesn't work on cygwin)
-if has("win32")
-   " TODO: write win32 :W 
-else
+if !has("win32")
     command! W w !sudo tee % > /dev/null
 endif
 
@@ -29,7 +27,7 @@ if has("gui_running")
   if has("gui_gtk2")
     set guifont=White\ Rabbit\ 16
   elseif has("gui_win32")
-    set guifont=Consolas:h12
+    set guifont=Consolas:h16:b:cANSI
   endif
 endif
 
@@ -334,4 +332,8 @@ let g:w3m#lang = 'en_US'
 
 if has("gui_win32")
     let g:gitgutter_enabled = 0
+    source $VIMRUNTIME/mswin.vim
+    behave mswin
 endif
+
+
