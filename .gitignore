@@ -1,9 +1,11 @@
 /config/*
+!/config/mimeapps.list
 !/config/Thunar
 /config/Thunar/accels.scm
 !/config/gitinclude
 !/config/xfce4
 /config/xfce4/*
+!/config/xfce4/helpers.rc
 !/config/xfce4/terminal
 !/config/xfce4/xfconf
 /config/xfce4/xfconf/*

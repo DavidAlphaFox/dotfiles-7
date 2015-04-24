@@ -1,0 +1,17 @@
+[Default Applications]
+application/pdf=cygstart.desktop
+application/x-font-ttf=cygstart.desktop
+image/png=cygstart.desktop
+image/jpeg=cygstart.desktop
+image/bmp=cygstart.desktop
+audio/mpeg=cygstart.desktop
+video/x-msvideo=cygstart.desktop
+
+[Added Associations]
+application/pdf=cygstart.desktop;
+application/x-font-ttf=cygstart.desktop;
+image/png=cygstart.desktop;
+image/jpeg=cygstart.desktop;
+image/bmp=cygstart.desktop;
+audio/mpeg=cygstart.desktop;
+video/x-msvideo=cygstart.desktop;
