@@ -4,6 +4,7 @@
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
     <value type="int" value="1"/>
+    <value type="int" value="2"/>
     <property name="panel-1" type="empty">
       <property name="position" type="string" value="p=9;x=679;y=28"/>
       <property name="length" type="uint" value="25"/>
@@ -26,6 +27,15 @@
       <property name="background-style" type="uint" value="0"/>
       <property name="background-alpha" type="uint" value="80"/>
       <property name="autohide-behavior" type="uint" value="0"/>
+    </property>
+    <property name="panel-2" type="empty">
+      <property name="position" type="string" value="p=10;x=691;y=743"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="autohide" type="bool" value="true"/>
+      <property name="disable-struts" type="bool" value="true"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="10"/>
+      </property>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -81,6 +91,14 @@
         <value type="string" value="com.canonical.indicator.sound"/>
       </property>
       <property name="single-row" type="bool" value="true"/>
+    </property>
+    <property name="plugin-10" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="14294077001.desktop"/>
+        <value type="string" value="14294077162.desktop"/>
+        <value type="string" value="14294077343.desktop"/>
+      </property>
+      <property name="move-first" type="bool" value="true"/>
     </property>
   </property>
 </channel>
