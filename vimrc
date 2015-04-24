@@ -12,7 +12,11 @@ nmap <silent> <leader>ve :e $MYVIMRC<CR>
 nmap <silent> <leader>vs :so $MYVIMRC<CR>
 
 " :W sudo saves the file (doesn't work on cygwin)
-" command! W w !sudo tee % > /dev/null
+if has("win32")
+   " TODO: write win32 :W 
+else
+    command! W w !sudo tee % > /dev/null
+endif
 
 " hide gvim toolbar, scrollbars
 set go-=T
@@ -21,7 +25,13 @@ set go-=l
 set go-=b
 
 " gvim font
-set guifont=White\ Rabbit\ 16
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=White\ Rabbit\ 16
+  elseif has("gui_win32")
+    set guifont=Consolas:h12
+  endif
+endif
 
 " Set lines to the cursor - when moving vertically using j/k
 set so=6
@@ -35,7 +45,7 @@ set langmenu=en
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc,*.so,*.class
-if has("win16") || has("win32")
+if has("win32")
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 else
     set wildignore+=.git\*,.hg\*,.svn\*
@@ -322,3 +332,6 @@ let g:w3m#external_browser = 'chrome'
 let g:w3m#homepage = "http://www.google.com/"
 let g:w3m#lang = 'en_US'
 
+if has("gui_win32")
+    let g:gitgutter_enabled = 0
+endif
