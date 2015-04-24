@@ -8,8 +8,7 @@ PORTS_GPG=http://cygwinports.org/ports.gpg
 DOTFILES_GIT=https://github.com/starlight/dotfiles.git
 BASE_PKGS="alacarte,ctags,cygutils-x11,dos2unix,file-roller,git-completion,gtk2.0-engines-murrine,gvim,libcryptui-common,libnotify,psmisc,screen,seahorse,seahorse-daemon,seahorse-tool,tree,vim,xfce4-notifyd,xfce4-session"
 
-cd /bin
-
+cd /usr/local/bin
 lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
 chmod +x apt-cyg
 bash -c "echo http://mirrors.kernel.org/sourceware/cygwin | apt-cyg mirror"
@@ -48,19 +47,15 @@ for i in Desktop Public Documents Downloads Pictures Music Videos; do
     ln -s .user/$i $i
 done
 
-echo "Placing XWin shortcut into Startup"
-mkshortcut -w "$HOME" -i/bin/run.exe -j2 -s min -n cygwin-xfce -d startxwin-rootless -a '-w hide /bin/sh.exe ~/.bin/startxwin-rootless' /bin/mintty.exe
-
-mv cygwin-xfce.lnk `cygpath $APPDATA`/Microsoft/Windows/Start\ Menu/Programs/Startup/
-
-wget -q -nv -N $EXEURL
-chmod +x ./$CYGEXE
-echo
-echo -e "\033[31mInstalling required packages, run again when complete"
-cygstart -- $CYGEXE -o -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -P $BASE_PKGS
+echo "Placing Cygwin-Xfce shortcut into Start Menu"
+mkshortcut -P -w "$HOME" -i/bin/run.exe -j2 -s min -n Cygwin-Xfce -d startxwin-rootless -a '-w hide -e /bin/bash.exe -l -c ~/.bin/startxwin-rootless' /bin/mintty.exe
 
 ~/.bin/cygleaf > /etc/setup/.cygwin-xfce
 
+cd /bin
+wget -q -nv -N $EXEURL
+chmod +x ./$CYGEXE
 echo
-echo -e "\033[32Re-login to start cygwin-xfce"
+echo -e "\033[31mInstalling remaining packages"
+cygstart -- $CYGEXE -o -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -P $BASE_PKGS
 
