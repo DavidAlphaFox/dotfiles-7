@@ -39,7 +39,6 @@ mv .profile $olddir/
 
 # home directory symlinks
 ln -s $WINHOME .user
-ln -s $HOME /.root
 
 # symlinks into windows User directory
 for i in Desktop Public Documents Downloads Pictures Music Videos; do 
