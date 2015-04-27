@@ -4,8 +4,8 @@ Version=1.0
 Encoding=UTF-8
 Type=X-XFCE-Helper
 X-XFCE-Category=MailReader
-X-XFCE-CommandsWithParameter=/usr/local/bin/outlook "%s"
+X-XFCE-CommandsWithParameter=outlook "%s"
 Icon=outlook
 Name=outlook
-X-XFCE-Commands=/usr/local/bin/outlook
+X-XFCE-Commands=outlook
 
