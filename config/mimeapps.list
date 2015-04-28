@@ -12,6 +12,8 @@ image/vnd.microsoft.icon=windows.desktop
 text/html=windows.desktop
 application/xhtml+xml=windows.desktop
 image/svg+xml=windows.desktop
+application/x-ms-dos-batch=windows.desktop
+application/x-msi=windows.desktop
 
 [Added Associations]
 application/pdf=windows.desktop;
@@ -27,3 +29,5 @@ image/vnd.microsoft.icon=windows.desktop;
 text/html=windows.desktop;
 application/xhtml+xml=windows.desktop;
 image/svg+xml=windows.desktop;
+application/x-ms-dos-batch=windows.desktop;
+application/x-msi=windows.desktop;

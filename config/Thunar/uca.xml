@@ -1,9 +1,9 @@
 <?xml encoding="UTF-8" version="1.0"?>
 <actions>
 <action>
-	<icon>xterm-color</icon>
+	<icon>terminal</icon>
 	<name>Open Terminal Here</name>
-	<unique-id>1430238653835641-3</unique-id>
+	<unique-id>1430248926604855-2</unique-id>
 	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
 	<description>Example for a custom action</description>
 	<patterns>*</patterns>
@@ -20,9 +20,9 @@
 	<directories/>
 </action>
 <action>
-	<icon>wine</icon>
+	<icon>application-default-icon</icon>
 	<name>Open with Windows</name>
-	<unique-id>1430238533137667-1</unique-id>
+	<unique-id>1430248905778588-1</unique-id>
 	<command>cygstart -- %F</command>
 	<description></description>
 	<patterns>*</patterns>
