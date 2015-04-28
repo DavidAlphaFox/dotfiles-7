@@ -10,6 +10,9 @@ image/bmp=windows.desktop
 audio/mpeg=windows.desktop
 video/x-msvideo=windows.desktop
 application/vnd.openxmlformats-officedocument.presentationml.presentation=windows.desktop
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=windows.desktop
+text/csv=windows.desktop
+image/vnd.microsoft.icon=windows.desktop
 
 [Added Associations]
 text/html=exo-web-browser.desktop;
@@ -23,3 +26,6 @@ image/bmp=windows.desktop;
 audio/mpeg=windows.desktop;
 video/x-msvideo=windows.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.presentation=windows.desktop;
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=windows.desktop;
+text/csv=windows.desktop;
+image/vnd.microsoft.icon=windows.desktop;
