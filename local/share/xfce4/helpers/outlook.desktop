@@ -1,11 +1,11 @@
 [Desktop Entry]
-NoDisplay=true
+NoDisplay=false
 Version=1.0
 Encoding=UTF-8
 Type=X-XFCE-Helper
 X-XFCE-Category=MailReader
 X-XFCE-CommandsWithParameter=outlook "%s"
-Icon=outlook
-Name=outlook
+Icon=mail
+Name=Outlook
 X-XFCE-Commands=outlook
 

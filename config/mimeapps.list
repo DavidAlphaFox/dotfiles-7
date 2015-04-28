@@ -6,6 +6,14 @@ image/jpeg=cygstart.desktop
 image/bmp=cygstart.desktop
 audio/mpeg=cygstart.desktop
 video/x-msvideo=cygstart.desktop
+application/x-mozilla-bookmarks=exo-web-browser.desktop
+application/xhtml+xml=exo-web-browser.desktop
+image/svg+xml=exo-web-browser.desktop
+text/html=exo-web-browser.desktop
+video/mpeg=cygstart.desktop
+video/mp4=cygstart.desktop
+video/quicktime=cygstart.desktop
+video/vnd.mpegurl=cygstart.desktop
 
 [Added Associations]
 application/pdf=cygstart.desktop;
@@ -15,3 +23,11 @@ image/jpeg=cygstart.desktop;
 image/bmp=cygstart.desktop;
 audio/mpeg=cygstart.desktop;
 video/x-msvideo=cygstart.desktop;
+application/x-mozilla-bookmarks=exo-web-browser.desktop;
+application/xhtml+xml=exo-web-browser.desktop;
+image/svg+xml=exo-web-browser.desktop;
+text/html=exo-web-browser.desktop;
+video/mpeg=cygstart.desktop;
+video/mp4=cygstart.desktop;
+video/quicktime=cygstart.desktop;
+video/vnd.mpegurl=cygstart.desktop;
