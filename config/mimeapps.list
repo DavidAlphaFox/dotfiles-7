@@ -9,6 +9,7 @@ image/jpeg=windows.desktop
 image/bmp=windows.desktop
 audio/mpeg=windows.desktop
 video/x-msvideo=windows.desktop
+application/vnd.openxmlformats-officedocument.presentationml.presentation=windows.desktop
 
 [Added Associations]
 text/html=exo-web-browser.desktop;
@@ -21,3 +22,4 @@ image/jpeg=windows.desktop;
 image/bmp=windows.desktop;
 audio/mpeg=windows.desktop;
 video/x-msvideo=windows.desktop;
+application/vnd.openxmlformats-officedocument.presentationml.presentation=windows.desktop;
