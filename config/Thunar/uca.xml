@@ -11,9 +11,9 @@
 	<directories/>
 </action>
 <action>
-	<icon>terminal</icon>
+	<icon>preferences-system-windows</icon>
 	<name>Open Command Prompt Here</name>
-	<unique-id>1430238624398252-2</unique-id>
+	<unique-id>1430240763402190-7</unique-id>
 	<command>cygstart -- cmd.exe /K cd `cygpath -w %f`</command>
 	<description>run windows cmd.exe</description>
 	<patterns>*</patterns>
@@ -46,18 +46,18 @@
 	<text-files/>
 </action>
 <action>
-	<icon>file-roller</icon>
+	<icon>tap-extract-to</icon>
 	<name>Extract To...</name>
-	<unique-id>1428950660946004-1</unique-id>
+	<unique-id>1430240358780352-5</unique-id>
 	<command>file-roller -f %F</command>
 	<description></description>
 	<patterns>*.xz;*.tar;*.bz2;*.gz;*.zip;*.lzma;*.7z</patterns>
 	<other-files/>
 </action>
 <action>
-	<icon>file-roller</icon>
+	<icon>tap-create</icon>
 	<name>Create Archive...</name>
-	<unique-id>1428366523382071-1</unique-id>
+	<unique-id>1430240408217069-6</unique-id>
 	<command>file-roller -d %F</command>
 	<description></description>
 	<patterns>*</patterns>
