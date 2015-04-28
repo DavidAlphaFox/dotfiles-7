@@ -1,9 +1,9 @@
 <?xml encoding="UTF-8" version="1.0"?>
 <actions>
 <action>
-	<icon>utilities-terminal</icon>
+	<icon>xterm-color</icon>
 	<name>Open Terminal Here</name>
-	<unique-id>1428043808138295-1</unique-id>
+	<unique-id>1430238653835641-3</unique-id>
 	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
 	<description>Example for a custom action</description>
 	<patterns>*</patterns>
@@ -11,18 +11,18 @@
 	<directories/>
 </action>
 <action>
-	<icon>preferences-system-windows</icon>
+	<icon>terminal</icon>
 	<name>Open Command Prompt Here</name>
-	<unique-id>1428877317619263-2</unique-id>
+	<unique-id>1430238624398252-2</unique-id>
 	<command>cygstart -- cmd.exe /K cd `cygpath -w %f`</command>
 	<description>run windows cmd.exe</description>
 	<patterns>*</patterns>
 	<directories/>
 </action>
 <action>
-	<icon>preferences-system-windows</icon>
+	<icon>wine</icon>
 	<name>Open with Windows</name>
-	<unique-id>1428863875436960-2</unique-id>
+	<unique-id>1430238533137667-1</unique-id>
 	<command>cygstart -- %F</command>
 	<description></description>
 	<patterns>*</patterns>
