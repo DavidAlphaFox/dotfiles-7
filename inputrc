@@ -30,6 +30,8 @@ set visible-stats on
 set skip-completed-text on
 # show the current mode in prompt
 set show-mode-in-prompt on
+# case-insensitive completion
+set completion-ignore-case on
 
 # for vi mode
 # see /usr/share/doc/bash/inputrc.arrows for other codes of arrow keys
