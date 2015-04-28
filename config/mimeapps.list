@@ -1,8 +1,4 @@
 [Default Applications]
-text/html=exo-web-browser.desktop
-image/svg+xml=exo-web-browser.desktop
-application/xhtml+xml=exo-web-browser.desktop
-application/x-mozilla-bookmarks=exo-web-browser.desktop
 application/pdf=windows.desktop
 image/png=windows.desktop
 image/jpeg=windows.desktop
@@ -13,12 +9,11 @@ application/vnd.openxmlformats-officedocument.presentationml.presentation=window
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=windows.desktop
 text/csv=windows.desktop
 image/vnd.microsoft.icon=windows.desktop
+text/html=windows.desktop
+application/xhtml+xml=windows.desktop
+image/svg+xml=windows.desktop
 
 [Added Associations]
-text/html=exo-web-browser.desktop;
-image/svg+xml=exo-web-browser.desktop;
-application/xhtml+xml=exo-web-browser.desktop;
-application/x-mozilla-bookmarks=midori.desktop;exo-web-browser.desktop;
 application/pdf=windows.desktop;
 image/png=windows.desktop;
 image/jpeg=windows.desktop;
@@ -29,3 +24,6 @@ application/vnd.openxmlformats-officedocument.presentationml.presentation=window
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=windows.desktop;
 text/csv=windows.desktop;
 image/vnd.microsoft.icon=windows.desktop;
+text/html=windows.desktop;
+application/xhtml+xml=windows.desktop;
+image/svg+xml=windows.desktop;
