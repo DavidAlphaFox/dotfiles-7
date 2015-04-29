@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CYGPIPE="/tmp/cygleaf"
-CYGDEPS="/etc/setup/.cygwin-xfce"
+CYGDEPS="$HOME/.dotfiles/.base"
 if [ ! -f "$CYGDEPS" ]; then
     touch $CYGDEPS
 fi
