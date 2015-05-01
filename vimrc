@@ -97,12 +97,10 @@ set shortmess+=I
 
 " Folding
 set foldmethod=indent
-
 " left margin
 set foldcolumn=0
-
-" don't fold in w3m
-autocmd FileType w3m set foldlevel=999
+" don't auto-fold
+set foldlevel=999
 
 " colorscheme
 syntax enable
