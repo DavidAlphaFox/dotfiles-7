@@ -2,7 +2,7 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Numix"/>
+    <property name="ThemeName" type="string" value="numix"/>
     <property name="IconThemeName" type="string" value="numix"/>
     <property name="DoubleClickTime" type="int" value="500"/>
     <property name="DoubleClickDistance" type="empty"/>
@@ -14,11 +14,11 @@
     <property name="EnableInputFeedbackSounds" type="bool" value="true"/>
   </property>
   <property name="Xft" type="empty">
-    <property name="DPI" type="int" value="-1"/>
+    <property name="DPI" type="int" value="96"/>
     <property name="Antialias" type="int" value="1"/>
     <property name="Hinting" type="empty"/>
     <property name="HintStyle" type="string" value="hintmedium"/>
-    <property name="RGBA" type="empty"/>
+    <property name="RGBA" type="string" value="rgb"/>
     <property name="Lcdfilter" type="empty"/>
   </property>
   <property name="Gtk" type="empty">
