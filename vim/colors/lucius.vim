@@ -365,7 +365,7 @@ else
         hi Directory    guifg=#87af87
         hi Identifier   guifg=#87af5f
         hi PreProc      guifg=#5faf87
-        hi Special      guifg=#af87af
+        hi Special      guifg=#d75f5f
         hi Statement    guifg=#5fafd7
         hi Title        guifg=#00afd7
         hi Type         guifg=#5fafaf
