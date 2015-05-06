@@ -300,9 +300,6 @@ let NERDTreeQuitOnOpen=1
 
 " open syntastic error window on errors
 let g:syntastic_javascript_checkers=['jscs', 'jshint']
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 
@@ -319,8 +316,8 @@ let g:airline_right_sep=''
 let g:airline#extensions#tabline#show_close_button=0
 let g:airline#extensions#tabline#show_tab_nr=0
 let g:airline_section_c='%<%f%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
-let g:airline_section_b='%{getcwd()}'
-let g:airline_section_y='%{airline#util#wrap(airline#extensions#hunks#get_hunks(),0)}%{airline#util#wrap(airline#extensions#branch#get_head(),0)}'
+let g:airline_section_b='%{getcwd()}%#__restore__#'
+let g:airline_section_y='%{airline#util#wrap(airline#extensions#hunks#get_hunks(),0)}%{airline#util#wrap(airline#extensions#branch#get_head(),0)}%#__restore__#'
 
 " w3m options
 let g:w3m#external_browser = 'chrome'
@@ -332,5 +329,4 @@ if has("gui_win32")
     source $VIMRUNTIME/mswin.vim
     behave mswin
 endif
-
 
