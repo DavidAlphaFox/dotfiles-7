@@ -104,10 +104,8 @@ set foldlevel=999
 
 " colorscheme
 syntax enable
-set background=dark
-colorscheme lucius
-LuciusBlackLowContrast
-let g:lucius_no_term_bg=1
+colorscheme melania
+let g:melania_no_term_bg=1
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac

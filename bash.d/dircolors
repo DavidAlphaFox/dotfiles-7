@@ -91,7 +91,7 @@ DOOR                  1;31	  # door
 BLK                   1;35	  # block device driver
 CHR                   0;35	  # character device driver
 ORPHAN                0;31    # symlink to nonexistent file, or non-stat'able file
-MISSING               1;30    # nonexistent file pointed to by symlink
+MISSING               4;1;30    # nonexistent file pointed to by symlink
 SETUID                4;31	  # file that is setuid (u+s)
 SETGID                4;1;31  # file that is setgid (g+s)
 CAPABILITY            4;1;33  # file with capability
@@ -261,7 +261,6 @@ EXEC                  1;36
 .pptx  1;31
 .fla   1;31
 .psd   1;31
-.html  1;31
 
 # source code files
 .c    0;32
@@ -279,12 +278,19 @@ EXEC                  1;36
 .yml          1;33
 
 # txt files
-.txt     1;37
-.md      1;37
-*README  1;37
+.txt     0;37
+.TXT     0;37
+.log     0;37
 
-# log files
-.log   1;35
+# readme, etc
+.md        1;37
+*README    1;37
+*README.TXT 1;37
+*README.txt 1;37
+
+# html
+.html   1;35
+.htm    1;35
 
 # other
 *desktop.ini  1;30
