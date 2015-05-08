@@ -1,6 +1,6 @@
 #!/bin/bash
 
-umask 037
+umask 022
 
 # If not running interactively, don't do anything
 case $- in
@@ -36,6 +36,11 @@ PROMPT_DIRTRIM=3
 
 # turn off flow-control
 [ -z "$CYGWIN" ] && stty -ixon
+
+if [ -n "`groups | grep Administrators`" ]; then
+     SUPERUSER=true
+fi
+
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -76,9 +81,6 @@ fi
 if [ -f ~/.bash_localrc ]; then
     . ~/.bash_localrc
 fi
-
-# mintty title
-echo -ne "\033]0;\007"
 
 # prompt settings
 export PS2=" \`if [ \$? = 0 ]; then echo $T_COLOR; else echo $F_COLOR; fi\`. \[\e[m\]"

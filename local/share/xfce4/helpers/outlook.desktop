@@ -1,0 +1,11 @@
+[Desktop Entry]
+NoDisplay=false
+Version=1.0
+Encoding=UTF-8
+Type=X-XFCE-Helper
+X-XFCE-Category=MailReader
+X-XFCE-CommandsWithParameter=outlook /c ipm.note /m "%s"
+Icon=mail
+Name=Outlook
+X-XFCE-Commands=outlook
+

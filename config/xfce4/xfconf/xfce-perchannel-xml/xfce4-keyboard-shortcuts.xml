@@ -10,12 +10,14 @@
       <property name="&lt;Alt&gt;F3" type="empty">
         <property name="startup-notify" type="empty"/>
       </property>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="empty"/>
+      <property name="&lt;Control&gt;&lt;Alt&gt;Delete" type="empty"/>
       <property name="XF86Display" type="empty"/>
       <property name="&lt;Super&gt;p" type="empty"/>
-      <property name="&lt;Primary&gt;Escape" type="empty"/>
+      <property name="&lt;Control&gt;Escape" type="empty"/>
       <property name="XF86WWW" type="empty"/>
       <property name="XF86Mail" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="empty"/>
+      <property name="&lt;Primary&gt;Escape" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="empty"/>
       <property name="Print" type="empty"/>
       <property name="&lt;Alt&gt;Print" type="empty"/>
@@ -37,20 +39,38 @@
       <property name="&lt;Super&gt;4" type="empty"/>
     </property>
     <property name="custom" type="empty">
-      <property name="&lt;Super&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
-      <property name="&lt;Primary&gt;Escape" type="string" value="xfce4-popup-applicationsmenu"/>
-      <property name="&lt;Super&gt;w" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter -w"/>
-      <property name="&lt;Super&gt;r" type="string" value="xfce4-appfinder"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xflock4"/>
-      <property name="&lt;Super&gt;f" type="string" value="exo-open --launch FileManager"/>
-      <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
-      <property name="Print" type="string" value="xfce4-screenshooter -f"/>
-      <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
-      <property name="&lt;Super&gt;m" type="string" value="exo-open --launch MailReader"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="override" type="bool" value="true"/>
+      <property name="Menu" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="m" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;m" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Alt&gt;m" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="exo-open --launch MailReader">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;Alt_L" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="Control_L" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;Control_R" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="exo-open --launch FileManager"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;w" type="string" value="exo-open --launch WebBrowser"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="xfce4-appfinder"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -64,8 +84,8 @@
       <property name="&lt;Alt&gt;Tab" type="empty"/>
       <property name="&lt;Alt&gt;&lt;Shift&gt;Tab" type="empty"/>
       <property name="&lt;Alt&gt;Delete" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Down" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Left" type="empty"/>
+      <property name="&lt;Control&gt;&lt;Alt&gt;Down" type="empty"/>
+      <property name="&lt;Control&gt;&lt;Alt&gt;Left" type="empty"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;Page_Down" type="empty"/>
       <property name="&lt;Alt&gt;F4" type="empty"/>
       <property name="&lt;Alt&gt;F6" type="empty"/>
@@ -75,41 +95,6 @@
       <property name="&lt;Alt&gt;F10" type="empty"/>
       <property name="&lt;Alt&gt;F11" type="empty"/>
       <property name="&lt;Alt&gt;F12" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Left" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;End" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Home" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Right" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Up" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_1" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_2" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_3" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_4" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_5" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_6" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_7" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_8" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_9" type="empty"/>
-      <property name="&lt;Alt&gt;space" type="empty"/>
-      <property name="&lt;Shift&gt;&lt;Alt&gt;Page_Up" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Right" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;d" type="empty"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Up" type="empty"/>
-      <property name="&lt;Super&gt;Tab" type="empty"/>
-      <property name="&lt;Primary&gt;F1" type="empty"/>
-      <property name="&lt;Primary&gt;F2" type="empty"/>
-      <property name="&lt;Primary&gt;F3" type="empty"/>
-      <property name="&lt;Primary&gt;F4" type="empty"/>
-      <property name="&lt;Primary&gt;F5" type="empty"/>
-      <property name="&lt;Primary&gt;F6" type="empty"/>
-      <property name="&lt;Primary&gt;F7" type="empty"/>
-      <property name="&lt;Primary&gt;F8" type="empty"/>
-      <property name="&lt;Primary&gt;F9" type="empty"/>
-      <property name="&lt;Primary&gt;F10" type="empty"/>
-      <property name="&lt;Primary&gt;F11" type="empty"/>
-      <property name="&lt;Primary&gt;F12" type="empty"/>
-      <property name="&lt;Alt&gt;F5" type="empty"/>
-      <property name="&lt;Control&gt;&lt;Alt&gt;Down" type="empty"/>
-      <property name="&lt;Control&gt;&lt;Alt&gt;Left" type="empty"/>
       <property name="&lt;Control&gt;&lt;Shift&gt;&lt;Alt&gt;Left" type="empty"/>
       <property name="&lt;Alt&gt;&lt;Control&gt;End" type="empty"/>
       <property name="&lt;Alt&gt;&lt;Control&gt;Home" type="empty"/>
@@ -124,9 +109,12 @@
       <property name="&lt;Alt&gt;&lt;Control&gt;KP_7" type="empty"/>
       <property name="&lt;Alt&gt;&lt;Control&gt;KP_8" type="empty"/>
       <property name="&lt;Alt&gt;&lt;Control&gt;KP_9" type="empty"/>
+      <property name="&lt;Alt&gt;space" type="empty"/>
+      <property name="&lt;Shift&gt;&lt;Alt&gt;Page_Up" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Right" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;d" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Up" type="empty"/>
+      <property name="&lt;Super&gt;Tab" type="empty"/>
       <property name="&lt;Control&gt;F1" type="empty"/>
       <property name="&lt;Control&gt;F2" type="empty"/>
       <property name="&lt;Control&gt;F3" type="empty"/>
@@ -139,6 +127,38 @@
       <property name="&lt;Control&gt;F10" type="empty"/>
       <property name="&lt;Control&gt;F11" type="empty"/>
       <property name="&lt;Control&gt;F12" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Down" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Left" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Left" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;End" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Home" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Right" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Up" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_1" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_2" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_3" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_4" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_5" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_6" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_7" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_8" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;KP_9" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Right" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;d" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Up" type="empty"/>
+      <property name="&lt;Primary&gt;F1" type="empty"/>
+      <property name="&lt;Primary&gt;F2" type="empty"/>
+      <property name="&lt;Primary&gt;F3" type="empty"/>
+      <property name="&lt;Primary&gt;F4" type="empty"/>
+      <property name="&lt;Primary&gt;F5" type="empty"/>
+      <property name="&lt;Primary&gt;F6" type="empty"/>
+      <property name="&lt;Primary&gt;F7" type="empty"/>
+      <property name="&lt;Primary&gt;F8" type="empty"/>
+      <property name="&lt;Primary&gt;F9" type="empty"/>
+      <property name="&lt;Primary&gt;F10" type="empty"/>
+      <property name="&lt;Primary&gt;F11" type="empty"/>
+      <property name="&lt;Primary&gt;F12" type="empty"/>
+      <property name="&lt;Alt&gt;F5" type="empty"/>
     </property>
     <property name="custom" type="empty">
       <property name="&lt;Control&gt;F1" type="string" value="workspace_1_key"/>

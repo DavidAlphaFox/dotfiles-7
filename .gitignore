@@ -1,7 +1,11 @@
 /config/*
+!/config/mimeapps.list
+!/config/Thunar
+/config/Thunar/accels.scm
 !/config/gitinclude
 !/config/xfce4
 /config/xfce4/*
+!/config/xfce4/helpers.rc
 !/config/xfce4/terminal
 !/config/xfce4/xfconf
 /config/xfce4/xfconf/*
@@ -14,3 +18,8 @@
 !/config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
 !/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
 /vim/spell/
+/local/share/gvfs-metadata/
+/local/share/keyrings/
+/local/share/webkit/
+/local/share/recently-used.xbel
+/local/share/gegl-0.2/

@@ -1,6 +1,7 @@
 #!/bin/bash
 
-export PATH=~/.bin:$PATH
+#PATH=~/.bin:$PATH
+echo $PATH | grep ~/.bin >/dev/null || PATH=~/.bin:$PATH
 
 source ~/.bashrc
 

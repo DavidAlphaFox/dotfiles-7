@@ -12,7 +12,9 @@ nmap <silent> <leader>ve :e $MYVIMRC<CR>
 nmap <silent> <leader>vs :so $MYVIMRC<CR>
 
 " :W sudo saves the file (doesn't work on cygwin)
-command! W w !sudo tee % > /dev/null
+if !has("win32")
+    command! W w !sudo tee % > /dev/null
+endif
 
 " hide gvim toolbar, scrollbars
 set go-=T
@@ -21,7 +23,13 @@ set go-=l
 set go-=b
 
 " gvim font
-set guifont=White\ Rabbit\ 16
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=White\ Rabbit\ 16
+  elseif has("gui_win32")
+    set guifont=Consolas:h16:b:cANSI
+  endif
+endif
 
 " Set lines to the cursor - when moving vertically using j/k
 set so=6
@@ -35,7 +43,7 @@ set langmenu=en
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc,*.so,*.class
-if has("win16") || has("win32")
+if has("win32")
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 else
     set wildignore+=.git\*,.hg\*,.svn\*
@@ -89,18 +97,17 @@ set shortmess+=I
 
 " Folding
 set foldmethod=indent
-
 " left margin
 set foldcolumn=0
-
-" don't fold in w3m
-autocmd FileType w3m set foldlevel=999
+" don't auto-fold
+set foldlevel=999
 
 " colorscheme
 syntax enable
 set background=dark
 colorscheme lucius
 LuciusBlackLowContrast
+let g:lucius_no_term_bg=1
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
@@ -292,7 +299,9 @@ let NERDTreeIgnore=['\.pyc$[[file]]','\.so$[[file]]','\.class$[[file]]']
 let NERDTreeQuitOnOpen=1
 
 " open syntastic error window on errors
-let g:syntastic_auto_loc_list=1
+let g:syntastic_javascript_checkers=['jscs', 'jshint']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
 
 " airline status theme
 set showtabline=1
@@ -307,11 +316,17 @@ let g:airline_right_sep=''
 let g:airline#extensions#tabline#show_close_button=0
 let g:airline#extensions#tabline#show_tab_nr=0
 let g:airline_section_c='%<%f%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
-let g:airline_section_b='%{getcwd()}'
-let g:airline_section_y='%{airline#util#wrap(airline#extensions#hunks#get_hunks(),0)}%{airline#util#wrap(airline#extensions#branch#get_head(),0)}'
+let g:airline_section_b='%{getcwd()}%#__restore__#'
+let g:airline_section_y='%{airline#util#wrap(airline#extensions#hunks#get_hunks(),0)}%{airline#util#wrap(airline#extensions#branch#get_head(),0)}%#__restore__#'
 
 " w3m options
 let g:w3m#external_browser = 'chrome'
 let g:w3m#homepage = "http://www.google.com/"
 let g:w3m#lang = 'en_US'
+
+if has("gui_win32")
+    let g:gitgutter_enabled = 0
+    source $VIMRUNTIME/mswin.vim
+    behave mswin
+endif
 

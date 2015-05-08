@@ -1,14 +1,21 @@
 ## [starlight](http://starlight.github.io/)/dotfiles
 
-These are my dotfiles, for bash, vim, xfce4, screen, ssh-agent and more.
+dotfiles for full Cygwin-Xfce desktop with rootless X
 
-    cd ~
-    git clone https://github.com/starlight/dotfiles.git .dotfiles
-    .dotfiles/bin/dotfiles-install
+* tight integration with Windows
+* Xfce panel, file-manager, terminal (no desktop - rootless)
+* symlinked home directories
+* git with command-line completion
+* vim as default editor (with essential plugins)
+* vim as pager (less, man, ...)
+* vi-like bash shell
+* seahorse/gnome-keyring for key management
+* file-roller for archive support
+* setup.exe wrapper for package management
+* Numix theme and icons
+* Chrome and Outlook support
 
-pre-existing dotfiles will be saved to ~/.old_dotfiles
 
-### depends on screen, ssh
-### optional: pylint, pyflakes, jshint, xfce4, xfce4-terminal, ctags and w3m
+unattended install:
 
-
+    lynx -source https://raw.githubusercontent.com/starlight/dotfiles/cygwin/bootstrap.sh | bash
