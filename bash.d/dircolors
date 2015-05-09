@@ -202,9 +202,7 @@ EXEC                  1;36
 .yuv  0;35
 .cgm  0;35
 .emf  0;35
-
 .ico  0;35
-.css  0;35
 
 # deprecated ogg formats
 # http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
@@ -291,6 +289,7 @@ EXEC                  1;36
 # html
 .html   1;35
 .htm    1;35
+.css    1;35
 
 # other
 *desktop.ini  1;30
