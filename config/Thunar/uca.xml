@@ -11,29 +11,6 @@
 	<directories/>
 </action>
 <action>
-	<icon>preferences-system-windows</icon>
-	<name>Open Command Prompt Here</name>
-	<unique-id>1430240763402190-7</unique-id>
-	<command>cygstart -- cmd.exe /K cd `cygpath -w %f`</command>
-	<description>run windows cmd.exe</description>
-	<patterns>*</patterns>
-	<directories/>
-</action>
-<action>
-	<icon>application-default-icon</icon>
-	<name>Open with Windows</name>
-	<unique-id>1430248905778588-1</unique-id>
-	<command>cygstart -- %F</command>
-	<description></description>
-	<patterns>*</patterns>
-	<directories/>
-	<audio-files/>
-	<image-files/>
-	<other-files/>
-	<text-files/>
-	<video-files/>
-</action>
-<action>
 	<icon>vim</icon>
 	<name>Open with Vim</name>
 	<unique-id>1429813148236127-2</unique-id>
