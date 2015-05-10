@@ -203,6 +203,10 @@ EXEC                  1;36
 .cgm  0;35
 .emf  0;35
 .ico  0;35
+.eot  0;35
+.ttf  0;35
+.woff 0;35
+.woff2 0;35
 
 # deprecated ogg formats
 # http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
