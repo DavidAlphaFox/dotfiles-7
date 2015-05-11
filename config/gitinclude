@@ -24,7 +24,7 @@
     ui = auto
 [color "branch"]
     remote = red
-    current = green
+    current = green bold
     local = yellow bold
 [color "status"]
     added = yellow bold
