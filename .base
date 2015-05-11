@@ -1,8 +1,16 @@
  _autorebase
+ alacarte
  alternatives
  base-files
+ ctags
+ cygcheck-dep
+ cygutils-extra
+ dos2unix
+ file-roller
  getent
+ git-completion
  gtk2.0-engines-murrine
+ gvim
  hostname
  info
  ipc-utils
@@ -14,8 +22,12 @@
  openssl
  psmisc
  rebase
+ screen
+ seahorse
  seahorse-daemon
+ seahorse-tool
  tree
+ vim
  vim-minimal
  which
  xfce4-notifyd
