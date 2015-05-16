@@ -23,3 +23,8 @@
 /local/share/webkit/
 /local/share/recently-used.xbel
 /local/share/gegl-0.2/
+/extra/sil/sil
+/extra/sil/src/sil
+/extra/sil/lib/save/*
+!/extra/sil/lib/save/.keep
+/extra/sil/lib/apex/*

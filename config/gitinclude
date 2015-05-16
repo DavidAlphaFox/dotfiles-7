@@ -19,4 +19,15 @@
 [diff]
     tool = vimdiff
 [credential]
-	helper = gnome-keyring
+    helper = gnome-keyring
+[color]
+    ui = auto
+[color "branch"]
+    remote = red
+    current = green bold
+    local = yellow bold
+[color "status"]
+    added = yellow bold
+    changed = red bold
+    untracked = red
+

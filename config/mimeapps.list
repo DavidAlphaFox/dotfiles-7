@@ -31,3 +31,6 @@ application/xhtml+xml=windows.desktop;
 image/svg+xml=windows.desktop;
 application/x-ms-dos-batch=windows.desktop;
 application/x-msi=windows.desktop;
+x-scheme-handler/http=exo-web-browser.desktop
+x-scheme-handler/https=exo-web-browser.desktop
+
