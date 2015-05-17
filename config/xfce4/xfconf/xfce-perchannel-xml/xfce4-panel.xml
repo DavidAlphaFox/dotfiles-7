@@ -16,6 +16,7 @@
         <value type="int" value="3"/>
         <value type="int" value="7"/>
         <value type="int" value="6"/>
+        <value type="int" value="2"/>
         <value type="int" value="15"/>
       </property>
       <property name="nrows" type="uint" value="1"/>
@@ -78,5 +79,6 @@
       </property>
       <property name="move-first" type="bool" value="true"/>
     </property>
+    <property name="plugin-2" type="string" value="clock"/>
   </property>
 </channel>
