@@ -2,3 +2,5 @@ sil.exe
 *.o
 sil.res
 scores.raw
+/lib/save/*
+!/lib/save/.keep
