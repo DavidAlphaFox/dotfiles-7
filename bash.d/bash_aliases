@@ -30,3 +30,5 @@ vim_w3m() {
 }
 alias w3m=vim_w3m
 alias palette="xfce4-terminal --color-table"
+alias cmd="cygstart -- cmd"
+
