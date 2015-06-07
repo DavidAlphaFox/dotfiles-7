@@ -4,6 +4,7 @@
  base-files
  ctags
  cygcheck-dep
+ cygport
  cygutils-extra
  dos2unix
  file-roller
@@ -32,4 +33,3 @@
  which
  xfce4-notifyd
  xfce4-session
- cygport
