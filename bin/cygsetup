@@ -8,8 +8,8 @@
 
 CYGEXE=setup-`uname -m`.exe
 EXEURL=http://cygwin.com/$CYGEXE
-MIRROR=http://mirrors.kernel.org/sourceware/cygwin
-PORTS_MIRROR=http://mirrors.kernel.org/sources.redhat.com/cygwinports
+MIRROR=http://cygwin.mirrors.hoobly.com
+PORTS_MIRROR=http://sourceware.mirrors.tds.net/pub/sourceware.org/cygwinports
 PORTS_GPG=http://cygwinports.org/ports.gpg
 
 cd /bin
