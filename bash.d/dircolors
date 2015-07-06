@@ -295,6 +295,7 @@ EXEC                  1;36
 .html   1;35
 .htm    1;35
 .css    1;35
+.less   1;35
 
 # other
 *desktop.ini  1;30
