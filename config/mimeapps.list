@@ -32,3 +32,7 @@ image/svg+xml=windows.desktop;
 application/x-ms-dos-batch=windows.desktop;
 application/x-msi=windows.desktop;
 image/gif=ristretto.desktop;
+text/plain=gvim.desktop;
+text/markdown=gvim.desktop;
+application/json=gvim.desktop;
+application/javascript=gvim.desktop;
