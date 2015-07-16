@@ -16,6 +16,7 @@
  man-db
  mintty
  openssl
+ procps
  psmisc
  rebase
  screen
