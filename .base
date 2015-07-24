@@ -5,7 +5,6 @@
  cygcheck-dep
  cygport
  cygutils-extra
- file-roller
  getent
  git-completion
  gtk2.0-engines-murrine
@@ -23,6 +22,7 @@
  seahorse
  seahorse-daemon
  seahorse-tool
+ thunar-archive-plugin
  tree
  vim
  vim-minimal

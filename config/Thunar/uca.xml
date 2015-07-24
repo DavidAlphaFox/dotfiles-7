@@ -45,27 +45,4 @@
 	<other-files/>
 	<text-files/>
 </action>
-<action>
-	<icon>tap-extract-to</icon>
-	<name>Extract To...</name>
-	<unique-id>1430240358780352-5</unique-id>
-	<command>file-roller -f %F</command>
-	<description></description>
-	<patterns>*.xz;*.tar;*.bz2;*.gz;*.zip;*.lzma;*.7z</patterns>
-	<other-files/>
-</action>
-<action>
-	<icon>tap-create</icon>
-	<name>Create Archive...</name>
-	<unique-id>1430240408217069-6</unique-id>
-	<command>file-roller -d %F</command>
-	<description></description>
-	<patterns>*</patterns>
-	<directories/>
-	<audio-files/>
-	<image-files/>
-	<other-files/>
-	<text-files/>
-	<video-files/>
-</action>
 </actions>
