@@ -30,7 +30,7 @@ ColorCursor=#727272727272
 ColorForeground=#727272727272
 ScrollingOnOutput=FALSE
 ScrollingLines=2048
-ColorBackground=#121212121212
+ColorBackground=#212121212121
 FontAllowBold=FALSE
 WordChars=-A-Za-z0-9?$%&#_~
 

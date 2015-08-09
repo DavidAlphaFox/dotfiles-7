@@ -1,7 +1,7 @@
 [core]
     editor = vim
     filemode = true
-    autocrlf = input
+    autocrlf = false
 [push]
     default = current
 [fetch]
@@ -29,5 +29,3 @@
 [color "status"]
     added = yellow bold
     changed = red bold
-    untracked = red
-
