@@ -7,7 +7,7 @@ alias egrep='egrep --color=auto'
 alias l='ls -h --file-type'
 alias la='l -A'
 alias ll='la -l'
-alias lt='tree -aFL 2'
+alias lt='tree -aFL 2 -I .git'
 alias df='df -h'
 alias pl='ps -eHo pid,tty,user,args'
 alias p='pl c'
@@ -29,3 +29,5 @@ vim_w3m() {
 }
 alias w3m=vim_w3m
 alias palette="xfce4-terminal --color-table"
+alias cmd="cygstart -- cmd"
+
