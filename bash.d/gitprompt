@@ -241,10 +241,12 @@ __git_ps1_colorize_gitstring ()
 	else
 		# Using \[ and \] around colors is necessary to prevent
 		# issues with command line editing/browsing/completion!
-		local c_red='\[\e[31m\]'
-		local c_green='\[\e[32m\]'
+		local c_red='\[\e[0;31m\]'
+		local c_green='\[\e[0;32m\]'
 		local c_lblue='\[\e[1;34m\]'
-		local c_clear='\[\e[0m\]'
+		local c_clear='\[\e[0;0m\]'
+        local c_orange='\[\e[1;31m\]'
+        local c_yellow='\[\e[1;33m\]'
 	fi
 	local bad_color=$c_red
 	local ok_color=$c_green
@@ -260,13 +262,13 @@ __git_ps1_colorize_gitstring ()
 
 	z="$c_clear$z"
 	if [ "$w" = "*" ]; then
-		w="$bad_color$w"
+		w="$c_orange$w"
 	fi
 	if [ -n "$i" ]; then
-		i="$ok_color$i"
+		i="$c_yellow$i"
 	fi
 	if [ -n "$s" ]; then
-		s="$flags_color$s"
+		s="$c_orange$s"
 	fi
 	if [ -n "$u" ]; then
 		u="$bad_color$u"
@@ -468,7 +470,7 @@ __git_ps1 ()
 		then
 			git diff --no-ext-diff --quiet --exit-code || w="*"
 			if [ -n "$short_sha" ]; then
-				git diff-index --cached --quiet HEAD -- || i="+"
+				git diff-index --cached --quiet HEAD -- || i="*"
 			else
 				i="#"
 			fi
@@ -483,7 +485,7 @@ __git_ps1 ()
 		   [ "$(git config --bool bash.showUntrackedFiles)" != "false" ] &&
 		   git ls-files --others --exclude-standard --error-unmatch -- '*' >/dev/null 2>/dev/null
 		then
-			u="%${ZSH_VERSION+%}"
+			u="*${ZSH_VERSION+%}"
 		fi
 
 		if [ -n "${GIT_PS1_SHOWUPSTREAM-}" ]; then
