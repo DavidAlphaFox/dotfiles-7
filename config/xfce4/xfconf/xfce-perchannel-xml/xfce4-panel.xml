@@ -45,15 +45,13 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
-        <value type="string" value="parole"/>
-        <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="networkmanager applet"/>
-        <value type="string" value="task manager"/>
-        <value type="string" value="thunar"/>
-        <value type="string" value="ibus panel"/>
         <value type="string" value="update-notifier"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
+      <property name="names-hidden" type="array">
+        <value type="string" value="ibus panel"/>
+      </property>
     </property>
     <property name="plugin-7" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
