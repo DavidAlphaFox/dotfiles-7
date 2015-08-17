@@ -16,5 +16,5 @@ cd /bin
 wget -nv -N $EXEURL
 chmod +x $CYGEXE
 
-cygstart -- $CYGEXE -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q $@
+cygstart -- $CYGEXE -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -B -q $@
 

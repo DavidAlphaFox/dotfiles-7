@@ -51,5 +51,5 @@ wget -q -nv -N $EXEURL
 chmod +x ./$CYGEXE
 echo
 echo -e "\033[31mInstalling remaining packages"
-cygstart -- $CYGEXE -o -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -P $BASE_PKGS
+cygstart -- $CYGEXE -o -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -q -P $BASE_PKGS -B
 
