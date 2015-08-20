@@ -18,7 +18,7 @@ application/x-msi=windows.desktop
 [Added Associations]
 application/pdf=windows.desktop;
 image/png=windows.desktop;
-image/jpeg=windows.desktop;
+image/jpeg=ristretto.desktop;windows.desktop;
 image/bmp=windows.desktop;
 audio/mpeg=windows.desktop;
 video/x-msvideo=windows.desktop;
