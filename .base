@@ -3,28 +3,38 @@
  base-files
  ctags
  cygcheck-dep
- cygport
  cygutils-extra
+ genisoimage
  getent
  git-completion
+ git-svn
  gtk2.0-engines-murrine
  gvim
  hostname
  ipc-utils
+ libcryptui-common
+ libnotify
  login
+ lrzip
+ lzip
  man-db
  mintty
  openssl
  procps
  psmisc
  rebase
+ rpm
+ rzip
  screen
  seahorse
  seahorse-daemon
  seahorse-tool
  thunar-archive-plugin
  tree
+ unace
+ unalz
  vim
  vim-minimal
  xfce4-notifyd
  xfce4-session
+ zoo
