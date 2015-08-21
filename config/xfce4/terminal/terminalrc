@@ -1,6 +1,6 @@
 [Configuration]
 Term=xterm-color
-FontName=White Rabbit 16
+FontName=White Rabbit 18
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
