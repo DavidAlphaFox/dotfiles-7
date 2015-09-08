@@ -36,3 +36,5 @@ text/plain=gvim.desktop;
 text/markdown=gvim.desktop;
 application/json=gvim.desktop;
 application/javascript=gvim.desktop;
+application/xml=gvim.desktop;
+text/x-java=gvim.desktop;
