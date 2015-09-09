@@ -38,7 +38,7 @@ mv .profile $olddir/
 ln -s $WINHOME .user
 
 # symlinks into windows User directory
-for i in Desktop Public Documents Downloads Pictures Music Videos; do 
+for i in Desktop Public Documents Downloads Pictures Music Templates Videos; do 
     mkdir -p .user/$i
     ln -s .user/$i $i
 done
