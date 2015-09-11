@@ -7,5 +7,5 @@ if [ ! -f "$CYGDEPS" ]; then
 fi
 mkfifo $CYGPIPE
 echo -e "\e[0;32mchecking dependencies, please wait\e[1;33m" >&2
-cygcheck-dep -pl | tee $CYGPIPE | cat - $CYGDEPS | sort | uniq -u | cat $CYGPIPE - | sort | uniq -d
+cygcheck-dep -plq | tee $CYGPIPE | cat - $CYGDEPS | sort | uniq -u | cat $CYGPIPE - | sort | uniq -d
 rm $CYGPIPE
