@@ -8,13 +8,15 @@
 
 CYGEXE=setup-`uname -m`.exe
 EXEURL=http://cygwin.com/$CYGEXE
-MIRROR=http://cygwin.mirrors.hoobly.com
-PORTS_MIRROR=http://sourceware.mirrors.tds.net/pub/sourceware.org/cygwinports
+MIRROR=http://mirrors.kernel.org/sourceware/cygwin
+PORTS_MIRROR=http://mirrors.kernel.org/sources.redhat.com/cygwinports
 PORTS_GPG=http://cygwinports.org/ports.gpg
+DENEB_MIRROR=http://sirius.starlig.ht
+DENEB_GPG=http://sirius.starlig.ht/sirius.gpg
 
 cd /bin
 wget -nv -N $EXEURL
 chmod +x $CYGEXE
 
-cygstart -- $CYGEXE -g -n -K $PORTS_GPG -s $MIRROR -s $PORTS_MIRROR -B -q $@
+cygstart -- $CYGEXE -g -n -s "$DENEB_MIRROR" -s "$MIRROR" -s "$PORTS_MIRROR" -K "$DENEB_GPG" -K "$PORTS_GPG" -B -q -l "$USERPROFILE\\Downloads\\" $@
 
