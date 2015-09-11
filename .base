@@ -1,9 +1,13 @@
+ ?deneb
  _autorebase
  alacarte
  base-files
  ctags
  cygcheck-dep
+ cygport
  cygutils-extra
+ font-encodings
+ fontconfig
  genisoimage
  getent
  git-completion
@@ -18,6 +22,7 @@
  lzip
  man-db
  mintty
+ mkfontdir
  procps
  psmisc
  rebase

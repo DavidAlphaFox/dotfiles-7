@@ -43,8 +43,8 @@ for i in Desktop Public Documents Downloads Pictures Music Templates Videos; do
     ln -s .user/$i $i
 done
 
-echo "Placing Cygwin-Xfce shortcut into Start Menu"
-mkshortcut -P -w "$HOME" -i/bin/run.exe -j2 -s min -n Cygwin-Xfce -d startxwin-rootless -a '-w hide -e /bin/bash.exe -l -c ~/.bin/startxwin-rootless' /bin/mintty.exe
+echo "Placing Deneb shortcut into Start Menu"
+mkshortcut -P -w "$HOME" -i/bin/run.exe -j2 -s min -n Deneb -d startx-rootless -a '-w hide -e /bin/bash.exe -l -c startx-rootless' /bin/mintty.exe
 
 cd /bin
 wget -q -nv -N $EXEURL
