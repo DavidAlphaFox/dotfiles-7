@@ -1,6 +1,6 @@
 [Configuration]
 Term=xterm-color
-FontName=White Rabbit 18
+FontName=Roboto Mono 14
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
