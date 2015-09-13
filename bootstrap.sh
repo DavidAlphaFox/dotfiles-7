@@ -8,7 +8,7 @@ DENEB_MIRROR=http://sirius.starlig.ht/
 PORTS_GPG=http://cygwinports.org/ports.gpg
 DENEB_GPG=http://sirius.starlig.ht/sirius.gpg
 DOTFILES_GIT=https://github.com/starlight/dotfiles.git
-BASE_PKGS="deneb,alacarte,ctags,gvim,screen,tree,vim"
+BASE_PKGS="alacarte,ctags,gvim,screen,tree,vim"
 
 cd /usr/local/bin
 lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
@@ -45,13 +45,9 @@ for i in Desktop Public Documents Downloads Pictures Music Templates Videos; do
     ln -s .user/$i $i
 done
 
-echo "Placing Deneb shortcut into Start Menu"
-mkshortcut -P -w "$HOME" -i/bin/run.exe -j2 -s min -n Deneb -d startx-rootless -a '-w hide -e /bin/bash.exe -l -c startx-rootless' /bin/mintty.exe
-
+echo -e "\033[31mInstalling remaining packages"
 cd /bin
 wget -q -nv -N $EXEURL
 chmod +x ./$CYGEXE
-echo
-echo -e "\033[31mInstalling remaining packages"
 cygstart -- $CYGEXE -o -g -n -K $PORTS_GPG -K $DENEB_GPG -s $MIRROR -s $PORTS_MIRROR -s $DENEB_MIRROR -q -P $BASE_PKGS -B
 
