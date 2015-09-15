@@ -35,4 +35,5 @@ fit
 
 # Window tabs, second to last line
 hardstatus string '%{= Kd} %?%-Lw%50L>%?%{=r }%n*%f %t%?(%u)%?%{-}%?%+Lw%? %=%H%<'
+shell -bash
 
