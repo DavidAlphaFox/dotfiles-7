@@ -29,6 +29,7 @@ WINHOME="`cygpath $USERPROFILE`"
 dir=.dotfiles                    # dotfiles directory
 olddir=.dotfiles.bak          # old dotfiles backup directory
 
+CYGWIN="winsymlinks"
 echo "Saving existing dotfiles to $olddir, setting up symlinks"
 mkdir -p $olddir
 for file in `ls $dir | grep -v -e 'README.md' -e 'bootstrap'`; do
