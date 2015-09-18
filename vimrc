@@ -25,7 +25,7 @@ set go-=b
 " gvim font
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=White\ Rabbit\ 16
+    set guifont=Roboto\ Mono\ Medium\ 14
   elseif has("gui_win32")
     set guifont=Consolas:h16:b:cANSI
   endif
