@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cygstart -- outlook $@
-
