@@ -1,9 +1,6 @@
 
 execute pathogen#infect()
 
-set encoding=utf-8
-set fileencoding=utf-8
-
 " change leader key from '\' to ';'
 let mapleader=';'
 
@@ -102,11 +99,6 @@ set foldcolumn=0
 " don't auto-fold
 set foldlevel=999
 
-" colorscheme
-syntax enable
-colorscheme melania
-let g:melania_no_term_bg=1
-
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
@@ -134,14 +126,6 @@ set wrap
 vnoremap <silent> * :call VisualSelection('f', '')<CR>
 " When you press <leader>r you can search and replace the selected text
 vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
-
-" Treat long lines as break lines (useful when moving around in them)
-map j gj
-map k gk
-map <DOWN> j
-map <UP> k
-map <RIGHT> l
-map <LEFT> h
 
 " center window after some commands
 nnoremap n nzz
