@@ -1,15 +1,10 @@
-# Coreutils version coreutils-8.23
-
 # Configuration file for dircolors, a utility to help you set the
 # LS_COLORS environment variable used by GNU ls with the --color option.
-
-# Copyright (C) 1996-2014 Free Software Foundation, Inc.
+# Copyright (C) 1996-2015 Free Software Foundation, Inc.
 # Copying and distribution of this file, with or without modification,
 # are permitted provided the copyright notice and this notice are preserved.
-
 # The keywords COLOR, OPTIONS, and EIGHTBIT (honored by the
 # slackware version of dircolors) are recognized but ignored.
-
 # Below, there should be one TERM entry for each termtype that is colorizable
 TERM Eterm
 TERM ansi
@@ -68,7 +63,6 @@ TERM xterm-256color
 TERM xterm-88color
 TERM xterm-color
 TERM xterm-debian
-
 # Below are the color init strings for the basic file types. A color init
 # string consists of one or more of the following numeric codes:
 # Attribute codes:
@@ -77,162 +71,150 @@ TERM xterm-debian
 # 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
 # Background color codes:
 # 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
-
-#NORMAL  00	    # no color code at all
-#FILE    00	    # regular file: use no color at all
-RESET    0		# reset to "normal" color
-DIR      1;34	# directory
-LINK     target	# symbolic link.  (If you set this to 'target' instead of a numerical value,
-                #  the color is as for the file pointed to.)A
-
-MULTIHARDLINK         0	      # regular file with more than one link
-FIFO                  1;33	  # pipe
-SOCK                  1;31	  # socket
-DOOR                  1;31	  # door
-BLK                   1;35	  # block device driver
-CHR                   0;35	  # character device driver
-ORPHAN                0;31    # symlink to nonexistent file, or non-stat'able file
-MISSING               4;1;30    # nonexistent file pointed to by symlink
-SETUID                4;31	  # file that is setuid (u+s)
-SETGID                4;1;31  # file that is setgid (g+s)
-CAPABILITY            4;1;33  # file with capability
-STICKY_OTHER_WRITABLE 4;1;32  # dir that is sticky and other-writable (+t,o+w)
-OTHER_WRITABLE        1;32    # dir that is other-writable (o+w) and not sticky
-STICKY                4;1;34  # dir with the sticky bit set (+t) and not other-writable
-EXEC                  1;36
-
+#NORMAL 00 # no color code at all
+#FILE 00 # regular file: use no color at all
+RESET 0 # reset to "normal" color
+DIR 01;34 # directory
+LINK target #01;36 # symbolic link. (If you set this to 'target' instead of a
+ # numerical value, the color is as for the file pointed to.)
+MULTIHARDLINK 00 # regular file with more than one link
+FIFO 40;33 # pipe
+SOCK 01;35 # socket
+DOOR 01;35 # door
+BLK 01;33 # block device driver
+CHR 01;33 # character device driver
+ORPHAN 00;31 # symlink to nonexistent file, or non-stat'able file ...
+MISSING 01;30 # ... and the files they point to
+SETUID 37;41 # file that is setuid (u+s)
+SETGID 30;43 # file that is setgid (g+s)
+CAPABILITY 30;41 # file with capability
+STICKY_OTHER_WRITABLE 30;42 # dir that is sticky and other-writable (+t,o+w)
+OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
+STICKY 37;44 # dir with the sticky bit set (+t) and not other-writable
+# This is for files with execute permission:
+EXEC 01;32
+# List any file extensions like '.gz' or '.tar' that you would like ls
+# to colorize below. Put the extension, a space, and the color init string.
+# (and any comments you want to add after a '#')
 # If you use DOS-style suffixes, you may want to uncomment the following:
-.cmd  0;36
-.exe  0;36
-.com  0;36
-.btm  0;36
-.bat  0;36
+.cmd 01;32 # executables (bright green)
+.exe 01;32
+.com 01;32
+.btm 01;32
+.bat 01;32
 # Or if you want to colorize scripts even if they do not have the
 # executable bit actually set.
-.sh   0;36
-.csh  0;36
-.fish 0;36
-.dash 0;36
-
- # archives or compressed
-.tar  0;34
-.tgz  0;34
-.arc  0;34
-.arj  0;34
-.taz  0;34
-.lha  0;34
-.lz4  0;34
-.lzh  0;34
-.lzma 0;34
-.tlz  0;34
-.txz  0;34
-.tzo  0;34
-.t7z  0;34
-.zip  0;34
-.z    0;34
-.Z    0;34
-.dz   0;34
-.gz   0;34
-.lrz  0;34
-.lz   0;34
-.lzo  0;34
-.xz   0;34
-.bz2  0;34
-.bz   0;34
-.tbz  0;34
-.tbz2 0;34
-.tz   0;34
-.deb  0;34
-.rpm  0;34
-.jar  0;34
-.war  0;34
-.ear  0;34
-.sar  0;34
-.rar  0;34
-.alz  0;34
-.ace  0;34
-.zoo  0;34
-.cpio 0;34
-.7z   0;34
-.rz   0;34
-.cab  0;34
-
+.sh 00;32
+.csh 00;32
+ # archives or compressed (bright red)
+.tar 01;31
+.tgz 01;31
+.arc 01;31
+.arj 01;31
+.taz 01;31
+.lha 01;31
+.lz4 01;31
+.lzh 01;31
+.lzma 01;31
+.tlz 01;31
+.txz 01;31
+.tzo 01;31
+.t7z 01;31
+.zip 01;31
+.z 01;31
+.Z 01;31
+.dz 01;31
+.gz 01;31
+.lrz 01;31
+.lz 01;31
+.lzo 01;31
+.xz 01;31
+.bz2 01;31
+.bz 01;31
+.tbz 01;31
+.tbz2 01;31
+.tz 01;31
+.deb 01;31
+.rpm 01;31
+.jar 01;31
+.war 01;31
+.ear 01;31
+.sar 01;31
+.rar 01;31
+.alz 01;31
+.ace 01;31
+.zoo 01;31
+.cpio 01;31
+.7z 01;31
+.rz 01;31
+.cab 01;31
 # image formats
-.jpg  0;35
-.jpeg 0;35
-.gif  0;35
-.bmp  0;35
-.pbm  0;35
-.pgm  0;35
-.ppm  0;35
-.tga  0;35
-.xbm  0;35
-.xpm  0;35
-.tif  0;35
-.tiff 0;35
-.png  0;35
-.svg  0;35
-.svgz 0;35
-.mng  0;35
-.pcx  0;35
-.mov  0;35
-.mpg  0;35
-.mpeg 0;35
-.m2v  0;35
-.mkv  0;35
-.webm 0;35
-.ogm  0;35
-.mp4  0;35
-.m4v  0;35
-.mp4v 0;35
-.vob  0;35
-.qt   0;35
-.nuv  0;35
-.wmv  0;35
-.asf  0;35
-.rm   0;35
-.rmvb 0;35
-.flc  0;35
-.avi  0;35
-.fli  0;35
-.flv  0;35
-.gl   0;35
-.dl   0;35
-.xcf  0;35
-.xwd  0;35
-.yuv  0;35
-.cgm  0;35
-.emf  0;35
-.ico  0;35
-.eot  0;35
-.ttf  0;35
-.woff 0;35
-.woff2 0;35
-
-# deprecated ogg formats
+.jpg 01;35
+.jpeg 01;35
+.gif 01;35
+.bmp 01;35
+.pbm 01;35
+.pgm 01;35
+.ppm 01;35
+.tga 01;35
+.xbm 01;35
+.xpm 01;35
+.tif 01;35
+.tiff 01;35
+.png 01;35
+.svg 01;35
+.svgz 01;35
+.mng 01;35
+.pcx 01;35
+.mov 01;35
+.mpg 01;35
+.mpeg 01;35
+.m2v 01;35
+.mkv 01;35
+.webm 01;35
+.ogm 01;35
+.mp4 01;35
+.m4v 01;35
+.mp4v 01;35
+.vob 01;35
+.qt 01;35
+.nuv 01;35
+.wmv 01;35
+.asf 01;35
+.rm 01;35
+.rmvb 01;35
+.flc 01;35
+.avi 01;35
+.fli 01;35
+.flv 01;35
+.gl 01;35
+.dl 01;35
+.xcf 01;35
+.xwd 01;35
+.yuv 01;35
+.cgm 01;35
+.emf 01;35
 # http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
-.axv  0;35
-.anx  0;35
-.ogv  0;35
-.ogx  0;35
-.axa  0;35
-.oga  0;35
-.spx  0;35
-.xspf 0;35
-
+.ogv 01;35
+.ogx 01;35
 # audio formats
-.aac  0;35
-.au   0;35
-.flac 0;35
-.m4a  0;35
-.mid  0;35
-.midi 0;35
-.mka  0;35
-.mp3  0;35
-.mpc  0;35
-.ogg  0;35
-.ra   0;35
-.wav  0;35
+.aac 00;36
+.au 00;36
+.flac 00;36
+.m4a 00;36
+.mid 00;36
+.midi 00;36
+.mka 00;36
+.mp3 00;36
+.mpc 00;36
+.ogg 00;36
+.ra 00;36
+.wav 00;36
+# http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
+.oga 00;36
+.opus 00;36
+.spx 00;36
+.xspf 00;36
 
 # encrypted/key formats
 .gpg  0;33
@@ -248,22 +230,22 @@ EXEC                  1;36
 *key  0;33
 
 # documents
-.pdf   1;31
-.doc   1;31
-.docx  1;31
-.odg   1;31
-.odt   1;31
-.odf   1;31
-.xls   1;31
-.xlsx  1;31
-.dia   1;31
-.rtf   1;31
-.dot   1;31
-.dotx  1;31
-.ppt   1;31
-.pptx  1;31
-.fla   1;31
-.psd   1;31
+.pdf   0;35
+.doc   0;35
+.docx  0;35
+.odg   0;35
+.odt   0;35
+.odf   0;35
+.xls   0;35
+.xlsx  0;35
+.dia   0;35
+.rtf   0;35
+.dot   0;35
+.dotx  0;35
+.ppt   0;35
+.pptx  0;35
+.fla   0;35
+.psd   0;35
 
 # source code files
 .c    0;32
@@ -303,5 +285,7 @@ EXEC                  1;36
 *~            1;30
 .ICEauthority 1;30
 .Xauthority   1;30
+.xsession-errors 1;30
 .old          1;30
+.hidden       1;30
 
