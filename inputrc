@@ -1,0 +1,10 @@
+
+# for vi mode
+set editing-mode vi
+
+# show the current mode in prompt
+set show-mode-in-prompt on
+
+# case-insensitive completion
+#set completion-ignore-case on
+
