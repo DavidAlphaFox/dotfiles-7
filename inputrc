@@ -10,6 +10,7 @@ $if mode=vi
     set keymap vi-insert
     # vi insert mode mappings:
     "\C-l": clear-screen
+    "\C-k": kill-line
 
 $endif
 
