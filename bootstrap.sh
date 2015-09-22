@@ -8,7 +8,7 @@ DENEB_MIRROR=http://sirius.starlig.ht/
 PORTS_GPG=http://cygwinports.org/ports.gpg
 DENEB_GPG=http://sirius.starlig.ht/sirius.gpg
 DOTFILES_GIT=https://github.com/starlight/dotfiles.git
-BASE_PKGS="alacarte,ctags,gvim,screen,tree,vim"
+BASE_PKGS="alacarte,ctags,gvim,screen,vim"
 
 cd /usr/local/bin
 lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
