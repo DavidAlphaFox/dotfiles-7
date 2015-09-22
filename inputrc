@@ -1,4 +1,5 @@
 
+# set vi-like editing mode for bash
 set editing-mode vi
 set show-mode-in-prompt on
 
