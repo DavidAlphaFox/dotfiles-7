@@ -1,10 +1,15 @@
 
-# for vi mode
 set editing-mode vi
-
-# show the current mode in prompt
 set show-mode-in-prompt on
 
-# case-insensitive completion
-#set completion-ignore-case on
+$if mode=vi
+
+    #set keymap vi-command
+    # vi command mode mappings:
+    
+    set keymap vi-insert
+    # vi insert mode mappings:
+    "\C-l": clear-screen
+
+$endif
 
