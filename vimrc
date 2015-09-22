@@ -301,11 +301,6 @@ let g:airline_section_c='%<%f%m %#__accent_red#%{airline#util#wrap(airline#parts
 let g:airline_section_b='%{getcwd()}%#__restore__#'
 let g:airline_section_y='%{airline#util#wrap(airline#extensions#hunks#get_hunks(),0)}%{airline#util#wrap(airline#extensions#branch#get_head(),0)}%#__restore__#'
 
-" w3m options
-let g:w3m#external_browser = 'chrome'
-let g:w3m#homepage = "http://www.google.com/"
-let g:w3m#lang = 'en_US'
-
 if has("gui_win32")
     let g:gitgutter_enabled = 0
     source $VIMRUNTIME/mswin.vim
