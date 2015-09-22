@@ -4,6 +4,7 @@ my dotfiles
 
 * vim as default editor (with essential plugins)
 * vim as pager (less, man, ...)
+* vi-like bash prompt
 
 unattended install:
 
