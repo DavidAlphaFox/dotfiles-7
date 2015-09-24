@@ -1,7 +1,6 @@
 
 # set vi-like editing mode for bash
 set editing-mode vi
-set menu-complete-display-prefix on
 set show-mode-in-prompt on
 
 $if mode=vi
