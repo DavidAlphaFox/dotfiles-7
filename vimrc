@@ -22,7 +22,7 @@ set go-=b
 " gvim font
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Roboto\ Mono\ Medium\ 14
+    set guifont=DejaVu\ Sans\ Mono\ 15
   elseif has("gui_win32")
     set guifont=Consolas:h16:b:cANSI
   endif
