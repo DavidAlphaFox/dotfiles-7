@@ -19,46 +19,14 @@ set go-=r
 set go-=l
 set go-=b
 
-" gvim font
-if has("gui_running")
-  if has("gui_gtk2")
-    set guifont=DejaVu\ Sans\ Mono\ 15
-  elseif has("gui_win32")
-    set guifont=Consolas:h16:b:cANSI
-  endif
-endif
-
 " Set lines to the cursor - when moving vertically using j/k
 set so=6
-
-" wait forever for key combo completion
-set notimeout
-
-" set language to en
-let $LANG='en'
-set langmenu=en
-
-" Ignore compiled files
-set wildignore=*.o,*~,*.pyc,*.so,*.class
-if has("win32")
-    set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
-else
-    set wildignore+=.git\*,.hg\*,.svn\*
-endif
-" wild menu tab completion mode
-set wildmode=longest:full,full
-
-"Always show current position
-set ruler
 
 " Height of the command bar
 set cmdheight=2
 
 " A buffer becomes hidden when it is abandoned
 set hid
-
-" Configure backspace so it acts as it should act
-set whichwrap+=<,>,h,l
 
 " Ignore case when searching
 set ignorecase
