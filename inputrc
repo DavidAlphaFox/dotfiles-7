@@ -1,18 +1,4 @@
 
 # set vi-like editing mode for bash
 set editing-mode vi
-set show-mode-in-prompt on
-
-$if mode=vi
-
-    #set keymap vi-command
-    # vi command mode mappings:
-    
-    set keymap vi-insert
-    # vi insert mode mappings:
-    "\C-i": menu-complete
-    "\C-l": clear-screen
-    "\C-k": kill-line
-
-$endif
 
