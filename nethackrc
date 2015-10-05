@@ -3,17 +3,13 @@
 # Here are some examples of reasonable defaults:
 
 OPTIONS=showexp,showscore,time,color,autopickup,pickup_types:$
-OPTIONS=autodig,fruit:slime mold,boulder:0
-
+OPTIONS=autodig,fruit:fig,boulder:0
 OPTIONS=msg_window:reversed
-
 OPTIONS=number_pad:2
-
 OPTIONS=suppress_alert:3.4.3
-
 OPTIONS=lit_corridor
-
 OPTIONS=hilite_pet
+OPTIONS=pushweapon,rest_on_space
 
 ## http://nethackwiki.com/wiki/Autopickup_exceptions
 # Uses globbing, unless you set OPTIONS=apexception_regex
