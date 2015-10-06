@@ -2,14 +2,12 @@
 
 # Here are some examples of reasonable defaults:
 
-OPTIONS=showexp,showscore,time,color,autopickup,pickup_types:$
-OPTIONS=autodig,fruit:fig,boulder:0
-OPTIONS=msg_window:reversed
-OPTIONS=number_pad:2
-OPTIONS=suppress_alert:3.4.3
+OPTIONS=showexp,showscore,time,color,autodig,autopickup,pickup_types:$
+OPTIONS=fruit:fig,boulder:0,name:Umbriel
+OPTIONS=number_pad:2,rest_on_space,!cmdassist
+OPTIONS=suppress_alert:3.4.3,nomail
 OPTIONS=lit_corridor
-OPTIONS=hilite_pet
-OPTIONS=pushweapon,rest_on_space
+OPTIONS=menu_headings:bold,msg_window:reversed
 
 ## http://nethackwiki.com/wiki/Autopickup_exceptions
 # Uses globbing, unless you set OPTIONS=apexception_regex
@@ -44,10 +42,10 @@ OPTIONS=use_darkgray
 #
 ## Say in the message line whenever you walk against a wall.
 ## Useful for blind players.
-#OPTION=msg_wall_hits
+#OPTIONS=msg_wall_hits
 #
 ## Show item glyphs (color and symbol) in tty menus.
-OPTION=menu_glyphs
+OPTIONS=menu_glyphs
 #
 ## Name and rank background correspond to statuscolor HP colors.
 #OPTIONS=hitpointbar
@@ -75,11 +73,11 @@ STATUSCOLOR=ill:red&inverse,foodpois:red&inverse,slime:red&inverse
 #
 ## Colored menus. Regular expressions allowed.
 OPTIONS=menucolors
-MENUCOLOR=" blessed "=green
-MENUCOLOR=" holy "=green
+MENUCOLOR=" blessed "=blue&bold
+MENUCOLOR=" holy "=cyan&bold
 MENUCOLOR=" cursed "=red
-MENUCOLOR=" unholy "=red
-MENUCOLOR=" cursed .* (being worn)"=orange&underline
+MENUCOLOR=" unholy "=magenta&bold
+MENUCOLOR=" cursed .* (being worn)"=red&underline
 #
 ## Require you to type "yes" instead of just "y"
 #OPTIONS=paranoid_hit,paranoid_quit,paranoid_remove
@@ -94,7 +92,7 @@ MENUCOLOR=" cursed .* (being worn)"=orange&underline
 #OPTIONS=win_edge
 #
 ## Show object class symbol in menus where it acts as a hotkey
-#OPTIONS=show_obj_sym
+OPTIONS=show_obj_sym
 #
 ## If off, you never load bones files.
 #OPTIONS=!bones
@@ -165,7 +163,22 @@ MSGTYPE=hide "You displaced *"
 
 # See http://nethackwiki.com/wiki/Curses_interface
 #OPTIONS=windowtype:curses
-OPTIONS=UTF8graphics
+
+
+# UTF8 support.
+#  Does NOT play nice with windowtype:curses
+#  Not FULL unicode support. eg. Double width characters will screw
+#    up the display and combining characters are not supported.
+OPTIONS=utf8graphics
+# Change the UTF8 symbols for monsters, objects, and dungeon features.
+#MONSTERSYMBOL='horse':U+24FA
+#OBJECTSYMBOL='apple':0x03a9
+SYMBOL='altar':0x03c0
+# Instead of using SYMBOL, you can also change all dungeon feature symbols
+# by using DUNGEONSYMBOLS. The format for it is the same as DUNGEON, but
+# DUNGEONSYMBOLS takes numbers that can also be hexadecimals or
+# unicode codepoints.
+
 
 # For more information on what you can set in your nethackrc file, refer to:
 #    http://www.nethack.org/v343/Guidebook.html#_TOCentry_42
