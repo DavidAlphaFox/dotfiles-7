@@ -98,7 +98,7 @@ OPTIONS=show_obj_sym
 #OPTIONS=!bones
 #
 ## If on, you'll quiver items if you fire 'em.
-OPTIONS=!quiver_fired
+OPTIONS=quiver_fired
 #
 #
 # To make playing with a screen-reader such as JAWS easier:
@@ -153,8 +153,8 @@ OPTIONS=!quiver_fired
 ## displacing pets. hide the message.
 MSGTYPE=hide "You displaced *"
 ## items on floor. don't repeat the message.
-#MSGTYPE=norep "You see here a *"
-#MSGTYPE=norep "You see here an *"
+MSGTYPE=norep "You see here a *"
+MSGTYPE=norep "You see here an *"
 ## delayed instadeaths. always prompt for -more-
 #MSGTYPE=stop "You are slowing down."
 #MSGTYPE=stop "You find it hard to breathe."
