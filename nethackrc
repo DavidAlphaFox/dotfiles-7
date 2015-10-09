@@ -173,7 +173,9 @@ OPTIONS=utf8graphics
 # Change the UTF8 symbols for monsters, objects, and dungeon features.
 #MONSTERSYMBOL='horse':U+24FA
 #OBJECTSYMBOL='apple':0x03a9
-SYMBOL='altar':0x03c0
+SYMBOL='altar':0x03a9
+#SYMBOL='grave':0x2616
+SYMBOL='grave':0x2229
 # Instead of using SYMBOL, you can also change all dungeon feature symbols
 # by using DUNGEONSYMBOLS. The format for it is the same as DUNGEON, but
 # DUNGEONSYMBOLS takes numbers that can also be hexadecimals or
