@@ -2,9 +2,9 @@
 
 # Here are some examples of reasonable defaults:
 
-OPTIONS=showexp,showscore,time,color,autodig,autopickup,pickup_types:$
+OPTIONS=time,color,autodig,autopickup,pickup_types:$
 OPTIONS=fruit:fig,boulder:0,name:Umbriel
-OPTIONS=number_pad:2,rest_on_space,!cmdassist
+OPTIONS=number_pad:2,!cmdassist
 OPTIONS=suppress_alert:3.4.3,nomail
 OPTIONS=lit_corridor
 OPTIONS=menu_headings:bold,msg_window:reversed
@@ -129,8 +129,8 @@ OPTIONS=quiver_fired
 #
 #
 # Configurable monster colors
-#MONSTERCOLOR=floating eye:yellow
-#MONSTERCOLOR=master mind flayer:lightmagenta
+MONSTERCOLOR=floating eye:yellow
+MONSTERCOLOR=master mind flayer:lightmagenta
 #
 #
 #Key rebinding and extended command autocomplete:
@@ -153,12 +153,12 @@ OPTIONS=quiver_fired
 ## displacing pets. hide the message.
 MSGTYPE=hide "You displaced *"
 ## items on floor. don't repeat the message.
-MSGTYPE=norep "You see here a *"
-MSGTYPE=norep "You see here an *"
+#MSGTYPE=norep "You see here a *"
+#MSGTYPE=norep "You see here an *"
 ## delayed instadeaths. always prompt for -more-
-#MSGTYPE=stop "You are slowing down."
-#MSGTYPE=stop "You find it hard to breathe."
-#MSGTYPE=stop "You are turning a little *"
+MSGTYPE=stop "You are slowing down."
+MSGTYPE=stop "You find it hard to breathe."
+MSGTYPE=stop "You are turning a little *"
 #
 
 # See http://nethackwiki.com/wiki/Curses_interface
