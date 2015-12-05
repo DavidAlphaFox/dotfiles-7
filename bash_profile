@@ -4,7 +4,9 @@ if [ -f "${HOME}/.bashrc" ] ; then
   source "${HOME}/.bashrc"
 fi
 
-PATH="$HOME/.dotfiles/bin:$PATH"
+if [[ "$PATH" != *"dotfiles"* ]]; then
+    PATH="$HOME/.dotfiles/bin:$PATH"
+fi
 
 alias df='df -h'
 alias cmd="cygstart -- cmd"
