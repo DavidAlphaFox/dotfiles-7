@@ -4,15 +4,8 @@ if [ -f "${HOME}/.bashrc" ] ; then
   source "${HOME}/.bashrc"
 fi
 
-#!/bin/bash
+PATH="$HOME/.dotfiles/bin:$PATH"
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias l='ls -h -F --color'
-alias la='l -A'
-alias ll='la -l'
 alias df='df -h'
 alias cmd="cygstart -- cmd"
 alias lt='tree -aFC -I .git'
