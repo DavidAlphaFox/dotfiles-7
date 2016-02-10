@@ -5,7 +5,7 @@ if [ -f "${HOME}/.bashrc" ] ; then
 fi
 
 if [[ "$PATH" != *"dotfiles"* ]]; then
-    PATH="$HOME/.dotfiles/bin:$PATH"
+    PATH="$HOME/.dotfiles/bin:$HOME/bin:$PATH"
 fi
 
 alias df='df -h'
