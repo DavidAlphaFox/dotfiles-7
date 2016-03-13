@@ -22,4 +22,4 @@ alias gd="git diff --color"
 alias gc="git commit"
 alias ga="git add"
 alias gcp="git gc --prune; git remote prune origin; git pull"
-
+alias tmux="tmux -2"
