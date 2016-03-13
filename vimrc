@@ -16,7 +16,7 @@ set fileencoding=utf-8
 colorscheme melania
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Consolas\ 13
+    set guifont=DejaVu\ Sans\ Mono\ 18
   endif
 endif
 
