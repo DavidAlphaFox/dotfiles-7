@@ -366,7 +366,8 @@ let g:syntastic_auto_loc_list = 1
 
 " airline status theme
 set showtabline=1
-let g:airline_theme='lucius'
+"let g:airline_theme='lucius'
+let g:airline_theme='bubblegum'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#show_buffers=0
 let g:airline#extensions#tabline#tab_min_count=2
