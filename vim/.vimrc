@@ -387,6 +387,8 @@ if has("gui_win32")
     behave mswin
 endif
 
+" disable syntastic check (compile) on save
+let g:syntastic_vala_check_disabled = 1
 " vala
 " Disable valadoc syntax highlight
 "let vala_ignore_valadoc = 1
