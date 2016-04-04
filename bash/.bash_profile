@@ -24,4 +24,4 @@ alias ga="git add"
 alias gcp="git gc --prune; git remote prune origin; git pull"
 alias tmux="tmux -2"
 eval `dircolors -b /etc/dircolors`
-
+alias mysql="cmd /k mysql"
