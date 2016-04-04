@@ -13,7 +13,7 @@ endif
 set encoding=utf-8
 set fileencoding=utf-8
 
-colorscheme melania
+colorscheme default
 if has("gui_running")
   if has("gui_gtk2")
     set guifont=DejaVu\ Sans\ Mono\ 18
@@ -387,6 +387,8 @@ if has("gui_win32")
     behave mswin
 endif
 
+" disable syntastic check (compile) on save
+let g:syntastic_vala_check_disabled = 1
 " vala
 " Disable valadoc syntax highlight
 "let vala_ignore_valadoc = 1

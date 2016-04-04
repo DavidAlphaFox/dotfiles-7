@@ -1,6 +1,6 @@
 [Scheme]
 Name=Copper
-ColorForeground=#808080808080
-ColorBackground=#121212121212
-ColorCursor=#808080808080
-ColorPalette=#000000000000;#cbcb6d6d5151;#676792926767;#a9a98c8c4e4e;#c3c3cdcdd7d7;#949447474747;#63639a9a8f8f;#aaaaaaaaaaaa;#555555555555;#d9d990905858;#8773bfff8773;#c9c9aeae5d5d;#85859696a4a4;#cdcd99999999;#afafd0d0caca;#d4d4d4d4d4d4
+ColorForeground=#ffffeeeeaaaa
+ColorBackground=#252520201616
+ColorCursor=#ffffeeeeaaaa
+ColorPalette=#000000000000;#cbcb6d6d5151;#676792926767;#a9a98c8c4e4e;#85859696a4a4;#949447474747;#63639a9a8f8f;#aaaaaaaaaaaa;#555555555555;#d9d990905858;#8773bfff8773;#c9c9aeae5d5d;#c3c3cdcdd7d7;#cdcd99999999;#afafd0d0caca;#d4d4d4d4d4d4
