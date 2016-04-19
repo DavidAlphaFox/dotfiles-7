@@ -26,4 +26,5 @@ alias tmux="tmux -2"
 export CLUTTER_BACKEND=x11
 eval `dircolors -b /etc/dircolors`
 alias mysql="cmd /k mysql"
+alias xlogout="xfce4-session-logout"
 

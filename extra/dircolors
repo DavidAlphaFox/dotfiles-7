@@ -262,11 +262,12 @@ EXEC 1;32
 .vapi 1;33
 
 # data files
-.json         1;33
-.xml          1;33
-.iml          1;33
-.properties   1;33
-.yml          1;33
+.json         1;35
+.xml          1;35
+.iml          1;35
+.properties   1;35
+.yml          1;35
+.yaml          1;35
 
 # txt files
 .txt     0;37

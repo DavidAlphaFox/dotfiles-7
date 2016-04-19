@@ -1,1 +1,2 @@
-./standalone.sh -P=C:/Users/hansoni/src/samee-environment/as7_init/as7_init.properties
+cd /home/HansonI/src/samee-environment/jboss-as-7.1.1.Final/bin
+standalone.sh -P=C:/Users/hansoni/src/samee-environment/as7_init/as7_init.properties
