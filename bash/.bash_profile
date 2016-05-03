@@ -3,6 +3,10 @@ export SSH_ASKPASS="/usr/lib64/seahorse/seahorse-ssh-askpass"
 if [ -f "${HOME}/.bashrc" ] ; then
   source "${HOME}/.bashrc"
 fi
+# source the users bash_local if it exists
+if [ -f "${HOME}/.bash_local" ] ; then
+  source "${HOME}/.bash_local"
+fi
 export LD_LIBRARY_PATH=.
 if [[ "$PATH" != *"$HOME/bin"* ]]; then
     PATH="$HOME/bin:$PATH"
@@ -23,9 +27,7 @@ alias gc="git commit"
 alias ga="git add"
 alias gcp="git gc --prune; git remote prune origin; git pull"
 alias tmux="tmux -2"
-export CLUTTER_BACKEND=x11
 eval `dircolors -b /etc/dircolors`
-alias mysql="cmd /k mysql"
 alias xlogout="xfce4-session-logout"
 alias npm="cmd /K npm"
 alias bower="cmd /K bower"
