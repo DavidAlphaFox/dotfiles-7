@@ -27,4 +27,6 @@ export CLUTTER_BACKEND=x11
 eval `dircolors -b /etc/dircolors`
 alias mysql="cmd /k mysql"
 alias xlogout="xfce4-session-logout"
+alias npm="cmd /K npm"
+alias bower="cmd /K bower"
 
