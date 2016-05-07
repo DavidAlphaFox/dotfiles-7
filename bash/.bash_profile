@@ -12,6 +12,8 @@ if [[ "$PATH" != *"$HOME/bin"* ]]; then
     PATH="$HOME/bin:$PATH"
 fi
 TERM=xterm
+eval `dircolors -b /etc/dircolors`
+
 alias df='df -h'
 alias cmd="cygstart -- cmd"
 alias lt='tree -aFC -I .git'
@@ -27,7 +29,6 @@ alias gc="git commit"
 alias ga="git add"
 alias gcp="git gc --prune; git remote prune origin; git pull"
 alias tmux="tmux -2"
-eval `dircolors -b /etc/dircolors`
 alias xlogout="xfce4-session-logout"
 alias npm="cmd /K npm"
 alias bower="cmd /K bower"
