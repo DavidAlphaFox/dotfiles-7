@@ -29,4 +29,6 @@ alias gcp="git gc --prune; git remote prune origin; git pull"
 alias tmux="tmux -2"
 eval `dircolors -b /etc/dircolors`
 alias xlogout="xfce4-session-logout"
+alias npm="cmd /K npm"
+alias bower="cmd /K bower"
 
