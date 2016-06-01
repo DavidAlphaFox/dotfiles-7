@@ -30,6 +30,6 @@ alias ga="git add"
 alias gcp="git gc --prune; git remote prune origin; git pull"
 alias tmux="tmux -2"
 alias xlogout="xfce4-session-logout"
-alias npm="cmd /K npm"
-alias bower="cmd /K bower"
+alias nethack="nethack -u Umbriel"
+source ~/.bash_aliases
 
