@@ -151,8 +151,8 @@ mode "resize" {
 
 bindsym $mod+p mode "resize"
 #set $main #BF9060
-#set $main #60BFBF
-set $main #604080
+set $main #60BFBF
+#set $main #604080
 set $urg #BF6060
 set $arc #2f343F
 #colors
@@ -168,7 +168,7 @@ client.urgent           $urg   $urc       #AAAAAA
 bar {
         #i3bar_command i3bar -t
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
-        #position top
+        position top
         colors {
             background #000000
             statusline $main
@@ -185,12 +185,12 @@ workspace 1 output LVDS1
 workspace 2 output VGA1
 exec_always --no-startup-id xrandr --output VGA1 --auto --left-of LVDS1
 # startup programs
-exec --no-startup-id compton -f -z -c
+exec --no-startup-id compton -f -c -z -r 24 -o 0.7
 exec --no-startup-id dunst
 exec --no-startup-id nm-applet
 exec --no-startup-id pamac-tray
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec_always --no-startup-id feh --bg-scale ~/Pictures/cubes/The-Abyss-Blur.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/cubes/Glacier-Cocktail-Blur.png
 exec --no-startup-id clipmenud
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh
 

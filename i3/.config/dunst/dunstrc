@@ -142,14 +142,14 @@
     browser = /usr/bin/chromium
 
     # Align icons left/right/off
-    icon_position = left
+    icon_position = off
 
     # Paths to default icons.
-    icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_folders = /usr/share/icons/Vibrancy-Colors/status/16:/usr/share/icons/Vibrancy-Colors/devices/16
 
 [frame]
     width = 4
-    color = "#9060BF"
+    color = "#60BFBF"
 
 [shortcuts]
 
@@ -176,12 +176,12 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#000000"
-    foreground = "#9060BF"
+    foreground = "#60BFBF"
     timeout = 10
 
 [urgency_normal]
     background = "#000000"
-    foreground = "#9060BF"
+    foreground = "#60BFBF"
     timeout = 10
 
 [urgency_critical]
