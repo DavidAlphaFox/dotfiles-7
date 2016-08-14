@@ -197,6 +197,7 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs
 #exec --no-startup-id xscreensaver -no-splash
 # app shortcuts
 bindsym $mod+Insert exec --no-startup-id clipmenu -p ''
+bindsym $mod+Delete exec --no-startup-id rm -r /tmp/clipmenu.$USER/*
 
 # volume
 bindsym XF86AudioRaiseVolume exec "pamixer -i 10 --allow-boost"
