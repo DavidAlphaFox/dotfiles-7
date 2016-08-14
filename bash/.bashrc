@@ -5,3 +5,4 @@
 export EDITOR=vim
 export GIT_EDITOR=$EDITOR
 export BROWSER=/usr/bin/chromium
+export VISUAL="vim"

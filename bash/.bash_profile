@@ -33,3 +33,6 @@ alias xlogout="xfce4-session-logout"
 alias nethack="nethack -u Umbriel"
 source ~/.bash_aliases
 
+export TERMINAL=xfce4-terminal
+export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+
