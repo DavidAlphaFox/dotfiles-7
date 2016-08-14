@@ -196,7 +196,8 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs
 
 #exec --no-startup-id xscreensaver -no-splash
 # app shortcuts
-bindsym $mod+Shift+Insert exec --no-startup-id clipmenu -fn 'Atomic Age-12' -nb '#000000' -nf '#60BFBF' -sb '#60BFBF' -sf '#000000'
+bindsym $mod+Shift+Insert exec --no-startup-id clipmenu -p ''
+
 # volume
 bindsym XF86AudioRaiseVolume exec "pamixer -i 10 --allow-boost"
 bindsym XF86AudioLowerVolume exec "pamixer -d 10 --allow-boost"
