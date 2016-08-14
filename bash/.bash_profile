@@ -35,4 +35,5 @@ source ~/.bash_aliases
 
 export TERMINAL=xfce4-terminal
 export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+export P_COLOR='1;36'
 
