@@ -209,3 +209,5 @@ bindsym $mod+Shift+L exec i3lock-fancy -p
 for_window [class="^.*"] border pixel 4
 gaps inner 12
 gaps outer 0
+for_window [title="galculator.*"] floating enable
+
