@@ -156,11 +156,11 @@ set $main #60BFBF
 set $urg #BF6060
 set $arc #2f343F
 #colors
-#class                  border background text        indicator       child_border
-client.focused          $main  $main      #AAAAAA     #408040
-client.focused_inactive $arc   $arc       #404040
-client.unfocused        $arc   $arc       #404040
-client.urgent           $urg   $urc       #AAAAAA
+#class                  border background text    indicator       child_border
+client.focused          $main  $main      #AAAAAA #60BF60
+client.focused_inactive $arc   $arc       #404040 $arc
+client.unfocused        $arc   $arc       #404040 $arc
+client.urgent           $urg   $urc       #AAAAAA $arc
 #client.background
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -181,11 +181,15 @@ bar {
 }
 
 # multiple monitor/workspace
-workspace 1 output LVDS1
-workspace 2 output VGA1
-exec_always --no-startup-id xrandr --output VGA1 --auto --left-of LVDS1
+workspace 1 output eDP1
+workspace 2 output HDMI1
+workspace 3 output HDMI2
+workspace 4 output DP1
+exec_always --no-startup-id xrandr --output DP1 --auto --right-of eDP1
+exec_always --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
+exec_always --no-startup-id xrandr --output HDMI2 --auto --right-of eDP1
 # startup programs
-exec --no-startup-id compton
+exec --no-startup-id compton --vsync opengl
 exec --no-startup-id dunst
 exec --no-startup-id nm-applet
 exec --no-startup-id pamac-tray
