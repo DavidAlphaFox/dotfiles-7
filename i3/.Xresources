@@ -9,7 +9,7 @@ rofi.lines:                          10
 ! Number of columns
 rofi.columns:                        1
 ! Font to use
-rofi.font:                           Atomic Age 14
+rofi.font:                           Atomic Age 16
 ! Border width
 rofi.bw:                             4
 ! Location on screen
