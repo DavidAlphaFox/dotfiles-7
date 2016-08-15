@@ -184,8 +184,8 @@ bar {
 workspace 1 output eDP1
 workspace 2 output HDMI1
 workspace 3 output HDMI2
-workspace 4 output DP1
-exec_always --no-startup-id xrandr --output DP1 --auto --right-of eDP1
+#workspace 4 output DP1
+#exec_always --no-startup-id xrandr --output DP1 --auto --right-of eDP1
 exec_always --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
 exec_always --no-startup-id xrandr --output HDMI2 --auto --right-of eDP1
 # startup programs
