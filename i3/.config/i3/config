@@ -185,7 +185,7 @@ workspace 1 output LVDS1
 workspace 2 output VGA1
 exec_always --no-startup-id xrandr --output VGA1 --auto --left-of LVDS1
 # startup programs
-exec --no-startup-id compton -f -c -z -r 24 -o 0.7
+exec --no-startup-id compton
 exec --no-startup-id dunst
 exec --no-startup-id nm-applet
 exec --no-startup-id pamac-tray
