@@ -216,4 +216,5 @@ gaps inner 12
 gaps outer 0
 for_window [title="galculator.*"] floating enable
 for_window [title="Volume Control.*"] floating enable
+for_window [title="Google Hangouts.*"] floating enable
 
