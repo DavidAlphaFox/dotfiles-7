@@ -204,6 +204,7 @@ bindsym XF86AudioRaiseVolume exec "pamixer -i 10 --allow-boost"
 bindsym XF86AudioLowerVolume exec "pamixer -d 10 --allow-boost"
 bindsym XF86AudioMute exec "pamixer -t"
 bindsym $mod+Shift+L exec i3lock-fancy -p
+bindsym $mod+W exec --no-startup-id rofi -show window
 
 #gaps
 for_window [class="^.*"] border pixel 4
