@@ -36,14 +36,6 @@ bindsym $mod+Return exec xfce4-terminal
 # kill focused window
 bindsym $mod+Shift+apostrophe kill
 
-# start dmenu (a program launcher)
-#bindsym $mod+e exec dmenu_run
-bindsym $mod+e exec rofi -show run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+t focus down
@@ -150,10 +142,20 @@ mode "resize" {
 }
 
 bindsym $mod+p mode "resize"
+
+
 set $main #78BCDC
 set $urg #BF6060
 set $arc #2f343F
 set $green #60BF60
+
+# start dmenu (a program launcher)
+#bindsym $mod+e exec dmenu_run
+bindsym $mod+e exec rofi -show run
+
+# There also is the (new) i3-dmenu-desktop which only displays applications
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
 #colors
 #class                  border background text    indicator       child_border
 client.focused          $main  $main      #AAAAAA $green
@@ -189,7 +191,7 @@ exec_always --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
 exec_always --no-startup-id xrandr --output HDMI2 --auto --right-of eDP1
 # startup programs
 exec --no-startup-id compton --vsync opengl
-exec --no-startup-id dunst
+exec --no-startup-id dunst -lf $main -nf $main -uf $urg
 exec --no-startup-id nm-applet
 exec --no-startup-id pamac-tray
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
