@@ -150,14 +150,13 @@ mode "resize" {
 }
 
 bindsym $mod+p mode "resize"
-#set $main #BF9060
-set $main #60BFBF
-#set $main #604080
+set $main #78BCDC
 set $urg #BF6060
 set $arc #2f343F
+set $green #60BF60
 #colors
 #class                  border background text    indicator       child_border
-client.focused          $main  $main      #AAAAAA #60BF60
+client.focused          $main  $main      #AAAAAA $green
 client.focused_inactive $arc   $arc       #404040 $arc
 client.unfocused        $arc   $arc       #404040 $arc
 client.urgent           $urg   $urc       #AAAAAA $arc
