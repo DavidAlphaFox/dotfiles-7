@@ -145,6 +145,7 @@ bindsym $mod+p mode "resize"
 
 
 set $main #78BCDC
+set $back #121212
 set $urg #BF6060
 set $arc #2f343F
 set $green #60BF60
@@ -161,7 +162,7 @@ bindsym $mod+e exec rofi -show run
 client.focused          $main  $main      #AAAAAA $green
 client.focused_inactive $arc   $arc       #404040 $arc
 client.unfocused        $arc   $arc       #404040 $arc
-client.urgent           $urg   $urc       #AAAAAA $arc
+client.urgent           $urg   $urg       #AAAAAA $arc
 #client.background
 
 # Start i3bar to display a workspace bar (plus the system information i3status
