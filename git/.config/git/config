@@ -1,0 +1,42 @@
+[core]
+  editor = vim
+  filemode = true
+  autocrlf = false
+[credential]
+  helper = gnome-keyring
+[push]
+  default = current
+[help]
+  autocorrect = 30
+[merge]
+  conflictstyle = diff3
+[mergetool]
+  prompt = false
+  keepBackup = false
+[difftool]
+  prompt = false
+[color]
+  ui = auto
+[color "grep"]
+  separator = green bold
+  filename = green
+  linenumber = blue bold
+[color "diff"]
+  commit = green
+  meta = white
+  frag = magenta bold
+  old = red
+  new = green bold
+[color "branch"]
+  remote = red bold
+  current = green bold
+  local = yellow bold
+[color "status"]
+  added = yellow bold
+  changed = red bold
+  untracked = red
+  header = black bold
+  branch = green bold
+[init]
+  temlatedir = ~/.git-templates
+

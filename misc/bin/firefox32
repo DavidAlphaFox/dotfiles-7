@@ -1,0 +1,4 @@
+#!/bin/bash
+export LD_LIBRARY_PATH="/usr/lib32/jvm/default/lib/i386"
+MOZ_PLUGIN_PATH="/usr/lib32/mozilla/plugins/" /usr/lib32/bin32-firefox/firefox32
+

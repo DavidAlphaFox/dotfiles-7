@@ -1,0 +1,6 @@
+#!/bin/sh
+
+log="$(git log -1 --format='format:%an <%ae>%n%n%B')"
+notify-send -i gitg "Commit successful" "$log"
+
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [ -z "$(pgrep "tilda")" ]; then
+    exec tilda
+fi
+

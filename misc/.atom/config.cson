@@ -1,0 +1,91 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#aad875"
+      accentColor: "#6f8853"
+      genAccent: true
+      paintCursor: true
+      predefinedColor: "Green"
+    fonts:
+      fontSize: 17
+    tabs:
+      compactTabs: true
+      noTabMinWidth: true
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  "autocomplete-gdscript": {}
+  "autocomplete-modules":
+    babelPluginModuleResolver: true
+  core:
+    autoHideMenuBar: true
+    customFileTypes:
+      "source.ini": [
+        ".flowconfig"
+      ]
+      "source.json": []
+    disabledPackages: [
+      "notifications"
+      "whitespace"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "one-dark-material-syntax"
+    ]
+  editor:
+    fontFamily: "Iosevka Medium"
+    fontSize: 18
+  "exception-reporting":
+    userId: "0b76d67e-58ce-0bab-3cfb-1e30b634d378"
+  "file-icons":
+    onChanges: true
+  "git-plus":
+    commits:
+      verboseCommits: true
+    diffs: {}
+    general:
+      messageTimeout: 10
+      openInPane: false
+    remoteInteractions:
+      pullBeforePush: true
+      pullRebase: true
+  "highlight-selected":
+    lightTheme: true
+  "lang-gdscript":
+    disableBasicCompletions: true
+  "language-babel":
+    autoIndentJSX: true
+  linter:
+    errorPanelHeight: 163
+    gutterPosition: "Left"
+    showErrorPanel: false
+    showErrorTabFile: false
+    showErrorTabProject: false
+    statusIconScope: "File"
+  "linter-eslint":
+    disableFSCache: true
+    disableWhenNoEslintConfig: false
+  "markdown-preview":
+    openPreviewInSplitPane: false
+  tabs:
+    enableVcsColoring: true
+  "tree-view":
+    alwaysOpenExisting: true
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
+".babel.regexp.source":
+  editor:
+    tabLength: 2
+".css.source.styled":
+  editor:
+    tabLength: 2
+".js.jsx.source":
+  editor:
+    tabLength: 2
+".languagebabel.ttlextension":
+  editor:
+    tabLength: 2
