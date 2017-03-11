@@ -541,20 +541,15 @@ function get_pwd(){
   echo $prompt_short_dir
 }
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[green]%}:"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[yellow]%}!%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN=""
-
 local ret_status="%(?:%{$fg_bold[green]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}"
 # show vi mode
 VMOD='%{$fg_bold[green]%} %{$reset_color%}'
 R1='%{$fg[red]%}$(nice_exit_code)%{$reset_color%}'
-R2='$(__promptline_vcs_branch) %{$fg_bold[blue]%}$(get_pwd)%{$reset_color%}%{$fg_bold[yellow]%}$(__promptline_host)'
+R2='$(__promptline_vcs_branch) %{$fg_bold[blue]%}$(get_pwd)%{$reset_color%}%{$fg_bold[yellow]%}$(__promptline_host)%{$reset_color%}'
 precmd() {
   PROMPT=' %{$reset_color%}$ret_status '
   RPROMPT=${R1}${R2}
-  PS2="%{$fg_bold[black]%}(%_) "
+  PS2="%{$fg_bold[black]%}(%_) %{$reset_color%}"
 }
 zle-keymap-select() {
   PROMPT=' %{$reset_color%}$ret_status '
