@@ -40,7 +40,7 @@ lsof
 mate-control-center-gtk3
 mate-notification-daemon
 mate-polkit
-mdm-themes-html
+mdm-display-manager
 net-tools
 nethack
 numlockx
