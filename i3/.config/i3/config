@@ -146,9 +146,9 @@ workspace 3 output HDMI2
 workspace 4 output VGA1
 # startup programs
 exec_always --no-startup-id feh --bg-fill ~/Pictures/bg.png
-exec --no-startup-id eval `/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh`
-exec --no-startup-id /usr/lib/mate-settings-daemon/mate-settings-daemon --replace
-exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
+#exec --no-startup-id eval `/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh`
+#exec --no-startup-id /usr/lib/mate-settings-daemon/mate-settings-daemon --replace
+#exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 exec --no-startup-id compton
 exec --no-startup-id clipmenud
 exec_always --no-startup-id ~/bin/grave-toggle
@@ -180,6 +180,9 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+Shift+l exec --no-startup-id i3lock-fancy -f 'Iosevka-Term-Medium'
 bindsym $mod+W exec --no-startup-id rofi -show window
 bindsym $mod+F11 bar mode toggle
+
+bindsym $mod+Print exec --no-startup-id scrot
+
 #gaps
 gaps inner 24
 gaps outer 0
