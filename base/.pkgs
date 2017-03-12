@@ -14,6 +14,7 @@ clipmenu
 compton
 cpio
 ctags
+dconf-editor
 dia
 dialog
 duperemove
@@ -40,6 +41,7 @@ lsof
 mate-control-center-gtk3
 mate-notification-daemon
 mate-polkit
+mate-session-manager
 mdm-display-manager
 net-tools
 nethack
