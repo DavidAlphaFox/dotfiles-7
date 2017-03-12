@@ -14,6 +14,7 @@ mod_sym=' '
 #stash_sym=' '
 stash_sym=' '
 noup_sym=' '
+vicmd_sym=' '
 # bash/zsh git prompt support
 #
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
@@ -541,22 +542,25 @@ function get_pwd(){
   echo $prompt_short_dir
 }
 
-local ret_status="%(?:%{$fg_bold[green]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}"
-# show vi mode
-VMOD='%{$fg_bold[green]%} %{$reset_color%}'
-R1='%{$fg[red]%}$(nice_exit_code)%{$reset_color%}'
-R2='$(__promptline_vcs_branch) %{$fg_bold[blue]%}$(get_pwd)%{$reset_color%}%{$fg_bold[yellow]%}$(__promptline_host)%{$reset_color%}'
+local ret_status='%(?:%{$fg_bold[green]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
+local vicmd_status='%{$fg_bold[green]%}$vicmd_sym%{$reset_color%}'
+local exit_status='%{$fg[red]%}$(nice_exit_code)%{$reset_color%}'
+local git_status='$(__promptline_vcs_branch)%{$reset_color%}'
+local dir_status='%{$fg_bold[blue]%}$(get_pwd)%{$reset_color%}'
+local host_status='%{$fg_bold[yellow]%}$(__promptline_host)%{$reset_color%}'
 precmd() {
-  PROMPT=' %{$reset_color%}$ret_status '
-  RPROMPT=${R1}${R2}
-  PS2="%{$fg_bold[black]%}(%_) %{$reset_color%}"
+  PROMPT=" %{$reset_color%}$ret_status "
+  RPROMPT="%{$reset_color%}$exit_status$git_status $dir_status$host_status"
+  PS2="%{$reset_color%}%{$fg_bold[black]%}(%_) %{$reset_color%}"
 }
 zle-keymap-select() {
-  PROMPT=' %{$reset_color%}$ret_status '
-  RPROMPT=${R1}${R2}
+  PROMPT=" %{$reset_color%}$ret_status "
+  RPROMPT="%{$reset_color%}$exit_status$git_status $dir_status$host_status"
+  PS2="%{$reset_color%}%{$fg_bold[black]%}(%_) %{$reset_color%}"
   if [[ $KEYMAP = vicmd ]]; then
-    PROMPT=' %{$reset_color%}$ret_status '
-    RPROMPT="${R1} ${VMOD}${R2}"
+    PROMPT=" %{$reset_color%}$ret_status "
+    RPROMPT="%{$reset_color%}$exit_status $vicmd_status$git_status $dir_status$host_status"
+    PS2="%{$reset_color%}%{$fg_bold[black]%}(%_) %{$reset_color%}"
   fi
   () { return $__prompt_status }
   zle reset-prompt
