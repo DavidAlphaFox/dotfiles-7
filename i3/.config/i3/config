@@ -181,7 +181,7 @@ bindsym $mod+F11 bar mode toggle
 bindsym $mod+Print exec --no-startup-id scrot
 
 #gaps
-gaps inner 24
+gaps inner 18
 gaps outer 0
 for_window [class="^.*"] border pixel 3
 for_window [title="galculator.*"] floating enable
