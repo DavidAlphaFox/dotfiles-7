@@ -553,16 +553,16 @@ local git_status='$(__promptline_vcs_branch)%{$reset_color%}'
 local dir_status='%{$fg_bold[blue]%}$(get_pwd)%{$reset_color%}'
 local host_status='%{$fg_bold[yellow]%}$(__promptline_host)%{$reset_color%}'
 precmd() {
-  PROMPT=" %{$reset_color%}$ret_status "
+  PROMPT="%{$reset_color%}$ret_status "
   RPROMPT="%{$reset_color%}$exit_status$git_status $dir_status$host_status"
   PS2="%{$reset_color%}%{$fg_bold[black]%}(%_) %{$reset_color%}"
 }
 zle-keymap-select() {
-  PROMPT=" %{$reset_color%}$ret_status "
+  PROMPT="%{$reset_color%}$ret_status "
   RPROMPT="%{$reset_color%}$exit_status$git_status $dir_status$host_status"
   PS2="%{$reset_color%}%{$fg_bold[black]%}(%_) %{$reset_color%}"
   if [[ $KEYMAP = vicmd ]]; then
-    PROMPT=" %{$reset_color%}$ret_status "
+    PROMPT="%{$reset_color%}$ret_status "
     RPROMPT="%{$reset_color%}$exit_status $vicmd_status$git_status $dir_status$host_status"
     PS2="%{$reset_color%}%{$fg_bold[black]%}(%_) %{$reset_color%}"
   fi
