@@ -2,12 +2,12 @@ acpi
 alsa-utils
 antigen-git
 atom
-atril-gtk3
+atril
 automounter
 base-devel-meta
 base-meta
-caja-actions-gtk3
-caja-open-terminal-gtk3
+caja-actions
+caja-open-terminal
 calc
 chrony
 clipmenu
@@ -39,9 +39,10 @@ intel-ucode
 irqbalance
 lsb-release
 lsof
-mate-control-center-gtk3
+mate-control-center
 mate-notification-daemon
 mate-polkit
+mate-power-manager
 mate-session-manager
 mdm-display-manager
 net-tools
@@ -49,6 +50,7 @@ nethack
 numlockx
 openssh
 pamixer
+paper-icon-theme
 pavucontrol
 pepper-flash
 perl-anyevent-i3
@@ -89,4 +91,3 @@ xorg-xwininfo
 xterm
 yaourt
 zip
-mate-power-manager-gtk3
