@@ -58,16 +58,12 @@
     disableBasicCompletions: true
   "language-babel":
     autoIndentJSX: true
-  linter:
-    errorPanelHeight: 163
-    gutterPosition: "Left"
-    showErrorPanel: false
-    showErrorTabFile: false
-    showErrorTabProject: false
-    statusIconScope: "File"
+  linter: {}
   "linter-eslint":
     disableFSCache: true
     disableWhenNoEslintConfig: false
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     openPreviewInSplitPane: false
   tabs:
