@@ -6,7 +6,6 @@ atril
 automounter
 base-devel-meta
 base-meta
-caja-actions
 caja-open-terminal
 calc
 chrony
@@ -19,6 +18,7 @@ dia
 dialog
 duperemove
 feh
+filemanager-actions
 galculator
 gimp
 gnome-themes-standard
@@ -47,6 +47,7 @@ mate-session-manager
 mdm-display-manager
 net-tools
 nethack
+noto-fonts
 numlockx
 openssh
 pamixer
@@ -73,6 +74,7 @@ tig
 tilda
 tmux
 tree
+ttf-liberation
 unrar
 unzip
 vibrancy-colors
