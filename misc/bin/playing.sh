@@ -1,1 +1,6 @@
-echo "$(playerctl metadata xesam:artist): $(playerctl metadata xesam:title)"
+#!/bin/bash
+
+artist="$(playerctl metadata xesam:artist)"
+if [ -n "$artist" ]; then
+  echo "$artist: $(playerctl metadata xesam:title)"
+fi
