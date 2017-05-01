@@ -1,11 +1,11 @@
 "*":
   "atom-material-ui":
     colors:
-      abaseColor: "#aad875"
-      accentColor: "#6f8853"
+      abaseColor: "#80deea"
+      accentColor: "#528c94"
       genAccent: true
       paintCursor: true
-      predefinedColor: "Green"
+      predefinedColor: "Cyan"
     fonts:
       fontSize: 17
     tabs:
