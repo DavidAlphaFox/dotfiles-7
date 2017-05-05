@@ -129,10 +129,10 @@ bar {
   position top
   colors {
     background #1c1c1c
-    statusline #00000000
-		inactive_workspace #1c1c1c #1c1c1c #00000000
-		active_workspace #00000000 #00000000 #1c1c1c
-		focused_workspace #00000000 #00000000 #1c1c1c
+    statusline #FFFFFF40
+		inactive_workspace #1c1c1c #1c1c1c #FFFFFF40
+		active_workspace #FFFFFF40 #FFFFFF40 #1c1c1c
+		focused_workspace #FFFFFF40 #FFFFFF40 #1c1c1c
   }
   tray_padding 0
   height 32
