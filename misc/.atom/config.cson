@@ -1,13 +1,12 @@
 "*":
   "atom-material-ui":
     colors:
-      abaseColor: "#80deea"
-      accentColor: "#528c94"
+      abaseColor: "#ffd54f"
+      accentColor: "#a28832"
       genAccent: true
       paintCursor: true
-      predefinedColor: "Cyan"
-    fonts:
-      fontSize: 17
+      predefinedColor: "Amber"
+    fonts: {}
     tabs:
       compactTabs: true
       noTabMinWidth: true
@@ -16,7 +15,6 @@
     ui:
       panelContrast: true
       panelShadows: true
-  "autocomplete-gdscript": {}
   "autocomplete-modules":
     babelPluginModuleResolver: true
   core:
@@ -54,8 +52,6 @@
       pullRebase: true
   "highlight-selected":
     lightTheme: true
-  "lang-gdscript":
-    disableBasicCompletions: true
   "language-babel":
     autoIndentJSX: true
   linter: {}
