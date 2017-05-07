@@ -111,7 +111,7 @@ set $green #98c379
 set $accent #d6ab77
 
 # start dmenu (a program launcher)
-bindsym $mod+e exec rofi -show run
+bindsym $mod+e exec --no-startup-id rofi -show run
 bindsym $mod+Shift+e exec --no-startup-id i3-dmenu-desktop
 
 #colors
@@ -166,13 +166,13 @@ bindsym XF86AudioLowerVolume exec --no-startup-id "pamixer -d 10 --allow-boost"
 bindsym XF86AudioMute exec --no-startup-id "pamixer -t"
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 20 # decrease screen brightness
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioPause exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 bindsym $mod+Shift+l exec --no-startup-id i3lock-fancy -f 'Iosevka-Term-Medium'
 bindsym $mod+W exec --no-startup-id rofi -show window
