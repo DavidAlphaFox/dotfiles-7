@@ -129,10 +129,10 @@ bar {
   position top
   colors {
     background #1c1c1c
-    statusline #FFFFFF40
-		inactive_workspace #1c1c1c #1c1c1c #FFFFFF40
-		active_workspace #FFFFFF40 #FFFFFF40 #1c1c1c
-		focused_workspace #FFFFFF40 #FFFFFF40 #1c1c1c
+    statusline #80808080
+		inactive_workspace #1c1c1c #1c1c1c #80808080
+		active_workspace #80808080 #80808080 #1c1c1c
+		focused_workspace #80808080 #80808080 #1c1c1c
   }
   tray_padding 0
   height 32
@@ -179,6 +179,7 @@ bindsym $mod+W exec --no-startup-id rofi -show window
 bindsym $mod+F11 bar mode toggle
 
 bindsym $mod+Print exec --no-startup-id scrot
+bindsym $mod+Shift+Print exec --no-startup-id scrot -d 3
 
 #gaps
 gaps inner 18
