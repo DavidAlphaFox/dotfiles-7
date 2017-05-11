@@ -109,7 +109,7 @@ set $back #1C1C1C
 set $urg #e06c75
 set $green #98c379
 set $accent #d6ab77
-set $trans #99999980
+set $trans #BFBFBF80
 
 # start dmenu (a program launcher)
 bindsym $mod+e exec --no-startup-id rofi -show run
@@ -118,7 +118,7 @@ bindsym $mod+Shift+e exec --no-startup-id i3-dmenu-desktop
 #colors
 #class                  border  background  text    indicator       child_border
 client.focused          $trans  $trans      $back   $accent
-client.focused_inactive $trans  $trans      $back   $back
+client.focused_inactive $back   $back       $trans  $trans
 client.unfocused        $back   $back       $trans  $back
 client.urgent           $urg    $urg        $back   $back
 
@@ -185,7 +185,7 @@ bindsym $mod+Shift+Print exec --no-startup-id scrot -d 3
 #gaps
 gaps inner 18
 gaps outer 0
-for_window [class="^.*"] border pixel 4
+for_window [class="^.*"] border pixel 3
 for_window [title="galculator.*"] floating enable
 for_window [title="Volume Control.*"] floating enable
 for_window [title="Dia v.*"] floating enable
