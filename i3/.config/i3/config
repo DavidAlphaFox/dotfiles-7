@@ -129,11 +129,11 @@ bar {
   status_command i3blocks -c ~/.config/i3/i3blocks.conf
   position top
   colors {
-    background #1c1c1c
-    statusline #80808080
-		inactive_workspace #1c1c1c #1c1c1c #80808080
-		active_workspace #80808080 #80808080 #1c1c1c
-		focused_workspace #80808080 #80808080 #1c1c1c
+    background $back
+    statusline $trans
+		inactive_workspace $back $back $trans
+		active_workspace $trans $trans $back
+		focused_workspace $trans $trans $back
   }
   tray_padding 0
   height 32
