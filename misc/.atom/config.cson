@@ -27,6 +27,7 @@
     disabledPackages: [
       "notifications"
       "whitespace"
+      "autocomplete-flow"
     ]
     telemetryConsent: "no"
     themes: [

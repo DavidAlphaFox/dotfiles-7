@@ -1,0 +1,4 @@
+#!/bin/bash
+
+yaourt -D --asdeps $(yaourt -Qq)
+yaourt -D --asexplicit $(yaourt -Qtq)
