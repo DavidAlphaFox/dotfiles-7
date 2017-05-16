@@ -149,7 +149,7 @@ workspace 4 output VGA1
 #exec_always --no-startup-id feh --bg-fill ~/Pictures/bg.png
 exec --no-startup-id compton
 exec --no-startup-id clipmenud
-exec_always --no-startup-id ~/bin/grave-toggle
+exec_always --no-startup-id ~/.local/bin/grave-toggle
 
 exec_always --no-startup-id xrandr --output DP1 --auto --right-of eDP1
 exec_always --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
