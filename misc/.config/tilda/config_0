@@ -1,6 +1,6 @@
 tilda_config_version="1.3.3"
 command="tmux -2 new-session -A -s ''"
-font="Iosevka Term Medium 16"
+font="Unispace Bold 15"
 key="<Super>Return"
 addtab_key="<Shift><Control>t"
 fullscreen_key="F11"
