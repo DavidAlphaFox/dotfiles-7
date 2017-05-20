@@ -113,7 +113,6 @@ endif
 " tmux fixes "
 """"""""""""""
 " Handle tmux $TERM quirks in vim
-set term=screen-256color
 if $TERM =~ '^screen-256color'
     map <Esc>OH <Home>
     map! <Esc>OH <Home>
