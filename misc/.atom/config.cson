@@ -2,7 +2,7 @@
   "atom-material-ui":
     colors:
       abaseColor: "#e8ea81"
-      accentColor: "#c678dd"
+      accentColor: "#8d8bfa"
       genAccent: true
       paintCursor: true
       predefinedColor: "Amber"
@@ -59,8 +59,7 @@
   "linter-eslint":
     disableFSCache: true
     disableWhenNoEslintConfig: false
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "markdown-preview":
     openPreviewInSplitPane: false
   tabs:
