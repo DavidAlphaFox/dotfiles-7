@@ -6,6 +6,7 @@ atril
 automounter
 base-devel-meta
 base-meta
+bc
 caja-open-terminal
 calc
 chrony
@@ -37,6 +38,7 @@ ifplugd
 iftop
 intel-ucode
 irqbalance
+libwrap
 lsb-release
 lsof
 mate-control-center
@@ -93,4 +95,3 @@ xorg-xwininfo
 xterm
 yaourt
 zip
-bc
