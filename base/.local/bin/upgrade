@@ -15,7 +15,7 @@ antigen update
 orphans="$(yaourt -Qdtq)"
 if [ -n "$orphans" ]; then
   echo -e "\e[1;38m:: Removing orphaned packages...\e[0m"
-  yaourt -Rns $orphans
+  yaourt -Rns $(yaourt -Qdtq)
 fi
 
 if hash apm 2>/dev/null; then
