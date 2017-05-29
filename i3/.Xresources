@@ -54,7 +54,7 @@ rofi.lines:                          8
 ! "Number of columns" Set from: XResources
 rofi.columns:                        1
 ! "Font to use" Set from: XResources
-rofi.font:                           Iosevka Term Medium 14
+rofi.font:                           Iosevka Term Medium 15
 ! "Color scheme for normal row" Set from: XResources
 !                                    bg,        fg,        bg alt,   highlight bg, highlight fg
 rofi.color-normal:                   #FF1c1c1c, #FF3a3a3a, #FF1c1c1c, #FF1c1c1c, #FF98c379
