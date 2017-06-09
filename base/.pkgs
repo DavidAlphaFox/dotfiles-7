@@ -62,7 +62,6 @@ perl-async-interrupt
 perl-ev
 perl-file-mimeinfo
 perl-guard
-pkgfile
 playerctl
 pulseaudio-alsa
 ranger

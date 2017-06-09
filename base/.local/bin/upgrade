@@ -3,12 +3,6 @@
 echo -e "\e[1;38m:: Upgrading Linux packages...\e[0m"
 yaourt -Syu --aur
 
-# slow...
-if hash pkgfile 2>/dev/null; then
-  echo -e "\e[1;38m:: Syncing pkgfile...\e[0m"
-  sudo pkgfile -u
-fi
-
 source /usr/share/zsh/share/antigen.zsh
 antigen update
 
