@@ -1,5 +1,11 @@
 #!/bin/zsh
 
+cd ~/.dotfiles
+git stash
+git pull
+git stash pop
+~/.dotfiles/base/.local/bin/restow
+
 yaourt -Sy --aur
 echo -e "\e[1;38m:: Upgrading Linux packages...\e[0m"
 yaourt -Su --aur
