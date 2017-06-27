@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo
+for i in $(find . -iname 'package.json' -type f -printf '%P\0' 2>/dev/null | xargs -0 dirname | sort); do echo -e " \e[1;33m* $i\e[0m"; pushd $i >/dev/null; yarn "$@"; popd >/dev/null; echo; done
+
