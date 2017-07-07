@@ -28,6 +28,7 @@
       "notifications"
       "whitespace"
       "autocomplete-flow"
+      "github"
     ]
     telemetryConsent: "no"
     themes: [
@@ -45,6 +46,8 @@
     commits:
       verboseCommits: true
     diffs: {}
+    experimental:
+      stageFilesBeta: false
     general:
       messageTimeout: 10
       openInPane: false
