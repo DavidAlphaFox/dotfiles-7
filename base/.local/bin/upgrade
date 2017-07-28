@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+echo -e "\e[1;38m:: Updating dotfiles...\e[0m"
 cd ~/.dotfiles
 git stash
 git pull
@@ -9,6 +10,8 @@ git stash pop
 yaourt -Sy --aur
 echo -e "\e[1;38m:: Upgrading Linux packages...\e[0m"
 yaourt -Su --aur
+echo -e "\e[1;38m:: Removing cached packages...\e[0m"
+yes | yaourt -Scc 2>&1 >/dev/null
 
 echo -e "\e[1;38m:: Updating antigen packages...\e[0m"
 source /usr/share/zsh/share/antigen.zsh
