@@ -1,4 +1,6 @@
 #!/bin/bash
 
+
+# adjust install reasons
 yaourt -D --asdeps $(yaourt -Qq)
 yaourt -D --asexplicit $(yaourt -Qtq)
