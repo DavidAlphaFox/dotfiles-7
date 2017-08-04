@@ -34,6 +34,7 @@ htop
 i3-gaps
 i3blocks
 i3lock-fancy-dualmonitors-git
+ibus-qt
 ifplugd
 iftop
 intel-ucode
@@ -51,6 +52,7 @@ mdm-themes-html
 net-tools
 nethack
 noto-fonts
+noto-fonts-emoji
 numlockx
 openssh
 pamixer
