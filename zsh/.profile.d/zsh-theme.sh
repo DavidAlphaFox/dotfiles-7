@@ -16,7 +16,7 @@ mod_sym=' '
 stash_sym=' '
 noup_sym=' '
 vicmd_sym='🐲'
-home_sym=''
+home_sym=' '
 # bash/zsh git prompt support
 #
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
@@ -534,7 +534,7 @@ function get_pwd(){
   if [[ $git_root = / ]]; then
     unset git_root
     if [ "$PWD" = "$HOME" ]; then
-      prompt_short_dir="$home_sym "
+      prompt_short_dir=$home_sym
     else
       prompt_short_dir=%3~
       if [[ "$PWD" == "$HOME"* ]]; then
