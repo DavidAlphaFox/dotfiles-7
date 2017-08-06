@@ -110,17 +110,18 @@ set $urg #e06c75
 set $green #98c379
 set $accent #d6ab77
 set $trans #BFBFBF80
-
+set $active #E8EA81
+set $inactive #3A3A3A
 # start dmenu (a program launcher)
 bindsym $mod+e exec --no-startup-id rofi -show run
 bindsym $mod+Shift+e exec --no-startup-id i3-dmenu-desktop
 
 #colors
 #class                  border  background  text    indicator       child_border
-client.focused          $trans  $trans      $back   $accent
-client.focused_inactive $back   $back       $trans  $trans
-client.unfocused        $back   $back       $trans  $back
-client.urgent           $urg    $urg        $back   $back
+client.focused          $active $active    $back   $green
+client.focused_inactive $back   $back      $trans  $trans
+client.unfocused        $inactive    $inactive       $trans  $back
+client.urgent           $urg    $urg       $back   $back
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -185,7 +186,7 @@ bindsym $mod+Shift+Print exec --no-startup-id scrot -d 3
 #gaps
 gaps inner 18
 gaps outer 0
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 4
 for_window [title="galculator.*"] floating enable
 for_window [title="Volume Control.*"] floating enable
 for_window [title="Dia v.*"] floating enable

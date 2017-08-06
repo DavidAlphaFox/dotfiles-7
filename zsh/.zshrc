@@ -52,7 +52,7 @@ ZSH_AUTOSUGGEST_IGNORE_WIDGETS+=my-autosuggest-accept
 bindkey '^ ' my-autosuggest-accept
 ZSH_AUTOSUGGEST_ACCEPT_WIDGETS=''
 ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS+=vi-forward-char
-ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
+#ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 
 # Load profiles from ~/.profile.d
 if test -e ~/.profile.d/; then
