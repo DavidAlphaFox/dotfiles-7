@@ -7,6 +7,7 @@ automounter
 base-devel-meta
 base-meta
 bc
+cairo-coloredemoji
 caja-open-terminal
 calc
 chrony
@@ -96,4 +97,3 @@ xorg-xwininfo
 xterm
 yaourt
 zip
-cairo-coloredemoji
