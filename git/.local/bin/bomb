@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+echo " 💣"
+sudo chown ${USER}: * -R
+git all clean -fxd
+
