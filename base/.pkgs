@@ -3,12 +3,10 @@ alsa-utils
 antigen-git
 atom
 atril
-automounter
 base-devel-meta
 base-meta
 bc
 cairo-coloredemoji
-caja-open-terminal
 calc
 chrony
 clipmenu
@@ -20,7 +18,6 @@ dia
 dialog
 duperemove
 feh
-filemanager-actions
 galculator
 gimp
 gnome-themes-standard
