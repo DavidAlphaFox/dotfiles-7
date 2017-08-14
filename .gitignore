@@ -1,3 +1,6 @@
 **/gtk-3.0/bookmarks
 xarchiver/xarchiverrc
 *.tmp
+misc/.config/ranger/bookmarks
+misc/.config/ranger/history
+misc/.config/ranger/tagged

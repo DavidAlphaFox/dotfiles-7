@@ -108,6 +108,7 @@ bindsym $mod+p mode "resize"
 set $back #1C1C1C
 set $urg #e06c75
 set $green #98c379
+set $blue #4B87B9
 set $accent #d6ab77
 set $trans #BFBFBF80
 set $active #E8EA81
@@ -119,7 +120,7 @@ bindsym $mod+Shift+e exec --no-startup-id i3-dmenu-desktop
 
 #colors
 #class                  border  background  text    indicator       child_border
-client.focused          $active $active    $back   $green
+client.focused          $active $active    $back   $blue
 client.focused_inactive $back   $back      $trans  $trans
 client.unfocused        $inactive    $inactive       $trans  $back
 client.urgent           $urg    $urg       $back   $back
