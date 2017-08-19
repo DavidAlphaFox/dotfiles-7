@@ -7,9 +7,10 @@ git pull
 git stash pop
 ~/.dotfiles/base/.local/bin/restow
 
-yaourt -Sy --aur
-echo -e "\e[1;38m:: Upgrading Linux packages...\e[0m"
-yaourt -Su --aur
+#yaourt -Sy --aur
+#echo -e "\e[1;38m:: Upgrading Linux packages...\e[0m"
+#yaourt -Su --aur
+burgaur -su
 echo -e "\e[1;38m:: Removing cached packages...\e[0m"
 yes | yaourt -Scc 2>&1 >/dev/null
 
