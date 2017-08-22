@@ -34,7 +34,7 @@ fi
 
 # upgrade Atom packages
 if hash apm 2>/dev/null; then
-  echo -e "⚛️   Upgrading Atom packages..."
+  echo -e "⚛️   Updating Atom packages..."
   echo -e "$(apm upgrade --no-confirm 2>/dev/null)"
 fi
 
