@@ -7,7 +7,6 @@ atril
 base-devel-meta
 base-meta
 bc
-burgaur
 cairo-coloredemoji
 calc
 chrony
@@ -55,6 +54,7 @@ noto-fonts
 noto-fonts-emoji
 numlockx
 openssh
+owlman
 pamixer
 paper-icon-theme
 pavucontrol
