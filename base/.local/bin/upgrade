@@ -9,32 +9,30 @@ git stash pop
 ~/.dotfiles/base/.local/bin/restow
 
 # upgrade all packages
-echo -e "💾  Updating system..."
-OWLMAN_ASK_EDIT=false
-OWLMAN_CLEAN_UP=true
-owlman update
+echo -e "\n💾  Updating system..."
+OWLMAN_ASK_EDIT="false" OWLMAN_CLEAN_UP="true" owlman update
 
 # removed cached packages
 if [ -n "$(find /var/cache/pacman/pkg -type f)" ]; then
-  echo -e "🗑️   Removing cached packages..."
+  echo -e "\n🗑️   Removing cached packages..."
   yes | sudo pacman -Scc 2>&1 >/dev/null
 fi
 
 # upgrade antgen plugins
-echo -e "💉  Updating antigen packages..."
+echo -e "\n💉  Updating antigen packages..."
 source /usr/share/zsh/share/antigen.zsh
 antigen update
 
 # removed orphaned packages
 orphans="$(owlman orphans -q)"
 if [ -n "$orphans" ]; then
-  echo -e "\e[1;32m==>\e[0m Removing orphaned packages..."
+  echo -e "\n💩  Removing orphaned packages..."
   owlman remove $(owlman orphans -q)
 fi
 
 # upgrade Atom packages
 if hash apm 2>/dev/null; then
-  echo -e "⚛️   Updating Atom packages..."
+  echo -e "\n⚛️   Updating Atom packages..."
   echo -e "$(apm upgrade --no-confirm 2>/dev/null)"
 fi
 
