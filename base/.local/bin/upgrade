@@ -12,6 +12,13 @@ git stash pop
 echo -e "\n💾  Updating system..."
 OWLMAN_ASK_EDIT="false" OWLMAN_CLEAN_UP="true" owlman update
 
+# removed orphaned packages
+orphans="$(owlman orphans -q)"
+if [ -n "$orphans" ]; then
+  echo -e "\n💩  Removing orphaned packages..."
+  owlman remove -r $(owlman orphans -q)
+fi
+
 # removed cached packages
 if [ -n "$(find /var/cache/pacman/pkg -type f)" ]; then
   echo -e "\n🗑️   Removing cached packages..."
@@ -22,13 +29,6 @@ fi
 echo -e "\n💉  Updating antigen packages..."
 source /usr/share/zsh/share/antigen.zsh
 antigen update
-
-# removed orphaned packages
-orphans="$(owlman orphans -q)"
-if [ -n "$orphans" ]; then
-  echo -e "\n💩  Removing orphaned packages..."
-  owlman remove $(owlman orphans -q)
-fi
 
 # upgrade Atom packages
 if hash apm 2>/dev/null; then
