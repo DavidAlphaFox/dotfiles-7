@@ -28,6 +28,7 @@ grub-btrfs
 grub2-theme-arch-leap
 gtk-engine-murrine
 gtk-theme-numix-sx
+gvfs
 highlight
 htop
 i3-gaps
