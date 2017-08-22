@@ -1,33 +1,40 @@
 #!/bin/zsh
 
-echo -e "\e[1;32m==> \e[0mUpdating dotfiles..."
+# update dotfiles
+echo -e "🏚️   Updating dotfiles..."
 cd ~/.dotfiles
 git stash -q
 git pull 
 git stash pop
 ~/.dotfiles/base/.local/bin/restow
 
-#yaourt -Sy --aur
-#echo -e "\e[1;38m:: Upgrading Linux packages...\e[0m"
-#yaourt -Su --aur
+# upgrade all packages
+echo -e "💾  Updating system..."
+OWLMAN_ASK_EDIT=false
+OWLMAN_CLEAN_UP=true
 owlman update
+
+# removed cached packages
 if [ -n "$(find /var/cache/pacman/pkg -type f)" ]; then
-  echo -e "\e[1;32m==> \e[0mRemoving cached packages..."
+  echo -e "🗑️   Removing cached packages..."
   yes | sudo pacman -Scc 2>&1 >/dev/null
 fi
 
-echo -e "\e[1;32m==> \e[0mUpdating antigen packages..."
+# upgrade antgen plugins
+echo -e "💉  Updating antigen packages..."
 source /usr/share/zsh/share/antigen.zsh
 antigen update
 
+# removed orphaned packages
 orphans="$(owlman orphans -q)"
 if [ -n "$orphans" ]; then
-  echo -e "\e[1;32m==> \e[0mRemoving orphaned packages..."
+  echo -e "\e[1;32m==>\e[0m Removing orphaned packages..."
   owlman remove $(owlman orphans -q)
 fi
 
+# upgrade Atom packages
 if hash apm 2>/dev/null; then
-  echo -e "\e[1;32m==> \e[0mUpgrading Atom packages..."
-  echo -e "\e[1;32m==> \e[0m$(apm upgrade --no-confirm 2>/dev/null)"
+  echo -e "⚛️   Upgrading Atom packages..."
+  echo -e "$(apm upgrade --no-confirm 2>/dev/null)"
 fi
 
