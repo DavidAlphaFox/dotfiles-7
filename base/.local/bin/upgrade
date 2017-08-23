@@ -39,11 +39,12 @@ fi
 # dedup btrfs
 echo -e "\n🗜️   Deduplicating filesystem..."
 device="$(findmnt -nvo SOURCE /)"
-mntpnt="/tmp/dedup"
+mntpnt="$(mktemp -d --tmpdir duperemove-XXXXXX)"
 mkdir -p $mntpnt
 sudo mount $device $mntpnt
 pushd $mntpnt >/dev/null
 echo "$(sudo duperemove -rdh . | grep "net change")"
 popd >/dev/null
 sudo umount $mntpnt
+rmdir $mntpnt
 
