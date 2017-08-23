@@ -21,6 +21,7 @@ fi
 
 # removed cached packages
 if [ -n "$(find /var/cache/pacman/pkg -type f)" ]; then
+  dodedup=yes
   echo -e "\n🗑️   Removing cached packages..."
   yes | sudo pacman -Scc 2>&1 >/dev/null
 fi
@@ -37,14 +38,16 @@ if hash apm 2>/dev/null; then
 fi
 
 # dedup btrfs
-echo -e "\n🗜️   Deduplicating filesystem..."
-device="$(findmnt -nvo SOURCE /)"
-mntpnt="$(mktemp -d --tmpdir duperemove-XXXXXX)"
-mkdir -p $mntpnt
-sudo mount $device $mntpnt
-pushd $mntpnt -q
-echo "$(sudo duperemove -rdh . | grep "net change")"
-popd -q
-sudo umount $mntpnt
-rmdir $mntpnt
+if [ -n "$dodedup" ]; then
+  echo -e "\n🗜️   Deduplicating filesystem..."
+  device="$(findmnt -nvo SOURCE /)"
+  mntpnt="$(mktemp -d --tmpdir duperemove-XXXXXX)"
+  mkdir -p $mntpnt
+  sudo mount $device $mntpnt
+  pushd $mntpnt -q
+  echo "$(sudo duperemove -rdh . | grep "net change")"
+  popd -q
+  sudo umount $mntpnt
+  rmdir $mntpnt
+fi
 
