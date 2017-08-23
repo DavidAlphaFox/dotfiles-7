@@ -44,7 +44,7 @@ if [ -n "$dodedup" ]; then
   mntpnt="$(mktemp -d --tmpdir duperemove-XXXXXX)"
   mkdir -p $mntpnt
   sudo mount $device $mntpnt
-  pushd $mntpnt -q
+  pushd -q $mntpnt
   echo "$(sudo duperemove -rdh . | grep "net change")"
   popd -q
   sudo umount $mntpnt
