@@ -36,3 +36,14 @@ if hash apm 2>/dev/null; then
   echo -e "$(apm upgrade --no-confirm 2>/dev/null)"
 fi
 
+# dedup btrfs
+echo -e "\n🗜️   Deduplicating filesystem..."
+device="$(findmnt -nvo SOURCE /)"
+mntpnt="/tmp/dedup"
+mkdir -p $mntpnt
+sudo mount $device $mntpnt
+pushd $mntpnt >/dev/null
+echo "$(sudo duperemove -rdh . | grep "net change")"
+popd >/dev/null
+sudo umount $mntpnt
+
