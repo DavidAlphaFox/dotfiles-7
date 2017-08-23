@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/bin/zsh
 
 echo
 for i in $(find . -iname '.git' -type d -printf '%P\0' 2>/dev/null | xargs -0 dirname | sort); do
   echo -e "\e[1;33m $i\e[0m"
-  pushd $i >/dev/null
+  pushd -q $i
   git "$@"
-  popd >/dev/null
+  popd -q
   echo
 done
 

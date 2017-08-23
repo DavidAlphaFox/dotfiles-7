@@ -42,9 +42,9 @@ device="$(findmnt -nvo SOURCE /)"
 mntpnt="$(mktemp -d --tmpdir duperemove-XXXXXX)"
 mkdir -p $mntpnt
 sudo mount $device $mntpnt
-pushd $mntpnt >/dev/null
+pushd $mntpnt -q
 echo "$(sudo duperemove -rdh . | grep "net change")"
-popd >/dev/null
+popd -q
 sudo umount $mntpnt
 rmdir $mntpnt
 
