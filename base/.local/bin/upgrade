@@ -21,7 +21,7 @@ fi
 
 # removed cached packages
 if [ -n "$(find /var/cache/pacman/pkg -type f)" ]; then
-  dodedup=yes
+  #dodedup=yes
   echo -e "\n🗑️   Removing cached packages..."
   yes | sudo pacman -Scc 2>&1 >/dev/null
 fi
