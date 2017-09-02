@@ -7,6 +7,7 @@ atril
 base-devel-meta
 base-meta
 bc
+cadence
 cairo-coloredemoji
 calc
 chrony
@@ -39,6 +40,8 @@ ifplugd
 iftop
 intel-ucode
 irqbalance
+jack_capture
+ladish
 libwrap
 lsb-release
 lsof
@@ -67,6 +70,9 @@ perl-file-mimeinfo
 perl-guard
 playerctl
 pulseaudio-alsa
+pulseaudio-jack
+python-rdflib
+python2-setuptools
 ranger
 rofi
 rsync
@@ -98,3 +104,4 @@ xorg-xwininfo
 xterm
 yaourt
 zip
+zita-ajbridge
