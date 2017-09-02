@@ -153,6 +153,7 @@ workspace 4 output VGA1
 exec --no-startup-id compton
 exec --no-startup-id clipmenud
 exec --no-startup-id ibus-daemon --xim
+exec --no-startup-id ~/.local/bin/startjack.sh
 exec_always --no-startup-id ~/.local/bin/grave-toggle
 
 exec_always --no-startup-id xrandr --output DP1 --auto --right-of eDP1
