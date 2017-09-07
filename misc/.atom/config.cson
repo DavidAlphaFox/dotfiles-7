@@ -69,6 +69,7 @@
     enableVcsColoring: true
   "tree-view":
     alwaysOpenExisting: true
+    hideVcsIgnoredFiles: true
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
