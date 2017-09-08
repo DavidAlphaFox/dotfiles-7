@@ -38,6 +38,7 @@
   editor:
     fontFamily: "Iosevka Medium"
     fontSize: 18
+    preferredLineLength: 120
   "exception-reporting":
     userId: "0b76d67e-58ce-0bab-3cfb-1e30b634d378"
   "file-icons":
