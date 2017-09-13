@@ -10,13 +10,13 @@ git stash pop
 
 # upgrade all packages
 echo -e "\n💾  Updating system..."
-OWLMAN_ASK_EDIT="false" OWLMAN_CLEAN_UP="true" owlman update
+yaourt -Syu --aur
 
 # removed orphaned packages
-orphans="$(owlman orphans -q)"
+orphans="$(yaourt -Qdtq)"
 if [ -n "$orphans" ]; then
   echo -e "\n💩  Removing orphaned packages..."
-  owlman remove -r $(owlman orphans -q)
+  yaourt -Rns $(echo $orphans)
 fi
 
 # removed cached packages

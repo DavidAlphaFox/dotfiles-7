@@ -26,8 +26,6 @@
       "source.json": []
     disabledPackages: [
       "notifications"
-      "whitespace"
-      "autocomplete-flow"
       "github"
     ]
     telemetryConsent: "no"
