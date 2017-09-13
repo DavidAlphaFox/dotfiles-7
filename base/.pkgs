@@ -1,7 +1,6 @@
 acpi
 alsa-utils
 antigen-git
-atom
 atool
 atril
 base-devel-meta
@@ -72,7 +71,6 @@ ttf-dejavu-emojiless
 ttf-liberation
 unrar
 unzip
-vibrancy-colors
 vim
 w3m
 wget
