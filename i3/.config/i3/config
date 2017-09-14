@@ -64,7 +64,6 @@ bindsym $mod+8 workspace 🕷️
 bindsym $mod+9 workspace 🎼
 bindsym $mod+0 workspace 🎧
 
-
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 📽️
 bindsym $mod+Shift+2 move container to workspace 🛠️
@@ -91,10 +90,10 @@ exec --no-startup-id i3-msg 'rename workspace 10 to 🎧'
 # force a window on a named workspace
 for_window [title="Spotify"] move workspace 📽️
 for_window [class="Atom"] move workspace 🛠️
+for_window [class="Tilda"] move workspace 🛠️
 for_window [title="Discord"] move workspace 📡
 for_window [title="Renoise.*"] move workspace 🎼
 for_window [title="Calf JACK Host"] move workspace 🎧
-for_window [class="Tilda"] move workspace 🛠️
 
 # reload the configuration file
 bindsym $mod+Shift+j reload
