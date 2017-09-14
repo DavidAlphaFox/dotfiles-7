@@ -56,11 +56,11 @@ bindsym $mod+a focus parent
 bindsym $mod+1 workspace 📽️
 bindsym $mod+2 workspace 🛠️
 bindsym $mod+3 workspace 📡
-bindsym $mod+4 workspace number 4
-bindsym $mod+5 workspace number 5
-bindsym $mod+6 workspace number 6
-bindsym $mod+7 workspace number 7
-bindsym $mod+8 workspace number 8
+bindsym $mod+4 workspace 🦎
+bindsym $mod+5 workspace 🌟
+bindsym $mod+6 workspace 🐞
+bindsym $mod+7 workspace 🔬
+bindsym $mod+8 workspace 🕷️
 bindsym $mod+9 workspace 🎼
 bindsym $mod+0 workspace 🎧
 
@@ -69,17 +69,22 @@ bindsym $mod+0 workspace 🎧
 bindsym $mod+Shift+1 move container to workspace 📽️
 bindsym $mod+Shift+2 move container to workspace 🛠️
 bindsym $mod+Shift+3 move container to workspace 📡
-bindsym $mod+Shift+4 move container to workspace number 4
-bindsym $mod+Shift+5 move container to workspace number 5
-bindsym $mod+Shift+6 move container to workspace number 6
-bindsym $mod+Shift+7 move container to workspace number 7
-bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+4 move container to workspace 🦎
+bindsym $mod+Shift+5 move container to workspace 🌟
+bindsym $mod+Shift+6 move container to workspace 🐞
+bindsym $mod+Shift+7 move container to workspace 🔬
+bindsym $mod+Shift+8 move container to workspace 🕷️
 bindsym $mod+Shift+9 move container to workspace 🎼
 bindsym $mod+Shift+0 move container to workspace 🎧
 
 exec --no-startup-id i3-msg 'rename workspace 1 to 📽️'
 exec --no-startup-id i3-msg 'rename workspace 2 to 🛠️'
 exec --no-startup-id i3-msg 'rename workspace 3 to 📡'
+exec --no-startup-id i3-msg 'rename workspace 4 to 🦎'
+exec --no-startup-id i3-msg 'rename workspace 5 to 🌟'
+exec --no-startup-id i3-msg 'rename workspace 6 to 🐞'
+exec --no-startup-id i3-msg 'rename workspace 7 to 🔬'
+exec --no-startup-id i3-msg 'rename workspace 8 to 🕷️'
 exec --no-startup-id i3-msg 'rename workspace 9 to 🎼'
 exec --no-startup-id i3-msg 'rename workspace 10 to 🎧'
 
@@ -89,6 +94,7 @@ for_window [title="Atom"] move workspace 🛠️
 for_window [title="Discord"] move workspace 📡
 for_window [title="Renoise.*"] move workspace 🎼
 for_window [title="Calf JACK Host"] move workspace 🎧
+for_window [class="Tilda"] move workspace 🛠️
 
 # reload the configuration file
 bindsym $mod+Shift+j reload
