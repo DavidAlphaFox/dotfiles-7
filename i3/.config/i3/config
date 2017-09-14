@@ -92,6 +92,8 @@ for_window [title="Spotify"] move workspace 📽️
 for_window [class="Atom"] move workspace 🛠️
 for_window [class="Tilda"] move workspace 🛠️
 for_window [title="Discord"] move workspace 📡
+for_window [title="Google Hangouts.*"] move workspace 📡
+for_window [class="Google-chrome"] move workspace 📡
 for_window [title="Renoise.*"] move workspace 🎼
 for_window [title="Calf JACK Host"] move workspace 🎧
 
