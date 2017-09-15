@@ -55,7 +55,6 @@ perl-file-mimeinfo
 perl-guard
 playerctl
 pulseaudio-alsa
-python2-setuptools
 ranger
 rofi
 rsync
