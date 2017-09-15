@@ -89,6 +89,7 @@ exec_always --no-startup-id i3-msg 'rename workspace 10 to 🎧'
 
 # force a window on a named workspace
 for_window [class="Spotify"] move workspace 🔭
+for_window [class="Vlc"] move workspace 🔭
 for_window [class="Atom"] move workspace 🛠️
 for_window [class="Tilda"] move workspace 🛠️
 for_window [class="Claudia.py"] move workspace 🛠️
