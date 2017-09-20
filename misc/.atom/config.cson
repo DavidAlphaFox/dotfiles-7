@@ -1,4 +1,7 @@
 "*":
+  "atom-ide-ui":
+    use:
+      "atom-ide-diagnostics-ui": false
   "atom-material-ui":
     colors:
       abaseColor: "#e8ea81"
@@ -25,7 +28,6 @@
       ]
       "source.json": []
     disabledPackages: [
-      "notifications"
       "github"
     ]
     telemetryConsent: "no"
@@ -61,7 +63,8 @@
   "linter-eslint":
     disableFSCache: true
     disableWhenNoEslintConfig: false
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     openPreviewInSplitPane: false
   tabs:
