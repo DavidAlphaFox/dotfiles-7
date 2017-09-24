@@ -1,13 +1,13 @@
-cairo-coloredemoji
-ttf-dejavu-emojiless
 acpi
 alsa-utils
 antigen-git
+archlinux-themes-sddm
 atool
 atril
 base-devel-meta
 base-meta
 bc
+cairo-coloredemoji
 chrony
 clipmenu
 compton
@@ -59,6 +59,7 @@ ranger
 rofi
 rsync
 sddm
+sddm-config-editor-git
 seahorse
 stow
 sysstat
@@ -66,6 +67,7 @@ tig-git
 tilda
 tmux
 tree
+ttf-dejavu-emojiless
 ttf-liberation
 unrar
 unzip
