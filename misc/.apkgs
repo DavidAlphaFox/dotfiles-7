@@ -1,16 +1,18 @@
+atom-ide-ui
 atom-material-ui
-atom-notifier
 autocomplete-flow
 autocomplete-modules
+busy-signal
 editorconfig
 file-icons
-git-plus
 highlight-selected
+intentions
 language-babel
 language-graphql
 language-ini
 linter
 linter-eslint
 linter-flow
+linter-ui-default
 one-dark-material-syntax
 
