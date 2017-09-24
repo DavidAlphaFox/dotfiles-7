@@ -31,7 +31,6 @@ ifplugd
 iftop
 intel-ucode
 irqbalance
-libwrap
 lsb-release
 lsof
 mate-control-center
