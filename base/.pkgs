@@ -39,8 +39,6 @@ mate-notification-daemon
 mate-polkit
 mate-power-manager
 mate-session-manager
-mdm-display-manager
-mdm-themes-html
 net-tools
 noto-fonts
 noto-fonts-emoji
@@ -60,6 +58,7 @@ pulseaudio-alsa
 ranger
 rofi
 rsync
+sddm
 seahorse
 stow
 sysstat
