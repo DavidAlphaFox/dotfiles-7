@@ -1,7 +1,6 @@
 acpi
 alsa-utils
 antigen-git
-archlinux-themes-sddm
 atool
 atril
 base-devel-meta
@@ -19,7 +18,6 @@ feh
 gnome-themes-standard
 gparted
 gtk-engine-murrine
-gtk-theme-numix-sx
 gvfs
 highlight
 htop
