@@ -4,11 +4,8 @@
       "atom-ide-diagnostics-ui": false
   "atom-material-ui":
     colors:
-      abaseColor: "#e8ea81"
-      accentColor: "#8d8bfa"
       genAccent: true
       paintCursor: true
-      predefinedColor: "Amber"
     fonts: {}
     tabs:
       compactTabs: true

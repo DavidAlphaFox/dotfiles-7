@@ -11,6 +11,7 @@ sh_sym=' '
 err_sym=' '
 #err_sym="%{$reset_color%}😝"
 #err_sym="%{$reset_color%}💥"
+#err_sym="%{$reset_color%}☠️ "
 up_sym=' '
 down_sym=' '
 untracked_sym=' '
@@ -21,8 +22,8 @@ stash_sym=' '
 noup_sym=' '
 #vicmd_sym='🍄'
 #vicmd_sym='👾'
-#vicmd_sym='🛠️ '
-vicmd_sym='🗝 '
+vicmd_sym='🛠️ '
+#vicmd_sym='🗝 '
 home_sym=''
 # bash/zsh git prompt support
 #
