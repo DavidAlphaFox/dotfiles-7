@@ -4,8 +4,11 @@
       "atom-ide-diagnostics-ui": false
   "atom-material-ui":
     colors:
+      abaseColor: "#7e57c2"
+      accentColor: "#b0e457"
       genAccent: true
       paintCursor: true
+      predefinedColor: "Purple"
     fonts: {}
     tabs:
       compactTabs: true
@@ -26,6 +29,7 @@
       "source.json": []
     disabledPackages: [
       "github"
+      "whitespace"
     ]
     telemetryConsent: "no"
     themes: [
