@@ -2,5 +2,5 @@
 
 artist="$(playerctl metadata xesam:artist)"
 if [ -n "$artist" ]; then
-  echo "🎶 $(playerctl metadata xesam:title) ($artist)"
+  echo "🎶 $artist \"$(playerctl metadata xesam:title)\""
 fi
