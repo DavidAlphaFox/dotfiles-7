@@ -167,10 +167,10 @@ bar {
 
 #smart_borders on
 # multiple monitor/workspace
-workspace 1 output eDP1
-workspace 2 output HDMI1
-workspace 3 output HDMI2
-workspace 4 output VGA1
+workspace 📽️ output eDP1
+workspace 🛠️ output HDMI1
+workspace 📡 output HDMI2
+workspace 🦎 output VGA1
 # startup programs
 #exec_always --no-startup-id feh --bg-fill ~/Pictures/bg.png
 exec --no-startup-id compton
