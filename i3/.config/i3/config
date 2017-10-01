@@ -98,7 +98,7 @@ for_window [title="Google Hangouts.*"] move workspace 📡
 for_window [class="Google-chrome"] move workspace 📡
 for_window [class="Renoise"] move workspace 🎼
 for_window [class="Calfjackhost"] move workspace 🎧
-for_windom [class="qjackrcd"] move workspace 🎧
+for_window [class="qjackrcd"] move workspace 🎧
 
 # reload the configuration file
 bindsym $mod+Shift+j reload
