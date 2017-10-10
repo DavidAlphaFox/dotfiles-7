@@ -98,6 +98,7 @@ for_window [title="Google Hangouts.*"] move workspace 📡
 for_window [class="Google-chrome"] move workspace 📡
 for_window [class="Renoise"] move workspace 🎼
 for_window [class="Calfjackhost"] move workspace 🎧
+for_window [class="qjackrcd"] move workspace 🎧
 
 # reload the configuration file
 bindsym $mod+Shift+j reload
@@ -220,4 +221,5 @@ for_window [title="Google Hangouts.*"] floating disable
 for_window [title="Share Desktop"] floating enable
 for_window [title="Emoji Choice"] floating enable
 for_window [title="Calf .*"] floating enable
+for_window [class="qjackrcd"] floating enable
 
