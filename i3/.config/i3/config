@@ -54,7 +54,7 @@ bindsym $mod+a focus parent
 
 # switch to workspace
 bindsym $mod+1 workspace 📽️
-bindsym $mod+2 workspace 🛠️
+bindsym $mod+2 workspace ☠️
 bindsym $mod+3 workspace 📡
 bindsym $mod+4 workspace 🦎
 bindsym $mod+5 workspace 🌟
@@ -66,7 +66,7 @@ bindsym $mod+0 workspace 🎧
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 📽️
-bindsym $mod+Shift+2 move container to workspace 🛠️
+bindsym $mod+Shift+2 move container to workspace ☠️
 bindsym $mod+Shift+3 move container to workspace 📡
 bindsym $mod+Shift+4 move container to workspace 🦎
 bindsym $mod+Shift+5 move container to workspace 🌟
@@ -77,7 +77,7 @@ bindsym $mod+Shift+9 move container to workspace 🎼
 bindsym $mod+Shift+0 move container to workspace 🎧
 
 exec_always --no-startup-id i3-msg 'rename workspace 1 to 📽️'
-exec_always --no-startup-id i3-msg 'rename workspace 2 to 🛠️'
+exec_always --no-startup-id i3-msg 'rename workspace 2 to ☠️'
 exec_always --no-startup-id i3-msg 'rename workspace 3 to 📡'
 exec_always --no-startup-id i3-msg 'rename workspace 4 to 🦎'
 exec_always --no-startup-id i3-msg 'rename workspace 5 to 🌟'
@@ -90,9 +90,9 @@ exec_always --no-startup-id i3-msg 'rename workspace 10 to 🎧'
 # force a window on a named workspace
 for_window [class="Spotify"] move workspace 📽️
 for_window [class="Vlc"] move workspace 📽️
-for_window [class="Atom"] move workspace 🛠️
-for_window [class="Tilda"] move workspace 🛠️
-for_window [class="Claudia.py"] move workspace 🛠️
+for_window [class="Atom"] move workspace ☠️
+for_window [class="Tilda"] move workspace ☠️
+for_window [class="Claudia.py"] move workspace ☠️
 for_window [class="discord"] move workspace 📡
 for_window [title="Google Hangouts.*"] move workspace 📡
 for_window [class="Google-chrome"] move workspace 📡
@@ -160,7 +160,8 @@ bar {
     statusline $trans
 		inactive_workspace $back $back $trans
 		active_workspace $trans $trans $back
-		focused_workspace $trans $trans $back
+		#focused_workspace $trans $trans $back
+		focused_workspace $trans $back $back
   }
   tray_padding 0
   height 32
@@ -169,7 +170,7 @@ bar {
 #smart_borders on
 # multiple monitor/workspace
 workspace 📽️ output eDP1
-workspace 🛠️ output HDMI1
+workspace ☠️ output HDMI1
 workspace 📡 output HDMI2
 workspace 🦎 output VGA1
 # startup programs
