@@ -1,5 +1,6 @@
 acpi
 adapta-gtk-theme
+alsa-tools
 alsa-utils
 antigen-git
 atool
@@ -44,6 +45,7 @@ openssh
 os-prober
 pamixer
 paper-icon-theme
+paprefs
 pavucontrol
 pepper-flash
 perl-anyevent-i3
