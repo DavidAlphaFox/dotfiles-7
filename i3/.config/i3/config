@@ -159,8 +159,7 @@ bar {
     background $back
     statusline $trans
 		inactive_workspace $back $back $trans
-		active_workspace $trans $trans $back
-		#focused_workspace $trans $trans $back
+		active_workspace $back $back $trans
 		focused_workspace $trans $back $back
   }
   tray_padding 0
