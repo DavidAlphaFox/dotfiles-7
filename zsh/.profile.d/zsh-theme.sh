@@ -22,8 +22,8 @@ stash_sym=' '
 noup_sym=' '
 #vicmd_sym='🍄'
 #vicmd_sym='👾'
-vicmd_sym='🛠️ '
-#vicmd_sym='🗝 '
+#vicmd_sym='🛠️ '
+vicmd_sym=' '
 home_sym=''
 # bash/zsh git prompt support
 #
@@ -557,7 +557,7 @@ function get_pwd(){
 }
 
 local ret_status='%(?:%{$fg_bold[red]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
-local vicmd_status='%{$reset_color%}$vicmd_sym%{$reset_color%}'
+local vicmd_status='%{$reset_color%}%{$fg_bold[green]%}$vicmd_sym%{$reset_color%}'
 local exit_status='%{$fg[red]%}$(nice_exit_code)%{$reset_color%}'
 local git_status='$(__promptline_vcs_branch)%{$reset_color%}'
 local dir_status='%{$fg_bold[blue]%}$(get_pwd)%{$reset_color%}'
