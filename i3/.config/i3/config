@@ -139,8 +139,8 @@ set $active #E8EA81
 #set $inactive #3A3A3A
 set $inactive #985CAA80
 # start dmenu (a program launcher)
-bindsym $mod+e exec --no-startup-id rofi -show run
-bindsym $mod+Shift+e exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+e --release exec --no-startup-id rofi -show run
+bindsym $mod+Shift+e --release exec --no-startup-id i3-dmenu-desktop
 
 #colors
 #class                  border  background  text    indicator       child_border
@@ -204,7 +204,7 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+Pause exec --no-startup-id pavucontrol
 bindsym $mod+Shift+l exec --no-startup-id i3lock-fancy -f 'Iosevka-Term-Medium'
-bindsym $mod+W exec --no-startup-id rofi -show window
+bindsym $mod+W --release exec --no-startup-id rofi -show window
 bindsym $mod+F11 bar mode toggle
 
 bindsym $mod+Print exec --no-startup-id scrot
