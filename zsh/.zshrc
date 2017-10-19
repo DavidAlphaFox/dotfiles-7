@@ -71,3 +71,6 @@ antigen bundle hlissner/zsh-autopair
 if [ -e "/usr/share/nvm/init-nvm.sh" ]; then
   source /usr/share/nvm/init-nvm.sh
 fi
+if [ -e "$HOME/.opam/opam-init/init.zsh" ]; then
+  . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+fi
