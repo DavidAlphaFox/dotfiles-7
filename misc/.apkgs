@@ -1,18 +1,14 @@
-atom-ide-ui
 atom-material-ui
 autocomplete-flow
 autocomplete-modules
-busy-signal
 editorconfig
 file-icons
 highlight-selected
-intentions
 language-babel
 language-graphql
 language-ini
-linter
-linter-eslint
-linter-flow
-linter-ui-default
+language-ocaml
+nuclide
+ocaml-merlin
 one-dark-material-syntax
 

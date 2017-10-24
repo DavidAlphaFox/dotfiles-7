@@ -1,5 +1,6 @@
 "*":
   "atom-ide-ui":
+    hideNuclideWarning: true
     use:
       "atom-ide-diagnostics-ui": false
   "atom-material-ui":
@@ -25,8 +26,15 @@
     customFileTypes:
       "source.ini": [
         ".flowconfig"
+        ".buckconfig"
+        ".hgrc"
       ]
-      "source.json": []
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "github"
       "whitespace"
@@ -68,6 +76,20 @@
     showPanel: true
   "markdown-preview":
     openPreviewInSplitPane: false
+  nuclide:
+    "nuclide-home":
+      showHome: false
+    "nuclide-working-sets":
+      workingSets: [
+        {
+          name: "retina"
+          active: true
+          uris: [
+            "/home/ihanson/src/sevone/retina-server"
+            "/home/ihanson/src/sevone/retina-ui"
+          ]
+        }
+      ]
   tabs:
     enableVcsColoring: true
   "tree-view":
@@ -88,3 +110,6 @@
 ".languagebabel.ttlextension":
   editor:
     tabLength: 2
+".reason.source":
+  editor:
+    preferredLineLength: 110

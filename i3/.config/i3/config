@@ -46,8 +46,8 @@ bindsym $mod+3 workspace 📡
 bindsym $mod+4 workspace 🛰️
 bindsym $mod+5 workspace 🌠
 bindsym $mod+6 workspace 🚀
-bindsym $mod+7 workspace 🥨
-bindsym $mod+8 workspace 🥃
+bindsym $mod+7 workspace 🔭
+bindsym $mod+8 workspace 🥨
 bindsym $mod+9 workspace 🎹
 bindsym $mod+0 workspace 🎙️
 
@@ -58,8 +58,8 @@ bindsym $mod+Shift+3 move container to workspace 📡
 bindsym $mod+Shift+4 move container to workspace 🛰️
 bindsym $mod+Shift+5 move container to workspace 🌠
 bindsym $mod+Shift+6 move container to workspace 🚀
-bindsym $mod+Shift+7 move container to workspace 🥨
-bindsym $mod+Shift+8 move container to workspace 🥃
+bindsym $mod+Shift+7 move container to workspace 🔭
+bindsym $mod+Shift+8 move container to workspace 🥨
 bindsym $mod+Shift+9 move container to workspace 🎹
 bindsym $mod+Shift+0 move container to workspace 🎙️
 
@@ -69,8 +69,8 @@ exec_always --no-startup-id i3-msg 'rename workspace 3 to 📡'
 exec_always --no-startup-id i3-msg 'rename workspace 4 to 🛰️'
 exec_always --no-startup-id i3-msg 'rename workspace 5 to 🌠'
 exec_always --no-startup-id i3-msg 'rename workspace 6 to 🚀'
-exec_always --no-startup-id i3-msg 'rename workspace 7 to 🥨'
-exec_always --no-startup-id i3-msg 'rename workspace 8 to 🥃'
+exec_always --no-startup-id i3-msg 'rename workspace 7 to 🔭'
+exec_always --no-startup-id i3-msg 'rename workspace 8 to 🥨'
 exec_always --no-startup-id i3-msg 'rename workspace 9 to 🎹'
 exec_always --no-startup-id i3-msg 'rename workspace 10 to 🎙️'
 
@@ -126,8 +126,8 @@ set $active #E8EA81
 #set $inactive #3A3A3A
 set $inactive #985CAA80
 # start dmenu (a program launcher)
-bindsym $mod+e --release exec --no-startup-id rofi -show run
-bindsym $mod+Shift+e --release exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+e exec --no-startup-id rofi -show run
+bindsym $mod+Shift+e exec --no-startup-id i3-dmenu-desktop
 
 #colors
 #class                  border  background  text    indicator       child_border
@@ -191,7 +191,7 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+Pause exec --no-startup-id pavucontrol
 bindsym $mod+Shift+l exec --no-startup-id i3lock-fancy -f 'Iosevka-Term-Medium'
-bindsym $mod+W --release exec --no-startup-id rofi -show window
+bindsym $mod+W exec --no-startup-id rofi -show window
 bindsym $mod+F11 bar mode toggle
 
 bindsym $mod+Print exec --no-startup-id scrot
@@ -209,4 +209,5 @@ for_window [title="Share Desktop"] floating enable
 for_window [title="Emoji Choice"] floating enable
 for_window [title="Calf .*"] floating enable
 for_window [class="qjackrcd"] floating enable
+#for_window [urgent="latest" class="discord"] focus
 
