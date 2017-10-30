@@ -38,6 +38,7 @@
     disabledPackages: [
       "github"
       "whitespace"
+      "tree-view"
     ]
     telemetryConsent: "no"
     themes: [
@@ -77,6 +78,12 @@
   "markdown-preview":
     openPreviewInSplitPane: false
   nuclide:
+    "atom-ide-diagnostics-ui":
+      autoVisibility: true
+    "nuclide-file-tree":
+      focusEditorOnFileSelection: true
+      showOpenFiles: false
+      showUncommittedChanges: false
     "nuclide-home":
       showHome: false
     "nuclide-working-sets":
@@ -89,9 +96,36 @@
             "/home/ihanson/src/sevone/retina-ui"
           ]
         }
+        {
+          name: "olm"
+          active: false
+          uris: [
+            "/home/ihanson/src/olm"
+          ]
+        }
       ]
+    use:
+      "nuclide-adb-logcat": false
+      "nuclide-adb-sdb": false
+      "nuclide-blame-provider-hg": false
+      "nuclide-buck": false
+      "nuclide-buck-ios": false
+      "nuclide-clang": false
+      "nuclide-debugger-php": false
+      "nuclide-device-panel-ios": false
+      "nuclide-hack": false
+      "nuclide-hg-repository": false
+      "nuclide-hhvm": false
+      "nuclide-infer-al": false
+      "nuclide-ios-simulator-logs": false
+      "nuclide-language-hack": false
+      "nuclide-language-infer-al": false
+      "nuclide-objc": false
+      "nuclide-swift": false
   tabs:
     enableVcsColoring: true
+  "tool-bar":
+    visible: false
   "tree-view":
     alwaysOpenExisting: true
     hideVcsIgnoredFiles: true
