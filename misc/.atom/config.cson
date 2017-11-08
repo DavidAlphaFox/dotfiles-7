@@ -68,7 +68,7 @@
   "highlight-selected":
     lightTheme: true
   "language-babel":
-    autoIndentJSX: true
+    createTargetDirectories: false
   linter: {}
   "linter-eslint":
     disableFSCache: true
@@ -78,19 +78,26 @@
   "markdown-preview":
     openPreviewInSplitPane: false
   nuclide:
-    "atom-ide-diagnostics-ui":
-      autoVisibility: true
+    "atom-ide-diagnostics-ui": {}
+    "nuclide-buck": {}
+    "nuclide-clang":
+      defaultDiagnostics: true
+    "nuclide-debugger": {}
+    "nuclide-distraction-free-mode":
+      hideFindAndReplace: true
+      hideStatusBar: true
     "nuclide-file-tree":
       focusEditorOnFileSelection: true
-      showOpenFiles: false
-      showUncommittedChanges: false
+    "nuclide-flow": {}
     "nuclide-home":
       showHome: false
+    "nuclide-notifications":
+      onlyNativeFriendly: false
     "nuclide-working-sets":
       workingSets: [
         {
           name: "retina"
-          active: true
+          active: false
           uris: [
             "/home/ihanson/src/sevone/retina-server"
             "/home/ihanson/src/sevone/retina-ui"
@@ -98,13 +105,14 @@
         }
         {
           name: "olm"
-          active: false
+          active: true
           uris: [
             "/home/ihanson/src/olm"
           ]
         }
       ]
     use:
+      "atom-ide-code-highlight": false
       "nuclide-adb-logcat": false
       "nuclide-adb-sdb": false
       "nuclide-blame-provider-hg": false
@@ -125,7 +133,7 @@
   tabs:
     enableVcsColoring: true
   "tool-bar":
-    visible: false
+    iconSize: "12px"
   "tree-view":
     alwaysOpenExisting: true
     hideVcsIgnoredFiles: true
