@@ -93,6 +93,9 @@
       showHome: false
     "nuclide-notifications":
       onlyNativeFriendly: false
+    "nuclide-terminal":
+      cursorBlink: true
+      cursorStyle: "underline"
     "nuclide-working-sets":
       workingSets: [
         {
