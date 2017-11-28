@@ -74,8 +74,7 @@
   "linter-eslint":
     disableFSCache: true
     disableWhenNoEslintConfig: false
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "markdown-preview":
     openPreviewInSplitPane: false
   nuclide:
