@@ -56,7 +56,7 @@ perl-guard
 playerctl
 pulseaudio-alsa
 qt5ct
-qt5gtk2
+qt5-styleplugins
 ranger
 rofi
 rsync
