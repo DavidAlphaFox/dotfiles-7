@@ -1,7 +1,6 @@
 [Added Associations]
 application/javascript=atom.desktop;
 application/x-xz-compressed-tar=xarchiver.desktop;
-inode/directory=ranger.desktop;
 
 [Default Applications]
 x-scheme-handler/http=google-chrome.desktop
