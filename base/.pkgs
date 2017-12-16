@@ -13,9 +13,11 @@ compton
 cpio
 ctags
 dialog
+dos2unix
 duperemove
 feh
 gnome-themes-standard
+google-chrome
 gparted
 grub
 gtk-engine-murrine
@@ -37,6 +39,7 @@ mate-notification-daemon
 mate-polkit
 mate-power-manager
 mate-session-manager
+ncdu
 net-tools
 noto-fonts
 noto-fonts-emoji
@@ -53,13 +56,13 @@ perl-ev
 perl-file-mimeinfo
 perl-guard
 playerctl
+plymouth-theme-monoarch
 pulseaudio-alsa
-qt5ct
 qt5-styleplugins
+qt5ct
 ranger
 rofi
 rsync
-sddm
 sddm-config-editor-git
 seahorse
 stow
@@ -68,7 +71,6 @@ tig-git
 tilda
 tmux
 tree
-ttf-dejavu-emojiless
 ttf-liberation
 unrar
 unzip
@@ -78,10 +80,8 @@ wget
 xarchiver
 xcursor-flatbed
 xf86-video-intel
-xorg-server
 xorg-xev
 xorg-xprop
-xorg-xrandr
 xorg-xrdb
 xorg-xwininfo
 xterm
