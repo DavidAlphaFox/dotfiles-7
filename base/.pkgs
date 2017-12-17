@@ -31,7 +31,6 @@ ibus-qt
 ifplugd
 iftop
 intel-ucode
-irqbalance
 lsb-release
 lsof
 mate-control-center
