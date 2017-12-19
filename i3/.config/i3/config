@@ -43,10 +43,10 @@ bindsym $mod+a focus parent
 bindsym $mod+1 workspace 💀
 bindsym $mod+2 workspace 📡
 bindsym $mod+3 workspace 🛰️
-bindsym $mod+4 workspace 🚀
-bindsym $mod+5 workspace 🌠
-bindsym $mod+6 workspace 🔭
-bindsym $mod+7 workspace ☄️
+bindsym $mod+4 workspace ♦️
+bindsym $mod+5 workspace ♣️
+bindsym $mod+6 workspace ♥️
+bindsym $mod+7 workspace ♠️
 bindsym $mod+8 workspace 🎹
 bindsym $mod+9 workspace 🎙️
 bindsym $mod+0 workspace 🎧
@@ -55,10 +55,10 @@ bindsym $mod+0 workspace 🎧
 bindsym $mod+Shift+1 move container to workspace 💀
 bindsym $mod+Shift+2 move container to workspace 📡
 bindsym $mod+Shift+3 move container to workspace 🛰️
-bindsym $mod+Shift+4 move container to workspace 🚀
-bindsym $mod+Shift+5 move container to workspace 🌠
-bindsym $mod+Shift+6 move container to workspace 🔭
-bindsym $mod+Shift+7 move container to workspace ☄️
+bindsym $mod+Shift+4 move container to workspace ♦️
+bindsym $mod+Shift+5 move container to workspace ♣️
+bindsym $mod+Shift+6 move container to workspace ♥️
+bindsym $mod+Shift+7 move container to workspace ♠️
 bindsym $mod+Shift+8 move container to workspace 🎹
 bindsym $mod+Shift+9 move container to workspace 🎙️
 bindsym $mod+Shift+0 move container to workspace 🎧
@@ -66,10 +66,10 @@ bindsym $mod+Shift+0 move container to workspace 🎧
 exec_always --no-startup-id i3-msg 'rename workspace 1 to 💀'
 exec_always --no-startup-id i3-msg 'rename workspace 2 to 📡'
 exec_always --no-startup-id i3-msg 'rename workspace 3 to 🛰️'
-exec_always --no-startup-id i3-msg 'rename workspace 4 to 🚀'
-exec_always --no-startup-id i3-msg 'rename workspace 5 to 🌠'
-exec_always --no-startup-id i3-msg 'rename workspace 6 to 🔭'
-exec_always --no-startup-id i3-msg 'rename workspace 7 to ☄️'
+exec_always --no-startup-id i3-msg 'rename workspace 4 to ♦️'
+exec_always --no-startup-id i3-msg 'rename workspace 5 to ♣️'
+exec_always --no-startup-id i3-msg 'rename workspace 6 to ♥️'
+exec_always --no-startup-id i3-msg 'rename workspace 7 to ♠️'
 exec_always --no-startup-id i3-msg 'rename workspace 8 to 🎹'
 exec_always --no-startup-id i3-msg 'rename workspace 9 to 🎙️'
 exec_always --no-startup-id i3-msg 'rename workspace 10 to 🎧'
