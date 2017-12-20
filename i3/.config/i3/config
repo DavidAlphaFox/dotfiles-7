@@ -86,7 +86,7 @@ for_window [class="Google-chrome"] move workspace 📡
 for_window [class="Renoise"] move workspace 🎹
 for_window [class="Calf JACK Host.*"] move workspace 🎧
 for_window [class="qjackrcd"] move workspace 🎙️
-for_window [class="VirtualBox Machine"] move workspace ⛅
+for_window [class="VirtualBox Machine"] move workspace 🌱
 for_window [class="VirtualBox Manager"] move workspace 🛰️
 
 # reload the configuration file
