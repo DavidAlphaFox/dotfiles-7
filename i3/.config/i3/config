@@ -200,6 +200,7 @@ bindsym $mod+F11 bar mode toggle
 
 bindsym $mod+Print exec --no-startup-id scrot
 bindsym $mod+Shift+Print exec --no-startup-id scrot -d 3
+bindsym $mod+g exec google-chrome-stable
 
 #gaps
 gaps inner 18
