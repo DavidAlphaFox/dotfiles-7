@@ -57,14 +57,14 @@ rofi.columns:                        1
 rofi.font:                           Iosevka Term Medium 15
 ! "Color scheme for normal row" Set from: XResources
 !                                    bg,        fg,        bg alt,   highlight bg, highlight fg
-rofi.color-normal:                   #FF1c1c1c, #FF3a3a3a, #FF1c1c1c, #FF1c1c1c, #FF98c379
+rofi.color-normal:                   #1c1c1c, #3a3a3a, #1c1c1c, #1c1c1c, #61AFEF
 ! "Color scheme for urgent row" Set from: XResources
-!rofi.color-urgent:                   #FF1c1c1c, #FFBF6060, #FF1c1c1c, #FF1c1c1c, #FF010203
+!rofi.color-urgent:                   #1c1c1c, #BF6060, #1c1c1c, #1c1c1c, #010203
 ! "Color scheme for active row" Set from: XResources
-rofi.color-active:                   #FF1c1c1c, #FF98c379, #FF1c1c1c, #FF1c1c1c, #FF010203
+rofi.color-active:                   #1c1c1c, #61AFEF, #1c1c1c, #1c1c1c, #010203
 ! "Color scheme window" Set from: XResources
 !                                    bg,        border,    separator
-rofi.color-window:                   #FF1c1c1c, #FF98c379, #FF2196F3
+rofi.color-window:                   #1c1c1c, #61AFEF, #2196F3
 ! "Border width" Set from: XResources
 rofi.bw:                             2
 ! "Location on screen" Set from: XResources

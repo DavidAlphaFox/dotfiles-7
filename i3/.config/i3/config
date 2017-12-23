@@ -132,7 +132,7 @@ set $green #98c379
 set $blue #4B87B9
 set $accent #d6ab77
 set $trans #BFBFBF80
-set $active #4DB6AC
+set $active #61AFEF
 #set $active #E8EA81
 #set $inactive #3A3A3A
 set $inactive #985CAA80
