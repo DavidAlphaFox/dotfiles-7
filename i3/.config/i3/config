@@ -85,16 +85,14 @@ for_window [title="Google Hangouts.*"] move workspace 📡
 for_window [class="Google-chrome"] move workspace 📡
 for_window [class="Renoise"] move workspace 🎹
 for_window [class="Calf JACK Host.*"] move workspace 🎧
+for_window [class="calfjackhost"] move workspace 🎧
 for_window [class="qjackrcd"] move workspace 🎙️
-for_window [class="VirtualBox Machine"] move workspace 🌱
-for_window [class="VirtualBox Manager"] move workspace 🔥
 
 # multiple monitor/workspace
-workspace 💀 output HDMI1
-workspace 📡 output HDMI2
-workspace 🌱 output VGA-1
-workspace 💀 output VGA-2
-workspace 📡 output VGA-3
+workspace 💀 output VGA-1
+workspace 📡 output VGA-2
+workspace 🛰️ output VGA-3
+workspace 🎹 output HDMI1
 
 # reload the configuration file
 bindsym $mod+Shift+j reload
