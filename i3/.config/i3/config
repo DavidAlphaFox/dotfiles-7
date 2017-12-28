@@ -39,6 +39,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
+
 # switch to workspace
 bindsym $mod+1 workspace 💀
 bindsym $mod+2 workspace 📡
@@ -75,18 +76,18 @@ exec_always --no-startup-id i3-msg 'rename workspace 9 to 🎙️'
 exec_always --no-startup-id i3-msg 'rename workspace 10 to 🎧'
 
 # force a window on a named workspace
-for_window [class="Spotify"] move workspace 🎧
-for_window [class="Vlc"] move workspace 🎧
 for_window [class="Atom"] move workspace 💀
 for_window [class="Tilda"] move workspace 💀
-for_window [class="Claudia.py"] move workspace 🎙️
 for_window [class="discord"] move workspace 📡
 for_window [title="Google Hangouts.*"] move workspace 📡
 for_window [class="Google-chrome"] move workspace 📡
 for_window [class="Renoise"] move workspace 🎹
+for_window [class="Claudia.py"] move workspace 🎙️
+for_window [class="qjackrcd"] move workspace 🎙️
 for_window [class="Calf JACK Host.*"] move workspace 🎧
 for_window [class="calfjackhost"] move workspace 🎧
-for_window [class="qjackrcd"] move workspace 🎙️
+for_window [class="Spotify"] move workspace 🎧
+for_window [class="Vlc"] move workspace 🎧
 
 # multiple monitor/workspace
 workspace 💀 output VGA-1
