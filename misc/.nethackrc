@@ -1,5 +1,9 @@
 
-OPTIONS=number_pad=1,pickup_types=$,color,menucolors,menu_objsyms,nocmdassist
-
+OPTIONS=number_pad=1,pickup_types=$,color,menucolors,menu_objsyms,!cmdassist
+OPTIONS=catname:Stormy,dogname:Sirius,fruit:fig,pettype:cat,runmode:teleport
+MENUCOLOR=".* cursed .*"=red
+MENUCOLOR=".* unholy .*"=red
+MENUCOLOR=".* blessed .*"=cyan&bold
+MENUCOLOR=".* holy .*"=cyan&bold
 
 #eof
