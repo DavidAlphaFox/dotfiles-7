@@ -1,5 +1,6 @@
 #!/bin/sh
 
+VBoxClient-all
 # x config values
 xrdb "${HOME}/.Xresources"
 # root background image
