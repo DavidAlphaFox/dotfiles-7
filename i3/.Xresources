@@ -1,9 +1,11 @@
-URxvt.font: xft:DejaVu Sans Mono:size=12
+! URXVT
+URxvt.font: xft:DejaVu Sans Mono:size=14
 URxvt.internalBorder: 8
 URxvt.scrollBar: False
 URxvt.cursorUnderline: True
 URxvt.cursorBlink: True
 
+! XFT
 Xft.antialias: 1
 Xft.autohint: 1
 Xft.dpi: 96
@@ -12,15 +14,17 @@ Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
+! XCURSOR
 Xcursor.theme: whiteglass
 Xcursor.size: 16
 
+! ROFI
 rofi.font: DejaVu Sans Mono 11
 rofi.modi:                           window,run,ssh,drun
 rofi.width:                          16
 rofi.lines:                          5
 rofi.columns:                        1
-! "Border width" Set from: XResources
+! "border width"
 rofi.bw:                             2
 rofi.location:                       0
 rofi.padding:                        8
@@ -28,87 +32,44 @@ rofi.yoffset:                        0
 rofi.xoffset:                        0
 rofi.fixed-num-lines:                true
 rofi.terminal:                       urxvtc
-! "Margin between rows" Set from: XResources
+! "margin between rows"
 rofi.line-margin:                    2
-! "Separator style (none, dash, solid)" Set from: XResources
+! "separator style (none, dash, solid)"
 rofi.separator-style:                none
 rofi.hide-scrollbar:                 true
 rofi.fullscreen:                     false
 rofi.fake-transparency:              false
 rofi.scrollbar-width:                8
-! "Scrolling method. (0: Page, 1: Centered)" Set from: XResources
+! "scrolling method. (0: Page, 1: Centered)"
 rofi.scroll-method:                  1
 
-! special
-*.foreground:   #b4bfbf
-*.background:   #212121
-*.cursorColor:  #b4bfbf
-
-! black
-*.color0:       #303030
-*.color8:       #404040
-
-! red
-*.color1:       #802f48
-*.color9:       #996f4d
-
-! green
-*.color2:       #308052
-*.color10:      #3a9a62
-
-! yellow
-*.color3:       #806c3b
-*.color11:      #9a9a43
-
-! blue
-*.color4:       #4f6c80
-*.color12:      #5e8199
-
-! magenta
-*.color5:       #765880
-*.color13:      #8c6998
-
-! cyan
-*.color6:       #588080
-*.color14:      #6a9a9a
-
-! white
-*.color7:       #707880
-*.color15:      #b4bfbf
-
+! COLORS
 ! special
 *.foreground:   #bfbfbf
 *.background:   #212121
 *.cursorColor:  #bfbfbf
-
 ! black
 *.color0:       #303030
 *.color8:       #404040
-
 ! red
 *.color1:       #804040
 *.color9:       #99734d
-
 ! green
 *.color2:       #408040
 *.color10:      #4d9966
-
 ! yellow
 *.color3:       #808040
 *.color11:      #99994d
-
 ! blue
 *.color4:       #405580
 *.color12:      #4d7f99
-
 ! magenta
 *.color5:       #6a4080
 *.color13:      #804d99
-
 ! cyan
 *.color6:       #408080
 *.color14:      #4d9999
-
 ! white
 *.color7:       #808080
 *.color15:      #bfbfbf
+
