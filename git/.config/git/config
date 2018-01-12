@@ -2,8 +2,6 @@
   editor = vim
   filemode = true
   autocrlf = false
-[credential]
-  helper = gnome-keyring
 [push]
   default = current
 [help]
@@ -37,6 +35,3 @@
   untracked = red
   header = black bold
   branch = green bold
-[init]
-  temlatedir = ~/.git-templates
-

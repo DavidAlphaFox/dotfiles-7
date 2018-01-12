@@ -1,7 +1,0 @@
-#!/bin/bash
-
-yaourt -Qq > /tmp/pkgs
-sort /tmp/pkgs ~/.pkgs | uniq -u > /tmp/uniq
-sort ~/.pkgs /tmp/uniq | uniq -d
-rm /tmp/pkgs /tmp/uniq
-

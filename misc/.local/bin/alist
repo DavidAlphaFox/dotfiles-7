@@ -1,4 +1,0 @@
-#!/bin/bash
-
-apm list -bi 2>/dev/null | awk -F@ '{print $1}'
-

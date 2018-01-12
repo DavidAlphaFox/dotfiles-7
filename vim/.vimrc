@@ -1,6 +1,6 @@
 
 set nocompatible
-set shell=/bin/zsh
+set shell=/usr/local/bin/zsh
 
 if exists('g:loaded_sensible') || &compatible
   finish

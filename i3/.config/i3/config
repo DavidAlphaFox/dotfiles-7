@@ -1,108 +1,182 @@
 # i3 config file (v4)
-set $mod Mod4
+#
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+#
+# This config file uses keycodes (bindsym) and was written for the QWERTY
+# layout.
+#
+# To get a config file with the same key positions, but for your current
+# layout, use the i3-config-wizard
+#
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Noto Color Emoji Regular, icomoon, PowerlineSymbols, FontAwesome, Iosevka Term Medium 15
+#font pango:monospace 8
 
-# Use Mouse+$mod to drag floating windows to their wanted position
+# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# text rendering and scalability on retina/hidpi displays (thanks to pango).
+#font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono,EmojiOne Color 11
+
+# Before i3 v4.8, we used to recommend this one as the default:
+# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# The font above is very space-efficient, that is, it looks good, sharp and
+# clear in small sizes. However, its unicode glyph coverage is limited, the old
+# X core fonts rendering does not support right-to-left and this being a bitmap
+# font, it doesn’t scale on retina/hidpi displays.
+
+# Xresources:     var      property    fallback
+set_from_resource $fg      foreground  #aab2bf
+set_from_resource $bg      background  #1c1c1c
+set_from_resource $cursor  cursorColor #aab2bf
+#black/gray
+set_from_resource $color0  color0      #000000
+set_from_resource $color8  color8      #3a3a3a
+#red/orange
+set_from_resource $color1  color1      #e06c75
+set_from_resource $color9  color9      #d6ab77
+#green
+set_from_resource $color2  color2      #708f59
+set_from_resource $color10 color10     #98c379
+#brown/yellow
+set_from_resource $color3  color3      #848549
+set_from_resource $color11 color11     #e8ea81
+#blue
+set_from_resource $color4  color4      #4b87b9
+set_from_resource $color12 color12     #61afef
+#magenta
+set_from_resource $color5  color5      #985caa
+set_from_resource $color13 color13     #c678dd
+#cyan
+set_from_resource $color6  color6      #438f98
+set_from_resource $color14 color14     #56b6c2
+#lgray/white
+set_from_resource $color7  color7      #7a8089
+set_from_resource $color15 color15     #aab2bf
+
+# class                 border  backgr.  text     indicator child_border
+client.focused          $color4 $color4  $fg      $color2   $color4
+client.focused_inactive $color8 $bg      $color8  $color8   $color8
+client.unfocused        $color8 $bg      $color8  $color8   $bg    
+client.urgent           $bg     $color1  $fg      $color1   $color1
+client.placeholder      $color0 $bg      $fg      $color0   $bg    
+
+client.background       $fg
+
+# use these keys for focus, movement, and resize directions when reaching for
+# the arrows is not convenient
+
+set $up l
+set $down k
+set $left j
+set $right semicolon
+
+# use Mouse+$mod to drag floating windows to their wanted position
+set $mod Mod4
 floating_modifier $mod
+
+# start a terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec --no-startup-id urxvtc
+
 # kill focused window
-bindsym $mod+Shift+apostrophe kill
+bindsym $mod+Shift+q kill
+
+# start dmenu (a program launcher)
+#bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec --no-startup-id "rofi -show run -width 16 -lines 5 -color-normal '$bg,$color8,$bg,$bg,$color12' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color4,$bg'"
+# There also is the (new) i3-dmenu-desktop which only displays applications
+# shipping a .desktop file. It is a wrapper around dmenu, so you need that
+# installed.
+bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun -width 16 -lines 5 -color-normal '$bg,$color8,$bg,$bg,$color12' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color4,$bg'"
+
 # change focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+
 # move focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
 # split in horizontal orientation
 bindsym $mod+h split h
+
 # split in vertical orientation
 bindsym $mod+v split v
+
 # enter fullscreen mode for the focused container
-bindsym $mod+u fullscreen toggle
+bindsym $mod+f fullscreen toggle
+
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+o layout stacking
-bindsym $mod+comma layout tabbed
-bindsym $mod+period layout toggle split
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
+
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
+
 # focus the parent container
 bindsym $mod+a focus parent
+
 # focus the child container
 #bindsym $mod+d focus child
 
+# move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+
 # switch to workspace
-bindsym $mod+1 workspace 💀
-bindsym $mod+2 workspace 📡
-bindsym $mod+3 workspace 🛰️
-bindsym $mod+4 workspace 🌱
-bindsym $mod+5 workspace 🔥
-bindsym $mod+6 workspace 💧
-bindsym $mod+7 workspace ⛅
-bindsym $mod+8 workspace 🎹
-bindsym $mod+9 workspace 🎙️
-bindsym $mod+0 workspace 🎧
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 💀
-bindsym $mod+Shift+2 move container to workspace 📡
-bindsym $mod+Shift+3 move container to workspace 🛰️
-bindsym $mod+Shift+4 move container to workspace 🌱
-bindsym $mod+Shift+5 move container to workspace 🔥
-bindsym $mod+Shift+6 move container to workspace 💧
-bindsym $mod+Shift+7 move container to workspace ⛅
-bindsym $mod+Shift+8 move container to workspace 🎹
-bindsym $mod+Shift+9 move container to workspace 🎙️
-bindsym $mod+Shift+0 move container to workspace 🎧
-
-exec_always --no-startup-id i3-msg 'rename workspace 1 to 💀'
-exec_always --no-startup-id i3-msg 'rename workspace 2 to 📡'
-exec_always --no-startup-id i3-msg 'rename workspace 3 to 🛰️'
-exec_always --no-startup-id i3-msg 'rename workspace 4 to 🌱'
-exec_always --no-startup-id i3-msg 'rename workspace 5 to 🔥'
-exec_always --no-startup-id i3-msg 'rename workspace 6 to 💧'
-exec_always --no-startup-id i3-msg 'rename workspace 7 to ⛅'
-exec_always --no-startup-id i3-msg 'rename workspace 8 to 🎹'
-exec_always --no-startup-id i3-msg 'rename workspace 9 to 🎙️'
-exec_always --no-startup-id i3-msg 'rename workspace 10 to 🎧'
-
-# force a window on a named workspace
-for_window [class="Atom"] move workspace 💀
-for_window [class="Tilda"] move workspace 💀
-for_window [class="discord"] move workspace 📡
-for_window [title="Google Hangouts.*"] move workspace 📡
-for_window [class="Google-chrome"] move workspace 📡
-for_window [class="Renoise"] move workspace 🎹
-for_window [class="Claudia.py"] move workspace 🎙️
-for_window [class="qjackrcd"] move workspace 🎙️
-for_window [class="Calf JACK Host.*"] move workspace 🎧
-for_window [class="calfjackhost"] move workspace 🎧
-for_window [class="Spotify"] move workspace 🎧
-for_window [class="Vlc"] move workspace 🎧
-
-# multiple monitor/workspace
-workspace 💀 output VGA-1
-workspace 📡 output VGA-2
-workspace 🛰️ output VGA-3
-workspace 🎹 output HDMI1
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
-bindsym $mod+Shift+j reload
+bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+p restart
+bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-#bindsym $mod+Shift+period exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit' -f 'pango:Iosevka Term Medium'"
-bindsym $mod+Shift+period exec --no-startup-id mate-session-save --logout-dialog
-bindsym $mod+Shift+y exec --no-startup-id mate-session-save --shutdown-dialog
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -112,109 +186,43 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
+        bindsym $left       resize shrink width 10 px or 10 ppt
+        bindsym $down       resize grow height 10 px or 10 ppt
+        bindsym $up         resize shrink height 10 px or 10 ppt
+        bindsym $right      resize grow width 10 px or 10 ppt
+
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left        resize shrink width 10 px or 10 ppt
+        bindsym Down        resize grow height 10 px or 10 ppt
+        bindsym Up          resize shrink height 10 px or 10 ppt
+        bindsym Right       resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 
-bindsym $mod+p mode "resize"
-
-set $back #1C1C1C
-set $urg #e06c75
-set $green #98c379
-set $blue #4B87B9
-set $accent #d6ab77
-set $trans #BFBFBF80
-set $active #56B6C2
-#set $active #E8EA81
-#set $inactive #3A3A3A
-set $inactive #985CAA80
-# start dmenu (a program launcher)
-bindsym $mod+e exec --no-startup-id rofi -show run
-bindsym $mod+Shift+e exec --no-startup-id i3-dmenu-desktop
-
-#colors
-#class                  border  background  text    indicator       child_border
-client.focused          $active $active    $back   $blue
-client.focused_inactive $back   $back      $trans  $trans
-client.unfocused        $inactive    $inactive       $trans  $back
-client.urgent           $urg    $urg       $back   $back
+bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  i3bar_command i3bar -t
-  status_command i3blocks -c ~/.config/i3/i3blocks.conf
-  position top
-  colors {
-    background $back
-    statusline $trans
-		inactive_workspace $back $back $trans
-		active_workspace $back $back $trans
-		focused_workspace $trans $back $back
-  }
-  tray_padding 0
-  height 32
+    position top
+    status_command i3status
+    colors {
+        background $bg
+        statusline $fg
+        separator $color7
+                          #border   backgrn  text
+        focused_workspace  $bg      $bg      $fg
+        active_workspace   $bg      $bg      $color7
+        inactive_workspace $bg      $bg      $color8
+        urgent_workspace   $color1  $bg      $color1
+        binding_mode       $color10 $bg      $color10
+    }
 }
-
-#smart_borders on
-
-# startup programs
-#exec_always --no-startup-id feh --bg-fill ~/Pictures/bg.png
-exec --no-startup-id compton
-#exec --no-startup-id clipmenud
-exec_always --no-startup-id ibus-daemon --xim -r
-exec_always --no-startup-id ~/.local/bin/grave-toggle
-
-exec_always --no-startup-id xrandr --output DP1 --auto --right-of eDP1
-exec_always --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
-exec_always --no-startup-id xrandr --output HDMI2 --auto --right-of eDP1
-exec_always --no-startup-id xrandr --output VGA1 --auto --right-of LVDS1
-exec_always --no-startup-id xrandr --output HDMI1 --auto --right-of LVDS1
-
-# app shortcuts
-bindsym $mod+Insert exec --no-startup-id clipmenu
-bindsym $mod+Shift+Insert exec --no-startup-id notify-send -i gtk-paste "Clipmenu" "Clearing clipmenu" && find /tmp/clipmenu.* -type f -print0 | xargs -0 rm
-
-# volume
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pamixer -i 10 --allow-boost"
-bindsym XF86AudioLowerVolume exec --no-startup-id "pamixer -d 10 --allow-boost"
-bindsym XF86AudioMute exec --no-startup-id "pamixer -t"
-
-# Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 20 # decrease screen brightness
-# Media player controls
-bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
-bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
-bindsym XF86AudioNext exec --no-startup-id playerctl next
-bindsym XF86AudioPrev exec --no-startup-id playerctl previous
-bindsym $mod+Pause exec --no-startup-id pavucontrol
-bindsym $mod+Shift+l exec --no-startup-id i3lock-fancy -f 'Iosevka-Term-Medium'
-bindsym $mod+W exec --no-startup-id rofi -show window
-bindsym $mod+F11 bar mode toggle
-
-bindsym $mod+Print exec --no-startup-id scrot
-bindsym $mod+Shift+Print exec --no-startup-id scrot -d 3
-bindsym $mod+g exec google-chrome-stable
-
-#gaps
-gaps inner 18
-gaps outer 0
-for_window [class="^.*"] border pixel 4
-for_window [title="galculator.*"] floating enable
-for_window [title="Volume Control.*"] floating enable
-for_window [title="Dia v.*"] floating enable
-for_window [title="Google Hangouts.*"] floating disable
-for_window [title="Share Desktop"] floating enable
-for_window [title="Emoji Choice"] floating enable
-for_window [title="Calf .*"] floating enable
-for_window [class="qjackrcd"] floating enable
-#for_window [urgent="latest" class="discord"] focus
+new_window pixel 2
+hide_edge_borders smart
+for_window [class="XCalc"] floating enable
+for_window [class="XClock"] floating enable
 
