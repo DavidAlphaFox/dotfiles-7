@@ -1,7 +1,7 @@
 export EDITOR="vim"
 export VISUAL="vim"
-export BROWSER="google-chrome-stable"
-export TERMINAL=tilda
+export BROWSER="firefox"
+export TERMINAL=urxvtc
 export GIT_EDITOR=$EDITOR
 export LC_CTYPE=$LANG
 export LC_NUMERIC=$LANG
