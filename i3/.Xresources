@@ -1,5 +1,6 @@
 ! URXVT
 URxvt.font: xft:DejaVu Sans Mono:size=14
+URxvt.boldFont:
 URxvt.internalBorder: 8
 URxvt.scrollBar: False
 URxvt.cursorUnderline: True
