@@ -20,7 +20,7 @@ Xcursor.theme: whiteglass
 Xcursor.size: 16
 
 ! ROFI
-rofi.font: DejaVu Sans Mono 11
+rofi.font: DejaVu Sans Mono 14
 rofi.modi:                           window,run,ssh,drun
 rofi.width:                          16
 rofi.lines:                          5
