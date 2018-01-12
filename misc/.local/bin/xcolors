@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
-for i in {0..255} ; do
+n="$1"
+if [ -z "$n" ]; then
+    n="255"
+fi
+for i in {0..$n} ; do
     printf "\x1b[38;5;${i}mcolour${i}\n"
 done
