@@ -56,10 +56,10 @@ set_from_resource $color15 color15     #aab2bf
 
 # class                 border  backgr.  text     indicator child_border
 client.focused          $color4 $color4  $fg      $color2   $color4
-client.focused_inactive $color8 $bg      $color8  $color8   $color8
-client.unfocused        $color8 $bg      $color8  $color8   $bg    
+client.focused_inactive $bg     $bg      $color7  $color8   $color8
+client.unfocused        $bg     $bg      $color8  $color8   $bg
 client.urgent           $bg     $color1  $fg      $color1   $color1
-client.placeholder      $color0 $bg      $fg      $color0   $bg    
+client.placeholder      $color0 $bg      $fg      $color0   $bg
 
 client.background       $fg
 
