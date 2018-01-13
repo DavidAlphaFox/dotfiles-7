@@ -1,5 +1,6 @@
 ! URXVT
-URxvt.font: xft:DejaVu Sans Mono:size=14
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=17
+URxvt.letterSpace: -1
 URxvt.boldFont:
 URxvt.internalBorder: 8
 URxvt.scrollBar: False
