@@ -40,7 +40,6 @@ rofi.separator-style:                none
 rofi.hide-scrollbar:                 true
 rofi.fullscreen:                     false
 rofi.fake-transparency:              false
-rofi.scrollbar-width:                8
 ! "scrolling method. (0: Page, 1: Centered)"
 rofi.scroll-method:                  1
 
