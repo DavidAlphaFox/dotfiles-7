@@ -105,5 +105,6 @@ export ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=green,bold'
 alias l="ls -FG"
 alias ll="ls -AlFGh"
 alias la="ls -AFG"
-alias umbriel="nethack -u Umbriel-Hum-Mal-Pri-Law"
+# Umbriel: Chaotic Elven Priest
+alias umbriel="nethack -u Umbriel-Elf-Mal-Pri-Cha"
 

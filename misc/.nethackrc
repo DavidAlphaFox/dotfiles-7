@@ -1,10 +1,12 @@
 
 OPTIONS=number_pad=1,pickup_types=$,color,menucolors,menu_objsyms,nocmdassist
 OPTIONS=catname=Stormy,pettype=cat,fruit=fig
-MENUCOLOR=".* blessed .*"=blue&bold
-MENUCOLOR=".* cursed .*"=red
-MENUCOLOR=".* holy .*"=blue&bold
-MENUCOLOR=".* unholy .*"=red
+MENUCOLOR=".* wood.*"=yellow
+MENUCOLOR=".* leather.*"=yellow
+MENUCOLOR=".* burnt .*"=red
+MENUCOLOR=".* blessed .*"=cyan&bold
+MENUCOLOR=".* cursed .*"=magenta
+MENUCOLOR=".* holy .*"=cyan&bold
+MENUCOLOR=".* unholy .*"=magenta
 MENUCOLOR=".* gold .*"=yellow&bold
-
 #eof
