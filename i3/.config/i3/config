@@ -72,7 +72,7 @@ set $left j
 set $right semicolon
 
 # use Mouse+$mod to drag floating windows to their wanted position
-set $mod Mod4
+set $mod Mod1
 floating_modifier $mod
 
 # start a terminal
@@ -218,7 +218,7 @@ bar {
         active_workspace   $bg      $bg      $color7
         inactive_workspace $bg      $bg      $color8
         urgent_workspace   $color1  $bg      $color1
-        binding_mode       $color10 $bg      $color10
+        binding_mode       $color10 $color2  $bg
     }
 }
 new_window pixel 2
