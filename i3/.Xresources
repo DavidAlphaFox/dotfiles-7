@@ -16,33 +16,29 @@ Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
-! XCURSOR
-Xcursor.theme: whiteglass
-Xcursor.size: 16
-
 ! ROFI
-rofi.font: DejaVu Sans Mono 11
-rofi.modi:                           window,run,ssh,drun
-rofi.width:                          16
-rofi.lines:                          5
-rofi.columns:                        1
+rofi.font:              DejaVu Sans Mono 11
+rofi.modi:              window,run,ssh,drun
+rofi.width:             16
+rofi.lines:             5
+rofi.columns:           1
 ! "border width"
-rofi.bw:                             2
-rofi.location:                       0
-rofi.padding:                        8
-rofi.yoffset:                        0
-rofi.xoffset:                        0
-rofi.fixed-num-lines:                true
-rofi.terminal:                       urxvtc
+rofi.bw:                2
+rofi.location:          0
+rofi.padding:           8
+rofi.yoffset:           0
+rofi.xoffset:           0
+rofi.fixed-num-lines:   true
+rofi.terminal:          urxvtc
 ! "margin between rows"
-rofi.line-margin:                    2
+rofi.line-margin:       2
 ! "separator style (none, dash, solid)"
-rofi.separator-style:                none
-rofi.hide-scrollbar:                 true
-rofi.fullscreen:                     false
-rofi.fake-transparency:              false
+rofi.separator-style:   none
+rofi.hide-scrollbar:    true
+rofi.fullscreen:        false
+rofi.fake-transparency: false
 ! "scrolling method. (0: Page, 1: Centered)"
-rofi.scroll-method:                  1
+rofi.scroll-method:     1
 
 ! COLORS
 ! special
