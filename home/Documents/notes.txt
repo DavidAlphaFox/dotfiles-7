@@ -13,6 +13,9 @@ xdm-1.1.11_8
 xorg-7.7_3
 zsh-5.4.2_1
 
+# /etc/sysctl.conf
+kern.coredump=0
+
 # /etc/rc.conf
 dbus_enable="YES"
 vboxguest_enable="YES"
