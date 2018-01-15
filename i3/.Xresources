@@ -17,7 +17,7 @@ Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
 ! ROFI
-rofi.font:              DejaVu Sans Mono 11
+rofi.font:              DejaVu Sans Mono 12
 rofi.modi:              window,run,ssh,drun
 rofi.width:             16
 rofi.lines:             5
