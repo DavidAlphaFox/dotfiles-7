@@ -4,7 +4,11 @@ VBoxClient-all
 # x config values
 xrdb "${HOME}/.Xresources"
 # root background image
-feh --bg-fill "${HOME}/Pictures/bg.png"
+if [ -f "${HOME}/.fehbg" ]; then
+  ~/.fehbg
+else
+  feh --bg-fill "${HOME}/Pictures/bg.png"
+fi
 # compositor
 compton -b
 # terminal service
