@@ -1,7 +1,7 @@
 tilda_config_version="1.3.3"
 command="tmux -2 new-session -A -s '☠️ '"
 font="Iosevka Term Medium 16"
-key="<Super>Return"
+key="<Alt>Return"
 addtab_key="<Shift><Control>t"
 fullscreen_key="F11"
 toggle_transparency_key="F12"
