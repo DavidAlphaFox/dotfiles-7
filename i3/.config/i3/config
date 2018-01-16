@@ -1,5 +1,5 @@
 # i3 config file (v4)
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -8,7 +8,7 @@ font pango:Noto Color Emoji Regular, icomoon, PowerlineSymbols, FontAwesome, Ios
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 # kill focused window
-bindsym $mod+Shift+apostrophe kill
+bindsym $mod+Shift+q kill
 # change focus
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -26,11 +26,11 @@ bindsym $mod+h split h
 # split in vertical orientation
 bindsym $mod+v split v
 # enter fullscreen mode for the focused container
-bindsym $mod+u fullscreen toggle
+bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+o layout stacking
-bindsym $mod+comma layout tabbed
-bindsym $mod+period layout toggle split
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
@@ -96,13 +96,13 @@ workspace 🛰️ output VGA-3
 workspace 🎹 output HDMI1
 
 # reload the configuration file
-bindsym $mod+Shift+j reload
+bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+p restart
+bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Shift+period exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit' -f 'pango:Iosevka Term Medium'"
-bindsym $mod+Shift+period exec --no-startup-id mate-session-save --logout-dialog
-bindsym $mod+Shift+y exec --no-startup-id mate-session-save --shutdown-dialog
+bindsym $mod+Shift+e exec --no-startup-id mate-session-save --logout-dialog
+bindsym $mod+Shift+u exec --no-startup-id mate-session-save --shutdown-dialog
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -123,7 +123,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+p mode "resize"
+bindsym $mod+r mode "resize"
 
 set $back #1C1C1C
 set $urg #e06c75
@@ -136,15 +136,15 @@ set $active #56B6C2
 #set $inactive #3A3A3A
 set $inactive #985CAA80
 # start dmenu (a program launcher)
-bindsym $mod+e exec --no-startup-id rofi -show run
-bindsym $mod+Shift+e exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 
 #colors
 #class                  border  background  text    indicator       child_border
-client.focused          $active $active    $back   $blue
-client.focused_inactive $back   $back      $trans  $trans
-client.unfocused        $inactive    $inactive       $trans  $back
-client.urgent           $urg    $urg       $back   $back
+client.focused          $active   $active    $back   $blue
+client.focused_inactive $back     $back      $trans  $back
+client.unfocused        $back     $back      $trans  $back
+client.urgent           $urg      $urg       $back   $back
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -197,17 +197,17 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+Pause exec --no-startup-id pavucontrol
 bindsym $mod+Shift+l exec --no-startup-id i3lock-fancy -f 'Iosevka-Term-Medium'
-bindsym $mod+W exec --no-startup-id rofi -show window
-bindsym $mod+F11 bar mode toggle
+bindsym $mod+Shift+w exec --no-startup-id rofi -show window
+bindsym $mod+m bar mode toggle
 
 bindsym $mod+Print exec --no-startup-id scrot
 bindsym $mod+Shift+Print exec --no-startup-id scrot -d 3
 bindsym $mod+g exec google-chrome-stable
 
 #gaps
-gaps inner 18
-gaps outer 0
-for_window [class="^.*"] border pixel 4
+#gaps inner 18
+#gaps outer 0
+for_window [class="^.*"] border pixel 2
 for_window [title="galculator.*"] floating enable
 for_window [title="Volume Control.*"] floating enable
 for_window [title="Dia v.*"] floating enable
@@ -217,4 +217,5 @@ for_window [title="Emoji Choice"] floating enable
 for_window [title="Calf .*"] floating enable
 for_window [class="qjackrcd"] floating enable
 #for_window [urgent="latest" class="discord"] focus
+
 
