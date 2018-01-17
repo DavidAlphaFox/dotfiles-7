@@ -66,6 +66,9 @@
     remoteInteractions:
       pullBeforePush: true
       pullRebase: true
+  "go-plus":
+    test:
+      runTestsWithVerboseFlag: true
   "highlight-selected":
     lightTheme: true
   "language-babel":

@@ -7,6 +7,27 @@ font pango:Noto Color Emoji Regular, icomoon, PowerlineSymbols, FontAwesome, Ios
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+# Xresources:     var      property    fallback
+set_from_resource $fg      foreground  #aab2bf
+set_from_resource $bg      background  #1c1c1c
+set_from_resource $cursor  cursorColor #aab2bf
+set_from_resource $color0  color0      #000000
+set_from_resource $color8  color8      #3a3a3a
+set_from_resource $color1  color1      #e06c75
+set_from_resource $color9  color9      #d6ab77
+set_from_resource $color2  color2      #708f59
+set_from_resource $color10 color10     #98c379
+set_from_resource $color3  color3      #848549
+set_from_resource $color11 color11     #e8ea81
+set_from_resource $color4  color4      #4b87b9
+set_from_resource $color12 color12     #61afef
+set_from_resource $color5  color5      #985caa
+set_from_resource $color13 color13     #c678dd
+set_from_resource $color6  color6      #438f98
+set_from_resource $color14 color14     #56b6c2
+set_from_resource $color7  color7      #7a8089
+set_from_resource $color15 color15     #aab2bf
+
 # kill focused window
 bindsym $mod+Shift+q kill
 # change focus
@@ -136,8 +157,10 @@ set $active #56B6C2
 #set $inactive #3A3A3A
 set $inactive #985CAA80
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show run
-bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+d exec --no-startup-id rofi -show run
+#bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id "rofi -show run -width 16 -lines 5 -color-normal '$bg,$color8,$bg,$bg,$color12' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color4,$bg'"
+bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun -width 16 -lines 5 -color-normal '$bg,$color8,$bg,$bg,$color12' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color4,$bg'"
 
 #colors
 #class                  border  background  text    indicator       child_border
@@ -217,5 +240,6 @@ for_window [title="Emoji Choice"] floating enable
 for_window [title="Calf .*"] floating enable
 for_window [class="qjackrcd"] floating enable
 #for_window [urgent="latest" class="discord"] focus
+hide_edge_borders smart
 
 

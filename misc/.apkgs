@@ -3,6 +3,7 @@ autocomplete-flow
 autocomplete-modules
 editorconfig
 file-icons
+go-plus
 highlight-selected
 language-babel
 language-graphql
