@@ -229,3 +229,4 @@ for_window [class="XCalc"] floating enable
 for_window [class="XClock"] floating enable
 for_window [class=".*"] title_format " %title"
 bindsym $mod+m bar mode toggle
+mouse_warping output
