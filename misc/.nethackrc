@@ -1,6 +1,7 @@
 
 OPTIONS=number_pad=1,pickup_types=$,color,menucolors,menu_objsyms,nocmdassist
 OPTIONS=catname=Stormy,pettype=cat,fruit=fig
+MENUCOLOR=".* cyan.*"=cyan
 MENUCOLOR=".* wood.*"=yellow
 MENUCOLOR=".* leather.*"=yellow
 MENUCOLOR=".* burnt .*"=red
