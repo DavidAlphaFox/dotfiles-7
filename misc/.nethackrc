@@ -4,10 +4,12 @@ OPTIONS=catname=Stormy,pettype=cat,fruit=fig
 MENUCOLOR=".* cyan.*"=cyan
 MENUCOLOR=".* wood.*"=yellow
 MENUCOLOR=".* leather.*"=yellow
+MENUCOLOR=".* sky blue.*"=blue&bold
 MENUCOLOR=".* burnt .*"=red
 MENUCOLOR=".* blessed .*"=cyan&bold
 MENUCOLOR=".* cursed .*"=magenta
 MENUCOLOR=".* holy .*"=cyan&bold
 MENUCOLOR=".* unholy .*"=magenta
 MENUCOLOR=".* gold .*"=yellow&bold
+
 #eof
