@@ -1,6 +1,3 @@
-export EDITOR="vim"
-export VISUAL="vim"
-export BROWSER="firefox"
 export TERMINAL=urxvtc
 export GIT_EDITOR=$EDITOR
 export LC_CTYPE=$LANG
@@ -9,5 +6,3 @@ export LC_TIME=$LANG
 export LC_COLLATE="C"
 export LC_MONETARY=$LANG
 export LC_MESSAGES=$LANG
-export LESS="-erFX"
-export DISABLE_AUTO_TITLE="true"

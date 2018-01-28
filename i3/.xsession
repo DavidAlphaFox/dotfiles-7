@@ -1,21 +1,18 @@
 #!/bin/sh
 
-/usr/local/bin/VBoxClient --display
+VBoxClient-all
 # x config values
 xrdb "${HOME}/.Xresources"
 # compositor
-compton -b
-/usr/local/bin/VBoxClient --seamless
+#compton -b
 # terminal service
-urxvtd -q -o -f
-/usr/local/bin/VBoxClient --clipboard
+#urxvtd -q -o -f
 # window manager
-/usr/local/bin/VBoxClient --checkhostversion
 # root background image
-if [ -f "${HOME}/.fehbg" ]; then
-  ~/.fehbg
-else
-  feh --bg-fill "${HOME}/Pictures/bg.png"
-fi
-exec i3
-
+#if [ -f "${HOME}/.fehbg" ]; then
+#  ~/.fehbg
+#else
+#  feh --bg-fill /usr/local/share/wallpapers/default.png
+#fi
+#exec i3
+exec fvwm

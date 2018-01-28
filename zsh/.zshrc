@@ -1,6 +1,3 @@
-PATH="$PATH:$HOME/.local/bin"
-EDITOR=vim
-PAGER=less
 source ~/.antigen.zsh
 
 # oh-my-zsh plugins
@@ -69,10 +66,6 @@ export KEYTIMEOUT=1
 
 antigen bundle hlissner/zsh-autopair
 
-if [ -e "/usr/share/nvm/init-nvm.sh" ]; then
-  source /usr/share/nvm/init-nvm.sh
-fi
-
 # syntax highlighting
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black,bold'
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets cursor)
@@ -103,7 +96,6 @@ export ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=green,bold'
 alias l="ls -FG"
 alias ll="ls -AlFGh"
 alias la="ls -AFG"
-# Umbriel: Chaotic Elven Priest
-alias umbriel="nethack -u Umbriel-Elf-Mal-Pri-Cha"
 alias df="df -h"
 
+alias umbriel="nethack -u Umbriel-Elf-Mal-Pri-Cha"
