@@ -18,7 +18,7 @@
 #    7: Modules
 #
 #################################
-
+Xinerama on
 # InfoStoreAdd can be used to store variable data internal to fvwm.
 # The variable can then be used in the configuration as $[infostore.name].
 #
@@ -242,14 +242,14 @@ Style * SloppyFocus, MouseFocusClickRaises
 DefaultFont "xft:DejaVu Sans:size=11:antialias=True"
 
 # Window Placement
-Style * PositionPlacement Center, GrabFocusOff, !UsePPosition
+Style * TileCascadePlacement, GrabFocusOff, !UsePPosition
 Style * ResizeHintOverride
 
 # Sets all windows to OpaqueMove (vs a wired frame) and  windows will
 # snap to each other and the edge of the screen.
 OpaqueMoveSize -1
 HideGeometryWindow
-Style * ResizeOpaque, SnapAttraction 15 SameType ScreenAll, SnapGrid
+Style * ResizeOpaque, SnapAttraction 16 SameType ScreenAll, SnapGrid
 XorValue 55555
 
 # Transient Windows (such as open file windows)
@@ -575,7 +575,7 @@ DestroyModuleConfig TopPanel:*
 *TopPanel: BoxSize smart
 *TopPanel: Columns $[vp.width]
 *TopPanel: Frame 0
-*TopPanel: (32x1+0+0, Container)
+*TopPanel: (48x1+0+0, Container)
 *TopPanel: (Action (Mouse 1) `Menu MenuFvwmRoot Root 2p 36p`,Icon icons/app.png,PressIcon icons/app_down.png, Frame 0)
 *TopPanel: (End)
 *TopPanel: (194x1-0+0, Container)
