@@ -1,3 +1,6 @@
+PATH="$PATH:$HOME/.local/bin:$HOME/go/bin"
+EDITOR=vim
+PAGER=less
 source ~/.antigen.zsh
 
 # oh-my-zsh plugins
@@ -97,5 +100,5 @@ alias l="ls -FG"
 alias ll="ls -AlFGh"
 alias la="ls -AFG"
 alias df="df -h"
-
 alias umbriel="nethack -u Umbriel-Elf-Mal-Pri-Cha"
+GOPATH=$HOME/go
