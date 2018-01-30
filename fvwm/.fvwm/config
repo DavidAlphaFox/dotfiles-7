@@ -92,7 +92,7 @@ AddToFunc FvwmExpose
 DestroyFunc ExposeThumb
 AddToFunc ExposeThumb
 + I Raise
-+ I ThisWindow (!Iconic) PipeRead "xwd -silent -id $[w.id] | xwdtopnm -quiet | pamscale -xyfit $$(($[wa.width]/10)) $$(($[wa.height]/10)) | pnmtopng > $[infostore.cache]/icon.exp.$[w.id].png"
++ I ThisWindow (!Iconic) PipeRead "xwd -silent -id $[w.id] | xwdtopnm -quiet | pamscale -xyfit $$(($[vp.width]/10)) $$(($[vp.height]/10)) | pnmtopng > $[infostore.cache]/icon.exp.$[w.id].png"
 #+ I ThisWindow (!Iconic) AddToMenu FvwmExposeMenu "%$[infostore.cache]/icon.exp.$[w.id].png%$[w.name]" WindowID $[w.id] RaisePlus
 #+ I ThisWindow (Iconic) AddToMenu FvwmExposeMenu "%$[infostore.cache]/icon.tmp.$[w.id].png%$[w.name]" WindowID $[w.id] RaisePlus
 + I ThisWindow (!Iconic) AddToMenu FvwmExposeMenu "%icon.exp.$[w.id].png%$[w.name]" WindowID $[w.id] RaisePlus
@@ -174,7 +174,7 @@ AddToFunc Thumbnail
 + I ThisWindow (!Shaded,Iconifiable,!Iconic) PipeRead \
     "xwd -silent -id $[w.id] |\
     xwdtopnm -quiet |\
-    pamscale -xyfit $$(($[wa.width]/10)) $$(($[wa.height]/10)) |\
+    pamscale -xyfit $$(($[vp.width]/10)) $$(($[vp.height]/10)) |\
     pnmtopng -compression=0 -comp_mem_level=9 >\
     $[infostore.cache]/icon.tmp.$[w.id].png && echo Nop"
 #+ I ThisWindow WindowStyle IconOverride, Icon $[infostore.cache]/icon.tmp.$[w.id].png
@@ -222,7 +222,7 @@ EdgeScroll 0 0
 EdgeResistance -1
 EdgeThickness 1
 Style * EdgeMoveDelay 100, EdgeMoveResistance 100
-Style * MaxWindowSize $[wa.width]p $[wa.height]p
+Style * MaxWindowSize $[vp.width]p $[vp.height]p
 
 # EwmhBaseStruts [left] [right] [top] [bottom]
 # Reserves space along the edge(s) of the Screen that will not
@@ -352,6 +352,7 @@ DestroyMenu MenuPrograms
 AddToMenu   MenuPrograms "Programs" Title
 Test (x chromium) + "Chromium" Exec exec chromium
 Test (x inkscape) + "Inkscape" Exec exec inkscape
+Test (x dia) + "Dia" Exec exec dia
 Test (x firefox) + "Firefox" Exec exec firefox
 Test (x google-chrome) + "Google-Chrome" Exec exec google-chrome
 Test (x gvim) + "gVim" Exec exec gvim
@@ -601,3 +602,4 @@ DestroyModuleConfig TopPanel:*
 
 DestroyModuleConfig DeiconifyEvent: *
 *DeiconifyEvent: deiconify DeThumbnail
+*DeiconifyEvent: destroy_window DeThumbnail

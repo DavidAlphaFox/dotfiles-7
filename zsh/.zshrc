@@ -97,5 +97,5 @@ alias l="ls -FG"
 alias ll="ls -AlFGh"
 alias la="ls -AFG"
 alias df="df -h"
-
+PATH="$PATH:$HOME/.local/bin"
 alias umbriel="nethack -u Umbriel-Elf-Mal-Pri-Cha"
