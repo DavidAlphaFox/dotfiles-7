@@ -93,7 +93,7 @@ AddToFunc FvwmExpose
 DestroyFunc ExposeThumb
 AddToFunc ExposeThumb
 + I Raise
-+ I ThisWindow (!Iconic) MakeWindowIcon
++ I ThisWindow (!Iconic) WindowIcon
 + I AddToMenu FvwmExposeMenu "%icon.$[w.id].png%$[w.name]" WindowID $[w.id] RaisePlus
 
 DestroyFunc RaisePlus
@@ -169,12 +169,12 @@ DestroyFunc Thumbnail
 AddToFunc Thumbnail
 + I Raise
 + I ThisWindow (Shaded) WindowShade
-+ I ThisWindow (Iconifiable) MakeWindowIcon
++ I ThisWindow (Iconifiable) WindowIcon
 + I ThisWindow WindowStyle IconOverride, Icon icon.$[w.id].png
 + I Iconify
 
-DestroyFunc MakeWindowIcon
-AddToFunc MakeWindowIcon
+DestroyFunc WindowIcon
+AddToFunc WindowIcon
 + I ThisWindow (!Shaded,!Iconic) PipeRead \
 	"xwd -silent -id $[w.id] |\
 	xwdtopnm -quiet |\
