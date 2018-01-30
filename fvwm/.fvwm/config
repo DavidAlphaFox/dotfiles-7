@@ -62,6 +62,7 @@ AddToFunc   StartFunction
 + I Module FvwmButtons TopPanel
 + I Module FvwmEvent DeiconifyEvent
 + I Test (Restart) All (Iconic) ReThumbnail
++ I Test (Restart) Exec exec killall -SIGUSR1 compton
 
 DestroyFunc ReThumbnail
 AddToFunc   ReThumbnail
@@ -92,11 +93,8 @@ AddToFunc FvwmExpose
 DestroyFunc ExposeThumb
 AddToFunc ExposeThumb
 + I Raise
-+ I ThisWindow (!Iconic) PipeRead "xwd -silent -id $[w.id] | xwdtopnm -quiet | pamscale -xyfit $$(($[vp.width]/10)) $$(($[vp.height]/10)) | pnmtopng > $[infostore.cache]/icon.exp.$[w.id].png"
-#+ I ThisWindow (!Iconic) AddToMenu FvwmExposeMenu "%$[infostore.cache]/icon.exp.$[w.id].png%$[w.name]" WindowID $[w.id] RaisePlus
-#+ I ThisWindow (Iconic) AddToMenu FvwmExposeMenu "%$[infostore.cache]/icon.tmp.$[w.id].png%$[w.name]" WindowID $[w.id] RaisePlus
-+ I ThisWindow (!Iconic) AddToMenu FvwmExposeMenu "%icon.exp.$[w.id].png%$[w.name]" WindowID $[w.id] RaisePlus
-+ I ThisWindow (Iconic) AddToMenu FvwmExposeMenu "%icon.tmp.$[w.id].png%$[w.name]" WindowID $[w.id] RaisePlus
++ I ThisWindow (!Iconic) MakeWindowIcon
++ I AddToMenu FvwmExposeMenu "%icon.$[w.id].png%$[w.name]" WindowID $[w.id] RaisePlus
 
 DestroyFunc RaisePlus
 AddToFunc RaisePlus
@@ -171,22 +169,26 @@ DestroyFunc Thumbnail
 AddToFunc Thumbnail
 + I Raise
 + I ThisWindow (Shaded) WindowShade
-+ I ThisWindow (!Shaded,Iconifiable,!Iconic) PipeRead \
-    "xwd -silent -id $[w.id] |\
-    xwdtopnm -quiet |\
-    pamscale -xyfit $$(($[vp.width]/10)) $$(($[vp.height]/10)) |\
-    pnmtopng -compression=0 -comp_mem_level=9 >\
-    $[infostore.cache]/icon.tmp.$[w.id].png && echo Nop"
-#+ I ThisWindow WindowStyle IconOverride, Icon $[infostore.cache]/icon.tmp.$[w.id].png
-+ I ThisWindow WindowStyle IconOverride, Icon icon.tmp.$[w.id].png
++ I ThisWindow (Iconifiable) MakeWindowIcon
++ I ThisWindow WindowStyle IconOverride, Icon icon.$[w.id].png
 + I Iconify
 
-Style * IconBox 16 48 -16 -16, IconGrid 8 8, IconFill r b
+DestroyFunc MakeWindowIcon
+AddToFunc MakeWindowIcon
++ I ThisWindow (!Shaded,!Iconic) PipeRead \
+	"xwd -silent -id $[w.id] |\
+	xwdtopnm -quiet |\
+	pamscale -quiet -ysize $$(($[vp.height]/8)) |\
+	pnmtopng -quiet -compression=0 -comp_mem_level=9 >\
+	$[infostore.cache]/icon.$[w.id].png && echo Nop"
+
+
+Style * IconBox 32 64 -32 -32, IconGrid 16 16, IconFill r b
 Style * IconBackgroundRelief 1,IconTitleRelief 1
 
 DestroyFunc DeThumbnail
 AddToFunc DeThumbnail
-+ I Exec rm -f $[infostore.cache]/icon.tmp.$[w.id].png
++ I Exec rm -f $[infostore.cache]/icon.$[w.id].png
 + I All (Iconic) PlaceAgain Icon
 
 #############
@@ -577,7 +579,7 @@ DestroyModuleConfig TopPanel:*
 *TopPanel: Columns $[vp.width]
 *TopPanel: Frame 0
 *TopPanel: (48x1+0+0, Container)
-*TopPanel: (Action (Mouse 1) `Menu MenuFvwmRoot Root 2p 36p`,Icon icons/app.png,PressIcon icons/app_down.png, Frame 0)
+*TopPanel: (Action (Mouse 1) `Menu MenuFvwmRoot Root 8p 32p`,Icon icons/app.png,PressIcon icons/app_down.png, Frame 0)
 *TopPanel: (End)
 *TopPanel: (194x1-0+0, Container)
 *TopPanel: (Swallow(UseOld) "xclock" "Exec exec xclock -digital -strftime '%a %b %e %l:%M %p' -face 'DejaVu Sans Mono:bold:size=11:antialias=True' -padding 7", Frame 0)
