@@ -1,4 +1,4 @@
 #!/usr/bin/env zsh
 cd ~/.dotfiles
-stow -v 1 -t ~ *
+stow -v 1 -t ~ `ls -d * | grep -v README.md`
 

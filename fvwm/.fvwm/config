@@ -53,6 +53,7 @@ ImagePath $[infostore.cache];.png:$[FVWM_USERDIR]/images:$[FVWM_USERDIR];.png:+
 # so using Test (Init) or Test (Restart) can further control
 # actions that are run during the first time run (Init) or
 # actions that are run after a restart.
+Module FvwmAnimate
 DestroyFunc StartFunction
 AddToFunc   StartFunction
 + I Test (Init) Exec exec mkdir -p $[infostore.cache]
@@ -63,6 +64,10 @@ AddToFunc   StartFunction
 + I Module FvwmEvent DeiconifyEvent
 + I Test (Restart) All (Iconic) ReThumbnail
 + I Test (Restart) Exec exec killall -SIGUSR1 compton
+
+*FvwmAnimate: Iterations 24
+*FvwmAnimate: Delay 4
+*FvwmAnimate: Effect Frame
 
 DestroyFunc ReThumbnail
 AddToFunc   ReThumbnail
@@ -87,7 +92,7 @@ AddToFunc FvwmExpose
 + I + DynamicPopDownAction DestroyMenu FvwmExposeMenu
 + I All (AcceptsFocus) ExposeThumb
 + I Menu FvwmExposeMenu Root o50 o50
-+ I Exec exec rm -f $[infostore.cache]/icon.exp.*
++ I Exec exec rm -f $[infostore.cache]/icon.*
 
 
 DestroyFunc ExposeThumb
@@ -183,7 +188,7 @@ AddToFunc WindowIcon
 	$[infostore.cache]/icon.$[w.id].png && echo Nop"
 
 
-Style * IconBox 32 64 -32 -32, IconGrid 16 16, IconFill r b
+Style * IconBox 16 48 -16 -16, IconGrid 16 16, IconFill r b
 Style * IconBackgroundRelief 1,IconTitleRelief 1
 
 DestroyFunc DeThumbnail
@@ -273,7 +278,7 @@ Style * BorderColorset 4, HilightBorderColorset 4
 Style * !StickyStippledTitle, !StickyStippledIconTitle
 
 # Window Specific Styles
-Style TopPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus, Layer 1
+Style TopPanel !Title,!Borders,!Iconifiable,!Handles,Sticky,WindowListSkip,NeverFocus,Layer 1
 Style ConfirmQuit !Title, PositionPlacement Center, WindowListSkip, Layer 6
 Style FvwmIdent WindowListSkip, !Handles, TitleFormat Window Identification, !Maximizable
 
@@ -479,6 +484,7 @@ Silent Key F3 A C GotoDesk 0 2
 Silent Key F4 A C GotoDesk 0 3
 Silent Key Super_R A A Exec exec $[infostore.terminal]
 Silent Key F2 A M ToggleTitle
+Silent Key F3 A M Exec exec scrot
 
 # Window Buttons: [1 3 5 7 9  TTTTT  0 8 6 4 2]
 #   2 - Open the WindowOps menu.
