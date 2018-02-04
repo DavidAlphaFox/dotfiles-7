@@ -1,4 +1,4 @@
-#################################
+##################################
 #  ____________________________
 # (   _________________________)
 #  ) (__  _  _  _    _
@@ -6,6 +6,8 @@
 #  ) (    \  /  \    //    \
 # (___)    \/    \/\/(_/\/\_) 2.6
 #
+#
+#  This is the default configuration file shipped with fvwm.
 #
 #  This config file is organized as follows:
 #
@@ -18,7 +20,7 @@
 #    7: Modules
 #
 #################################
-Xinerama on
+
 # InfoStoreAdd can be used to store variable data internal to fvwm.
 # The variable can then be used in the configuration as $[infostore.name].
 #
@@ -28,9 +30,7 @@ Xinerama on
 # The following is used in various menus and also sets the terminal
 # that FvwmConsole uses. Change this to your terminal of choice
 InfoStoreAdd terminal urxvtc
-InfoStoreAdd panel_height 32
-InfoStoreAdd cache "$[HOME]/.cache/unicorn"
-ImagePath $[infostore.cache];.png:$[FVWM_USERDIR]/images:$[FVWM_USERDIR];.png:+
+
 ###########
 # 1: Functions
 #
@@ -53,60 +53,18 @@ ImagePath $[infostore.cache];.png:$[FVWM_USERDIR]/images:$[FVWM_USERDIR];.png:+
 # so using Test (Init) or Test (Restart) can further control
 # actions that are run during the first time run (Init) or
 # actions that are run after a restart.
-Module FvwmAnimate
 DestroyFunc StartFunction
 AddToFunc   StartFunction
-+ I Test (Init) Exec exec mkdir -p $[infostore.cache]
 + I Test (Init) Exec exec compton -b
-+ I Test (Init, f $[HOME]/.fehbg) Exec exec $[HOME]/.fehbg
 + I Test (Init) Exec exec urxvtd -q -o -f
-+ I Module FvwmButtons TopPanel
-+ I Module FvwmEvent DeiconifyEvent
-+ I Test (Restart) All (Iconic) ReThumbnail
++ I Test (Init, f $[HOME]/.fehbg) Exec exec $[HOME]/.fehbg
++ I TestRc (NoMatch) Exec exec feh --bg-fill /usr/local/share/wallpapers/default.png
+#+ I Test (Init) XClock
++ I Module FvwmEvent DestroyEvent
++ I Module FvwmButtons Bar
+#+ I Module FvwmAnimate
 + I Test (Restart) Exec exec killall -SIGUSR1 compton
-
-*FvwmAnimate: Iterations 24
-*FvwmAnimate: Delay 4
-*FvwmAnimate: Effect Frame
-
-DestroyFunc ReThumbnail
-AddToFunc   ReThumbnail
-+ I Iconify
-+ I Thumbnail
-
-DestroyFunc TileWindows
-AddToFunc TileWindows
-+ I FvwmRearrange -tile -m -maximize 0 0 100 $[wa.height]p -mn 2
-
-DestroyFunc PerlEval
-AddToFunc PerlEval
-+ I SendToModule FvwmPerl preprocess -c -- $*
-
-#####
-# FvwmExpose
-###########
-DestroyFunc FvwmExpose
-AddToFunc FvwmExpose
-+ I AddToMenu FvwmExposeMenu "Window List" Title
-+ I MenuStyle FvwmExposeMenu SelectOnRelease Meta_L
-+ I + DynamicPopDownAction DestroyMenu FvwmExposeMenu
-+ I All (AcceptsFocus) ExposeThumb
-+ I Menu FvwmExposeMenu Root o50 o50
-+ I Exec exec rm -f $[infostore.cache]/icon.*
-
-
-DestroyFunc ExposeThumb
-AddToFunc ExposeThumb
-+ I Raise
-+ I ThisWindow (!Iconic) WindowIcon
-+ I AddToMenu FvwmExposeMenu "%icon.$[w.id].png%$[w.name]" WindowID $[w.id] RaisePlus
-
-DestroyFunc RaisePlus
-AddToFunc RaisePlus
-+ I ThisWindow (Iconic) Thumbnail
-+ I ThisWindow (Shaded) WindowShade
-+ I WarpToWindow 50 50
-+ I Raise
++ I Test (Restart) All (Iconic) WindowIcon
 
 # Function: MoveClickX $0 $1 $2
 #
@@ -136,7 +94,7 @@ AddToFunc   MoveClickX
 DestroyFunc ViewManPage
 AddToFunc   ViewManPage
 + I Exec exec $[infostore.terminal] -g 80x40 \
-  -n "Manual Page - $0" -T "Manual Page - $0" -e zsh -ic "man $0"
+  -n "Manual Page - $0" -T "Manual Page - $0" -e man "$0"
 
 # Function: ToggleTitle
 #
@@ -144,40 +102,40 @@ AddToFunc   ViewManPage
 DestroyFunc ToggleTitle
 AddToFunc   ToggleTitle
 + I ThisWindow (State 1) WindowStyle Title
-+ I TestRc (Match) State 1 False
++ I ThisWindow (State 1) ResizeKeep keep w-32p
++ I ThisWindow (State 1) State 1 False
 + I TestRc (Match) Break
 + I WindowStyle !Title
++ I ResizeKeep keep w+32p
 + I State 1 True
 
+# resize that stays maximized if maximized, not if not
+DestroyFunc ResizeKeep
+AddToFunc ResizeKeep
++ I ThisWindow (Maximized) ResizeMaximize $0 $1
++ I ThisWindow (!Maximized) Resize $0 $1
+
+# raise when moving a window
 DestroyFunc RaiseMove
 AddToFunc RaiseMove
 + I Raise
 + I Move
 
-DestroyFunc MaximizeUnshade
-AddToFunc MaximizeUnshade
-+ I ThisWindow (Shaded) WindowShade
-+ I Maximize
-
-# Function: ChangeDesk
-#
-# This function is called by FvwmEvent every time the Desk is changed.
-DestroyFunc ChangeDesk
-AddToFunc   ChangeDesk
-+ I SendToModule FvwmButtons ChangeButton desk0 Colorset 10
-+ I SendToModule FvwmButtons ChangeButton desk1 Colorset 10
-+ I SendToModule FvwmButtons ChangeButton desk2 Colorset 10
-+ I SendToModule FvwmButtons ChangeButton desk3 Colorset 10
-+ I SendToModule FvwmButtons ChangeButton desk$0 Colorset 11
-
+# generate a thumnail image when iconifying
 DestroyFunc Thumbnail
 AddToFunc Thumbnail
-+ I Raise
-+ I ThisWindow (Shaded) WindowShade
-+ I ThisWindow (Iconifiable) WindowIcon
-+ I ThisWindow WindowStyle IconOverride, Icon icon.$[w.id].png
++ I ThisWindow (!Iconic) WindowIcon
 + I Iconify
++ I ThisWindow (!Iconic) Raise
++ I ThisWindow (!Iconic) All (Iconic) PlaceAgain Icon
 
+# generate a thumbnail image when shading
+DestroyFunc ThumbShade
+AddToFunc ThumbShade
++ I ThisWindow (!Shaded) WindowIcon
++ I WindowShade $0
+
+# create y-scaled window thumbnail, assign as window icon
 DestroyFunc WindowIcon
 AddToFunc WindowIcon
 + I ThisWindow (!Shaded,!Iconic) PipeRead \
@@ -185,16 +143,19 @@ AddToFunc WindowIcon
 	xwdtopnm -quiet |\
 	pamscale -quiet -ysize $$(($[vp.height]/8)) |\
 	pnmtopng -quiet -compression=0 -comp_mem_level=9 >\
-	$[infostore.cache]/icon.$[w.id].png && echo Nop"
+	$[FVWM_USERDIR]/images/icons/icon.$[w.id].png && echo Nop"
++ I WindowStyle IconOverride, Icon $[FVWM_USERDIR]/images/icons/icon.$[w.id].png
++ I WindowStyle MiniIcon $[FVWM_USERDIR]/images/icons/icon.$[w.id].png
 
+# TODO swallow in panel
+DestroyFunc XClock
+AddToFunc XClock
++ I Exec exec xclock -digital -strftime '%a %b %e %l:%M %p' -face 'DejaVu Sans Mono:size=11:antialias=True' -padding 3
 
-Style * IconBox 16 48 -16 -16, IconGrid 16 16, IconFill r b
-Style * IconBackgroundRelief 1,IconTitleRelief 1
-
-DestroyFunc DeThumbnail
-AddToFunc DeThumbnail
-+ I Exec rm -f $[infostore.cache]/icon.$[w.id].png
-+ I All (Iconic) PlaceAgain Icon
+# remove this window's thumbnail icon image
+DestroyFunc WindowIconRemove
+AddToFunc WindowIconRemove
++ I Exec exec rm -f $[FVWM_USERDIR]/images/icons/icon.$[w.id].png
 
 #############
 # 2: Styles #
@@ -218,23 +179,22 @@ DesktopName 2 Desk2
 DesktopName 3 Desk3
 DesktopSize 2x2
 
-
 # EdgeScroll will move the view port between the Pages when the mouse
 # moves to the edge of the screen. This set the amount of distance to
 # scroll at 100% (full page) and the EdgeResistance which is a timer
 # for how long the mouse as at the edge before it scrolls.
 #
 # Set EdgeScroll 0 0 and/or EdgeResistance -1 to disable.
-EdgeScroll 0 0
-EdgeResistance -1
+EdgeScroll 100 100
+EdgeResistance 450
 EdgeThickness 1
-Style * EdgeMoveDelay 100, EdgeMoveResistance 100
-Style * MaxWindowSize $[vp.width]p $[vp.height]p
+Style * EdgeMoveDelay 350, EdgeMoveResistance 350
 
 # EwmhBaseStruts [left] [right] [top] [bottom]
 # Reserves space along the edge(s) of the Screen that will not
 # be covered when maximizing or placing windows.
-EwmhBaseStruts 0 0 $[infostore.panel_height] 0
+EwmhBaseStruts 0 0 0 0
+Style * ResizeHintOverride
 
 # This sets the ClickTime and MoveThreshold used to determine
 # Double Clicks, Hold and Move for the mouse.
@@ -250,13 +210,15 @@ DefaultFont "xft:DejaVu Sans:size=11:antialias=True"
 
 # Window Placement
 Style * TileCascadePlacement, GrabFocusOff, !UsePPosition
-Style * ResizeHintOverride
+
+# Icon Placement
+Style * IconBox 16 16 -16 -16, IconGrid 16 16, IconFill r b
 
 # Sets all windows to OpaqueMove (vs a wired frame) and  windows will
 # snap to each other and the edge of the screen.
 OpaqueMoveSize -1
 HideGeometryWindow
-Style * ResizeOpaque, SnapAttraction 16 SameType ScreenAll, SnapGrid
+Style * ResizeOpaque, SnapAttraction 15 SameType ScreenAll, SnapGrid
 XorValue 55555
 
 # Transient Windows (such as open file windows)
@@ -264,7 +226,7 @@ Style * DecorateTransient, StackTransientParent
 Style * !FPGrabFocusTransient, FPReleaseFocusTransient
 
 # WindowShade
-Style * WindowShadeScrolls, WindowShadeSteps 8
+Style * WindowShadeScrolls, WindowShadeSteps 10
 
 # Ignore Numlock and other modifiers for bindings
 # See http://fvwm.org/documentation/faq/#why-do-numlock-capslock-and-scrolllock-interfere-with-clicktofocus-andor-my-mouse-bindings
@@ -274,13 +236,16 @@ IgnoreModifiers L25
 Style * BorderWidth 4, HandleWidth 4, MWMButtons, \
 	FvwmBorder, FirmBorder, UseDecor FvwmDecor
 Style * Colorset 1, HilightColorset 2
-Style * BorderColorset 4, HilightBorderColorset 4
-Style * !StickyStippledTitle, !StickyStippledIconTitle
+Style * BorderColorset 3, HilightBorderColorset 4
+
+# Icon Style
+Style * IconBackgroundRelief 1, IconTitleRelief 1
 
 # Window Specific Styles
-Style TopPanel !Title,!Borders,!Iconifiable,!Handles,Sticky,WindowListSkip,NeverFocus,Layer 1
 Style ConfirmQuit !Title, PositionPlacement Center, WindowListSkip, Layer 6
-Style FvwmIdent WindowListSkip, !Handles, TitleFormat Window Identification, !Maximizable
+Style FvwmIdent WindowListSkip, !Handles
+Style Bar !Title, !Borders, !Iconifiable, !Handles, Sticky, WindowListSkip
+Style Bar NeverFocus, Layer 1
 
 #######
 # 3: Colorsets
@@ -306,76 +271,59 @@ Style FvwmIdent WindowListSkip, !Handles, TitleFormat Window Identification, !Ma
 #      12 - Module ActiveButton (Mouse Hover)
 #      13 - FvwmPager Active Page
 ###########
-Colorset 0  fg #bfbfbf, bg #003c3c, hi, sh, Plain, NoShape
-Colorset 1  fg #505050, bg #212121, hi, sh, Plain, NoShape
-Colorset 2  fg #bfbfbf, bg #212121, hi, sh, Plain, NoShape
-Colorset 3  fg black, bg #505050, hi #474747, sh #101010, Plain, NoShape
-Colorset 4  fg black, bg #303030, hi #676767, sh #212121, Plain, NoShape
-Colorset 5  fg #bfbfbf, bg #212121, hi #474747, sh #101010, Plain, NoShape
-Colorset 6  fg #212121, bg #bfbfbf, hi, sh, Plain, NoShape
-Colorset 7  fg #303030, bg #bfbfbf, hi, sh, Plain, NoShape
-Colorset 8  fg #bfbfbf, bg #212121, hi, sh, Plain, NoShape
-Colorset 10 fg #bfbfbf, bg #212121, hi #aaaaaa, sh #999999, Plain, NoShape
-Colorset 11 fg #bfbfbf, bg #1a6e99, hi #bfbfbf, sh #bfbfbf, Plain, NoShape
-Colorset 12 fg #303030, bg #bfbfbf, hi, sh, Plain, NoShape
-Colorset 13 fg #bfbfbf, bg #418c8c, hi, sh, Plain, NoShape
+Colorset 0  fg #e0e0e0, bg #212121, hi, sh, Plain, NoShape
+Colorset 1  fg #484848, bg #212121, hi, sh, Plain, NoShape
+Colorset 2  fg #e0e0e0, bg #212121, hi, sh, Plain, NoShape
+Colorset 3  fg black, bg #212121, hi #484848, sh #101010, Plain, NoShape
+Colorset 4  fg black, bg #212121, hi #484848, sh #101010, Plain, NoShape
+Colorset 5  fg #e0e0e0, bg #212121, hi #484848, sh #101010, Plain, NoShape
+Colorset 6  fg #212121, bg #e0e0e0, hi, sh, Plain, NoShape
+Colorset 7  fg grey30, bg #ffffff, hi, sh, Plain, NoShape
+Colorset 8  fg #e0e0e0, bg #212121, hi, sh, Plain, NoShape
+Colorset 10 fg #e0e0e0, bg #212121, hi #aaaaaa, sh #999999, Plain, NoShape
+Colorset 11 fg #e0e0e0, bg #484848, hi #ffffff, sh #ffffff, Plain, NoShape
+Colorset 12 fg #212121, bg #e0e0e0, hi, sh, Plain, NoShape
+Colorset 13 fg #e0e0e0, bg #212121, hi, sh, Plain, NoShape
 
 #######
 # 4: Menus
 ###########
-MenuStyle * Mwm, TitleUnderlines1
+MenuStyle * Mwm
 MenuStyle * MenuColorset 5, ActiveColorset 6, GreyedColorset 7, TitleColorset 8
 MenuStyle * Hilight3DThin, HilightBack, HilightTitleBack, SeparatorsLong
-MenuStyle * TrianglesSolid, TrianglesUseFore, BorderWidth 1
+MenuStyle * TrianglesSolid, TrianglesUseFore, BorderWidth 1, TitleUnderlines1
 MenuStyle * ItemFormat "%|%3.1i%5.3l%5.3>%|"
-MenuStyle FvwmExposeMenu SelectOnRelease Meta_L
+MenuStyle * Font "xft:DejaVu Sans:Bold:size=9:antialias=True"
 
 # Root Menu
 #
 # The root menu will PopUp with a click in the root
 # window or using alt-f1 (or menu).
 DestroyMenu MenuFvwmRoot
-AddToMenu   MenuFvwmRoot "Applications" Title
-+ "Programs%icons/programs.png%" Popup MenuPrograms
-#+ "XDG Menu%icons/apps.png%" Popup XDGMenu
+AddToMenu   MenuFvwmRoot "FreeBSD" Title
++ "Applications%icons/apps.png%" Popup Applications
 + "Terminal%icons/terminal.png%" Exec exec $[infostore.terminal]
 + "" Nop
-+ "Calculator%icons/programs.png%" Exec exec xcalc
++ "FvwmConsole%icons/terminal.png%" Module FvwmConsole -terminal $[infostore.terminal]
 + "Man Pages%icons/help.png%" Popup MenuFvwmManPages
+#+ "Copy Config%icons/conf.png%" FvwmScript FvwmScript-ConfirmCopyConfig
 + "" Nop
-#+ "Refresh%icons/refresh.png%" Refresh
-+ "Reload UI%icons/restart.png%" Restart
++ "Refresh%icons/refresh.png%" Refresh
++ "Restart%icons/restart.png%" Restart
 + "Quit%icons/quit.png%" Module FvwmScript FvwmScript-ConfirmQuit
 
-# Generate XDGMenu
-PipeRead "fvwm-menu-desktop"
-
-# Programs Menu
-#
-# This test for some common programs and adds them to the menu.
-# When adding programs you don't need to use the Test (x foo)
-# lines as this is only to help make this menu portable.
-DestroyMenu MenuPrograms
-AddToMenu   MenuPrograms "Programs" Title
-Test (x chromium) + "Chromium" Exec exec chromium
-Test (x inkscape) + "Inkscape" Exec exec inkscape
-Test (x dia) + "Dia" Exec exec dia
-Test (x firefox) + "Firefox" Exec exec firefox
-Test (x google-chrome) + "Google-Chrome" Exec exec google-chrome
-Test (x gvim) + "gVim" Exec exec gvim
-Test (x gimp) + "Gimp" Exec exec gimp
-Test (x vlc) + "VLC" Exec exec vlc
+# Generate XDGMenu (Applications)
+PipeRead "fvwm-menu-desktop -t Applications"
 
 DestroyMenu MenuWindowOpsLong
 AddToMenu   MenuWindowOpsLong
-+ "Move"                Move
++ "Move"                RaiseMove
 + "Resize"              Resize
-+ "Iconify"         Thumbnail
-+ "Maximize"        MaximizeUnshade
-+ "Tile Windows"        TileWindows
-+ "Shade"           WindowShade
-+ "Sticky"		Stick
-+ "TitleBar"	Pick (CirculateHit) ToggleTitle
++ "(De)Iconify"         Thumbnail
++ "(Un)Maximize"        Maximize
++ "(Un)Shade"           ThumbShade
++ "(Un)Sticky"		Stick
++ "(No)TitleBar"	Pick (CirculateHit) ToggleTitle
 + "Send To Desk"        Popup MenuSendToDesk
 + "" Nop
 + "Close"               Close
@@ -392,28 +340,21 @@ AddToMenu   MenuWindowOpsLong
 
 DestroyMenu MenuIconOps
 AddToMenu   MenuIconOps
-+ "Iconify"         	Thumbnail
-+ "Maximize"        	MaximizeUnshade
-+ "Shade"       	WindowShade
-+ "Sticky"		Stick
-+ "TitleBar"		Pick (CirculateHit) ToggleTitle
++ "Restore"             Thumbnail
 + "Send To Desk"        Popup MenuSendToDesk
 + "" Nop
 + "Close"               Close
-+ "Destroy"             Destroy
-+ "" Nop
-+ "Raise"		Raise
-+ "Lower"		Lower
+#+ "Destroy"            Destroy
 + "" Nop
 + "StaysOnTop"          Pick (CirculateHit) Layer 0 6
-+ "StaysPut"            Pick (CirculateHit) Layer 0 4
+#+ "StaysPut"           Pick (CirculateHit) Layer 0 4
 + "StaysOnBottom"       Pick (CirculateHit) Layer 0 2
 + "" Nop
 + "Identify"            Module FvwmIdent
 
 DestroyMenu MenuSendToDesk
 AddToMenu   MenuSendToDesk
-#+ "Current"	MoveToDesk
++ "Current"	MoveToDesk
 + "Desk 0"	MoveToDesk 0 0
 + "Desk 1"	MoveToDesk 0 1
 + "Desk 2"	MoveToDesk 0 2
@@ -446,8 +387,6 @@ AddToMenu   MenuFvwmManPages "Help" Title
 + "fvwm-menu-headlines" ViewManPage fvwm-menu-headlines
 + "fvwm-menu-xlock"     ViewManPage fvwm-menu-xlock
 + "fvwm-config"         ViewManPage fvwm-config
-+ "rxvt-unicode"	ViewManPage urxvt
-+ "zsh"			ViewManPage zsh
 
 #######
 # 5: Mouse and Key bindings
@@ -476,29 +415,26 @@ AddToMenu   MenuFvwmManPages "Help" Title
 # Silent supresses any errors (such as keyboards with no Menu key).
 Silent Key F1 A M Menu MenuFvwmRoot
 Silent Key Menu A A Menu MenuFvwmRoot
-#Silent Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L
-Silent Key Tab A M FvwmExpose
+Silent Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L
 Silent Key F1 A C GotoDesk 0 0
 Silent Key F2 A C GotoDesk 0 1
 Silent Key F3 A C GotoDesk 0 2
 Silent Key F4 A C GotoDesk 0 3
 Silent Key Super_R A A Exec exec $[infostore.terminal]
-Silent Key F2 A M ToggleTitle
-Silent Key F3 A M Exec exec scrot
+Silent Key F11 A M ToggleTitle
 
 # Window Buttons: [1 3 5 7 9  TTTTT  0 8 6 4 2]
-#   2 - Open the WindowOps menu.
-#   1 - Close on single click, Destroy on double click.
-#   3 - Iconify (minimize), Shade on right-click
+#   1 - Close on single click, Destory on double click.
+#   3 - Iconify (minimize)
 #   5 - Maximize (right/middle button will only maximize vertical/horizontal)
-Mouse 1 2 A Menu MenuWindowOpsLong
+#   2 - Open the WindowOps menu.
 Mouse 1 1 A MoveClickX Nop Close Destroy
-Mouse 1 5 A MaximizeUnshade
-#Mouse 2 5 A Maximize 0 100
-#Mouse 3 5 A Maximize 100 0
-Mouse 3 5 A TileWindows
 Mouse 1 3 A Thumbnail
-Mouse 3 3 A WindowShade
+Mouse 3 3 A ThumbShade
+Mouse 1 5 A Maximize 100 100
+Mouse 2 5 A Maximize 0 100
+Mouse 3 5 A Maximize 100 0
+Mouse 1 2 A Menu MenuWindowOpsLong
 
 #   TitleBar: Click to Raise, Move, Double Click to Maximize
 #             Mouse Wheel Up/Down to WindowShade On/Off
@@ -507,15 +443,14 @@ Mouse 3 3 A WindowShade
 #                Right Click - WindowOps Menu
 #                Middle Click - Window List Menu
 #   Right click TitleBar/Borders for WindowOps Menu
-Mouse 1	T    A MoveClickX RaiseMove Raise MaximizeUnshade
+Mouse 1	T    A MoveClickX RaiseMove Raise Maximize
 Mouse 1	FS   A MoveClickX Resize Raise Nop
-Mouse 4	T    A MoveClickX Nop Raise "WindowShade True"
-Mouse 5	T    A MoveClickX Nop Raise "WindowShade False"
-#Mouse 1	R    A Menu MenuFvwmRoot
-Mouse 1	R    A Nop
+Mouse 4	T    A MoveClickX Nop Raise "ThumbShade True"
+Mouse 5	T    A MoveClickX Nop Raise "ThumbShade False"
+Mouse 1	R    A Menu MenuFvwmRoot
 Mouse 2	R    A WindowList
 Mouse 3	R    A Menu MenuWindowOpsLong
-Mouse 1	I    A MoveClickX Move Nop Thumbnail
+Mouse 1	I    A MoveClickX RaiseMove Nop Thumbnail
 Mouse 3	T    A Menu MenuWindowOpsLong
 Mouse 3 I    A Menu MenuIconOps
 
@@ -524,32 +459,33 @@ Mouse 3 I    A Menu MenuIconOps
 #
 # Buttons Locations: [1 3 5 7 9  TTTTT  0 8 6 4 2]
 #
-#   2 - WindowOps Menu
-#   1 - Close
-#   3 - Minimize
-#   5 - Maximize
+#   1 - WindowOps Menu
+#   2 - Close
+#   4 - Maximize
+#   6 - Minimize
 ###########
 DestroyDecor FvwmDecor
 AddToDecor   FvwmDecor
 + TitleStyle LeftJustified Height 32 -- Flat
-+ ButtonStyle 1 ActiveUp Pixmap icons/close.png -- Flat
-+ ButtonStyle 1 ActiveDown Pixmap icons/close_down.png -- Flat
-+ ButtonStyle 1 Inactive Pixmap icons/close_inactive.png -- Flat
-+ ButtonStyle 2 ActiveUp Pixmap icons/more.png -- Flat
-+ ButtonStyle 2 ToggledActiveUp Pixmap icons/more.png -- Flat
-+ ButtonStyle 2 ActiveDown Pixmap icons/more_down.png -- Flat
-+ ButtonStyle 2 ToggledActiveDown Pixmap icons/more_down.png -- Flat
-+ ButtonStyle 2 Inactive Pixmap icons/more_inactive.png -- Flat
-+ ButtonStyle 2 ToggledInactive Pixmap icons/more_inactive.png -- Flat
-+ ButtonStyle 3 ActiveUp Pixmap icons/iconify.png -- Flat
-+ ButtonStyle 3 ActiveDown Pixmap icons/iconify_down.png -- Flat
-+ ButtonStyle 3 Inactive Pixmap icons/iconify_inactive.png -- Flat
-+ ButtonStyle 5 ActiveUp Pixmap icons/maximize.png -- Flat
-+ ButtonStyle 5 ActiveDown Pixmap icons/maximize_down.png -- Flat
-+ ButtonStyle 5 Inactive Pixmap icons/maximize_inactive.png -- Flat
-+ ButtonStyle 5 ToggledActiveUp Pixmap icons/restore.png -- Flat
-+ ButtonStyle 5 ToggledActiveDown Pixmap icons/restore_down.png -- Flat
-+ ButtonStyle 5 ToggledInactive Pixmap icons/restore_inactive.png -- Flat
++ ButtonStyle 1 ActiveUp Pixmap images/buttons/close.png -- Flat
++ ButtonStyle 1 ActiveDown Pixmap images/buttons/close_down.png -- Flat
++ ButtonStyle 1 Inactive Pixmap images/buttons/close_inactive.png -- Flat
++ ButtonStyle 2 ActiveUp Pixmap images/buttons/more.png -- Flat
++ ButtonStyle 2 ToggledActiveUp Pixmap images/buttons/more.png -- Flat
++ ButtonStyle 2 ActiveDown Pixmap images/buttons/more_down.png -- Flat
++ ButtonStyle 2 ToggledActiveDown Pixmap images/buttons/more_down.png -- Flat
++ ButtonStyle 2 Inactive Pixmap images/buttons/more_inactive.png -- Flat
++ ButtonStyle 2 ToggledInactive Pixmap images/buttons/more_inactive.png -- Flat
++ ButtonStyle 3 ActiveUp Pixmap images/buttons/iconify.png -- Flat
++ ButtonStyle 3 ActiveDown Pixmap images/buttons/iconify_down.png -- Flat
++ ButtonStyle 3 Inactive Pixmap images/buttons/iconify_inactive.png -- Flat
++ ButtonStyle 5 ActiveUp Pixmap images/buttons/maximize.png -- Flat
++ ButtonStyle 5 ActiveDown Pixmap images/buttons/maximize_down.png -- Flat
++ ButtonStyle 5 Inactive Pixmap images/buttons/maximize_inactive.png -- Flat
++ ButtonStyle 5 ToggledActiveUp Pixmap images/buttons/restore.png -- Flat
++ ButtonStyle 5 ToggledActiveDown Pixmap images/buttons/restore_down.png -- Flat
++ ButtonStyle 5 ToggledInactive Pixmap images/buttons/restore_inactive.png -- Flat
++ ButtonStyle All - Clear
 + ButtonStyle 2 - MwmDecorMenu
 + ButtonStyle 3 - MwmDecorMin
 + ButtonStyle 5 - MwmDecorMax
@@ -563,8 +499,8 @@ AddToDecor   FvwmDecor
 # FvwmIdent is a module that can be used to get the various info about
 # a window. One use is getting the class/resource/name of a window.
 DestroyModuleConfig FvwmIdent:*
-*FvwmIdent: Font "xft:DejaVu Sans:size=11:antialias=True"
 *FvwmIdent: Colorset 10
+*FvwmIdent: Font "xft:DejaVu Sans:size=11:antialias=True"
 
 # FvwmScript
 #
@@ -577,29 +513,6 @@ DestroyModuleConfig FvwmIdent:*
 DestroyModuleConfig FvwmScript:*
 *FvwmScript: DefaultColorset 10
 
-DestroyModuleConfig TopPanel:*
-*TopPanel: Geometry $[vp.width]x$[infostore.panel_height]+0+0
-*TopPanel: Colorset 10
-*TopPanel: Rows 1
-*TopPanel: BoxSize smart
-*TopPanel: Columns $[vp.width]
-*TopPanel: Frame 0
-*TopPanel: (48x1+0+0, Container)
-*TopPanel: (Action (Mouse 1) `Menu MenuFvwmRoot Root 8p 32p`,Icon icons/app.png,PressIcon icons/app_down.png, Frame 0)
-*TopPanel: (End)
-*TopPanel: (194x1-0+0, Container)
-*TopPanel: (Swallow(UseOld) "xclock" "Exec exec xclock -digital -strftime '%a %b %e %l:%M %p' -face 'DejaVu Sans Mono:bold:size=11:antialias=True' -padding 7", Frame 0)
-*TopPanel: (End)
-
-# FvwmEvent
-#
-# FvwmEvent is a module that can run an action or function
-# on specific events. This instance changes which desk number
-# is highlighted when the desk is changed.
-#DestroyModuleConfig EventNewDesk:*
-#*EventNewDesk: PassID
-#*EventNewDesk: new_desk ChangeDesk
-
 # FvwmForm
 #
 # FvwmForm is a module that can be used to build a GUI
@@ -608,6 +521,21 @@ DestroyModuleConfig TopPanel:*
 *FvwmFormDefault: Colorset 10
 *FvwmFormDefault: ItemColorset 13
 
-DestroyModuleConfig DeiconifyEvent: *
-*DeiconifyEvent: deiconify DeThumbnail
-*DeiconifyEvent: destroy_window DeThumbnail
+# window event interception
+DestroyModuleConfig DestroyEvent: *
+*DestroyEvent: destroy_window WindowIconRemove
+
+# iconify animation
+#*FvwmAnimate: Iterations 4
+#*FvwmAnimate: Delay 10
+#*FvwmAnimate: Effect Frame
+
+DestroyModuleConfig Bar: *
+*Bar: Geometry $[vp.width]x32+0+0
+*Bar: Colorset 10
+*Bar: Rows 1
+*Bar: Columns $[vp.width]
+*Bar: (194x1-0+0, Container)
+*Bar: (Swallow(UseOld) "xclock" "Exec exec xclock -digital -strftime '%a %b %e %l:%M %p' -face 'DejaVu Sans Mono:bold:size=11:antialias=True' -padding 7", Frame 0)
+*Bar: (End)
+
