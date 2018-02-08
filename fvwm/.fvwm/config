@@ -217,7 +217,7 @@ Style * SloppyFocus, MouseFocusClickRaises
 DefaultFont "xft:DejaVu Sans:size=11:antialias=True"
 
 # Window Placement
-Style * TileCascadePlacement, GrabFocusOff, !UsePPosition
+Style * TileCascadePlacement, GrabFocus, !UsePPosition
 
 # Icon Placement
 Style * IconBox 16 48 -16 -16, IconGrid 16 16, IconFill r b
