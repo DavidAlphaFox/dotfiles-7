@@ -134,11 +134,11 @@ AddToFunc Thumbnail
 + I ThisWindow (!Iconic) WindowIcon
 + I Iconify
 + I ThisWindow (!Iconic) Raise
-+ I All (Iconic) PlaceAgain Icon
 
 DestroyFunc ThumbnailAll
 AddToFunc ThumbnailAll
-+ I All (!Iconic) Thumbnail
++ I All (!Iconic) WindowIcon
++ I All (!Iconic) Iconify
 
 # generate a thumbnail image when shading
 DestroyFunc ThumbShade
@@ -556,11 +556,14 @@ DestroyModuleConfig Bar: *
 *Bar: Colorset 10
 *Bar: Rows 1
 *Bar: Columns $[vp.width]
-*Bar: (32x1+0+0, Container)
-*Bar: (Icon images/buttons/power.png, PressIcon images/buttons/power_down.png, Action (Mouse 1) `Menu MenuPower Root 0p 32p`, ActionOnPress, Frame 0)
+*Bar: (32x1+4+0, Container)
+*Bar: (Icon images/buttons/power.png, PressIcon images/buttons/power_down.png, Action (Mouse 1) `Menu MenuPower Root 4p 32p`, ActionOnPress, Frame 0)
 *Bar: (End)
-*Bar: (32x1+32+0, Container)
-*Bar: (Icon images/buttons/menu.png, PressIcon images/buttons/menu_down.png, Action (Mouse 1) `Menu MenuFvwmRoot Root 32p 32p`, ActionOnPress, Frame 0)
+*Bar: (32x1+36+0, Container)
+*Bar: (Icon images/buttons/app.png, PressIcon images/buttons/app_down.png, Action (Mouse 1) `Menu MenuFvwmRoot Root 36p 32p`, ActionOnPress, Frame 0)
+*Bar: (End)
+*Bar: (32x1+68+0, Container)
+*Bar: (Icon images/buttons/menu.png, PressIcon images/buttons/menu_down.png, Action (Mouse 1) `Menu MenuWindowOpsRoot Root 68p 32p`, ActionOnPress, Frame 0)
 *Bar: (End)
 *Bar: (194x1-0+0, Container)
 *Bar: (Swallow(UseOld) "xclock" "Exec exec xclock -digital -strftime '%a %b %e %l:%M %p' -face 'DejaVu Sans Mono:bold:size=11:antialias=True' -padding 7", Frame 0)
