@@ -134,10 +134,16 @@ AddToFunc Thumbnail
 + I ThisWindow (!Iconic) WindowIcon
 + I Iconify
 + I ThisWindow (!Iconic) Raise
++ I All (Iconic) PlaceAgain Icon
+
+DestroyFunc ThumbnailAll
+AddToFunc ThumbnailAll
++ I All (!Iconic) Thumbnail
 
 # generate a thumbnail image when shading
 DestroyFunc ThumbShade
 AddToFunc ThumbShade
++ I ThisWindow (FixedPosition, FixedSize) Break
 + I Raise
 + I ThisWindow (!Shaded) WindowIcon
 + I WindowShade $0
@@ -247,7 +253,7 @@ Style * IconBackgroundRelief 1, IconTitleRelief 1
 # Window Specific Styles
 Style ConfirmQuit !Title, PositionPlacement Center, WindowListSkip, Layer 6
 Style FvwmIdent WindowListSkip, !Handles
-Style Bar !Title, !Borders, !Iconifiable, !Handles, Sticky, WindowListSkip
+Style Bar !Title, !Borders, !Iconifiable, !Handles, Sticky, WindowListSkip, !Maximizable, FixedPosition, FixedSize
 Style Bar NeverFocus, Layer 1
 
 #######
@@ -302,10 +308,13 @@ MenuStyle * Font "xft:DejaVu Sans:Bold:size=9:antialias=True"
 #
 # The root menu will PopUp with a click in the root
 # window or using alt-f1 (or menu).
+# Generate XDGMenu (Applications)
 DestroyMenu MenuFvwmRoot
-AddToMenu   MenuFvwmRoot "FreeBSD" Title
-+ "Applications%icons/apps.png%" Popup Applications
+AddToMenu   MenuFvwmRoot
 + "Terminal%icons/terminal.png%" Exec exec $[infostore.terminal]
++ "" Nop
+PipeRead "fvwm-menu-desktop -t Applications --without-titles --insert-in-menu MenuFvwmRoot"
+AddToMenu   MenuFvwmRoot
 + "" Nop
 + "FvwmConsole%icons/terminal.png%" Module FvwmConsole -terminal $[infostore.terminal]
 + "Man Pages%icons/help.png%" Popup MenuFvwmManPages
@@ -319,9 +328,6 @@ AddToMenu MenuPower
 + "Shut Down...%icons/quit.png%" Module FvwmScript FvwmScript-ConfirmShutdown
 + "" Nop
 + "Logout...%icons/restart.png%" Module FvwmScript FvwmScript-ConfirmQuit
-
-# Generate XDGMenu (Applications)
-PipeRead "fvwm-menu-desktop -t Applications"
 
 # Root menu (right-click)
 DestroyMenu MenuWindowOpsRoot
@@ -432,7 +438,7 @@ AddToMenu   MenuFvwmManPages "Help" Title
 # Super_R (windows key) will launch a terminal.
 #
 # Silent supresses any errors (such as keyboards with no Menu key).
-Silent Key F1 A M Menu MenuFvwmRoot
+#Silent Key F1 A M Menu MenuFvwmRoot
 Silent Key Menu A A Menu MenuFvwmRoot
 Silent Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L
 Silent Key F1 A C GotoDesk 0 0
@@ -466,7 +472,8 @@ Mouse 1	T    A MoveClickX RaiseMove Raise RaiseMaximize
 Mouse 1	FS   A MoveClickX Resize Raise Nop
 Mouse 4	T    A MoveClickX Nop Raise "ThumbShade True"
 Mouse 5	T    A MoveClickX Nop Raise "ThumbShade False"
-Mouse 1	R    A Menu MenuFvwmRoot
+#Mouse 1	R    A Menu MenuFvwmRoot
+Mouse 1	R    A MoveClickX Nop Nop ThumbnailAll
 Mouse 2	R    A WindowList
 Mouse 3	R    A Menu MenuWindowOpsRoot
 Mouse 1	I    A MoveClickX RaiseMove Nop Thumbnail
