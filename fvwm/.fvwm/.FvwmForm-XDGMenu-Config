@@ -2,9 +2,9 @@
 *FvwmForm-XDGMenu-ConfigDefault: MENgnome-applications     on 
 
 *FvwmForm-XDGMenu-ConfigDefault: IncludeConfig 
-*FvwmForm-XDGMenu-ConfigDefault: IncludeRegen on 
+*FvwmForm-XDGMenu-ConfigDefault: IncludeRegen 
 *FvwmForm-XDGMenu-ConfigDefault: IncludeBoth   
-*FvwmForm-XDGMenu-ConfigDefault: IncludeNone   
+*FvwmForm-XDGMenu-ConfigDefault: IncludeNone  on
 *FvwmForm-XDGMenu-ConfigDefault: IconsOn      on 
 *FvwmForm-XDGMenu-ConfigDefault: IconsOff      
 *FvwmForm-XDGMenu-ConfigDefault: Size          

@@ -57,12 +57,15 @@ DestroyFunc StartFunction
 AddToFunc   StartFunction
 + I Test (Init) Exec exec compton -b
 + I Test (Init) Exec exec urxvtd -q -o -f
++ I Test (Init) Exec exec dunst
 + I Test (Init, f $[HOME]/.fehbg) Exec exec $[HOME]/.fehbg
 + I TestRc (NoMatch) Exec exec feh --bg-fill /usr/local/share/wallpapers/default.png
++ I Test (Restart) Exec exec killall -SIGUSR1 compton
++ I Test (Restart) Exec exec killall dunst
++ I Test (Restart) All (Iconic) WindowIcon
++ I Test (Restart) Exec exec notify-send -i dialog-information -u low Fvwm 'Fvwm reloaded'
 + I Module FvwmEvent DestroyEvent
 + I Module FvwmButtons Bar
-+ I Test (Restart) Exec exec killall -SIGUSR1 compton
-+ I Test (Restart) All (Iconic) WindowIcon
 
 # Function: MoveClickX $0 $1 $2
 #
@@ -92,7 +95,7 @@ AddToFunc   MoveClickX
 DestroyFunc ViewManPage
 AddToFunc   ViewManPage
 + I Exec exec $[infostore.terminal] -g 80x40 \
-  -n "Manual Page - $0" -T "Manual Page - $0" -e man "$0"
+  -n "Manual Page - $0" -T "Manual Page - $0" -e zsh -ic 'man $0'
 
 # Function: ToggleTitle
 #
@@ -131,7 +134,6 @@ AddToFunc Thumbnail
 + I ThisWindow (!Iconic) WindowIcon
 + I Iconify
 + I ThisWindow (!Iconic) Raise
-+ I ThisWindow (!Iconic) All (Iconic) PlaceAgain Icon
 
 # generate a thumbnail image when shading
 DestroyFunc ThumbShade
@@ -308,14 +310,29 @@ AddToMenu   MenuFvwmRoot "FreeBSD" Title
 + "FvwmConsole%icons/terminal.png%" Module FvwmConsole -terminal $[infostore.terminal]
 + "Man Pages%icons/help.png%" Popup MenuFvwmManPages
 #+ "Copy Config%icons/conf.png%" FvwmScript FvwmScript-ConfirmCopyConfig
+
+# Power options
+DestroyMenu MenuPower
+AddToMenu MenuPower
+#+ "Refresh%icons/refresh.png%" Refresh
++ "Restart...%icons/refresh.png%" Module FvwmScript FvwmScript-ConfirmReboot
++ "Shut Down...%icons/quit.png%" Module FvwmScript FvwmScript-ConfirmShutdown
 + "" Nop
-+ "Refresh%icons/refresh.png%" Refresh
-+ "Restart%icons/restart.png%" Restart
-+ "Quit%icons/quit.png%" Module FvwmScript FvwmScript-ConfirmQuit
++ "Logout...%icons/restart.png%" Module FvwmScript FvwmScript-ConfirmQuit
 
 # Generate XDGMenu (Applications)
 PipeRead "fvwm-menu-desktop -t Applications"
 
+# Root menu (right-click)
+DestroyMenu MenuWindowOpsRoot
+AddToMenu MenuWindowOpsRoot
++ "Minimize All"	All (!Iconic) Thumbnail
++ "Arrange Icons"	All (Iconic) PlaceAgain Icon
++ "Window Actions"	Popup MenuWindowOpsLong
++ "" Nop
++ "Refresh Desktop%icons/refresh.png%" Restart
+
+# all window options
 DestroyMenu MenuWindowOpsLong
 AddToMenu   MenuWindowOpsLong
 + "Move"                RaiseMove
@@ -339,6 +356,7 @@ AddToMenu   MenuWindowOpsLong
 + "" Nop
 + "Identify"            Module FvwmIdent
 
+# window options for icons
 DestroyMenu MenuIconOps
 AddToMenu   MenuIconOps
 + "Restore"             Thumbnail
@@ -450,7 +468,7 @@ Mouse 4	T    A MoveClickX Nop Raise "ThumbShade True"
 Mouse 5	T    A MoveClickX Nop Raise "ThumbShade False"
 Mouse 1	R    A Menu MenuFvwmRoot
 Mouse 2	R    A WindowList
-Mouse 3	R    A Menu MenuWindowOpsLong
+Mouse 3	R    A Menu MenuWindowOpsRoot
 Mouse 1	I    A MoveClickX RaiseMove Nop Thumbnail
 Mouse 3	T    A Menu MenuWindowOpsLong
 Mouse 3 I    A Menu MenuIconOps
@@ -531,6 +549,12 @@ DestroyModuleConfig Bar: *
 *Bar: Colorset 10
 *Bar: Rows 1
 *Bar: Columns $[vp.width]
+*Bar: (32x1+0+0, Container)
+*Bar: (Icon images/buttons/power.png, PressIcon images/buttons/power_down.png, Action (Mouse 1) `Menu MenuPower Root 0p 32p`, ActionOnPress, Frame 0)
+*Bar: (End)
+*Bar: (32x1+32+0, Container)
+*Bar: (Icon images/buttons/menu.png, PressIcon images/buttons/menu_down.png, Action (Mouse 1) `Menu MenuFvwmRoot Root 32p 32p`, ActionOnPress, Frame 0)
+*Bar: (End)
 *Bar: (194x1-0+0, Container)
 *Bar: (Swallow(UseOld) "xclock" "Exec exec xclock -digital -strftime '%a %b %e %l:%M %p' -face 'DejaVu Sans Mono:bold:size=11:antialias=True' -padding 7", Frame 0)
 *Bar: (End)
