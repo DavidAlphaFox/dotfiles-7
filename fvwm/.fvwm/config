@@ -137,8 +137,7 @@ AddToFunc Thumbnail
 
 DestroyFunc ThumbnailAll
 AddToFunc ThumbnailAll
-+ I All (!Iconic) WindowIcon
-+ I All (!Iconic) Iconify
++ I All (!Iconic) Thumbnail
 
 # generate a thumbnail image when shading
 DestroyFunc ThumbShade
@@ -324,7 +323,7 @@ AddToMenu   MenuFvwmRoot
 DestroyMenu MenuPower
 AddToMenu MenuPower
 #+ "Refresh%icons/refresh.png%" Refresh
-+ "Restart...%icons/refresh.png%" Module FvwmScript FvwmScript-ConfirmReboot
++ "Reboot...%icons/refresh.png%" Module FvwmScript FvwmScript-ConfirmReboot
 + "Shut Down...%icons/quit.png%" Module FvwmScript FvwmScript-ConfirmShutdown
 + "" Nop
 + "Logout...%icons/restart.png%" Module FvwmScript FvwmScript-ConfirmQuit
