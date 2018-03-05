@@ -109,7 +109,8 @@ for_window [class="Calf JACK Host.*"] move workspace 🎧
 for_window [class="calfjackhost"] move workspace 🎧
 for_window [class="Spotify"] move workspace 🎧
 for_window [class="Vlc"] move workspace 🎧
-
+for_window [class="Godot"] move workspace 🌱
+for_window [class="Wine"] move workspace 🔥
 # multiple monitor/workspace
 workspace 💀 output VGA-1
 workspace 📡 output VGA-2
