@@ -99,17 +99,7 @@
     "nuclide-terminal":
       cursorBlink: true
       cursorStyle: "underline"
-    "nuclide-working-sets":
-      workingSets: [
-        {
-          name: "retina"
-          active: false
-          uris: [
-            "/home/ihanson/src/retina-server"
-            "/home/ihanson/src/retina-ui"
-          ]
-        }
-      ]
+    "nuclide-working-sets": {}
     use:
       "atom-ide-code-highlight": false
       "nuclide-adb-logcat": false
