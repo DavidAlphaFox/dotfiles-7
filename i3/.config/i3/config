@@ -229,7 +229,7 @@ bindsym $mod+Shift+Print exec --no-startup-id scrot -d 3
 bindsym $mod+g exec google-chrome-stable
 
 #gaps
-#gaps inner 18
+#gaps inner 8
 #gaps outer 0
 for_window [class="^.*"] border pixel 2
 for_window [title="galculator.*"] floating enable

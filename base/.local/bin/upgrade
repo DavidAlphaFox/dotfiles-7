@@ -45,7 +45,7 @@ if [ -n "$dodedup" ]; then
   mkdir -p $mntpnt
   sudo mount $device $mntpnt
   pushd -q $mntpnt
-  echo "$(sudo duperemove -rdh . 2>/dev/null | grep "net change")"
+  sudo duperemove -rdhv .
   popd -q
   sudo umount $mntpnt
   rmdir $mntpnt
