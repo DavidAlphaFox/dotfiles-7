@@ -39,6 +39,9 @@ rofi.fullscreen:        false
 rofi.fake-transparency: false
 ! "scrolling method. (0: Page, 1: Centered)"
 rofi.scroll-method:     1
+rofi.color-normal: #212121,#505050,#212121,#212121,#4d9966
+rofi.color-active: #212121,#bfbfbf,#212121,#212121,#212121
+rofi.color-window: #212121,#405580,#212121
 
 ! COLORS
 ! special
