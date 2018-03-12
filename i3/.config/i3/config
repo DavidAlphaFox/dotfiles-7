@@ -160,8 +160,8 @@ set $inactive #985CAA80
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id rofi -show run
 #bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id "rofi -show run -width 16 -lines 5 -color-normal '$bg,$color8,$bg,$bg,$color12' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color4,$bg'"
-bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun -width 16 -lines 5 -color-normal '$bg,$color8,$bg,$bg,$color12' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color4,$bg'"
+bindsym $mod+d exec --no-startup-id "rofi -show run -color-normal '$bg,$color8,$bg,$bg,$color10' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color4,$bg'"
+bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun -color-normal '$bg,$color8,$bg,$bg,$color10' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color4,$bg'"
 
 #colors
 #class                  border  background  text    indicator       child_border
