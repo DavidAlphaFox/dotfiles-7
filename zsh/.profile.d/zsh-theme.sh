@@ -3,18 +3,14 @@ if [ ! "$SHELL" = "/bin/zsh" ]; then
 fi
 #sh_sym=' '
 #sh_sym='  '
-#sh_sym="%{$reset_color%}🚀"
-#sh_sym='☺️ '
-#sh_sym='🐚  '
 #sh_sym=' '
 sh_sym=' '
+#sh_sym=' '
+sh2_sym=' '
 #sh_sym=' '
 #sh_sym=' '
 #err_sym=' '
 err_sym=' '
-#err_sym="%{$reset_color%}😝"
-#err_sym="%{$reset_color%}💥"
-#err_sym="%{$reset_color%}☠️ "
 up_sym=' '
 down_sym=' '
 untracked_sym=' '
@@ -23,11 +19,7 @@ mod_sym=' '
 #stash_sym=' '
 stash_sym=' '
 noup_sym=' '
-#vicmd_sym='🍄'
-#vicmd_sym='👾'
-#vicmd_sym='🛠️ '
 vicmd_sym=' '
-#home_sym=''
 home_sym=''
 # bash/zsh git prompt support
 #
@@ -560,7 +552,7 @@ function get_pwd(){
   echo $prompt_short_dir
 }
 
-local ret_status='%(?:%{$fg_bold[red]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
+local ret_status='%(?:%{$fg_bold[yellow]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
 local vicmd_status='%{$reset_color%}%{$fg[green]%}$vicmd_sym%{$reset_color%}'
 local exit_status='%{$fg[red]%}$(nice_exit_code)%{$reset_color%}'
 local git_status='$(__promptline_vcs_branch)%{$reset_color%}'
@@ -569,16 +561,16 @@ local host_status='%{$fg_bold[yellow]%}$(__promptline_host)%{$reset_color%}'
 precmd() {
   PROMPT="%{$reset_color%}$ret_status "
   RPROMPT="%{$reset_color%}$exit_status$git_status $dir_status$host_status"
-  PS2="%{$reset_color%}%{$fg_bold[black]%}(%_) %{$reset_color%}"
+  PS2="%{$reset_color%}%{$fg_bold[red]%}$sh2_sym %{$reset_color%}"
 }
 zle-keymap-select() {
   PROMPT="%{$reset_color%}$ret_status "
   RPROMPT="%{$reset_color%}$exit_status$git_status $dir_status$host_status"
-  PS2="%{$reset_color%}%{$fg_bold[black]%}(%_) %{$reset_color%}"
+  PS2="%{$reset_color%}%{$fg_bold[red]%}$sh2_sym %{$reset_color%}"
   if [[ $KEYMAP = vicmd ]]; then
     PROMPT="%{$reset_color%}$ret_status "
     RPROMPT="%{$reset_color%}$exit_status $vicmd_status$git_status $dir_status$host_status"
-    PS2="%{$reset_color%}%{$fg_bold[black]%}(%_) %{$reset_color%}"
+    PS2="%{$reset_color%}%{$fg_bold[red]%}$sh2_sym %{$reset_color%}"
   fi
   () { return $__prompt_status }
   zle reset-prompt
