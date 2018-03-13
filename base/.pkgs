@@ -18,8 +18,6 @@ dos2unix
 duperemove
 feh
 gnome-themes-standard
-google-chrome
-gparted
 grub
 gtk-engine-murrine
 gvfs
@@ -49,7 +47,6 @@ pamixer
 papirus-icon-theme
 paprefs
 pavucontrol
-pepper-flash
 perl-anyevent-i3
 perl-async-interrupt
 perl-ev
@@ -63,7 +60,8 @@ qt5ct
 ranger
 rofi
 rsync
-sddm-config-editor-git
+rxvt-unicode
+sddm
 seahorse
 stow
 sysstat

@@ -17,10 +17,10 @@ Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
 ! ROFI
-rofi.font:              DejaVu Sans Mono 12
+rofi.font:              Iosevka Term Medium 15
 rofi.modi:              window,run,ssh,drun
-rofi.width:             16
-rofi.lines:             5
+rofi.width:             32
+rofi.lines:             8
 rofi.columns:           1
 ! "border width"
 rofi.bw:                2
@@ -39,6 +39,9 @@ rofi.fullscreen:        false
 rofi.fake-transparency: false
 ! "scrolling method. (0: Page, 1: Centered)"
 rofi.scroll-method:     1
+rofi.color-normal: #212121,#505050,#212121,#212121,#4d7f99
+rofi.color-active: #212121,#bfbfbf,#212121,#212121,#212121
+rofi.color-window: #212121,#405580,#212121
 
 ! COLORS
 ! special

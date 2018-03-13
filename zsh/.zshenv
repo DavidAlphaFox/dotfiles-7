@@ -1,6 +1,6 @@
 export EDITOR="vim"
 export VISUAL="vim"
-export BROWSER="google-chrome-stable"
+export CM_LAUNCHER="rofi"
 export TERMINAL=tilda
 export GIT_EDITOR=$EDITOR
 export LC_CTYPE=$LANG

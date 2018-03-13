@@ -53,6 +53,31 @@ bindkey '^ ' my-autosuggest-accept
 ZSH_AUTOSUGGEST_ACCEPT_WIDGETS=''
 ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS+=vi-forward-char
 ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black,bold'
+export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets cursor)
+#export ZSH_HIGHLIGHT_STYLES[cursor]='fg=yellow,bold' #invalid?
+export ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
+export ZSH_HIGHLIGHT_STYLES[path]='fg=blue,bold'
+export ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=blue'
+export ZSH_HIGHLIGHT_STYLES[globbing]='fg=cyan,bold'
+export ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=yellow'
+export ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=yellow,bold'
+export ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=red,bold,underline'
+export ZSH_HIGHLIGHT_STYLES[command]='fg=green,bold'
+export ZSH_HIGHLIGHT_STYLES[alias]='fg=green'
+export ZSH_HIGHLIGHT_STYLES[builtin]='fg=magenta,bold'
+export ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=magenta'
+export ZSH_HIGHLIGHT_STYLES[redirection]='fg=magenta'
+export ZSH_HIGHLIGHT_STYLES[arg0]='fg=magenta'
+export ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=magenta'
+export ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=magenta,bold'
+export ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=blue,bold'
+export ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=green,bold'
+export ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=cyan,bold'
+export ZSH_HIGHLIGHT_STYLES[bracket-level-5]='fg=red'
+export ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]='fg=yellow,bold'
+export ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=green'
+export ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=green,bold'
 
 # Load profiles from ~/.profile.d
 if test -e ~/.profile.d/; then
