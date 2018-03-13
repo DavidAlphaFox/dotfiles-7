@@ -1,14 +1,16 @@
 if [ ! "$SHELL" = "/bin/zsh" ]; then
   return
 fi
-sh_sym=' '
+#sh_sym=' '
+sh_sym='  '
 #sh_sym="%{$reset_color%}🚀"
 #sh_sym='☺️ '
 #sh_sym='🐚  '
 #sh_sym=' '
 #sh_sym=' '
 #sh_sym=' '
-err_sym=' '
+#err_sym=' '
+err_sym=' '
 #err_sym="%{$reset_color%}😝"
 #err_sym="%{$reset_color%}💥"
 #err_sym="%{$reset_color%}☠️ "
@@ -24,7 +26,8 @@ noup_sym=' '
 #vicmd_sym='👾'
 #vicmd_sym='🛠️ '
 vicmd_sym=' '
-home_sym=''
+#home_sym=''
+home_sym=''
 # bash/zsh git prompt support
 #
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
