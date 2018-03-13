@@ -3,6 +3,8 @@ if [ ! "$SHELL" = "/bin/zsh" ]; then
 fi
 #sh_sym=' '
 #sh_sym='  '
+#sh_sym=' '
+#sh_sym=' '
 #sh_sym=' '
 sh_sym=' '
 #sh_sym=' '
