@@ -22,7 +22,8 @@ mod_sym=' '
 #stash_sym=' '
 stash_sym=' '
 noup_sym=' '
-vicmd_sym=' '
+#vicmd_sym=' '
+vicmd_sym=' '
 home_sym=''
 # bash/zsh git prompt support
 #
