@@ -2,11 +2,12 @@ if [ ! "$SHELL" = "/bin/zsh" ]; then
   return
 fi
 #sh_sym=' '
-sh_sym='  '
+#sh_sym='  '
 #sh_sym="%{$reset_color%}🚀"
 #sh_sym='☺️ '
 #sh_sym='🐚  '
-#sh_sym=' '
+#sh_sym=' '
+sh_sym=' '
 #sh_sym=' '
 #sh_sym=' '
 #err_sym=' '
