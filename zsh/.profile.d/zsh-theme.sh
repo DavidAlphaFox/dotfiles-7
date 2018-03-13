@@ -6,7 +6,8 @@ fi
 #sh_sym=' '
 #sh_sym=' '
 #sh_sym=' '
-sh_sym=' '
+#sh_sym=' '
+sh_sym=' '
 #sh_sym=' '
 sh2_sym=' '
 #sh_sym=' '
@@ -556,7 +557,7 @@ function get_pwd(){
 
 local ret_status='%(?:%{$fg_bold[yellow]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
 local vicmd_status='%{$reset_color%}%{$fg[green]%}$vicmd_sym%{$reset_color%}'
-local exit_status='%{$fg[red]%}$(nice_exit_code)%{$reset_color%}'
+#local exit_status='%{$fg[red]%}$(nice_exit_code)%{$reset_color%}'
 local git_status='$(__promptline_vcs_branch)%{$reset_color%}'
 local dir_status='%{$fg_bold[blue]%}$(get_pwd)%{$reset_color%}'
 local host_status='%{$fg_bold[yellow]%}$(__promptline_host)%{$reset_color%}'
