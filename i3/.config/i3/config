@@ -62,67 +62,66 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 💀
-bindsym $mod+2 workspace 📡
-bindsym $mod+3 workspace 🛰️
-bindsym $mod+4 workspace 🌱
-bindsym $mod+5 workspace 🔥
-bindsym $mod+6 workspace 💧
-bindsym $mod+7 workspace ⛅
-bindsym $mod+8 workspace 🎹
-bindsym $mod+9 workspace 🎙️
-bindsym $mod+0 workspace 🎧
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 0
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 💀
-bindsym $mod+Shift+2 move container to workspace 📡
-bindsym $mod+Shift+3 move container to workspace 🛰️
-bindsym $mod+Shift+4 move container to workspace 🌱
-bindsym $mod+Shift+5 move container to workspace 🔥
-bindsym $mod+Shift+6 move container to workspace 💧
-bindsym $mod+Shift+7 move container to workspace ⛅
-bindsym $mod+Shift+8 move container to workspace 🎹
-bindsym $mod+Shift+9 move container to workspace 🎙️
-bindsym $mod+Shift+0 move container to workspace 🎧
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 0
 
-exec_always --no-startup-id i3-msg 'rename workspace 1 to 💀'
-exec_always --no-startup-id i3-msg 'rename workspace 2 to 📡'
-exec_always --no-startup-id i3-msg 'rename workspace 3 to 🛰️'
-exec_always --no-startup-id i3-msg 'rename workspace 4 to 🌱'
-exec_always --no-startup-id i3-msg 'rename workspace 5 to 🔥'
-exec_always --no-startup-id i3-msg 'rename workspace 6 to 💧'
-exec_always --no-startup-id i3-msg 'rename workspace 7 to ⛅'
-exec_always --no-startup-id i3-msg 'rename workspace 8 to 🎹'
-exec_always --no-startup-id i3-msg 'rename workspace 9 to 🎙️'
-exec_always --no-startup-id i3-msg 'rename workspace 10 to 🎧'
+exec_always --no-startup-id i3-msg 'rename workspace 1 to 1'
+exec_always --no-startup-id i3-msg 'rename workspace 2 to 2'
+exec_always --no-startup-id i3-msg 'rename workspace 3 to 3'
+exec_always --no-startup-id i3-msg 'rename workspace 4 to 4'
+exec_always --no-startup-id i3-msg 'rename workspace 5 to 5'
+exec_always --no-startup-id i3-msg 'rename workspace 6 to 6'
+exec_always --no-startup-id i3-msg 'rename workspace 7 to 7'
+exec_always --no-startup-id i3-msg 'rename workspace 8 to 8'
+exec_always --no-startup-id i3-msg 'rename workspace 9 to 9'
+exec_always --no-startup-id i3-msg 'rename workspace 10 to 0'
 
 # force a window on a named workspace
-for_window [class="Atom"] move workspace 💀
-for_window [class="Tilda"] move workspace 💀
-for_window [class="discord"] move workspace 📡
-for_window [title="Google Hangouts.*"] move workspace 📡
-for_window [class="Google-chrome"] move workspace 📡
-for_window [class="Renoise"] move workspace 🎹
-for_window [class="Claudia.py"] move workspace 🎙️
-for_window [class="qjackrcd"] move workspace 🎙️
-for_window [class="Calf JACK Host.*"] move workspace 🎧
-for_window [class="calfjackhost"] move workspace 🎧
-for_window [class="Spotify"] move workspace 🎧
-for_window [class="Vlc"] move workspace 🎧
-for_window [class="Godot"] move workspace 🌱
-for_window [class="Wine"] move workspace 🔥
+for_window [class="Atom"] move workspace 1
+for_window [class="Tilda"] move workspace 1
+for_window [class="discord"] move workspace 2
+for_window [title="Google Hangouts.*"] move workspace 2
+for_window [class="Google-chrome"] move workspace 2
+for_window [class="Renoise"] move workspace 8
+for_window [class="Claudia.py"] move workspace 9
+for_window [class="qjackrcd"] move workspace 9
+for_window [class="Calf JACK Host.*"] move workspace 0
+for_window [class="calfjackhost"] move workspace 0
+for_window [class="Spotify"] move workspace 0
+for_window [class="Vlc"] move workspace 0
+for_window [class="Godot"] move workspace 4
+for_window [class="Wine"] move workspace 5
 # multiple monitor/workspace
-workspace 💀 output VGA-1
-workspace 📡 output VGA-2
-workspace 🛰️ output VGA-3
-workspace 🎹 output HDMI1
+workspace 1 output VGA-1
+workspace 2 output VGA-2
+workspace 3 output VGA-3
+workspace 0 output HDMI1
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-#bindsym $mod+Shift+period exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit' -f 'pango:Iosevka Term Medium'"
 bindsym $mod+Shift+e exec --no-startup-id mate-session-save --logout-dialog
 bindsym $mod+Shift+u exec --no-startup-id mate-session-save --shutdown-dialog
 
@@ -149,19 +148,13 @@ bindsym $mod+r mode "resize"
 
 set $back #1C1C1C
 set $urg #e06c75
-set $green #98c379
 set $blue #4B87B9
-set $accent #d6ab77
 set $trans #BFBFBF80
 set $active #56B6C2
-#set $active #E8EA81
-#set $inactive #3A3A3A
 set $inactive #985CAA80
 # start dmenu (a program launcher)
-#bindsym $mod+d exec --no-startup-id rofi -show run
-#bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+d exec --no-startup-id "rofi -show run -color-normal '$bg,$color8,$bg,$bg,$color10' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color12,$bg'"
-bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun -color-normal '$bg,$color8,$bg,$bg,$color9' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color12,$bg'"
+bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun -color-normal '$bg,$color8,$bg,$bg,$color9' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color12,$bg' -show-icons"
 
 #colors
 #class                  border  background  text    indicator       child_border
@@ -181,7 +174,7 @@ bar {
     statusline $trans
 		inactive_workspace $back $back $trans
 		active_workspace $back $back $trans
-		focused_workspace $trans $back $back
+		focused_workspace $trans $trans $back
   }
   tray_padding 0
   height 32
@@ -190,9 +183,7 @@ bar {
 #smart_borders on
 
 # startup programs
-#exec_always --no-startup-id feh --bg-fill ~/Pictures/bg.png
 exec --no-startup-id compton
-#exec --no-startup-id clipmenud
 exec_always --no-startup-id ibus-daemon --xim -r
 exec_always --no-startup-id ~/.local/bin/grave-toggle
 exec --no-startup-id urxvtd -q -o -f
@@ -241,7 +232,6 @@ for_window [title="Share Desktop"] floating enable
 for_window [title="Emoji Choice"] floating enable
 for_window [title="Calf .*"] floating enable
 for_window [class="qjackrcd"] floating enable
-#for_window [urgent="latest" class="discord"] focus
 hide_edge_borders smart
 
 
