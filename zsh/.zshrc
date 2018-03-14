@@ -7,7 +7,6 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle colored-man-pages
 antigen bundle zsh-users/zsh-autosuggestions
-#antigen bundle bric3/nice-exit-code
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
@@ -23,7 +22,6 @@ setopt correct
 
 # vi mode
 bindkey -v
-
 # backspace
 bindkey -a '^?' vi-backward-delete-char
 # home
@@ -106,3 +104,4 @@ fi
 if [ -e "$HOME/go" ]; then
   PATH="$PATH:$HOME/go/bin"
 fi
+
