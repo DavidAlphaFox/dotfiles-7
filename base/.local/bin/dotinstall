@@ -38,6 +38,19 @@ sudo tee -a /etc/mkinitcpio.conf <<EOF
 COMPRESSION="cat"
 EOF
 
+# sysctl settings
+sudo tee /etc/sysctl.d/40-max_user_watches <<EOF
+fs.inotify.max_user_watches=582222
+EOF
+sudo tee /etc/sysctl.d/41-max_map_count <<EOF
+vm.max_map_count=262144
+EOF
+
+# modprobe options
+sudo tee /etc/modprobe.d/alsa-base.conf <<EOF
+options snd-intel8x0 ac97_clock=48000
+EOF
+
 # cleanup
 yaourt -Rns $(yaourt -Qtdq) --noconfirm
 
