@@ -370,23 +370,6 @@ let g:syntastic_auto_loc_list = 1
 
 " airline status theme
 set showtabline=1
-let g:airline_theme='onedark'
-let g:airline_powerline_fonts = 1
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.branch = ' '
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#tabline#show_buffers=0
-let g:airline#extensions#tabline#tab_min_count=2
-let g:airline_right_alt_sep=''
-let g:airline_left_alt_sep=''
-let g:airline#extensions#tabline#show_close_button=0
-let g:airline#extensions#tabline#show_tab_nr=0
-let g:airline_section_b='%{getcwd()}%#__restore__#'
-let g:airline_section_c='%<%f%m %{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
-let g:airline_section_y='%{airline#util#wrap(airline#extensions#branch#get_head(),0)}%#__restore__#'
 
 if has("gui_win32")
     let g:gitgutter_enabled = 0
