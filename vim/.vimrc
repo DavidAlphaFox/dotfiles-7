@@ -11,8 +11,6 @@ endif
 set encoding=utf-8
 set fileencoding=utf-8
 
-"let g:melania_no_term_bg=1
-"colorscheme melania
 colorscheme onedark
 if has("gui_running")
   if has("gui_gtk2")
