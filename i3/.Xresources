@@ -42,8 +42,8 @@ rofi.scroll-method:     1
 rofi.color-normal: #212121,#505050,#212121,#212121,#4d7f99
 rofi.color-active: #212121,#bfbfbf,#212121,#212121,#212121
 rofi.color-window: #212121,#405580,#212121
-rofi.display-drun: 
-rofi.display-run: 
+rofi.display-drun: 
+rofi.display-run: 
 
 ! COLORS
 ! special
