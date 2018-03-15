@@ -1,5 +1,4 @@
 acpi
-adapta-gtk-theme
 alsa-tools
 alsa-utils
 antigen-git
@@ -19,7 +18,6 @@ duperemove
 feh
 gnome-themes-standard
 grub
-gtk-engine-murrine
 gvfs
 highlight
 htop
@@ -43,8 +41,8 @@ noto-fonts
 noto-fonts-emoji
 numlockx
 openssh
+otf-font-awesome
 pamixer
-papirus-icon-theme
 paprefs
 pavucontrol
 perl-anyevent-i3
@@ -73,6 +71,8 @@ ttf-liberation
 unrar
 unzip
 vim
+vimix-gtk-themes-git
+vimix-icon-theme
 w3m
 wget
 xarchiver
@@ -85,4 +85,3 @@ xorg-xwininfo
 xterm
 yaourt
 zip
-otf-font-awesome
