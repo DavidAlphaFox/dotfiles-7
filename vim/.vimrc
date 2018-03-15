@@ -11,6 +11,7 @@ endif
 set encoding=utf-8
 set fileencoding=utf-8
 
+let g:onedark_termcolors=16
 colorscheme onedark
 if has("gui_running")
   if has("gui_gtk2")

@@ -1,5 +1,5 @@
 ! URXVT
-URxvt.font: xft:DejaVu Sans Mono:pixelsize=18
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=18,xft:Font Awesome 5 Free Solid:pixelsize=18
 URxvt.letterSpace: -1
 URxvt.boldFont:
 URxvt.internalBorder: 8
