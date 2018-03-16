@@ -16,7 +16,6 @@ language-swift
 language-thrift
 nuclide
 nuclide-format-js
-ocaml-merlin
 one-dark-material-syntax
 set-syntax
 sort-lines
