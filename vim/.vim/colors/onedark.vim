@@ -112,30 +112,22 @@ endfunction
 
 let s:red = { "gui": "#E06C75", "cterm": "204", "cterm16": "1" } " Alternate cterm: 168
 let s:dark_red = { "gui": "#BE5046", "cterm": "196", "cterm16": "9" }
-
 let s:green = { "gui": "#98C379", "cterm": "114", "cterm16": "2" }
-
-let s:yellow = { "gui": "#E5C07B", "cterm": "180", "cterm16": "3" }
-let s:dark_yellow = { "gui": "#D19A66", "cterm": "173", "cterm16": "11" }
-
-let s:blue = { "gui": "#61AFEF", "cterm": "39", "cterm16": "4" } " Alternate cterm: 75
-
-let s:purple = { "gui": "#C678DD", "cterm": "170", "cterm16": "5" } " Alternate cterm: 176
-
-let s:cyan = { "gui": "#56B6C2", "cterm": "38", "cterm16": "6" } " Alternate cterm: 73
-
-let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
-
+let s:yellow = { "gui": "#E5C07B", "cterm": "180", "cterm16": "11" }
+let s:dark_yellow = { "gui": "#D19A66", "cterm": "173", "cterm16": "3" }
+let s:blue = { "gui": "#61AFEF", "cterm": "39", "cterm16": "12" } " Alternate cterm: 75
+let s:purple = { "gui": "#C678DD", "cterm": "170", "cterm16": "13" } " Alternate cterm: 176
+let s:cyan = { "gui": "#56B6C2", "cterm": "38", "cterm16": "14" } " Alternate cterm: 73
+let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "15" }
 let s:black = { "gui": "#282C34", "cterm": "234", "cterm16": "NONE" }
 let s:visual_black = { "gui": "NONE", "cterm": "NONE", "cterm16": s:black.cterm16 } " Black out selected text in 16-color visual mode
-
-let s:comment_grey = { "gui": "#5C6370", "cterm": "59", "cterm16": "15" }
-let s:gutter_fg_grey = { "gui": "#636D83", "cterm": "238", "cterm16": "15" }
+let s:comment_grey = { "gui": "#5C6370", "cterm": "59", "cterm16": "7" }
+let s:gutter_fg_grey = { "gui": "#636D83", "cterm": "238", "cterm16": "8" }
 let s:cursor_grey =  { "gui": "#2C323C", "cterm": "236", "cterm16": "8" }
-let s:visual_grey = { "gui": "#3E4452", "cterm": "237", "cterm16": "15" }
+let s:visual_grey = { "gui": "#3E4452", "cterm": "237", "cterm16": "8" }
 let s:menu_grey = { "gui": s:visual_grey.gui, "cterm": s:visual_grey.cterm, "cterm16": "8" }
-let s:special_grey = { "gui": "#3B4048", "cterm": "238", "cterm16": "15" }
-let s:vertsplit = { "gui": "#181A1F", "cterm": "59", "cterm16": "15" }
+let s:special_grey = { "gui": "#3B4048", "cterm": "238", "cterm16": "8" }
+let s:vertsplit = { "gui": "#181A1F", "cterm": "59", "cterm16": "8" }
 
 " +---------------------------------------------------------+
 " | Syntax Groups (descriptions and ordering from `:h w18`) |
