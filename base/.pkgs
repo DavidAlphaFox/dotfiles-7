@@ -85,3 +85,8 @@ xorg-xwininfo
 xterm
 yaourt
 zip
+vim-fugitive
+vim-gitgutter
+vim-nerdtree
+vim-syntastic
+vim-tagbar
