@@ -98,9 +98,6 @@ if [ -e "$HOME/go/bin" ]; then
   GOPATH="$HOME/go"
   PATH="$PATH:${GOPATH}/bin"
 fi
-if [ -e "$HOME/.opam/opam-init/init.zsh" ]; then
-  . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-fi
 if [ -e "$HOME/go" ]; then
   PATH="$PATH:$HOME/go/bin"
 fi
