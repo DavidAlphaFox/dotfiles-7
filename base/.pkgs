@@ -71,6 +71,11 @@ ttf-liberation
 unrar
 unzip
 vim
+vim-fugitive
+vim-gitgutter
+vim-nerdtree
+vim-syntastic
+vim-tagbar
 vimix-gtk-themes-git
 vimix-icon-theme
 w3m
@@ -85,8 +90,3 @@ xorg-xwininfo
 xterm
 yaourt
 zip
-vim-fugitive
-vim-gitgutter
-vim-nerdtree
-vim-syntastic
-vim-tagbar
