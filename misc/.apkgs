@@ -11,6 +11,7 @@ language-haskell
 language-ini
 language-lua
 language-ocaml
+language-protobuf
 language-rust
 language-swift
 language-thrift
