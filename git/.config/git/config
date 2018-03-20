@@ -29,14 +29,14 @@
   new = green bold
 [color "branch"]
   remote = red bold
-  current = green bold
-  local = yellow bold
+  current = yellow bold
+  local = yellow
 [color "status"]
   added = yellow bold
   changed = red bold
   untracked = red
   header = black bold
-  branch = green bold
+  branch = yellow bold
 [init]
   temlatedir = ~/.git-templates
 
