@@ -226,9 +226,9 @@ __git_ps1_show_upstream ()
 		"0	0") # equal to upstream
 			p="" ;;
 		"0	"*) # ahead of upstream
-			p=" %{$fg_bold[blue]%}$up_sym${count#0	}%{$reset_color%}" ;;
+			p=" %{$fg_bold[green]%}$up_sym${count#0	}%{$reset_color%}" ;;
 		*"	0") # behind upstream
-			p=" %{$fg_bold[yellow]%}$down_sym${count%	0}%{$reset_color%}" ;;
+			p=" %{$fg_bold[red]%}$down_sym${count%	0}%{$reset_color%}" ;;
 		*)	    # diverged from upstream
 			p=" %{$fg[red]%}$up_sym${count#*	}$down_sym${count%	*}%{$reset_color%}" ;;
 		esac
@@ -473,7 +473,7 @@ __git_ps1 ()
 
 	local z="${GIT_PS1_STATESEPARATOR-" "}"
 
-	b="%{$fg_bold[green]%}${b##refs/heads/}%{$reset_color%}"
+	b="%{$fg_bold[yellow]%}${b##refs/heads/}%{$reset_color%}"
 	if [ $pcmode = yes ] && [ $ps1_expanded = yes ]; then
 		__git_ps1_branch_name=$b
 		b="\${__git_ps1_branch_name}"
@@ -547,7 +547,7 @@ function get_pwd(){
 local ret_status='%(?:%{$fg[green]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
 local vicmd_status='%{$reset_color%}%{$fg[green]%}$vicmd_sym%{$reset_color%}'
 local git_status='$(__promptline_vcs_branch)%{$reset_color%}'
-local dir_status='%{$fg[blue]%}$(get_pwd)%{$reset_color%}'
+local dir_status='%{$fg_bold[blue]%}$(get_pwd)%{$reset_color%}'
 local host_status='%{$fg_bold[yellow]%}$(__promptline_host)%{$reset_color%}'
 precmd() {
   PROMPT="%{$reset_color%}$ret_status "
