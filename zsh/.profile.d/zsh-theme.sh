@@ -4,9 +4,11 @@ fi
 sh_sym=' '
 sh2_sym=' '
 err_sym=' '
-up_sym=' '
-down_sym=' '
-untracked_sym=' '
+#up_sym=' '
+up_sym=''
+#down_sym=' '
+down_sym=''
+untracked_sym=' '
 added_sym=' '
 mod_sym=' '
 stash_sym=' '
@@ -226,11 +228,11 @@ __git_ps1_show_upstream ()
 		"0	0") # equal to upstream
 			p="" ;;
 		"0	"*) # ahead of upstream
-			p=" %{$fg_bold[green]%}$up_sym${count#0	}%{$reset_color%}" ;;
+			p=" %{$fg_bold[green]%}${count#0	}$up_sym%{$reset_color%}" ;;
 		*"	0") # behind upstream
-			p=" %{$fg_bold[red]%}$down_sym${count%	0}%{$reset_color%}" ;;
+			p=" %{$fg_bold[red]%}${count%	0}$down_sym%{$reset_color%}" ;;
 		*)	    # diverged from upstream
-			p=" %{$fg[red]%}$up_sym${count#*	}$down_sym${count%	*}%{$reset_color%}" ;;
+			p=" %{$fg[red]%}${count#*	}$up_sym ${count% *}$down_sym%{$reset_color%}" ;;
 		esac
 		if [[ -n "$count" && -n "$name" ]]; then
 			__git_ps1_upstream_name=$(git rev-parse \
