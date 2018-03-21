@@ -112,7 +112,7 @@ GIT_PS1_STATESEPARATOR=' '
 # directory is set up to be ignored by git, then set
 # GIT_PS1_HIDE_IF_PWD_IGNORED to a nonempty value. Override this on the
 # repository level by setting bash.hideIfPwdIgnored to "false".
-
+ZLE_RPROMPT_INDENT=0
 # check whether printf supports -v
 __git_printf_supports_v=
 printf -v __git_printf_supports_v -- '%s' yes >/dev/null 2>&1
@@ -532,7 +532,7 @@ function get_pwd(){
   if [[ $git_root = / ]]; then
     unset git_root
     if [ "$PWD" = "$HOME" ]; then
-      prompt_short_dir=$home_sym
+      prompt_short_dir="$home_sym "
     else
       prompt_short_dir=%3~
       if [[ "$PWD" == "$HOME"* ]]; then
@@ -543,7 +543,7 @@ function get_pwd(){
     parent=${git_root%\/*}
     prompt_short_dir=${PWD#$parent/}
   fi
-  echo $prompt_short_dir
+  echo "$prompt_short_dir"
 }
 
 local ret_status='%(?:%{$fg[green]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
