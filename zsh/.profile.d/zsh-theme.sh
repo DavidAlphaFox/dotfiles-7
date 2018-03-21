@@ -2,7 +2,7 @@ if [ ! "$SHELL" = "/bin/zsh" ]; then
   return
 fi
 sh_sym=' '
-sh2_sym=' '
+sh2_sym='   '
 err_sym=' '
 up_sym=''
 down_sym=''
@@ -12,7 +12,7 @@ mod_sym=' '
 stash_sym=' '
 noup_sym=' '
 vicmd_sym=' '
-home_sym=''
+home_sym=''
 # bash/zsh git prompt support
 #
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
