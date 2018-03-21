@@ -111,7 +111,7 @@ endfunction
 " +-----------------+
 
 let s:red = { "gui": "#E06C75", "cterm": "204", "cterm16": "1" } " Alternate cterm: 168
-let s:dark_red = { "gui": "#BE5046", "cterm": "196", "cterm16": "9" }
+let s:orange = { "gui": "#BE5046", "cterm": "196", "cterm16": "9" }
 let s:green = { "gui": "#98C379", "cterm": "114", "cterm16": "10" }
 let s:yellow = { "gui": "#E5C07B", "cterm": "180", "cterm16": "11" }
 let s:dark_yellow = { "gui": "#D19A66", "cterm": "173", "cterm16": "3" }
@@ -212,7 +212,7 @@ call s:h("StatusLine", { "fg": s:gutter_fg_grey })  "status line of current wind
 call s:h("StatusLineNC", { "fg": s:comment_grey }) " status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 call s:h("TabLine", { "fg": s:gutter_fg_grey }) " tab pages line, not active tab page label
 call s:h("TabLineFill", {}) " tab pages line, where there are no labels
-call s:h("TabLineSel", { "fg": s:purple, "bg": s:gutter_fg_grey }) " tab pages line, active tab page label
+call s:h("TabLineSel", { "fg": s:orange }) " tab pages line, active tab page label
 call s:h("Title", { "fg": s:green }) " titles for output from ":set all", ":autocmd" etc.
 call s:h("Visual", { "fg": s:visual_black, "bg": s:visual_grey }) " Visual mode selection
 call s:h("VisualNOS", { "bg": s:visual_grey }) " Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
@@ -284,7 +284,7 @@ call s:h("jsNull", { "fg": s:dark_yellow })
 call s:h("jsOperator", { "fg": s:purple })
 call s:h("jsStorageClass", { "fg": s:purple })
 call s:h("jsSuper", { "fg": s:red })
-call s:h("jsTemplateBraces", { "fg": s:dark_red })
+call s:h("jsTemplateBraces", { "fg": s:orange })
 call s:h("jsTemplateVar", { "fg": s:green })
 call s:h("jsThis", { "fg": s:red })
 call s:h("jsUndefined", { "fg": s:dark_yellow })
@@ -306,7 +306,7 @@ call s:h("javascriptObjectLabel", { "fg": s:white })
 call s:h("javascriptOpSymbol", { "fg": s:cyan })
 call s:h("javascriptOpSymbols", { "fg": s:cyan })
 call s:h("javascriptPropertyName", { "fg": s:green })
-call s:h("javascriptTemplateSB", { "fg": s:dark_red })
+call s:h("javascriptTemplateSB", { "fg": s:orange })
 call s:h("javascriptVariable", { "fg": s:purple })
 
 " JSON
@@ -474,7 +474,7 @@ if has("nvim")
   let g:terminal_color_6 =  s:cyan.gui
   let g:terminal_color_7 =  s:white.gui
   let g:terminal_color_8 =  s:visual_grey.gui
-  let g:terminal_color_9 =  s:dark_red.gui
+  let g:terminal_color_9 =  s:orange.gui
   let g:terminal_color_10 = s:green.gui " No dark version
   let g:terminal_color_11 = s:dark_yellow.gui
   let g:terminal_color_12 = s:blue.gui " No dark version
