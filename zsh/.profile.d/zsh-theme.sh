@@ -1,9 +1,13 @@
 if [ ! "$SHELL" = "/bin/zsh" ]; then
   return
 fi
-sh_sym=' '
-sh2_sym='   '
+# zsh prompt
+sh_sym=' '
+sh2_sym=' '
 err_sym=' '
+vicmd_sym=' '
+home_sym=''
+# git prompt
 up_sym=''
 down_sym=''
 untracked_sym=' '
@@ -11,8 +15,6 @@ added_sym=' '
 mod_sym=' '
 stash_sym=' '
 noup_sym=' '
-vicmd_sym=' '
-home_sym=''
 # bash/zsh git prompt support
 #
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
