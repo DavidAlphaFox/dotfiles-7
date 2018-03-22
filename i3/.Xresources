@@ -39,7 +39,7 @@ rofi.display-run: 
 
 ! special
 *.foreground:   #bfbfbf
-*.background:   #212121
+*.background:   #1c1c1c
 *.cursorColor:  #bfbfbf
 
 ! black

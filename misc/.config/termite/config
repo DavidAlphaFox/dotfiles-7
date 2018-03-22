@@ -10,7 +10,7 @@ mouse_autohide  = true
 foreground      = #bfbfbf
 foreground_bold = #bfbfbf
 cursor          = #bfbfbf
-background      = #212121
+background      = #1c1c1c
 
 # black
 color0  = #303030
