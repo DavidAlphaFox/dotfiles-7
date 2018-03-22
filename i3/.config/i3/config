@@ -28,6 +28,10 @@ set_from_resource $color14 color14     #56b6c2
 set_from_resource $color7  color7      #7a8089
 set_from_resource $color15 color15     #aab2bf
 
+
+# termite
+bindsym $mod+Return exec --no-startup-id termsel
+
 # kill focused window
 bindsym $mod+Shift+q kill
 # change focus
@@ -98,7 +102,8 @@ exec_always --no-startup-id i3-msg 'rename workspace 10 to 0'
 
 # force a window on a named workspace
 for_window [class="Atom"] move workspace 1
-for_window [class="Tilda"] move workspace 1
+#for_window [class="Tilda"] move workspace 1
+#for_window [class="Termite"] move workspace 1
 for_window [class="discord"] move workspace 2
 for_window [title="Google Hangouts.*"] move workspace 2
 for_window [class="Google-chrome"] move workspace 2
@@ -185,8 +190,8 @@ bar {
 # startup programs
 exec --no-startup-id compton
 exec_always --no-startup-id ibus-daemon --xim -r
-exec_always --no-startup-id ~/.local/bin/grave-toggle
-exec --no-startup-id urxvtd -q -o -f
+#exec_always --no-startup-id ~/.local/bin/grave-toggle
+#exec --no-startup-id urxvtd -q -o -f
 
 exec_always --no-startup-id xrandr --output DP1 --auto --right-of eDP1
 exec_always --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1

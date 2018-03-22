@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z "$(pgrep "termite")" ]; then
+    exec termite -e 'tmux -2 new-session -A -s " "'
+else
+    i3-msg '[class="Termite"] focus'
+fi
+

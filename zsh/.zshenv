@@ -1,7 +1,7 @@
 export EDITOR="vim"
 export VISUAL="vim"
 export CM_LAUNCHER="rofi"
-export TERMINAL=tilda
+export TERMINAL=termite
 export GIT_EDITOR=$EDITOR
 export LC_CTYPE=$LANG
 export LC_NUMERIC=$LANG
