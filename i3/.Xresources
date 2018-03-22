@@ -64,11 +64,11 @@ rofi.display-run: 
 
 ! magenta
 *.color5:       #6a4080
-*.color13:      #8c468c
+*.color13:      #995199
 
 ! cyan
 *.color6:       #408080
-*.color14:      #4d9999
+*.color14:      #59b3b3
 
 ! white
 *.color7:       #808080
