@@ -1,6 +1,8 @@
 [options]
 font            = Iosevka Term Medium 16
 allow_bold      = false
+cursor_shape    = underline
+mouse_autohide  = true
 
 [colors]
 
@@ -15,7 +17,7 @@ color0  = #303030
 color8  = #505050
 
 # red
-color1  = #804040
+color1  = #995151
 color9  = #99734d
 
 # green
@@ -24,7 +26,7 @@ color10 = #4d9966
 
 # yellow
 color3  = #758040
-color11 = #99994d
+color11 = #b3b359
 
 # blue
 color4  = #405580
