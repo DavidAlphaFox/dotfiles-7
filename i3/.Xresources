@@ -29,7 +29,8 @@ rofi.padding:           8
 rofi.yoffset:           0
 rofi.xoffset:           0
 rofi.fixed-num-lines:   true
-rofi.terminal:          urxvtc
+rofi.terminal:          i3-sensible-terminal
+rofi.run-shell-command:  {terminal} -e "zsh -ic '{cmd}'"
 ! "margin between rows"
 rofi.line-margin:       2
 ! "separator style (none, dash, solid)"
