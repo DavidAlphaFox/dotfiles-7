@@ -61,8 +61,8 @@ sddm
 seahorse
 stow
 sysstat
+termite
 tig-git
-tilda
 tmux
 tree
 ttf-liberation
@@ -88,4 +88,3 @@ xorg-xwininfo
 xterm
 yaourt
 zip
-termite
