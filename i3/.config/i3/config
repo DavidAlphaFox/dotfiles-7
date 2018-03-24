@@ -155,9 +155,6 @@ set $blue #4B87B9
 set $trans #BFBFBF80
 set $active #56B6C2
 set $inactive #985CAA80
-# start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id "rofi -show run -color-normal '$bg,$color8,$bg,$bg,$color10' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color12,$bg'"
-bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun -color-normal '$bg,$color8,$bg,$bg,$color9' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color12,$bg' -show-icons"
 
 #colors
 #class                  border  background  text    indicator       child_border
@@ -214,9 +211,13 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+Pause exec --no-startup-id pavucontrol
 bindsym $mod+Shift+l exec --no-startup-id i3lock-fancy -f 'Iosevka-Term-Medium'
-bindsym $mod+Shift+w exec --no-startup-id rofi -show window -display-window 
-bindsym $mod+m bar mode toggle
 
+# start dmenu (a program launcher)
+bindsym $mod+Shift+w exec --no-startup-id "rofi -show window -display-window  "
+bindsym $mod+d exec --no-startup-id "rofi -show run -color-normal '$bg,$color8,$bg,$bg,$color10' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color12,$bg'"
+bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun -color-normal '$bg,$color8,$bg,$bg,$color9' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color12,$bg' -show-icons"
+
+bindsym $mod+m bar mode toggle
 bindsym $mod+Print exec --no-startup-id scrot
 bindsym $mod+Shift+Print exec --no-startup-id scrot -d 3
 bindsym $mod+g exec google-chrome-stable
