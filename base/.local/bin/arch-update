@@ -2,5 +2,7 @@
 
 if [ -n "$BLOCK_BUTTON" ]; then
   i3-sensible-terminal -e 'zsh -ic "yaourt -Syua; yes | yaourt -Scc"'
+else
+  sleep 10
 fi
 arch-update.py -a -q
