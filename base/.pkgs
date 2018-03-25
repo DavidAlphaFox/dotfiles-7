@@ -16,7 +16,7 @@ dialog
 dos2unix
 duperemove
 feh
-gnome-themes-standard
+gnome-themes-extra
 grub
 gvfs
 highlight
@@ -61,6 +61,7 @@ sddm
 seahorse
 stow
 sysstat
+termite
 tig-git
 tilda
 tmux
@@ -88,4 +89,3 @@ xorg-xwininfo
 xterm
 yaourt
 zip
-termite
