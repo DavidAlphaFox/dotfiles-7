@@ -5,4 +5,4 @@ if [ -n "$BLOCK_BUTTON" ]; then
 else
   sleep 10
 fi
-arch-update.py -a -q
+arch-update.py -a -q -u '#b3b359'
