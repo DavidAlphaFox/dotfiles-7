@@ -111,31 +111,23 @@ endfunction
 " +-----------------+
 
 let s:red = { "gui": "#E06C75", "cterm": "204", "cterm16": "1" } " Alternate cterm: 168
-let s:dark_red = { "gui": "#BE5046", "cterm": "196", "cterm16": "9" }
-
-let s:green = { "gui": "#98C379", "cterm": "114", "cterm16": "2" }
-
-let s:yellow = { "gui": "#E5C07B", "cterm": "180", "cterm16": "3" }
-let s:dark_yellow = { "gui": "#D19A66", "cterm": "173", "cterm16": "11" }
-
-let s:blue = { "gui": "#61AFEF", "cterm": "39", "cterm16": "4" } " Alternate cterm: 75
-
-let s:purple = { "gui": "#C678DD", "cterm": "170", "cterm16": "5" } " Alternate cterm: 176
-
-let s:cyan = { "gui": "#56B6C2", "cterm": "38", "cterm16": "6" } " Alternate cterm: 73
-
-let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
-
-let s:black = { "gui": "#282C34", "cterm": "234", "cterm16": "0" }
+let s:orange = { "gui": "#BE5046", "cterm": "196", "cterm16": "9" }
+let s:green = { "gui": "#98C379", "cterm": "114", "cterm16": "10" }
+let s:yellow = { "gui": "#E5C07B", "cterm": "180", "cterm16": "11" }
+let s:dark_yellow = { "gui": "#D19A66", "cterm": "173", "cterm16": "3" }
+let s:blue = { "gui": "#61AFEF", "cterm": "39", "cterm16": "12" } " Alternate cterm: 75
+let s:purple = { "gui": "#C678DD", "cterm": "170", "cterm16": "13" } " Alternate cterm: 176
+let s:cyan = { "gui": "#56B6C2", "cterm": "38", "cterm16": "14" } " Alternate cterm: 73
+let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "15" }
+let s:black = { "gui": "#282C34", "cterm": "234", "cterm16": "NONE" }
 let s:visual_black = { "gui": "NONE", "cterm": "NONE", "cterm16": s:black.cterm16 } " Black out selected text in 16-color visual mode
-
-let s:comment_grey = { "gui": "#5C6370", "cterm": "59", "cterm16": "15" }
-let s:gutter_fg_grey = { "gui": "#636D83", "cterm": "238", "cterm16": "15" }
+let s:comment_grey = { "gui": "#5C6370", "cterm": "59", "cterm16": "7" }
+let s:gutter_fg_grey = { "gui": "#636D83", "cterm": "238", "cterm16": "8" }
 let s:cursor_grey =  { "gui": "#2C323C", "cterm": "236", "cterm16": "8" }
-let s:visual_grey = { "gui": "#3E4452", "cterm": "237", "cterm16": "15" }
+let s:visual_grey = { "gui": "#3E4452", "cterm": "237", "cterm16": "8" }
 let s:menu_grey = { "gui": s:visual_grey.gui, "cterm": s:visual_grey.cterm, "cterm16": "8" }
-let s:special_grey = { "gui": "#3B4048", "cterm": "238", "cterm16": "15" }
-let s:vertsplit = { "gui": "#181A1F", "cterm": "59", "cterm16": "15" }
+let s:special_grey = { "gui": "#3B4048", "cterm": "238", "cterm16": "8" }
+let s:vertsplit = { "gui": "#181A1F", "cterm": "59", "cterm16": "8" }
 
 " +---------------------------------------------------------+
 " | Syntax Groups (descriptions and ordering from `:h w18`) |
@@ -197,11 +189,11 @@ call s:h("VertSplit", { "fg": s:vertsplit }) " the column separating vertically 
 call s:h("Folded", { "fg": s:comment_grey }) " line used for closed folds
 call s:h("FoldColumn", {}) " 'foldcolumn'
 call s:h("SignColumn", {}) " column where signs are displayed
-call s:h("IncSearch", { "fg": s:black, "bg": s:yellow }) " 'incsearch' highlighting; also used for the text replaced with ":s///c"
+call s:h("IncSearch", { "fg": s:black, "bg": s:gutter_fg_grey }) " 'incsearch' highlighting; also used for the text replaced with ":s///c"
 call s:h("LineNr", { "fg": s:gutter_fg_grey }) " Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 call s:h("CursorLineNr", {}) " Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 call s:h("MatchParen", { "fg": s:blue, "gui": "underline" }) " The character under the cursor or just before it, if it is a paired bracket, and its match.
-call s:h("ModeMsg", {}) " 'showmode' message (e.g., "-- INSERT --")
+call s:h("ModeMsg", { "fg": s:purple }) " 'showmode' message (e.g., "-- INSERT --")
 call s:h("MoreMsg", {}) " more-prompt
 call s:h("NonText", { "fg": s:special_grey }) " '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
 call s:h("Normal", { "fg": s:white, "bg": s:black }) " normal text
@@ -210,17 +202,17 @@ call s:h("PmenuSel", { "fg": s:black, "bg": s:blue }) " Popup menu: selected ite
 call s:h("PmenuSbar", { "bg": s:special_grey }) " Popup menu: scrollbar.
 call s:h("PmenuThumb", { "bg": s:white }) " Popup menu: Thumb of the scrollbar.
 call s:h("Question", { "fg": s:purple }) " hit-enter prompt and yes/no questions
-call s:h("Search", { "fg": s:black, "bg": s:yellow }) " Last search pattern highlighting (see 'hlsearch'). Also used for highlighting the current line in the quickfix window and similar items that need to stand out.
+call s:h("Search", { "fg": s:black, "bg": s:gutter_fg_grey }) " Last search pattern highlighting (see 'hlsearch'). Also used for highlighting the current line in the quickfix window and similar items that need to stand out.
 call s:h("SpecialKey", { "fg": s:special_grey }) " Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
 call s:h("SpellBad", { "fg": s:red, "gui": "underline", "cterm": "underline" }) " Word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.
 call s:h("SpellCap", { "fg": s:dark_yellow }) " Word that should start with a capital. This will be combined with the highlighting used otherwise.
 call s:h("SpellLocal", { "fg": s:dark_yellow }) " Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
 call s:h("SpellRare", { "fg": s:dark_yellow }) " Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
-call s:h("StatusLine", { "fg": s:white, "bg": s:cursor_grey }) " status line of current window
+call s:h("StatusLine", { "fg": s:gutter_fg_grey })  "status line of current window
 call s:h("StatusLineNC", { "fg": s:comment_grey }) " status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
-call s:h("TabLine", { "fg": s:comment_grey }) " tab pages line, not active tab page label
+call s:h("TabLine", { "fg": s:gutter_fg_grey }) " tab pages line, not active tab page label
 call s:h("TabLineFill", {}) " tab pages line, where there are no labels
-call s:h("TabLineSel", { "fg": s:white }) " tab pages line, active tab page label
+call s:h("TabLineSel", { "fg": s:orange }) " tab pages line, active tab page label
 call s:h("Title", { "fg": s:green }) " titles for output from ":set all", ":autocmd" etc.
 call s:h("Visual", { "fg": s:visual_black, "bg": s:visual_grey }) " Visual mode selection
 call s:h("VisualNOS", { "bg": s:visual_grey }) " Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
@@ -292,7 +284,7 @@ call s:h("jsNull", { "fg": s:dark_yellow })
 call s:h("jsOperator", { "fg": s:purple })
 call s:h("jsStorageClass", { "fg": s:purple })
 call s:h("jsSuper", { "fg": s:red })
-call s:h("jsTemplateBraces", { "fg": s:dark_red })
+call s:h("jsTemplateBraces", { "fg": s:orange })
 call s:h("jsTemplateVar", { "fg": s:green })
 call s:h("jsThis", { "fg": s:red })
 call s:h("jsUndefined", { "fg": s:dark_yellow })
@@ -314,7 +306,7 @@ call s:h("javascriptObjectLabel", { "fg": s:white })
 call s:h("javascriptOpSymbol", { "fg": s:cyan })
 call s:h("javascriptOpSymbols", { "fg": s:cyan })
 call s:h("javascriptPropertyName", { "fg": s:green })
-call s:h("javascriptTemplateSB", { "fg": s:dark_red })
+call s:h("javascriptTemplateSB", { "fg": s:orange })
 call s:h("javascriptVariable", { "fg": s:purple })
 
 " JSON
@@ -482,7 +474,7 @@ if has("nvim")
   let g:terminal_color_6 =  s:cyan.gui
   let g:terminal_color_7 =  s:white.gui
   let g:terminal_color_8 =  s:visual_grey.gui
-  let g:terminal_color_9 =  s:dark_red.gui
+  let g:terminal_color_9 =  s:orange.gui
   let g:terminal_color_10 = s:green.gui " No dark version
   let g:terminal_color_11 = s:dark_yellow.gui
   let g:terminal_color_12 = s:blue.gui " No dark version

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+[ "$(i3-msg '[class="termite0"] focus')" = "[{\"success\":true}]" ] || exec termite -e 'tmux -2 new-session -A -s " "' --class 'termite0'
+

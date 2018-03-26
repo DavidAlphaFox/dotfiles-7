@@ -6,7 +6,7 @@
   "atom-material-ui":
     colors:
       abaseColor: "#7e57c2"
-      accentColor: "#acdd55"
+      accentColor: "#b0e457"
       genAccent: true
       paintCursor: true
       predefinedColor: "Purple"
@@ -47,7 +47,7 @@
       "one-dark-material-syntax"
     ]
   editor:
-    fontFamily: "Iosevka Medium"
+    fontFamily: "Iosevka Term-Lig Medium"
     fontSize: 18
     preferredLineLength: 120
   "exception-reporting":
@@ -199,6 +199,42 @@
       "nuclide-url-hyperclick": "default"
       "nuclide-vcs-log": "default"
       "nuclide-working-sets": "default"
+      "atom-ide-code-highlight": false
+      "nuclide-adb-logcat": false
+      "nuclide-adb-sdb": false
+      "nuclide-blame-provider-hg": false
+      "nuclide-buck": false
+      "nuclide-buck-ios": false
+      "nuclide-clang": false
+      "nuclide-debugger-php": false
+      "nuclide-device-panel-ios": false
+      "nuclide-hack": false
+      "nuclide-hg-repository": false
+      "nuclide-hhvm": false
+      "nuclide-infer-al": false
+      "nuclide-ios-simulator-logs": false
+      "nuclide-language-hack": false
+      "nuclide-language-infer-al": false
+      "nuclide-objc": false
+      "nuclide-swift": false
+      "atom-ide-code-highlight": "never"
+      "nuclide-adb-logcat": "never"
+      "nuclide-adb-sdb": "never"
+      "nuclide-blame-provider-hg": "never"
+      "nuclide-buck": "never"
+      "nuclide-buck-ios": "never"
+      "nuclide-clang": "never"
+      "nuclide-debugger-php": "never"
+      "nuclide-device-panel-ios": "never"
+      "nuclide-hack": "never"
+      "nuclide-hg-repository": "never"
+      "nuclide-hhvm": "never"
+      "nuclide-infer-al": "never"
+      "nuclide-ios-simulator-logs": "never"
+      "nuclide-language-hack": "never"
+      "nuclide-language-infer-al": "never"
+      "nuclide-objc": "never"
+      "nuclide-swift": "never"
   tabs:
     enableVcsColoring: true
   "tool-bar":

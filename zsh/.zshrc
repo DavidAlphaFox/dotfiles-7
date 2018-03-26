@@ -7,7 +7,6 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle colored-man-pages
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle bric3/nice-exit-code
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
@@ -23,7 +22,6 @@ setopt correct
 
 # vi mode
 bindkey -v
-
 # backspace
 bindkey -a '^?' vi-backward-delete-char
 # home
@@ -55,10 +53,10 @@ ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS+=vi-forward-char
 ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black,bold'
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets cursor)
-#export ZSH_HIGHLIGHT_STYLES[cursor]='fg=yellow,bold' #invalid?
+export ZSH_HIGHLIGHT_STYLES[cursor]='fg=yellow,bold'
 export ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
-export ZSH_HIGHLIGHT_STYLES[path]='fg=blue,bold'
-export ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=blue'
+export ZSH_HIGHLIGHT_STYLES[path]='fg=red,bold'
+export ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=red,bold'
 export ZSH_HIGHLIGHT_STYLES[globbing]='fg=cyan,bold'
 export ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=yellow'
 export ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=yellow,bold'
@@ -100,9 +98,7 @@ if [ -e "$HOME/go/bin" ]; then
   GOPATH="$HOME/go"
   PATH="$PATH:${GOPATH}/bin"
 fi
-if [ -e "$HOME/.opam/opam-init/init.zsh" ]; then
-  . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-fi
 if [ -e "$HOME/go" ]; then
   PATH="$PATH:$HOME/go/bin"
 fi
+

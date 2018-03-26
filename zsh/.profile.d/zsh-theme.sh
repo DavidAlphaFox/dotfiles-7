@@ -1,30 +1,21 @@
 if [ ! "$SHELL" = "/bin/zsh" ]; then
   return
 fi
-sh_sym=' '
-#sh_sym="%{$reset_color%}🚀"
-#sh_sym='☺️ '
-#sh_sym='🐚  '
-#sh_sym=' '
-#sh_sym=' '
-#sh_sym=' '
-err_sym=' '
-#err_sym="%{$reset_color%}😝"
-#err_sym="%{$reset_color%}💥"
-#err_sym="%{$reset_color%}☠️ "
-up_sym=' '
-down_sym=' '
+# zsh prompt
+sh_sym=' '
+#sh_sym=' '
+sh2_sym=' '
+err_sym=' '
+vicmd_sym=' '
+home_sym=''
+# git prompt
+up_sym=''
+down_sym=''
 untracked_sym=' '
 added_sym=' '
 mod_sym=' '
-#stash_sym=' '
 stash_sym=' '
 noup_sym=' '
-#vicmd_sym='🍄'
-#vicmd_sym='👾'
-#vicmd_sym='🛠️ '
-vicmd_sym=' '
-home_sym=''
 # bash/zsh git prompt support
 #
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
@@ -122,7 +113,7 @@ GIT_PS1_STATESEPARATOR=' '
 # directory is set up to be ignored by git, then set
 # GIT_PS1_HIDE_IF_PWD_IGNORED to a nonempty value. Override this on the
 # repository level by setting bash.hideIfPwdIgnored to "false".
-
+ZLE_RPROMPT_INDENT=0
 # check whether printf supports -v
 __git_printf_supports_v=
 printf -v __git_printf_supports_v -- '%s' yes >/dev/null 2>&1
@@ -238,11 +229,11 @@ __git_ps1_show_upstream ()
 		"0	0") # equal to upstream
 			p="" ;;
 		"0	"*) # ahead of upstream
-			p=" %{$fg_bold[blue]%}$up_sym${count#0	}%{$reset_color%}" ;;
+			p=" %{$fg_bold[green]%}${count#0	}$up_sym%{$reset_color%}" ;;
 		*"	0") # behind upstream
-			p=" %{$fg_bold[yellow]%}$down_sym${count%	0}%{$reset_color%}" ;;
+			p=" %{$fg_bold[red]%}${count%	0}$down_sym%{$reset_color%}" ;;
 		*)	    # diverged from upstream
-			p=" %{$fg[red]%}$up_sym${count#*	}$down_sym${count%	*}%{$reset_color%}" ;;
+			p=" %{$fg[red]%}${count#*	}$up_sym ${count%	*}$down_sym%{$reset_color%}" ;;
 		esac
 		if [[ -n "$count" && -n "$name" ]]; then
 			__git_ps1_upstream_name=$(git rev-parse \
@@ -485,7 +476,7 @@ __git_ps1 ()
 
 	local z="${GIT_PS1_STATESEPARATOR-" "}"
 
-	b="%{$fg_bold[green]%}${b##refs/heads/}%{$reset_color%}"
+	b="%{$fg_bold[yellow]%}${b##refs/heads/}%{$reset_color%}"
 	if [ $pcmode = yes ] && [ $ps1_expanded = yes ]; then
 		__git_ps1_branch_name=$b
 		b="\${__git_ps1_branch_name}"
@@ -512,7 +503,7 @@ function __promptline_host {
   local only_if_ssh="0"
 
   if [ ! $only_if_ssh -o -n "${SSH_CLIENT}" ]; then
-    if [[ -n ${ZSH_VERSION-} ]]; then print "  %m"; elif [[ -n ${FISH_VERSION-} ]]; then hostname -s; else printf " %s" \\h; fi
+    if [[ -n ${ZSH_VERSION-} ]]; then print " %m"; elif [[ -n ${FISH_VERSION-} ]]; then hostname -s; else printf " %s" \\h; fi
   fi
 }
 
@@ -542,7 +533,7 @@ function get_pwd(){
   if [[ $git_root = / ]]; then
     unset git_root
     if [ "$PWD" = "$HOME" ]; then
-      prompt_short_dir=$home_sym
+      prompt_short_dir="$home_sym "
     else
       prompt_short_dir=%3~
       if [[ "$PWD" == "$HOME"* ]]; then
@@ -553,28 +544,27 @@ function get_pwd(){
     parent=${git_root%\/*}
     prompt_short_dir=${PWD#$parent/}
   fi
-  echo $prompt_short_dir
+  echo "$prompt_short_dir"
 }
 
-local ret_status='%(?:%{$fg_bold[red]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
+local ret_status='%(?:%{$fg[green]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
 local vicmd_status='%{$reset_color%}%{$fg[green]%}$vicmd_sym%{$reset_color%}'
-local exit_status='%{$fg[red]%}$(nice_exit_code)%{$reset_color%}'
 local git_status='$(__promptline_vcs_branch)%{$reset_color%}'
-local dir_status='%{$fg_bold[blue]%}$(get_pwd)%{$reset_color%}'
+local dir_status='%{$fg_bold[red]%}$(get_pwd)%{$reset_color%}'
 local host_status='%{$fg_bold[yellow]%}$(__promptline_host)%{$reset_color%}'
 precmd() {
   PROMPT="%{$reset_color%}$ret_status "
-  RPROMPT="%{$reset_color%}$exit_status$git_status $dir_status$host_status"
-  PS2="%{$reset_color%}%{$fg_bold[black]%}(%_) %{$reset_color%}"
+  RPROMPT="%{$reset_color%}$git_status $dir_status$host_status"
+  PS2="%{$reset_color%}%{$fg_bold[red]%}$sh2_sym %{$reset_color%}"
 }
 zle-keymap-select() {
   PROMPT="%{$reset_color%}$ret_status "
-  RPROMPT="%{$reset_color%}$exit_status$git_status $dir_status$host_status"
-  PS2="%{$reset_color%}%{$fg_bold[black]%}(%_) %{$reset_color%}"
+  RPROMPT="%{$reset_color%}$git_status $dir_status$host_status"
+  PS2="%{$reset_color%}%{$fg_bold[red]%}$sh2_sym %{$reset_color%}"
   if [[ $KEYMAP = vicmd ]]; then
     PROMPT="%{$reset_color%}$ret_status "
-    RPROMPT="%{$reset_color%}$exit_status $vicmd_status$git_status $dir_status$host_status"
-    PS2="%{$reset_color%}%{$fg_bold[black]%}(%_) %{$reset_color%}"
+    RPROMPT="%{$reset_color%}$vicmd_status$git_status $dir_status$host_status"
+    PS2="%{$reset_color%}%{$fg_bold[red]%}$sh2_sym %{$reset_color%}"
   fi
   () { return $__prompt_status }
   zle reset-prompt

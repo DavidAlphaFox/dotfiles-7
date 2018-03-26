@@ -1,12 +1,3 @@
-! URXVT
-URxvt.font: xft:DejaVu Sans Mono:pixelsize=18
-URxvt.letterSpace: -1
-URxvt.boldFont:
-URxvt.internalBorder: 8
-URxvt.scrollBar: False
-URxvt.cursorUnderline: True
-URxvt.cursorBlink: True
-
 ! XFT
 Xft.antialias: 1
 Xft.autohint: 1
@@ -29,7 +20,8 @@ rofi.padding:           8
 rofi.yoffset:           0
 rofi.xoffset:           0
 rofi.fixed-num-lines:   true
-rofi.terminal:          urxvtc
+rofi.terminal:          i3-sensible-terminal
+rofi.run-shell-command:  {terminal} -e "zsh -ic '{cmd}'"
 ! "margin between rows"
 rofi.line-margin:       2
 ! "separator style (none, dash, solid)"
@@ -39,36 +31,47 @@ rofi.fullscreen:        false
 rofi.fake-transparency: false
 ! "scrolling method. (0: Page, 1: Centered)"
 rofi.scroll-method:     1
+! State:           'bg',   'fg',   'bgalt','hlbg', 'hlfg'
 rofi.color-normal: #212121,#505050,#212121,#212121,#4d7f99
-rofi.color-active: #212121,#bfbfbf,#212121,#212121,#212121
+rofi.color-active: #212121,#bfbfbf,#212121,#212121,#4d7f99
 rofi.color-window: #212121,#405580,#212121
+rofi.display-drun: 
+rofi.display-run: 
 
-! COLORS
 ! special
 *.foreground:   #bfbfbf
-*.background:   #212121
+*.background:   #1c1c1c
 *.cursorColor:  #bfbfbf
+
 ! black
 *.color0:       #303030
 *.color8:       #505050
+
 ! red
-*.color1:       #804040
+*.color1:       #995151
 *.color9:       #99734d
+
 ! green
 *.color2:       #408040
 *.color10:      #4d9966
+
 ! yellow
 *.color3:       #758040
-*.color11:      #99994d
+*.color11:      #b3b359
+
 ! blue
 *.color4:       #405580
 *.color12:      #4d7f99
+
 ! magenta
 *.color5:       #6a4080
-*.color13:      #8c468c
+*.color13:      #995199
+
 ! cyan
 *.color6:       #408080
-*.color14:      #4d9999
+*.color14:      #59b3b3
+
 ! white
 *.color7:       #808080
 *.color15:      #bfbfbf
+

@@ -1,9 +1,20 @@
 
 OPTIONS=number_pad=1,pickup_types=$,color,menucolors,menu_objsyms,!cmdassist
 OPTIONS=catname:Stormy,dogname:Sirius,fruit:fig,pettype:cat,runmode:teleport
+MENUCOLOR=".* gold.*"=yellow&bold
+MENUCOLOR=".* red.*"=red
+MENUCOLOR=".* orange.*"=red&bold
+MENUCOLOR=".* yellow.*"=yellow&bold
+MENUCOLOR=".* green.*"=green&bold
+MENUCOLOR=".* blue.*"=blue&bold
+MENUCOLOR=".* purple.*"=magenta
+MENUCOLOR=".* magenta.*"=magenta&bold
+MENUCOLOR=".* gray.*"=gray&bold
+MENUCOLOR=".* black.*"=black&bold
+MENUCOLOR=".* white.*"=white&bold
 MENUCOLOR=".* cursed .*"=red
 MENUCOLOR=".* unholy .*"=red
-MENUCOLOR=".* blessed .*"=cyan&bold
-MENUCOLOR=".* holy .*"=cyan&bold
+MENUCOLOR=".* blessed .*"=blue&bold
+MENUCOLOR=".* holy .*"=blue&bold
 
 #eof

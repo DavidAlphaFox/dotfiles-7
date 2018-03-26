@@ -1,5 +1,4 @@
 acpi
-adapta-gtk-theme
 alsa-tools
 alsa-utils
 antigen-git
@@ -17,12 +16,10 @@ dialog
 dos2unix
 duperemove
 feh
-gnome-themes-standard
+gnome-themes-extra
 grub
-gtk-engine-murrine
 gvfs
 highlight
-htop
 i3-gaps
 i3blocks
 i3lock-fancy-dualmonitors-git
@@ -43,8 +40,8 @@ noto-fonts
 noto-fonts-emoji
 numlockx
 openssh
+otf-font-awesome
 pamixer
-papirus-icon-theme
 paprefs
 pavucontrol
 perl-anyevent-i3
@@ -60,11 +57,11 @@ qt5ct
 ranger
 rofi
 rsync
-rxvt-unicode
 sddm
 seahorse
 stow
 sysstat
+termite
 tig-git
 tilda
 tmux
@@ -73,6 +70,13 @@ ttf-liberation
 unrar
 unzip
 vim
+vim-fugitive
+vim-gitgutter
+vim-nerdtree
+vim-syntastic
+vim-tagbar
+vimix-gtk-themes-git
+vimix-icon-theme
 w3m
 wget
 xarchiver

@@ -1,0 +1,47 @@
+[options]
+font            = Iosevka Term Medium 16
+allow_bold      = false
+cursor_shape    = underline
+mouse_autohide  = true
+
+[colors]
+
+# special
+foreground      = #bfbfbf
+foreground_bold = #bfbfbf
+cursor          = #bfbfbf
+background      = #1c1c1c
+
+# black
+#color0  = #303030
+color0  = #1c1c1c
+#color8  = #505050
+color8  = #303030
+
+# red
+color1  = #995151
+color9  = #99734d
+
+# green
+color2  = #408040
+color10 = #4d9966
+
+# yellow
+color3  = #758040
+color11 = #b3b359
+
+# blue
+color4  = #405580
+color12 = #4d7f99
+
+# magenta
+color5  = #6a4080
+color13 = #995199
+
+# cyan
+color6  = #408080
+color14 = #59b3b3
+
+# white
+color7  = #808080
+color15 = #bfbfbf
