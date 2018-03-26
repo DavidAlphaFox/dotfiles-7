@@ -53,7 +53,7 @@ ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS+=vi-forward-char
 ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black,bold'
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets cursor)
-export ZSH_HIGHLIGHT_STYLES[cursor]='fg=yellow,bold' #invalid?
+export ZSH_HIGHLIGHT_STYLES[cursor]='fg=yellow,bold'
 export ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
 export ZSH_HIGHLIGHT_STYLES[path]='fg=red,bold'
 export ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=red,bold'

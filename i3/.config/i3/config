@@ -102,8 +102,6 @@ exec_always --no-startup-id i3-msg 'rename workspace 10 to 0'
 
 # force a window on a named workspace
 for_window [class="Atom"] move workspace 1
-#for_window [class="Tilda"] move workspace 1
-#for_window [class="Termite"] move workspace 1
 for_window [class="discord"] move workspace 2
 for_window [title="Google Hangouts.*"] move workspace 2
 for_window [class="Google-chrome"] move workspace 2
@@ -157,9 +155,6 @@ set $blue #4B87B9
 set $trans #BFBFBF80
 set $active #56B6C2
 set $inactive #985CAA80
-# start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id "rofi -show run -color-normal '$bg,$color8,$bg,$bg,$color10' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color12,$bg'"
-bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun -color-normal '$bg,$color8,$bg,$bg,$color9' -color-active '$bg,$fg,$bg,$bg,$bg' -color-window '$bg,$color12,$bg' -show-icons"
 
 #colors
 #class                  border  background  text    indicator       child_border
@@ -190,8 +185,6 @@ bar {
 # startup programs
 exec --no-startup-id compton
 exec_always --no-startup-id ibus-daemon --xim -r
-#exec_always --no-startup-id ~/.local/bin/grave-toggle
-#exec --no-startup-id urxvtd -q -o -f
 
 exec_always --no-startup-id xrandr --output DP1 --auto --right-of eDP1
 exec_always --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
@@ -218,16 +211,19 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+Pause exec --no-startup-id pavucontrol
 bindsym $mod+Shift+l exec --no-startup-id i3lock-fancy -f 'Iosevka-Term-Medium'
-bindsym $mod+Shift+w exec --no-startup-id rofi -show window -display-window 
-bindsym $mod+m bar mode toggle
 
+# start dmenu (a program launcher)
+bindsym $mod+Shift+w exec --no-startup-id "rofi -show window -display-window   -color-normal '$bg,$color8,$bg,$bg,$color10' -color-active '$bg,$color7,$bg,$bg,$color10' -color-window '$bg,$color12,$bg'"
+bindsym $mod+d exec --no-startup-id "rofi -show run -color-normal '$bg,$color8,$bg,$bg,$color10' -color-active '$bg,$color7,$bg,$bg,$color10' -color-window '$bg,$color12,$bg'"
+bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun -color-normal '$bg,$color8,$bg,$bg,$color9' -color-active '$bg,$color7,$bg,$bg,$color9' -color-window '$bg,$color12,$bg' -show-icons"
+
+bindsym $mod+m bar mode toggle
 bindsym $mod+Print exec --no-startup-id scrot
 bindsym $mod+Shift+Print exec --no-startup-id scrot -d 3
 bindsym $mod+g exec google-chrome-stable
 
 #gaps
 gaps inner 8
-#gaps outer 4
 for_window [class="^.*"] border pixel 2
 for_window [title="galculator.*"] floating enable
 for_window [title="Volume Control.*"] floating enable
@@ -239,4 +235,4 @@ for_window [title="Calf .*"] floating enable
 for_window [class="qjackrcd"] floating enable
 hide_edge_borders smart
 
-
+# vim:filetype=i3
