@@ -5,4 +5,4 @@ if [ "$BLOCK_BUTTON" = "3" ]; then
 elif [ -z "$BLOCK_BUTTON" ]; then
   sleep 10
 fi
-arch-update.py -a -q -u '#b3b359'
+arch-update.py -a -q -u '#99734d'
