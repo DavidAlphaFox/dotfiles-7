@@ -57,7 +57,7 @@ button_key_active_color = (YELLOW,MAGENTA,ON)
 button_key_inactive_color = (YELLOW,MAGENTA,OFF)
 
 # Active button label color
-button_label_active_color = (WHITE,MAGENTA,OFF)
+button_label_active_color = (WHITE,MAGENTA,ON)
 
 # Inactive button label color
 button_label_inactive_color = (BLACK,MAGENTA,OFF)
