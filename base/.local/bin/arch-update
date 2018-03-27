@@ -1,8 +1,11 @@
 #!/bin/zsh
 
 if [ "$BLOCK_BUTTON" = "3" ]; then
-  i3-sensible-terminal -e 'zsh -ic "yaourt -Syua; yes | yaourt -Scc"'
+  # right-click for upgrade
+  i3-sensible-terminal -e 'zsh -ic "dialog --yesno \"\$(yaourt -Qua)\n\nUpdate packages?\" 0 0 && clear && yaourt -Syua && yes | yaourt -Scc"'
 elif [ -z "$BLOCK_BUTTON" ]; then
+  # wait 10s on login/reload
   sleep 10
 fi
+# check for upgradable packages
 arch-update.py -a -q -u '#99734d'
