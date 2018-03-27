@@ -36,10 +36,10 @@ screen_color = (RED,BLACK,ON)
 shadow_color = (BLACK,WHITE,OFF)
 
 # Dialog box color
-dialog_color = (GREEN,BLACK,OFF)
+dialog_color = (BLUE,BLACK,OFF)
 
 # Dialog box border color
-border_color = (GREEN,BLACK,ON)
+border_color = (BLUE,BLACK,ON)
 
 # Dialog box title color
 title_color = border_color
@@ -111,7 +111,7 @@ check_color = dialog_color
 check_selected_color = button_active_color
 
 # Up arrow color
-uarrow_color = (GREEN,WHITE,ON)
+uarrow_color = (BLUE,WHITE,ON)
 
 # Down arrow color
 darrow_color = uarrow_color
