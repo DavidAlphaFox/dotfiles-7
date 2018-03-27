@@ -2,7 +2,7 @@
 
 if [ "$BLOCK_BUTTON" = "3" ]; then
   i3-sensible-terminal -e 'zsh -ic "yaourt -Syua; yes | yaourt -Scc"'
-elif [ -n "$BLOCK_BUTTON" ]; then
+elif [ -z "$BLOCK_BUTTON" ]; then
   sleep 10
 fi
 arch-update.py -a -q -u '#b3b359'
