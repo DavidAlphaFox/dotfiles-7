@@ -102,7 +102,7 @@ tag_selected_color = button_label_active_color
 tag_key_color = button_key_inactive_color
 
 # Selected tag key color
-tag_key_selected_color = (RED,BLUE,ON)
+tag_key_selected_color = (YELLOW,BLACK,ON)
 
 # Check box color
 check_color = dialog_color
