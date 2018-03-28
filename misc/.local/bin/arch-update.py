@@ -88,7 +88,7 @@ def matching_updates(updates, watch_list):
     return matches
 
 
-message = "<span color='{0}'>{1}</span>"
+message = "<span color='{0}'> </span>{1}"
 args = create_argparse()
 
 updates = get_updates()
@@ -97,7 +97,7 @@ if args.aur:
 
 update_count = len(updates)
 if update_count > 0:
-    info = " " + str(update_count)
+    info = str(update_count)
     matches = matching_updates(updates, args.watch)
     if matches:
         info += ' [{0}]'.format(', '.join(matches))
