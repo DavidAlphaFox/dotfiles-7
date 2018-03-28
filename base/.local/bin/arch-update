@@ -1,8 +1,7 @@
 #!/bin/zsh
 
 get_updates() {
-  echo -nE "\\n\\Z2\\Zb$(checkupdates)"
-  echo -nE "\\Z1\\Zb$(yaourt -Qua)\\Zn\\n\\n"
+  echo -nE "\\n\\Z2\\Zb$(checkupdates | awk '{print $1}')\\Z1\\Zb$(yaourt -Qua | awk '{print $1}')\\Zn\\n\\n"
 }
 
 if [ "$BLOCK_BUTTON" = "3" ]; then
