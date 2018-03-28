@@ -103,4 +103,4 @@ if update_count > 0:
         info += ' [{0}]'.format(', '.join(matches))
     print(message.format(args.updates_available_color, info))
 elif not args.quiet:
-    print(message.format(args.base_color, '0'))
+    print(' 0')

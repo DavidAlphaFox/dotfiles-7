@@ -6,10 +6,10 @@ get_updates() {
 
 if [ "$BLOCK_BUTTON" = "3" ]; then
   # right-click for upgrade
-  i3-sensible-terminal -e "zsh -ic 'dialog --title \"Updates\" --colors --yesno \"$(get_updates | paste -sd '|' | sed 's/|/\\\\n/g')Update packages?\" 0 0 && clear && yaourt -Syua && yes | yaourt -Scc'"
+  i3-sensible-terminal -e "zsh -ic 'dialog --title \"Updates\" --colors --yesno \"$(get_updates | paste -sd '|' | sed 's/|/\\\\n/g')Update packages?\" 0 0 && clear && yaourt -Syua && deorphan && yaourt -Scc'"
 elif [ -z "$BLOCK_BUTTON" ]; then
   # wait 10s on login/reload
   sleep 10
 fi
 # check for upgradable packages
-arch-update.py -a -q -u '#99734d'
+arch-update.py -a -u '#99734d'
