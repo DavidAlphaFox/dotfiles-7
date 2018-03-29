@@ -29,10 +29,12 @@ iftop
 intel-ucode
 lsb-release
 lsof
+mate-menus
 mate-notification-daemon
 mate-polkit
 mate-power-manager
 mate-session-manager
+mate-settings-daemon
 ncdu
 net-tools
 noto-fonts
