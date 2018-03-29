@@ -3,7 +3,6 @@ alsa-tools
 alsa-utils
 antigen-git
 atool
-atril
 base-devel-meta
 base-meta
 bc
@@ -13,6 +12,7 @@ compton
 cpio
 ctags
 dialog
+dconf-editor
 dos2unix
 duperemove
 feh
@@ -29,7 +29,6 @@ iftop
 intel-ucode
 lsb-release
 lsof
-mate-control-center
 mate-notification-daemon
 mate-polkit
 mate-power-manager
