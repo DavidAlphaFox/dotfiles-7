@@ -2,6 +2,7 @@ acpi
 alsa-tools
 alsa-utils
 antigen-git
+arc-icon-theme
 atool
 base-devel-meta
 base-meta
@@ -75,8 +76,6 @@ vim-gitgutter
 vim-nerdtree
 vim-syntastic
 vim-tagbar
-vimix-gtk-themes-git
-vimix-icon-theme
 w3m
 wget
 xarchiver
