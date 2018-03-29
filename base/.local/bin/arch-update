@@ -18,7 +18,7 @@ if [ "$BLOCK_BUTTON" = "3" ]; then
   # right-click for upgrade
   UPDATES="$(get_updates)"
   if [ -n "$UPDATES" ]; then
-    i3-sensible-terminal -e "zsh -ic 'dialog --title \"Updates\" --colors --yesno \"$(echo $UPDATES | paste -sd '|' | sed 's/|/\\\\n/g')Update packages?\" 0 0 && clear && yaourt -Syua && deorphan && yaourt -Scc'"
+    i3-sensible-terminal -e "zsh -ic 'dialog --title \"Updates\" --colors --yesno \"$(echo $UPDATES | paste -sd '|' | sed 's/|/\\\\n/g')Update packages?\" 0 0 && clear && yaourt -Syua && deorphan && yes | yaourt -Scc'"
   fi
 elif [ -z "$BLOCK_BUTTON" ]; then
   # wait 10s on login/reload
