@@ -11,8 +11,8 @@ clipmenu
 compton
 cpio
 ctags
-dialog
 dconf-editor
+dialog
 dos2unix
 duperemove
 feh
@@ -88,4 +88,5 @@ xorg-xrdb
 xorg-xwininfo
 xterm
 yaourt
+zathura-pdf-mupdf
 zip
