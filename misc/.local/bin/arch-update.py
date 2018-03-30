@@ -87,6 +87,8 @@ def matching_updates(updates, watch_list):
 
     return matches
 
+def upgrade_notify(msg):
+    check_output(["notify-send", "-i", "software-update-available", "Upgrade", msg])
 
 message = "<span color='{0}'> </span>{1}"
 args = create_argparse()
@@ -102,5 +104,7 @@ if update_count > 0:
     if matches:
         info += ' [{0}]'.format(', '.join(matches))
     print(message.format(args.updates_available_color, info))
+    upgrade_notify(updates.join('\n'))
 elif not args.quiet:
     print(' 0')
+    upgrade_notify("No upgrades available.")
