@@ -2,7 +2,7 @@
 
 artist="$(playerctl metadata xesam:artist)"
 if [ -n "$artist" ]; then
-  echo "  $artist \"$(playerctl metadata xesam:title)\""
+  echo " $artist \"$(playerctl metadata xesam:title)\""
 fi
 
 case $BLOCK_BUTTON in
