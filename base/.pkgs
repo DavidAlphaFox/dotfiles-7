@@ -2,8 +2,8 @@ acpi
 alsa-tools
 alsa-utils
 antigen-git
+arc-icon-theme
 atool
-atril
 base-devel-meta
 base-meta
 bc
@@ -12,6 +12,7 @@ clipmenu
 compton
 cpio
 ctags
+dconf-editor
 dialog
 dos2unix
 duperemove
@@ -23,20 +24,20 @@ highlight
 i3-gaps
 i3blocks
 i3lock-fancy-dualmonitors-git
-ibus-qt
+ibus
 ifplugd
 iftop
 intel-ucode
 lsb-release
 lsof
-mate-control-center
+mate-menus
 mate-notification-daemon
 mate-polkit
 mate-power-manager
 mate-session-manager
+mate-settings-daemon
 ncdu
 net-tools
-noto-fonts
 noto-fonts-emoji
 numlockx
 openssh
@@ -62,8 +63,7 @@ seahorse
 stow
 sysstat
 termite
-tig-git
-tilda
+tig
 tmux
 tree
 ttf-liberation
@@ -75,8 +75,6 @@ vim-gitgutter
 vim-nerdtree
 vim-syntastic
 vim-tagbar
-vimix-gtk-themes-git
-vimix-icon-theme
 w3m
 wget
 xarchiver
@@ -88,4 +86,6 @@ xorg-xrdb
 xorg-xwininfo
 xterm
 yaourt
+zathura-pdf-mupdf
 zip
+xorg-xrandr

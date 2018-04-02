@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+# fix for GIO hard-coding "gnome-terminal" like dummies
+shift
+termite -e "zsh -ic -- $@"

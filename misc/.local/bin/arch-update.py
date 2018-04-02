@@ -87,8 +87,10 @@ def matching_updates(updates, watch_list):
 
     return matches
 
+def update_notify(msg):
+    check_output(["notify-send", "-i", "software-update-available", "Updates", msg])
 
-message = "<span color='{0}'>{1}</span>"
+message = "<span color='{0}'> </span>{1}"
 args = create_argparse()
 
 updates = get_updates()
@@ -97,10 +99,12 @@ if args.aur:
 
 update_count = len(updates)
 if update_count > 0:
-    info = " " + str(update_count)
+    info = str(update_count)
     matches = matching_updates(updates, args.watch)
     if matches:
         info += ' [{0}]'.format(', '.join(matches))
     print(message.format(args.updates_available_color, info))
+    update_notify("\n".join(updates))
 elif not args.quiet:
-    print(message.format(args.base_color, '0'))
+    print(' 0')
+    update_notify("The system is up-to-date.")
