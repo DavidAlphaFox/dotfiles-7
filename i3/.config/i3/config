@@ -150,11 +150,11 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-set $trans #bcbcbc80
 
+set $trans #bcbcbc80
 #colors
 #class                  border    background  text    indicator child_border
-client.focused          $color12  $color12    $bg     $color12
+client.focused          $color12  $color12    $bg     $color2
 client.focused_inactive $bg       $bg         $trans  $bg
 client.unfocused        $bg       $bg         $trans  $bg
 client.urgent           $urg      $urg        $bg     $bg
