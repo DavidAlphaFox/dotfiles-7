@@ -38,5 +38,5 @@
   header = black bold
   branch = yellow bold
 [init]
-  temlatedir = ~/.git-templates
+  templatedir = ~/.git-templates
 
