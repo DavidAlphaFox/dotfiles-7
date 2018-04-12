@@ -23,6 +23,14 @@ if [ "$BLOCK_BUTTON" = "3" ]; then
 elif [ -z "$BLOCK_BUTTON" ]; then
   # wait 10s on login/reload
   sleep 10
+  UPDATES="$(get_updates)"
 fi
 # check for upgradable packages
-arch-update.py -a -u '#99734d'
+if [ -n "$UPDATES" ]; then
+  echo " $(echo $UPDATES | grep -c "")"
+  notify-info "Updates" "Updates are available:\n$(echo $UPDATES)" -i software-updates-available
+else
+  echo " 0"
+  notify-info "Updates" "The system is up-to-date"
+fi
+
