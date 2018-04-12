@@ -1,6 +1,6 @@
 #!/bin/sh
 
 log="$(git log -1 --format='format:%an <%ae>%n%n%B')"
-notify-send -i list-add "Commit successful" "$log"
+notify-info "Commit successful" "$log"
 
 
