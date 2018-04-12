@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+# function to get available updates
 get_updates() {
   ARCHUPDATES="$(checkupdates)"
   AURUPDATES="$(yaourt -Qua)"
@@ -20,17 +21,21 @@ if [ "$BLOCK_BUTTON" = "3" ]; then
   if [ -n "$UPDATES" ]; then
     i3-sensible-terminal -e "zsh -ic 'dialog --title \"Updates\" --colors --yesno \"$(echo $UPDATES | paste -sd '|' | sed 's/|/\\\\n/g')Update packages?\" 0 0 && clear && yaourt -Syua && deorphan && yes | yaourt -Scc'"
   fi
+elif [ "$BLOCK_BUTTON" = "1" ]; then
+  # left-click to check immediately
+  UPDATES="$(get_updates)"
 elif [ -z "$BLOCK_BUTTON" ]; then
-  # wait 10s on login/reload
+  # otherwise, wait 10s for login/reload/etc
   sleep 10
   UPDATES="$(get_updates)"
 fi
-# check for upgradable packages
+# send out the notification
 if [ -n "$UPDATES" ]; then
   echo " $(echo $UPDATES | grep -c "")"
-  notify-info "Updates" "Updates are available:\n$(echo $UPDATES)" -i software-updates-available
+  print "\n#99734d80\n"
+  notify-info "Updates are available:" "$(echo $UPDATES)" -i software-update-available
 else
   echo " 0"
-  notify-info "Updates" "The system is up-to-date"
+  notify-info "The system is up-to-date"
 fi
-
+exit 0
