@@ -15,6 +15,7 @@ ctags
 dconf-editor
 dialog
 dos2unix
+dunst
 duperemove
 feh
 gnome-themes-extra
@@ -31,7 +32,6 @@ intel-ucode
 lsb-release
 lsof
 mate-menus
-mate-notification-daemon
 mate-polkit
 mate-power-manager
 mate-session-manager
@@ -82,10 +82,10 @@ xcursor-flatbed
 xf86-video-intel
 xorg-xev
 xorg-xprop
+xorg-xrandr
 xorg-xrdb
 xorg-xwininfo
 xterm
 yaourt
 zathura-pdf-mupdf
 zip
-xorg-xrandr
