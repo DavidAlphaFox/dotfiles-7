@@ -7,6 +7,7 @@ atool
 base-devel-meta
 base-meta
 bc
+cadence
 calc
 clipmenu
 compton
@@ -29,6 +30,7 @@ ibus
 ifplugd
 iftop
 intel-ucode
+ladish
 lsb-release
 lsof
 mate-menus
@@ -53,6 +55,8 @@ perl-guard
 playerctl
 plymouth-theme-monoarch
 pulseaudio-alsa
+pulseaudio-jack
+python2-xdg
 qt5-styleplugins
 qt5ct
 ranger
