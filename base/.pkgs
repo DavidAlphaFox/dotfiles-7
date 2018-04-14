@@ -45,9 +45,6 @@ noto-fonts-emoji
 numlockx
 openssh
 otf-font-awesome
-pamixer
-paprefs
-pavucontrol
 perl-anyevent-i3
 perl-async-interrupt
 perl-ev
@@ -55,8 +52,6 @@ perl-file-mimeinfo
 perl-guard
 playerctl
 plymouth-theme-monoarch
-pulseaudio-alsa
-pulseaudio-jack
 python2-xdg
 qt5-styleplugins
 qt5ct
@@ -95,3 +90,4 @@ xterm
 yaourt
 zathura-pdf-mupdf
 zip
+alsa-plugins
