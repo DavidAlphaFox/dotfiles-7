@@ -5,13 +5,10 @@ get_updates() {
   ARCHUPDATES="$(checkupdates)"
   AURUPDATES="$(yaourt -Qua)"
   if [ -n "$ARCHUPDATES" ]; then
-    echo -nE "\\Z2\Zb${ARCHUPDATES}\\n"
+    echo -nE "${ARCHUPDATES}\\n"
   fi
   if [ -n "$AURUPDATES" ]; then
-    echo -nE "\\Z1\Zb${AURUPDATES}\\n"
-  fi
-  if [ -n "$ARCHUPDATES" -o -n "$AURUPDATES" ]; then
-    echo -nE "\\Zn"
+    echo -nE "${AURUPDATES}\\n"
   fi
 }
 

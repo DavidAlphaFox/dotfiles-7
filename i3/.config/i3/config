@@ -107,15 +107,7 @@ for_window [class="termite0"] workspace 1
 for_window [class="discord"] move workspace 2
 for_window [title="Google Hangouts.*"] move workspace 2
 for_window [class="Google-chrome"] move workspace 2
-for_window [class="Renoise"] move workspace 8
-for_window [class="Claudia.py"] move workspace 9
-for_window [class="qjackrcd"] move workspace 9
-for_window [class="Calf JACK Host.*"] move workspace 0
-for_window [class="calfjackhost"] move workspace 0
 for_window [class="Spotify"] move workspace 0
-for_window [class="Vlc"] move workspace 0
-for_window [class="Godot"] move workspace 4
-for_window [class="Wine"] move workspace 5
 # multiple monitor/workspace
 workspace 1 output VGA-1
 workspace 2 output VGA-2
@@ -223,10 +215,8 @@ bindsym $mod+g exec google-chrome-stable
 gaps inner 8
 for_window [class="^.*"] border pixel 2
 for_window [title="galculator.*"] floating enable
-for_window [title="Volume Control.*"] floating enable
 for_window [title="Dia v.*"] floating enable
 for_window [title="Google Hangouts.*"] floating disable
-for_window [title="Share Desktop"] floating enable
 for_window [title="Emoji Choice"] floating enable
 for_window [title="Calf .*"] floating enable
 for_window [class="qjackrcd"] floating enable
