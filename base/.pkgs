@@ -1,4 +1,5 @@
 acpi
+alsa-plugins
 alsa-tools
 alsa-utils
 antigen-git
@@ -90,4 +91,3 @@ xterm
 yaourt
 zathura-pdf-mupdf
 zip
-alsa-plugins
