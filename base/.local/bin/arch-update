@@ -18,6 +18,13 @@ if [ -z "$BLOCK_BUTTON" ]; then
 fi
 UPDATES="$(get_updates)"
 
+# right-click for upgrade
+if [ "$BLOCK_BUTTON" = "3" ]; then
+  if [ -n "$UPDATES" ]; then
+    i3-sensible-terminal -e "zsh -ic 'dialog --title \"Updates\" --colors --yesno \"$(echo $UPDATES | paste -sd '|' | sed 's/|/\\\\n/g')Update packages?\" 0 0 && clear && yaourt -Syua && deorphan && yes | yaourt -Scc'"
+  fi
+fi
+
 # send out the notification
 if [ -n "$UPDATES" ]; then
   echo " $(echo $UPDATES | grep -c "")"
@@ -26,13 +33,6 @@ if [ -n "$UPDATES" ]; then
 else
   echo " 0"
   notify-info "The system is up-to-date" -i software-update-available
-fi
-
-# right-click for upgrade
-if [ "$BLOCK_BUTTON" = "3" ]; then
-  if [ -n "$UPDATES" ]; then
-    i3-sensible-terminal -e "zsh -ic 'dialog --title \"Updates\" --colors --yesno \"$(echo $UPDATES | paste -sd '|' | sed 's/|/\\\\n/g')Update packages?\" 0 0 && clear && yaourt -Syua && deorphan && yes | yaourt -Scc'"
-  fi
 fi
 
 exit 0
