@@ -27,7 +27,7 @@ fi
 
 # send out the notification
 if [ -n "$UPDATES" ]; then
-  echo " $(echo $UPDATES | grep -c "")"
+  echo " $(echo $UPDATES | grep -c "-")"
   print "\n#99734d80\n"
   notify-info "Updates are available:" "$(echo $UPDATES)" -i software-update-available
 else
