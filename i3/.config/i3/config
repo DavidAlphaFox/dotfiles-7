@@ -220,7 +220,7 @@ for_window [title="Google Hangouts.*"] floating disable
 for_window [title="Emoji Choice"] floating enable
 for_window [title="Calf .*"] floating enable
 for_window [class="qjackrcd"] floating enable
-for_window [class="vmpk.*"] floating enable
+for_window [class="VMPK.*"] floating enable
 hide_edge_borders smart
 
 # vim:filetype=i3
