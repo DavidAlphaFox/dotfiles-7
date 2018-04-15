@@ -22,6 +22,7 @@ UPDATES="$(get_updates)"
 if [ "$BLOCK_BUTTON" = "3" ]; then
   if [ -n "$UPDATES" ]; then
     i3-sensible-terminal -e "zsh -ic 'dialog --title \"Updates\" --colors --yesno \"$(echo $UPDATES | paste -sd '|' | sed 's/|/\\\\n/g')Update packages?\" 0 0 && clear && yaourt -Syua && deorphan && yes | yaourt -Scc'"
+    UPDATES="$(get_updates)"
   fi
 fi
 
