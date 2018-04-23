@@ -172,7 +172,7 @@ bar {
 
 # startup programs
 exec --no-startup-id compton
-exec --no-startup-id jack_control start
+#exec --no-startup-id jack_control start
 exec_always --no-startup-id ibus-daemon --xim -r
 exec_always --no-startup-id dunst -conf ~/.config/dunst/dunstrc
 exec_always --no-startup-id xrandr --output DP1 --auto --right-of eDP1
