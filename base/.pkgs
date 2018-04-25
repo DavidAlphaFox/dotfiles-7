@@ -8,7 +8,6 @@ atool
 base-devel-meta
 base-meta
 bc
-cadence
 calc
 chrony
 clipmenu
@@ -32,7 +31,6 @@ ibus
 ifplugd
 iftop
 intel-ucode
-ladish
 lsb-release
 lsof
 mate-menus
