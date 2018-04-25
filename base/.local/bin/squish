@@ -9,7 +9,7 @@ pushd -q $mntpnt
 sudo duperemove -rdhv .
 
 echo -e "\n🗜️   Rebalancing filesystem..."
-sudo btrfs balance start -dusage=66 -musage=66 /mnt
+sudo btrfs balance start -dusage=70 -musage=70 /mnt
 
 popd -q
 sudo umount $mntpnt
