@@ -2,10 +2,10 @@ if [ ! "$SHELL" = "/bin/zsh" ]; then
   return
 fi
 # zsh prompt
-sh_sym='  '
+sh_sym=' '
 #sh_sym=' '
 sh2_sym=' '
-err_sym='  '
+err_sym=' '
 vicmd_sym=' '
 home_sym=''
 # git prompt
