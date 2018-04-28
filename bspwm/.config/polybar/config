@@ -48,7 +48,7 @@ font-1 = Font Awesome 5 Free:size=14;4
 
 modules-left = bspwm xwindow
 modules-center = 
-modules-right = playing back play next volume cpu eth date powermenu
+modules-right = playing back play next volume cpu temperature eth eno date powermenu
 
 ;tray-position = right
 ;tray-padding = 0
@@ -275,6 +275,22 @@ label-connected = %local_ip%
 label-disconnected = 
 label-disconnected-foreground = ${xrdb:color1}
 
+[module/eno]
+type = internal/network
+interface = eno1
+interval = 4
+
+format-connected-underline = #55aa55
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground}
+label-connected = %local_ip%
+
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+label-disconnected = 
+label-disconnected-foreground = ${xrdb:color1}
+
 [module/date]
 type = internal/date
 interval = 15
@@ -347,22 +363,22 @@ animation-charging-framerate = 750
 
 [module/temperature]
 type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
+thermal-zone = 2
+warn-temperature = 70
 
-format = <ramp> <label>
+format = 
 format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
 label = %temperature%
 label-warn = %temperature%
-label-warn-foreground = ${colors.secondary}
+label-warn-foreground = ${colors.alert}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.alert}
 
 [module/powermenu]
 type = custom/menu
