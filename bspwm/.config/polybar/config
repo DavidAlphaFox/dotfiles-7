@@ -50,8 +50,8 @@ modules-left = bspwm xwindow
 modules-center = 
 modules-right = playing back play next volume cpu temperature eth eno date powermenu
 
-;tray-position = right
-;tray-padding = 0
+tray-position = right
+tray-padding = 0
 ;tray-transparent = true
 ;tray-background = #0063ff
 
@@ -364,7 +364,7 @@ animation-charging-framerate = 750
 [module/temperature]
 type = internal/temperature
 thermal-zone = 2
-warn-temperature = 70
+warn-temperature = 75
 
 format = 
 format-underline = #f50a4d
@@ -373,12 +373,12 @@ format-warn-underline = ${self.format-underline}
 
 label = %temperature%
 label-warn = %temperature%
-label-warn-foreground = ${colors.alert}
+label-warn-foreground = ${xrdb:color9}
 
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
-ramp-foreground = ${colors.alert}
+ramp-foreground = ${xrdb:color9}
 
 [module/powermenu]
 type = custom/menu
