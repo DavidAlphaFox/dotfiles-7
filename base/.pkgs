@@ -35,7 +35,6 @@ mate-session-manager
 mate-settings-daemon
 ncdu
 net-tools
-nodm
 noto-fonts-emoji
 numlockx
 openssh
@@ -46,6 +45,7 @@ polybar
 ranger
 rofi
 rsync
+sddm
 seahorse
 stow
 sxhkd
