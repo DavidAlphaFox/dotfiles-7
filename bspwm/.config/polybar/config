@@ -30,7 +30,7 @@ fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 1
+line-size = 0
 line-color = #0f0
 
 border-size = 0
@@ -40,14 +40,14 @@ padding-left = 0
 padding-right = 1
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
-font-0 = Iosevka Term:fontformat=truetype:size=12;2
+font-0 = Iosevka Term:fontformat=truetype:size=12;3
 font-1 = Font Awesome 5 Free:size=14;4
 
 modules-left = bspwm
 modules-center = 
-modules-right = volume date
+modules-right = volume cpu memory date
 
 ;tray-position = right
 ;tray-padding = 0
@@ -189,7 +189,7 @@ label-empty-padding = 2
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -197,14 +197,14 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
 label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = 
+interface = enp0s3
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -226,11 +226,11 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = 
+interface = enp0s3
 interval = 3.0
 
 format-connected-underline = #55aa55
-format-connected-prefix = " "
+format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
@@ -245,12 +245,12 @@ type = internal/date
 interval = 5
 
 date =
-date-alt = " %Y-%m-%d"
+date-alt = "%Y-%m-%d"
 
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
@@ -263,7 +263,7 @@ format-volume = <label-volume> <bar-volume>
 label-volume = 
 label-volume-foreground = ${colors.green}
 
-format-muted-foreground = ${colors.red}
+format-muted-foreground = ${colors.foreground-alt}
 label-muted = 
 
 bar-volume-width = 10
