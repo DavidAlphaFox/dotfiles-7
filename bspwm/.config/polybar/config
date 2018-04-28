@@ -48,7 +48,7 @@ font-1 = Font Awesome 5 Free:size=14;4
 
 modules-left = bspwm xwindow
 modules-center = 
-modules-right = playing back play next volume cpu memory eth date powermenu
+modules-right = playing back play next volume cpu eth date powermenu
 
 ;tray-position = right
 ;tray-padding = 0
@@ -224,7 +224,7 @@ label-empty-padding = 2
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
 format-underline = #f90000
 label = %percentage%%
@@ -374,7 +374,7 @@ format-spacing = 1
 label-open = 
 label-open-foreground = ${colors.foreground}
 label-close = 
-label-close-foreground = ${colors.foreground}
+label-close-foreground = ${xrdb:color7}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 

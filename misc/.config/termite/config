@@ -3,6 +3,7 @@ font            = Iosevka Term Medium 16
 allow_bold      = false
 cursor_shape    = underline
 mouse_autohide  = true
+dynamic_title   = true
 
 [colors]
 

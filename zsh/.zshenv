@@ -11,7 +11,7 @@ export LC_MONETARY=$LANG
 export LC_MESSAGES=$LANG
 export LD_LIBRARY_PATH=.
 export LESS="-erFX"
-export DISABLE_AUTO_TITLE="true"
+#export DISABLE_AUTO_TITLE="true"
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
