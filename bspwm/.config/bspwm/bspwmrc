@@ -1,8 +1,8 @@
 #! /bin/sh
 
 xrdb ~/.Xresources
-polybar -r example &
 sxhkd &
+polybar -r example &
 compton -b
 
 bspc monitor -d I II III IV V VI VII
