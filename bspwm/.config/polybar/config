@@ -260,11 +260,11 @@ label = %date% %time%
 type = internal/volume
 
 format-volume = <label-volume> <bar-volume>
-label-volume = 
+label-volume = 
 label-volume-foreground = ${colors.green}
 
-format-muted-foreground = ${colors.foreground}
-label-muted =  MUTED
+format-muted-foreground = ${colors.foreground-alt}
+label-muted =  MUTED
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
