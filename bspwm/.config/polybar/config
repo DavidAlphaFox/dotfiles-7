@@ -46,7 +46,7 @@ font-0 = Iosevka Term:fontformat=truetype:size=12;3
 font-1 = Font Awesome 5 Free:size=14;4
 
 modules-left = bspwm
-modules-center = 
+modules-center =
 modules-right = volume cpu memory date
 
 ;tray-position = right
@@ -189,10 +189,10 @@ label-empty-padding = 2
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = ""
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
 format-underline = #f90000
-label = %percentage:2%%
+label = %percentage%%
 
 [module/memory]
 type = internal/memory
@@ -242,13 +242,13 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 15
 
 date =
 date-alt = " %Y-%m-%d"
 
 time = %H:%M
-time-alt = %H:%M:%S
+time-alt = %H:%M
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground}
@@ -366,7 +366,7 @@ screenchange-reload = true
 ;compositing-border = over
 
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+margin-top = 0
+margin-bottom = 0
 
 ; vim:ft=dosini
