@@ -48,7 +48,7 @@ font-1 = Font Awesome 5 Free:size=14;4
 
 modules-left = bspwm xwindow
 modules-center = 
-modules-right = playerctl volume cpu memory date
+modules-right = playerctl back play next volume cpu memory date
 
 ;tray-position = right
 ;tray-padding = 0
@@ -74,19 +74,40 @@ type = custom/script
 exec = ~/.local/bin/playing.sh
 exec-if = playerctl status
 interval = 10
-format-prefix = " "
-format-prefix-foreground = ${xrdb:color12}
-format-foreground = ${xrdb:color7}
+;format-prefix = " "
+;format-prefix-foreground = ${xrdb:color10}
+format-foreground = ${colors.foreground}
+;click-left = playerctl play-pause
+;click-middle = playerctl previous
+;click-right = playerctl next
+
+[module/play]
+type = custom/script
+exec-if = "playerctl status"
+exec = if playerctl status | grep Paused >/dev/null; then echo ; else echo ; fi
+format-foreground = ${xrdb:color12}
 click-left = playerctl play-pause
-click-middle = playerctl previous
-click-right = playerctl next
+
+[module/back]
+type = custom/script
+exec-if = "playerctl status"
+exec = echo 
+format-foreground = ${xrdb:color12}
+click-left = playerctl previous
+
+[module/next]
+type = custom/script
+exec-if = "playerctl status"
+exec = echo 
+format-foreground = ${xrdb:color12}
+click-left = playerctl next
 
 [module/xwindow]
 type = internal/xwindow
 format-prefix = " "
 format-prefix-foreground = ${xrdb:color9}
 label = %title:0:64:...%
-label-foreground = ${xrdb:color7}
+label-foreground = ${colors.foreground}
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -261,16 +282,16 @@ type = internal/date
 interval = 15
 
 date =
-date-alt = " %Y-%m-%d"
+date-alt = " %Y-%m-%d"
 
-time = %H:%M
-time-alt = %H:%M
+time = " %H:%M"
+time-alt = "  %H:%M"
 
-format-prefix = 
+format-prefix =
 format-prefix-foreground = ${colors.foreground}
 format-underline = #0a6cf5
 
-label = %date% %time%
+label = %date%%time%
 
 [module/volume]
 type = internal/volume
