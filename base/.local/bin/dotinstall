@@ -13,6 +13,21 @@ Session=/usr/share/xsessions/mate.desktop
 User=$USER
 EOF
 
+# bspwm
+sudo tee /usr/share/applications/bspwm.desktop <<EOF
+[Desktop Entry]
+Type=Application
+Name=bspwm
+Exec=bspwm
+NoDisplay=true
+# name we put on the WM spec check window
+X-MATE-WMName=bspwm
+# back compat only 
+X-MATE-Autostart-Phase=WindowManager
+X-MATE-Provides=windowmanager
+X-MATE-Autostart-Notify=true
+EOF
+
 # plymouth
 sudo tee /etc/plymouth/plymouthd.conf <<EOF
 [Daemon]

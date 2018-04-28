@@ -5,7 +5,7 @@ sxhkd &
 polybar -r example &
 compton -b
 
-bspc monitor -d I II III IV V VI VII
+bspc monitor -d 1 2 3 4 5 6 7 8
 
 bspc config border_width         2
 bspc config window_gap          12
