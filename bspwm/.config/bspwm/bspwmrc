@@ -4,7 +4,14 @@ xrdb ~/.Xresources
 if [ "$(systemd-detect-virt)" = "oracle" ]; then
   VBoxClient-all
 fi
-bspc monitor -d 0 1 2 3 4 5 6 7 8 9
+xrandr --output DP1 --auto --right-of eDP1
+xrandr --output HDMI1 --auto --left-of eDP1
+xrandr --output HDMI2 --auto --right-of eDP1
+xrandr --output VGA-1 --auto
+xrandr --output VGA-2 --auto --right-of VGA-1
+
+bspc monitor VGA-1 -d 1 2 3 4 5
+bspc monitor VGA-2 -d 6 7 8 9 0
 
 function get_xrdb() {
   xrdb -query | grep "$1" | awk '{print $2}'
@@ -17,13 +24,14 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config focused_border_color "$(get_xrdb color9)"
 bspc config focus_follows_pointer true
-bspc config pointer_follows_focus true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 bspc rule -a Dia state=floating
 
-polybar -r archi3 &
+for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+  MONITOR=$m polybar --reload archi3 &
+done
 compton -b
 sxhkd &
 
