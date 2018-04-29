@@ -1,6 +1,10 @@
 #!/bin/bash
 
-if [ ! "$(i3-msg '[class="termite0"] focus')" = "[{\"success\":true}]" ]; then
+if xdo id -N termite0; then
+  node_id="$(xdo id -N termite0 | head -n1)" 
+  bspc node $node_id -d focused
+  bspc node -f $node_id
+else
   exec termite -e 'tmux -2 new-session -A -s " "' --class 'termite0'
 fi
 
