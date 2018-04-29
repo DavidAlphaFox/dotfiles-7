@@ -1,10 +1,11 @@
 #!/bin/bash
 
-if xdo id -N termite0; then
-  node_id="$(xdo id -N termite0 | head -n1)" 
-  bspc node $node_id -d focused
-  bspc node -f $node_id
+CLASS_NAME="termite0"
+NODE_ID="$(xdo id -N $CLASS_NAME | head -n1)" 
+if [ -n "$NODE_ID" ]; then
+  bspc node $NODE_ID -d focused
+  bspc node -f $NODE_ID
 else
-  exec termite -e 'tmux -2 new-session -A -s " "' --class 'termite0'
+  exec termite -e 'tmux -2 new-session -A -s " "' --class "$CLASS_NAME"
 fi
 
