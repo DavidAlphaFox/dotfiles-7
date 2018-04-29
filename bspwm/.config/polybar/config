@@ -74,7 +74,7 @@ format-foreground = ${colors.foreground}
 
 [module/play]
 type = custom/script
-interval = 3
+interval = 5
 exec-if = playerctl status
 exec = if playerctl status | grep Paused >/dev/null; then echo ; else echo ; fi
 format-foreground = ${xrdb:color15}
@@ -82,7 +82,7 @@ click-left = playerctl play-pause
 
 [module/back]
 type = custom/script
-interval = 3
+interval = 5
 exec-if = playerctl status
 exec = echo 
 format-foreground = ${xrdb:color15}
@@ -90,7 +90,7 @@ click-left = playerctl previous
 
 [module/next]
 type = custom/script
-interval = 3
+interval = 5
 exec-if = playerctl status
 exec = echo 
 format-foreground = ${xrdb:color15}
@@ -99,7 +99,7 @@ click-left = playerctl next
 [module/xwindow]
 type = internal/xwindow
 ;format-prefix = " "
-;format-prefix-foreground = ${xrdb:color9}
+;format-prefix-foreground = ${xrdb:color8}
 label = %title:0:77:...%
 label-foreground = ${colors.foreground}
 
@@ -258,10 +258,10 @@ type = internal/date
 interval = 15
 
 date =
-date-alt = " %a %b %d"
+date-alt = " %a %b %d "
 
 time = " %H:%M"
-time-alt = "  %H:%M"
+time-alt = "  %I:%M %p"
 
 format-prefix =
 format-prefix-foreground = ${colors.foreground}
