@@ -13,6 +13,8 @@ super + shift + @space
   rofi -show drun
 super + Insert
   clipmenu -p  
+super + shift + Tab
+ rofi -show window 
 super + shift + Insert
   notify-send -i edit-paste "Clipmenu" "Clearing clipmenu"
   find $XDG_RUNTIME_DIR/clipmenu.* -type f -print0 | xargs -0 rm

@@ -20,7 +20,7 @@ bspc config focus_follows_pointer true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
-bspc rule -a termite0 desktop='^1'
+bspc rule -a Dia state=floating
 
 polybar -r archi3 &
 compton -b
