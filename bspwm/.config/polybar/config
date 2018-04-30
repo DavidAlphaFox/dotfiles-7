@@ -50,8 +50,8 @@ modules-left = bspwm xwindow
 modules-center =
 modules-right = playing back play next volume temperature date powermenu
 
-;tray-position = right
-;tray-padding = 0
+tray-position = right
+tray-padding = 0
 ;tray-transparent = true
 ;tray-background = #0063ff
 
@@ -258,7 +258,7 @@ type = internal/date
 interval = 15
 
 date =
-date-alt = " %a %b %d "
+date-alt = " %a %b %d"
 
 time = " %H:%M"
 time-alt = "  %I:%M %p"
@@ -352,7 +352,8 @@ format-spacing = 1
 
 label-open = 
 label-open-foreground = ${colors.foreground}
-label-close = 
+;label-close = 
+label-close = 
 label-close-foreground = ${xrdb:color7}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
