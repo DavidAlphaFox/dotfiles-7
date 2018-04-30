@@ -8,16 +8,20 @@
 ;=====================================================
 
 [colors]
-background = ${xrdb:color0:#222}
-background-alt = ${xrdb:color8:#444}
-foreground = ${xrdb:color15:#222}
-foreground-alt = ${xrdb:color8:#666}
-primary = ${xrdb:color12}
+background = ${xrdb:background}
+background-alt = ${xrdb:color8}
+foreground = ${xrdb:foreground}
+foreground-alt = ${xrdb:color7}
+primary = ${xrdb:color9}
 secondary = ${xrdb:color10}
 alert = ${xrdb:color1}
-red = ${xrdb:color1:#500}
-green = ${xrdb:color10:#050}
-blue = ${xrdb:color12:$005}
+red = ${xrdb:color1}
+orange = ${xrdb:color9}
+green = ${xrdb:color10}
+yellow = ${xrdb:color11}
+blue = ${xrdb:color12}
+purple = ${xrdb:color13}
+cyan = ${xrdb:color14}
 
 [bar/archi3]
 monitor = ${env:MONITOR:VGA-1}
@@ -78,7 +82,7 @@ type = custom/script
 interval = 5
 exec-if = playerctl status
 exec = if playerctl status | grep Paused >/dev/null; then echo ; else echo ; fi
-format-foreground = ${xrdb:color15}
+format-foreground = ${colors.foreground}
 click-left = playerctl play-pause
 
 [module/back]
@@ -86,7 +90,7 @@ type = custom/script
 interval = 5
 exec-if = playerctl status
 exec = echo 
-format-foreground = ${xrdb:color15}
+format-foreground = ${colors.foreground}
 click-left = playerctl previous
 
 [module/next]
@@ -94,7 +98,7 @@ type = custom/script
 interval = 5
 exec-if = playerctl status
 exec = echo 
-format-foreground = ${xrdb:color15}
+format-foreground = ${colors.foreground}
 click-left = playerctl next
 
 [module/xwindow]
@@ -146,7 +150,7 @@ label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
 label-empty = %name%
-label-empty-foreground = ${xrdb:color8}
+label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 
 ;[module/mpd]
@@ -236,7 +240,7 @@ label-connected = %local_ip%
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 label-disconnected = 
-label-disconnected-foreground = ${xrdb:color1}
+label-disconnected-foreground = ${colors.alert}
 
 [module/eno]
 type = internal/network
@@ -252,7 +256,7 @@ label-connected = %local_ip%
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 label-disconnected = 
-label-disconnected-foreground = ${xrdb:color1}
+label-disconnected-foreground = ${colors.alert}
 
 [module/date]
 type = internal/date
@@ -278,7 +282,7 @@ format-volume = <label-volume> <bar-volume>
 label-volume = 
 label-volume-foreground = ${colors.foreground}
 
-format-muted-foreground = ${xrdb:color7}
+format-muted-foreground = ${colors.foreground-alt}
 label-muted = 
 
 bar-volume-width = 6
@@ -337,12 +341,12 @@ format-warn-underline = ${self.format-underline}
 
 label = %temperature%
 label-warn = %temperature%
-label-warn-foreground = ${xrdb:color9}
+label-warn-foreground = ${colors.orange}
 
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
-ramp-foreground = ${xrdb:color9}
+ramp-foreground = ${colors.orange}
 
 [module/powermenu]
 type = custom/menu
@@ -356,9 +360,9 @@ label-open = 
 label-open-foreground = ${colors.foreground}
 ;label-close = 
 label-close = 
-label-close-foreground = ${xrdb:color7}
+label-close-foreground = ${colors.foreground-alt}
 label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
+label-separator-foreground = ${colors.background-alt}
 
 menu-0-0 = 
 menu-0-0-exec = mate-session-save --logout-dialog
