@@ -6,6 +6,7 @@ if xdo id -N "$CLASS_NAME" -r; then
   bspc node $NODE_ID -d focused -m focused
   bspc node -f $NODE_ID
 else
-  exec termite -e 'tmux -2 new-session -A -s " "' --class "${CLASS_NAME}"
+  #exec termite -e 'tmux -2 new-session -A -s " "' --class "${CLASS_NAME}"
+  exec termite -e 'tmux -2 new-session -A -s " "' --class "${CLASS_NAME}"
 fi
 
