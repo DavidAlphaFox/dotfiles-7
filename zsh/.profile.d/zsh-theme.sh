@@ -540,7 +540,7 @@ function get_pwd(){
   if [[ $git_root = / ]]; then
     unset git_root
     if [ "$PWD" = "$HOME" ]; then
-      prompt_short_dir="$home_sym "
+      prompt_short_dir="$home_sym"
     else
       prompt_short_dir=%3~
       if [[ "$PWD" == "$HOME"* ]]; then
