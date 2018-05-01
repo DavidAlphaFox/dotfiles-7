@@ -6,15 +6,14 @@ spc=""
 if [ ! "$TERM" = "screen" ]; then
   spc=" "
 fi
-#sh_sym=" ${spc}"
 sh_sym="${spc}"
-#sh_sym=' '
 sh2_sym=' '
 err_sym="${spc}"
 vicmd_sym=' '
-#home_sym=''
+#home_sym=' '
+home_sym=' '
 #home_sym='•'
-home_sym='~'
+#home_sym='~'
 # git prompt
 up_sym=''
 down_sym=''
