@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 CLASS_NAME="termite0"
+SESSION_NAME=" "
 # does term with CLASS_NAME exist?
 if xdo id -N "$CLASS_NAME" -r; then
   # focus, move to current desktop the existing term with CLASS_NAME
@@ -11,6 +12,6 @@ else
   # create new term with CLASS_NAME
   # create new tmux session, or attach if exists
   #exec termite -e 'tmux -2 new-session -A -s " "' --class "${CLASS_NAME}"
-  exec termite -e 'tmux -2 new-session -A -s " "' --class "${CLASS_NAME}"
+  exec termite -e "tmux -2 new-session -A -s '${SESSION_NAME}'" --class "${CLASS_NAME}"
 fi
 

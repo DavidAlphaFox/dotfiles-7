@@ -41,8 +41,8 @@ line-color = #0f0
 border-size = 1
 border-color = ${colors.background-alt}
 
-padding-left = 2
-padding-right = 2
+padding-left = 0
+padding-right = 1
 
 module-margin-left = 1
 module-margin-right = 1
@@ -50,7 +50,7 @@ module-margin-right = 1
 font-0 = Iosevka Type:style=Bold:size=12;3
 font-1 = Font Awesome 5 Free Solid:size=13;3
 
-modules-left = powermenu bspwm xwindow
+modules-left = bspwm xwindow
 modules-center =
 modules-right = playing back play next volume temperature date
 
@@ -80,7 +80,7 @@ format-foreground = ${colors.foreground}
 type = custom/script
 interval = 5
 exec-if = playerctl status
-exec = if playerctl status | grep Paused >/dev/null; then echo ; else echo ; fi
+exec = if playerctl status | grep Paused >/dev/null; then echo -n ; else echo -n ; fi
 format-foreground = ${colors.foreground}
 click-left = playerctl play-pause
 
@@ -88,7 +88,7 @@ click-left = playerctl play-pause
 type = custom/script
 interval = 5
 exec-if = playerctl status
-exec = echo 
+exec = echo -n 
 format-foreground = ${colors.foreground}
 click-left = playerctl previous
 
@@ -96,7 +96,7 @@ click-left = playerctl previous
 type = custom/script
 interval = 5
 exec-if = playerctl status
-exec = echo 
+exec = echo -n 
 format-foreground = ${colors.foreground}
 click-left = playerctl next
 
@@ -279,7 +279,7 @@ bar-volume-indicator = |
 bar-volume-indicator-font = 1
 bar-volume-fill = ━
 bar-volume-fill-font = 1
-bar-volume-empty = ┄
+bar-volume-empty = ┅
 bar-volume-empty-font = 1
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
@@ -337,13 +337,14 @@ expand-right = true
 format-spacing = 1
 
 label-open = 
-label-open-foreground = ${colors.primary}
-label-close = 
+label-open-foreground = ${xrdb:color5}
+label-close = 
 label-close-foreground = ${colors.foreground-alt}
 label-separator = |
 label-separator-foreground = ${colors.background-alt}
 
 menu-0-0 = 
+menu-0-0-foreground = ${colors.blue}
 menu-0-0-exec = mate-session-save --logout-dialog
 menu-0-1 = 
 menu-0-1-foreground = ${colors.blue}
