@@ -107,7 +107,6 @@
     "nuclide-working-sets": {}
     use:
       "atom-ide-code-highlight": "never"
-      "atom-ide-debugger-java": "default"
       "nuclide-adb-logcat": "never"
       "nuclide-adb-sdb": "never"
       "nuclide-blame-provider-hg": "never"

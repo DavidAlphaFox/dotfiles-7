@@ -22,19 +22,16 @@ color1  = #cc6666
 color9  = #de935f
 
 # green
-#color2  = #8c9440
-#color10 = #b5bd68
-# green
-color2  = #6ba166
-color10 = #82bb7c
+color2  = #638f63
+color10 = #8fcc85
 
 # yellow
 color3  = #8f7942
 color11 = #f0c674
 
 # blue
-color4  = #5f819d
-color12 = #81a2be
+color4  = #59798f
+color12 = #8fadcc
 
 # magenta
 color5  = #85678f
