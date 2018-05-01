@@ -39,39 +39,39 @@ rofi.display-drun: 
 rofi.display-run: 
 
 ! special
-*.foreground:   #bfbfbf
-*.background:   #1c1c1c
-*.cursorColor:  #bfbfbf
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
 
 ! black
-*.color0:       #1c1c1c
-*.color8:       #404040
+*.color0:       #1d1f21
+*.color8:       #373b41
 
 ! red
-*.color1:       #995151
-*.color9:       #99734d
+*.color1:       #cc6666
+*.color9:       #de935f
 
 ! green
-*.color2:       #408040
-*.color10:      #4d9966
+*.color2:       #6ba166
+*.color10:      #82bb7c
 
 ! yellow
-*.color3:       #758040
-*.color11:      #b3b359
+*.color3:       #8f7942
+*.color11:      #f0c674
 
 ! blue
-*.color4:       #405580
-*.color12:      #4d7f99
+*.color4:       #5f819d
+*.color12:      #81a2be
 
 ! magenta
-*.color5:       #6a4080
-*.color13:      #995199
+*.color5:       #85678f
+*.color13:      #b294bb
 
 ! cyan
-*.color6:       #408080
-*.color14:      #59b3b3
+*.color6:       #5e8d87
+*.color14:      #8abeb7
 
 ! white
-*.color7:       #808080
-*.color15:      #bfbfbf
+*.color7:       #707880
+*.color15:      #c5c8c6
 

@@ -38,8 +38,8 @@ foreground = ${colors.foreground}
 line-size = 0
 line-color = #0f0
 
-border-size = 0
-border-color = #00000000
+border-size = 1
+border-color = ${colors.background-alt}
 
 padding-left = 2
 padding-right = 2
@@ -356,7 +356,8 @@ expand-right = true
 format-spacing = 1
 
 ;label-open = 
-label-open = 
+;label-open = 
+label-open = 
 label-open-foreground = ${colors.foreground}
 ;label-close = 
 label-close = 

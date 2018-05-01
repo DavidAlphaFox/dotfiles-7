@@ -10,6 +10,7 @@ if xdo id -N "$CLASS_NAME" -r; then
 else
   # create new term with CLASS_NAME
   # create new tmux session, or attach if exists
-  exec termite -e 'tmux -2 new-session -A -s " "' --class "${CLASS_NAME}"
+  #exec termite -e 'tmux -2 new-session -A -s " "' --class "${CLASS_NAME}"
+  exec termite -e 'tmux -2 new-session -A -s " "' --class "${CLASS_NAME}"
 fi
 
