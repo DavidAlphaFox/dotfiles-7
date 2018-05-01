@@ -11,8 +11,8 @@ sh2_sym=' '
 err_sym="${spc}"
 vicmd_sym=' '
 #home_sym=' '
-home_sym=' '
-#home_sym='•'
+#home_sym=' '
+home_sym='•'
 #home_sym='~'
 # git prompt
 up_sym=''
