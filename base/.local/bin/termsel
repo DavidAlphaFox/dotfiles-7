@@ -3,7 +3,7 @@
 CLASS_NAME="termite0"
 SESSION_NAME=" "
 # does term with CLASS_NAME exist?
-if xdo id -N "$CLASS_NAME"; then
+if xdo id -N "$CLASS_NAME">/dev/null; then
   # focus, move to current desktop the existing term with CLASS_NAME
   NODE_ID="$(xdo id -N ${CLASS_NAME} | head -n1)" 
   bspc node "$NODE_ID.!local" -d focused -m focused
