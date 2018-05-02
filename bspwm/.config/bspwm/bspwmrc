@@ -12,7 +12,7 @@ xrandr --output VGA-2 --auto --right-of VGA-1
 bspc monitor VGA-1 -d 1 2 3 4 5
 bspc monitor VGA-2 -d 6 7 8 9 0
 
-xrdb "${HOME}/.Xresources"
+xrdb --merge "${HOME}/.Xresources"
 for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
   MONITOR=$m polybar --reload archi3 &
 done

@@ -19,6 +19,12 @@ super + shift + Insert
   notify-send -i edit-paste "Clipmenu" "Clearing clipmenu"
   find $XDG_RUNTIME_DIR/clipmenu.* -type f -print0 | xargs -0 rm
 
+super + Print
+  scrot
+
+super + shift + Print
+  scrot -u
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

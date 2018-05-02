@@ -10,8 +10,8 @@ Xft.rgba: rgb
 ! ROFI
 rofi.font:              Iosevka Term Medium 15
 rofi.modi:              window,run,ssh,drun
-rofi.width:             32
-rofi.lines:             8
+rofi.width:             24
+rofi.lines:             5
 rofi.columns:           1
 ! "border width"
 rofi.bw:                2
@@ -32,11 +32,11 @@ rofi.fake-transparency: false
 ! "scrolling method. (0: Page, 1: Centered)"
 rofi.scroll-method:     1
 ! State:           'bg',   'fg',   'bgalt','hlbg', 'hlfg'
-rofi.color-normal: #1c1c1c,#373b41,#1c1c1c,#1c1c1c,#c5c8c6
-rofi.color-active: #1c1c1c,#bfbfbf,#1c1c1c,#1c1c1c,#4d7f99
-rofi.color-window: #1c1c1c,#707880,#1c1c1c
-rofi.display-drun: 
-rofi.display-run: 
+rofi.color-normal: #1d1f21,#373b41,#1d1f21,#1d1f21,#c5c8c6
+rofi.color-active: #1d1f21,#bfbfbf,#1d1f21,#1d1f21,#4d7f99
+rofi.color-window: #1d1f21,#707880,#1d1f21
+rofi.display-drun: 
+rofi.display-run: 
 
 ! special
 *.foreground:   #c5c8c6
