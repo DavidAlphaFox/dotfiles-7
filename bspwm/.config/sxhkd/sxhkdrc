@@ -22,8 +22,8 @@ super + shift + Insert
 super + Print
   scrot
 
-super + shift + Print
-  scrot -u
+super + shift + @Print
+  scrot -s
 
 # make sxhkd reload its configuration files:
 super + Escape
