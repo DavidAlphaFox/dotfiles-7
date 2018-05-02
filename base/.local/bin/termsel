@@ -6,7 +6,7 @@ SESSION_NAME=" "
 if xdo id -N "$CLASS_NAME"; then
   # focus, move to current desktop the existing term with CLASS_NAME
   NODE_ID="$(xdo id -N ${CLASS_NAME} | head -n1)" 
-  bspc node $NODE_ID -d focused -m focused
+  bspc node "$NODE_ID.!local" -d focused -m focused
   bspc node -f $NODE_ID
 else
   # create new term with CLASS_NAME
