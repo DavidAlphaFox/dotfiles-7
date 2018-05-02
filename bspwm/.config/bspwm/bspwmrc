@@ -14,7 +14,7 @@ bspc monitor VGA-2 -d 6 7 8 9 0
 
 
 function get_xrdb() {
-  xrdb -query | grep "$1" | awk '{print $2}'
+  xrdb -query | grep "$1" | awk '{print $2}' | tail -n1
 }
 bspc config border_width         2 
 bspc config window_gap          12 
@@ -28,7 +28,7 @@ bspc rule -a Dia state=floating
 bspc rule -a termite0 state=floating 
 bspc rule -a Ibus-extension-gtk3 state=floating 
 
-xrdb "${HOME}/.Xresources"
+xrdb -merge "${HOME}/.Xresources"
 color7="$(get_xrdb color7)"
 color8="$(get_xrdb color8)"
 bspc config normal_border_color  "$color8)" 
