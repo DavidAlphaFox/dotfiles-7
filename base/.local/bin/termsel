@@ -3,15 +3,14 @@
 CLASS_NAME="termite0"
 SESSION_NAME=" "
 # does term with CLASS_NAME exist?
-if xdo id -DrCN "$CLASS_NAME" -r; then
+if xdo id -N "$CLASS_NAME"; then
   # focus, move to current desktop the existing term with CLASS_NAME
-  NODE_ID="$(xdo id -DrCN ${CLASS_NAME} | head -n1)" 
+  NODE_ID="$(xdo id -N ${CLASS_NAME} | head -n1)" 
   bspc node $NODE_ID -d focused -m focused
   bspc node -f $NODE_ID
 else
   # create new term with CLASS_NAME
   # create new tmux session, or attach if exists
-  #exec termite -e 'tmux -2 new-session -A -s " "' --class "${CLASS_NAME}"
   exec termite -e "tmux -2 new-session -A -s '${SESSION_NAME}'" --class "${CLASS_NAME}"
 fi
 
