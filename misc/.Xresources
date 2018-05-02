@@ -16,7 +16,7 @@ rofi.columns:           1
 ! "border width"
 rofi.bw:                2
 rofi.location:          0
-rofi.padding:           8
+rofi.padding:           12
 rofi.yoffset:           0
 rofi.xoffset:           0
 rofi.fixed-num-lines:   true
@@ -33,7 +33,7 @@ rofi.fake-transparency: false
 rofi.scroll-method:     1
 ! State:           'bg',   'fg',   'bgalt','hlbg', 'hlfg'
 rofi.color-normal: #1d1f21,#373b41,#1d1f21,#1d1f21,#c5c8c6
-rofi.color-active: #1d1f21,#bfbfbf,#1d1f21,#1d1f21,#4d7f99
+rofi.color-active: #1d1f21,#c586c6,#1d1f21,#1d1f21,#4d7f99
 rofi.color-window: #1d1f21,#707880,#1d1f21
 rofi.display-drun: 
 rofi.display-run: 
