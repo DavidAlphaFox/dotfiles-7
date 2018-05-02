@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 CLASS_NAME="termite0"
-SESSION_NAME=" "
+SESSION_NAME=" "
 # does term with CLASS_NAME exist?
 if xdo id -DrCN "$CLASS_NAME" -r; then
   # focus, move to current desktop the existing term with CLASS_NAME
