@@ -547,7 +547,7 @@ function get_pwd(){
     if [ "$PWD" = "$HOME" ]; then
       prompt_short_dir="$home_sym"
     else
-      prompt_short_dir=%3~
+      prompt_short_dir="  %3~"
       if [[ "$PWD" == "$HOME"* ]]; then
         prompt_short_dir="  ${PWD#$HOME/}"
       fi
