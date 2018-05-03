@@ -12,15 +12,20 @@ err_sym="${spc}"
 vicmd_sym=' '
 #home_sym=' '
 #home_sym=' '
-home_sym='•'
+#home_sym='•'
+home_sym=' '
 #home_sym='~'
 # git prompt
 up_sym=''
 down_sym=''
-untracked_sym=' '
-added_sym=' '
-mod_sym=' '
-stash_sym=' '
+#untracked_sym=' '
+#added_sym=' '
+#mod_sym=' '
+#stash_sym=' '
+untracked_sym=' '
+added_sym=' '
+mod_sym=' '
+stash_sym=' '
 noup_sym=' '
 # bash/zsh git prompt support
 #
@@ -231,15 +236,15 @@ __git_ps1_show_upstream ()
 	else
 		case "$count" in
 		"") # no upstream
-			p=" %{$fg_bold[yellow]%}$noup_sym%{$reset_color%}" ;;
+			p="%{$fg_bold[yellow]%}$noup_sym%{$reset_color%}" ;;
 		"0	0") # equal to upstream
 			p="" ;;
 		"0	"*) # ahead of upstream
-			p=" %{$fg_bold[green]%}${count#0	}$up_sym%{$reset_color%}" ;;
+			p="%{$fg_bold[green]%}${count#0	}$up_sym%{$reset_color%}" ;;
 		*"	0") # behind upstream
-			p=" %{$fg_bold[red]%}${count%	0}$down_sym%{$reset_color%}" ;;
+			p="%{$fg_bold[red]%}${count%	0}$down_sym%{$reset_color%}" ;;
 		*)	    # diverged from upstream
-			p=" %{$fg[red]%}${count#*	}$up_sym ${count%	*}$down_sym%{$reset_color%}" ;;
+			p="%{$fg[red]%}${count#*	}$up_sym ${count%	*}$down_sym%{$reset_color%}" ;;
 		esac
 		if [[ -n "$count" && -n "$name" ]]; then
 			__git_ps1_upstream_name=$(git rev-parse \
@@ -489,7 +494,8 @@ __git_ps1 ()
 	fi
 
 	local f="$u$w$i$s"
-	local gitstring="${f:+$z$f}$r$p $c$b"
+	#local gitstring="${f:+$z$f}$r$p $c$b"
+  local gitstring="$f$r$p $c$b"
 
 	if [ $pcmode = yes ]; then
 		if [ "${__git_printf_supports_v-}" != yes ]; then
@@ -543,12 +549,12 @@ function get_pwd(){
     else
       prompt_short_dir=%3~
       if [[ "$PWD" == "$HOME"* ]]; then
-        prompt_short_dir=${PWD#$HOME/}
+        prompt_short_dir="  ${PWD#$HOME/}"
       fi
     fi
   else
     parent=${git_root%\/*}
-    prompt_short_dir=${PWD#$parent/}
+    prompt_short_dir="  ${PWD#$parent/}"
   fi
   echo "$prompt_short_dir"
 }
