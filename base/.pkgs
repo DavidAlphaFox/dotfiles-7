@@ -40,6 +40,7 @@ noto-fonts-emoji
 numlockx
 openssh
 otf-font-awesome
+perl-file-mimeinfo
 playerctl
 plymouth-theme-monoarch
 polybar
@@ -64,8 +65,8 @@ vim-nerdtree
 vim-syntastic
 vim-tagbar
 w3m
-wireless_tools
 wget
+wireless_tools
 xarchiver
 xcursor-flatbed
 xdo
