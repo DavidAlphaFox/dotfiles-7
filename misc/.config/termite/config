@@ -2,7 +2,7 @@
 font            = Iosevka Term Medium 14
 allow_bold      = false
 cursor_shape    = underline
-mouse_autohide  = true
+#mouse_autohide  = true
 dynamic_title   = true
 
 [colors]
