@@ -1,14 +1,14 @@
 #!/bin/zsh
 
 CLASS_NAME="termite0"
-#SESSION_NAME=" "
 SESSION_NAME="💀"
 # does term with CLASS_NAME exist?
 if xdo id -N "$CLASS_NAME">/dev/null; then
   # focus, move to current desktop the existing term with CLASS_NAME
-  NODE_ID="$(xdo id -N ${CLASS_NAME} | head -n1)" 
-  bspc node "$NODE_ID.!local" -d focused -m focused
-  bspc node -f $NODE_ID
+  for NODE_ID in $(xdo id -N ${CLASS_NAME}); do
+    bspc node $NODE_ID -d focused -m focused
+    bspc node -f $NODE_ID
+  done
 else
   # create new term with CLASS_NAME
   # create new tmux session, or attach if exists
