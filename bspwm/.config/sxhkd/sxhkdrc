@@ -11,13 +11,16 @@ super + @space
 	rofi -show run
 super + shift + @space
   rofi -show drun
+super + @w
+  rofi -show window
+
 super + @Insert
   clipmenu -p  
-super + shift + @Tab
- rofi -show window 
+
 super + shift + @Insert
   notify-send -i edit-paste "Clipmenu" "Clearing clipmenu"
   find $XDG_RUNTIME_DIR/clipmenu.* -type f -print0 | xargs -0 rm
+
 super + shift + @m
   termite -e manual
 
@@ -43,7 +46,7 @@ super + alt + Escape
 	mate-session-save --logout-dialog
 
 # close and kill
-super + {_,shift + }w
+super + {_,shift + }q
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout

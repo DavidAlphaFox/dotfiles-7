@@ -9,7 +9,7 @@ Xft.rgba: rgb
 
 ! ROFI
 rofi.font:              Iosevka Term Medium 15
-rofi.modi:              window,run,ssh,drun
+rofi.modi:              window,run,drun,ssh
 rofi.width:             24
 rofi.lines:             5
 rofi.columns:           1
@@ -37,6 +37,8 @@ rofi.color-active: #1d1f21,#c586c6,#1d1f21,#1d1f21,#4d7f99
 rofi.color-window: #1d1f21,#707880,#1d1f21
 rofi.display-drun: 
 rofi.display-run: 
+rofi.display-window: 
+rofi.display-ssh: 
 
 ! special
 *.foreground:   #c5c8c6
