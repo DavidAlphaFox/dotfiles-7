@@ -12,8 +12,8 @@ background = ${xrdb:background}
 background-alt = ${xrdb:color8}
 foreground = ${xrdb:foreground}
 foreground-alt = ${xrdb:color7}
-primary = ${xrdb:color2}
-secondary = ${xrdb:color9}
+primary = ${xrdb:color12}
+secondary = ${xrdb:color4}
 alert = ${xrdb:color1}
 red = ${xrdb:color1}
 orange = ${xrdb:color9}
@@ -35,8 +35,8 @@ height = 32
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 0
-line-color = #0f0
+line-size = 2
+line-color = ${colors.primary}
 
 border-size = 2
 border-color = ${colors.background-alt}
@@ -119,7 +119,7 @@ label-unmounted-foreground = ${colors.foreground-alt}
 type = internal/bspwm
 
 label-focused = %name%
-label-focused-background = ${colors.background-alt}
+;label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
@@ -251,7 +251,7 @@ time-alt = "  %I:%M %p"
 
 format-prefix =
 format-prefix-foreground = ${colors.foreground}
-format-underline = #0a6cf5
+;format-underline = #0a6cf5
 
 label = %date%%time%
 
