@@ -60,9 +60,11 @@ tray-padding = 0
 ;tray-background = #0063ff
 
 wm-restack = bspwm
-
 ;override-redirect = true
 
+click-left = rofi -show drun -show-icons
+click-middle = rofi -show window -show-icons
+click-right = rofi -show run
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
