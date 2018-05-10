@@ -38,7 +38,7 @@ foreground = ${colors.foreground}
 line-size = 0
 line-color = #0f0
 
-border-size = 1
+border-size = 2
 border-color = ${colors.background-alt}
 
 padding-left = 0
@@ -52,7 +52,7 @@ font-1 = Font Awesome 5 Free Solid:size=13;3
 
 modules-left = bspwm xwindow
 modules-center =
-modules-right = playing back play next volume temperature date
+modules-right = temperature playing back play next volume date
 
 tray-position = right
 tray-padding = 0
@@ -102,7 +102,7 @@ click-left = playerctl next
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:77:...%
+label = %title:0:88:...%
 label-foreground = ${colors.foreground}
 
 [module/filesystem]
