@@ -9,7 +9,7 @@ Xft.rgba: rgb
 
 ! ROFI
 rofi.font:              Iosevka Term Medium 15
-rofi.modi:              window,run,drun,ssh
+rofi.modi:              window,run,drun
 rofi.width:             24
 rofi.lines:             5
 rofi.columns:           1

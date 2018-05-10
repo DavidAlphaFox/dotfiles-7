@@ -21,9 +21,6 @@ super + shift + @Insert
   notify-send -i edit-paste "Clipmenu" "Clearing clipmenu"
   find $XDG_RUNTIME_DIR/clipmenu.* -type f -print0 | xargs -0 rm
 
-super + shift + @m
-  termite -e manual
-
 super + Print
   scrot
 
