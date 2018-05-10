@@ -131,6 +131,8 @@ label-occupied-padding = 2
 label-urgent = %name%
 label-urgent-foreground = ${colors.alert}
 label-urgent-padding = 2
+label-urgent-overline = ${colors.alert}
+label-urgent-underline = ${colors.alert}
 
 label-empty = %name%
 label-empty-foreground = ${colors.foreground-alt}

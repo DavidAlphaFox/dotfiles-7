@@ -27,6 +27,7 @@ bspc rule -a Chromium sticky=off
 bspc rule -a Dia state=floating 
 bspc rule -a termite0 state=floating 
 bspc rule -a Ibus-extension-gtk3 state=floating 
+bspc rule -a Godot state=floating
 
 xrdb -merge "${HOME}/.Xresources"
 color7="$(get_xrdb color7)"
