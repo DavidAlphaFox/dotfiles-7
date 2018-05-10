@@ -10,9 +10,9 @@ super + Return
 super + @space
 	rofi -show run
 super + shift + @space
-  rofi -show drun
+  rofi -show drun -show-icons
 super + @w
-  rofi -show window
+  rofi -show window -show-icons
 
 super + @Insert
   clipmenu -p  
