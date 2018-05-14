@@ -1,32 +1,22 @@
 "*":
-  "atom-ide-ui":
-    hideNuclideWarning: true
-    use:
-      "atom-ide-diagnostics-ui": false
   "atom-material-ui":
     colors:
-      abaseColor: "#8fadcc"
+      abaseColor: "#ffd54f"
+      accentColor: "#a28832"
       genAccent: true
       paintCursor: true
-      predefinedColor: "Blue"
-    fonts: {}
-    tabs:
-      compactTabs: true
-      noTabMinWidth: true
-    treeView:
-      compactList: true
+      predefinedColor: "Amber"
     ui:
-      panelContrast: true
       panelShadows: true
-  "autocomplete-modules":
-    babelPluginModuleResolver: true
   core:
+    allowPendingPaneItems: false
     autoHideMenuBar: true
+    automaticallyUpdate: false
+    closeDeletedFileTabs: true
     customFileTypes:
       "source.ini": [
-        ".flowconfig"
-        ".buckconfig"
         ".hgrc"
+        ".buckconfig"
       ]
       "source.json": [
         "BUCK.autodeps"
@@ -35,11 +25,11 @@
         "BUCK"
       ]
     disabledPackages: [
-      "github"
-      "whitespace"
       "tree-view"
-      "linter"
     ]
+    openEmptyEditorOnStart: false
+    projectHome: "/home/ihanson/src"
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
@@ -47,104 +37,10 @@
     ]
   editor:
     fontFamily: "Iosevka Term-Lig Medium"
-    fontSize: 18
-    preferredLineLength: 120
+    fontSize: 16
   "exception-reporting":
-    userId: "0b76d67e-58ce-0bab-3cfb-1e30b634d378"
-  "file-icons":
-    onChanges: true
-  "git-plus":
-    commits:
-      verboseCommits: true
-    diffs: {}
-    experimental:
-      stageFilesBeta: false
-    general:
-      messageTimeout: 10
-      openInPane: false
-    remoteInteractions:
-      pullBeforePush: true
-      pullRebase: true
-  "go-plus":
-    format:
-      tool: "gofmt"
-    panel:
-      displayMode: "closed"
-      focusOnFailure: false
-    test:
-      runTestsWithVerboseFlag: true
-  "highlight-selected":
-    lightTheme: true
-  "language-babel":
-    createTargetDirectories: false
-  linter: {}
-  "linter-eslint":
-    disableFSCache: true
-    disableWhenNoEslintConfig: false
-  "linter-ui-default": {}
-  "markdown-preview":
-    openPreviewInSplitPane: false
+    userId: "c8d8d76b-8c90-4336-baaa-dd10cfac0574"
   nuclide:
-    "atom-ide-diagnostics-ui": {}
-    "nuclide-buck": {}
-    "nuclide-clang":
-      defaultDiagnostics: true
-    "nuclide-debugger": {}
-    "nuclide-distraction-free-mode":
-      hideFindAndReplace: true
-      hideStatusBar: true
-    "nuclide-file-tree":
-      focusEditorOnFileSelection: true
-    "nuclide-flow": {}
-    "nuclide-home":
-      showHome: false
-    "nuclide-notifications":
-      onlyNativeFriendly: false
-    "nuclide-terminal":
-      cursorBlink: true
-      cursorStyle: "underline"
-    "nuclide-working-sets": {}
-    use:
-      "atom-ide-code-highlight": "never"
-      "nuclide-adb-logcat": "never"
-      "nuclide-adb-sdb": "never"
-      "nuclide-blame-provider-hg": "never"
-      "nuclide-buck": "never"
-      "nuclide-buck-ios": "never"
-      "nuclide-clang": "never"
-      "nuclide-debugger-php": "never"
-      "nuclide-device-panel-ios": "never"
-      "nuclide-hack": "never"
-      "nuclide-hg-repository": "never"
-      "nuclide-hhvm": "never"
-      "nuclide-infer-al": "never"
-      "nuclide-ios-simulator-logs": "never"
-      "nuclide-language-hack": "never"
-      "nuclide-language-infer-al": "never"
-      "nuclide-objc": "never"
-      "nuclide-swift": "never"
-  tabs:
-    enableVcsColoring: true
-  "tool-bar":
-    iconSize: "12px"
-  "tree-view":
-    alwaysOpenExisting: true
-    hideVcsIgnoredFiles: true
-    squashDirectoryNames: true
+    installRecommendedPackages: true
   welcome:
     showOnStartup: false
-".babel.regexp.source":
-  editor:
-    tabLength: 2
-".css.source.styled":
-  editor:
-    tabLength: 2
-".js.jsx.source":
-  editor:
-    tabLength: 2
-".languagebabel.ttlextension":
-  editor:
-    tabLength: 2
-".reason.source":
-  editor:
-    preferredLineLength: 110
