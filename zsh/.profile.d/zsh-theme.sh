@@ -559,7 +559,7 @@ function get_pwd(){
   echo "$prompt_short_dir"
 }
 
-local ret_status='%(?:%{$fg[green]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
+local ret_status='%(?:%{$fg_bold[blue]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
 local vicmd_status='%{$reset_color%}%{$fg_bold[green]%}$vicmd_sym%{$reset_color%}'
 local git_status='$(__promptline_vcs_branch)%{$reset_color%}'
 local dir_status='%{$fg_bold[blue]%}$(get_pwd)%{$reset_color%}'
