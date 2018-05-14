@@ -26,6 +26,7 @@
       ]
     disabledPackages: [
       "tree-view"
+      "tool-bar"
     ]
     openEmptyEditorOnStart: false
     projectHome: "/home/ihanson/src"
@@ -46,5 +47,8 @@
     "nuclide-js-imports-client": {}
     use:
       "nuclide-js-imports-client": "never"
+  "tool-bar":
+    iconSize: "12px"
+    position: "Left"
   welcome:
     showOnStartup: false
