@@ -1,11 +1,10 @@
 "*":
   "atom-material-ui":
     colors:
-      abaseColor: "#ffd54f"
-      accentColor: "#a28832"
-      genAccent: true
+      abaseColor: "#8fadcc"
+      accentColor: "#c5c8c6"
       paintCursor: true
-      predefinedColor: "Amber"
+      predefinedColor: "Blue"
     ui:
       panelShadows: true
   core:
@@ -17,6 +16,7 @@
       "source.ini": [
         ".hgrc"
         ".buckconfig"
+        ".flowconfig"
       ]
       "source.json": [
         "BUCK.autodeps"
@@ -29,7 +29,6 @@
     ]
     openEmptyEditorOnStart: false
     projectHome: "/home/ihanson/src"
-    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
@@ -37,10 +36,12 @@
     ]
   editor:
     fontFamily: "Iosevka Term-Lig Medium"
-    fontSize: 16
+    fontSize: 18
   "exception-reporting":
     userId: "c8d8d76b-8c90-4336-baaa-dd10cfac0574"
   nuclide:
     installRecommendedPackages: true
+    "nuclide-home":
+      showHome: false
   welcome:
     showOnStartup: false
