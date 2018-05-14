@@ -11,10 +11,10 @@ dynamic_title   = true
 foreground      = #c5c8c6
 foreground_bold = #c5c8c6
 cursor          = #c5c8c6
-background      = #1d1f21
+background      = #212121
 
 # black
-color0  = #1d1f21
+color0  = #212121
 color8  = #373b41
 
 # red
