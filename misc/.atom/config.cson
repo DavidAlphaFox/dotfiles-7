@@ -43,5 +43,8 @@
     installRecommendedPackages: true
     "nuclide-home":
       showHome: false
+    "nuclide-js-imports-client": {}
+    use:
+      "nuclide-js-imports-client": "never"
   welcome:
     showOnStartup: false
