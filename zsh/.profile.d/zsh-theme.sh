@@ -562,7 +562,7 @@ function get_pwd(){
 local ret_status='%(?:%{$fg[green]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
 local vicmd_status='%{$reset_color%}%{$fg_bold[green]%}$vicmd_sym%{$reset_color%}'
 local git_status='$(__promptline_vcs_branch)%{$reset_color%}'
-local dir_status='%{$fg_bold[red]%}$(get_pwd)%{$reset_color%}'
+local dir_status='%{$fg_bold[blue]%}$(get_pwd)%{$reset_color%}'
 local host_status='%{$fg_bold[yellow]%}$(__promptline_host)%{$reset_color%}'
 precmd() {
   PROMPT="%{$reset_color%}$ret_status "
