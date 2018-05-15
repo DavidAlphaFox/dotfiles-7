@@ -25,7 +25,6 @@ bspc config focus_follows_pointer true
 bspc rule -a Gimp desktop='^8' state=floating follow=on 
 bspc rule -a Chromium sticky=off
 bspc rule -a Dia state=floating 
-bspc rule -a termite0 state=floating 
 bspc rule -a Ibus-extension-gtk3 state=floating 
 bspc rule -a Godot state=floating
 bspc rule -a Pavucontrol state=floating
