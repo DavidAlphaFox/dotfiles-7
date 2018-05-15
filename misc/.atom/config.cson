@@ -26,7 +26,6 @@
       ]
     disabledPackages: [
       "tree-view"
-      "tool-bar"
     ]
     openEmptyEditorOnStart: false
     projectHome: "/home/ihanson/src"
@@ -50,5 +49,6 @@
   "tool-bar":
     iconSize: "12px"
     position: "Left"
+    visible: false
   welcome:
     showOnStartup: false
