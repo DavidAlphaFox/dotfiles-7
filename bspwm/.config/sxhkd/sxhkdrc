@@ -1,34 +1,18 @@
-#
-# wm independent hotkeys
-#
 
 # terminal emulator
 super + Return
 	termsel
 
-# program launcher
-super + @space
-	rofi -show run
-super + shift + @space
-  rofi -show drun -show-icons
-super + @w
-  rofi -show window -show-icons
+# rofi launcher
+super + {slash,question,Tab}
+	rofi -show {run,drun -show-icons,window -show-icons}
 
 super + @Insert
   clipmenu -p  
 
-super + shift + @Insert
-  notify-send -i edit-paste "Clipmenu" "Clearing clipmenu"
-  find $XDG_RUNTIME_DIR/clipmenu.* -type f -print0 | xargs -0 rm
-
-super + Print
-  scrot
-
-super + shift + @Print
-  scrot -s
-
-super + ctrl + @Print
-  scrot -u
+# screenshot {all,window,select}
+super + {_,shift +,ctrl +} @Print
+  scrot {_,-u,-s}
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -51,17 +35,18 @@ super + m
 	bspc desktop -l next
 
 # send the newest marked node to the newest preselected node
-super + y
-	bspc node newest.marked.local -n newest.!automatic.local
+#super + y
+#	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest node
-super + g
-	bspc node -s biggest
+#super + g
+#	bspc node -s biggest
 
 # Rotate desktop
 super + {_,shift + }r
 	bspc node @/ --rotate {90,-90}
 
+# remove gaps
 super + {_,shift + }b
   bspc config window_gap {0,12}
 
@@ -98,14 +83,14 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f last
+#super + {grave,Tab}
+#	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
-super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
+#super + {o,i}
+#	bspc wm -h off; \
+#	bspc node {older,newer} -f; \
+#	bspc wm -h on
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
@@ -116,20 +101,20 @@ super + {_,shift + }{1-9,0}
 #
 
 # preselect the direction
-super + ctrl + {Left,Down,Up,Right}
-	bspc node -p {west,south,north,east}
+#super + ctrl + {Left,Down,Up,Right}
+#	bspc node -p {west,south,north,east}
 
 # preselect the ratio
-super + ctrl + {1-9}
-	bspc node -o 0.{1-9}
+#super + ctrl + {1-9}
+#	bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
-super + ctrl + space
-	bspc node -p cancel
+#super + ctrl + space
+#	bspc node -p cancel
 
 # cancel the preselection for the focused desktop
-super + ctrl + shift + space
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+#super + ctrl + shift + space
+#	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 #
 # move/resize

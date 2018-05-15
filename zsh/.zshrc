@@ -56,7 +56,7 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets cursor)
 export ZSH_HIGHLIGHT_STYLES[cursor]='fg=yellow,bold'
 export ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
 export ZSH_HIGHLIGHT_STYLES[path]='fg=blue,bold'
-export ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=blue,bold'
+export ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=blue'
 export ZSH_HIGHLIGHT_STYLES[globbing]='fg=cyan,bold'
 export ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=yellow'
 export ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=yellow,bold'
