@@ -27,8 +27,8 @@ super + Escape
 #
 
 # quit bspwm normally
-super + alt + Escape
-	mate-session-save --logout-dialog
+super + ctrl + {q,Escape}
+	mate-session-save --{logout,shutdown}-dialog
 
 # close and kill
 super + {_,shift + }q

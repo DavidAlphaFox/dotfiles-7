@@ -16,8 +16,8 @@ class base(ColorScheme):
             else:
                 attr = normal
             if context.empty or context.error:
-                fg = 0
-                bg = 1
+                fg = 8
+                bg = 0
             if context.border:
                 fg = 238
             if context.image:
