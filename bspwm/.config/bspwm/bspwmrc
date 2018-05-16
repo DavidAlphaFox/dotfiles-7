@@ -16,7 +16,7 @@ bspc monitor HDMI1 -d 1 2 3 4 5
 function get_xrdb() {
   xrdb -query | grep "$1" | awk '{print $2}' | tail -n1
 }
-bspc config border_width         2 
+bspc config border_width         4 
 bspc config window_gap          12 
 bspc config split_ratio          0.50 
 bspc config borderless_monocle   true 

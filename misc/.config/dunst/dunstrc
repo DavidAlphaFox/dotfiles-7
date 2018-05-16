@@ -61,7 +61,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 2
+    frame_width = 4
 
     # Defines color of the frame around the notification window.
     frame_color = "#707880"
@@ -86,7 +86,8 @@
     ### Text ###
 
     #font = DejaVu Sans 12
-    font = Iosevka Term Medium 13
+    #font = Iosevka Term Medium 13
+    font = Press Start 2P 12
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
