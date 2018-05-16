@@ -35,10 +35,10 @@ height = 32
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 2
+line-size = 4
 line-color = ${colors.primary}
 
-border-size = 2
+border-size = 4
 border-color = ${colors.background-alt}
 
 padding-left = 0
@@ -47,8 +47,10 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = Iosevka Type:style=Bold:size=12;3
-font-1 = Font Awesome 5 Free Solid:size=13;3
+font-0 = Press Start 2P:size=12;5
+;font-1 = Font Awesome 5 Free Solid:size=13;3
+font-1 = invaders from space:size=16;5
+font-2 = Iosevka Type:style=Bold:size=12;3
 
 modules-left = bspwm xwindow
 modules-center =
@@ -125,20 +127,20 @@ label-focused = %name%
 ;label-focused-background = ${colors.background-alt}
 label-focused-foreground = ${colors.primary}
 label-focused-underline= ${colors.primary}
-label-focused-padding = 2
+label-focused-padding = 1
 
 label-occupied = %name%
-label-occupied-padding = 2
+label-occupied-padding = 1
 
 label-urgent = %name%
 label-urgent-foreground = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 1
 label-urgent-overline = ${colors.alert}
 label-urgent-underline = ${colors.alert}
 
 label-empty = %name%
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-padding = 1
 
 ;[module/mpd]
 ;type = internal/mpd
@@ -250,13 +252,14 @@ type = internal/date
 interval = 15
 
 date =
-date-alt = " %a %b %d"
+date-alt = " %a %b %d"
 
-time = " %H:%M"
-time-alt = "  %I:%M %p"
+time = " %H:%M"
+time-alt = " %I:%M %p"
 
-format-prefix =
+format-prefix = g
 format-prefix-foreground = ${colors.foreground}
+format-prefix-font = 2
 
 label = %date%%time%
 
@@ -265,12 +268,13 @@ type = internal/volume
 
 format-volume = <label-volume> <bar-volume>
 ;label-volume = 
-label-volume = 
+label-volume = b
 label-volume-foreground = ${colors.foreground}
 
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = 
-
+label-muted = b
+label-volume-font = 2
+label-muted-font = 2
 bar-volume-width = 6
 bar-volume-foreground-0 = ${colors.green}
 bar-volume-foreground-1 = ${colors.green}

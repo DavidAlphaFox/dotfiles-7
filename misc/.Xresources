@@ -8,13 +8,14 @@ Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
 ! ROFI
-rofi.font:              Iosevka Term Medium 15
+!rofi.font:              Iosevka Term Medium 15
+rofi.font:              Press Start 2P 13
 rofi.modi:              window,run,drun
 rofi.width:             24
 rofi.lines:             5
 rofi.columns:           1
 ! "border width"
-rofi.bw:                2
+rofi.bw:                4
 rofi.location:          0
 rofi.padding:           12
 rofi.yoffset:           0
@@ -35,8 +36,8 @@ rofi.scroll-method:     1
 rofi.color-normal: #212121,#373b41,#212121,#212121,#c5c8c6
 rofi.color-active: #212121,#c586c6,#212121,#212121,#4d7f99
 rofi.color-window: #212121,#707880,#212121
-rofi.display-drun: 
-rofi.display-run: 
+rofi.display-drun: !
+rofi.display-run: !
 rofi.display-window: 
 rofi.display-ssh: 
 
