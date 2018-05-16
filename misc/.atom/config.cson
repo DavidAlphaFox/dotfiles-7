@@ -26,7 +26,6 @@
       ]
     disabledPackages: [
       "tree-view"
-      "image-view"
     ]
     openEmptyEditorOnStart: false
     projectHome: "/home/ihanson/src"
