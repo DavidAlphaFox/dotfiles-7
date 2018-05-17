@@ -33,7 +33,7 @@ xrdb -merge "${HOME}/.Xresources"
 color7="$(get_xrdb color7)"
 color8="$(get_xrdb color8)"
 bspc config normal_border_color  "$color8)" 
-bspc config focused_border_color "$color7)" 
+bspc config focused_border_color "$color12)"
 
 compton -b
 for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do

@@ -27,8 +27,8 @@ alert = ${xrdb:color1}
 monitor = ${env:MONITOR:VGA-1}
 width = 100%
 height = 32
-;offset-x = 0
-;offset-y = 0
+offset-x = 0
+offset-y = 0
 ;radius = 16.0
 ;fixed-center = true
 
@@ -60,7 +60,7 @@ tray-padding = 0
 ;tray-background = #0063ff
 
 wm-restack = bspwm
-;override-redirect = true
+override-redirect = false
 
 click-left = rofi -show drun -show-icons
 click-middle = rofi -show window -show-icons

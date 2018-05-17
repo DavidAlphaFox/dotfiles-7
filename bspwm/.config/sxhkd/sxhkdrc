@@ -1,8 +1,5 @@
 ## sxhkdrc
 
-# lock desktop
-super + shift + l
-  notify-warn 'Unimplemented' 'Lock desktop is not implemented'
 # logout, shutdown
 super + {shift,ctrl} + q
     mate-session-save --{logout,shutdown}-dialog
@@ -10,7 +7,7 @@ super + {shift,ctrl} + q
 super + Return
   termsel
 # run, applications menus
-super + {_,alt +} space
+super + {_,shift +} space
   rofi -show {run,drun}
 # filemanager
 super + f
@@ -28,9 +25,6 @@ super + q
 # rotate 180
 super + r
   bspc node @/ --rotate 180
-# resize window
-super + shift + r
-  notify-warn 'Unimplemented' 'Resize window is not implemented'
 # focus or move window to desktop
 super + {_,shift + }{1-9,0}
   bspc {desktop -f,node -d} '^{1-9,10}'
@@ -54,5 +48,5 @@ super + Insert
   clipmenu -p 
 
 # reload keybindings
-super + alt + r
+super + shift + r
   pkill -USR1 -x sxhkd && notify-info 'sxhkd' 'reloading keybindings'
