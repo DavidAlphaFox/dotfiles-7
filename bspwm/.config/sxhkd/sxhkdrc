@@ -42,7 +42,7 @@ super + bracket{left,right}
 # windowshot
 # selectshot
 super + {_,shift +,ctrl +} + @Print
-  scrot {_,-u,-s} -e "notify-send 'scrot' 'image saved as \$f'"
+  scrot {_,-u -b,-s} -e "notify-send 'scrot' 'image saved as \$f'"
 # clipboard select
 super + Insert
   clipmenu -p 
