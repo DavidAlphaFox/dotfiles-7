@@ -1,6 +1,0 @@
-#!/bin/zsh
-
-PAGE="$(man -k . -s 1 | awk '{print $1}' | rofi -p   -dmenu)"
-if [ -n "${PAGE}" ]; then
-  zsh -ic "man ${PAGE}"
-fi
