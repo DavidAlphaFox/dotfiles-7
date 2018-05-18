@@ -1,0 +1,56 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#8fadcc"
+      accentColor: "#c5c8c6"
+      paintCursor: true
+      predefinedColor: "Blue"
+    ui:
+      panelShadows: true
+  core:
+    allowPendingPaneItems: false
+    autoHideMenuBar: true
+    automaticallyUpdate: false
+    closeDeletedFileTabs: true
+    customFileTypes:
+      "source.ini": [
+        ".hgrc"
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "tree-view"
+      "image-view"
+    ]
+    openEmptyEditorOnStart: false
+    projectHome: "/home/ihanson/src"
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "one-dark-material-syntax"
+    ]
+  editor:
+    fontFamily: "Iosevka Term-Lig Medium"
+    fontSize: 20
+    preferredLineLength: 120
+  "exception-reporting":
+    userId: "c8d8d76b-8c90-4336-baaa-dd10cfac0574"
+  nuclide:
+    installRecommendedPackages: true
+    "nuclide-home":
+      showHome: false
+    "nuclide-js-imports-client": {}
+    use:
+      "nuclide-js-imports-client": "never"
+  "tool-bar":
+    iconSize: "12px"
+    position: "Left"
+    visible: false
+  welcome:
+    showOnStartup: false

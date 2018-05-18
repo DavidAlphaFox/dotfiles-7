@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+termite -c $HOME/.config/termite/config2p

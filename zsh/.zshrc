@@ -94,11 +94,8 @@ antigen bundle hlissner/zsh-autopair
 if [ -e "/usr/share/nvm/init-nvm.sh" ]; then
   source /usr/share/nvm/init-nvm.sh
 fi
-if [ -e "$HOME/go/bin" ]; then
-  GOPATH="$HOME/go"
-  PATH="$PATH:${GOPATH}/bin"
-fi
 if [ -e "$HOME/go" ]; then
+  GOPATH="$HOME/go"
   PATH="$PATH:$HOME/go/bin"
 fi
 
