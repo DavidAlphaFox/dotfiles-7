@@ -44,9 +44,11 @@ perl-file-mimeinfo
 playerctl
 plymouth-theme-monoarch
 polybar
+qt5-styleplugins
 ranger
 rofi
 rsync
+scrot
 sddm
 seahorse
 stow
@@ -80,4 +82,3 @@ xterm
 yaourt
 zathura-pdf-mupdf
 zip
-scrot
