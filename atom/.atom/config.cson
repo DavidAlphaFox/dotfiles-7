@@ -26,6 +26,7 @@
       ]
     disabledPackages: [
       "tree-view"
+      "image-view"
     ]
     openEmptyEditorOnStart: false
     projectHome: "/home/ihanson/src"
@@ -37,6 +38,7 @@
   editor:
     fontFamily: "Iosevka Term-Lig Medium"
     fontSize: 18
+    preferredLineLength: 120
   "exception-reporting":
     userId: "c8d8d76b-8c90-4336-baaa-dd10cfac0574"
   nuclide:
