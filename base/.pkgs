@@ -28,12 +28,14 @@ iftop
 intel-ucode
 lsb-release
 lsof
+mate-media
 mate-polkit
 mate-power-manager
 mate-session-manager
 mate-settings-daemon
 ncdu
 net-tools
+network-manager-applet
 noto-fonts-emoji
 numlockx
 openssh
@@ -79,4 +81,3 @@ xterm
 yaourt
 zathura-pdf-mupdf
 zip
-network-manager-applet

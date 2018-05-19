@@ -59,7 +59,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1526756413
+session-start=1526760409
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -72,6 +72,8 @@ numlock-state='on'
 [org/mate/desktop/sound]
 input-feedback-sounds=true
 event-sounds=true
+
+theme-name='freedesktop'
 
 [org/mate/desktop/background]
 draw-background=false
@@ -122,5 +124,9 @@ use-system-keyboard-layout=false
 triggers=['<Super>k']
 
 [org/gnome/nm-applet/eap/fbbe1d3c-23c5-4ffc-bd15-4dd41cf91d67]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/05e86a15-e042-4c78-af3a-f6ae02d7352a]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
