@@ -1,3 +1,4 @@
 close_on_unfocus = 1
 mainwindow_yoffset = 32
 mainwindow_xoffset = -16
+mainwindow_decorated = 1
