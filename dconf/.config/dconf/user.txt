@@ -59,7 +59,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1526753789
+session-start=1526754170
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -101,11 +101,22 @@ lang='en'
 font='Noto Color Emoji 18'
 hotkey=['<Control><Shift>e']
 
+favorites=['🇪🇷', '☠']
+
 [desktop/ibus/panel]
-show-icon-on-systray=false
+show-icon-on-systray=true
 
 [org/mate/settings-daemon/plugins/background]
 active=false
 
 [org/mate/settings-daemon/plugins/housekeeping]
 active=false
+
+[desktop/ibus/general]
+version='1.5.18'
+preload-engines=['xkb:us::eng']
+
+use-system-keyboard-layout=true
+
+[desktop/ibus/general/hotkey]
+triggers=['<Super>k']
