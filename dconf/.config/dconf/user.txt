@@ -59,7 +59,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1526754170
+session-start=1526756413
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -90,7 +90,7 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/org/mate/desktop/background/'
+saved-view='/desktop/ibus/panel/xkb-icon-rgba'
 window-height=969
 window-width=1892
 
@@ -99,12 +99,13 @@ partial-match-condition=2
 has-partial-match=true
 lang='en'
 font='Noto Color Emoji 18'
-hotkey=['<Control><Shift>e']
+hotkey=['<Shift><Super>e']
 
-favorites=['🇪🇷', '☠']
+favorites=['🧚🏻\u200d♂️', '💀']
 
 [desktop/ibus/panel]
 show-icon-on-systray=true
+xkb-icon-rgba='#c5c8c6'
 
 [org/mate/settings-daemon/plugins/background]
 active=false
@@ -115,8 +116,11 @@ active=false
 [desktop/ibus/general]
 version='1.5.18'
 preload-engines=['xkb:us::eng']
-
-use-system-keyboard-layout=true
+use-system-keyboard-layout=false
 
 [desktop/ibus/general/hotkey]
 triggers=['<Super>k']
+
+[org/gnome/nm-applet/eap/fbbe1d3c-23c5-4ffc-bd15-4dd41cf91d67]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false

@@ -39,6 +39,7 @@ for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
 done
 sxhkd &
 ibus-daemon -r -d --xim
+nm-applet &
 if [ -e "$HOME/.fehbg" ]; then
   source "$HOME/.fehbg"
 fi

@@ -35,7 +35,7 @@ offset-y = 0
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 2
+line-size = 3
 line-color = ${colors.primary}
 
 border-size = 2
@@ -56,6 +56,7 @@ modules-right = temperature playing back play next volume date
 
 tray-position = right
 tray-padding = 0
+tray-maxsize = 24
 ;tray-transparent = true
 ;tray-background = #0063ff
 
@@ -124,7 +125,7 @@ type = internal/bspwm
 label-focused = %name%
 ;label-focused-background = ${colors.background-alt}
 label-focused-foreground = ${colors.primary}
-label-focused-underline= ${colors.primary}
+label-focused-overline= ${colors.primary}
 label-focused-padding = 2
 
 label-occupied = %name%
