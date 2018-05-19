@@ -71,6 +71,12 @@ sudo tee /etc/modprobe.d/alsa-base.conf <<EOF
 options snd-intel8x0 ac97_clock=48000
 EOF
 
+# dconf sync txt
+sudo mkdir -p /etc/dconf/profile
+sudo tee /etc/dconf/profile/user <<EOF
+service-db:keyfile/user
+EOF
+
 # cleanup
 yaourt -Rns $(yaourt -Qtdq) --noconfirm
 
