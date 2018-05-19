@@ -48,6 +48,8 @@ monospace-font-name='Iosevka Term Medium 11'
 gtk-overlay-scrolling=true
 gtk-theme='oomox-starlight'
 
+gtk-im-module='ibus'
+
 [org/mate/desktop/applications/browser]
 exec='chromium'
 
@@ -63,7 +65,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1526769241
+session-start=1526770462
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -98,7 +100,7 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/org/mate/settings-daemon/plugins/'
+saved-view='/org/mate/desktop/interface/'
 window-height=969
 window-width=938
 
@@ -156,3 +158,7 @@ active=false
 
 [org/mate/settings-daemon/plugins/mouse]
 active=false
+
+[org/gnome/desktop/wm/keybindings]
+switch-input-source=['<Super>k']
+switch-input-source-backward=['<Shift><Super>k']
