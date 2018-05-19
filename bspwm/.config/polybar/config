@@ -72,9 +72,8 @@ cursor-scroll = ns-resize
 
 [module/cal]
 type = custom/script
-exec = date +%H:%M
+exec = date '+%a %l:%M %p' | sed 's/  / /'
 interval = 15
-format-prefix = " "
 format-foreground = ${colors.foreground}
 click-left = gsimplecal
 
@@ -131,7 +130,7 @@ type = internal/bspwm
 label-focused = %name%
 ;label-focused-background = ${colors.background-alt}
 label-focused-foreground = ${colors.primary}
-label-focused-overline= ${colors.primary}
+label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 label-occupied = %name%
