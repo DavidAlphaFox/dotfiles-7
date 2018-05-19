@@ -1,33 +1,9 @@
 [org/freedesktop/color-helper]
 profile-upload-uri=''
 
-[org/gnome/charmap/window-state]
-size=(938, 1016)
-
-[org/gnome/charmap]
-last-char=uint32 58120
-group-by='block'
-font=@ms 'Weather Icons 14'
-
 [org/gnome/desktop/applications/terminal]
 exec-arg='-e'
 exec='termite'
-
-[org/gtk/settings/file-chooser]
-sort-column='size'
-sidebar-width=209
-window-position=(348, 232)
-show-size-column=true
-show-hidden=false
-window-size=(1220, 612)
-sort-directories-first=true
-date-format='regular'
-sort-order='descending'
-location-mode='path-bar'
-
-[org/gtk/settings/color-chooser]
-selected-color=(true, 0.10980392156862745, 0.10980392156862745, 0.10980392156862745, 1.0)
-custom-colors=[(0.59607843137254901, 0.76470588235294112, 0.47450980392156861, 1.0), (0.4392156862745098, 0.5607843137254902, 0.34901960784313724, 1.0), (0.22745098039215686, 0.22745098039215686, 0.22745098039215686, 1.0), (0.10980392156862745, 0.10980392156862745, 0.10980392156862745, 1.0), (0.66666666666666663, 0.69803921568627447, 0.74901960784313726, 1.0), (0.7803921568627451, 0.68235294117647061, 0.58431372549019611, 1.0), (0.83921568627450982, 0.6705882352941176, 0.46666666666666667, 1.0), (0.7803921568627451, 0.58431372549019611, 0.58431372549019611, 1.0)]
 
 [org/mate/power-manager]
 button-power='interactive'
@@ -43,60 +19,7 @@ info-stats-type='discharge-accuracy'
 action-sleep-type-ac='interactive'
 icon-policy='charge'
 
-[org/mate/terminal/profiles/default]
-foreground-color='#AAAAB2B2BFBF'
-copy-selection=true
-visible-name='Default'
-palette='#000000000000:#E0E06C6B7574:#706F8F8F5958:#848485854949:#4B4B8786B9B9:#98985C5CAAAA:#43438F8E9898:#7A7980808989:#3A3A3A3A3A3A:#D6D6ABAB7777:#9898C3C37979:#E8E8EAEA8181:#6161AFAFEFEF:#C6C67878DDDD:#5656B6B6C2C2:#AAAAB2B2BFBF'
-custom-command="tmux -2 new-session -A -s ' '"
-cursor-shape='underline'
-scroll-on-output=true
-use-custom-command=true
-scrollbar-position='hidden'
-exit-action='close'
-default-show-menubar=false
-font='Iosevka Term Medium 16'
-use-custom-default-size=false
-allow-bold=false
-scrollback-unlimited=true
-use-system-font=false
-bold-color-same-as-fg=true
-bold-color='#000000000000'
-background-color='#262626262626'
-use-theme-colors=false
-
-[org/mate/settings-daemon/plugins/keyboard]
-active=true
-
-[org/mate/settings-daemon/plugins/mouse]
-active=false
-
 [org/mate/settings-daemon/plugins/xrdb]
-active=false
-
-[org/mate/settings-daemon/plugins/media-keys]
-previous='disabled'
-volume-mute='disabled'
-next='disabled'
-screenreader='disabled'
-play='disabled'
-volume-up='disabled'
-logout='disabled'
-calculator='disabled'
-email='disabled'
-power='disabled'
-media='disabled'
-volume-down='disabled'
-www='disabled'
-search='disabled'
-help='disabled'
-home='disabled'
-stop='disabled'
-screensaver='disabled'
-magnifier='disabled'
-pause='disabled'
-eject='disabled'
-on-screen-keyboard='disabled'
 active=false
 
 [org/mate/settings-daemon/plugins/a11y-keyboard]
@@ -111,19 +34,6 @@ active=false
 [org/mate/settings-daemon/plugins/smartcard]
 active=false
 
-[org/mate/calc]
-target-currency='AUD'
-show-zeroes=false
-source-currency='DZD'
-show-thousands=false
-button-mode='advanced'
-target-units='radian'
-word-size=64
-number-format='automatic'
-angle-units='degrees'
-source-units='degree'
-accuracy=9
-
 [org/mate/desktop/interface]
 menus-have-icons=true
 gtk-decoration-layout='menu:close'
@@ -135,7 +45,7 @@ gtk-overlay-scrolling=true
 gtk-theme='oomox-starlight'
 
 [org/mate/desktop/applications/browser]
-exec='google-chrome-stable'
+exec='chromium'
 
 [org/mate/desktop/applications/terminal]
 exec-arg='-e'
@@ -149,7 +59,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1526751365
+session-start=1526753789
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -163,36 +73,9 @@ numlock-state='on'
 input-feedback-sounds=true
 event-sounds=true
 
-[org/mate/desktop/accessibility/keyboard]
-slowkeys-beep-press=true
-mousekeys-accel-time=1200
-bouncekeys-beep-reject=true
-slowkeys-beep-reject=false
-togglekeys-enable=false
-enable=false
-bouncekeys-enable=false
-stickykeys-enable=false
-feature-state-change-beep=false
-slowkeys-beep-accept=true
-bouncekeys-delay=300
-mousekeys-max-speed=750
-mousekeys-enable=false
-timeout-enable=false
-slowkeys-delay=300
-stickykeys-modifier-beep=true
-stickykeys-two-key-off=true
-mousekeys-init-delay=160
-timeout=120
-slowkeys-enable=false
-
 [org/mate/desktop/background]
 draw-background=false
 show-desktop-icons=false
-color-shading-type='vertical-gradient'
-primary-color='rgb(88,145,188)'
-picture-options='stretched'
-picture-filename='Pictures/bg.png'
-secondary-color='rgb(60,143,37)'
 
 [org/mate/desktop/font-rendering]
 antialiasing='rgba'
@@ -203,36 +86,26 @@ hinting='slight'
 server-auto-retrieve=false
 server-auto-publish=false
 
-[apps/seahorse/windows/key-manager]
-width=1892
-height=1016
-
-[apps/seahorse/listing]
-sidebar-width=200
-item-filter=''
-keyrings-selected=['secret-service://login', 'pkcs11:model=p11-kit-trust;manufacturer=PKCS%2311%20Kit;serial=1;token=Default%20Trust', 'secret-service:///org/freedesktop/secrets/collection/Default']
-sidebar-visible=true
-
 [ca/desrt/dconf-editor]
-saved-view='/org/mate/desktop/interface/'
 show-warning=false
-bookmarks=['/org/mate/desktop/session/required-components/windowmanager', '/org/mate/desktop/', '/org/mate/desktop/interface/']
-window-height=969
-window-width=1892
 window-is-maximized=false
 
-[desktop/ibus/general]
-engines-order=['xkb:us:dvorak:eng', 'xkb:us::eng']
-preload-engines=['xkb:us::eng']
-version='1.5.18'
+saved-view='/org/mate/desktop/background/'
+window-height=969
+window-width=1892
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
 has-partial-match=true
-favorites=['🙂', '😃', '🐶', '🐴', '🍒', '🐌', '🔬', '🦄', '😝', '💎', '🍇', '🍩', '🙋', '🙋🏻', '😢', '➕', '🍀', '💣', '🇦🇺', '🇺🇸', '🌵', '🈴', '🔑', '🐛', '🐜', '🦐', '🐚', '🈺', '🈲', '😒', '☠️', '🐲', '🦋', '*️⃣', '#️⃣', '🚫', '🍄', '🏠', '🏡', '🍂', '🍃', '🍁', '💥', '☺️', '🍋', '😿', '😸', '🧙', '🧙\u200d♀️', '👎', '🍆', '🥚', '🦈', '💩', '⬅️', '🐙', '👨\u200d💻', '🐊', '🥃', '🌠', '🐞', '🦀', '🐎', '🔝', '👻', '🍏', '⛺', '🦉', '💵', '🤖', '🚀', '🐧', '🐬', '🙋🏾', '👊🏾', '😕', '😁', '🦑', '🦌', '🦂', '🦎', '🐡', '🐠', 'Ⓜ️', '\n', '🐰', '🚠', '😋', '👍🏼', '👍', '😨', '🗽', '🐈', '🤔', '🤦', '🕷️', '🍺', '⚙️', '💰', '🆕', '⬆️', '🔨', '😎', '🔄', '😺', '🤡', '📌', '📍', '🤢', '🌎', '🤦🏼', '▶️', '👾', '🙈', '🐱', '🗝️', '😲', '🐋', '😹', '🃏', '😂', '🤐', '😇', '🐐', '😬', '➡️', '💫', '⚠️', '🔧', '😈', '🦆', '⚛️', '💉', '🏚️', '💾', '🗑️', '🗜️', '🎧', '🛠️', '📡', '🎹', '🎼', '🎙️', '📻', '🎷', '📽️', '♂️', '♀️', '⭕', '◽', '🌟', '⭐', '☯️', '☄️', '⚗️', '💀', '🤓', '😜', '🛰️', '🧐', '♦️', '♣️', '🔭', '♥️', '♠️', '🌱', '🔥', '🌝', '💯', '🌸']
 lang='en'
 font='Noto Color Emoji 18'
 hotkey=['<Control><Shift>e']
 
 [desktop/ibus/panel]
 show-icon-on-systray=false
+
+[org/mate/settings-daemon/plugins/background]
+active=false
+
+[org/mate/settings-daemon/plugins/housekeeping]
+active=false
