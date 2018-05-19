@@ -52,13 +52,11 @@ font-1 = Font Awesome 5 Free Solid:size=14;4
 
 modules-left = bspwm xwindow
 modules-center =
-modules-right = temperature playing back play next date
+modules-right = temperature playing back play next cal
 
 tray-position = right
 tray-padding = 0
 tray-maxsize = 24
-;tray-transparent = true
-;tray-background = #0063ff
 
 wm-restack = bspwm
 override-redirect = false
@@ -71,6 +69,14 @@ scroll-down = bspwm-deskprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[module/cal]
+type = custom/script
+exec = date +%H:%M
+interval = 15
+format-prefix = " "
+format-foreground = ${colors.foreground}
+click-left = gsimplecal
 
 [module/playing]
 type = custom/script

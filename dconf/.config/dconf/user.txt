@@ -109,6 +109,8 @@ favorites=['🧚🏻\u200d♂️', '💀']
 show-icon-on-systray=true
 xkb-icon-rgba='#c5c8c6'
 
+show=0
+
 [org/mate/settings-daemon/plugins/background]
 active=false
 
