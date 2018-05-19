@@ -61,9 +61,9 @@ tray-maxsize = 24
 wm-restack = bspwm
 override-redirect = false
 
-click-left = rofi -show drun -show-icons
-click-middle = rofi -show window -show-icons
-click-right = rofi -show run
+;click-left = rofi -show drun -show-icons
+;click-middle = rofi -show window -show-icons
+;click-right = rofi -show run
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 

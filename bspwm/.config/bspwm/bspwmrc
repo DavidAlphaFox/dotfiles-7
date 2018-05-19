@@ -22,6 +22,7 @@ bspc rule -a Dia state=floating
 bspc rule -a Ibus-extension-gtk3 state=floating 
 bspc rule -a Godot state=floating
 bspc rule -a Pavucontrol state=floating
+bspc rule -a Nm-connection-editor state=floating
 
 # xrdb
 function get_xrdb() {
