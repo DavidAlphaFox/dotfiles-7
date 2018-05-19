@@ -2,7 +2,6 @@ alsa-plugins
 alsa-tools
 alsa-utils
 antigen-git
-arc-icon-theme
 archlinux-menus
 atool
 base-devel-meta
@@ -21,7 +20,6 @@ dos2unix
 dunst
 duperemove
 feh
-gnome-themes-extra
 grub
 gvfs
 highlight
@@ -68,7 +66,6 @@ vim-syntastic
 vim-tagbar
 w3m
 wget
-wireless_tools
 xarchiver
 xcursor-flatbed
 xdo
