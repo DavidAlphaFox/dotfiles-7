@@ -17,7 +17,9 @@ info-history-type='charge'
 button-lid-battery='blank'
 info-stats-type='discharge-accuracy'
 action-sleep-type-ac='interactive'
-icon-policy='charge'
+icon-policy='present'
+
+idle-dim-ac=false
 
 [org/mate/settings-daemon/plugins/xrdb]
 active=false
@@ -27,6 +29,8 @@ active=false
 
 [org/mate/settings-daemon/plugins/xrandr]
 turn-on-external-monitors-at-startup=true
+
+active=false
 
 [org/mate/settings-daemon/plugins/typing-break]
 active=false
@@ -59,7 +63,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1526760409
+session-start=1526769241
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -73,11 +77,13 @@ numlock-state='on'
 input-feedback-sounds=true
 event-sounds=true
 
-theme-name='freedesktop'
+theme-name='__custom'
 
 [org/mate/desktop/background]
 draw-background=false
 show-desktop-icons=false
+
+background-fade=false
 
 [org/mate/desktop/font-rendering]
 antialiasing='rgba'
@@ -92,9 +98,9 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/desktop/ibus/panel/xkb-icon-rgba'
+saved-view='/org/mate/settings-daemon/plugins/'
 window-height=969
-window-width=1892
+window-width=938
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
@@ -132,3 +138,21 @@ ignore-phase2-ca-cert=false
 [org/gnome/nm-applet/eap/05e86a15-e042-4c78-af3a-f6ae02d7352a]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
+
+[org/mate/settings-daemon/plugins/media-keys]
+active=false
+
+[org/mate/settings-daemon/plugins/keybindings]
+active=false
+
+[org/mate/settings-daemon/plugins/keyboard]
+active=false
+
+[org/mate/settings-daemon/plugins/datetime]
+active=false
+
+[org/mate/settings-daemon/plugins/clipboard]
+active=false
+
+[org/mate/settings-daemon/plugins/mouse]
+active=false
