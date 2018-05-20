@@ -25,7 +25,6 @@ X-MATE-WMName=bspwm
 # back compat only 
 X-MATE-Autostart-Phase=WindowManager
 X-MATE-Provides=windowmanager
-X-MATE-Autostart-Notify=true
 EOF
 
 # plymouth

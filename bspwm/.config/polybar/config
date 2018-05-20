@@ -47,8 +47,9 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = Iosevka Type:style=Bold:size=14;3
+font-0 = Iosevka Type:style=Bold:size=13;3
 font-1 = Font Awesome 5 Free Solid:size=14;4
+font-2 = Iosevka Type:style=Bold:size=14;3
 
 modules-left = bspwm xwindow
 modules-center =
@@ -61,9 +62,6 @@ tray-maxsize = 24
 wm-restack = bspwm
 override-redirect = false
 
-;click-left = rofi -show drun -show-icons
-;click-middle = rofi -show window -show-icons
-;click-right = rofi -show run
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
@@ -73,7 +71,7 @@ cursor-scroll = ns-resize
 [module/cal]
 type = custom/script
 exec = date '+%a %l:%M %p' | sed 's/  / /'
-interval = 15
+interval = 30
 format-foreground = ${colors.foreground}
 click-left = gsimplecal
 
@@ -112,23 +110,12 @@ click-left = playerctl next
 type = internal/xwindow
 label = %title:0:80:…%
 label-foreground = ${colors.foreground}
-;label-foreground = ${colors.primary}
-
-[module/filesystem]
-type = internal/fs
-interval = 25
-
-mount-0 = /
-
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
+label-font = 3
 
 [module/bspwm]
 type = internal/bspwm
 
 label-focused = %name%
-;label-focused-background = ${colors.background-alt}
 label-focused-foreground = ${colors.primary}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
@@ -175,151 +162,6 @@ label-empty-padding = 2
 ;bar-empty = ─
 ;bar-empty-font = 2
 ;bar-empty-foreground = ${colors.foreground-alt}
-
-;[module/backlight-acpi]
-;inherit = module/xbacklight
-;type = internal/backlight
-;card = intel_backlight
-
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
-format-underline = #f90000
-label = %percentage%%
-
-[module/memory]
-type = internal/memory
-interval = 5
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
-format-underline = #4bffdc
-label = %percentage_used%%
-
-[module/wlan]
-type = internal/network
-interface = enp0s3
-interval = 4
-
-format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
-label-connected = %essid%
-
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
-
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
-
-[module/eth]
-type = internal/network
-interface = enp0s3
-interval = 4
-
-format-connected-underline = #55aa55
-format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground}
-label-connected = %local_ip%
-
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-label-disconnected = 
-label-disconnected-foreground = ${colors.alert}
-
-[module/eno]
-type = internal/network
-interface = eno1
-interval = 4
-
-format-connected-underline = #55aa55
-format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground}
-label-connected = %local_ip%
-
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-label-disconnected = 
-label-disconnected-foreground = ${colors.alert}
-
-[module/date]
-type = internal/date
-interval = 15
-
-date =
-date-alt = " %a %b %d"
-
-time = " %H:%M"
-time-alt = "  %I:%M %p"
-
-format-prefix =
-format-prefix-foreground = ${colors.foreground}
-
-label = %date%%time%
-
-[module/volume]
-type = internal/volume
-
-format-volume = <label-volume> <bar-volume>
-;label-volume = 
-label-volume = 
-label-volume-foreground = ${colors.foreground}
-
-format-muted-foreground = ${colors.foreground-alt}
-label-muted = 
-
-bar-volume-width = 6
-bar-volume-foreground-0 = ${colors.green}
-bar-volume-foreground-1 = ${colors.green}
-bar-volume-foreground-2 = ${colors.green}
-bar-volume-foreground-3 = ${colors.green}
-bar-volume-foreground-4 = ${colors.yellow}
-bar-volume-foreground-5 = ${colors.orange}
-bar-volume-foreground-6 = ${colors.red}
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 1
-bar-volume-fill = ━
-bar-volume-fill-font = 1
-bar-volume-empty = ┅
-bar-volume-empty-font = 1
-bar-volume-empty-foreground = ${colors.foreground-alt}
-
-[module/battery]
-type = internal/battery
-battery = BAT0
-adapter = AC
-full-at = 98
-
-format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
-
-format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
-
-format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
-
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
-animation-charging-framerate = 750
 
 [module/temperature]
 type = internal/temperature

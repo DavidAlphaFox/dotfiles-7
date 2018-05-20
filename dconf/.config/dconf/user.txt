@@ -65,7 +65,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1526771751
+session-start=1526773771
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -162,3 +162,24 @@ active=false
 [org/gnome/desktop/wm/keybindings]
 switch-input-source=['<Super>k']
 switch-input-source-backward=['<Shift><Super>k']
+
+[apps/seahorse/listing]
+keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/secrets/collection/Default_5fkeyring']
+
+sidebar-width=197
+
+[org/gtk/settings/file-chooser]
+window-position=(303, 47)
+window-size=(1310, 982)
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+show-size-column=true
+sidebar-width=182
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+
+[apps/seahorse/windows/key-manager]
+width=640
+height=476
