@@ -1,0 +1,18 @@
+#!/bin/zsh
+
+UPS="$(checkupdates)"
+if [ -n "$UPS" ]; then
+  NOTIFY=1
+  echo $UPS
+fi
+if [ -n "$NOTIFY" ]; then
+  AUPS="$(yaourt -Qua)"
+  if [ -n "$AUPS" ]; then
+    NOTIFY = 1
+    echo $AUPS
+  fi
+fi
+if [ -n "$NOTIFY" ]; then
+  notify-info "Updates" "Software updates are available"
+fi
+

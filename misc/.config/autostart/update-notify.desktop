@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=.local/bin/update-notify
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[en_US]=Update notify
+Name=Update notify
+Comment[en_US]=check for updates
+Comment=check for updates
