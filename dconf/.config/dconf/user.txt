@@ -65,7 +65,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1526773771
+session-start=1526794088
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -100,8 +100,8 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/org/mate/desktop/interface/'
-window-height=969
+saved-view='/org/mate/desktop/peripherals/mouse/'
+window-height=453
 window-width=938
 
 [desktop/ibus/panel/emoji]
@@ -114,7 +114,7 @@ hotkey=['<Shift><Super>e']
 favorites=['🧚🏻\u200d♂️', '💀']
 
 [desktop/ibus/panel]
-show-icon-on-systray=true
+show-icon-on-systray=false
 xkb-icon-rgba='#c5c8c6'
 
 show=0
@@ -157,7 +157,6 @@ active=false
 active=false
 
 [org/mate/settings-daemon/plugins/mouse]
-active=false
 
 [org/gnome/desktop/wm/keybindings]
 switch-input-source=['<Super>k']
@@ -169,11 +168,11 @@ keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/
 sidebar-width=197
 
 [org/gtk/settings/file-chooser]
-window-position=(303, 47)
+window-position=(472, 65)
 window-size=(1310, 982)
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 sidebar-width=182
 sort-column='name'
@@ -183,3 +182,6 @@ sort-order='ascending'
 [apps/seahorse/windows/key-manager]
 width=640
 height=476
+
+[org/mate/desktop/peripherals/mouse]
+cursor-theme='FlatbedCursors-Black'
