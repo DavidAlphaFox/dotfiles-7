@@ -22,9 +22,6 @@ Exec=bspwm
 NoDisplay=true
 # name we put on the WM spec check window
 X-MATE-WMName=bspwm
-# back compat only 
-X-MATE-Autostart-Phase=WindowManager
-X-MATE-Provides=windowmanager
 EOF
 
 # plymouth
