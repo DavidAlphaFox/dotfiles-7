@@ -65,7 +65,7 @@ override-redirect = false
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
-cursor-click = pointer
+cursor-click = default
 cursor-scroll = ns-resize
 
 [module/cal]

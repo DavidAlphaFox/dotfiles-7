@@ -100,8 +100,8 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/org/mate/desktop/peripherals/mouse/'
-window-height=453
+saved-view='/org/mate/desktop/'
+window-height=969
 window-width=938
 
 [desktop/ibus/panel/emoji]
@@ -168,7 +168,7 @@ keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/
 sidebar-width=197
 
 [org/gtk/settings/file-chooser]
-window-position=(472, 65)
+window-position=(303, 47)
 window-size=(1310, 982)
 date-format='regular'
 location-mode='path-bar'
