@@ -49,5 +49,5 @@ super + Insert
 
 # reload keybindings
 super + shift + r
-  pkill -USR1 -x sxhkd && notify-info 'sxhkd' 'reloading keybindings'
+  ~/.local/bin/reload
 

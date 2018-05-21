@@ -7,17 +7,17 @@ exec='termite'
 
 [org/mate/power-manager]
 button-power='interactive'
-info-last-device='wakeups'
+info-last-device='/org/freedesktop/UPower/devices/battery_BAT0'
 button-lid-ac='blank'
 action-low-ups='interactive'
 action-critical-battery='shutdown'
 button-suspend='nothing'
-info-page-number=3
+info-page-number=0
 info-history-type='charge'
 button-lid-battery='blank'
 info-stats-type='discharge-accuracy'
 action-sleep-type-ac='interactive'
-icon-policy='present'
+icon-policy='charge'
 
 idle-dim-ac=false
 
@@ -65,7 +65,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1526794088
+session-start=1526929939
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -185,3 +185,7 @@ height=476
 
 [org/mate/desktop/peripherals/mouse]
 cursor-theme='FlatbedCursors-Black'
+
+[org/gnome/nm-applet/eap/358befb0-fd10-4cee-a2f6-65e9486d73cf]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
