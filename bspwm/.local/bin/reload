@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+pkill -USR1 -x sxhkd
+pkill -USR1 -x polybar
+notify-info 'reload' 'reloaded bar and keybindings'
