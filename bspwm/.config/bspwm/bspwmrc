@@ -52,6 +52,4 @@ sxhkd &
 if [ -e "$HOME/.fehbg" ]; then
   source "$HOME/.fehbg"
 fi
-# ibus input
-ibus-daemon -rd
 
