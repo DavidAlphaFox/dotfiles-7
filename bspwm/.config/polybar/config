@@ -196,12 +196,15 @@ label-close-foreground = ${colors.foreground-alt}
 label-separator = |
 label-separator-foreground = ${colors.background-alt}
 
-menu-0-0 = 
+menu-0-0 = 
 menu-0-0-foreground = ${colors.foreground}
-menu-0-0-exec = mate-session-save --logout-dialog
-menu-0-1 = 
+menu-0-0-exec = ~/.local/bin/reload
+menu-0-1 = 
 menu-0-1-foreground = ${colors.foreground}
-menu-0-1-exec = mate-session-save  --shutdown-dialog
+menu-0-1-exec = mate-session-save --logout-dialog
+menu-0-2 = 
+menu-0-2-foreground = ${colors.foreground}
+menu-0-2-exec = mate-session-save  --shutdown-dialog
 
 [settings]
 screenchange-reload = true
