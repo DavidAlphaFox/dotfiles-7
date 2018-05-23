@@ -51,9 +51,9 @@ font-0 = Iosevka Type:size=13;3
 font-1 = Font Awesome 5 Free Solid:size=13;4
 font-2 = Iosevka Type:style=Bold:size=14;3
 
-modules-left = bspwm xwindow
+modules-left = bspwm powermenu xwindow
 modules-center =
-modules-right = temperature playing back play next cal powermenu
+modules-right = playing back play next temperature cal
 
 tray-position = right
 tray-padding = 0
@@ -169,7 +169,7 @@ thermal-zone = 2
 warn-temperature = 75
 
 format = 
-format-underline = #f50a4d
+format-underline = ${colors.orange}
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
