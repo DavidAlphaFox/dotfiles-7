@@ -109,9 +109,9 @@ partial-match-condition=2
 has-partial-match=true
 lang='en'
 font='Noto Color Emoji 18'
-hotkey=['<Shift><Super>e']
+hotkey=['<Super>e']
 
-favorites=['🧚🏻\u200d♂️', '💀']
+favorites=['💀']
 
 [desktop/ibus/panel]
 show-icon-on-systray=false
