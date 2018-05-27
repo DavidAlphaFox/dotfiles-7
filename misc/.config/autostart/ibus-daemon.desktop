@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=ibus-daemon -rd
+Exec=ibus-daemon -rd --xim
 Hidden=false
 X-MATE-Autostart-enabled=true
 Name[en_US]=IBus
