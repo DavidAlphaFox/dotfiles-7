@@ -8,7 +8,7 @@ fi
 if [ -n "$NOTIFY" ]; then
   AUPS="$(yaourt -Qua)"
   if [ -n "$AUPS" ]; then
-    NOTIFY = 1
+    NOTIFY=1
     echo $AUPS
   fi
 fi
