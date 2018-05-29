@@ -189,8 +189,8 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
-label-close = 
+label-open = 
+label-close = 
 label-close-foreground = ${colors.foreground-alt}
 label-separator = |
 label-separator-foreground = ${colors.background-alt}
