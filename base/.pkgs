@@ -20,8 +20,8 @@ dos2unix
 dunst
 duperemove
 feh
-gsimplecal
 grub
+gsimplecal
 gvfs
 highlight
 ibus
@@ -41,6 +41,7 @@ noto-fonts-emoji
 numlockx
 openssh
 otf-font-awesome
+pacman-contrib
 perl-file-mimeinfo
 playerctl
 plymouth-theme-monoarch
