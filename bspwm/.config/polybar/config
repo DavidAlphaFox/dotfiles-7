@@ -26,7 +26,7 @@ alert = ${xrdb:color1}
 [bar/archi3]
 monitor = ${env:MONITOR:VGA-1}
 width = 100%
-height = 32
+height = 28
 offset-x = 0
 offset-y = 0
 ;radius = 16.0
@@ -56,7 +56,7 @@ modules-center =
 modules-right = playing back play next temperature cal
 
 tray-position = right
-tray-padding = 0
+tray-padding = 2
 tray-maxsize = 24
 
 wm-restack = bspwm
