@@ -3,16 +3,18 @@
 UPS="$(checkupdates)"
 if [ -n "$UPS" ]; then
   NOTIFY=1
-  echo $UPS
+  echo -n 
 fi
-if [ -n "$NOTIFY" ]; then
-  AUPS="$(yaourt -Qua)"
+if [ -z "$NOTIFY" ]; then
+  AUPS="$(TERM=linux yaourt -Qua)"
   if [ -n "$AUPS" ]; then
     NOTIFY=1
-    echo $AUPS
+    echo -n 
   fi
 fi
 if [ -n "$NOTIFY" ]; then
   notify-info "Updates" "Software updates are available"
+else
+  exit 1
 fi
 

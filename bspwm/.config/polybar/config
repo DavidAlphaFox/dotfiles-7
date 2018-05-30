@@ -54,7 +54,7 @@ font-3 = font\-logos:style=logos:size=16;4
 
 modules-left = bspwm powermenu xwindow
 modules-center =
-modules-right = playing back play next temperature cal
+modules-right = playing back play next temperature updates cal
 
 tray-position = right
 tray-padding = 2
@@ -75,6 +75,12 @@ exec = date '+%a %l:%M %p' | sed 's/  / /'
 interval = 30
 format-foreground = ${colors.foreground}
 click-left = gsimplecal
+
+[module/updates]
+type = custom/script
+exec = ~/.local/bin/update-notify
+interval = 3600
+click-left = termite -e 'yaourt -Syu'
 
 [module/playing]
 type = custom/script
