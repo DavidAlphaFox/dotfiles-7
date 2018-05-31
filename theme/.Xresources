@@ -34,7 +34,7 @@ rofi.scroll-method:     1
 ! State:           'bg',   'fg',   'bgalt','hlbg', 'hlfg'
 rofi.color-normal: #212121,#373b41,#212121,#212121,#c5c8c6
 rofi.color-active: #212121,#c586c6,#212121,#212121,#4d7f99
-rofi.color-window: #212121,#707880,#212121
+rofi.color-window: #212121,#373b41,#212121
 rofi.display-drun: 
 rofi.display-run: 
 rofi.display-window: 
