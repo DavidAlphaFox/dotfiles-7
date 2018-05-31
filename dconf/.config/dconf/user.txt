@@ -46,7 +46,7 @@ cursor-blink-time=1000
 icon-theme='oomox-starlight'
 monospace-font-name='Iosevka Term Medium 11'
 gtk-overlay-scrolling=true
-gtk-theme='oomox-starlight'
+gtk-theme='oomox-dark'
 
 gtk-im-module='ibus'
 
@@ -65,7 +65,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1527116929
+session-start=1527733774
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -100,9 +100,9 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/org/mate/desktop/'
-window-height=969
-window-width=938
+saved-view='/org/mate/desktop/interface/'
+window-height=734
+window-width=934
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
@@ -163,7 +163,7 @@ switch-input-source=['<Super>k']
 switch-input-source-backward=['<Shift><Super>k']
 
 [apps/seahorse/listing]
-keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/secrets/collection/Default_5fkeyring']
+keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/secrets/collection/login']
 
 sidebar-width=197
 
