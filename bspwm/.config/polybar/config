@@ -124,7 +124,7 @@ label-font = 3
 type = internal/bspwm
 
 label-focused = %name%
-label-focused-foreground = ${colors.primary}
+label-focused-foreground = ${colors.foreground}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
