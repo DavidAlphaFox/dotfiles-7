@@ -54,7 +54,7 @@ font-3 = font\-logos:style=logos:size=16;4
 
 modules-left = bspwm powermenu xwindow
 modules-center =
-modules-right = playing back play next temperature cal updates
+modules-right = playing back play next cal temperature updates
 
 tray-position = right
 tray-padding = 2
@@ -179,7 +179,7 @@ warn-temperature = 75
 format = 
 format-underline = ${colors.orange}
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
+;format-warn-underline = ${self.format-underline}
 
 label = %temperature%
 label-warn = %temperature%
