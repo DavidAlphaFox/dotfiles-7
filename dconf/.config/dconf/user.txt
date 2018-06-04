@@ -67,7 +67,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528142410
+session-start=1528151263
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -165,7 +165,7 @@ switch-input-source=['<Super>k']
 switch-input-source-backward=['<Shift><Super>k']
 
 [apps/seahorse/listing]
-keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/secrets/collection/login']
+keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/secrets/collection/Default_5fkeyring', 'secret-service:///org/freedesktop/secrets/collection/login']
 
 sidebar-width=197
 
@@ -201,7 +201,7 @@ use-system-defaults=false
 
 current-settings-page=3
 
-theme='/home/ihanson/.local/share/onboard/themes/Blackboard.theme'
+theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
 layout='/usr/share/onboard/layouts/Full Keyboard.onboard'
 
@@ -215,15 +215,15 @@ system-theme-tracking-enabled=false
 
 [org/onboard/theme-settings]
 color-scheme='/usr/share/onboard/themes/Charcoal.colors'
-key-fill-gradient=10.0
+key-fill-gradient=8.0
 key-stroke-gradient=0.0
-key-gradient-direction=0.0
+key-gradient-direction=-3.0
 
 key-style='flat'
 
 roundrect-radius=8.0
 
-key-size=95.0
+key-size=92.0
 
 key-shadow-strength=0.0
 
@@ -235,7 +235,7 @@ key-label-font='Iosevka Type'
 
 key-stroke-width=100.0
 
-key-label-overrides=['LWIN::', 'RWIN::']
+key-label-overrides=@as []
 
 [org/onboard/window/landscape]
 x=540
@@ -247,7 +247,7 @@ width=773
 dock-expand=true
 
 [org/onboard/keyboard]
-show-click-buttons=true
+show-click-buttons=false
 
 [org/gnome/desktop/interface]
 toolkit-accessibility=true
@@ -296,3 +296,6 @@ enabled=false
 
 [org/onboard/window/portrait]
 dock-expand=true
+
+[org/onboard/typing-assistance/word-suggestions]
+enabled=false

@@ -26,7 +26,8 @@ bspc rule -a Nm-connection-editor state=floating
 bspc rule -a calfjackhost state=floating
 bspc rule -a "VMPK-Virtual MIDI Piano Keyboard" state=floating
 bspc rule -a Galculator state=floating
-bspc rule -a "Onboard Preferences" state=floating
+bspc rule -a "-c" state=floating
+bspc rule -a Rofi state=floating
 
 # xrdb
 function get_xrdb() {
