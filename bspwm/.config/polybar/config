@@ -197,12 +197,12 @@ expand-right = true
 
 format-spacing = 1
 
-;label-open = 
-label-open = 
-;label-close = 
-label-close = 
-label-open-font = 4
-label-close-font = 4
+label-open = 
+;label-open = 
+label-close = 
+;label-close = 
+;label-open-font = 4
+;label-close-font = 4
 label-close-foreground = ${colors.foreground-alt}
 label-separator = |
 label-separator-foreground = ${colors.background-alt}
