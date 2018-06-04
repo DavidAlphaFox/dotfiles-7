@@ -26,6 +26,7 @@ bspc rule -a Nm-connection-editor state=floating
 bspc rule -a calfjackhost state=floating
 bspc rule -a "VMPK-Virtual MIDI Piano Keyboard" state=floating
 bspc rule -a Galculator state=floating
+bspc rule -a "Onboard Preferences" state=floating
 
 # xrdb
 function get_xrdb() {
@@ -50,6 +51,7 @@ done
 
 # keybindings
 sxhkd &
+onboard &
 
 # background image
 if [ -e "$HOME/.fehbg" ]; then

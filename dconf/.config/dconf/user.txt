@@ -50,6 +50,8 @@ gtk-theme='oomox-dark'
 
 gtk-im-module='ibus'
 
+accessibility=true
+
 [org/mate/desktop/applications/browser]
 exec='chromium'
 
@@ -65,7 +67,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1527733774
+session-start=1528142410
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -101,8 +103,8 @@ show-warning=false
 window-is-maximized=false
 
 saved-view='/org/mate/desktop/interface/'
-window-height=734
-window-width=934
+window-height=973
+window-width=938
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
@@ -189,3 +191,108 @@ cursor-theme='FlatbedCursors-Black'
 [org/gnome/nm-applet/eap/358befb0-fd10-4cee-a2f6-65e9486d73cf]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
+
+[org/gtk/settings/color-chooser]
+
+[org/onboard]
+schema-version='2.3'
+system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
+use-system-defaults=false
+
+current-settings-page=3
+
+theme='/home/ihanson/.local/share/onboard/themes/Blackboard.theme'
+
+layout='/usr/share/onboard/layouts/Full Keyboard.onboard'
+
+xembed-onboard=false
+
+status-icon-provider='auto'
+
+show-tooltips=true
+
+system-theme-tracking-enabled=false
+
+[org/onboard/theme-settings]
+color-scheme='/usr/share/onboard/themes/Charcoal.colors'
+key-fill-gradient=10.0
+key-stroke-gradient=0.0
+key-gradient-direction=0.0
+
+key-style='flat'
+
+roundrect-radius=8.0
+
+key-size=95.0
+
+key-shadow-strength=0.0
+
+key-shadow-size=0.0
+
+background-gradient=0.0
+
+key-label-font='Iosevka Type'
+
+key-stroke-width=100.0
+
+key-label-overrides=['LWIN::', 'RWIN::']
+
+[org/onboard/window/landscape]
+x=540
+y=750
+
+height=307
+width=773
+
+dock-expand=true
+
+[org/onboard/keyboard]
+show-click-buttons=true
+
+[org/gnome/desktop/interface]
+toolkit-accessibility=true
+
+[org/onboard/auto-show]
+enabled=true
+
+hide-on-key-press=true
+
+reposition-method-floating='prevent-occlusion'
+
+hide-on-key-press-pause=600.0
+
+tablet-mode-detection-enabled=false
+
+[org/onboard/icon-palette]
+in-use=false
+
+window-handles='M'
+
+[org/onboard/icon-palette/landscape]
+x=1433
+y=271
+
+[org/gnome/desktop/screensaver]
+embedded-keyboard-enabled=false
+embedded-keyboard-command='onboard --xid'
+
+[org/onboard/window]
+docking-enabled=true
+force-to-top=true
+transparent-background=true
+
+docking-shrink-workarea=false
+
+docking-edge='bottom'
+
+window-decoration=false
+
+background-transparency=0.0
+
+window-handles='M'
+
+[org/onboard/scanner]
+enabled=false
+
+[org/onboard/window/portrait]
+dock-expand=true
