@@ -54,7 +54,7 @@ font-3 = font\-logos:style=logos:size=16;4
 
 modules-left = bspwm powermenu xwindow
 modules-center =
-modules-right = playing back play next cal temperature updates
+modules-right = playing back play next cal onboard temperature updates
 
 tray-position = right
 tray-padding = 2
@@ -68,6 +68,12 @@ scroll-down = bspwm-deskprev
 
 cursor-click = default
 cursor-scroll = ns-resize
+
+[module/onboard]
+type = custom/script
+exec = echo 
+click-left = onboard
+interval = 3600
 
 [module/cal]
 type = custom/script
