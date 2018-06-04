@@ -11,7 +11,11 @@ super + {_,shift +} space
   rofi -show {run,drun}
 # filemanager
 super + f
-  termite -e ranger 
+  termite -e ranger
+
+# calculator
+super + c
+  galculator
 
 # switch window dialog
 super + Tab

@@ -79,7 +79,7 @@ click-left = gsimplecal
 [module/updates]
 type = custom/script
 exec = ~/.local/bin/update-notify
-interval = 3600
+interval = 14400
 click-left = termite -e 'yaourt -Syu --aur'
 
 [module/playing]
