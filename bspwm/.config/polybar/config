@@ -72,7 +72,7 @@ cursor-scroll = ns-resize
 [module/onboard]
 type = custom/script
 exec = echo 
-click-left = onboard
+click-left = onboard &
 interval = 3600
 
 [module/cal]

@@ -52,7 +52,6 @@ done
 
 # keybindings
 sxhkd &
-onboard &
 
 # background image
 if [ -e "$HOME/.fehbg" ]; then
