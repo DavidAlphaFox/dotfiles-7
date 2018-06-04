@@ -67,7 +67,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528153476
+session-start=1528155173
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -199,7 +199,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=6
+current-settings-page=3
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -218,7 +218,7 @@ snippets=@as []
 show-status-icon=false
 
 [org/onboard/theme-settings]
-color-scheme='/usr/share/onboard/themes/Charcoal.colors'
+color-scheme='/home/ihanson/.local/share/onboard/themes/Umbriel.colors'
 key-fill-gradient=8.0
 key-stroke-gradient=0.0
 key-gradient-direction=-3.0
@@ -250,7 +250,7 @@ width=773
 
 dock-expand=true
 
-dock-height=287
+dock-height=274
 
 [org/onboard/keyboard]
 show-click-buttons=true
@@ -263,11 +263,11 @@ toolkit-accessibility=true
 [org/onboard/auto-show]
 enabled=true
 
-hide-on-key-press=true
+hide-on-key-press=false
 
 reposition-method-floating='prevent-occlusion'
 
-hide-on-key-press-pause=600.0
+hide-on-key-press-pause=0.0
 
 tablet-mode-detection-enabled=false
 
@@ -277,8 +277,8 @@ in-use=false
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=1433
-y=271
+x=1786
+y=78
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
@@ -301,7 +301,7 @@ window-handles='M'
 
 enable-inactive-transparency=true
 
-docking-aspect-change-range=[0.0, 1.5975004861387507]
+docking-aspect-change-range=[0.0, 1.3700073221819831]
 
 [org/onboard/scanner]
 enabled=false

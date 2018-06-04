@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <theme format="1.3" name="Umbriel">
-  <color_scheme>Charcoal</color_scheme>
+  <color_scheme>Umbriel</color_scheme>
   <background_gradient>0.0</background_gradient>
   <key_style>flat</key_style>
   <roundrect_radius>8.0</roundrect_radius>
