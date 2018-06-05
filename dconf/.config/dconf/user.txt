@@ -67,7 +67,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528222583
+session-start=1528230212
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -244,11 +244,11 @@ key-stroke-width=100.0
 key-label-overrides=['LWIN::', 'RWIN::']
 
 [org/onboard/window/landscape]
-x=421
-y=690
+x=390
+y=741
 
 height=307
-width=773
+width=1108
 
 dock-expand=true
 
@@ -261,7 +261,7 @@ touch-feedback-enabled=true
 
 default-key-action='single-stroke'
 
-input-event-source='GTK'
+input-event-source='XInput'
 
 sticky-key-behavior={'all': 'dblclick'}
 
@@ -307,11 +307,11 @@ background-transparency=0.0
 
 window-handles='M'
 
-enable-inactive-transparency=true
+enable-inactive-transparency=false
 
-docking-aspect-change-range=[0.0, 1.1284662872673408]
+docking-aspect-change-range=[0.0, 100.0]
 
-transparency=10.0
+transparency=30.0
 
 [org/onboard/scanner]
 enabled=false
