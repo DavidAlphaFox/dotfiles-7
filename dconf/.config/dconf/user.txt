@@ -67,7 +67,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528164332
+session-start=1528166441
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -165,7 +165,7 @@ switch-input-source=['<Super>k']
 switch-input-source-backward=['<Shift><Super>k']
 
 [apps/seahorse/listing]
-keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/secrets/collection/Default_5fkeyring', 'secret-service:///org/freedesktop/secrets/collection/login']
+keyrings-selected=['secret-service://login', 'pkcs11:model=p11-kit-trust;manufacturer=PKCS%2311%20Kit;serial=1;token=System%20Trust', 'secret-service:///org/freedesktop/secrets/collection/login']
 
 sidebar-width=197
 
@@ -199,7 +199,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=3
+current-settings-page=1
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -250,7 +250,7 @@ width=773
 
 dock-expand=true
 
-dock-height=238
+dock-height=397
 
 [org/onboard/keyboard]
 show-click-buttons=true
@@ -263,11 +263,11 @@ toolkit-accessibility=true
 [org/onboard/auto-show]
 enabled=true
 
-hide-on-key-press=false
+hide-on-key-press=true
 
 reposition-method-floating='prevent-occlusion'
 
-hide-on-key-press-pause=0.0
+hide-on-key-press-pause=60.0
 
 tablet-mode-detection-enabled=false
 
@@ -295,13 +295,15 @@ docking-edge='bottom'
 
 window-decoration=false
 
-background-transparency=80.0
+background-transparency=0.0
 
 window-handles='M'
 
 enable-inactive-transparency=true
 
-docking-aspect-change-range=[0.0, 1.3700073221819831]
+docking-aspect-change-range=[0.0, 100.0]
+
+transparency=10.0
 
 [org/onboard/scanner]
 enabled=false
