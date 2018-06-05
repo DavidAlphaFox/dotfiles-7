@@ -225,9 +225,9 @@ key-gradient-direction=-3.0
 
 key-style='flat'
 
-roundrect-radius=8.0
+roundrect-radius=23.0
 
-key-size=92.0
+key-size=97.0
 
 key-shadow-strength=0.0
 
@@ -239,7 +239,7 @@ key-label-font='Iosevka Type'
 
 key-stroke-width=100.0
 
-key-label-overrides=@as []
+key-label-overrides=['LWIN::', 'RWIN::']
 
 [org/onboard/window/landscape]
 x=540
@@ -250,7 +250,7 @@ width=773
 
 dock-expand=true
 
-dock-height=274
+dock-height=238
 
 [org/onboard/keyboard]
 show-click-buttons=true
