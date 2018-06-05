@@ -67,7 +67,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528166441
+session-start=1528222583
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -116,7 +116,7 @@ hotkey=['<Super>e']
 favorites=['💀']
 
 [desktop/ibus/panel]
-show-icon-on-systray=false
+show-icon-on-systray=true
 xkb-icon-rgba='#c5c8c6'
 
 show=0
@@ -130,10 +130,12 @@ active=false
 [desktop/ibus/general]
 version='1.5.18'
 preload-engines=['xkb:us::eng']
-use-system-keyboard-layout=false
+use-system-keyboard-layout=true
+
+engines-order=['xkb:us::eng', 'xkb:us:dvorak:eng']
 
 [desktop/ibus/general/hotkey]
-triggers=['<Super>k']
+triggers=['<Shift><Super>k']
 
 [org/gnome/nm-applet/eap/fbbe1d3c-23c5-4ffc-bd15-4dd41cf91d67]
 ignore-ca-cert=false
@@ -199,7 +201,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=1
+current-settings-page=5
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -242,20 +244,26 @@ key-stroke-width=100.0
 key-label-overrides=['LWIN::', 'RWIN::']
 
 [org/onboard/window/landscape]
-x=540
-y=750
+x=421
+y=690
 
 height=307
 width=773
 
 dock-expand=true
 
-dock-height=397
+dock-height=356
 
 [org/onboard/keyboard]
 show-click-buttons=true
 
 touch-feedback-enabled=true
+
+default-key-action='single-stroke'
+
+input-event-source='GTK'
+
+sticky-key-behavior={'all': 'dblclick'}
 
 [org/gnome/desktop/interface]
 toolkit-accessibility=true
@@ -265,7 +273,7 @@ enabled=true
 
 hide-on-key-press=true
 
-reposition-method-floating='prevent-occlusion'
+reposition-method-floating='reduce-travel'
 
 hide-on-key-press-pause=60.0
 
@@ -301,7 +309,7 @@ window-handles='M'
 
 enable-inactive-transparency=true
 
-docking-aspect-change-range=[0.0, 100.0]
+docking-aspect-change-range=[0.0, 1.1284662872673408]
 
 transparency=10.0
 

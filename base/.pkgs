@@ -26,6 +26,7 @@ gsimplecal
 gvfs
 highlight
 ibus
+ibus-qt
 iftop
 intel-ucode
 lsb-release
