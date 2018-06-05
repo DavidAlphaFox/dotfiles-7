@@ -25,25 +25,25 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
     </window>
 
     <layer> <color element="background" rgb="#000000" opacity="1.0"/> </layer>
-    <layer> <color element="background" rgb="#202020" opacity="0.9"/> </layer>
-    <layer> <color element="background" rgb="#202020" opacity="0.9"/> </layer>
+    <layer> <color element="background" rgb="#212121" opacity="0.9"/> </layer>
+    <layer> <color element="background" rgb="#212121" opacity="0.9"/> </layer>
 
     <key_group>
         <color element="fill"   rgb="#212121"/>
-        <color element="stroke" rgb="#616977"/>
+        <color element="stroke" rgb="#373b41"/>
         <color element="label"  rgb="#c5c8c6"/>
         icon0
 
         <key_group>
-            <color element="fill" rgb="#ffffff"/>
+            <color element="fill" rgb="#c5c8c6"/>
             icon1, icon2
         </key_group>
 
         <!-- dark keys -->
         <key_group>
             <color element="fill" rgb="#212121"/>
-            <color element="stroke" rgb="#535b69"/>
-            <color element="label" rgb="#d2d6d9"/>
+            <color element="stroke" rgb="#373b41"/>
+            <color element="label" rgb="#c5c8c6"/>
             icon3,
             RCTL, LCTL, RALT, LALT, LWIN, CAPS,
             LFSH, RTSH, NMLK,
@@ -76,7 +76,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
         <!-- red preferences -->
         <key_group>
-            <color element="fill" rgb="#700000"/>
+            <color element="fill" rgb="#cc4444"/>
             <color element="stroke" rgb="#805060"/>
             settings
         </key_group>
