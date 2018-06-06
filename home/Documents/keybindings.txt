@@ -1,0 +1,57 @@
+
+# quit app
+  + q
+# logout
+  + shift + q
+# shutdown/restart
+  + ctrl  + q
+# reload bar; keybindings
+  + shift + r
+
+# terminal
+  + enter
+# file manager
+  + f
+# calculator
+  + c
+
+# run menu
+  + space
+# desktop menu
+  + m
+# clipboad menu
+  + insrt
+# window list
+  + tab
+
+# change focus
+  + arrow
+# move window
+  + shift + arrow
+# rotate windows
+  + r
+
+# change to desktop
+  + numbr
+# move window to desktop
+  + shift + number
+
+# monocle (tiling)
+  + shift + m
+
+# tiling mode
+  + shift + t
+# pseudo tiling mode
+  + shift + p
+# stacking mode
+  + shift + s
+# fullscreen mode
+  + shift + f
+
+# screenshot
+  + print
+# windowshot
+  + shift + print
+# selectshot
+  + ctrl  + print
+

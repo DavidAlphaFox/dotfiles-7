@@ -7,7 +7,7 @@ super + {shift,ctrl} + q
 super + Return
   termsel
 # run, applications menus
-super + {_,shift +} space
+super + {space,m}
   rofi -show {run,drun} -normal-window
 # filemanager
 super + f
