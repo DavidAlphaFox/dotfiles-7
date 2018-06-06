@@ -167,7 +167,7 @@ switch-input-source=['<Super>k']
 switch-input-source-backward=['<Shift><Super>k']
 
 [apps/seahorse/listing]
-keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/secrets/collection/Default_5fkeyring']
+keyrings-selected=['secret-service://login', 'pkcs11:model=p11-kit-trust;manufacturer=PKCS%2311%20Kit;serial=1;token=Default%20Trust']
 
 sidebar-width=197
 
@@ -249,15 +249,15 @@ key-stroke-width=100.0
 key-label-overrides=['LWIN::', 'RWIN::']
 
 [org/onboard/window/landscape]
-x=390
-y=741
+x=214
+y=278
 
-height=307
-width=1108
+height=305
+width=1680
 
 dock-expand=true
 
-dock-height=356
+dock-height=257
 
 [org/onboard/keyboard]
 show-click-buttons=true
@@ -292,15 +292,15 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=1803
-y=960
+x=1497
+y=56
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
 embedded-keyboard-command='onboard --xid'
 
 [org/onboard/window]
-docking-enabled=true
+docking-enabled=false
 force-to-top=true
 transparent-background=true
 
@@ -316,11 +316,11 @@ window-handles='M'
 
 enable-inactive-transparency=true
 
-docking-aspect-change-range=[0.0, 100.0]
+docking-aspect-change-range=[0.0, 1.5610115561351228]
 
 transparency=0.0
 
-inactive-transparency-delay=3.0
+inactive-transparency-delay=5.0
 
 keep-aspect-ratio=true
 
