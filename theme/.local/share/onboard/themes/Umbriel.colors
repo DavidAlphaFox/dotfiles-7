@@ -3,8 +3,6 @@
 <!--
 Copyright © 2011-2014 marmuta <marmvta@gmail.com>
 
-This file is part of Onboard.
-
 Onboard is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 3 of the License, or
@@ -21,7 +19,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 <color_scheme name="Umbriel" format="2.1">
     <window type="key-popup">
-        <color element="border" rgb="#373b41" opacity="1.0"/>
+      <color element="border" rgb="#8fadcc" opacity="1.0"/>
     </window>
 
     <layer> <color element="background" rgb="#000000" opacity="1.0"/> </layer>

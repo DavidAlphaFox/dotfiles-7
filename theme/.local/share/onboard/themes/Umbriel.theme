@@ -6,7 +6,7 @@
   <roundrect_radius>16.0</roundrect_radius>
   <key_size>97.0</key_size>
   <key_stroke_width>100.0</key_stroke_width>
-  <key_fill_gradient>0.0</key_fill_gradient>
+  <key_fill_gradient>3.0</key_fill_gradient>
   <key_stroke_gradient>0.0</key_stroke_gradient>
   <key_gradient_direction>-23.0</key_gradient_direction>
   <key_label_font>Iosevka Term bold</key_label_font>

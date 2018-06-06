@@ -67,7 +67,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528313045
+session-start=1528317916
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -201,7 +201,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=3
+current-settings-page=1
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -226,7 +226,7 @@ xembed-background-image-enabled=false
 
 [org/onboard/theme-settings]
 color-scheme='/home/ihanson/.local/share/onboard/themes/Umbriel.colors'
-key-fill-gradient=0.0
+key-fill-gradient=3.0
 key-stroke-gradient=0.0
 key-gradient-direction=-23.0
 
@@ -292,8 +292,8 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=1761
-y=190
+x=1803
+y=960
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
@@ -318,7 +318,7 @@ enable-inactive-transparency=true
 
 docking-aspect-change-range=[0.0, 100.0]
 
-transparency=10.0
+transparency=0.0
 
 inactive-transparency-delay=3.0
 
