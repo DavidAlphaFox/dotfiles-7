@@ -54,7 +54,7 @@ font-3 = font\-logos:style=logos:size=16;4
 
 modules-left = bspwm powermenu xwindow
 modules-center =
-modules-right = playing back play next cal onboard temperature updates
+modules-right = 8bitday playing back play next cal onboard temperature updates
 
 tray-position = right
 tray-padding = 2
@@ -119,9 +119,14 @@ exec = echo -n 
 format-foreground = ${colors.foreground}
 click-left = playerctl next
 
+[module/8bitday]
+type = custom/script
+interval = 3600
+exec = feh --bg-scale "$HOME/Pictures/$(date +%I)-8bitDay.png" 2>/dev/null
+
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:100:…%
+label = %title:0:76:…%
 ;label = %title%
 label-foreground = ${colors.foreground}
 label-font = 3

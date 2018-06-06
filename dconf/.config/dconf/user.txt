@@ -67,7 +67,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528230212
+session-start=1528233284
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -116,7 +116,7 @@ hotkey=['<Super>e']
 favorites=['💀']
 
 [desktop/ibus/panel]
-show-icon-on-systray=true
+show-icon-on-systray=false
 xkb-icon-rgba='#c5c8c6'
 
 show=0
@@ -167,7 +167,7 @@ switch-input-source=['<Super>k']
 switch-input-source-backward=['<Shift><Super>k']
 
 [apps/seahorse/listing]
-keyrings-selected=['secret-service://login', 'pkcs11:model=p11-kit-trust;manufacturer=PKCS%2311%20Kit;serial=1;token=System%20Trust', 'secret-service:///org/freedesktop/secrets/collection/login']
+keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/secrets/collection/Default_5fkeyring']
 
 sidebar-width=197
 
@@ -184,8 +184,8 @@ sort-directories-first=false
 sort-order='ascending'
 
 [apps/seahorse/windows/key-manager]
-width=640
-height=476
+width=1892
+height=1020
 
 [org/mate/desktop/peripherals/mouse]
 cursor-theme='FlatbedCursors-Black'
@@ -201,7 +201,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=5
+current-settings-page=1
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -223,7 +223,7 @@ show-status-icon=false
 color-scheme='/home/ihanson/.local/share/onboard/themes/Umbriel.colors'
 key-fill-gradient=8.0
 key-stroke-gradient=0.0
-key-gradient-direction=-3.0
+key-gradient-direction=0.0
 
 key-style='flat'
 
@@ -237,7 +237,7 @@ key-shadow-size=0.0
 
 background-gradient=0.0
 
-key-label-font='Iosevka Type'
+key-label-font='Iosevka Term bold'
 
 key-stroke-width=100.0
 
@@ -252,7 +252,7 @@ width=1108
 
 dock-expand=true
 
-dock-height=356
+dock-height=224
 
 [org/onboard/keyboard]
 show-click-buttons=true
@@ -303,15 +303,19 @@ docking-edge='bottom'
 
 window-decoration=false
 
-background-transparency=0.0
+background-transparency=5.0
 
 window-handles='M'
 
-enable-inactive-transparency=false
+enable-inactive-transparency=true
 
-docking-aspect-change-range=[0.0, 100.0]
+docking-aspect-change-range=[0.0, 1.2710267749358848]
 
-transparency=30.0
+transparency=0.0
+
+inactive-transparency=60.0
+
+inactive-transparency-delay=3.0
 
 [org/onboard/scanner]
 enabled=false
