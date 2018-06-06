@@ -201,7 +201,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=1
+current-settings-page=3
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -226,19 +226,19 @@ xembed-background-image-enabled=false
 
 [org/onboard/theme-settings]
 color-scheme='/home/ihanson/.local/share/onboard/themes/Umbriel.colors'
-key-fill-gradient=8.0
+key-fill-gradient=0.0
 key-stroke-gradient=0.0
-key-gradient-direction=0.0
+key-gradient-direction=-23.0
 
-key-style='flat'
+key-style='gradient'
 
-roundrect-radius=25.0
+roundrect-radius=16.0
 
 key-size=97.0
 
-key-shadow-strength=0.0
+key-shadow-strength=25.0
 
-key-shadow-size=0.0
+key-shadow-size=50.0
 
 background-gradient=0.0
 
@@ -310,7 +310,7 @@ docking-edge='bottom'
 
 window-decoration=false
 
-background-transparency=5.0
+background-transparency=50.0
 
 window-handles='M'
 
