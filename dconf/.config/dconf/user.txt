@@ -67,7 +67,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528222583
+session-start=1528289521
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -102,7 +102,7 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/org/mate/desktop/interface/'
+saved-view='/org/mate/desktop/interface/buttons-have-icons'
 window-height=973
 window-width=938
 
@@ -129,13 +129,13 @@ active=false
 
 [desktop/ibus/general]
 version='1.5.18'
-preload-engines=['xkb:us::eng']
-use-system-keyboard-layout=true
+preload-engines=['xkb:us::eng', 'xkb:us:dvorak:eng']
+use-system-keyboard-layout=false
 
 engines-order=['xkb:us::eng', 'xkb:us:dvorak:eng']
 
 [desktop/ibus/general/hotkey]
-triggers=['<Shift><Super>k']
+triggers=['<Super>K']
 
 [org/gnome/nm-applet/eap/fbbe1d3c-23c5-4ffc-bd15-4dd41cf91d67]
 ignore-ca-cert=false
@@ -201,7 +201,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=5
+current-settings-page=6
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -223,11 +223,11 @@ show-status-icon=false
 color-scheme='/home/ihanson/.local/share/onboard/themes/Umbriel.colors'
 key-fill-gradient=8.0
 key-stroke-gradient=0.0
-key-gradient-direction=-3.0
+key-gradient-direction=0.0
 
 key-style='flat'
 
-roundrect-radius=23.0
+roundrect-radius=25.0
 
 key-size=97.0
 
@@ -252,7 +252,7 @@ width=773
 
 dock-expand=true
 
-dock-height=356
+dock-height=403
 
 [org/onboard/keyboard]
 show-click-buttons=true
@@ -261,9 +261,11 @@ touch-feedback-enabled=true
 
 default-key-action='single-stroke'
 
-input-event-source='GTK'
+input-event-source='XInput'
 
 sticky-key-behavior={'all': 'dblclick'}
+
+key-synth='AT-SPI'
 
 [org/gnome/desktop/interface]
 toolkit-accessibility=true
@@ -309,9 +311,13 @@ window-handles='M'
 
 enable-inactive-transparency=true
 
-docking-aspect-change-range=[0.0, 1.1284662872673408]
+docking-aspect-change-range=[0.0, 100.0]
 
-transparency=10.0
+transparency=0.0
+
+inactive-transparency-delay=3.0
+
+inactive-transparency=70.0
 
 [org/onboard/scanner]
 enabled=false

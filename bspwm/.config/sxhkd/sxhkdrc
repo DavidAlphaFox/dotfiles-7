@@ -12,9 +12,6 @@ super + {_,shift +} space
 # filemanager
 super + f
   termite -e ranger
-# onscreen keyboard
-super + k
-  onboard
 
 # calculator
 super + c

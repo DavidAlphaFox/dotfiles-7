@@ -3,12 +3,12 @@
   <color_scheme>Umbriel</color_scheme>
   <background_gradient>0.0</background_gradient>
   <key_style>flat</key_style>
-  <roundrect_radius>23.0</roundrect_radius>
+  <roundrect_radius>25.0</roundrect_radius>
   <key_size>97.0</key_size>
   <key_stroke_width>100.0</key_stroke_width>
   <key_fill_gradient>8.0</key_fill_gradient>
   <key_stroke_gradient>0.0</key_stroke_gradient>
-  <key_gradient_direction>-3.0</key_gradient_direction>
+  <key_gradient_direction>0.0</key_gradient_direction>
   <key_label_font>Iosevka Type</key_label_font>
   <key_label_overrides>
     <key group="" id="LWIN" label=""/>
