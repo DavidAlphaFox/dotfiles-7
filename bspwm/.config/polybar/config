@@ -80,7 +80,6 @@ type = custom/script
 exec = date '+%a %l:%M %p' | sed 's/  / /'
 interval = 30
 format-foreground = ${colors.foreground}
-click-left = gsimplecal
 
 [module/updates]
 type = custom/script
