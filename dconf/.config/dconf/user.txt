@@ -67,7 +67,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528317916
+session-start=1528343291
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -102,9 +102,9 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/org/onboard/typing-assistance/word-suggestions/wordlist-buttons'
-window-height=962
-window-width=996
+saved-view='/org/onboard/theme-settings/'
+window-height=689
+window-width=1366
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
@@ -116,7 +116,7 @@ hotkey=['<Super>e']
 favorites=['💀']
 
 [desktop/ibus/panel]
-show-icon-on-systray=false
+show-icon-on-systray=true
 xkb-icon-rgba='#c5c8c6'
 
 show=0
@@ -132,7 +132,7 @@ version='1.5.18'
 preload-engines=['xkb:us::eng', 'xkb:us:dvorak:eng']
 use-system-keyboard-layout=false
 
-engines-order=['xkb:us::eng', 'xkb:us:dvorak:eng']
+engines-order=['xkb:us:dvorak:eng', 'xkb:us::eng']
 
 [desktop/ibus/general/hotkey]
 triggers=['<Super>K']
@@ -201,7 +201,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=1
+current-settings-page=0
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -253,11 +253,11 @@ x=214
 y=278
 
 height=305
-width=1680
+width=1326
 
 dock-expand=true
 
-dock-height=257
+dock-height=341
 
 [org/onboard/keyboard]
 show-click-buttons=true
@@ -284,7 +284,6 @@ reposition-method-floating='reduce-travel'
 
 hide-on-key-press-pause=60.0
 
-tablet-mode-detection-enabled=false
 
 [org/onboard/icon-palette]
 in-use=true
@@ -292,15 +291,15 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=1497
-y=56
+x=48
+y=58
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
 embedded-keyboard-command='onboard --xid'
 
 [org/onboard/window]
-docking-enabled=false
+docking-enabled=true
 force-to-top=true
 transparent-background=true
 
@@ -339,3 +338,7 @@ enabled=false
 active-language=''
 auto-correction=true
 auto-capitalization=false
+
+[org/gnome/nm-applet/eap/1a76430a-6212-4803-8847-ea9d3eb5a5eb]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false

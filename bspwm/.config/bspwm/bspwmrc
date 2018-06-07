@@ -1,11 +1,13 @@
 #!/bin/zsh
 
+xrandr --output eDP1
 xrandr --output DP1 --auto --right-of eDP1
 xrandr --output HDMI1 --auto --left-of eDP1
 xrandr --output HDMI2 --auto --right-of eDP1
 xrandr --output VGA-1 --auto
 xrandr --output VGA-2 --auto --right-of VGA-1
 
+bspc monitor eDP1 -d 1 2 3 4 5
 bspc monitor VGA-1 -d 1 2 3 4 5
 bspc monitor VGA-2 -d 6 7 8 9 0
 bspc monitor HDMI1 -d 1 2 3 4 5
