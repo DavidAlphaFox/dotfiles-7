@@ -1,0 +1,12 @@
+warning: output eDP1 not found; ignoring
+warning: output DP1 not found; ignoring
+warning: output HDMI1 not found; ignoring
+warning: output HDMI2 not found; ignoring
+warning: output VGA-1 not found; ignoring
+warning: output VGA-2 not found; ignoring
+
+** (mate-settings-daemon:551): WARNING **: 15:34:49.629: Failed to call "GrabMediaPlayerKeys": GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "GrabMediaPlayerKeys" with signature "su" on interface "org.mate.SettingsDaemon.MediaKeys" doesn't exist
+
+polybar|error: Failed to reconfigure tray client, removing... (XCB_WINDOW (3))
+polybar|error: Failed to reconfigure tray client, removing... (XCB_WINDOW (3))
+polybar|warn:  Termination signal received, shutting down...

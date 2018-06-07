@@ -67,7 +67,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528343291
+session-start=1528400088
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -132,7 +132,7 @@ version='1.5.18'
 preload-engines=['xkb:us::eng', 'xkb:us:dvorak:eng']
 use-system-keyboard-layout=false
 
-engines-order=['xkb:us:dvorak:eng', 'xkb:us::eng']
+engines-order=['xkb:us::eng', 'xkb:us:dvorak:eng']
 
 [desktop/ibus/general/hotkey]
 triggers=['<Super>K']
@@ -340,5 +340,9 @@ auto-correction=true
 auto-capitalization=false
 
 [org/gnome/nm-applet/eap/1a76430a-6212-4803-8847-ea9d3eb5a5eb]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/ad4acc5b-ab60-4eac-bd12-6eea0f47e1ce]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
