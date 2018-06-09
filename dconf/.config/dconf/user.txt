@@ -67,7 +67,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528400088
+session-start=1528579474
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -132,7 +132,7 @@ version='1.5.18'
 preload-engines=['xkb:us::eng', 'xkb:us:dvorak:eng']
 use-system-keyboard-layout=false
 
-engines-order=['xkb:us::eng', 'xkb:us:dvorak:eng']
+engines-order=['xkb:us:dvorak:eng', 'xkb:us::eng']
 
 [desktop/ibus/general/hotkey]
 triggers=['<Super>K']
@@ -172,8 +172,8 @@ keyrings-selected=['secret-service://login', 'pkcs11:model=p11-kit-trust;manufac
 sidebar-width=197
 
 [org/gtk/settings/file-chooser]
-window-position=(303, 47)
-window-size=(1310, 982)
+window-position=(12, -2)
+window-size=(1338, 982)
 date-format='regular'
 location-mode='path-bar'
 show-hidden=false
@@ -249,11 +249,11 @@ key-stroke-width=100.0
 key-label-overrides=['LWIN::', 'RWIN::']
 
 [org/onboard/window/landscape]
-x=214
-y=278
+x=195
+y=429
 
-height=305
-width=1326
+height=297
+width=1033
 
 dock-expand=true
 
@@ -276,7 +276,7 @@ key-synth='auto'
 toolkit-accessibility=true
 
 [org/onboard/auto-show]
-enabled=false
+enabled=true
 
 hide-on-key-press=true
 
@@ -291,8 +291,8 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=48
-y=58
+x=1041
+y=192
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
@@ -313,7 +313,7 @@ background-transparency=50.0
 
 window-handles='M'
 
-enable-inactive-transparency=true
+enable-inactive-transparency=false
 
 docking-aspect-change-range=[0.0, 1.5610115561351228]
 
