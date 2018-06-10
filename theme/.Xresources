@@ -15,9 +15,9 @@ rofi.lines:             5
 rofi.columns:           1
 ! "border width"
 rofi.bw:                2
-rofi.location:          0
+rofi.location:          2
 rofi.padding:           12
-rofi.yoffset:           0
+rofi.yoffset:           36
 rofi.xoffset:           0
 rofi.fixed-num-lines:   true
 rofi.terminal:          termite
@@ -39,7 +39,7 @@ rofi.display-drun: 
 rofi.display-run: 
 rofi.display-window: 
 rofi.display-ssh: 
-
+rofi.monitor: -1
 ! special
 *.foreground:   #c5c8c6
 *.background:   #212121
