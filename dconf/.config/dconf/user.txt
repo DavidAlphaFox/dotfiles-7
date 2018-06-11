@@ -68,7 +68,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528756579
+session-start=1528758198
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -294,8 +294,8 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=1493
-y=311
+x=1712
+y=419
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
@@ -351,3 +351,11 @@ ignore-phase2-ca-cert=false
 [org/gnome/nm-applet/eap/ad4acc5b-ab60-4eac-bd12-6eea0f47e1ce]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
+
+[org/gnome/desktop/a11y/mouse]
+click-type-window-geometry=''
+click-type-window-orientation='vertical'
+click-type-window-style='both'
+click-type-window-visible=true
+dwell-click-enabled=false
+secondary-click-time=1.0
