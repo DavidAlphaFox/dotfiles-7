@@ -56,10 +56,10 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
             <!-- word suggestions -->
             <key_group>
-                <color element="fill" rgb="#111920"/>
+                <color element="fill" rgb="#212121"/>
                 prediction
                 <key_group>
-                    <color element="fill" rgb="#111920" opacity="0.8"/>
+                    <color element="fill" rgb="#212121" opacity="0.8"/>
                     wordlist, pause-learning.wordlist, language.wordlist, hide.wordlist
                 </key_group>
             </key_group>

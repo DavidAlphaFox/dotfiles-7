@@ -271,11 +271,13 @@ sticky-key-behavior={'all': 'dblclick'}
 
 key-synth='auto'
 
+audio-feedback-enabled=true
+
 [org/gnome/desktop/interface]
 toolkit-accessibility=true
 
 [org/onboard/auto-show]
-enabled=true
+enabled=false
 
 hide-on-key-press=true
 
@@ -290,8 +292,8 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=1205
-y=514
+x=1493
+y=311
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
@@ -331,7 +333,9 @@ enabled=false
 dock-expand=true
 
 [org/onboard/typing-assistance/word-suggestions]
-enabled=false
+enabled=true
+
+wordlist-buttons=['previous-predictions', 'next-predictions', 'pause-learning', 'language', 'hide']
 
 [org/onboard/typing-assistance]
 active-language=''
