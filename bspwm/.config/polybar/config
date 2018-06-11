@@ -53,7 +53,7 @@ font-2 = Iosevka Type:style=Bold:size=14;3
 font-3 = font\-logos:style=logos:size=16;4
 
 modules-left = bspwm powermenu xwindow
-modules-center = 8bitday
+modules-center = 
 modules-right = playing back play next cal onboard temperature 
 
 tray-position = right
