@@ -68,7 +68,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528758198
+session-start=1528763150
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -103,9 +103,9 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/org/mate/desktop/interface/document-font-name'
-window-height=969
-window-width=1916
+saved-view='/org/mate/desktop/peripherals/mouse/double-click'
+window-height=657
+window-width=1362
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
@@ -173,13 +173,13 @@ keyrings-selected=['secret-service://login', 'pkcs11:model=p11-kit-trust;manufac
 sidebar-width=197
 
 [org/gtk/settings/file-chooser]
-window-position=(12, -2)
-window-size=(1338, 982)
+window-position=(341, 24)
+window-size=(679, 716)
 date-format='regular'
 location-mode='path-bar'
 show-hidden=false
 show-size-column=true
-sidebar-width=182
+sidebar-width=217
 sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
@@ -190,6 +190,8 @@ height=1020
 
 [org/mate/desktop/peripherals/mouse]
 cursor-theme='FlatbedCursors-Black'
+
+double-click=600
 
 [org/gnome/nm-applet/eap/358befb0-fd10-4cee-a2f6-65e9486d73cf]
 ignore-ca-cert=false
@@ -202,7 +204,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=8
+current-settings-page=7
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -250,15 +252,13 @@ key-stroke-width=100.0
 key-label-overrides=['LWIN::', 'RWIN::']
 
 [org/onboard/window/landscape]
-x=195
-y=429
 
 height=297
 width=1033
 
 dock-expand=true
 
-dock-height=341
+dock-height=277
 
 [org/onboard/keyboard]
 show-click-buttons=true
@@ -294,8 +294,8 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=1712
-y=419
+x=45
+y=77
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
@@ -335,7 +335,7 @@ enabled=false
 dock-expand=true
 
 [org/onboard/typing-assistance/word-suggestions]
-enabled=true
+enabled=false
 
 wordlist-buttons=['previous-predictions', 'next-predictions', 'pause-learning', 'language', 'hide']
 
@@ -359,3 +359,7 @@ click-type-window-style='both'
 click-type-window-visible=true
 dwell-click-enabled=false
 secondary-click-time=1.0
+
+[org/mate/desktop/accessibility/keyboard]
+mousekeys-enable=true
+enable=true
