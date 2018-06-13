@@ -68,7 +68,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528926985
+session-start=1528927798
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
