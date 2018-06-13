@@ -68,7 +68,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1528763150
+session-start=1528925085
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -103,9 +103,9 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/org/mate/desktop/peripherals/mouse/double-click'
-window-height=657
-window-width=1362
+saved-view='/desktop/ibus/panel/'
+window-height=957
+window-width=1916
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
@@ -118,7 +118,7 @@ favorites=['💀']
 
 [desktop/ibus/panel]
 show-icon-on-systray=true
-xkb-icon-rgba='#8fadcc'
+xkb-icon-rgba='#f0c674'
 
 show=0
 
@@ -173,20 +173,20 @@ keyrings-selected=['secret-service://login', 'pkcs11:model=p11-kit-trust;manufac
 sidebar-width=197
 
 [org/gtk/settings/file-chooser]
-window-position=(341, 24)
+window-position=(618, 180)
 window-size=(679, 716)
 date-format='regular'
 location-mode='path-bar'
 show-hidden=false
 show-size-column=true
-sidebar-width=217
+sidebar-width=237
 sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 
 [apps/seahorse/windows/key-manager]
-width=1892
-height=1020
+width=1916
+height=1028
 
 [org/mate/desktop/peripherals/mouse]
 cursor-theme='FlatbedCursors-Black'
@@ -204,7 +204,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=7
+current-settings-page=1
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -294,8 +294,8 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=45
-y=77
+x=38
+y=84
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false

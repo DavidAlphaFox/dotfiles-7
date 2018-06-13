@@ -8,7 +8,7 @@ super + Return
   termsel
 # run, applications menus
 super + {space,m}
-  rofi -show {run,drun} -normal-window
+  rofi -show {combi,drun} -normal-window
 # filemanager
 super + f
   termite -e ranger
