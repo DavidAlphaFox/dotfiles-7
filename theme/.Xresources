@@ -40,6 +40,8 @@ rofi.display-run: 
 rofi.display-window: 
 rofi.display-ssh: 
 rofi.display-combi: 
+rofi.combi-modi: window,run,drun
+
 rofi.monitor: -1
 ! special
 *.foreground:   #c5c8c6
