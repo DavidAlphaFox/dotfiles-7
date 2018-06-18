@@ -106,7 +106,7 @@
   -GtkWidget-cursor-aspect-ratio: 0.04;
   outline-color: rgba(143, 204, 133, 0.5);
   outline-style: dashed;
-  outline-width: 2px;
+  outline-width: 3px;
   outline-offset: -1px;
   -gtk-outline-radius: 8px; }
 
@@ -393,7 +393,7 @@ button {
     background-image: linear-gradient(to bottom, #262626, #1f1f1f);
     border-color: rgba(197, 200, 198, 0.22);
     outline-color: rgba(143, 204, 133, 0.5);
-    outline-width: 2px;
+    outline-width: 3px;
     outline-style: solid;
     outline-offset: -2px;
     color: #c5c8c6;
@@ -1005,7 +1005,7 @@ headerbar, .titlebar:not(headerbar) {
       background-image: linear-gradient(to bottom, #262626, #1f1f1f);
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #c5c8c6;
@@ -1213,7 +1213,7 @@ headerbar, .titlebar:not(headerbar) {
       background-image: linear-gradient(to bottom, #262626, #1f1f1f);
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #c5c8c6;
@@ -1400,7 +1400,7 @@ toolbar {
       background-image: linear-gradient(to bottom, #262626, #1f1f1f);
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #c5c8c6;
@@ -1579,7 +1579,7 @@ toolbar {
         background-image: linear-gradient(to bottom, #262626, #1f1f1f);
         border-color: rgba(197, 200, 198, 0.22);
         outline-color: rgba(143, 204, 133, 0.5);
-        outline-width: 2px;
+        outline-width: 3px;
         outline-style: solid;
         outline-offset: -2px;
         color: #c5c8c6;
@@ -1825,7 +1825,7 @@ searchbar,
     background-image: linear-gradient(to bottom, #b1dbaa, #83c778);
     border-color: rgba(33, 33, 33, 0.32);
     outline-color: rgba(143, 204, 133, 0.5);
-    outline-width: 2px;
+    outline-width: 3px;
     outline-style: solid;
     outline-offset: -2px;
     color: #212121;
@@ -1994,7 +1994,7 @@ searchbar,
     background-image: linear-gradient(to bottom, #e6ae88, #db8951);
     border-color: rgba(33, 33, 33, 0.32);
     outline-color: rgba(143, 204, 133, 0.5);
-    outline-width: 2px;
+    outline-width: 3px;
     outline-style: solid;
     outline-offset: -2px;
     color: #212121;
@@ -2263,7 +2263,7 @@ headerbar.selection-mode,
       background-image: linear-gradient(to bottom, #b1dbaa, #83c778);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #212121;
@@ -2674,7 +2674,7 @@ headerbar.selection-mode,
       background-image: linear-gradient(to bottom, #b1dbaa, #83c778);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #212121;
@@ -3163,7 +3163,7 @@ infobar {
       background-image: linear-gradient(to bottom, #b4c8dd, #82a3c6);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #212121;
@@ -3310,7 +3310,7 @@ infobar {
       background-image: linear-gradient(to bottom, #f5daa6, #eebf62);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #212121;
@@ -3457,7 +3457,7 @@ infobar {
       background-image: linear-gradient(to bottom, #b4c8dd, #82a3c6);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #212121;
@@ -3604,7 +3604,7 @@ infobar {
       background-image: linear-gradient(to bottom, #e6ae88, #db8951);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #212121;
@@ -4233,7 +4233,7 @@ popover.background {
       background-image: linear-gradient(to bottom, #262626, #1f1f1f);
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #c5c8c6;
@@ -4484,7 +4484,7 @@ frame.app-notification {
       background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8), rgba(31, 31, 31, 0.8));
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #c5c8c6;
@@ -5099,7 +5099,7 @@ button.osd,
     background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8), rgba(31, 31, 31, 0.8));
     border-color: rgba(197, 200, 198, 0.22);
     outline-color: rgba(143, 204, 133, 0.5);
-    outline-width: 2px;
+    outline-width: 3px;
     outline-style: solid;
     outline-offset: -2px;
     color: #c5c8c6;
@@ -5484,7 +5484,7 @@ progressbar.osd {
       background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8), rgba(31, 31, 31, 0.8));
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #c5c8c6;
@@ -6021,7 +6021,7 @@ progressbar.osd {
         background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8), rgba(31, 31, 31, 0.8));
         border-color: rgba(197, 200, 198, 0.22);
         outline-color: rgba(143, 204, 133, 0.5);
-        outline-width: 2px;
+        outline-width: 3px;
         outline-style: solid;
         outline-offset: -2px;
         color: #c5c8c6;
@@ -6388,7 +6388,7 @@ progressbar.osd {
       background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8), rgba(31, 31, 31, 0.8));
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 204, 133, 0.5);
-      outline-width: 2px;
+      outline-width: 3px;
       outline-style: solid;
       outline-offset: -2px;
       color: #c5c8c6;
@@ -8146,7 +8146,7 @@ paned.titlebar {
         background-image: linear-gradient(to bottom, #262626, #1f1f1f);
         border-color: rgba(197, 200, 198, 0.22);
         outline-color: rgba(143, 204, 133, 0.5);
-        outline-width: 2px;
+        outline-width: 3px;
         outline-style: solid;
         outline-offset: -2px;
         color: #c5c8c6;
@@ -8548,7 +8548,7 @@ SheetStyleDialog.unity-force-quit {
     background-image: linear-gradient(to bottom, #262626, #1f1f1f);
     border-color: rgba(197, 200, 198, 0.22);
     outline-color: rgba(143, 204, 133, 0.5);
-    outline-width: 2px;
+    outline-width: 3px;
     outline-style: solid;
     outline-offset: -2px;
     color: #c5c8c6;
@@ -8743,7 +8743,7 @@ SheetStyleDialog.unity-force-quit {
     background-image: linear-gradient(to bottom, #e6ae88, #db8951);
     border-color: rgba(33, 33, 33, 0.32);
     outline-color: rgba(143, 204, 133, 0.5);
-    outline-width: 2px;
+    outline-width: 3px;
     outline-style: solid;
     outline-offset: -2px;
     color: #212121;
@@ -8885,7 +8885,7 @@ SheetStyleDialog.unity-force-quit {
     background-image: linear-gradient(to bottom, #f5daa6, #eebf62);
     border-color: rgba(33, 33, 33, 0.32);
     outline-color: rgba(143, 204, 133, 0.5);
-    outline-width: 2px;
+    outline-width: 3px;
     outline-style: solid;
     outline-offset: -2px;
     color: #212121;

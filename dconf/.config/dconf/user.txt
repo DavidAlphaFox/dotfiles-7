@@ -68,7 +68,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1529269761
+session-start=1529291971
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -105,7 +105,7 @@ window-is-maximized=false
 
 saved-view='/desktop/ibus/panel/'
 window-height=957
-window-width=1916
+window-width=956
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
