@@ -43,7 +43,7 @@ menus-have-icons=true
 gtk-decoration-layout='menu:close'
 cursor-blink-time=1000
 icon-theme='oomox-starlight'
-monospace-font-name='Iosevka Term Medium 11'
+monospace-font-name='Input Medium 11'
 gtk-theme='oomox-starlight'
 
 gtk-im-module='ibus'
@@ -52,7 +52,8 @@ accessibility=true
 
 
 
-font-name='Exo 2 SemiBold 14'
+font-name='Exo2 14'
+
 
 [org/mate/desktop/applications/browser]
 exec='chromium'
@@ -106,7 +107,7 @@ window-is-maximized=false
 
 saved-view='/org/mate/desktop/interface/'
 window-height=957
-window-width=1916
+window-width=956
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
