@@ -70,7 +70,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1529435298
+session-start=1529440861
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -93,9 +93,6 @@ show-desktop-icons=false
 background-fade=false
 
 [org/mate/desktop/font-rendering]
-antialiasing='rgba'
-dpi=96.0
-hinting='slight'
 
 [apps/seahorse]
 server-auto-retrieve=false
@@ -105,9 +102,9 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/org/mate/desktop/interface/'
+saved-view='/org/mate/desktop/font-rendering/'
 window-height=957
-window-width=956
+window-width=1916
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
