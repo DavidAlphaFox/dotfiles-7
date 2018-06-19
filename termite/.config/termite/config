@@ -1,5 +1,6 @@
 [options]
-font            = Iosevka Term Medium 16
+#font            = Iosevka Term Medium 16
+font            = Input 16
 allow_bold      = false
 cursor_shape    = underline
 #mouse_autohide  = true

@@ -52,6 +52,8 @@ font-1 = Font Awesome 5 Free Solid:size=19;6
 font-2 = Iosevka Type:style=Bold:size=19;5
 font-3 = Font Awesome 5 Brands:size=19;6
 font-4 = Iosevka Type:style=Bold:size=16;4
+font-5 = Exo 2:style=Semi Bold:size=16;4
+font-6 = Exo 2:style=Extra Bold:size=19;4
 
 modules-left = powermenu bspwm xwindow
 modules-center = 
@@ -81,7 +83,7 @@ type = custom/script
 exec = date '+%a %l:%M %p' | sed 's/  / /'
 interval = 30
 format-foreground = ${colors.foreground}
-label-font = 5
+label-font = 6
 
 [module/playing]
 type = custom/script
@@ -125,7 +127,7 @@ type = internal/xwindow
 label = %title:0:72:…%
 ;label = %title%
 label-foreground = ${colors.foreground}
-label-font = 5
+label-font = 6
 
 [module/bspwm]
 type = internal/bspwm
@@ -147,6 +149,11 @@ label-urgent-underline = ${colors.alert}
 label-empty = %name%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
+
+label-focused-font = 7
+label-occupied-font = 7
+label-urgent-font = 7
+label-empty-font = 7
 
 ;[module/mpd]
 ;type = internal/mpd

@@ -86,7 +86,8 @@
     ### Text ###
 
     #font = DejaVu Sans 12
-    font = Iosevka Term Medium 13
+    #font = Iosevka Term Medium 13
+    font = Exo 2 Bold 13
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.

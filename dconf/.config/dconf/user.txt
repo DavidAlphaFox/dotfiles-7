@@ -41,7 +41,6 @@ active=false
 [org/mate/desktop/interface]
 menus-have-icons=true
 gtk-decoration-layout='menu:close'
-font-name='Iosevka Type 14'
 cursor-blink-time=1000
 icon-theme='oomox-starlight'
 monospace-font-name='Iosevka Term Medium 11'
@@ -51,7 +50,9 @@ gtk-im-module='ibus'
 
 accessibility=true
 
-document-font-name='Sans 12'
+
+
+font-name='Exo 2 SemiBold 14'
 
 [org/mate/desktop/applications/browser]
 exec='chromium'
@@ -68,7 +69,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1529291971
+session-start=1529435298
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -103,9 +104,9 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/desktop/ibus/panel/'
+saved-view='/org/mate/desktop/interface/'
 window-height=957
-window-width=956
+window-width=1916
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
@@ -168,9 +169,9 @@ switch-input-source=['<Super>k']
 switch-input-source-backward=['<Shift><Super>k']
 
 [apps/seahorse/listing]
-keyrings-selected=['secret-service://login', 'pkcs11:model=p11-kit-trust;manufacturer=PKCS%2311%20Kit;serial=1;token=Default%20Trust']
+keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/secrets/collection/Default_5fkeyring']
 
-sidebar-width=197
+sidebar-width=240
 
 [org/gtk/settings/file-chooser]
 window-position=(552, 180)
@@ -185,7 +186,7 @@ sort-directories-first=false
 sort-order='ascending'
 
 [apps/seahorse/windows/key-manager]
-width=1916
+width=956
 height=1028
 
 [org/mate/desktop/peripherals/mouse]
@@ -204,7 +205,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=5
+current-settings-page=3
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -245,7 +246,7 @@ key-shadow-size=50.0
 
 background-gradient=0.0
 
-key-label-font='Iosevka Term bold'
+key-label-font='Exo 2 bold'
 
 key-stroke-width=100.0
 
