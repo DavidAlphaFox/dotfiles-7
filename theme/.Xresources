@@ -37,7 +37,7 @@ rofi.color-normal: #212121,#707880,#212121,#212121,#c5c8c6
 rofi.color-active: #212121,#638f63,#212121,#212121,#8fcc85
 rofi.color-window: #212121,#212121,#212121
 rofi.display-drun: 
-rofi.display-run: 
+rofi.display-run: 
 rofi.display-window: 
 rofi.display-ssh: 
 rofi.display-combi: 
