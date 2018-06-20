@@ -9,9 +9,9 @@ Xft.rgba: rgb
 
 ! ROFI
 !rofi.font:              Iosevka Term Medium 15
-rofi.font:              Exo 2 Bold 18
+rofi.font:              Exo 2 SemiBold 18
 rofi.modi:              window,run,drun,combi
-rofi.width:             25
+rofi.width:             38
 rofi.lines:             5
 rofi.columns:           1
 ! "border width"
