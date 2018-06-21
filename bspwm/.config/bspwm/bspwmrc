@@ -62,4 +62,5 @@ sxhkd -m -1 &
 if [ -e "$HOME/.fehbg" ]; then
   source "$HOME/.fehbg"
 fi
+numlockx on
 
