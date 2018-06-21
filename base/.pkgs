@@ -9,7 +9,6 @@ base-meta
 bc
 bspwm
 calc
-chromium
 clipmenu
 compton
 cpio
@@ -84,7 +83,8 @@ xorg-xrdb
 xorg-xsetroot
 xorg-xwininfo
 xterm
-yaourt
+pacaur
 zathura-pdf-mupdf
 zip
 otf-exo
+google-chrome

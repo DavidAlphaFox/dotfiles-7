@@ -23,6 +23,7 @@ bspc config gapless_monocle      true
 bspc config focus_follows_pointer false
 bspc rule -a Gimp desktop='^8' state=floating follow=on 
 bspc rule -a Chromium sticky=off
+bspc rule -a Google-chrome sticky=off
 bspc rule -a Dia state=floating 
 bspc rule -a Ibus-extension-gtk3 state=floating 
 bspc rule -a Godot state=floating

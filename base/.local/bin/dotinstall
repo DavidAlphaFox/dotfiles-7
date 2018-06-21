@@ -2,7 +2,7 @@
 
 cd $HOME
 ./.dotfiles/base/.local/bin/restow
-yaourt --aur --noconfirm --needed -S $(cat ~/.pkgs)
+pacaur --aur --noconfirm --needed -S $(cat ~/.pkgs)
 
 # sddm
 sudo systemctl enable sddm
@@ -74,5 +74,5 @@ service-db:keyfile/user
 EOF
 
 # cleanup
-yaourt -Rns $(yaourt -Qtdq) --noconfirm
+pacaur -Rns $(pacaur -Qtdq) --noconfirm
 

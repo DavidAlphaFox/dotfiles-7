@@ -2,5 +2,5 @@
 
 
 # adjust install reasons
-yaourt -D --asdeps $(yaourt -Qq)
-yaourt -D --asexplicit $(yaourt -Qtq)
+pacaur -D --asdeps $(pacaur -Qq)
+pacaur -D --asexplicit $(pacaur -Qtq)

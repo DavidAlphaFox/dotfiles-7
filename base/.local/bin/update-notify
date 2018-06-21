@@ -6,7 +6,7 @@ if [ -n "$UPS" ]; then
   echo -n 
 fi
 if [ -z "$NOTIFY" ]; then
-  AUPS="$(TERM=linux yaourt -Qua)"
+  AUPS="$(TERM=linux pacaur -Qua)"
   if [ -n "$AUPS" ]; then
     NOTIFY=1
     echo -n 

@@ -10,13 +10,13 @@ git stash pop
 
 # upgrade all packages
 echo -e "\n💾  Updating system..."
-yaourt -Syu --aur
+pacaur -Syu --aur
 
 # removed orphaned packages
-orphans="$(yaourt -Qdtq)"
+orphans="$(pacaur -Qdtq)"
 if [ -n "$orphans" ]; then
   echo -e "\n💩  Removing orphaned packages..."
-  yaourt -Rns $(echo $orphans)
+  pacaur -Rns $(echo $orphans)
 fi
 
 # removed cached packages

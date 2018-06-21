@@ -1,8 +1,8 @@
 #!/bin/bash
 
-orphans="$(yaourt -Qdtq)"
+orphans="$(pacaur -Qdtq)"
 if [ -n "$orphans" ]; then
-  yaourt -Rns $orphans
+  pacaur -Rns $orphans
 else
   echo -e "\e[1;32mno ophaned packages\e[0m"
 fi
