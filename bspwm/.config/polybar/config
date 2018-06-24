@@ -19,7 +19,7 @@ yellow = ${xrdb:color11}
 blue = ${xrdb:color12}
 purple = ${xrdb:color13}
 cyan = ${xrdb:color14}
-primary = ${colors.green}
+primary = ${colors.blue}
 secondary = ${xrdb:color4}
 alert = ${xrdb:color1}
 
@@ -130,7 +130,7 @@ label-font = 4
 type = internal/bspwm
 
 label-focused = %name%
-label-focused-foreground = ${colors.primary}
+label-focused-foreground = ${colors.foreground}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
