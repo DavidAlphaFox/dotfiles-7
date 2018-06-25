@@ -23,7 +23,7 @@ fi
 if [ -n "$(find /var/cache/pacman/pkg -type f)" ]; then
   #dodedup=yes
   echo -e "\n🗑️   Removing cached packages..."
-  yes | sudo pacman -Scc 2>&1 >/dev/null
+  yes | sudo pacaur -Scc 2>&1 >/dev/null
 fi
 
 # upgrade antgen plugins
