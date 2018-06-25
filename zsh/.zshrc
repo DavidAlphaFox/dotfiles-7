@@ -98,4 +98,4 @@ if [ -e "$HOME/go" ]; then
   GOPATH="$HOME/go"
   PATH="$PATH:$HOME/go/bin"
 fi
-
+export FZF_DEFAULT_COMMAND="find ."

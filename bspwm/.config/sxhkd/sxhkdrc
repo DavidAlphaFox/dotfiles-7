@@ -12,6 +12,9 @@ super + {space,m}
 # filemanager
 super + f
   termite -e ranger
+# package manager
+super + p
+  termite -e pacui
 
 # calculator
 super + c
