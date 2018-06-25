@@ -99,3 +99,4 @@ if [ -e "$HOME/go" ]; then
   PATH="$PATH:$HOME/go/bin"
 fi
 export FZF_DEFAULT_COMMAND="find ."
+export FZF_COMPLETION_TRIGGER='~~'

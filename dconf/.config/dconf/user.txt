@@ -217,7 +217,7 @@ show-tooltips=true
 
 system-theme-tracking-enabled=false
 
-snippets=@as []
+snippets=['0:`fzf`:`fzf`']
 
 
 start-minimized=false
