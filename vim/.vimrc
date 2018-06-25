@@ -396,3 +396,12 @@ let vala_no_tab_space_error = 1
 " Minimum lines used for comment syncing (default 50)
 "let vala_minlines = 120
 
+" tmux title
+if exists('$TMUX')
+  autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
+  autocmd VimLeave * call system("tmux setw automatic-rename")
+  autocmd BufEnter * let &titlestring = ' ' . expand("%:t")
+  set title
+endif
+
+
