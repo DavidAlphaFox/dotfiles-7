@@ -85,10 +85,10 @@ unzip
 usbutils
 vi
 vim
+vim-ale
 vim-fugitive
 vim-gitgutter
 vim-nerdtree
-vim-syntastic
 vim-tagbar
 w3m
 wget
