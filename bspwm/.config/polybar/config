@@ -30,7 +30,7 @@ height = 44
 offset-x = 0
 offset-y = 0
 ;radius = 16.0
-;fixed-center = false
+fixed-center = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
