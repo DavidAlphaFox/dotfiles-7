@@ -20,9 +20,6 @@ super + p
 super + c
   galculator
 
-# switch window dialog
-super + Tab
-  rofi -show window -normal-window
 # switch, move window
 super + {_,shift + }{Left,Down,Up,Right}
   bspc node -{f,s} {west,south,north,east}
