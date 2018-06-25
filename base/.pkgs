@@ -100,3 +100,8 @@ xorg-xwininfo
 xterm
 zathura-pdf-mupdf
 zip
+pulseaudio
+pamixer
+linux
+acpi
+sysstat

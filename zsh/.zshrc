@@ -100,3 +100,9 @@ if [ -e "$HOME/go" ]; then
 fi
 export FZF_DEFAULT_COMMAND="find ."
 export FZF_COMPLETION_TRIGGER='~~'
+if [ -e "/usr/share/fzf/key-bindings.zsh" ]; then
+  source /usr/share/fzf/key-bindings.zsh
+  source /usr/share/fzf/completion.zsh
+  export FZF_TMUX=1
+fi
+

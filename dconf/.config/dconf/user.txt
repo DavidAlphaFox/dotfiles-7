@@ -248,7 +248,7 @@ key-label-font='Exo 2 bold'
 
 key-stroke-width=100.0
 
-key-label-overrides=['LWIN::', 'RWIN::']
+key-label-overrides=['LWIN::', 'RWIN::']
 
 [org/onboard/window/landscape]
 
