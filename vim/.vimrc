@@ -16,7 +16,7 @@ let g:onedark_terminal_italics=0
 colorscheme onedark
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Iosevka\ Term\ 15
+    set guifont=Input\ 15
   endif
 endif
 

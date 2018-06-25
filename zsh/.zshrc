@@ -98,7 +98,9 @@ if [ -e "$HOME/go" ]; then
   GOPATH="$HOME/go"
   PATH="$PATH:$HOME/go/bin"
 fi
-export FZF_DEFAULT_COMMAND="find ."
+export FZF_DEFAULT_COMMAND='ag -g "" --hidden'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="find . -type d"
 export FZF_COMPLETION_TRIGGER='~~'
 if [ -e "/usr/share/fzf/key-bindings.zsh" ]; then
   source /usr/share/fzf/key-bindings.zsh
