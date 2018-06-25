@@ -62,6 +62,9 @@ XF86AudioRaiseVolume
 XF86AudioLowerVolume
   pactl set-sink-volume 0 '-10%'
 
+XF86AudioMute
+  pactl set-sink-mute 0 toggle
+
 XF86AudioPrev
   playerctl previous
 
