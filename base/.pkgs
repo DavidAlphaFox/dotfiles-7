@@ -1,3 +1,4 @@
+acpi
 alsa-plugins
 alsa-tools
 alsa-utils
@@ -31,7 +32,9 @@ iftop
 inetutils
 intel-ucode
 iputils
+libcanberra-pulse
 licenses
+linux
 logrotate
 lsb-release
 lsof
@@ -56,10 +59,12 @@ otf-font-awesome
 pacaur
 pacman-contrib
 pacui
+pamixer
 perl-file-mimeinfo
 playerctl
 plymouth-theme-monoarch
 polybar
+pulseaudio
 qt5-styleplugins
 ranger
 rofi
@@ -69,6 +74,7 @@ sddm
 seahorse
 stow
 sxhkd
+sysstat
 systemd-sysvcompat
 termite
 tig
@@ -100,8 +106,3 @@ xorg-xwininfo
 xterm
 zathura-pdf-mupdf
 zip
-pulseaudio
-pamixer
-linux
-acpi
-sysstat
