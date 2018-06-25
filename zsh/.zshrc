@@ -90,7 +90,7 @@ if [ -e "~/.zlocal" ]; then
 fi
 # shorter delay on cmd-mode
 export KEYTIMEOUT=1
-antigen bundle hlissner/zsh-autopair
+#antigen bundle hlissner/zsh-autopair
 if [ -e "/usr/share/nvm/init-nvm.sh" ]; then
   source /usr/share/nvm/init-nvm.sh
 fi

@@ -6,9 +6,9 @@ super + {shift,ctrl} + q
 # terminal
 super + Return
   termsel
-# run, applications menus
-super + {space,m}
-  rofi -show {combi,drun} -normal-window
+# rofi applications menu
+super + space
+  rofi -show combi -normal-window
 # filemanager
 super + f
   termite -e ranger
