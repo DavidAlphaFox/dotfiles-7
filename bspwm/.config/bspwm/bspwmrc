@@ -35,6 +35,7 @@ bspc rule -a "VMPK-Virtual MIDI Piano Keyboard" state=floating
 bspc rule -a Galculator state=floating
 bspc rule -a "-c" state=floating
 bspc rule -a Rofi state=floating
+bspc rule -a termite0 state=floating
 
 # xrdb
 function get_xrdb() {
