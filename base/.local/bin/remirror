@@ -3,3 +3,4 @@
 curl -o ~/.mirrorlist 'https://www.archlinux.org/mirrorlist/?country=US&use_mirror_status=on'
 sed -i 's/#Server/Server/' ~/.mirrorlist
 rankmirrors -v -n 3 ~/.mirrorlist | sudo tee /etc/pacman.d/mirrorlist
+rm ~/.mirrorlist
