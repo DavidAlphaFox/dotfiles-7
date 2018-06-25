@@ -55,3 +55,22 @@ super + Insert
 super + shift + r
   ~/.local/bin/reload
 
+# music controls
+XF86AudioRaiseVolume
+  pactl set-sink-volume 0 '+10%'
+
+XF86AudioLowerVolume
+  pactl set-sink-volume 0 '-10%'
+
+XF86AudioPrev
+  playerctl previous
+
+XF86AudioNext
+  playerctl next
+
+XF86AudioPlay
+  playerctl play-pause
+
+XF86AudioStop
+  playerctl stop
+
