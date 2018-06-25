@@ -1,4 +1,5 @@
 #!/bin/zsh
+
 pacaur -S --needed --noconfirm otfcc ttfautohint npm
 npm install
 for DESIGN in term termlig type; do

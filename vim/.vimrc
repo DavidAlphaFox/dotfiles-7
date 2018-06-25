@@ -226,7 +226,10 @@ map <leader>td :tabclose<CR>
 map <leader>tm :tabmove<SPACE>
 map <leader>tn :tabnext<CR>
 map <leader>tp :tabprevious<CR>
-map <leader>te :tabedit<SPACE>
+"map <leader>te :tabedit<SPACE>
+
+command! Fzfedit call fzf#run({'sink': 'tabedit', 'options': '--multi', 'down': '40%'})
+map <leader>te :Fzfedit<CR>
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab=1
