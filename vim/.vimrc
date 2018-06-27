@@ -324,18 +324,9 @@ endfunction
 " Toggle paste mode on and off
 map <silent> <leader>p :setlocal paste!<CR>
 
-" activate closetag plugin for xml types
-" autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
-" autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
-
 " activate spell check for git commits, and other types
 autocmd FileType gitcommit set spell spelllang=en_us
 autocmd FileType markdown set spell spelllang=en_us
-
-" supertab/autocomplete options
-set omnifunc=syntaxcomplete#Complete
-set completeopt+=longest
-let g:SuperTabDefaultCompletionType="context"
 
 " line numbers for specific filetypes
 autocmd FileType python setl number
@@ -366,11 +357,6 @@ map <leader>ne :NERDTree<SPACE>
 let NERDTreeIgnore=['\.pyc$[[file]]','\.so$[[file]]','\.class$[[file]]']
 let NERDTreeQuitOnOpen=1
 
-" open syntastic error window on errors
-let g:syntastic_javascript_checkers=['jscs', 'jshint']
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-
 " airline status theme
 set showtabline=1
 
@@ -379,25 +365,6 @@ if has("gui_win32")
     source $VIMRUNTIME/mswin.vim
     behave mswin
 endif
-
-" disable syntastic check (compile) on save
-let g:syntastic_vala_check_disabled = 1
-" vala
-" Disable valadoc syntax highlight
-"let vala_ignore_valadoc = 1
-let g:syntastic_vala_vapi_dirs = "/usr/share/vala-0.32/vapi"
-" Enable comment strings
-let vala_comment_strings = 1
-
-" Highlight space errors
-let vala_space_errors = 1
-" Disable trailing space errors
-"let vala_no_trail_space_error = 1
-" Disable space-tab-space errors
-let vala_no_tab_space_error = 1
-
-" Minimum lines used for comment syncing (default 50)
-"let vala_minlines = 120
 
 " tmux title
 if exists('$TMUX')
