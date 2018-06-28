@@ -10,7 +10,7 @@ git stash pop
 
 # upgrade all packages
 echo -e "\n💾  Updating system..."
-pacaur -Syu --aur
+pacaur -Syu
 
 # removed orphaned packages
 orphans="$(pacaur -Qdtq)"
