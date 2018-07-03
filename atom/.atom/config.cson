@@ -37,7 +37,7 @@
     ]
   editor:
     fontFamily: "Iosevka Term-Lig Medium"
-    fontSize: 20
+    fontSize: 16
     preferredLineLength: 120
   "exception-reporting":
     userId: "c8d8d76b-8c90-4336-baaa-dd10cfac0574"
