@@ -217,7 +217,7 @@ show-tooltips=true
 
 system-theme-tracking-enabled=false
 
-snippets=@as []
+snippets=['0:`fzf`:`fzf`']
 
 
 start-minimized=false
@@ -248,7 +248,7 @@ key-label-font='Exo 2 bold'
 
 key-stroke-width=100.0
 
-key-label-overrides=['LWIN::', 'RWIN::']
+key-label-overrides=['LWIN::', 'RWIN::']
 
 [org/onboard/window/landscape]
 

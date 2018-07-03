@@ -1,7 +1,7 @@
 "*":
   "atom-material-ui":
     colors:
-      abaseColor: "#b294bb"
+      abaseColor: "#8fadcc"
       accentColor: "#85678f"
       paintCursor: true
       predefinedColor: "Blue"

@@ -1,12 +1,12 @@
 #!/bin/bash
 
 package-query -Q --format '%O' | grep -v '^-' | sed 's/ /\n/g' | grep ':$' | sed 's/://g' | sort | uniq > /tmp/opts
-pacaur -Qq > /tmp/all
+yay -Qq > /tmp/all
 sort /tmp/all /tmp/opts | uniq -u > /tmp/uniq
 sort /tmp/opts /tmp/uniq | uniq -d > /tmp/uopts
 for pkg in $(cat /tmp/uopts); do
   package-query -S --format "%n\n\t%d" $pkg
-  for i in $(pacaur -Sii $pkg | grep 'Optional For' | awk -F: '{print $2}'); do echo -e "\t\t$(package-query -Q $i)" ; pacaur -Qii $i 2>/dev/null | grep "${pkg}:" | sed 's/Optional Deps   ://g' | sed 's/^ */\t\t\t/'; done | grep -v '\s$'
+  for i in $(yay -Sii $pkg | grep 'Optional For' | awk -F: '{print $2}'); do echo -e "\t\t$(package-query -Q $i)" ; yay -Qii $i 2>/dev/null | grep "${pkg}:" | sed 's/Optional Deps   ://g' | sed 's/^ */\t\t\t/'; done | grep -v '\s$'
   echo
 done
 

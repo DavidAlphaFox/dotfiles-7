@@ -6,20 +6,20 @@ super + {shift,ctrl} + q
 # terminal
 super + Return
   termsel
-# run, applications menus
-super + {space,m}
-  rofi -show {combi,drun} -normal-window
+# rofi applications menu
+super + space
+  rofi -show combi -normal-window
 # filemanager
 super + f
   termite -e ranger
+# package manager
+super + p
+  termite -e pacui
 
 # calculator
 super + c
   galculator
 
-# switch window dialog
-super + Tab
-  rofi -show window -normal-window
 # switch, move window
 super + {_,shift + }{Left,Down,Up,Right}
   bspc node -{f,s} {west,south,north,east}
@@ -54,4 +54,26 @@ super + Insert
 # reload keybindings
 super + shift + r
   ~/.local/bin/reload
+
+# music controls
+XF86AudioRaiseVolume
+  pactl set-sink-volume 0 '+10%'
+
+XF86AudioLowerVolume
+  pactl set-sink-volume 0 '-10%'
+
+XF86AudioMute
+  pactl set-sink-mute 0 toggle
+
+XF86AudioPrev
+  playerctl previous
+
+XF86AudioNext
+  playerctl next
+
+XF86AudioPlay
+  playerctl play-pause
+
+XF86AudioStop
+  playerctl stop
 

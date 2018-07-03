@@ -2,5 +2,5 @@
 
 
 # adjust install reasons
-pacaur -D --asdeps $(pacaur -Qq)
-pacaur -D --asexplicit $(pacaur -Qtq)
+yay -D --asdeps $(yay -Qq)
+yay -D --asexplicit $(yay -Qtq)

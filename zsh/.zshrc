@@ -90,12 +90,21 @@ if [ -e "~/.zlocal" ]; then
 fi
 # shorter delay on cmd-mode
 export KEYTIMEOUT=1
-antigen bundle hlissner/zsh-autopair
+#antigen bundle hlissner/zsh-autopair
 if [ -e "/usr/share/nvm/init-nvm.sh" ]; then
   source /usr/share/nvm/init-nvm.sh
 fi
 if [ -e "$HOME/go" ]; then
   GOPATH="$HOME/go"
   PATH="$PATH:$HOME/go/bin"
+fi
+if [ -e "/usr/share/fzf/key-bindings.zsh" ]; then
+  export FZF_TMUX=1
+  export FZF_DEFAULT_COMMAND='ag -g "" --hidden'
+  export FVF_DEFAULT_OPTS='-m --ansi'
+  export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+  export FZF_ALT_C_COMMAND="find . -type d 2>/dev/null"
+  source /usr/share/fzf/key-bindings.zsh
+  source /usr/share/fzf/completion.zsh
 fi
 

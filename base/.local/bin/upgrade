@@ -10,20 +10,20 @@ git stash pop
 
 # upgrade all packages
 echo -e "\n💾  Updating system..."
-pacaur -Syu --aur
+yay -Syu
 
 # removed orphaned packages
-orphans="$(pacaur -Qdtq)"
+orphans="$(yay -Qdtq)"
 if [ -n "$orphans" ]; then
   echo -e "\n💩  Removing orphaned packages..."
-  pacaur -Rns $(echo $orphans)
+  yay -Rns $(echo $orphans)
 fi
 
 # removed cached packages
 if [ -n "$(find /var/cache/pacman/pkg -type f)" ]; then
   #dodedup=yes
   echo -e "\n🗑️   Removing cached packages..."
-  yes | sudo pacman -Scc 2>&1 >/dev/null
+  yes | sudo yay -Scc 2>&1 >/dev/null
 fi
 
 # upgrade antgen plugins
