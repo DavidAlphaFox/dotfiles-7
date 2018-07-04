@@ -70,7 +70,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1529464127
+session-start=1530728237
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -178,7 +178,7 @@ date-format='regular'
 location-mode='path-bar'
 show-hidden=false
 show-size-column=true
-sidebar-width=237
+sidebar-width=238
 sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
