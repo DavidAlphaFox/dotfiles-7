@@ -2,7 +2,7 @@
 Type=Application
 Exec=mousetweaks --ssc --ssc-time=1.0 --daemonize
 Hidden=false
-X-MATE-Autostart-enabled=false
+X-MATE-Autostart-enabled=true
 Name[en_US]=mousetweaks
 Name=mousetweaks
 Comment[en_US]=mouse accessibility
