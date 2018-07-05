@@ -14,11 +14,11 @@ home_sym=' '
 # git prompt
 up_sym=''
 down_sym=''
-untracked_sym=' '
-added_sym=' '
-mod_sym=' '
-stash_sym=' '
-noup_sym=' '
+untracked_sym=''
+added_sym=''
+mod_sym=''
+stash_sym=''
+noup_sym=''
 # bash/zsh git prompt support
 #
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
@@ -539,14 +539,14 @@ function get_pwd(){
     if [ "$PWD" = "$HOME" ]; then
       prompt_short_dir="$home_sym"
     else
-      prompt_short_dir="  %3~"
+      prompt_short_dir=" %3~"
       if [[ "$PWD" == "$HOME"* ]]; then
-        prompt_short_dir="  ${PWD#$HOME/}"
+        prompt_short_dir=" ${PWD#$HOME/}"
       fi
     fi
   else
     parent=${git_root%\/*}
-    prompt_short_dir="  ${PWD#$parent/}"
+    prompt_short_dir=" ${PWD#$parent/}"
   fi
   echo "$prompt_short_dir"
 }
