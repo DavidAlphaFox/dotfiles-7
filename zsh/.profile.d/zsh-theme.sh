@@ -12,13 +12,13 @@ err_sym="${spc}"
 vicmd_sym=' '
 home_sym=' '
 # git prompt
-up_sym=''
-down_sym=''
-untracked_sym=''
-added_sym=''
-mod_sym=''
-stash_sym=''
-noup_sym=''
+up_sym=' '
+down_sym=' '
+untracked_sym=' '
+added_sym=' '
+mod_sym=' '
+stash_sym=' '
+noup_sym=' '
 # bash/zsh git prompt support
 #
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
@@ -487,7 +487,7 @@ __git_ps1 ()
 
 	local f="$u$w$i$s"
 	#local gitstring="${f:+$z$f}$r$p $c$b"
-  local gitstring="$f$r$p $c$b"
+  local gitstring="$f$r$p$c$b"
 
 	if [ $pcmode = yes ]; then
 		if [ "${__git_printf_supports_v-}" != yes ]; then
@@ -552,7 +552,7 @@ function get_pwd(){
 }
 
 local ret_status='%(?:%{$fg_bold[green]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
-local vicmd_status='%{$reset_color%}%{$fg_bold[green]%}$vicmd_sym%{$reset_color%}'
+local vicmd_status='%{$reset_color%}%{$fg_bold[green]%}$vicmd_sym%{$reset_color%} '
 local git_status='$(__promptline_vcs_branch)%{$reset_color%}'
 local dir_status='%{$fg_bold[blue]%}$(get_pwd)%{$reset_color%}'
 local host_status='%{$fg_bold[yellow]%}$(__promptline_host)%{$reset_color%}'
