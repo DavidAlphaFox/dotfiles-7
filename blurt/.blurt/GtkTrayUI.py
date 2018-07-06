@@ -85,8 +85,8 @@ class UI(GObject.GObject):
       self.statusicon.set_tooltip_text("Blurt - Idle")
 
   def set_icon_active(self):
-    self.statusicon.set_from_icon_name("applications-chat")
+    self.statusicon.set_from_icon_name("empathy")
 
   def set_icon_inactive(self):
-    self.statusicon.set_from_icon_name("applications-chat-panel")
+    self.statusicon.set_from_icon_name("preferences-system-notifications")
 
