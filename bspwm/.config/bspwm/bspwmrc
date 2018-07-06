@@ -68,6 +68,6 @@ if [ -e "$HOME/.fehbg" ]; then
 fi
 numlockx on
 if [ -e "$HOME/.bspwmrc_local" ]; then
-  source "$HOME/.bspwmrc_local"
+  "$HOME/.bspwmrc_local"
 fi
 
