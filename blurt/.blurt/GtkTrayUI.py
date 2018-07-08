@@ -14,7 +14,7 @@ class UI(GObject.GObject):
     self.statusicon = Gtk.StatusIcon()
     self.statusicon.set_title("Blurt")
     self.statusicon.set_name("Blurt")
-    self.statusicon.set_tooltip_text("Blurt - Idle")
+    #self.statusicon.set_tooltip_text("Blurt - Idle")
     self.statusicon.set_has_tooltip(True)
     self.statusicon.connect("activate", self.continuous_toggle)
     self.statusicon.connect("popup-menu", self.popup_menu)
@@ -41,11 +41,11 @@ class UI(GObject.GObject):
     if checked:
       self.menu_listen.set_label("Listen")
       self.emit('command', "continuous_listen")
-      self.statusicon.set_tooltip_text("Blurt - Listening")
+      #self.statusicon.set_tooltip_text("Blurt - Listening")
       self.set_icon_active()
     else:
       self.set_icon_inactive()
-      self.statusicon.set_tooltip_text("Blurt - Idle")
+      #self.statusicon.set_tooltip_text("Blurt - Idle")
       self.emit('command', "continuous_stop")
 
   def toggle_listen(self, item):
@@ -53,13 +53,13 @@ class UI(GObject.GObject):
     if val == "Listen":
       self.emit("command", "listen")
       self.menu_listen.set_label("Stop")
-      self.statusicon.set_tooltip_text("Blurt - Listening")
+      #self.statusicon.set_tooltip_text("Blurt - Listening")
       self.set_icon_active()
     else:
       self.icon_inactive()
       self.menu_listen.set_label("Listen")
       self.emit("command", "stop")
-      self.statusicon.set_tooltip_text("Blurt - Idle")
+      #self.statusicon.set_tooltip_text("Blurt - Idle")
 
   def popup_menu(self, item, button, time):
     self.menu.popup(None, None, None, None, button, time)
@@ -82,7 +82,7 @@ class UI(GObject.GObject):
     if not self.menu_continuous.get_active():
       self.menu_listen.set_label("Listen")
       self.set_icon_inactive()
-      self.statusicon.set_tooltip_text("Blurt - Idle")
+      #self.statusicon.set_tooltip_text("Blurt - Idle")
 
   def set_icon_active(self):
     self.statusicon.set_from_icon_name("empathy")
