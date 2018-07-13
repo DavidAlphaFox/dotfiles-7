@@ -2,6 +2,7 @@ export EDITOR="vim"
 export VISUAL="vim"
 export CM_LAUNCHER="rofi"
 export TERMINAL=termite
+export BROWSER="google-chrome-stable"
 export GIT_EDITOR=$EDITOR
 export LC_CTYPE=$LANG
 export LC_NUMERIC=$LANG
