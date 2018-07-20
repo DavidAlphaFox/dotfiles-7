@@ -6,6 +6,9 @@ super + {shift,ctrl} + q
 # terminal
 super + Return
   termsel
+# browser
+super + backslash
+  exec $BROWSER &
 # rofi applications menu
 super + space
   rofi -show combi -normal-window
