@@ -23,6 +23,7 @@ duperemove
 feh
 galculator
 grub
+grub-btrfs
 gvfs
 haveged
 highlight
@@ -56,7 +57,6 @@ numlockx
 onboard
 openssh
 otf-font-awesome
-yay
 pacman-contrib
 pacui
 pamixer
@@ -77,6 +77,7 @@ sxhkd
 sysstat
 systemd-sysvcompat
 termite
+the_silver_searcher
 tig
 tmux
 tree
@@ -96,6 +97,7 @@ wget
 xarchiver
 xcursor-flatbed
 xdo
+xf86-input-mouse
 xorg-server
 xorg-xev
 xorg-xprop
@@ -104,7 +106,6 @@ xorg-xrdb
 xorg-xsetroot
 xorg-xwininfo
 xterm
+yay
 zathura-pdf-mupdf
 zip
-the_silver_searcher
-grub-btrfs
