@@ -48,7 +48,7 @@ set nrformats-=octal
 
 " no timeout (onscreen keyboard compat)
 set notimeout
-set nottimeout
+set ttimeout
 
 set ignorecase
 set smartcase
