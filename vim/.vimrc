@@ -46,8 +46,9 @@ set smarttab
 
 set nrformats-=octal
 
-set ttimeout
-set ttimeoutlen=100
+" no timeout (onscreen keyboard compat)
+set notimeout
+set nottimeout
 
 set ignorecase
 set smartcase
