@@ -1,0 +1,3 @@
+#!/bin/sh
+
+dmenu -p ' ' -normal-window $@

@@ -52,7 +52,9 @@ super + {_,shift +,ctrl +} + @Print
 
 # clipboard select
 super + Insert
-  clipmenu -p 
+  clipmenu
+super + shift + Insert
+  clipdel -d '.*'
 
 # reload keybindings
 super + shift + r

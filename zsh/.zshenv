@@ -1,6 +1,6 @@
 export EDITOR="vim"
 export VISUAL="vim"
-export CM_LAUNCHER="rofi"
+export CM_LAUNCHER="cliprofi"
 export TERMINAL=termite
 export BROWSER="google-chrome-stable"
 export GIT_EDITOR=$EDITOR
