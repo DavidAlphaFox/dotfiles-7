@@ -70,7 +70,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1530728237
+session-start=1532463288
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -172,11 +172,11 @@ keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/
 sidebar-width=240
 
 [org/gtk/settings/file-chooser]
-window-position=(552, 180)
-window-size=(811, 716)
+window-position=(265, 24)
+window-size=(832, 716)
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 sidebar-width=238
 sort-column='name'
@@ -203,7 +203,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=3
+current-settings-page=5
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -217,7 +217,7 @@ show-tooltips=true
 
 system-theme-tracking-enabled=false
 
-snippets=['0:`fzf`:`fzf`']
+snippets=@as []
 
 
 start-minimized=false
@@ -234,7 +234,7 @@ key-gradient-direction=-23.0
 
 key-style='gradient'
 
-roundrect-radius=16.0
+roundrect-radius=0.0
 
 key-size=97.0
 
@@ -246,7 +246,7 @@ background-gradient=0.0
 
 key-label-font='Exo 2 bold'
 
-key-stroke-width=100.0
+key-stroke-width=50.0
 
 key-label-overrides=['LWIN::', 'RWIN::']
 
@@ -278,7 +278,7 @@ audio-feedback-enabled=false
 toolkit-accessibility=true
 
 [org/onboard/auto-show]
-enabled=false
+enabled=true
 
 hide-on-key-press=true
 
@@ -293,8 +293,8 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=38
-y=84
+x=18
+y=87
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
@@ -334,9 +334,13 @@ enabled=false
 dock-expand=true
 
 [org/onboard/typing-assistance/word-suggestions]
-enabled=false
+enabled=true
 
-wordlist-buttons=['previous-predictions', 'next-predictions', 'pause-learning', 'language', 'hide']
+wordlist-buttons=['pause-learning', 'hide']
+
+pause-learning-locked=false
+
+punctuation-assistance=false
 
 [org/onboard/typing-assistance]
 active-language=''
