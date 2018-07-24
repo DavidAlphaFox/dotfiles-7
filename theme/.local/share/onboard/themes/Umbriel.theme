@@ -5,14 +5,14 @@
   <key_style>gradient</key_style>
   <roundrect_radius>0.0</roundrect_radius>
   <key_size>97.0</key_size>
-  <key_stroke_width>100.0</key_stroke_width>
+  <key_stroke_width>50.0</key_stroke_width>
   <key_fill_gradient>3.0</key_fill_gradient>
   <key_stroke_gradient>0.0</key_stroke_gradient>
   <key_gradient_direction>-23.0</key_gradient_direction>
   <key_label_font>Exo 2 bold</key_label_font>
   <key_label_overrides>
-    <key group="super" id="LWIN" label=""/>
-    <key group="super" id="RWIN" label=""/>
+    <key group="" id="LWIN" label=""/>
+    <key group="" id="RWIN" label=""/>
   </key_label_overrides>
   <key_shadow_strength>25.0</key_shadow_strength>
   <key_shadow_size>50.0</key_shadow_size>
