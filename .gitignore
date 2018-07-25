@@ -14,3 +14,4 @@ dconf/.config/dconf/user.txt-lock
 fonts/.fonts/.uuid
 blurt/.config/blurt/language/
 sentences.corpus
+theme/.local/share/onboard/models/
