@@ -203,7 +203,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=5
+current-settings-page=1
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -280,12 +280,14 @@ toolkit-accessibility=true
 [org/onboard/auto-show]
 enabled=true
 
-hide-on-key-press=true
+hide-on-key-press=false
 
 reposition-method-floating='reduce-travel'
 
 hide-on-key-press-pause=60.0
 
+
+tablet-mode-detection-enabled=false
 
 [org/onboard/icon-palette]
 in-use=true
@@ -366,3 +368,6 @@ secondary-click-time=1.0
 [org/mate/desktop/accessibility/keyboard]
 mousekeys-enable=true
 enable=true
+
+[org/onboard/universal-access]
+hide-click-type-window=true
