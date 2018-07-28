@@ -100,10 +100,10 @@ if [ -e "$HOME/go" ]; then
 fi
 if [ -e "/usr/share/fzf/key-bindings.zsh" ]; then
   export FZF_TMUX=1
-  export FZF_DEFAULT_COMMAND='ag -g "" --hidden'
+  export FZF_DEFAULT_COMMAND='ag -f -g "" --hidden --depth 16'
   export FZF_DEFAULT_OPTS='-m --ansi --tac'
   export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-  export FZF_ALT_C_COMMAND="find -L . -type d 2>/dev/null"
+  export FZF_ALT_C_COMMAND="find -L . -maxdepth 16 -type d 2>/dev/null"
   source /usr/share/fzf/key-bindings.zsh
   source /usr/share/fzf/completion.zsh
 fi
