@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/usr/bin/fzf-tmux $@ -u 50%
+
