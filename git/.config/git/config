@@ -9,7 +9,8 @@
 [help]
   autocorrect = 30
 [merge]
-  conflictstyle = diff3
+	tool = vimdiff
+	conflictstyle = diff3
 [mergetool]
   prompt = false
   keepBackup = false
