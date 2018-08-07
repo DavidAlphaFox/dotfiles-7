@@ -8,7 +8,6 @@ atool
 base-devel-meta
 bc
 bspwm
-btops-git
 calc
 clipmenu
 compton
@@ -23,7 +22,6 @@ duperemove
 feh
 galculator
 grub
-grub-btrfs
 gvfs
 haveged
 highlight
@@ -58,7 +56,6 @@ onboard
 openssh
 otf-font-awesome
 pacman-contrib
-pacui
 pamixer
 perl-file-mimeinfo
 playerctl
