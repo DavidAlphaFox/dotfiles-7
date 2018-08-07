@@ -45,7 +45,6 @@ mate-polkit
 mate-power-manager
 mate-session-manager
 mate-settings-daemon
-mousetweaks
 nano
 ncdu
 net-tools
@@ -53,7 +52,6 @@ netctl
 network-manager-applet
 noto-fonts-emoji
 numlockx
-onboard
 openssh
 otf-font-awesome
 pacman-contrib

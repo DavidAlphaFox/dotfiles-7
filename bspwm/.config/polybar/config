@@ -71,6 +71,7 @@ cursor-scroll = ns-resize
 
 [module/onboard]
 type = custom/script
+exec-if = test -x /usr/bin/onboard
 exec = echo 
 click-left = onboard &
 interval = 3600
