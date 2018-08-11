@@ -1,4 +1,4 @@
-source /usr/share/zsh/share/antigen.zsh
+source "$HOME/.local/share/antigen.zsh"
 
 # oh-my-zsh plugins
 antigen use oh-my-zsh
