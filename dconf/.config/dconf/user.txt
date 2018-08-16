@@ -70,7 +70,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1532697812
+session-start=1534458678
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -104,7 +104,7 @@ window-is-maximized=false
 
 saved-view='/org/mate/desktop/interface/'
 window-height=957
-window-width=956
+window-width=1916
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
@@ -184,7 +184,7 @@ sort-directories-first=false
 sort-order='ascending'
 
 [apps/seahorse/windows/key-manager]
-width=956
+width=1916
 height=1028
 
 [org/mate/desktop/peripherals/mouse]
@@ -211,7 +211,7 @@ layout='/usr/share/onboard/layouts/Compact.onboard'
 
 xembed-onboard=false
 
-status-icon-provider='GtkStatusIcon'
+status-icon-provider='auto'
 
 show-tooltips=true
 
@@ -228,15 +228,15 @@ xembed-background-image-enabled=false
 
 [org/onboard/theme-settings]
 color-scheme='/home/ihanson/.local/share/onboard/themes/Umbriel.colors'
-key-fill-gradient=3.0
+key-fill-gradient=6.0
 key-stroke-gradient=0.0
 key-gradient-direction=-23.0
 
 key-style='gradient'
 
-roundrect-radius=0.0
+roundrect-radius=8.0
 
-key-size=97.0
+key-size=95.0
 
 key-shadow-strength=25.0
 
@@ -274,11 +274,15 @@ key-synth='auto'
 
 audio-feedback-enabled=false
 
+touch-feedback-size=0
+
+sticky-key-release-delay=5.0
+
 [org/gnome/desktop/interface]
 toolkit-accessibility=true
 
 [org/onboard/auto-show]
-enabled=true
+enabled=false
 
 hide-on-key-press=false
 
