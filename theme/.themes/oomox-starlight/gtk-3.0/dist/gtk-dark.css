@@ -4023,13 +4023,14 @@ column-header .button:last-child .button {
   .frame.flat {
     border: 0; }
 
+GtkViewport {
+  background-color: mix(#212121,#212121,0.28);
+  color: mix(#c5c8c6,#c5c8c6,0.18);
+  border: 1px solid shade(mix(#212121,#212121,0.78),0.8); }
+
 /* avoid double borders when a viewport is packed into a GtkScrolledWindow */
 GtkScrolledWindow GtkViewport.frame {
   border: 0; }
-
-GtkViewport {
-  background-color: mix(#212121,#212121,0.28);
-  color: mix(#c5c8c6,#c5c8c6,0.28); }
 
 /**************
  ! Window frame

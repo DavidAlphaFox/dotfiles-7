@@ -7580,13 +7580,14 @@ frame.border-groove > border,
 frame.border-ridge > border {
   border: 1px solid alpha(mix(#212121,#c5c8c6,0.18),0.32941); }
 
+viewport {
+  background-color: mix(#212121,#212121,0.28);
+  color: mix(#c5c8c6,#c5c8c6,0.18);
+  border: 1px solid shade(mix(#212121,#212121,0.78),0.8); }
+
 /* avoid double borders when a viewport is packed into a GtkScrolledWindow */
 scrolledwindow viewport.frame {
   border: 0; }
-
-viewport {
-  background-color: mix(#212121,#212121,0.28);
-  color: mix(#c5c8c6,#c5c8c6,0.28); }
 
 /***************
  ! Places view *
