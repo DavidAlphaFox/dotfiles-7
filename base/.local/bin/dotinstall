@@ -47,6 +47,14 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash loglevel=3 udev.log_priority=3"
 GRUB_GFXMODE=1920x1080x24,auto
 EOF
 
+# pacman.conf
+sudo sed -i 's/#Color/Color/' /etc/pacman.conf
+
+# makepkg.conf
+sudo tee -a /etc/makepkg.conf <<EOF
+MAKEFLAGS="-j$(nproc --all)"
+EOF
+
 # mkinitcpio
 sudo sed -i 's/MODULES=()/MODULES=(vboxvideo)/' /etc/mkinitcpio.conf
 sudo sed -i 's/base udev/base udev plymouth/' /etc/mkinitcpio.conf
