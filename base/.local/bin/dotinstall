@@ -2,7 +2,7 @@
 
 cd $HOME
 ./.dotfiles/base/.local/bin/restow
-yay --noconfirm --needed -S $(cat ~/.pkgs)
+yay --norebuild --noconfirm --needed -S $(cat ~/.pkgs)
 
 # sddm
 sudo systemctl enable sddm
