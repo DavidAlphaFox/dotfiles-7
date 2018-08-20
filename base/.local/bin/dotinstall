@@ -25,12 +25,12 @@ X-MATE-WMName=bspwm
 EOF
 
 # plymouth
-sudo tee /etc/plymouth/plymouthd.conf <<EOF
-[Daemon]
-Theme=monoarch
-ShowDelay=0
-DeviceTimeout=30
-EOF
+#sudo tee /etc/plymouth/plymouthd.conf <<EOF
+#[Daemon]
+#Theme=monoarch
+#ShowDelay=0
+#DeviceTimeout=30
+#EOF
 
 # chrony
 #sudo sed -i 's/^! server/server/' /etc/chrony.conf
@@ -57,7 +57,7 @@ EOF
 
 # mkinitcpio
 sudo sed -i 's/MODULES=()/MODULES=(vboxvideo)/' /etc/mkinitcpio.conf
-sudo sed -i 's/base udev/base udev plymouth/' /etc/mkinitcpio.conf
+#sudo sed -i 's/base udev/base udev plymouth/' /etc/mkinitcpio.conf
 sudo tee -a /etc/mkinitcpio.conf <<EOF
 COMPRESSION="cat"
 EOF

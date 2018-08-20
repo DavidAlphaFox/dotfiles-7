@@ -58,7 +58,6 @@ pacman-contrib
 pamixer
 perl-file-mimeinfo
 playerctl
-plymouth-theme-monoarch
 polybar
 pulseaudio
 qt5-styleplugins
