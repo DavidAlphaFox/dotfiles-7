@@ -2,7 +2,7 @@
 
 cd $HOME
 ./.dotfiles/base/.local/bin/restow
-yay --aur --noconfirm --needed -S $(cat ~/.pkgs)
+yay --noconfirm --needed -S $(cat ~/.pkgs)
 
 # sddm
 sudo systemctl enable sddm
@@ -49,11 +49,6 @@ EOF
 
 # pacman.conf
 sudo sed -i 's/#Color/Color/' /etc/pacman.conf
-
-# makepkg.conf
-sudo tee -a /etc/makepkg.conf <<EOF
-MAKEFLAGS="-j$(nproc --all)"
-EOF
 
 # mkinitcpio
 sudo sed -i 's/MODULES=()/MODULES=(vboxvideo)/' /etc/mkinitcpio.conf
