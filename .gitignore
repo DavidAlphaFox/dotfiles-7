@@ -16,3 +16,4 @@ blurt/.config/blurt/language/
 sentences.corpus
 theme/.local/share/onboard/models/
 theme/.local/share/sddm/
+theme/.local/share/keyrings/
