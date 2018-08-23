@@ -380,3 +380,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'lifepillar/vim-mucomplete'
 call plug#end()
 
+" use a yellow cursor in insert mode
+let &t_SI = "\<Esc>]12;#f0c674\x7"
+" use a blue cursor otherwise
+let &t_EI = "\<Esc>]12;#8fadcc\x7"
+silent !echo -ne "\033]12;\#8fadcc\007"
+" reset cursor when vim exits
+autocmd VimLeave * silent !echo -ne "\033]112\007"
+
