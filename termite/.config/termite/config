@@ -10,7 +10,7 @@ dynamic_title   = true
 # special
 foreground      = #c5c8c6
 foreground_bold = #c5c8c6
-cursor          = #707880
+cursor          = #c5c8c6
 background      = #212121
 
 # black
