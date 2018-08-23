@@ -375,4 +375,10 @@ if exists('$TMUX')
   set title
 endif
 
-
+set completeopt+=menuone
+set completeopt+=noselect
+let g:mucomplete#enable_auto_at_startup = 1
+" plug
+call plug#begin('~/.vim/plugged')
+Plug 'lifepillar/vim-mucomplete'
+call plug#end()
