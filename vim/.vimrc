@@ -331,6 +331,8 @@ autocmd FileType markdown set spell spelllang=en_us
 autocmd FileType python setl number
 autocmd FileType vala setl number
 set numberwidth=1
+set cursorline
+
 
 " git shortcuts
 map <leader>gw :Gwrite<CR>
@@ -382,9 +384,9 @@ call plug#end()
 
 " use a yellow cursor in insert mode
 let &t_SI = "\<Esc>]12;#f0c674\x7"
-" use a blue cursor otherwise
-let &t_EI = "\<Esc>]12;#8fadcc\x7"
-silent !echo -ne "\033]12;\#8fadcc\007"
+" use a gray cursor otherwise
+let &t_EI = "\<Esc>]12;#707880\x7"
+silent !echo -ne "\033]12;\#707880\007"
 " reset cursor when vim exits
 autocmd VimLeave * silent !echo -ne "\033]112\007"
 

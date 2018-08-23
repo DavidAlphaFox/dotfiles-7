@@ -178,7 +178,7 @@ call s:h("Conceal", {}) " placeholder characters substituted for concealed text 
 call s:h("Cursor", { "fg": s:black, "bg": s:blue }) " the character under the cursor
 call s:h("CursorIM", {}) " like Cursor, but used when in IME mode
 call s:h("CursorColumn", { "bg": s:cursor_grey }) " the screen column that the cursor is in when 'cursorcolumn' is set
-call s:h("CursorLine", { "bg": s:cursor_grey }) " the screen line that the cursor is in when 'cursorline' is set
+call s:h("CursorLine", { }) " the screen line that the cursor is in when 'cursorline' is set
 call s:h("Directory", { "fg": s:blue }) " directory names (and other special names in listings)
 call s:h("DiffAdd", { "bg": s:visual_grey}) " diff mode: Added line
 call s:h("DiffChange", { "bg": s:visual_grey }) " diff mode: Changed line
@@ -191,7 +191,7 @@ call s:h("FoldColumn", {}) " 'foldcolumn'
 call s:h("SignColumn", {}) " column where signs are displayed
 call s:h("IncSearch", { "fg": s:black, "bg": s:orange }) " 'incsearch' highlighting; also used for the text replaced with ":s///c"
 call s:h("LineNr", { "fg": s:gutter_fg_grey }) " Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-call s:h("CursorLineNr", {}) " Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+call s:h("CursorLineNr", { "fg": s:yellow }) " Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 call s:h("MatchParen", { "fg": s:blue, "gui": "underline" }) " The character under the cursor or just before it, if it is a paired bracket, and its match.
 call s:h("ModeMsg", { "fg": s:purple }) " 'showmode' message (e.g., "-- INSERT --")
 call s:h("MoreMsg", {}) " more-prompt

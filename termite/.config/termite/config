@@ -1,7 +1,7 @@
 [options]
 font            = Input 15
 allow_bold      = false
-cursor_shape    = underline
+cursor_shape    = block
 #mouse_autohide  = true
 dynamic_title   = true
 
@@ -10,7 +10,7 @@ dynamic_title   = true
 # special
 foreground      = #c5c8c6
 foreground_bold = #c5c8c6
-cursor          = #c5c8c6
+cursor          = #707880
 background      = #212121
 
 # black
