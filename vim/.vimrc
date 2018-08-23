@@ -326,10 +326,10 @@ map <silent> <leader>p :setlocal paste!<CR>
 " activate spell check for git commits, and other types
 autocmd FileType gitcommit set spell spelllang=en_us
 autocmd FileType markdown set spell spelllang=en_us
-
 " line numbers for specific filetypes
 autocmd FileType python setl number
 autocmd FileType vala setl number
+autocmd FileType javascript setl number
 set numberwidth=1
 set cursorline
 
