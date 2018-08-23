@@ -374,7 +374,7 @@ if exists('$TMUX')
   set title
 endif
 
-set completeopt=menuone,noinsert,preview
+set completeopt=menuone,noinsert
 set shortmess+=c   " Shut off completion messages
 set belloff+=ctrlg " If Vim beeps during completion
 let g:mucomplete#enable_auto_at_startup = 1
