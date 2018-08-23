@@ -135,7 +135,7 @@ let s:vertsplit = { "gui": "#181A1F", "cterm": "59", "cterm16": "8" }
 
 call s:h("Comment", { "fg": s:comment_grey, "gui": "italic", "cterm": "italic" }) " any comment
 call s:h("Constant", { "fg": s:cyan }) " any constant
-call s:h("String", { "fg": s:green }) " a string constant: "this is a string"
+call s:h("String", { "fg": s:green }) " a string constant: 'this is a string'
 call s:h("Character", { "fg": s:green }) " a character constant: 'c', '\n'
 call s:h("Number", { "fg": s:dark_yellow }) " a number constant: 234, 0xff
 call s:h("Boolean", { "fg": s:dark_yellow }) " a boolean constant: TRUE, false
@@ -212,7 +212,7 @@ call s:h("StatusLine", { "fg": s:comment_grey })  "status line of current window
 call s:h("StatusLineNC", { "fg": s:gutter_fg_grey }) " status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 call s:h("TabLine", { "fg": s:gutter_fg_grey }) " tab pages line, not active tab page label
 call s:h("TabLineFill", {}) " tab pages line, where there are no labels
-call s:h("TabLineSel", { "fg": s:orange }) " tab pages line, active tab page label
+call s:h("TabLineSel", { "fg": s:blue, "bg": s:gutter_fg_grey }) " tab pages line, active tab page label
 call s:h("Title", { "fg": s:green }) " titles for output from ":set all", ":autocmd" etc.
 call s:h("Visual", { "fg": s:black, "bg": s:purple }) " Visual mode selection
 call s:h("VisualNOS", { "bg": s:visual_grey }) " Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
