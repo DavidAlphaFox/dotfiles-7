@@ -79,7 +79,7 @@ export ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=green,bold'
 
 # Load profiles from $HOME/.profile.d
 if test -e "$HOME/.profile.d/"; then
-    for profile in "$HOME/.profile.d/*.sh; do
+    for profile in $HOME/.profile.d/*.sh; do
         test -r "$profile" && . "$profile"
     done
     unset profile
