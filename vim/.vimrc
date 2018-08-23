@@ -333,7 +333,6 @@ autocmd FileType javascript setl number
 set numberwidth=1
 set cursorline
 
-
 " git shortcuts
 map <leader>gw :Gwrite<CR>
 map <leader>gc :Gcommit<CR>
@@ -376,7 +375,10 @@ if exists('$TMUX')
 endif
 
 set completeopt=menuone,noinsert,preview
+set shortmess+=c   " Shut off completion messages
+set belloff+=ctrlg " If Vim beeps during completion
 let g:mucomplete#enable_auto_at_startup = 1
+"let g:mucomplete#delayed_completion = 1
 " plug
 call plug#begin('~/.vim/plugged')
 Plug 'lifepillar/vim-mucomplete'

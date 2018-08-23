@@ -413,6 +413,9 @@ call s:h("xmlEndTag", { "fg": s:red })
 call s:h("xmlTag", { "fg": s:red })
 call s:h("xmlTagName", { "fg": s:red })
 
+" Python
+call s:h("pythonInclude", { "fg": s:purple })
+
 " +---------------------+
 " | Plugin Highlighting |
 " +---------------------+
