@@ -236,7 +236,7 @@ __git_ps1_show_upstream ()
 		*"	0") # behind upstream
 			p="%{$fg_bold[red]%}${count%	0}$down_sym%{$reset_color%}" ;;
 		*)	    # diverged from upstream
-			p="%{$fg[red]%}${count#*	}$up_sym ${count%	*}$down_sym%{$reset_color%}" ;;
+			p="%{$fg[red]%}${count#*}$up_sym${count%*}$down_sym%{$reset_color%}" ;;
 		esac
 		if [[ -n "$count" && -n "$name" ]]; then
 			__git_ps1_upstream_name=$(git rev-parse \
