@@ -74,7 +74,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1535120778
+session-start=1535127347
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -132,7 +132,7 @@ active=false
 active=false
 
 [desktop/ibus/general]
-version='1.5.18'
+version='1.5.19'
 preload-engines=['xkb:us::eng', 'xkb:us:dvorak:eng']
 use-system-keyboard-layout=false
 
@@ -207,7 +207,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=1
+current-settings-page=5
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -280,7 +280,9 @@ audio-feedback-enabled=false
 
 touch-feedback-size=0
 
-sticky-key-release-delay=5.0
+sticky-key-release-delay=0.0
+
+sticky-key-release-on-hide-delay=10.0
 
 [org/gnome/desktop/interface]
 toolkit-accessibility=true
@@ -303,8 +305,8 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=798
-y=116
+x=82
+y=342
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
