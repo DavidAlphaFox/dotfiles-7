@@ -112,11 +112,15 @@ endfunction
 
 let s:red = { "gui": "#E06C75", "cterm": "204", "cterm16": "1" } " Alternate cterm: 168
 let s:orange = { "gui": "#BE5046", "cterm": "196", "cterm16": "9" }
+let s:dark_green = { "gui": "#638f63", "cterm": "2", "cterm16": "2" }
 let s:green = { "gui": "#98C379", "cterm": "114", "cterm16": "10" }
 let s:yellow = { "gui": "#E5C07B", "cterm": "180", "cterm16": "11" }
 let s:dark_yellow = { "gui": "#D19A66", "cterm": "173", "cterm16": "3" }
+let s:dark_blue = { "gui": "#59798f", "cterm": "4", "cterm16": "4" }
 let s:blue = { "gui": "#61AFEF", "cterm": "39", "cterm16": "12" } " Alternate cterm: 75
+let s:dark_purple = { "gui": "#85678f", "cterm": "5", "cterm16": "5" } " Alternate cterm: 176
 let s:purple = { "gui": "#C678DD", "cterm": "170", "cterm16": "13" } " Alternate cterm: 176
+let s:dark_cyan = { "gui": "#56B6C2", "cterm": "6", "cterm16": "6" } " Alternate cterm: 73
 let s:cyan = { "gui": "#56B6C2", "cterm": "38", "cterm16": "14" } " Alternate cterm: 73
 let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "15" }
 let s:black = { "gui": "#282C34", "cterm": "234", "cterm16": "0" }
@@ -146,7 +150,7 @@ call s:h("Statement", { "fg": s:purple }) " any statement
 call s:h("Conditional", { "fg": s:purple }) " if, then, else, endif, switch, etc.
 call s:h("Repeat", { "fg": s:purple }) " for, do, while, etc.
 call s:h("Label", { "fg": s:purple }) " case, default, etc.
-call s:h("Operator", { "fg": s:purple }) " sizeof", "+", "*", etc.
+call s:h("Operator", { "fg": s:dark_purple }) " sizeof", "+", "*", etc.
 call s:h("Keyword", { "fg": s:red }) " any other keyword
 call s:h("Exception", { "fg": s:purple }) " try, catch, throw
 call s:h("PreProc", { "fg": s:yellow }) " generic Preprocessor
