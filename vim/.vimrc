@@ -31,12 +31,10 @@ map <LEFT> h
 if has('autocmd')
   filetype plugin indent on
 endif
-
+set omnifunc=syntaxcomplete#Complete
 if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
-
-" Use :help 'option' to see the documentation for the given option.
 
 set autoindent
 set backspace=indent,eol,start
@@ -328,11 +326,12 @@ map <silent> <leader>p :setlocal paste!<CR>
 " activate spell check for git commits, and other types
 autocmd FileType gitcommit set spell spelllang=en_us
 autocmd FileType markdown set spell spelllang=en_us
-
 " line numbers for specific filetypes
 autocmd FileType python setl number
 autocmd FileType vala setl number
+autocmd FileType javascript setl number
 set numberwidth=1
+set cursorline
 
 " git shortcuts
 map <leader>gw :Gwrite<CR>
@@ -375,4 +374,21 @@ if exists('$TMUX')
   set title
 endif
 
+set completeopt=menuone,noinsert
+set shortmess+=c   " Shut off completion messages
+set belloff+=ctrlg " If Vim beeps during completion
+let g:mucomplete#enable_auto_at_startup = 1
+"let g:mucomplete#delayed_completion = 1
+" plug
+call plug#begin('~/.vim/plugged')
+Plug 'lifepillar/vim-mucomplete'
+call plug#end()
+
+" use a yellow cursor in insert mode
+"let &t_SI = "\<Esc>]12;#f0c674\x7"
+" use a gray cursor otherwise
+"let &t_EI = "\<Esc>]12;#707880\x7"
+"silent !echo -ne "\033]12;\#707880\007"
+" reset cursor when vim exits
+"autocmd VimLeave * silent !echo -ne "\033]112\007"
 

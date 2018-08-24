@@ -30,3 +30,5 @@ image/jpeg=feh.desktop
 image/png=feh.desktop
 image/tiff=feh.desktop
 application/pdf=zathura.desktop
+text/html=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop

@@ -376,7 +376,7 @@ button {
     box-shadow: none; }
   button:hover, button.flat:hover {
     background-color: #232323;
-    background-image: linear-gradient(to bottom, #252525, #202020);
+    background-image: linear-gradient(to bottom, #242424, #212121);
     border-color: rgba(156, 161, 158, 0.3);
     color: #c5c8c6;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -390,7 +390,7 @@ button {
       border-color: rgba(156, 161, 158, 0.3); }
   button:focus, button.flat:focus {
     background-color: #232323;
-    background-image: linear-gradient(to bottom, #252525, #202020);
+    background-image: linear-gradient(to bottom, #242424, #212121);
     border-color: rgba(197, 200, 198, 0.22);
     outline-color: rgba(143, 173, 204, 0.5);
     outline-width: 3px;
@@ -400,7 +400,7 @@ button {
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.42); }
     button:focus:hover, button.flat:focus:hover {
       background-color: #242424;
-      background-image: linear-gradient(to bottom, #272727, #222222);
+      background-image: linear-gradient(to bottom, #262626, #222222);
       border-color: rgba(156, 161, 158, 0.3);
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
       button:focus:hover:focus, button:focus:hover:hover, button.flat:focus:hover:focus, button.flat:focus:hover:hover {
@@ -414,7 +414,7 @@ button {
   button:checked, button:active, button.flat:checked, button.flat:active {
     /*@include linear-gradient(shade($bg, .7), to top);*/
     background-color: #8fadcc;
-    background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
     border-color: rgba(156, 161, 158, 0.22);
     color: #212121;
     box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -429,13 +429,13 @@ button {
     button:checked:focus, button:checked:hover, button:active:focus, button:active:hover, button.flat:checked:focus, button.flat:checked:hover, button.flat:active:focus, button.flat:active:hover {
       /*@include linear-gradient(shade($bg, .65), to top);*/
       background-color: #9bb6d1;
-      background-image: linear-gradient(to top, #aec3da, #88a8c9);
+      background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
       color: #212121; }
   button:focus, button:hover, button.flat:focus, button.flat:hover {
     color: #c5c8c6; }
   button:disabled:disabled, button.flat:disabled:disabled {
     background-color: alpha(mix(#212121,#c5c8c6,0.2),0.4);
-    background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.925));
+    background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.95));
     /*border: 1px solid alpha($bg, .2);*/
     opacity: .6;
     color: mix(#212121,#c5c8c6,0.6);
@@ -444,7 +444,7 @@ button {
       color: mix(#212121,#c5c8c6,0.6); }
   button:active:disabled, button:checked:disabled, button.flat:active:disabled, button.flat:checked:disabled {
     background-color: rgba(143, 173, 204, 0.6);
-    background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+    background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
     color: rgba(33, 33, 33, 0.85);
     box-shadow: none; }
     button:active:disabled :disabled, button:checked:disabled :disabled, button.flat:active:disabled :disabled, button.flat:checked:disabled :disabled {
@@ -544,7 +544,7 @@ spinbutton button {
   color: #c5c8c6; }
   spinbutton button:active, spinbutton button:checked, spinbutton button:hover {
     background-color: #282828;
-    background-image: linear-gradient(to bottom, #2b2b2b, #252525); }
+    background-image: linear-gradient(to bottom, #2a2a2a, #262626); }
   spinbutton button:hover, spinbutton button:focus:hover {
     border-color: rgba(156, 161, 158, 0.3); }
     spinbutton button:hover:focus, spinbutton button:hover:hover, spinbutton button:focus:hover:focus, spinbutton button:focus:hover:hover {
@@ -577,7 +577,7 @@ spinbutton:not(.vertical) {
   /*&:focus, &:active { border-color: border_focus($borders_color); }*/ }
   spinbutton:not(.vertical):disabled {
     background-color: #1e1e1e;
-    background-image: linear-gradient(to top, #202020, #1b1b1b);
+    background-image: linear-gradient(to top, #1f1f1f, #1c1c1c);
     color: mix(#212121,#c5c8c6,0.5); }
   spinbutton:not(.vertical) entry {
     border-radius: 4px 0 0 4px;
@@ -758,7 +758,7 @@ entry, menuitem entry, popover.background entry, .osd entry,
     box-shadow: none; }
   entry progress, popover.background entry progress, .osd entry progress, #XfceNotifyWindow entry progress, #login_window entry progress {
     background-color: #8fadcc;
-    background-image: linear-gradient(to bottom, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to bottom, #9bb6d1, #83a4c7);
     border-width: 0;
     border-radius: 4px;
     color: #212121; }
@@ -835,7 +835,7 @@ entry {
     border-color: mix(#8fadcc,mix(#212121,#c5c8c6,0.18),0.3); }
   entry:disabled {
     background-color: mix(#212121,#c5c8c6,0.07);
-    background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.07),1.075), shade(mix(#212121,#c5c8c6,0.07),0.925));
+    background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.07),1.05), shade(mix(#212121,#c5c8c6,0.07),0.95));
     opacity: .9;
     color: mix(#212121,#c5c8c6,0.9); }
 
@@ -902,7 +902,7 @@ headerbar, .titlebar:not(headerbar) {
     border-color: #1a1a1a; }
   headerbar:disabled, .titlebar:disabled:not(headerbar) {
     background-color: #1e1e1e;
-    background-image: linear-gradient(to bottom, #202020, #1b1b1b);
+    background-image: linear-gradient(to bottom, #1f1f1f, #1c1c1c);
     color: mix(#c5c8c6,#212121,0.5); }
   headerbar .title, .titlebar:not(headerbar) .title {
     font-weight: bold;
@@ -988,7 +988,7 @@ headerbar, .titlebar:not(headerbar) {
       box-shadow: none; }
     headerbar button:hover, .titlebar:not(headerbar) button:hover, headerbar button.flat:hover, .titlebar:not(headerbar) button.flat:hover {
       background-color: #232323;
-      background-image: linear-gradient(to bottom, #252525, #202020);
+      background-image: linear-gradient(to bottom, #242424, #212121);
       border-color: rgba(156, 161, 158, 0.3);
       color: #c5c8c6;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -1002,7 +1002,7 @@ headerbar, .titlebar:not(headerbar) {
         border-color: rgba(156, 161, 158, 0.3); }
     headerbar button:focus, .titlebar:not(headerbar) button:focus, headerbar button.flat:focus, .titlebar:not(headerbar) button.flat:focus {
       background-color: #232323;
-      background-image: linear-gradient(to bottom, #252525, #202020);
+      background-image: linear-gradient(to bottom, #242424, #212121);
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -1012,7 +1012,7 @@ headerbar, .titlebar:not(headerbar) {
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.42); }
       headerbar button:focus:hover, .titlebar:not(headerbar) button:focus:hover, headerbar button.flat:focus:hover, .titlebar:not(headerbar) button.flat:focus:hover {
         background-color: #242424;
-        background-image: linear-gradient(to bottom, #272727, #222222);
+        background-image: linear-gradient(to bottom, #262626, #222222);
         border-color: rgba(156, 161, 158, 0.3);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
         headerbar button:focus:hover:focus, .titlebar:not(headerbar) button:focus:hover:focus, headerbar button:focus:hover:hover, .titlebar:not(headerbar) button:focus:hover:hover, headerbar button.flat:focus:hover:focus, .titlebar:not(headerbar) button.flat:focus:hover:focus, headerbar button.flat:focus:hover:hover, .titlebar:not(headerbar) button.flat:focus:hover:hover {
@@ -1026,7 +1026,7 @@ headerbar, .titlebar:not(headerbar) {
     headerbar button:checked, .titlebar:not(headerbar) button:checked, headerbar button:active, .titlebar:not(headerbar) button:active, headerbar button.flat:checked, .titlebar:not(headerbar) button.flat:checked, headerbar button.flat:active, .titlebar:not(headerbar) button.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(156, 161, 158, 0.22);
       color: #212121;
       box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -1041,13 +1041,13 @@ headerbar, .titlebar:not(headerbar) {
       headerbar button:checked:focus, .titlebar:not(headerbar) button:checked:focus, headerbar button:checked:hover, .titlebar:not(headerbar) button:checked:hover, headerbar button:active:focus, .titlebar:not(headerbar) button:active:focus, headerbar button:active:hover, .titlebar:not(headerbar) button:active:hover, headerbar button.flat:checked:focus, .titlebar:not(headerbar) button.flat:checked:focus, headerbar button.flat:checked:hover, .titlebar:not(headerbar) button.flat:checked:hover, headerbar button.flat:active:focus, .titlebar:not(headerbar) button.flat:active:focus, headerbar button.flat:active:hover, .titlebar:not(headerbar) button.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     headerbar button:focus, .titlebar:not(headerbar) button:focus, headerbar button:hover, .titlebar:not(headerbar) button:hover, headerbar button.flat:focus, .titlebar:not(headerbar) button.flat:focus, headerbar button.flat:hover, .titlebar:not(headerbar) button.flat:hover {
       color: #c5c8c6; }
     headerbar button:disabled:disabled, .titlebar:not(headerbar) button:disabled:disabled, headerbar button.flat:disabled:disabled, .titlebar:not(headerbar) button.flat:disabled:disabled {
       background-color: alpha(mix(#212121,#c5c8c6,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(#212121,#c5c8c6,0.6);
@@ -1056,7 +1056,7 @@ headerbar, .titlebar:not(headerbar) {
         color: mix(#212121,#c5c8c6,0.6); }
     headerbar button:active:disabled, .titlebar:not(headerbar) button:active:disabled, headerbar button:checked:disabled, .titlebar:not(headerbar) button:checked:disabled, headerbar button.flat:active:disabled, .titlebar:not(headerbar) button.flat:active:disabled, headerbar button.flat:checked:disabled, .titlebar:not(headerbar) button.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       headerbar button:active:disabled :disabled, .titlebar:not(headerbar) button:active:disabled :disabled, headerbar button:checked:disabled :disabled, .titlebar:not(headerbar) button:checked:disabled :disabled, headerbar button.flat:active:disabled :disabled, .titlebar:not(headerbar) button.flat:active:disabled :disabled, headerbar button.flat:checked:disabled :disabled, .titlebar:not(headerbar) button.flat:checked:disabled :disabled {
@@ -1196,7 +1196,7 @@ headerbar, .titlebar:not(headerbar) {
       box-shadow: none; }
     headerbar button:hover, .titlebar:not(headerbar) button:hover, headerbar button.flat:hover, .titlebar:not(headerbar) button.flat:hover {
       background-color: #232323;
-      background-image: linear-gradient(to bottom, #252525, #202020);
+      background-image: linear-gradient(to bottom, #242424, #212121);
       border-color: rgba(156, 161, 158, 0.3);
       color: #c5c8c6;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -1210,7 +1210,7 @@ headerbar, .titlebar:not(headerbar) {
         border-color: rgba(156, 161, 158, 0.3); }
     headerbar button:focus, .titlebar:not(headerbar) button:focus, headerbar button.flat:focus, .titlebar:not(headerbar) button.flat:focus {
       background-color: #232323;
-      background-image: linear-gradient(to bottom, #252525, #202020);
+      background-image: linear-gradient(to bottom, #242424, #212121);
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -1220,7 +1220,7 @@ headerbar, .titlebar:not(headerbar) {
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.42); }
       headerbar button:focus:hover, .titlebar:not(headerbar) button:focus:hover, headerbar button.flat:focus:hover, .titlebar:not(headerbar) button.flat:focus:hover {
         background-color: #242424;
-        background-image: linear-gradient(to bottom, #272727, #222222);
+        background-image: linear-gradient(to bottom, #262626, #222222);
         border-color: rgba(156, 161, 158, 0.3);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
         headerbar button:focus:hover:focus, .titlebar:not(headerbar) button:focus:hover:focus, headerbar button:focus:hover:hover, .titlebar:not(headerbar) button:focus:hover:hover, headerbar button.flat:focus:hover:focus, .titlebar:not(headerbar) button.flat:focus:hover:focus, headerbar button.flat:focus:hover:hover, .titlebar:not(headerbar) button.flat:focus:hover:hover {
@@ -1234,7 +1234,7 @@ headerbar, .titlebar:not(headerbar) {
     headerbar button:checked, .titlebar:not(headerbar) button:checked, headerbar button:active, .titlebar:not(headerbar) button:active, headerbar button.flat:checked, .titlebar:not(headerbar) button.flat:checked, headerbar button.flat:active, .titlebar:not(headerbar) button.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(156, 161, 158, 0.22);
       color: #212121;
       box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -1249,13 +1249,13 @@ headerbar, .titlebar:not(headerbar) {
       headerbar button:checked:focus, .titlebar:not(headerbar) button:checked:focus, headerbar button:checked:hover, .titlebar:not(headerbar) button:checked:hover, headerbar button:active:focus, .titlebar:not(headerbar) button:active:focus, headerbar button:active:hover, .titlebar:not(headerbar) button:active:hover, headerbar button.flat:checked:focus, .titlebar:not(headerbar) button.flat:checked:focus, headerbar button.flat:checked:hover, .titlebar:not(headerbar) button.flat:checked:hover, headerbar button.flat:active:focus, .titlebar:not(headerbar) button.flat:active:focus, headerbar button.flat:active:hover, .titlebar:not(headerbar) button.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     headerbar button:focus, .titlebar:not(headerbar) button:focus, headerbar button:hover, .titlebar:not(headerbar) button:hover, headerbar button.flat:focus, .titlebar:not(headerbar) button.flat:focus, headerbar button.flat:hover, .titlebar:not(headerbar) button.flat:hover {
       color: #c5c8c6; }
     headerbar button:disabled:disabled, .titlebar:not(headerbar) button:disabled:disabled, headerbar button.flat:disabled:disabled, .titlebar:not(headerbar) button.flat:disabled:disabled {
       background-color: alpha(mix(#212121,#c5c8c6,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(#212121,#c5c8c6,0.6);
@@ -1264,7 +1264,7 @@ headerbar, .titlebar:not(headerbar) {
         color: mix(#212121,#c5c8c6,0.6); }
     headerbar button:active:disabled, .titlebar:not(headerbar) button:active:disabled, headerbar button:checked:disabled, .titlebar:not(headerbar) button:checked:disabled, headerbar button.flat:active:disabled, .titlebar:not(headerbar) button.flat:active:disabled, headerbar button.flat:checked:disabled, .titlebar:not(headerbar) button.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       headerbar button:active:disabled :disabled, .titlebar:not(headerbar) button:active:disabled :disabled, headerbar button:checked:disabled :disabled, .titlebar:not(headerbar) button:checked:disabled :disabled, headerbar button.flat:active:disabled :disabled, .titlebar:not(headerbar) button.flat:active:disabled :disabled, headerbar button.flat:checked:disabled :disabled, .titlebar:not(headerbar) button.flat:checked:disabled :disabled {
@@ -1313,7 +1313,7 @@ toolbar {
     border-color: #1a1a1a; }
   toolbar:disabled {
     background-color: #1e1e1e;
-    background-image: linear-gradient(to bottom, #202020, #1b1b1b);
+    background-image: linear-gradient(to bottom, #1f1f1f, #1c1c1c);
     color: mix(#c5c8c6,#212121,0.5); }
   toolbar .title {
     font-weight: bold;
@@ -1383,7 +1383,7 @@ toolbar {
       box-shadow: none; }
     toolbar button:hover, toolbar button.flat:hover {
       background-color: #232323;
-      background-image: linear-gradient(to bottom, #252525, #202020);
+      background-image: linear-gradient(to bottom, #242424, #212121);
       border-color: rgba(156, 161, 158, 0.3);
       color: #c5c8c6;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -1397,7 +1397,7 @@ toolbar {
         border-color: rgba(156, 161, 158, 0.3); }
     toolbar button:focus, toolbar button.flat:focus {
       background-color: #232323;
-      background-image: linear-gradient(to bottom, #252525, #202020);
+      background-image: linear-gradient(to bottom, #242424, #212121);
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -1407,7 +1407,7 @@ toolbar {
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.42); }
       toolbar button:focus:hover, toolbar button.flat:focus:hover {
         background-color: #242424;
-        background-image: linear-gradient(to bottom, #272727, #222222);
+        background-image: linear-gradient(to bottom, #262626, #222222);
         border-color: rgba(156, 161, 158, 0.3);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
         toolbar button:focus:hover:focus, toolbar button:focus:hover:hover, toolbar button.flat:focus:hover:focus, toolbar button.flat:focus:hover:hover {
@@ -1421,7 +1421,7 @@ toolbar {
     toolbar button:checked, toolbar button:active, toolbar button.flat:checked, toolbar button.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(156, 161, 158, 0.22);
       color: #212121;
       box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -1436,13 +1436,13 @@ toolbar {
       toolbar button:checked:focus, toolbar button:checked:hover, toolbar button:active:focus, toolbar button:active:hover, toolbar button.flat:checked:focus, toolbar button.flat:checked:hover, toolbar button.flat:active:focus, toolbar button.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     toolbar button:focus, toolbar button:hover, toolbar button.flat:focus, toolbar button.flat:hover {
       color: #c5c8c6; }
     toolbar button:disabled:disabled, toolbar button.flat:disabled:disabled {
       background-color: alpha(mix(#212121,#c5c8c6,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(#212121,#c5c8c6,0.6);
@@ -1451,7 +1451,7 @@ toolbar {
         color: mix(#212121,#c5c8c6,0.6); }
     toolbar button:active:disabled, toolbar button:checked:disabled, toolbar button.flat:active:disabled, toolbar button.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       toolbar button:active:disabled :disabled, toolbar button:checked:disabled :disabled, toolbar button.flat:active:disabled :disabled, toolbar button.flat:checked:disabled :disabled {
@@ -1562,7 +1562,7 @@ toolbar {
         box-shadow: none; }
       toolbar.inline-toolbar button:hover, toolbar.inline-toolbar button.flat:hover {
         background-color: #232323;
-        background-image: linear-gradient(to bottom, #252525, #202020);
+        background-image: linear-gradient(to bottom, #242424, #212121);
         border-color: rgba(156, 161, 158, 0.3);
         color: #c5c8c6;
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -1576,7 +1576,7 @@ toolbar {
           border-color: rgba(156, 161, 158, 0.3); }
       toolbar.inline-toolbar button:focus, toolbar.inline-toolbar button.flat:focus {
         background-color: #232323;
-        background-image: linear-gradient(to bottom, #252525, #202020);
+        background-image: linear-gradient(to bottom, #242424, #212121);
         border-color: rgba(197, 200, 198, 0.22);
         outline-color: rgba(143, 173, 204, 0.5);
         outline-width: 3px;
@@ -1586,7 +1586,7 @@ toolbar {
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.42); }
         toolbar.inline-toolbar button:focus:hover, toolbar.inline-toolbar button.flat:focus:hover {
           background-color: #242424;
-          background-image: linear-gradient(to bottom, #272727, #222222);
+          background-image: linear-gradient(to bottom, #262626, #222222);
           border-color: rgba(156, 161, 158, 0.3);
           box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
           toolbar.inline-toolbar button:focus:hover:focus, toolbar.inline-toolbar button:focus:hover:hover, toolbar.inline-toolbar button.flat:focus:hover:focus, toolbar.inline-toolbar button.flat:focus:hover:hover {
@@ -1600,7 +1600,7 @@ toolbar {
       toolbar.inline-toolbar button:checked, toolbar.inline-toolbar button:active, toolbar.inline-toolbar button.flat:checked, toolbar.inline-toolbar button.flat:active {
         /*@include linear-gradient(shade($bg, .7), to top);*/
         background-color: #8fadcc;
-        background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+        background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
         border-color: rgba(156, 161, 158, 0.22);
         color: #212121;
         box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -1615,13 +1615,13 @@ toolbar {
         toolbar.inline-toolbar button:checked:focus, toolbar.inline-toolbar button:checked:hover, toolbar.inline-toolbar button:active:focus, toolbar.inline-toolbar button:active:hover, toolbar.inline-toolbar button.flat:checked:focus, toolbar.inline-toolbar button.flat:checked:hover, toolbar.inline-toolbar button.flat:active:focus, toolbar.inline-toolbar button.flat:active:hover {
           /*@include linear-gradient(shade($bg, .65), to top);*/
           background-color: #9bb6d1;
-          background-image: linear-gradient(to top, #aec3da, #88a8c9);
+          background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
           color: #212121; }
       toolbar.inline-toolbar button:focus, toolbar.inline-toolbar button:hover, toolbar.inline-toolbar button.flat:focus, toolbar.inline-toolbar button.flat:hover {
         color: #c5c8c6; }
       toolbar.inline-toolbar button:disabled:disabled, toolbar.inline-toolbar button.flat:disabled:disabled {
         background-color: alpha(mix(#212121,#c5c8c6,0.2),0.4);
-        background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.925));
+        background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.95));
         /*border: 1px solid alpha($bg, .2);*/
         opacity: .6;
         color: mix(#212121,#c5c8c6,0.6);
@@ -1630,7 +1630,7 @@ toolbar {
           color: mix(#212121,#c5c8c6,0.6); }
       toolbar.inline-toolbar button:active:disabled, toolbar.inline-toolbar button:checked:disabled, toolbar.inline-toolbar button.flat:active:disabled, toolbar.inline-toolbar button.flat:checked:disabled {
         background-color: rgba(143, 173, 204, 0.6);
-        background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+        background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
         color: rgba(33, 33, 33, 0.85);
         box-shadow: none; }
         toolbar.inline-toolbar button:active:disabled :disabled, toolbar.inline-toolbar button:checked:disabled :disabled, toolbar.inline-toolbar button.flat:active:disabled :disabled, toolbar.inline-toolbar button.flat:checked:disabled :disabled {
@@ -1675,7 +1675,7 @@ actionbar > revealer > box {
 searchbar,
 .location-bar {
   background-color: #202020;
-  background-image: linear-gradient(to bottom, #232323, #1e1e1e);
+  background-image: linear-gradient(to bottom, #222222, #1f1f1f);
   border-width: 0 0 1px;
   border-style: solid;
   border-color: #1a1a1a;
@@ -1687,7 +1687,7 @@ searchbar,
 .suggested-action, headerbar.selection-mode button.suggested-action,
 .titlebar:not(headerbar).selection-mode button.suggested-action {
   background-color: #8fcc85;
-  background-image: linear-gradient(to bottom, #9fd397, #7fc573);
+  background-image: linear-gradient(to bottom, #9ad191, #84c779);
   border-color: rgba(26, 26, 26, 0.32);
   color: #212121;
   box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.12); }
@@ -1801,7 +1801,7 @@ searchbar,
   .titlebar:not(headerbar).selection-mode button.suggested-action:hover, .suggested-action.flat:hover,
   .titlebar:not(headerbar).selection-mode button.flat.suggested-action:hover {
     background-color: #9ad191;
-    background-image: linear-gradient(to bottom, #abd9a4, #89c97e);
+    background-image: linear-gradient(to bottom, #a5d69d, #8ecc84);
     border-color: rgba(26, 26, 26, 0.4);
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.22); }
@@ -1822,7 +1822,7 @@ searchbar,
   .titlebar:not(headerbar).selection-mode button.suggested-action:focus, .suggested-action.flat:focus,
   .titlebar:not(headerbar).selection-mode button.flat.suggested-action:focus {
     background-color: #9ad191;
-    background-image: linear-gradient(to bottom, #abd9a4, #89c97e);
+    background-image: linear-gradient(to bottom, #a5d69d, #8ecc84);
     border-color: rgba(33, 33, 33, 0.32);
     outline-color: rgba(143, 173, 204, 0.5);
     outline-width: 3px;
@@ -1833,7 +1833,7 @@ searchbar,
     .suggested-action:focus:hover,
     .titlebar:not(headerbar).selection-mode button.suggested-action:focus:hover, .suggested-action.flat:focus:hover {
       background-color: #a5d69d;
-      background-image: linear-gradient(to bottom, #b7deb0, #93ce89);
+      background-image: linear-gradient(to bottom, #b1dbaa, #99d090);
       border-color: rgba(26, 26, 26, 0.4);
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.38); }
       .suggested-action:focus:hover:focus, .suggested-action:focus:hover:hover, .suggested-action.flat:focus:hover:focus, .suggested-action.flat:focus:hover:hover {
@@ -1851,7 +1851,7 @@ searchbar,
   .titlebar:not(headerbar).selection-mode button.flat.suggested-action:active {
     /*@include linear-gradient(shade($bg, .7), to top);*/
     background-color: #8fadcc;
-    background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
     border-color: rgba(26, 26, 26, 0.32);
     color: #212121;
     box-shadow: inset 1px 0 rgba(33, 33, 33, 0.06), inset 0 1px rgba(33, 33, 33, 0.07), inset -1px 0 rgba(33, 33, 33, 0.06), inset 0 -1px rgba(33, 33, 33, 0.05); }
@@ -1880,7 +1880,7 @@ searchbar,
     .titlebar:not(headerbar).selection-mode button.suggested-action:active:hover, .suggested-action.flat:checked:focus, .suggested-action.flat:checked:hover, .suggested-action.flat:active:focus, .suggested-action.flat:active:hover {
       /*@include linear-gradient(shade($bg, .65), to top);*/
       background-color: #9bb6d1;
-      background-image: linear-gradient(to top, #aec3da, #88a8c9);
+      background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
       color: #212121; }
   .suggested-action:focus, headerbar.selection-mode button.suggested-action:focus,
   .titlebar:not(headerbar).selection-mode button.suggested-action:focus, .suggested-action:hover, headerbar.selection-mode button.suggested-action:hover,
@@ -1891,7 +1891,7 @@ searchbar,
   .suggested-action:disabled:disabled,
   .titlebar:not(headerbar).selection-mode button.suggested-action:disabled:disabled, .suggested-action.flat:disabled:disabled {
     background-color: alpha(mix(#8fcc85,#212121,0.2),0.4);
-    background-image: linear-gradient(to bottom, shade(alpha(mix(#8fcc85,#212121,0.2),0.4),1.075), shade(alpha(mix(#8fcc85,#212121,0.2),0.4),0.925));
+    background-image: linear-gradient(to bottom, shade(alpha(mix(#8fcc85,#212121,0.2),0.4),1.05), shade(alpha(mix(#8fcc85,#212121,0.2),0.4),0.95));
     /*border: 1px solid alpha($bg, .2);*/
     opacity: .6;
     color: mix(#8fcc85,#212121,0.6);
@@ -1902,7 +1902,7 @@ searchbar,
   .titlebar:not(headerbar).selection-mode button.suggested-action:active:disabled, .suggested-action:checked:disabled,
   .titlebar:not(headerbar).selection-mode button.suggested-action:checked:disabled, .suggested-action.flat:active:disabled, .suggested-action.flat:checked:disabled {
     background-color: rgba(143, 173, 204, 0.6);
-    background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+    background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
     color: rgba(33, 33, 33, 0.85);
     box-shadow: none; }
     .suggested-action:active:disabled :disabled, .suggested-action:checked:disabled :disabled, .suggested-action.flat:active:disabled :disabled, .suggested-action.flat:checked:disabled :disabled {
@@ -1917,7 +1917,7 @@ searchbar,
 
 .destructive-action {
   background-color: #de935f;
-  background-image: linear-gradient(to bottom, #e2a073, #da864b);
+  background-image: linear-gradient(to bottom, #e19c6c, #db8a52);
   border-color: rgba(26, 26, 26, 0.32);
   color: #212121;
   box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.12); }
@@ -1977,7 +1977,7 @@ searchbar,
     box-shadow: none; }
   .destructive-action:hover, .destructive-action.flat:hover {
     background-color: #e19c6c;
-    background-image: linear-gradient(to bottom, #e5aa81, #dc8e57);
+    background-image: linear-gradient(to bottom, #e4a57a, #de935e);
     border-color: rgba(26, 26, 26, 0.4);
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.22); }
@@ -1991,7 +1991,7 @@ searchbar,
       border-color: rgba(26, 26, 26, 0.4); }
   .destructive-action:focus, .destructive-action.flat:focus {
     background-color: #e19c6c;
-    background-image: linear-gradient(to bottom, #e5aa81, #dc8e57);
+    background-image: linear-gradient(to bottom, #e4a57a, #de935e);
     border-color: rgba(33, 33, 33, 0.32);
     outline-color: rgba(143, 173, 204, 0.5);
     outline-width: 3px;
@@ -2001,7 +2001,7 @@ searchbar,
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
     .destructive-action:focus:hover, .destructive-action.flat:focus:hover {
       background-color: #e3a579;
-      background-image: linear-gradient(to bottom, #e8b38f, #df9664);
+      background-image: linear-gradient(to bottom, #e6ae88, #e09b6b);
       border-color: rgba(26, 26, 26, 0.4);
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.38); }
       .destructive-action:focus:hover:focus, .destructive-action:focus:hover:hover, .destructive-action.flat:focus:hover:focus, .destructive-action.flat:focus:hover:hover {
@@ -2015,7 +2015,7 @@ searchbar,
   .destructive-action:checked, .destructive-action:active, .destructive-action.flat:checked, .destructive-action.flat:active {
     /*@include linear-gradient(shade($bg, .7), to top);*/
     background-color: #8fadcc;
-    background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
     border-color: rgba(26, 26, 26, 0.32);
     color: #212121;
     box-shadow: inset 1px 0 rgba(33, 33, 33, 0.06), inset 0 1px rgba(33, 33, 33, 0.07), inset -1px 0 rgba(33, 33, 33, 0.06), inset 0 -1px rgba(33, 33, 33, 0.05); }
@@ -2030,13 +2030,13 @@ searchbar,
     .destructive-action:checked:focus, .destructive-action:checked:hover, .destructive-action:active:focus, .destructive-action:active:hover, .destructive-action.flat:checked:focus, .destructive-action.flat:checked:hover, .destructive-action.flat:active:focus, .destructive-action.flat:active:hover {
       /*@include linear-gradient(shade($bg, .65), to top);*/
       background-color: #9bb6d1;
-      background-image: linear-gradient(to top, #aec3da, #88a8c9);
+      background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
       color: #212121; }
   .destructive-action:focus, .destructive-action:hover, .destructive-action.flat:focus, .destructive-action.flat:hover {
     color: #212121; }
   .destructive-action:disabled:disabled, .destructive-action.flat:disabled:disabled {
     background-color: alpha(mix(#de935f,#212121,0.2),0.4);
-    background-image: linear-gradient(to bottom, shade(alpha(mix(#de935f,#212121,0.2),0.4),1.075), shade(alpha(mix(#de935f,#212121,0.2),0.4),0.925));
+    background-image: linear-gradient(to bottom, shade(alpha(mix(#de935f,#212121,0.2),0.4),1.05), shade(alpha(mix(#de935f,#212121,0.2),0.4),0.95));
     /*border: 1px solid alpha($bg, .2);*/
     opacity: .6;
     color: mix(#de935f,#212121,0.6);
@@ -2045,7 +2045,7 @@ searchbar,
       color: mix(#de935f,#212121,0.6); }
   .destructive-action:active:disabled, .destructive-action:checked:disabled, .destructive-action.flat:active:disabled, .destructive-action.flat:checked:disabled {
     background-color: rgba(143, 173, 204, 0.6);
-    background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+    background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
     color: rgba(33, 33, 33, 0.85);
     box-shadow: none; }
     .destructive-action:active:disabled :disabled, .destructive-action:checked:disabled :disabled, .destructive-action.flat:active:disabled :disabled, .destructive-action.flat:checked:disabled :disabled {
@@ -2062,7 +2062,7 @@ searchbar,
 headerbar.selection-mode,
 .titlebar:not(headerbar).selection-mode {
   background-color: #8fadcc;
-  background-image: linear-gradient(to bottom, #a1bad4, #7da0c4);
+  background-image: linear-gradient(to bottom, #9bb6d1, #83a4c7);
   border-color: #5f8ab6;
   color: #212121; }
   headerbar.selection-mode:focus, headerbar.selection-mode:hover,
@@ -2089,7 +2089,7 @@ headerbar.selection-mode,
   headerbar.selection-mode:disabled,
   .titlebar:not(headerbar).selection-mode:disabled {
     background-color: #779cc1;
-    background-image: linear-gradient(to bottom, #87a7c8, #6790ba);
+    background-image: linear-gradient(to bottom, #82a3c6, #6c94bc);
     color: mix(#212121,#8fadcc,0.5); }
   headerbar.selection-mode .title,
   .titlebar:not(headerbar).selection-mode .title {
@@ -2102,7 +2102,7 @@ headerbar.selection-mode,
   headerbar.selection-mode button,
   .titlebar:not(headerbar).selection-mode button {
     background-color: #8fadcc;
-    background-image: linear-gradient(to bottom, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to bottom, #9bb6d1, #83a4c7);
     border-color: rgba(26, 26, 26, 0.32);
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.12); }
@@ -2218,7 +2218,7 @@ headerbar.selection-mode,
     .titlebar:not(headerbar).selection-mode button:hover,
     .titlebar:not(headerbar).selection-mode button.flat:hover {
       background-color: #9bb6d1;
-      background-image: linear-gradient(to bottom, #aec3da, #88a8c9);
+      background-image: linear-gradient(to bottom, #a7bfd7, #8eadcc);
       border-color: rgba(26, 26, 26, 0.4);
       color: #212121;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.22); }
@@ -2260,7 +2260,7 @@ headerbar.selection-mode,
     .titlebar:not(headerbar).selection-mode button:focus,
     .titlebar:not(headerbar).selection-mode button.flat:focus {
       background-color: #9bb6d1;
-      background-image: linear-gradient(to bottom, #aec3da, #88a8c9);
+      background-image: linear-gradient(to bottom, #a7bfd7, #8eadcc);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -2272,7 +2272,7 @@ headerbar.selection-mode,
       .titlebar:not(headerbar).selection-mode button:focus:hover,
       .titlebar:not(headerbar).selection-mode button.flat:focus:hover {
         background-color: #a7bed7;
-        background-image: linear-gradient(to bottom, #bbcde0, #93b0ce);
+        background-image: linear-gradient(to bottom, #b4c8dd, #9ab5d1);
         border-color: rgba(26, 26, 26, 0.4);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.38); }
         headerbar.selection-mode button:focus:hover:focus, headerbar.selection-mode button:focus:hover:hover, headerbar.selection-mode button.flat:focus:hover:focus, headerbar.selection-mode button.flat:focus:hover:hover,
@@ -2316,7 +2316,7 @@ headerbar.selection-mode,
     .titlebar:not(headerbar).selection-mode button.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(26, 26, 26, 0.32);
       color: #212121;
       box-shadow: inset 1px 0 rgba(33, 33, 33, 0.06), inset 0 1px rgba(33, 33, 33, 0.07), inset -1px 0 rgba(33, 33, 33, 0.06), inset 0 -1px rgba(33, 33, 33, 0.05); }
@@ -2391,7 +2391,7 @@ headerbar.selection-mode,
       .titlebar:not(headerbar).selection-mode button.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     headerbar.selection-mode button:focus, headerbar.selection-mode button:hover, headerbar.selection-mode button.flat:focus, headerbar.selection-mode button.flat:hover,
     .titlebar:not(headerbar).selection-mode button:focus,
@@ -2403,7 +2403,7 @@ headerbar.selection-mode,
     .titlebar:not(headerbar).selection-mode button:disabled:disabled,
     .titlebar:not(headerbar).selection-mode button.flat:disabled:disabled {
       background-color: alpha(mix(#8fadcc,#212121,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(#8fadcc,#212121,0.2),0.4),1.075), shade(alpha(mix(#8fadcc,#212121,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(#8fadcc,#212121,0.2),0.4),1.05), shade(alpha(mix(#8fadcc,#212121,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(#8fadcc,#212121,0.6);
@@ -2418,7 +2418,7 @@ headerbar.selection-mode,
     .titlebar:not(headerbar).selection-mode button.flat:active:disabled,
     .titlebar:not(headerbar).selection-mode button.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       headerbar.selection-mode button:active:disabled :disabled, headerbar.selection-mode button:checked:disabled :disabled, headerbar.selection-mode button.flat:active:disabled :disabled, headerbar.selection-mode button.flat:checked:disabled :disabled,
@@ -2513,7 +2513,7 @@ headerbar.selection-mode,
   headerbar.selection-mode button,
   .titlebar:not(headerbar).selection-mode button {
     background-color: #8fadcc;
-    background-image: linear-gradient(to bottom, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to bottom, #9bb6d1, #83a4c7);
     border-color: rgba(26, 26, 26, 0.32);
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.12); }
@@ -2629,7 +2629,7 @@ headerbar.selection-mode,
     .titlebar:not(headerbar).selection-mode button:hover,
     .titlebar:not(headerbar).selection-mode button.flat:hover {
       background-color: #9bb6d1;
-      background-image: linear-gradient(to bottom, #aec3da, #88a8c9);
+      background-image: linear-gradient(to bottom, #a7bfd7, #8eadcc);
       border-color: rgba(26, 26, 26, 0.4);
       color: #212121;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.22); }
@@ -2671,7 +2671,7 @@ headerbar.selection-mode,
     .titlebar:not(headerbar).selection-mode button:focus,
     .titlebar:not(headerbar).selection-mode button.flat:focus {
       background-color: #9bb6d1;
-      background-image: linear-gradient(to bottom, #aec3da, #88a8c9);
+      background-image: linear-gradient(to bottom, #a7bfd7, #8eadcc);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -2683,7 +2683,7 @@ headerbar.selection-mode,
       .titlebar:not(headerbar).selection-mode button:focus:hover,
       .titlebar:not(headerbar).selection-mode button.flat:focus:hover {
         background-color: #a7bed7;
-        background-image: linear-gradient(to bottom, #bbcde0, #93b0ce);
+        background-image: linear-gradient(to bottom, #b4c8dd, #9ab5d1);
         border-color: rgba(26, 26, 26, 0.4);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.38); }
         headerbar.selection-mode button:focus:hover:focus, headerbar.selection-mode button:focus:hover:hover, headerbar.selection-mode button.flat:focus:hover:focus, headerbar.selection-mode button.flat:focus:hover:hover,
@@ -2727,7 +2727,7 @@ headerbar.selection-mode,
     .titlebar:not(headerbar).selection-mode button.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(26, 26, 26, 0.32);
       color: #212121;
       box-shadow: inset 1px 0 rgba(33, 33, 33, 0.06), inset 0 1px rgba(33, 33, 33, 0.07), inset -1px 0 rgba(33, 33, 33, 0.06), inset 0 -1px rgba(33, 33, 33, 0.05); }
@@ -2802,7 +2802,7 @@ headerbar.selection-mode,
       .titlebar:not(headerbar).selection-mode button.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     headerbar.selection-mode button:focus, headerbar.selection-mode button:hover, headerbar.selection-mode button.flat:focus, headerbar.selection-mode button.flat:hover,
     .titlebar:not(headerbar).selection-mode button:focus,
@@ -2814,7 +2814,7 @@ headerbar.selection-mode,
     .titlebar:not(headerbar).selection-mode button:disabled:disabled,
     .titlebar:not(headerbar).selection-mode button.flat:disabled:disabled {
       background-color: alpha(mix(#8fadcc,#212121,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(#8fadcc,#212121,0.2),0.4),1.075), shade(alpha(mix(#8fadcc,#212121,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(#8fadcc,#212121,0.2),0.4),1.05), shade(alpha(mix(#8fadcc,#212121,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(#8fadcc,#212121,0.6);
@@ -2829,7 +2829,7 @@ headerbar.selection-mode,
     .titlebar:not(headerbar).selection-mode button.flat:active:disabled,
     .titlebar:not(headerbar).selection-mode button.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       headerbar.selection-mode button:active:disabled :disabled, headerbar.selection-mode button:checked:disabled :disabled, headerbar.selection-mode button.flat:active:disabled :disabled, headerbar.selection-mode button.flat:checked:disabled :disabled,
@@ -3079,14 +3079,14 @@ infobar {
   border: 0; }
   infobar.info, infobar.info:backdrop {
     background-color: #8fadcc;
-    background-image: linear-gradient(to bottom, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to bottom, #9bb6d1, #83a4c7);
     border: 1px solid #5f8ab6;
     caret-color: currentColor; }
     infobar.info label, infobar.info, infobar.info:backdrop label, infobar.info:backdrop {
       color: #212121; }
   infobar.info button {
     background-color: #8fadcc;
-    background-image: linear-gradient(to bottom, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to bottom, #9bb6d1, #83a4c7);
     border-color: rgba(26, 26, 26, 0.32);
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.12); }
@@ -3146,7 +3146,7 @@ infobar {
       box-shadow: none; }
     infobar.info button:hover, infobar.info button.flat:hover {
       background-color: #9bb6d1;
-      background-image: linear-gradient(to bottom, #aec3da, #88a8c9);
+      background-image: linear-gradient(to bottom, #a7bfd7, #8eadcc);
       border-color: rgba(26, 26, 26, 0.4);
       color: #212121;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.22); }
@@ -3160,7 +3160,7 @@ infobar {
         border-color: rgba(26, 26, 26, 0.4); }
     infobar.info button:focus, infobar.info button.flat:focus {
       background-color: #9bb6d1;
-      background-image: linear-gradient(to bottom, #aec3da, #88a8c9);
+      background-image: linear-gradient(to bottom, #a7bfd7, #8eadcc);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -3170,7 +3170,7 @@ infobar {
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
       infobar.info button:focus:hover, infobar.info button.flat:focus:hover {
         background-color: #a7bed7;
-        background-image: linear-gradient(to bottom, #bbcde0, #93b0ce);
+        background-image: linear-gradient(to bottom, #b4c8dd, #9ab5d1);
         border-color: rgba(26, 26, 26, 0.4);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.38); }
         infobar.info button:focus:hover:focus, infobar.info button:focus:hover:hover, infobar.info button.flat:focus:hover:focus, infobar.info button.flat:focus:hover:hover {
@@ -3184,7 +3184,7 @@ infobar {
     infobar.info button:checked, infobar.info button:active, infobar.info button.flat:checked, infobar.info button.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(26, 26, 26, 0.32);
       color: #212121;
       box-shadow: inset 1px 0 rgba(33, 33, 33, 0.06), inset 0 1px rgba(33, 33, 33, 0.07), inset -1px 0 rgba(33, 33, 33, 0.06), inset 0 -1px rgba(33, 33, 33, 0.05); }
@@ -3199,13 +3199,13 @@ infobar {
       infobar.info button:checked:focus, infobar.info button:checked:hover, infobar.info button:active:focus, infobar.info button:active:hover, infobar.info button.flat:checked:focus, infobar.info button.flat:checked:hover, infobar.info button.flat:active:focus, infobar.info button.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     infobar.info button:focus, infobar.info button:hover, infobar.info button.flat:focus, infobar.info button.flat:hover {
       color: #212121; }
     infobar.info button:disabled:disabled, infobar.info button.flat:disabled:disabled {
       background-color: alpha(mix(#8fadcc,#212121,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(#8fadcc,#212121,0.2),0.4),1.075), shade(alpha(mix(#8fadcc,#212121,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(#8fadcc,#212121,0.2),0.4),1.05), shade(alpha(mix(#8fadcc,#212121,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(#8fadcc,#212121,0.6);
@@ -3214,7 +3214,7 @@ infobar {
         color: mix(#8fadcc,#212121,0.6); }
     infobar.info button:active:disabled, infobar.info button:checked:disabled, infobar.info button.flat:active:disabled, infobar.info button.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       infobar.info button:active:disabled :disabled, infobar.info button:checked:disabled :disabled, infobar.info button.flat:active:disabled :disabled, infobar.info button.flat:checked:disabled :disabled {
@@ -3226,14 +3226,14 @@ infobar {
         color: rgba(143, 173, 204, 0.85); }
   infobar.warning, infobar.warning:backdrop {
     background-color: #f0c674;
-    background-image: linear-gradient(to bottom, #f3d08c, #edbc5c);
+    background-image: linear-gradient(to bottom, #f2cd84, #eebf64);
     border: 1px solid #e9ac34;
     caret-color: currentColor; }
     infobar.warning label, infobar.warning, infobar.warning:backdrop label, infobar.warning:backdrop {
       color: #212121; }
   infobar.warning button {
     background-color: #f0c674;
-    background-image: linear-gradient(to bottom, #f3d08c, #edbc5c);
+    background-image: linear-gradient(to bottom, #f2cd84, #eebf64);
     border-color: rgba(26, 26, 26, 0.32);
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.12); }
@@ -3293,7 +3293,7 @@ infobar {
       box-shadow: none; }
     infobar.warning button:hover, infobar.warning button.flat:hover {
       background-color: #f2cd84;
-      background-image: linear-gradient(to bottom, #f4d79d, #efc26b);
+      background-image: linear-gradient(to bottom, #f4d495, #f0c673);
       border-color: rgba(26, 26, 26, 0.4);
       color: #212121;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.22); }
@@ -3307,7 +3307,7 @@ infobar {
         border-color: rgba(26, 26, 26, 0.4); }
     infobar.warning button:focus, infobar.warning button.flat:focus {
       background-color: #f2cd84;
-      background-image: linear-gradient(to bottom, #f4d79d, #efc26b);
+      background-image: linear-gradient(to bottom, #f4d495, #f0c673);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -3317,7 +3317,7 @@ infobar {
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
       infobar.warning button:focus:hover, infobar.warning button.flat:focus:hover {
         background-color: #f3d394;
-        background-image: linear-gradient(to bottom, #f6deaf, #f1c87a);
+        background-image: linear-gradient(to bottom, #f5daa6, #f2cc82);
         border-color: rgba(26, 26, 26, 0.4);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.38); }
         infobar.warning button:focus:hover:focus, infobar.warning button:focus:hover:hover, infobar.warning button.flat:focus:hover:focus, infobar.warning button.flat:focus:hover:hover {
@@ -3331,7 +3331,7 @@ infobar {
     infobar.warning button:checked, infobar.warning button:active, infobar.warning button.flat:checked, infobar.warning button.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(26, 26, 26, 0.32);
       color: #212121;
       box-shadow: inset 1px 0 rgba(33, 33, 33, 0.06), inset 0 1px rgba(33, 33, 33, 0.07), inset -1px 0 rgba(33, 33, 33, 0.06), inset 0 -1px rgba(33, 33, 33, 0.05); }
@@ -3346,13 +3346,13 @@ infobar {
       infobar.warning button:checked:focus, infobar.warning button:checked:hover, infobar.warning button:active:focus, infobar.warning button:active:hover, infobar.warning button.flat:checked:focus, infobar.warning button.flat:checked:hover, infobar.warning button.flat:active:focus, infobar.warning button.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     infobar.warning button:focus, infobar.warning button:hover, infobar.warning button.flat:focus, infobar.warning button.flat:hover {
       color: #212121; }
     infobar.warning button:disabled:disabled, infobar.warning button.flat:disabled:disabled {
       background-color: alpha(mix(#f0c674,#212121,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(#f0c674,#212121,0.2),0.4),1.075), shade(alpha(mix(#f0c674,#212121,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(#f0c674,#212121,0.2),0.4),1.05), shade(alpha(mix(#f0c674,#212121,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(#f0c674,#212121,0.6);
@@ -3361,7 +3361,7 @@ infobar {
         color: mix(#f0c674,#212121,0.6); }
     infobar.warning button:active:disabled, infobar.warning button:checked:disabled, infobar.warning button.flat:active:disabled, infobar.warning button.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       infobar.warning button:active:disabled :disabled, infobar.warning button:checked:disabled :disabled, infobar.warning button.flat:active:disabled :disabled, infobar.warning button.flat:checked:disabled :disabled {
@@ -3373,14 +3373,14 @@ infobar {
         color: rgba(240, 198, 116, 0.85); }
   infobar.question, infobar.question:backdrop {
     background-color: #8fadcc;
-    background-image: linear-gradient(to bottom, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to bottom, #9bb6d1, #83a4c7);
     border: 1px solid #5f8ab6;
     caret-color: currentColor; }
     infobar.question label, infobar.question, infobar.question:backdrop label, infobar.question:backdrop {
       color: #212121; }
   infobar.question button {
     background-color: #8fadcc;
-    background-image: linear-gradient(to bottom, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to bottom, #9bb6d1, #83a4c7);
     border-color: rgba(26, 26, 26, 0.32);
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.12); }
@@ -3440,7 +3440,7 @@ infobar {
       box-shadow: none; }
     infobar.question button:hover, infobar.question button.flat:hover {
       background-color: #9bb6d1;
-      background-image: linear-gradient(to bottom, #aec3da, #88a8c9);
+      background-image: linear-gradient(to bottom, #a7bfd7, #8eadcc);
       border-color: rgba(26, 26, 26, 0.4);
       color: #212121;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.22); }
@@ -3454,7 +3454,7 @@ infobar {
         border-color: rgba(26, 26, 26, 0.4); }
     infobar.question button:focus, infobar.question button.flat:focus {
       background-color: #9bb6d1;
-      background-image: linear-gradient(to bottom, #aec3da, #88a8c9);
+      background-image: linear-gradient(to bottom, #a7bfd7, #8eadcc);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -3464,7 +3464,7 @@ infobar {
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
       infobar.question button:focus:hover, infobar.question button.flat:focus:hover {
         background-color: #a7bed7;
-        background-image: linear-gradient(to bottom, #bbcde0, #93b0ce);
+        background-image: linear-gradient(to bottom, #b4c8dd, #9ab5d1);
         border-color: rgba(26, 26, 26, 0.4);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.38); }
         infobar.question button:focus:hover:focus, infobar.question button:focus:hover:hover, infobar.question button.flat:focus:hover:focus, infobar.question button.flat:focus:hover:hover {
@@ -3478,7 +3478,7 @@ infobar {
     infobar.question button:checked, infobar.question button:active, infobar.question button.flat:checked, infobar.question button.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(26, 26, 26, 0.32);
       color: #212121;
       box-shadow: inset 1px 0 rgba(33, 33, 33, 0.06), inset 0 1px rgba(33, 33, 33, 0.07), inset -1px 0 rgba(33, 33, 33, 0.06), inset 0 -1px rgba(33, 33, 33, 0.05); }
@@ -3493,13 +3493,13 @@ infobar {
       infobar.question button:checked:focus, infobar.question button:checked:hover, infobar.question button:active:focus, infobar.question button:active:hover, infobar.question button.flat:checked:focus, infobar.question button.flat:checked:hover, infobar.question button.flat:active:focus, infobar.question button.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     infobar.question button:focus, infobar.question button:hover, infobar.question button.flat:focus, infobar.question button.flat:hover {
       color: #212121; }
     infobar.question button:disabled:disabled, infobar.question button.flat:disabled:disabled {
       background-color: alpha(mix(#8fadcc,#212121,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(#8fadcc,#212121,0.2),0.4),1.075), shade(alpha(mix(#8fadcc,#212121,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(#8fadcc,#212121,0.2),0.4),1.05), shade(alpha(mix(#8fadcc,#212121,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(#8fadcc,#212121,0.6);
@@ -3508,7 +3508,7 @@ infobar {
         color: mix(#8fadcc,#212121,0.6); }
     infobar.question button:active:disabled, infobar.question button:checked:disabled, infobar.question button.flat:active:disabled, infobar.question button.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       infobar.question button:active:disabled :disabled, infobar.question button:checked:disabled :disabled, infobar.question button.flat:active:disabled :disabled, infobar.question button.flat:checked:disabled :disabled {
@@ -3520,14 +3520,14 @@ infobar {
         color: rgba(143, 173, 204, 0.85); }
   infobar.error, infobar.error:backdrop {
     background-color: #de935f;
-    background-image: linear-gradient(to bottom, #e2a073, #da864b);
+    background-image: linear-gradient(to bottom, #e19c6c, #db8a52);
     border: 1px solid #d2702b;
     caret-color: currentColor; }
     infobar.error label, infobar.error, infobar.error:backdrop label, infobar.error:backdrop {
       color: #212121; }
   infobar.error button {
     background-color: #de935f;
-    background-image: linear-gradient(to bottom, #e2a073, #da864b);
+    background-image: linear-gradient(to bottom, #e19c6c, #db8a52);
     border-color: rgba(26, 26, 26, 0.32);
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.12); }
@@ -3587,7 +3587,7 @@ infobar {
       box-shadow: none; }
     infobar.error button:hover, infobar.error button.flat:hover {
       background-color: #e19c6c;
-      background-image: linear-gradient(to bottom, #e5aa81, #dc8e57);
+      background-image: linear-gradient(to bottom, #e4a57a, #de935e);
       border-color: rgba(26, 26, 26, 0.4);
       color: #212121;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.22); }
@@ -3601,7 +3601,7 @@ infobar {
         border-color: rgba(26, 26, 26, 0.4); }
     infobar.error button:focus, infobar.error button.flat:focus {
       background-color: #e19c6c;
-      background-image: linear-gradient(to bottom, #e5aa81, #dc8e57);
+      background-image: linear-gradient(to bottom, #e4a57a, #de935e);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -3611,7 +3611,7 @@ infobar {
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
       infobar.error button:focus:hover, infobar.error button.flat:focus:hover {
         background-color: #e3a579;
-        background-image: linear-gradient(to bottom, #e8b38f, #df9664);
+        background-image: linear-gradient(to bottom, #e6ae88, #e09b6b);
         border-color: rgba(26, 26, 26, 0.4);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.38); }
         infobar.error button:focus:hover:focus, infobar.error button:focus:hover:hover, infobar.error button.flat:focus:hover:focus, infobar.error button.flat:focus:hover:hover {
@@ -3625,7 +3625,7 @@ infobar {
     infobar.error button:checked, infobar.error button:active, infobar.error button.flat:checked, infobar.error button.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(26, 26, 26, 0.32);
       color: #212121;
       box-shadow: inset 1px 0 rgba(33, 33, 33, 0.06), inset 0 1px rgba(33, 33, 33, 0.07), inset -1px 0 rgba(33, 33, 33, 0.06), inset 0 -1px rgba(33, 33, 33, 0.05); }
@@ -3640,13 +3640,13 @@ infobar {
       infobar.error button:checked:focus, infobar.error button:checked:hover, infobar.error button:active:focus, infobar.error button:active:hover, infobar.error button.flat:checked:focus, infobar.error button.flat:checked:hover, infobar.error button.flat:active:focus, infobar.error button.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     infobar.error button:focus, infobar.error button:hover, infobar.error button.flat:focus, infobar.error button.flat:hover {
       color: #212121; }
     infobar.error button:disabled:disabled, infobar.error button.flat:disabled:disabled {
       background-color: alpha(mix(#de935f,#212121,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(#de935f,#212121,0.2),0.4),1.075), shade(alpha(mix(#de935f,#212121,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(#de935f,#212121,0.2),0.4),1.05), shade(alpha(mix(#de935f,#212121,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(#de935f,#212121,0.6);
@@ -3655,7 +3655,7 @@ infobar {
         color: mix(#de935f,#212121,0.6); }
     infobar.error button:active:disabled, infobar.error button:checked:disabled, infobar.error button.flat:active:disabled, infobar.error button.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       infobar.error button:active:disabled :disabled, infobar.error button:checked:disabled :disabled, infobar.error button.flat:active:disabled :disabled, infobar.error button.flat:checked:disabled :disabled {
@@ -3749,7 +3749,7 @@ entry, menuitem entry, popover.background entry, .osd entry,
     box-shadow: none; }
   entry progress, popover.background entry progress, .osd entry progress, #XfceNotifyWindow entry progress, #login_window entry progress {
     background-color: #8fadcc;
-    background-image: linear-gradient(to bottom, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to bottom, #9bb6d1, #83a4c7);
     border-width: 0;
     border-radius: 4px;
     color: #212121; }
@@ -4077,7 +4077,7 @@ menuitem entry {
     border-color: mix(#8fadcc,mix(#212121,#c5c8c6,0.18),0.3); }
   menuitem entry:disabled {
     background-color: mix(#212121,#c5c8c6,0.07);
-    background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.07),1.075), shade(mix(#212121,#c5c8c6,0.07),0.925));
+    background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.07),1.05), shade(mix(#212121,#c5c8c6,0.07),0.95));
     opacity: .9;
     color: mix(#212121,#c5c8c6,0.9); }
 
@@ -4151,7 +4151,7 @@ popover.background {
       border-color: mix(#8fadcc,mix(#212121,#c5c8c6,0.18),0.3); }
     popover.background entry:disabled {
       background-color: mix(#212121,#c5c8c6,0.07);
-      background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.07),1.075), shade(mix(#212121,#c5c8c6,0.07),0.925));
+      background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.07),1.05), shade(mix(#212121,#c5c8c6,0.07),0.95));
       opacity: .9;
       color: mix(#212121,#c5c8c6,0.9); }
   popover.background button {
@@ -4216,7 +4216,7 @@ popover.background {
       box-shadow: none; }
     popover.background button:hover, popover.background button.flat:hover {
       background-color: #232323;
-      background-image: linear-gradient(to bottom, #252525, #202020);
+      background-image: linear-gradient(to bottom, #242424, #212121);
       border-color: rgba(156, 161, 158, 0.3);
       color: #c5c8c6;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -4230,7 +4230,7 @@ popover.background {
         border-color: rgba(156, 161, 158, 0.3); }
     popover.background button:focus, popover.background button.flat:focus {
       background-color: #232323;
-      background-image: linear-gradient(to bottom, #252525, #202020);
+      background-image: linear-gradient(to bottom, #242424, #212121);
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -4240,7 +4240,7 @@ popover.background {
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.42); }
       popover.background button:focus:hover, popover.background button.flat:focus:hover {
         background-color: #242424;
-        background-image: linear-gradient(to bottom, #272727, #222222);
+        background-image: linear-gradient(to bottom, #262626, #222222);
         border-color: rgba(156, 161, 158, 0.3);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
         popover.background button:focus:hover:focus, popover.background button:focus:hover:hover, popover.background button.flat:focus:hover:focus, popover.background button.flat:focus:hover:hover {
@@ -4254,7 +4254,7 @@ popover.background {
     popover.background button:checked, popover.background button:active, popover.background button.flat:checked, popover.background button.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(156, 161, 158, 0.22);
       color: #212121;
       box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -4269,13 +4269,13 @@ popover.background {
       popover.background button:checked:focus, popover.background button:checked:hover, popover.background button:active:focus, popover.background button:active:hover, popover.background button.flat:checked:focus, popover.background button.flat:checked:hover, popover.background button.flat:active:focus, popover.background button.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     popover.background button:focus, popover.background button:hover, popover.background button.flat:focus, popover.background button.flat:hover {
       color: #c5c8c6; }
     popover.background button:disabled:disabled, popover.background button.flat:disabled:disabled {
       background-color: alpha(mix(#212121,#c5c8c6,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(#212121,#c5c8c6,0.6);
@@ -4284,7 +4284,7 @@ popover.background {
         color: mix(#212121,#c5c8c6,0.6); }
     popover.background button:active:disabled, popover.background button:checked:disabled, popover.background button.flat:active:disabled, popover.background button.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       popover.background button:active:disabled :disabled, popover.background button:checked:disabled :disabled, popover.background button.flat:active:disabled :disabled, popover.background button.flat:checked:disabled :disabled {
@@ -4467,7 +4467,7 @@ frame.app-notification {
       box-shadow: none; }
     frame.app-notification button:hover, frame.app-notification button.flat:hover {
       background-color: rgba(35, 35, 35, 0.8);
-      background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
+      background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.8), rgba(33, 33, 33, 0.8));
       border-color: rgba(156, 161, 158, 0.3);
       color: #c5c8c6;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -4481,7 +4481,7 @@ frame.app-notification {
         border-color: rgba(156, 161, 158, 0.3); }
     frame.app-notification button:focus, frame.app-notification button.flat:focus {
       background-color: rgba(35, 35, 35, 0.8);
-      background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
+      background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.8), rgba(33, 33, 33, 0.8));
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -4491,7 +4491,7 @@ frame.app-notification {
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.42); }
       frame.app-notification button:focus:hover, frame.app-notification button.flat:focus:hover {
         background-color: rgba(36, 36, 36, 0.8);
-        background-image: linear-gradient(to bottom, rgba(39, 39, 39, 0.8), rgba(34, 34, 34, 0.8));
+        background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8), rgba(34, 34, 34, 0.8));
         border-color: rgba(156, 161, 158, 0.3);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
         frame.app-notification button:focus:hover:focus, frame.app-notification button:focus:hover:hover, frame.app-notification button.flat:focus:hover:focus, frame.app-notification button.flat:focus:hover:hover {
@@ -4505,7 +4505,7 @@ frame.app-notification {
     frame.app-notification button:checked, frame.app-notification button:active, frame.app-notification button.flat:checked, frame.app-notification button.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(156, 161, 158, 0.22);
       color: #212121;
       box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -4520,13 +4520,13 @@ frame.app-notification {
       frame.app-notification button:checked:focus, frame.app-notification button:checked:hover, frame.app-notification button:active:focus, frame.app-notification button:active:hover, frame.app-notification button.flat:checked:focus, frame.app-notification button.flat:checked:hover, frame.app-notification button.flat:active:focus, frame.app-notification button.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     frame.app-notification button:focus, frame.app-notification button:hover, frame.app-notification button.flat:focus, frame.app-notification button.flat:hover {
       color: #c5c8c6; }
     frame.app-notification button:disabled:disabled, frame.app-notification button.flat:disabled:disabled {
       background-color: alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.6);
@@ -4535,7 +4535,7 @@ frame.app-notification {
         color: mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.6); }
     frame.app-notification button:active:disabled, frame.app-notification button:checked:disabled, frame.app-notification button.flat:active:disabled, frame.app-notification button.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       frame.app-notification button:active:disabled :disabled, frame.app-notification button:checked:disabled :disabled, frame.app-notification button.flat:active:disabled :disabled, frame.app-notification button.flat:checked:disabled :disabled {
@@ -4799,7 +4799,7 @@ notebook {
         color: alpha(mix(#c5c8c6,#212121,0.5),0.3); }
     notebook > header > tabs > tab {
       background-color: alpha(mix(#212121,#c5c8c6,0.1),0.7);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.1),0.7),1.075), shade(alpha(mix(#212121,#c5c8c6,0.1),0.7),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.1),0.7),1.05), shade(alpha(mix(#212121,#c5c8c6,0.1),0.7),0.95));
       border-color: mix(mix(#212121,#c5c8c6,0.18),mix(#c5c8c6,#212121,0.5),0.15);
       color: rgba(197, 200, 198, 0.8);
       padding: 8px 16px;
@@ -4810,7 +4810,7 @@ notebook {
       border-style: solid; }
       notebook > header > tabs > tab:hover:not(:checked) {
         background-color: mix(#212121,#c5c8c6,0.04);
-        background-image: linear-gradient(to bottom, shade(mix(#212121,#c5c8c6,0.04),1.075), shade(mix(#212121,#c5c8c6,0.04),0.925));
+        background-image: linear-gradient(to bottom, shade(mix(#212121,#c5c8c6,0.04),1.05), shade(mix(#212121,#c5c8c6,0.04),0.95));
         color: mix(#c5c8c6,mix(#c5c8c6,#212121,0.5),0.5); }
       notebook > header > tabs > tab:checked, notebook > header > tabs > tab:checked:hover {
         background: #212121;
@@ -5066,7 +5066,7 @@ button.osd,
   #XfceNotifyWindow button:hover,
   #XfceNotifyWindow button.flat:hover {
     background-color: rgba(35, 35, 35, 0.8);
-    background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
+    background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.8), rgba(33, 33, 33, 0.8));
     border-color: rgba(156, 161, 158, 0.3);
     color: #c5c8c6;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -5108,7 +5108,7 @@ button.osd,
   #XfceNotifyWindow button:focus,
   #XfceNotifyWindow button.flat:focus {
     background-color: rgba(35, 35, 35, 0.8);
-    background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
+    background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.8), rgba(33, 33, 33, 0.8));
     border-color: rgba(197, 200, 198, 0.22);
     outline-color: rgba(143, 173, 204, 0.5);
     outline-width: 3px;
@@ -5120,7 +5120,7 @@ button.osd,
     #XfceNotifyWindow button:focus:hover,
     #XfceNotifyWindow button.flat:focus:hover {
       background-color: rgba(36, 36, 36, 0.8);
-      background-image: linear-gradient(to bottom, rgba(39, 39, 39, 0.8), rgba(34, 34, 34, 0.8));
+      background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8), rgba(34, 34, 34, 0.8));
       border-color: rgba(156, 161, 158, 0.3);
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
       button.osd:focus:hover:focus, button.osd:focus:hover:hover, button.osd.flat:focus:hover:focus, button.osd.flat:focus:hover:hover,
@@ -5164,7 +5164,7 @@ button.osd,
   #XfceNotifyWindow button.flat:active {
     /*@include linear-gradient(shade($bg, .7), to top);*/
     background-color: #8fadcc;
-    background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
     border-color: rgba(156, 161, 158, 0.22);
     color: #212121;
     box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -5239,7 +5239,7 @@ button.osd,
     #XfceNotifyWindow button.flat:active:hover {
       /*@include linear-gradient(shade($bg, .65), to top);*/
       background-color: #9bb6d1;
-      background-image: linear-gradient(to top, #aec3da, #88a8c9);
+      background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
       color: #212121; }
   button.osd:focus, button.osd:hover, button.osd.flat:focus, button.osd.flat:hover,
   #XfceNotifyWindow button:focus,
@@ -5251,7 +5251,7 @@ button.osd,
   #XfceNotifyWindow button:disabled:disabled,
   #XfceNotifyWindow button.flat:disabled:disabled {
     background-color: alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4);
-    background-image: linear-gradient(to bottom, shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),0.925));
+    background-image: linear-gradient(to bottom, shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),0.95));
     /*border: 1px solid alpha($bg, .2);*/
     opacity: .6;
     color: mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.6);
@@ -5266,7 +5266,7 @@ button.osd,
   #XfceNotifyWindow button.flat:active:disabled,
   #XfceNotifyWindow button.flat:checked:disabled {
     background-color: rgba(143, 173, 204, 0.6);
-    background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+    background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
     color: rgba(33, 33, 33, 0.85);
     box-shadow: none; }
     button.osd:active:disabled :disabled, button.osd:checked:disabled :disabled, button.osd.flat:active:disabled :disabled, button.osd.flat:checked:disabled :disabled,
@@ -5451,7 +5451,7 @@ progressbar.osd {
     #XfceNotifyWindow button:hover,
     #XfceNotifyWindow button.flat:hover {
       background-color: rgba(35, 35, 35, 0.8);
-      background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
+      background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.8), rgba(33, 33, 33, 0.8));
       border-color: rgba(156, 161, 158, 0.3);
       color: #c5c8c6;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -5493,7 +5493,7 @@ progressbar.osd {
     #XfceNotifyWindow button:focus,
     #XfceNotifyWindow button.flat:focus {
       background-color: rgba(35, 35, 35, 0.8);
-      background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
+      background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.8), rgba(33, 33, 33, 0.8));
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -5505,7 +5505,7 @@ progressbar.osd {
       #XfceNotifyWindow button:focus:hover,
       #XfceNotifyWindow button.flat:focus:hover {
         background-color: rgba(36, 36, 36, 0.8);
-        background-image: linear-gradient(to bottom, rgba(39, 39, 39, 0.8), rgba(34, 34, 34, 0.8));
+        background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8), rgba(34, 34, 34, 0.8));
         border-color: rgba(156, 161, 158, 0.3);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
         .osd button:focus:hover:focus, .osd button:focus:hover:hover, .osd button.flat:focus:hover:focus, .osd button.flat:focus:hover:hover,
@@ -5549,7 +5549,7 @@ progressbar.osd {
     #XfceNotifyWindow button.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(156, 161, 158, 0.22);
       color: #212121;
       box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -5624,7 +5624,7 @@ progressbar.osd {
       #XfceNotifyWindow button.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     .osd button:focus, .osd button:hover, .osd button.flat:focus, .osd button.flat:hover,
     #XfceNotifyWindow button:focus,
@@ -5636,7 +5636,7 @@ progressbar.osd {
     #XfceNotifyWindow button:disabled:disabled,
     #XfceNotifyWindow button.flat:disabled:disabled {
       background-color: alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.6);
@@ -5651,7 +5651,7 @@ progressbar.osd {
     #XfceNotifyWindow button.flat:active:disabled,
     #XfceNotifyWindow button.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       .osd button:active:disabled :disabled, .osd button:checked:disabled :disabled, .osd button.flat:active:disabled :disabled, .osd button.flat:checked:disabled :disabled,
@@ -5706,7 +5706,7 @@ progressbar.osd {
     .osd entry:disabled,
     #XfceNotifyWindow entry:disabled {
       background-color: mix(#212121,#c5c8c6,0.07);
-      background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.07),1.075), shade(mix(#212121,#c5c8c6,0.07),0.925));
+      background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.07),1.05), shade(mix(#212121,#c5c8c6,0.07),0.95));
       opacity: .9;
       color: mix(#212121,#c5c8c6,0.9); }
   .osd trough, .osd.trough,
@@ -5720,7 +5720,7 @@ progressbar.osd {
   .osd scale slider,
   #XfceNotifyWindow scale slider {
     background-color: rgba(36, 36, 36, 0.8);
-    background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8), rgba(33, 33, 33, 0.8));
+    background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(34, 34, 34, 0.8));
     border-color: rgba(26, 26, 26, 0.8); }
     .osd scale slider:focus, .osd scale slider:hover,
     #XfceNotifyWindow scale slider:focus,
@@ -5746,7 +5746,7 @@ progressbar.osd {
     .osd scale slider:disabled,
     #XfceNotifyWindow scale slider:disabled {
       background-color: rgba(30, 30, 30, 0.8);
-      background-image: linear-gradient(to bottom, rgba(32, 32, 32, 0.8), rgba(27, 27, 27, 0.8)); }
+      background-image: linear-gradient(to bottom, rgba(31, 31, 31, 0.8), rgba(28, 28, 28, 0.8)); }
   .osd scale trough,
   #XfceNotifyWindow scale trough {
     border-color: rgba(26, 26, 26, 0.8);
@@ -5862,7 +5862,7 @@ progressbar.osd {
     .osd spinbutton:not(.vertical):disabled,
     #XfceNotifyWindow spinbutton:not(.vertical):disabled {
       background-color: #1e1e1e;
-      background-image: linear-gradient(to top, #202020, #1b1b1b);
+      background-image: linear-gradient(to top, #1f1f1f, #1c1c1c);
       color: mix(#212121,#c5c8c6,0.5); }
     .osd spinbutton:not(.vertical) button,
     #XfceNotifyWindow spinbutton:not(.vertical) button {
@@ -5988,7 +5988,7 @@ progressbar.osd {
       #XfceNotifyWindow spinbutton:not(.vertical) button:hover,
       #XfceNotifyWindow spinbutton:not(.vertical) button.flat:hover {
         background-color: rgba(35, 35, 35, 0.8);
-        background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
+        background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.8), rgba(33, 33, 33, 0.8));
         border-color: rgba(156, 161, 158, 0.3);
         color: #c5c8c6;
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -6030,7 +6030,7 @@ progressbar.osd {
       #XfceNotifyWindow spinbutton:not(.vertical) button:focus,
       #XfceNotifyWindow spinbutton:not(.vertical) button.flat:focus {
         background-color: rgba(35, 35, 35, 0.8);
-        background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
+        background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.8), rgba(33, 33, 33, 0.8));
         border-color: rgba(197, 200, 198, 0.22);
         outline-color: rgba(143, 173, 204, 0.5);
         outline-width: 3px;
@@ -6042,7 +6042,7 @@ progressbar.osd {
         #XfceNotifyWindow spinbutton:not(.vertical) button:focus:hover,
         #XfceNotifyWindow spinbutton:not(.vertical) button.flat:focus:hover {
           background-color: rgba(36, 36, 36, 0.8);
-          background-image: linear-gradient(to bottom, rgba(39, 39, 39, 0.8), rgba(34, 34, 34, 0.8));
+          background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8), rgba(34, 34, 34, 0.8));
           border-color: rgba(156, 161, 158, 0.3);
           box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
           .osd spinbutton:not(.vertical) button:focus:hover:focus, .osd spinbutton:not(.vertical) button:focus:hover:hover, .osd spinbutton:not(.vertical) button.flat:focus:hover:focus, .osd spinbutton:not(.vertical) button.flat:focus:hover:hover,
@@ -6086,7 +6086,7 @@ progressbar.osd {
       #XfceNotifyWindow spinbutton:not(.vertical) button.flat:active {
         /*@include linear-gradient(shade($bg, .7), to top);*/
         background-color: #8fadcc;
-        background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+        background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
         border-color: rgba(156, 161, 158, 0.22);
         color: #212121;
         box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -6161,7 +6161,7 @@ progressbar.osd {
         #XfceNotifyWindow spinbutton:not(.vertical) button.flat:active:hover {
           /*@include linear-gradient(shade($bg, .65), to top);*/
           background-color: #9bb6d1;
-          background-image: linear-gradient(to top, #aec3da, #88a8c9);
+          background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
           color: #212121; }
       .osd spinbutton:not(.vertical) button:focus, .osd spinbutton:not(.vertical) button:hover, .osd spinbutton:not(.vertical) button.flat:focus, .osd spinbutton:not(.vertical) button.flat:hover,
       #XfceNotifyWindow spinbutton:not(.vertical) button:focus,
@@ -6173,7 +6173,7 @@ progressbar.osd {
       #XfceNotifyWindow spinbutton:not(.vertical) button:disabled:disabled,
       #XfceNotifyWindow spinbutton:not(.vertical) button.flat:disabled:disabled {
         background-color: alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4);
-        background-image: linear-gradient(to bottom, shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),0.925));
+        background-image: linear-gradient(to bottom, shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),0.95));
         /*border: 1px solid alpha($bg, .2);*/
         opacity: .6;
         color: mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.6);
@@ -6188,7 +6188,7 @@ progressbar.osd {
       #XfceNotifyWindow spinbutton:not(.vertical) button.flat:active:disabled,
       #XfceNotifyWindow spinbutton:not(.vertical) button.flat:checked:disabled {
         background-color: rgba(143, 173, 204, 0.6);
-        background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+        background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
         color: rgba(33, 33, 33, 0.85);
         box-shadow: none; }
         .osd spinbutton:not(.vertical) button:active:disabled :disabled, .osd spinbutton:not(.vertical) button:checked:disabled :disabled, .osd spinbutton:not(.vertical) button.flat:active:disabled :disabled, .osd spinbutton:not(.vertical) button.flat:checked:disabled :disabled,
@@ -6355,7 +6355,7 @@ progressbar.osd {
     #XfceNotifyWindow spinbutton.vertical button:first-child:hover,
     #XfceNotifyWindow spinbutton.vertical button:first-child.flat:hover {
       background-color: rgba(35, 35, 35, 0.8);
-      background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
+      background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.8), rgba(33, 33, 33, 0.8));
       border-color: rgba(156, 161, 158, 0.3);
       color: #c5c8c6;
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -6397,7 +6397,7 @@ progressbar.osd {
     #XfceNotifyWindow spinbutton.vertical button:first-child:focus,
     #XfceNotifyWindow spinbutton.vertical button:first-child.flat:focus {
       background-color: rgba(35, 35, 35, 0.8);
-      background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
+      background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.8), rgba(33, 33, 33, 0.8));
       border-color: rgba(197, 200, 198, 0.22);
       outline-color: rgba(143, 173, 204, 0.5);
       outline-width: 3px;
@@ -6409,7 +6409,7 @@ progressbar.osd {
       #XfceNotifyWindow spinbutton.vertical button:first-child:focus:hover,
       #XfceNotifyWindow spinbutton.vertical button:first-child.flat:focus:hover {
         background-color: rgba(36, 36, 36, 0.8);
-        background-image: linear-gradient(to bottom, rgba(39, 39, 39, 0.8), rgba(34, 34, 34, 0.8));
+        background-image: linear-gradient(to bottom, rgba(38, 38, 38, 0.8), rgba(34, 34, 34, 0.8));
         border-color: rgba(156, 161, 158, 0.3);
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
         .osd spinbutton.vertical button:first-child:focus:hover:focus, .osd spinbutton.vertical button:first-child:focus:hover:hover, .osd spinbutton.vertical button:first-child.flat:focus:hover:focus, .osd spinbutton.vertical button:first-child.flat:focus:hover:hover,
@@ -6453,7 +6453,7 @@ progressbar.osd {
     #XfceNotifyWindow spinbutton.vertical button:first-child.flat:active {
       /*@include linear-gradient(shade($bg, .7), to top);*/
       background-color: #8fadcc;
-      background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+      background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
       border-color: rgba(156, 161, 158, 0.22);
       color: #212121;
       box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -6528,7 +6528,7 @@ progressbar.osd {
       #XfceNotifyWindow spinbutton.vertical button:first-child.flat:active:hover {
         /*@include linear-gradient(shade($bg, .65), to top);*/
         background-color: #9bb6d1;
-        background-image: linear-gradient(to top, #aec3da, #88a8c9);
+        background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
         color: #212121; }
     .osd spinbutton.vertical button:first-child:focus, .osd spinbutton.vertical button:first-child:hover, .osd spinbutton.vertical button:first-child.flat:focus, .osd spinbutton.vertical button:first-child.flat:hover,
     #XfceNotifyWindow spinbutton.vertical button:first-child:focus,
@@ -6540,7 +6540,7 @@ progressbar.osd {
     #XfceNotifyWindow spinbutton.vertical button:first-child:disabled:disabled,
     #XfceNotifyWindow spinbutton.vertical button:first-child.flat:disabled:disabled {
       background-color: alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4);
-      background-image: linear-gradient(to bottom, shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),0.925));
+      background-image: linear-gradient(to bottom, shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.2),0.4),0.95));
       /*border: 1px solid alpha($bg, .2);*/
       opacity: .6;
       color: mix(rgba(33, 33, 33, 0.8),#c5c8c6,0.6);
@@ -6555,7 +6555,7 @@ progressbar.osd {
     #XfceNotifyWindow spinbutton.vertical button:first-child.flat:active:disabled,
     #XfceNotifyWindow spinbutton.vertical button:first-child.flat:checked:disabled {
       background-color: rgba(143, 173, 204, 0.6);
-      background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+      background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
       color: rgba(33, 33, 33, 0.85);
       box-shadow: none; }
       .osd spinbutton.vertical button:first-child:active:disabled :disabled, .osd spinbutton.vertical button:first-child:checked:disabled :disabled, .osd spinbutton.vertical button:first-child.flat:active:disabled :disabled, .osd spinbutton.vertical button:first-child.flat:checked:disabled :disabled,
@@ -6729,7 +6729,7 @@ progressbar {
     border-radius: 4px; }
   progressbar progress {
     background-color: #8fadcc;
-    background-image: linear-gradient(to bottom, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to bottom, #9bb6d1, #83a4c7);
     border-radius: 0; }
     progressbar progress.left {
       border-top-left-radius: 4px;
@@ -7501,7 +7501,7 @@ treeview.view {
         color: #212121;
         box-shadow: none;
         background-color: #8fadcc;
-        background-image: linear-gradient(to bottom, #a1bad4, #7da0c4);
+        background-image: linear-gradient(to bottom, #9bb6d1, #83a4c7);
         border-radius: 4px; }
         treeview.view.progressbar:selected:focus:backdrop, treeview.view.progressbar:selected:backdrop {
           color: mix(#8fadcc,#212121,0.66);
@@ -7681,17 +7681,17 @@ panel-toplevel .gnome-panel-menu-bar:backdrop menuitem label, gp-calendar-window
   color: #c5c8c6; }
   #clock-applet-button:hover, panel-applet button:hover, .xfce4-panel button:hover, #login_window:hover, #shutdown_dialog:hover, #restart_dialog:hover {
     background-color: mix(#212121,#c5c8c6,0.11);
-    background-image: linear-gradient(to bottom, shade(mix(#212121,#c5c8c6,0.11),1.075), shade(mix(#212121,#c5c8c6,0.11),0.925));
+    background-image: linear-gradient(to bottom, shade(mix(#212121,#c5c8c6,0.11),1.05), shade(mix(#212121,#c5c8c6,0.11),0.95));
     border-color: mix(#212121,#c5c8c6,0.11);
     color: #d5d7d6; }
   #clock-applet-button:active, panel-applet button:active, .xfce4-panel button:active, #login_window:active, #shutdown_dialog:active, #restart_dialog:active, #clock-applet-button:checked, panel-applet button:checked, .xfce4-panel button:checked, #login_window:checked, #shutdown_dialog:checked, #restart_dialog:checked {
     background-color: mix(#212121,#c5c8c6,0.21);
-    background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.21),1.075), shade(mix(#212121,#c5c8c6,0.21),0.925));
+    background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.21),1.05), shade(mix(#212121,#c5c8c6,0.21),0.95));
     border-color: mix(#212121,#c5c8c6,0.21);
     color: #d5d7d6; }
     #clock-applet-button:active:hover, panel-applet button:active:hover, .xfce4-panel button:active:hover, #login_window:active:hover, #shutdown_dialog:active:hover, #restart_dialog:active:hover, #clock-applet-button:checked:hover, panel-applet button:checked:hover, .xfce4-panel button:checked:hover, #login_window:checked:hover, #shutdown_dialog:checked:hover, #restart_dialog:checked:hover {
       background-color: mix(#212121,#c5c8c6,0.31);
-      background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.31),1.075), shade(mix(#212121,#c5c8c6,0.31),0.925));
+      background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.31),1.05), shade(mix(#212121,#c5c8c6,0.31),0.95));
       border-color: mix(#212121,#c5c8c6,0.31); }
 
 panel-plug,
@@ -8146,7 +8146,7 @@ paned.titlebar {
         box-shadow: none; }
       .nemo-window toolbar button:hover, .nemo-window toolbar button.flat:hover {
         background-color: #232323;
-        background-image: linear-gradient(to bottom, #252525, #202020);
+        background-image: linear-gradient(to bottom, #242424, #212121);
         border-color: rgba(156, 161, 158, 0.3);
         color: #c5c8c6;
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -8160,7 +8160,7 @@ paned.titlebar {
           border-color: rgba(156, 161, 158, 0.3); }
       .nemo-window toolbar button:focus, .nemo-window toolbar button.flat:focus {
         background-color: #232323;
-        background-image: linear-gradient(to bottom, #252525, #202020);
+        background-image: linear-gradient(to bottom, #242424, #212121);
         border-color: rgba(197, 200, 198, 0.22);
         outline-color: rgba(143, 173, 204, 0.5);
         outline-width: 3px;
@@ -8170,7 +8170,7 @@ paned.titlebar {
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.42); }
         .nemo-window toolbar button:focus:hover, .nemo-window toolbar button.flat:focus:hover {
           background-color: #242424;
-          background-image: linear-gradient(to bottom, #272727, #222222);
+          background-image: linear-gradient(to bottom, #262626, #222222);
           border-color: rgba(156, 161, 158, 0.3);
           box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
           .nemo-window toolbar button:focus:hover:focus, .nemo-window toolbar button:focus:hover:hover, .nemo-window toolbar button.flat:focus:hover:focus, .nemo-window toolbar button.flat:focus:hover:hover {
@@ -8184,7 +8184,7 @@ paned.titlebar {
       .nemo-window toolbar button:checked, .nemo-window toolbar button:active, .nemo-window toolbar button.flat:checked, .nemo-window toolbar button.flat:active {
         /*@include linear-gradient(shade($bg, .7), to top);*/
         background-color: #8fadcc;
-        background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+        background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
         border-color: rgba(156, 161, 158, 0.22);
         color: #212121;
         box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -8199,13 +8199,13 @@ paned.titlebar {
         .nemo-window toolbar button:checked:focus, .nemo-window toolbar button:checked:hover, .nemo-window toolbar button:active:focus, .nemo-window toolbar button:active:hover, .nemo-window toolbar button.flat:checked:focus, .nemo-window toolbar button.flat:checked:hover, .nemo-window toolbar button.flat:active:focus, .nemo-window toolbar button.flat:active:hover {
           /*@include linear-gradient(shade($bg, .65), to top);*/
           background-color: #9bb6d1;
-          background-image: linear-gradient(to top, #aec3da, #88a8c9);
+          background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
           color: #212121; }
       .nemo-window toolbar button:focus, .nemo-window toolbar button:hover, .nemo-window toolbar button.flat:focus, .nemo-window toolbar button.flat:hover {
         color: #c5c8c6; }
       .nemo-window toolbar button:disabled:disabled, .nemo-window toolbar button.flat:disabled:disabled {
         background-color: alpha(mix(#212121,#c5c8c6,0.2),0.4);
-        background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.925));
+        background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.95));
         /*border: 1px solid alpha($bg, .2);*/
         opacity: .6;
         color: mix(#212121,#c5c8c6,0.6);
@@ -8214,7 +8214,7 @@ paned.titlebar {
           color: mix(#212121,#c5c8c6,0.6); }
       .nemo-window toolbar button:active:disabled, .nemo-window toolbar button:checked:disabled, .nemo-window toolbar button.flat:active:disabled, .nemo-window toolbar button.flat:checked:disabled {
         background-color: rgba(143, 173, 204, 0.6);
-        background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+        background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
         color: rgba(33, 33, 33, 0.85);
         box-shadow: none; }
         .nemo-window toolbar button:active:disabled :disabled, .nemo-window toolbar button:checked:disabled :disabled, .nemo-window toolbar button.flat:active:disabled :disabled, .nemo-window toolbar button.flat:checked:disabled :disabled {
@@ -8310,7 +8310,7 @@ paned.titlebar {
         -NemoPlacesTreeView-disk-full-fg-color: #bfd0e2; }
     .nemo-window .sidebar + separator + box .primary-toolbar {
       background-color: #202020;
-      background-image: linear-gradient(to bottom, #232323, #1e1e1e);
+      background-image: linear-gradient(to bottom, #222222, #1f1f1f);
       padding-top: 5px;
       padding-bottom: 5px;
       border-bottom: 1px solid mix(#212121,#c5c8c6,0.18); }
@@ -8325,7 +8325,7 @@ paned.titlebar {
         border-bottom-left-radius: 0; }
       .nemo-window .sidebar + separator + box .primary-toolbar button.flat {
         background-color: #282828;
-        background-image: linear-gradient(to bottom, #2b2b2b, #252525);
+        background-image: linear-gradient(to bottom, #2a2a2a, #262626);
         border-color: rgba(0, 0, 0, 0.22);
         color: #c5c8c6;
         box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.22);
@@ -8548,7 +8548,7 @@ SheetStyleDialog.unity-force-quit {
     box-shadow: none; }
   #login_window button:hover, #login_window button.flat:hover {
     background-color: #232323;
-    background-image: linear-gradient(to bottom, #252525, #202020);
+    background-image: linear-gradient(to bottom, #242424, #212121);
     border-color: rgba(156, 161, 158, 0.3);
     color: #c5c8c6;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
@@ -8562,7 +8562,7 @@ SheetStyleDialog.unity-force-quit {
       border-color: rgba(156, 161, 158, 0.3); }
   #login_window button:focus, #login_window button.flat:focus {
     background-color: #232323;
-    background-image: linear-gradient(to bottom, #252525, #202020);
+    background-image: linear-gradient(to bottom, #242424, #212121);
     border-color: rgba(197, 200, 198, 0.22);
     outline-color: rgba(143, 173, 204, 0.5);
     outline-width: 3px;
@@ -8572,7 +8572,7 @@ SheetStyleDialog.unity-force-quit {
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.42); }
     #login_window button:focus:hover, #login_window button.flat:focus:hover {
       background-color: #242424;
-      background-image: linear-gradient(to bottom, #272727, #222222);
+      background-image: linear-gradient(to bottom, #262626, #222222);
       border-color: rgba(156, 161, 158, 0.3);
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.48); }
       #login_window button:focus:hover:focus, #login_window button:focus:hover:hover, #login_window button.flat:focus:hover:focus, #login_window button.flat:focus:hover:hover {
@@ -8586,7 +8586,7 @@ SheetStyleDialog.unity-force-quit {
   #login_window button:checked, #login_window button:active, #login_window button.flat:checked, #login_window button.flat:active {
     /*@include linear-gradient(shade($bg, .7), to top);*/
     background-color: #8fadcc;
-    background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
     border-color: rgba(156, 161, 158, 0.22);
     color: #212121;
     box-shadow: inset 1px 0 rgba(197, 200, 198, 0.06), inset 0 1px rgba(197, 200, 198, 0.07), inset -1px 0 rgba(197, 200, 198, 0.06), inset 0 -1px rgba(197, 200, 198, 0.05); }
@@ -8601,13 +8601,13 @@ SheetStyleDialog.unity-force-quit {
     #login_window button:checked:focus, #login_window button:checked:hover, #login_window button:active:focus, #login_window button:active:hover, #login_window button.flat:checked:focus, #login_window button.flat:checked:hover, #login_window button.flat:active:focus, #login_window button.flat:active:hover {
       /*@include linear-gradient(shade($bg, .65), to top);*/
       background-color: #9bb6d1;
-      background-image: linear-gradient(to top, #aec3da, #88a8c9);
+      background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
       color: #212121; }
   #login_window button:focus, #login_window button:hover, #login_window button.flat:focus, #login_window button.flat:hover {
     color: #c5c8c6; }
   #login_window button:disabled:disabled, #login_window button.flat:disabled:disabled {
     background-color: alpha(mix(#212121,#c5c8c6,0.2),0.4);
-    background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.075), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.925));
+    background-image: linear-gradient(to bottom, shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),1.05), shade(alpha(mix(#212121,#c5c8c6,0.2),0.4),0.95));
     /*border: 1px solid alpha($bg, .2);*/
     opacity: .6;
     color: mix(#212121,#c5c8c6,0.6);
@@ -8616,7 +8616,7 @@ SheetStyleDialog.unity-force-quit {
       color: mix(#212121,#c5c8c6,0.6); }
   #login_window button:active:disabled, #login_window button:checked:disabled, #login_window button.flat:active:disabled, #login_window button.flat:checked:disabled {
     background-color: rgba(143, 173, 204, 0.6);
-    background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+    background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
     color: rgba(33, 33, 33, 0.85);
     box-shadow: none; }
     #login_window button:active:disabled :disabled, #login_window button:checked:disabled :disabled, #login_window button.flat:active:disabled :disabled, #login_window button.flat:checked:disabled :disabled {
@@ -8647,7 +8647,7 @@ SheetStyleDialog.unity-force-quit {
     border-color: mix(#8fadcc,mix(#212121,#c5c8c6,0.18),0.3); }
   #login_window entry:disabled {
     background-color: mix(#212121,#c5c8c6,0.07);
-    background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.07),1.075), shade(mix(#212121,#c5c8c6,0.07),0.925));
+    background-image: linear-gradient(to top, shade(mix(#212121,#c5c8c6,0.07),1.05), shade(mix(#212121,#c5c8c6,0.07),0.95));
     opacity: .9;
     color: mix(#212121,#c5c8c6,0.9); }
 
@@ -8683,7 +8683,7 @@ SheetStyleDialog.unity-force-quit {
 /* shutdown button */
 #shutdown_button button {
   background-color: #de935f;
-  background-image: linear-gradient(to bottom, #e2a073, #da864b);
+  background-image: linear-gradient(to bottom, #e19c6c, #db8a52);
   border-color: rgba(26, 26, 26, 0.32);
   color: #212121;
   box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.12); }
@@ -8743,7 +8743,7 @@ SheetStyleDialog.unity-force-quit {
     box-shadow: none; }
   #shutdown_button button:hover, #shutdown_button button.flat:hover {
     background-color: #e19c6c;
-    background-image: linear-gradient(to bottom, #e5aa81, #dc8e57);
+    background-image: linear-gradient(to bottom, #e4a57a, #de935e);
     border-color: rgba(26, 26, 26, 0.4);
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.22); }
@@ -8757,7 +8757,7 @@ SheetStyleDialog.unity-force-quit {
       border-color: rgba(26, 26, 26, 0.4); }
   #shutdown_button button:focus, #shutdown_button button.flat:focus {
     background-color: #e19c6c;
-    background-image: linear-gradient(to bottom, #e5aa81, #dc8e57);
+    background-image: linear-gradient(to bottom, #e4a57a, #de935e);
     border-color: rgba(33, 33, 33, 0.32);
     outline-color: rgba(143, 173, 204, 0.5);
     outline-width: 3px;
@@ -8767,7 +8767,7 @@ SheetStyleDialog.unity-force-quit {
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
     #shutdown_button button:focus:hover, #shutdown_button button.flat:focus:hover {
       background-color: #e3a579;
-      background-image: linear-gradient(to bottom, #e8b38f, #df9664);
+      background-image: linear-gradient(to bottom, #e6ae88, #e09b6b);
       border-color: rgba(26, 26, 26, 0.4);
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.38); }
       #shutdown_button button:focus:hover:focus, #shutdown_button button:focus:hover:hover, #shutdown_button button.flat:focus:hover:focus, #shutdown_button button.flat:focus:hover:hover {
@@ -8781,7 +8781,7 @@ SheetStyleDialog.unity-force-quit {
   #shutdown_button button:checked, #shutdown_button button:active, #shutdown_button button.flat:checked, #shutdown_button button.flat:active {
     /*@include linear-gradient(shade($bg, .7), to top);*/
     background-color: #8fadcc;
-    background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
     border-color: rgba(26, 26, 26, 0.32);
     color: #212121;
     box-shadow: inset 1px 0 rgba(33, 33, 33, 0.06), inset 0 1px rgba(33, 33, 33, 0.07), inset -1px 0 rgba(33, 33, 33, 0.06), inset 0 -1px rgba(33, 33, 33, 0.05); }
@@ -8796,13 +8796,13 @@ SheetStyleDialog.unity-force-quit {
     #shutdown_button button:checked:focus, #shutdown_button button:checked:hover, #shutdown_button button:active:focus, #shutdown_button button:active:hover, #shutdown_button button.flat:checked:focus, #shutdown_button button.flat:checked:hover, #shutdown_button button.flat:active:focus, #shutdown_button button.flat:active:hover {
       /*@include linear-gradient(shade($bg, .65), to top);*/
       background-color: #9bb6d1;
-      background-image: linear-gradient(to top, #aec3da, #88a8c9);
+      background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
       color: #212121; }
   #shutdown_button button:focus, #shutdown_button button:hover, #shutdown_button button.flat:focus, #shutdown_button button.flat:hover {
     color: #212121; }
   #shutdown_button button:disabled:disabled, #shutdown_button button.flat:disabled:disabled {
     background-color: alpha(mix(#de935f,#212121,0.2),0.4);
-    background-image: linear-gradient(to bottom, shade(alpha(mix(#de935f,#212121,0.2),0.4),1.075), shade(alpha(mix(#de935f,#212121,0.2),0.4),0.925));
+    background-image: linear-gradient(to bottom, shade(alpha(mix(#de935f,#212121,0.2),0.4),1.05), shade(alpha(mix(#de935f,#212121,0.2),0.4),0.95));
     /*border: 1px solid alpha($bg, .2);*/
     opacity: .6;
     color: mix(#de935f,#212121,0.6);
@@ -8811,7 +8811,7 @@ SheetStyleDialog.unity-force-quit {
       color: mix(#de935f,#212121,0.6); }
   #shutdown_button button:active:disabled, #shutdown_button button:checked:disabled, #shutdown_button button.flat:active:disabled, #shutdown_button button.flat:checked:disabled {
     background-color: rgba(143, 173, 204, 0.6);
-    background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+    background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
     color: rgba(33, 33, 33, 0.85);
     box-shadow: none; }
     #shutdown_button button:active:disabled :disabled, #shutdown_button button:checked:disabled :disabled, #shutdown_button button.flat:active:disabled :disabled, #shutdown_button button.flat:checked:disabled :disabled {
@@ -8825,7 +8825,7 @@ SheetStyleDialog.unity-force-quit {
 /* restart button */
 #restart_button button {
   background-color: #f0c674;
-  background-image: linear-gradient(to bottom, #f3d08c, #edbc5c);
+  background-image: linear-gradient(to bottom, #f2cd84, #eebf64);
   border-color: rgba(26, 26, 26, 0.32);
   color: #212121;
   box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.12); }
@@ -8885,7 +8885,7 @@ SheetStyleDialog.unity-force-quit {
     box-shadow: none; }
   #restart_button button:hover, #restart_button button.flat:hover {
     background-color: #f2cd84;
-    background-image: linear-gradient(to bottom, #f4d79d, #efc26b);
+    background-image: linear-gradient(to bottom, #f4d495, #f0c673);
     border-color: rgba(26, 26, 26, 0.4);
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.22); }
@@ -8899,7 +8899,7 @@ SheetStyleDialog.unity-force-quit {
       border-color: rgba(26, 26, 26, 0.4); }
   #restart_button button:focus, #restart_button button.flat:focus {
     background-color: #f2cd84;
-    background-image: linear-gradient(to bottom, #f4d79d, #efc26b);
+    background-image: linear-gradient(to bottom, #f4d495, #f0c673);
     border-color: rgba(33, 33, 33, 0.32);
     outline-color: rgba(143, 173, 204, 0.5);
     outline-width: 3px;
@@ -8909,7 +8909,7 @@ SheetStyleDialog.unity-force-quit {
     box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.32); }
     #restart_button button:focus:hover, #restart_button button.flat:focus:hover {
       background-color: #f3d394;
-      background-image: linear-gradient(to bottom, #f6deaf, #f1c87a);
+      background-image: linear-gradient(to bottom, #f5daa6, #f2cc82);
       border-color: rgba(26, 26, 26, 0.4);
       box-shadow: 0 1px 2px -1px rgba(39, 41, 39, 0.38); }
       #restart_button button:focus:hover:focus, #restart_button button:focus:hover:hover, #restart_button button.flat:focus:hover:focus, #restart_button button.flat:focus:hover:hover {
@@ -8923,7 +8923,7 @@ SheetStyleDialog.unity-force-quit {
   #restart_button button:checked, #restart_button button:active, #restart_button button.flat:checked, #restart_button button.flat:active {
     /*@include linear-gradient(shade($bg, .7), to top);*/
     background-color: #8fadcc;
-    background-image: linear-gradient(to top, #a1bad4, #7da0c4);
+    background-image: linear-gradient(to top, #9bb6d1, #83a4c7);
     border-color: rgba(26, 26, 26, 0.32);
     color: #212121;
     box-shadow: inset 1px 0 rgba(33, 33, 33, 0.06), inset 0 1px rgba(33, 33, 33, 0.07), inset -1px 0 rgba(33, 33, 33, 0.06), inset 0 -1px rgba(33, 33, 33, 0.05); }
@@ -8938,13 +8938,13 @@ SheetStyleDialog.unity-force-quit {
     #restart_button button:checked:focus, #restart_button button:checked:hover, #restart_button button:active:focus, #restart_button button:active:hover, #restart_button button.flat:checked:focus, #restart_button button.flat:checked:hover, #restart_button button.flat:active:focus, #restart_button button.flat:active:hover {
       /*@include linear-gradient(shade($bg, .65), to top);*/
       background-color: #9bb6d1;
-      background-image: linear-gradient(to top, #aec3da, #88a8c9);
+      background-image: linear-gradient(to top, #a7bfd7, #8eadcc);
       color: #212121; }
   #restart_button button:focus, #restart_button button:hover, #restart_button button.flat:focus, #restart_button button.flat:hover {
     color: #212121; }
   #restart_button button:disabled:disabled, #restart_button button.flat:disabled:disabled {
     background-color: alpha(mix(#f0c674,#212121,0.2),0.4);
-    background-image: linear-gradient(to bottom, shade(alpha(mix(#f0c674,#212121,0.2),0.4),1.075), shade(alpha(mix(#f0c674,#212121,0.2),0.4),0.925));
+    background-image: linear-gradient(to bottom, shade(alpha(mix(#f0c674,#212121,0.2),0.4),1.05), shade(alpha(mix(#f0c674,#212121,0.2),0.4),0.95));
     /*border: 1px solid alpha($bg, .2);*/
     opacity: .6;
     color: mix(#f0c674,#212121,0.6);
@@ -8953,7 +8953,7 @@ SheetStyleDialog.unity-force-quit {
       color: mix(#f0c674,#212121,0.6); }
   #restart_button button:active:disabled, #restart_button button:checked:disabled, #restart_button button.flat:active:disabled, #restart_button button.flat:checked:disabled {
     background-color: rgba(143, 173, 204, 0.6);
-    background-image: linear-gradient(to bottom, rgba(161, 186, 212, 0.6), rgba(125, 160, 196, 0.6));
+    background-image: linear-gradient(to bottom, rgba(155, 182, 209, 0.6), rgba(131, 164, 199, 0.6));
     color: rgba(33, 33, 33, 0.85);
     box-shadow: none; }
     #restart_button button:active:disabled :disabled, #restart_button button:checked:disabled :disabled, #restart_button button.flat:active:disabled :disabled, #restart_button button.flat:checked:disabled :disabled {

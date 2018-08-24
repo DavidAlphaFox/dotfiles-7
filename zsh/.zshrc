@@ -77,20 +77,19 @@ export ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]='fg=yellow,bold'
 export ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=green'
 export ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=green,bold'
 
-# Load profiles from ~/.profile.d
-if test -e ~/.profile.d/; then
-    for profile in ~/.profile.d/*.sh; do
+# Load profiles from $HOME/.profile.d
+if test -e "$HOME/.profile.d/"; then
+    for profile in $HOME/.profile.d/*.sh; do
         test -r "$profile" && . "$profile"
     done
     unset profile
 fi
 # source a file not in git repo...
-if [ -e "~/.zlocal" ]; then
-  source ~/.zlocal
+if [ -e "$HOME/.zlocal" ]; then
+  source "$HOME/.zlocal"
 fi
 # shorter delay on cmd-mode
 export KEYTIMEOUT=1
-#antigen bundle hlissner/zsh-autopair
 if [ -e "/usr/share/nvm/init-nvm.sh" ]; then
   source /usr/share/nvm/init-nvm.sh
 fi
