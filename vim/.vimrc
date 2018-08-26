@@ -1,24 +1,11 @@
 
-set nocompatible
 set shell=/bin/zsh
-
-if exists('g:loaded_sensible') || &compatible
-  finish
-else
-  let g:loaded_sensible = 1
-endif
-
 set encoding=utf-8
 set fileencoding=utf-8
 
 let g:onedark_termcolors=16
 let g:onedark_terminal_italics=0
 colorscheme onedark
-if has("gui_running")
-  if has("gui_gtk2")
-    set guifont=Input\ 15
-  endif
-endif
 
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
@@ -28,86 +15,25 @@ map <UP> k
 map <RIGHT> l
 map <LEFT> h
 
-if has('autocmd')
-  filetype plugin indent on
-endif
 set omnifunc=syntaxcomplete#Complete
-if has('syntax') && !exists('g:syntax_on')
-  syntax enable
-endif
 
-set autoindent
-set backspace=indent,eol,start
 set whichwrap+=<,>,h,l
-set complete-=i
-set smarttab
-
-set nrformats-=octal
-
 " no timeout (onscreen keyboard compat)
 set notimeout
 set ttimeout
 
 set ignorecase
 set smartcase
-set incsearch
 set hlsearch
-" Use <C-L> to clear the highlighting of :set hlsearch.
-if maparg('<C-L>', 'n') ==# ''
-  nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
-endif
 
-set laststatus=2
-set ruler
 set showcmd
 set lazyredraw
 
-set wildmenu
 set wildignore=*.o,*~,*.pyc,*.so,*.class,.DS_Store
 set wildmode=longest:full,full
 
-if !&scrolloff
-  set scrolloff=1
-endif
-if !&sidescrolloff
-  set sidescrolloff=5
-endif
-set display+=lastline
-
-if &encoding ==# 'latin1' && has('gui_running')
-  set encoding=utf-8
-endif
-
-if &listchars ==# 'eol:$'
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-endif
-
-if v:version > 703 || v:version == 703 && has("patch541")
-  set formatoptions+=j " Delete comment character when joining commented lines
-endif
-
-if has('path_extra')
-  setglobal tags-=./tags tags-=./tags; tags^=./tags;
-endif
-
-set autoread
 set fileformats+=mac
 
-if &history < 1000
-  set history=1000
-endif
-if &tabpagemax < 50
-  set tabpagemax=50
-endif
-if !empty(&viminfo)
-  set viminfo^=!
-endif
-set sessionoptions-=options
-
-" Allow color schemes to do bright colors without forcing bold.
-if &t_Co == 8 && $TERM !~# '^linux'
-  set t_Co=16
-endif
 """"""""""""""
 " tmux fixes "
 """"""""""""""
@@ -118,13 +44,6 @@ if $TERM =~ '^screen-256color'
     map <Esc>OF <End>
     map! <Esc>OF <End>
 endif
-
-" Load matchit.vim, but only if the user hasn't installed a newer version.
-if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
-  runtime! macros/matchit.vim
-endif
-
-inoremap <C-U> <C-G>u<C-U>
 
 " change leader key from '\' to ';'
 let mapleader=';'
@@ -360,12 +279,6 @@ let NERDTreeQuitOnOpen=1
 " airline status theme
 set showtabline=1
 
-if has("gui_win32")
-    let g:gitgutter_enabled = 0
-    source $VIMRUNTIME/mswin.vim
-    behave mswin
-endif
-
 " tmux title
 if exists('$TMUX')
   autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
@@ -383,12 +296,3 @@ let g:mucomplete#enable_auto_at_startup = 1
 call plug#begin('~/.vim/plugged')
 Plug 'lifepillar/vim-mucomplete'
 call plug#end()
-
-" use a yellow cursor in insert mode
-"let &t_SI = "\<Esc>]12;#f0c674\x7"
-" use a gray cursor otherwise
-"let &t_EI = "\<Esc>]12;#707880\x7"
-"silent !echo -ne "\033]12;\#707880\007"
-" reset cursor when vim exits
-"autocmd VimLeave * silent !echo -ne "\033]112\007"
-
