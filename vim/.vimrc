@@ -141,6 +141,7 @@ map <leader>tn :tabnext<CR>
 map <leader>tp :tabprevious<CR>
 map <leader>te :tabedit<SPACE>
 
+" fzf commands
 command! FZFtabedit call fzf#run({'sink': 'tabedit', 'options': '--multi', 'down': '40%'})
 command! FZFedit call fzf#run({'sink': 'edit', 'options': '--multi', 'down': '40%'})
 map <leader>fte :FZFtabedit<CR>
@@ -293,3 +294,4 @@ let g:mucomplete#enable_auto_at_startup = 1
 call plug#begin('~/.vim/plugged')
 Plug 'lifepillar/vim-mucomplete'
 call plug#end()
+
