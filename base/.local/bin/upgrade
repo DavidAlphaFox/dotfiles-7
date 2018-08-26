@@ -26,17 +26,6 @@ if [ -n "$(find /var/cache/pacman/pkg -type f)" ]; then
   yes | sudo yay -Scc 2>&1 >/dev/null
 fi
 
-# upgrade antgen plugins
-echo -e "\n💉  Updating antigen packages..."
-source /usr/share/zsh/share/antigen.zsh
-antigen update
-
-# upgrade Atom packages
-if hash apm 2>/dev/null; then
-  echo -e "\n⚛️   Updating Atom packages..."
-  echo -e "$(apm upgrade --no-confirm 2>/dev/null)"
-fi
-
 # dedup btrfs
 if [ -n "$dodedup" ]; then
   echo -e "\n🗜️   Deduplicating filesystem..."
