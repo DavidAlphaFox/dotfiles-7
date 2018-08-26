@@ -1,5 +1,6 @@
 
 set shell=/bin/zsh
+
 set encoding=utf-8
 set fileencoding=utf-8
 
@@ -57,12 +58,6 @@ if !has("win32")
     command! W w !sudo tee % > /dev/null
 endif
 
-" hide gvim toolbar, scrollbars
-set go-=T
-set go-=r
-set go-=l
-set go-=b
-
 " Set lines to the cursor - when moving vertically using j/k
 set so=6
 
@@ -107,7 +102,7 @@ set noswapfile
 " Use spaces instead of tabs
 set expandtab
 
-" 1 tab == 4 spaces
+" 1 tab == 2 spaces
 set tabstop=2
 set shiftwidth=2
 "set noexpandtab
@@ -144,10 +139,12 @@ map <leader>td :tabclose<CR>
 map <leader>tm :tabmove<SPACE>
 map <leader>tn :tabnext<CR>
 map <leader>tp :tabprevious<CR>
-"map <leader>te :tabedit<SPACE>
+map <leader>te :tabedit<SPACE>
 
-command! Fzfedit call fzf#run({'sink': 'tabedit', 'options': '--multi', 'down': '40%'})
-map <leader>te :Fzfedit<CR>
+command! FZFtabedit call fzf#run({'sink': 'tabedit', 'options': '--multi', 'down': '40%'})
+command! FZFedit call fzf#run({'sink': 'edit', 'options': '--multi', 'down': '40%'})
+map <leader>fte :FZFtabedit<CR>
+map <leader>fe :FZFedit<CR>
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab=1
