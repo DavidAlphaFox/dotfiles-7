@@ -55,7 +55,7 @@ nmap <silent> <leader>vs :so $MYVIMRC<CR>
 
 " :w!! sudo saves the file (doesn't work on cygwin)
 if !has("win32")
-    command! w!! w !sudo tee % > /dev/null
+    cmap w!! w !sudo tee % > /dev/null
 endif
 
 " Set lines to the cursor - when moving vertically using j/k
