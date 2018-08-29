@@ -53,9 +53,9 @@ let mapleader=';'
 nmap <silent> <leader>ve :e $MYVIMRC<CR>
 nmap <silent> <leader>vs :so $MYVIMRC<CR>
 
-" :W sudo saves the file (doesn't work on cygwin)
+" :w!! sudo saves the file (doesn't work on cygwin)
 if !has("win32")
-    command! W w !sudo tee % > /dev/null
+    command! w!! w !sudo tee % > /dev/null
 endif
 
 " Set lines to the cursor - when moving vertically using j/k
