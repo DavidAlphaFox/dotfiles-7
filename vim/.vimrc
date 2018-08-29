@@ -280,7 +280,7 @@ set showtabline=1
 " tmux title
 if exists('$TMUX')
   autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
-  autocmd VimLeave * call system("tmux setw automatic-rename")
+  autocmd VimLeavePre * call system("tmux setw automatic-rename")
   autocmd BufEnter * let &titlestring = ' ' . expand("%:t")
   set title
 endif
