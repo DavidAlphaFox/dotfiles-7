@@ -292,6 +292,7 @@ let g:mucomplete#enable_auto_at_startup = 1
 "let g:mucomplete#delayed_completion = 1
 " plug
 call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-sensible'
 Plug 'lifepillar/vim-mucomplete'
 call plug#end()
 
