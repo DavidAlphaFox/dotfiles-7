@@ -4,7 +4,9 @@ set shell=/bin/zsh
 set encoding=utf-8
 set fileencoding=utf-8
 
+" colors
 let g:onedark_termcolors=16
+" ..italics don't look right
 let g:onedark_terminal_italics=0
 colorscheme onedark
 
@@ -16,6 +18,7 @@ map <UP> k
 map <RIGHT> l
 map <LEFT> h
 
+" turn on syntax completion
 set omnifunc=syntaxcomplete#Complete
 
 set whichwrap+=<,>,h,l
@@ -30,6 +33,7 @@ set hlsearch
 set showcmd
 set lazyredraw
 
+" ignore files in menu
 set wildignore=*.o,*~,*.pyc,*.so,*.class,.DS_Store
 set wildmode=longest:full,full
 
@@ -105,7 +109,6 @@ set expandtab
 " 1 tab == 2 spaces
 set tabstop=2
 set shiftwidth=2
-"set noexpandtab
 " auto indent
 set ai
 " smart indent
@@ -140,17 +143,16 @@ map <leader>tm :tabmove<SPACE>
 map <leader>tn :tabnext<CR>
 map <leader>tp :tabprevious<CR>
 map <leader>te :tabedit<SPACE>
+" Let 'tl' toggle between this and the last accessed tab
+let g:lasttab=1
+nmap <leader>tl :exe "tabn ".g:lasttab<CR>
+autocmd TabLeave * let g:lasttab=tabpagenr()
 
 " fzf commands
 command! FZFtabedit call fzf#run({'sink': 'tabedit', 'options': '--multi', 'down': '40%'})
 command! FZFedit call fzf#run({'sink': 'edit', 'options': '--multi', 'down': '40%'})
 map <leader>fte :FZFtabedit<CR>
 map <leader>fe :FZFedit<CR>
-
-" Let 'tl' toggle between this and the last accessed tab
-let g:lasttab=1
-nmap <leader>tl :exe "tabn ".g:lasttab<CR>
-autocmd TabLeave * let g:lasttab=tabpagenr()
 
 " Buffer operations
 source ~/.vim/BufOnly.vim
@@ -196,7 +198,7 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
-" Delete trailing white space on save, useful for Python and CoffeeScript ;)
+" Delete trailing white space on save
 func! DeleteTrailingWS()
   exe "normal mz"
   %s/\s\+$//ge
@@ -265,7 +267,7 @@ let g:tagbar_usearrows=1
 let g:tagbar_autofocus=1
 let g:tagbar_zoomwidth=0
 let g:tagbar_compact=1
-let g:tagbar_autoclose = 1
+let g:tagbar_autoclose=1
 nnoremap <leader>l :TagbarToggle<CR>
 
 " nerdtree
@@ -274,7 +276,6 @@ map <leader>ne :NERDTree<SPACE>
 let NERDTreeIgnore=['\.pyc$[[file]]','\.so$[[file]]','\.class$[[file]]']
 let NERDTreeQuitOnOpen=1
 
-" airline status theme
 set showtabline=1
 
 " tmux title
