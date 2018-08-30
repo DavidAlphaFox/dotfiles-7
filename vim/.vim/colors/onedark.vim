@@ -431,7 +431,7 @@ hi link GitGutterDelete SignifySignDelete
 
 " mhinz/vim-signify
 call s:h("SignifySignAdd", { "fg": s:green })
-call s:h("SignifySignChange", { "fg": s:yellow })
+call s:h("SignifySignChange", { "fg": s:orange })
 call s:h("SignifySignDelete", { "fg": s:red })
 
 " neomake/neomake

@@ -277,6 +277,7 @@ let NERDTreeIgnore=['\.pyc$[[file]]','\.so$[[file]]','\.class$[[file]]']
 let NERDTreeQuitOnOpen=1
 
 set showtabline=1
+set statusline=%<\ %f\ %h%m%r%=%-2.(%l,%c%V%)\ 
 
 " tmux title
 if exists('$TMUX')
