@@ -40,7 +40,7 @@ rofi.display-drun: 
 rofi.display-run: 
 rofi.display-window: 
 rofi.display-ssh: 
-rofi.display-combi: 
+rofi.display-combi: 
 rofi.combi-modi: window,run,drun
 
 rofi.monitor: -1
