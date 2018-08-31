@@ -5,10 +5,10 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " colors
-let g:onedark_termcolors=16
+let g:starlight_termcolors=16
 " ..italics don't look right
-let g:onedark_terminal_italics=0
-colorscheme onedark
+let g:starlight_terminal_italics=0
+colorscheme starlight
 
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
