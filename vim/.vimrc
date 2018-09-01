@@ -275,7 +275,6 @@ map <leader>nl :NERDTreeToggle<CR>
 map <leader>ne :NERDTree<SPACE>
 let NERDTreeIgnore=['\.pyc$[[file]]','\.so$[[file]]','\.class$[[file]]']
 let NERDTreeQuitOnOpen=1
-
 set showtabline=1
 set statusline=%<\ %f\ %m%r%=%y\ %-2.(%l,%c%V%)\ 
 
@@ -288,6 +287,7 @@ if exists('$TMUX')
 endif
 
 set completeopt=menuone,noinsert
+set updatetime=1000 " set delay time for completion
 set shortmess+=c   " Shut off completion messages
 set belloff+=ctrlg " If Vim beeps during completion
 let g:mucomplete#enable_auto_at_startup = 1
