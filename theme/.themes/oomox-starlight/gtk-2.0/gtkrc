@@ -9,7 +9,7 @@ style "murrine-default" {
 
 	GtkWidget::cursor_color = @primary_caret_color
 	GtkWidget::secondary_cursor_color = @secondary_caret_color
-	GtkWidget::cursor_aspect_ratio = 0.04
+	GtkWidget::cursor_aspect_ratio = 0.1
 
 	GtkButton::child-displacement-x = 0
 	GtkButton::child-displacement-y = 0
