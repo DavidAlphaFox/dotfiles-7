@@ -60,6 +60,7 @@ pamixer
 perl-file-mimeinfo
 playerctl
 polybar
+psmisc
 pulseaudio
 qt5-styleplugins
 ranger
