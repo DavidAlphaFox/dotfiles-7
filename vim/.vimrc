@@ -295,6 +295,12 @@ let g:mucomplete#delayed_completion = 1
 " plug
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdtree'
 Plug 'lifepillar/vim-mucomplete'
+Plug 'w0rp/ale'
+Plug 'majutsushi/tagbar'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 

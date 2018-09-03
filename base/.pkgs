@@ -20,7 +20,6 @@ dialog
 dos2unix
 dunst
 duperemove
-editorconfig-vim
 feh
 fzf
 galculator
@@ -84,11 +83,6 @@ unzip
 usbutils
 vi
 vim
-vim-ale
-vim-fugitive
-vim-gitgutter
-vim-nerdtree
-vim-tagbar
 w3m
 wget
 xarchiver
