@@ -30,7 +30,7 @@ height = 44
 offset-x = 0
 offset-y = 0
 ;radius = 16.0
-fixed-center = false
+fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -53,7 +53,7 @@ font-2 = Exo 2:style=Extra Bold:size=19;4
 font-3 = Exo 2:style=Bold:size=16;4
 
 modules-left = xwindow
-modules-center = 
+modules-center =
 modules-right = onboard temperature cal bspwm
 
 tray-position = center
