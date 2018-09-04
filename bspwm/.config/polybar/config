@@ -118,20 +118,21 @@ label-empty-font = 3
 [module/temperature]
 type = internal/temperature
 thermal-zone = 2
-warn-temperature = 75
+warn-temperature = 70
 
-format = 
-format-underline = ${colors.orange}
+format =
+format-underline =
 format-warn = <ramp> <label-warn>
-;format-warn-underline = ${self.format-underline}
 
-label = %temperature%
-label-warn = %temperature%
+label = %temperature-c%
+label-font = 4
+label-warn = %temperature-c%
 label-warn-foreground = ${colors.orange}
+label-warn-font = 4
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
 ramp-foreground = ${colors.orange}
 
 [settings]
