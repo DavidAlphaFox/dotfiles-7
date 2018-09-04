@@ -144,7 +144,7 @@ label-urgent-overline = ${colors.alert}
 label-urgent-underline = ${colors.alert}
 
 label-empty = %name%
-label-empty-foreground = ${colors.foreground-alt}
+label-empty-foreground = ${colors.background-alt}
 label-empty-padding = 2
 
 label-focused-font = 3
