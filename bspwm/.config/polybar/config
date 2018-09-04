@@ -41,8 +41,8 @@ line-color = ${colors.primary}
 border-size = 2
 border-color = ${colors.background-alt}
 
-padding-left = 0
-padding-right = 1
+padding-left = 2
+padding-right = 0
 
 module-margin-left = 1
 module-margin-right = 1
@@ -52,11 +52,11 @@ font-1 = Font Awesome 5 Brands:size=17;5
 font-2 = Exo 2:style=Extra Bold:size=19;4
 font-3 = Exo 2:style=Bold:size=16;4
 
-modules-left = bspwm xwindow
+modules-left = xwindow
 modules-center = 
-modules-right = cal onboard temperature 
+modules-right = onboard temperature cal bspwm
 
-tray-position = right
+tray-position = center
 tray-padding = 2
 tray-maxsize = 32
 
@@ -122,7 +122,7 @@ exec = feh --bg-scale "$HOME/Pictures/$(date +%H)-day.png" 2>/dev/null
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:64:…%
+label = %title:0:79:…%
 label-foreground = ${colors.foreground}
 label-font = 4
 
