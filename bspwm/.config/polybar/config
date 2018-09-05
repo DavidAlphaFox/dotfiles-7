@@ -93,6 +93,7 @@ label-font = 4
 type = internal/bspwm
 
 format = <label-mode><label-state>
+format-foreground = ${colors.foreground-alt}
 
 label-focused = %name%
 label-focused-foreground = ${colors.primary}
@@ -119,7 +120,7 @@ label-empty-font = 3
 
 label-dimmed-focused-foreground = ${colors.foreground-alt}
 
-label-monocle = " "
+label-monocle = " "
 
 [module/temperature]
 type = internal/temperature
