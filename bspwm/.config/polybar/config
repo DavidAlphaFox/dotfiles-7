@@ -54,7 +54,7 @@ font-3 = Exo 2:style=Bold:size=16;4
 
 modules-left = xwindow
 modules-center =
-modules-right = onboard temperature cal bspwm
+modules-right = cal onboard temperature bspwm
 
 tray-position = center
 tray-padding = 2
@@ -75,6 +75,7 @@ exec-if = test -x /usr/bin/onboard
 exec = echo 
 click-left = onboard &
 interval = 3600
+format-foreground = ${colors.foreground-alt}
 
 [module/cal]
 type = custom/script
