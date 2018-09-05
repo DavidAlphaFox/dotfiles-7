@@ -66,7 +66,7 @@ sxhkd -m -1 &
 if [ -e "$HOME/.fehbg" ]; then
   source "$HOME/.fehbg"
 else
-  feh --bg-scale "$HOME/Pictures/mountains.jpg"
+  feh --bg-scale "$HOME/Pictures/bg.png"
 fi
 numlockx on
 if [ -e "$HOME/.bspwmrc_local" ]; then
