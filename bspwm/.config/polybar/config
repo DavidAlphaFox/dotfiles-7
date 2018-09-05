@@ -47,7 +47,7 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = Font Awesome 5 Free Solid:size=17;6
+font-0 = Font Awesome 5 Free Solid:size=17;5
 font-1 = Font Awesome 5 Brands:size=17;5
 font-2 = Exo 2:style=Extra Bold:size=19;4
 font-3 = Exo 2:style=Bold:size=16;4
@@ -89,9 +89,9 @@ type = internal/xwindow
 label = %title:0:54:…%
 label-foreground = ${colors.foreground}
 label-font = 4
-label-empty = 
+label-empty = 
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-font = 2
+label-empty-font = 1
 
 [module/bspwm]
 type = internal/bspwm
