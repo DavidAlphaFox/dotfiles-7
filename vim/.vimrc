@@ -249,6 +249,7 @@ autocmd FileType markdown set spell spelllang=en_us
 autocmd FileType python setl number
 autocmd FileType vala setl number
 autocmd FileType javascript setl number
+autocmd FileType gdscript3 setl number
 set numberwidth=1
 set cursorline
 
