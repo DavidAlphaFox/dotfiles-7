@@ -292,6 +292,7 @@ set shortmess+=c   " Shut off completion messages
 set belloff+=ctrlg " If Vim beeps during completion
 let g:mucomplete#enable_auto_at_startup = 1
 let g:mucomplete#delayed_completion = 1
+set updatetime=1000 " set delay time for completion
 " plug
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
