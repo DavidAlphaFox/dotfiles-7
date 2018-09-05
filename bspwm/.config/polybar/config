@@ -119,7 +119,7 @@ label-empty-font = 3
 
 label-dimmed-focused-foreground = ${colors.foreground-alt}
 
-label-monocle = 
+label-monocle = " "
 
 [module/temperature]
 type = internal/temperature
