@@ -90,7 +90,8 @@ label = %title:0:54:…%
 label-foreground = ${colors.foreground}
 label-font = 4
 label-empty = 
-label-empty-foreground = ${colors.foreground-alt}
+; transparent
+label-empty-foreground = #00000000
 label-empty-font = 1
 
 [module/bspwm]
