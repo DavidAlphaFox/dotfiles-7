@@ -14,6 +14,7 @@ foreground = ${xrdb:foreground}
 foreground-alt = ${xrdb:color7}
 red = ${xrdb:color1}
 orange = ${xrdb:color9}
+dark_green = ${xrdb:color2}
 green = ${xrdb:color10}
 yellow = ${xrdb:color11}
 blue = ${xrdb:color12}
@@ -89,8 +90,8 @@ type = internal/xwindow
 label = %title:0:54:…%
 label-foreground = ${colors.foreground}
 label-font = 4
-label-empty = 
-label-empty-foreground = ${colors.foreground-alt}
+label-empty = %{F#59798f}˙%{F-}
+label-empty-foreground = ${colors.foreground}
 label-empty-font = 1
 
 [module/bspwm]
@@ -125,8 +126,7 @@ label-empty-font = 3
 
 label-dimmed-focused-foreground = ${colors.foreground-alt}
 
-;label-monocle = " "
-label-monocle = " "
+label-monocle = " "
 
 [module/temperature]
 type = internal/temperature
