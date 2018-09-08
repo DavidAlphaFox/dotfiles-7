@@ -288,12 +288,12 @@ if exists('$TMUX')
 endif
 
 set completeopt=menuone,noinsert
-set updatetime=750 " set delay time for completion
 set shortmess+=c   " Shut off completion messages
 set belloff+=ctrlg " If Vim beeps during completion
-let g:mucomplete#enable_auto_at_startup = 1
-let g:mucomplete#delayed_completion = 1
-set updatetime=1000 " set delay time for completion
+"set updatetime=1000 " set delay time for completion
+let g:mucomplete#enable_auto_at_startup=1
+let g:mucomplete#completion_delay = 750
+
 " plug
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
