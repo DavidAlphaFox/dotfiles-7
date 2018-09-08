@@ -90,8 +90,9 @@ type = internal/xwindow
 label = %title:0:54:…%
 label-foreground = ${colors.foreground}
 label-font = 4
-label-empty = %{F#8fadcc}˙%{F-}
-label-empty-foreground = ${colors.foreground}
+;label-empty = %{F#8fadcc}˙%{F-}
+label-empty = 
+label-empty-foreground = ${colors.primary}
 label-empty-font = 1
 
 [module/bspwm]
