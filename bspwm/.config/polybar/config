@@ -131,7 +131,7 @@ label-monocle = ""
 [module/temperature]
 type = internal/temperature
 thermal-zone = 2
-warn-temperature = 70
+warn-temperature = 75
 
 format =
 format-underline =
@@ -143,9 +143,9 @@ label-warn = %temperature-c%
 label-warn-foreground = ${colors.orange}
 label-warn-font = 4
 
-ramp-0 = 
+ramp-0 = 
 ramp-1 = 
-ramp-2 = 
+ramp-2 = 
 ramp-foreground = ${colors.orange}
 
 [settings]
