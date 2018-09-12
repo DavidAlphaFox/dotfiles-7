@@ -18,7 +18,7 @@ rofi.columns:           1
 rofi.bw:                2
 rofi.location:          0
 rofi.padding:           12
-rofi.yoffset:           -120
+rofi.yoffset:           -225
 rofi.xoffset:           0
 rofi.fixed-num-lines:   true
 rofi.terminal:          termite
