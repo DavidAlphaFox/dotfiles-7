@@ -74,7 +74,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1536117073
+session-start=1537200414
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -106,9 +106,9 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/desktop/ibus/panel/xkb-icon-rgba'
-window-height=957
-window-width=1916
+saved-view='/desktop/ibus/panel/'
+window-height=645
+window-width=1362
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
@@ -136,7 +136,7 @@ version='1.5.19'
 preload-engines=['xkb:us::eng', 'xkb:us:dvorak:eng']
 use-system-keyboard-layout=false
 
-engines-order=['xkb:us::eng', 'xkb:us:dvorak:eng']
+engines-order=['xkb:us:dvorak:eng', 'xkb:us::eng']
 
 [desktop/ibus/general/hotkey]
 triggers=['<Super>K']
@@ -207,7 +207,7 @@ schema-version='2.3'
 system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'oomox-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 use-system-defaults=false
 
-current-settings-page=5
+current-settings-page=3
 
 theme='/home/ihanson/.local/share/onboard/themes/Umbriel.theme'
 
@@ -252,7 +252,7 @@ key-label-font='Exo 2 bold'
 
 key-stroke-width=50.0
 
-key-label-overrides=['LWIN::', 'RWIN::']
+key-label-overrides=['LWIN:˙:super', 'RWIN:˙:super']
 
 [org/onboard/window/landscape]
 
@@ -305,8 +305,8 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=82
-y=342
+x=36
+y=86
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false

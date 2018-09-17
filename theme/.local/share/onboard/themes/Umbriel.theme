@@ -11,8 +11,8 @@
   <key_gradient_direction>-23.0</key_gradient_direction>
   <key_label_font>Exo 2 bold</key_label_font>
   <key_label_overrides>
-    <key group="" id="LWIN" label=""/>
-    <key group="" id="RWIN" label=""/>
+    <key group="super" id="LWIN" label="˙"/>
+    <key group="super" id="RWIN" label="˙"/>
   </key_label_overrides>
   <key_shadow_strength>25.0</key_shadow_strength>
   <key_shadow_size>50.0</key_shadow_size>
