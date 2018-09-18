@@ -36,6 +36,8 @@ EOF
 
 # pacman.conf
 sudo sed -i 's/#Color/Color/' /etc/pacman.conf
+sudo sed -i 's/#CacheDir.*/CacheDir = \/tmp\/pacman\/cache/' /etc/pacman.conf
+sudo sed -i 's/#LogFile.*/LogFile = \/tmp\/pacman\/pacman.log/' /etc/pacman.conf
 
 # mkinitcpio
 sudo sed -i 's/MODULES=()/MODULES=(vboxvideo)/' /etc/mkinitcpio.conf
