@@ -20,7 +20,7 @@ if [ -n "$orphans" ]; then
 fi
 
 # removed cached packages
-if [ -n "$(find /tmp/pacman/cache -type f)" ]; then
+if [ -n "$(find /tmp/pacman/pkg -type f)" ]; then
   echo -e "\n🗑️   Removing cached packages..."
   yes | sudo yay -Scc 2>&1 >/dev/null
 fi
