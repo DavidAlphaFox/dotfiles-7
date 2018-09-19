@@ -20,8 +20,7 @@ if [ -n "$orphans" ]; then
 fi
 
 # removed cached packages
-if [ -n "$(find /var/cache/pacman/pkg -type f)" ]; then
-  #dodedup=yes
+if [ -n "$(find /tmp/pacman/cache -type f)" ]; then
   echo -e "\n🗑️   Removing cached packages..."
   yes | sudo yay -Scc 2>&1 >/dev/null
 fi
