@@ -24,6 +24,7 @@ duperemove
 feh
 fzf
 galculator
+google-chrome
 grub
 gvfs
 haveged
@@ -34,6 +35,7 @@ iftop
 inetutils
 iputils
 libcanberra-pulse
+libgnome-keyring
 licenses
 linux
 logrotate
