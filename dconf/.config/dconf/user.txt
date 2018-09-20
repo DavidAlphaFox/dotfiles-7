@@ -74,7 +74,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1537218717
+session-start=1537470167
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -252,7 +252,7 @@ key-label-font='Exo 2 bold'
 
 key-stroke-width=50.0
 
-key-label-overrides=['LWIN:˙:super', 'RWIN:˙:super']
+key-label-overrides=['LWIN::', 'RWIN::']
 
 [org/onboard/window/landscape]
 
@@ -264,7 +264,7 @@ dock-expand=true
 dock-height=277
 
 [org/onboard/keyboard]
-show-click-buttons=true
+show-click-buttons=false
 
 touch-feedback-enabled=true
 
@@ -305,8 +305,8 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=36
-y=86
+x=1206
+y=214
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
