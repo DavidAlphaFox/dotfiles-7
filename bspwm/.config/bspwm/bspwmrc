@@ -60,6 +60,9 @@ done
 # keybindings
 sxhkd -m -1 &
 
+if [ -e "$HOME/.tmpfs" ]; then
+  lntmpfs
+fi
 # background image
 if [ -e "$HOME/.fehbg" ]; then
   source "$HOME/.fehbg"
@@ -69,7 +72,4 @@ fi
 numlockx on
 if [ -e "$HOME/.bspwmrc_local" ]; then
   "$HOME/.bspwmrc_local"
-fi
-if [ -e "$HOME/.tmpfs" ]; then
-  source "$HOME/.local/bin/lntmpfs"
 fi
