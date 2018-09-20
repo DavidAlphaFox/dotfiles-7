@@ -8,10 +8,11 @@ if [ -e "$HOME/.tmpfs" ]; then
     if [ -d "$home_dir" ] && [ ! -L "$home_dir" ]; then
       cp -r "$home_dir/." "$cache_dir/"
       rm -r "$home_dir"
+      ln -s "$cache_dir" "$home_dir"
     elif [ ! -L "$home_dir" ]; then
       mkdir -p "$(dirname $home_dir)"
+      ln -s "$cache_dir" "$home_dir"
     fi
-    ln -s "$cache_dir" "$home_dir"
   done
 fi
 
