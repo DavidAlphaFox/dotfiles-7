@@ -70,4 +70,6 @@ numlockx on
 if [ -e "$HOME/.bspwmrc_local" ]; then
   "$HOME/.bspwmrc_local"
 fi
-
+if [ -e "$HOME/.tmpfs" ]; then
+  source "$HOME/.local/bin/lntmpfs"
+fi
