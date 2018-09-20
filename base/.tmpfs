@@ -1,2 +1,5 @@
 .cache/spotify
 .log
+.local/share/sddm
+.local/share/Trash
+.local/share/RecentDocuments
