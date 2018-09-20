@@ -74,7 +74,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1537470167
+session-start=1537469984
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -176,7 +176,7 @@ keyrings-selected=['secret-service://login', 'secret-service:///org/freedesktop/
 sidebar-width=240
 
 [org/gtk/settings/file-chooser]
-window-position=(265, 24)
+window-position=(542, 180)
 window-size=(832, 716)
 date-format='regular'
 location-mode='path-bar'
@@ -381,3 +381,7 @@ enable=true
 
 [org/onboard/universal-access]
 hide-click-type-window=true
+
+[org/gnome/nm-applet/eap/9e4bfa81-ee18-3bb9-a9e4-a3a3e0b6d661]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
