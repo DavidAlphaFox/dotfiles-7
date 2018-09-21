@@ -305,8 +305,8 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=61
-y=558
+x=993
+y=148
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
