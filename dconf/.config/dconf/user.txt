@@ -74,7 +74,7 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1537496964
+session-start=1537536562
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -305,8 +305,8 @@ in-use=true
 window-handles='M'
 
 [org/onboard/icon-palette/landscape]
-x=1206
-y=214
+x=61
+y=558
 
 [org/gnome/desktop/screensaver]
 embedded-keyboard-enabled=false
