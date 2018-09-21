@@ -26,6 +26,8 @@ fzf
 galculator
 google-chrome
 grub
+gtk-engine-murrine
+gtk-engines
 gvfs
 haveged
 highlight
@@ -62,6 +64,7 @@ pamixer
 perl-file-mimeinfo
 playerctl
 polybar
+profile-sync-daemon
 psmisc
 pulseaudio
 qt5-styleplugins
@@ -103,4 +106,3 @@ xterm
 yay
 zathura-pdf-mupdf
 zip
-profile-sync-daemon
