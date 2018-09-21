@@ -29,3 +29,6 @@ theme/.local/share/zathura/
 theme/.local/share/gvfs-metadata/
 misc/.config/psd/.psd.conf
 theme/.config/oomox/spotify_backup/
+theme/.local/share/sddm
+theme/.local/share/Trash
+theme/.local/share/RecentDocuments
