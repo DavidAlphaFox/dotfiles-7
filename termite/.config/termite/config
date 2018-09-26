@@ -8,14 +8,14 @@ dynamic_title   = true
 [colors]
 
 # special
-foreground      = #c5c8c6
-foreground_bold = #c5c8c6
-cursor          = #c5c8c6
+foreground      = #c7c7c7
+foreground_bold = #c7c7c7
+cursor          = #c7c7c7
 background      = #212121
 
 # black
 color0  = #212121
-color8  = #373b41
+color8  = #404040
 
 # red
 color1  = #cc6666
@@ -42,6 +42,6 @@ color6  = #5e8d87
 color14 = #8abeb7
 
 # white
-color7  = #707880
-color15 = #c5c8c6
+color7  = #787878
+color15 = #c7c7c7
 
