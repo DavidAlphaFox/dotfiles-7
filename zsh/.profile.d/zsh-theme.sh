@@ -6,6 +6,7 @@ spc=""
 if [ ! "$TERM" = "screen" ]; then
   spc=" "
 fi
+primary='magenta'
 sh_sym="${spc}"
 sh2_sym=' '
 err_sym="${spc}"
@@ -551,10 +552,10 @@ function get_pwd(){
   echo "$prompt_short_dir"
 }
 
-local ret_status='%(?:%{$fg_bold[green]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
+local ret_status='%(?:%{$fg_bold[$primary]%}$sh_sym:%{$fg[red]%}$err_sym%s)%{$reset_color%}'
 local vicmd_status='%{$reset_color%}%{$fg_bold[green]%}$vicmd_sym%{$reset_color%} '
 local git_status='$(__promptline_vcs_branch)%{$reset_color%}'
-local dir_status='%{$fg_bold[magenta]%}$(get_pwd)%{$reset_color%}'
+local dir_status='%{$fg_bold[$primary]%}$(get_pwd)%{$reset_color%}'
 local host_status='%{$fg_bold[yellow]%}$(__promptline_host)%{$reset_color%}'
 precmd() {
   PROMPT="%{$reset_color%}$ret_status "
