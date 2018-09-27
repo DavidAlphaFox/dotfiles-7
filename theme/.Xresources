@@ -34,6 +34,7 @@ rofi.fake-transparency: false
 rofi.scroll-method:     1
 ! State:           'bg',   'fg',   'bgalt','hlbg', 'hlfg'
 rofi.color-normal: #212121,#707880,#212121,#212121,#c5c8c6
+rofi.color-urgent: #212121,#cc6666,#212121,#212121,#b294bb
 rofi.color-active: #212121,#85678f,#212121,#212121,#b294bb
 rofi.color-window: #212121,#212121,#212121
 rofi.display-drun: 
@@ -44,7 +45,6 @@ rofi.display-combi: 
 rofi.combi-modi: window,run,drun
 
 rofi.monitor: -1
-! special
 ! special
 *.foreground:   #c7c7c7
 *.background:   #212121
