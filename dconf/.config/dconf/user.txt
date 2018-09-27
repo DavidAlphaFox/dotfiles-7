@@ -122,7 +122,7 @@ favorites=['💀', 'ፅ', '⍅', '🇧🇴', '🔊', '☠️', '🤞']
 
 [desktop/ibus/panel]
 show-icon-on-systray=true
-xkb-icon-rgba='#787878'
+xkb-icon-rgba='#404040'
 
 show=0
 
