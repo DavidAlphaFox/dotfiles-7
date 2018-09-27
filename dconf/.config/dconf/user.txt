@@ -75,7 +75,6 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
-session-start=1537569376
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -122,7 +121,7 @@ favorites=['💀', 'ፅ', '⍅', '🇧🇴', '🔊', '☠️', '🤞']
 
 [desktop/ibus/panel]
 show-icon-on-systray=true
-xkb-icon-rgba='#404040'
+xkb-icon-rgba='#787878'
 
 show=0
 
