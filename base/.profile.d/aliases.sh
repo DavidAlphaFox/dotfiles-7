@@ -14,3 +14,4 @@ alias gal='git all pull'
 alias gas='git all status -sb'
 alias drmi="docker images | fzf-tmux -m --tac | awk '{print \$3}' | sort -u | xargs docker rmi"
 alias fa='cat ~/Documents/fa_cheat.txt | grep -v Name | grep -i -B1 -e '
+alias ncdu='ncdu --color dark'
