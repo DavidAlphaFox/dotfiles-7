@@ -3,3 +3,5 @@
 .local/share/sddm
 .local/share/Trash
 .local/share/RecentDocuments
+.cache/go-build
+.cache/yay
