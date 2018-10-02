@@ -32,6 +32,8 @@ offset-x = 0
 offset-y = 0
 ;radius = 16.0
 fixed-center = true
+; Put the bar at the bottom of the screen
+;bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
