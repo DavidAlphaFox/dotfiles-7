@@ -13,12 +13,8 @@ super + backslash
 super + space
   rofi -show combi -normal-window
 # filemanager
-super + f
+super + r
   termite -e ranger
-# package manager
-super + p
-  termite -e pacui
-
 # calculator
 super + c
   galculator
@@ -30,18 +26,20 @@ super + {_,shift + }{Left,Down,Up,Right}
 super + q
   bspc node -c
 # rotate 180
-super + r
+super + h
   bspc node @/ --rotate 180
 # focus or move window to desktop
 super + {_,shift + }{1-9,0}
   bspc {desktop -f,node -d} '^{1-9,10}'
 
 # tile/monocle toggle
-super + shift + m
+super + m
   bspc desktop -l next
 # tile/float/fullscreen toggle
-super + shift + {t,p,s,f}
-  bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+super + {_,shift + }t
+  bspc node -t {_,pseudo_}tiled
+super + {_,shift + }f
+  bspc node -t {floating,fullscreen}
 # move next/prev ws
 super + bracket{left,right}
   bspc desktop -f {prev,next}.local
