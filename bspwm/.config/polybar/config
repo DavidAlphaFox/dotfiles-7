@@ -45,10 +45,10 @@ border-size = 2
 border-color = ${colors.background-alt}
 
 padding-left = 2
-padding-right = 0
+padding-right = 1
 
 module-margin-left = 1
-module-margin-right = 1
+module-margin-right = 0
 
 font-0 = Font Awesome 5 Free Solid:size=17;5
 font-1 = Font Awesome 5 Brands:size=17;5
@@ -83,7 +83,7 @@ format-foreground = ${colors.foreground-alt}
 
 [module/cal]
 type = custom/script
-exec = date '+%a %l:%M %p' | sed 's/  / /'
+exec = date '+%a %l:%M %p ' | sed 's/  / /'
 interval = 30
 format-foreground = ${colors.foreground-alt}
 label-font = 5
