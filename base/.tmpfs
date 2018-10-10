@@ -1,9 +1,10 @@
-.cache/spotify
-.log
-.local/share/sddm
-.local/share/Trash
-.local/share/RecentDocuments
 .cache/go-build
+.cache/spotify
+.cache/yarn
 .cache/yay
 .config/discord/Cache
+.local/share/RecentDocuments
+.local/share/Trash
+.local/share/sddm
+.log
 .node-gyp
