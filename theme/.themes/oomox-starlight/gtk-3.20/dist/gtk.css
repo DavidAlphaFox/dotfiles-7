@@ -904,6 +904,9 @@ headerbar, .titlebar:not(headerbar) {
     background-color: #1e1e1e;
     background-image: linear-gradient(to bottom, #202020, #1b1b1b);
     color: mix(#c7c7c7,#212121,0.5); }
+  headerbar .background, .titlebar:not(headerbar) .background {
+    background-color: #212121;
+    border-color: mix(#212121,#c7c7c7,0.3); }
   headerbar .title, .titlebar:not(headerbar) .title {
     font-weight: bold;
     padding: 0 16px; }
@@ -1066,6 +1069,8 @@ headerbar, .titlebar:not(headerbar) {
       color: rgba(33, 33, 33, 0.9); }
       headerbar button.separator:disabled, .titlebar:not(headerbar) button.separator:disabled, headerbar button .separator:disabled, .titlebar:not(headerbar) button .separator:disabled {
         color: rgba(33, 33, 33, 0.85); }
+    headerbar button.image-button, .titlebar:not(headerbar) button.image-button {
+      padding: 8px; }
   headerbar .linked > button, .titlebar:not(headerbar) .linked > button {
     box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.22); }
     headerbar .linked > button:focus, .titlebar:not(headerbar) .linked > button:focus, headerbar .linked > button:hover, .titlebar:not(headerbar) .linked > button:hover {
@@ -1088,8 +1093,8 @@ headerbar, .titlebar:not(headerbar) {
     padding: 8px; }
     headerbar combobox.text-button, .titlebar:not(headerbar) combobox.text-button, headerbar button.text-button, .titlebar:not(headerbar) button.text-button {
       padding: 8px; }
-    headerbar combobox.image-button, .titlebar:not(headerbar) combobox.image-button, headerbar button.image-button, .titlebar:not(headerbar) button.image-button {
-      padding: 8px; }
+  headerbar box button.image-button, .titlebar:not(headerbar) box button.image-button {
+    padding: 8px 12px; }
   headerbar separator, .titlebar:not(headerbar) separator, headerbar separator:disabled, .titlebar:not(headerbar) separator:disabled {
     color: #141414;
     border-color: currentColor;
@@ -1123,7 +1128,8 @@ headerbar, .titlebar:not(headerbar) {
     background-image: linear-gradient(to bottom, #232323, #1f1f1f);
     border-color: rgba(159, 159, 159, 0.22);
     color: #c7c7c7;
-    box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.22); }
+    box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.22);
+    padding: 8px 8px; }
     headerbar button:focus, .titlebar:not(headerbar) button:focus, headerbar button:hover, .titlebar:not(headerbar) button:hover {
       border-color: mix(#b294bb,rgba(199, 199, 199, 0.22),0.3); }
     headerbar button:active, .titlebar:not(headerbar) button:active, headerbar button:active:hover, .titlebar:not(headerbar) button:active:hover, headerbar button:active:focus, .titlebar:not(headerbar) button:active:focus, headerbar button:active:hover:focus, .titlebar:not(headerbar) button:active:hover:focus, headerbar button:checked, .titlebar:not(headerbar) button:checked, headerbar button:checked:hover, .titlebar:not(headerbar) button:checked:hover, headerbar button:checked:focus, .titlebar:not(headerbar) button:checked:focus, headerbar button:checked:hover:focus, .titlebar:not(headerbar) button:checked:hover:focus {
@@ -1274,11 +1280,18 @@ headerbar, .titlebar:not(headerbar) {
       color: rgba(33, 33, 33, 0.9); }
       headerbar button.separator:disabled, .titlebar:not(headerbar) button.separator:disabled, headerbar button .separator:disabled, .titlebar:not(headerbar) button .separator:disabled {
         color: rgba(33, 33, 33, 0.85); }
+    headerbar button.flat, .titlebar:not(headerbar) button.flat {
+      color: #c7c7c7; }
+    headerbar button.image-button, .titlebar:not(headerbar) button.image-button {
+      padding: 8px; }
+    headerbar button:backdrop, .titlebar:not(headerbar) button:backdrop {
+      color: mix(#c7c7c7,#212121,0.4); }
   headerbar button.titlebutton + separator.titlebutton, .titlebar:not(headerbar) button.titlebutton + separator.titlebutton {
     margin-left: 0;
     margin-right: 8px; }
   headerbar button.titlebutton, .titlebar:not(headerbar) button.titlebutton {
     border: 0;
+    padding: 8px;
     background-image: none;
     background-color: transparent;
     color: #c7c7c7;
@@ -1315,6 +1328,9 @@ toolbar {
     background-color: #1e1e1e;
     background-image: linear-gradient(to bottom, #202020, #1b1b1b);
     color: mix(#c7c7c7,#212121,0.5); }
+  toolbar .background {
+    background-color: #212121;
+    border-color: mix(#212121,#c7c7c7,0.3); }
   toolbar .title {
     font-weight: bold;
     padding: 0 16px; }
@@ -1461,6 +1477,8 @@ toolbar {
       color: rgba(33, 33, 33, 0.9); }
       toolbar button.separator:disabled, toolbar button .separator:disabled {
         color: rgba(33, 33, 33, 0.85); }
+    toolbar button.image-button {
+      padding: 8px; }
   toolbar .linked > button {
     box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.22); }
     toolbar .linked > button:focus, toolbar .linked > button:hover {
@@ -1483,8 +1501,8 @@ toolbar {
     padding: 8px; }
     toolbar combobox.text-button, toolbar button.text-button {
       padding: 8px; }
-    toolbar combobox.image-button, toolbar button.image-button {
-      padding: 8px; }
+  toolbar box button.image-button {
+    padding: 8px 12px; }
   toolbar separator, toolbar separator:disabled {
     color: #141414;
     border-color: currentColor;
@@ -2091,6 +2109,10 @@ headerbar.selection-mode,
     background-color: #a380ae;
     background-image: linear-gradient(to bottom, #ad8db7, #9972a5);
     color: mix(#212121,#b294bb,0.5); }
+  headerbar.selection-mode .background,
+  .titlebar:not(headerbar).selection-mode .background {
+    background-color: #b294bb;
+    border-color: mix(#b294bb,#212121,0.3); }
   headerbar.selection-mode .title,
   .titlebar:not(headerbar).selection-mode .title {
     font-weight: bold;
@@ -2436,6 +2458,9 @@ headerbar.selection-mode,
       .titlebar:not(headerbar).selection-mode button.separator:disabled,
       .titlebar:not(headerbar).selection-mode button .separator:disabled {
         color: rgba(178, 148, 187, 0.85); }
+    headerbar.selection-mode button.image-button,
+    .titlebar:not(headerbar).selection-mode button.image-button {
+      padding: 8px; }
   headerbar.selection-mode .linked > button,
   .titlebar:not(headerbar).selection-mode .linked > button {
     box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.12); }
@@ -2500,10 +2525,9 @@ headerbar.selection-mode,
     .titlebar:not(headerbar).selection-mode combobox.text-button,
     .titlebar:not(headerbar).selection-mode button.text-button {
       padding: 8px; }
-    headerbar.selection-mode combobox.image-button, headerbar.selection-mode button.image-button,
-    .titlebar:not(headerbar).selection-mode combobox.image-button,
-    .titlebar:not(headerbar).selection-mode button.image-button {
-      padding: 8px; }
+  headerbar.selection-mode box button.image-button,
+  .titlebar:not(headerbar).selection-mode box button.image-button {
+    padding: 8px 12px; }
   headerbar.selection-mode separator, headerbar.selection-mode separator:disabled,
   .titlebar:not(headerbar).selection-mode separator,
   .titlebar:not(headerbar).selection-mode separator:disabled {
