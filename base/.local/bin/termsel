@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-CLASS_NAME="termite0"
+CLASS_NAME="terminal"
 #SESSION_NAME=" "
 SESSION_NAME=" "
 # does term with CLASS_NAME exist?
@@ -13,6 +13,6 @@ if xdo id -N "$CLASS_NAME">/dev/null; then
 else
   # create new term with CLASS_NAME
   # create new tmux session, or attach if exists
-  exec termite -e "tmux -2 new-session -A -s '${SESSION_NAME}'" --class "${CLASS_NAME}"
+  exec termite -e "tmuxsession '${SESSION_NAME}'" --class "${CLASS_NAME}"
 fi
 

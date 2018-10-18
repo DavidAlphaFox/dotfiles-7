@@ -1,0 +1,4 @@
+#!/bin/sh
+
+tmux -2 new-session -A -s "$1"
+

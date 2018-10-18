@@ -9,7 +9,7 @@ antigen bundle colored-man-pages
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle unixorn/autoupdate-antigen.zshplugin
+#antigen bundle unixorn/autoupdate-antigen.zshplugin
 
 # all done with antigen
 antigen apply
