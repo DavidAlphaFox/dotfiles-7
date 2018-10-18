@@ -2334,7 +2334,7 @@ GtkPopover {
 
 GtkModelButton.button, GtkModelButton.button:backdrop {
   background-color: transparent;
-  background-image: linear-gradient(to bottom, transparent, transparent);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   border-color: shade(alpha(currentColor,0.32),0.8);
   color: currentColor;
   box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.22); }
@@ -2347,14 +2347,14 @@ GtkModelButton.button, GtkModelButton.button:backdrop {
   GtkModelButton.button:active:insensitive, GtkModelButton.button:checked:insensitive, GtkModelButton.button:backdrop:active:insensitive, GtkModelButton.button:backdrop:checked:insensitive {
     border-color: shade(alpha(currentColor,0.32),0.8); }
   GtkModelButton.button.flat, GtkModelButton.button:backdrop.flat {
-    border-color: transparent;
+    border-color: rgba(0, 0, 0, 0);
     color: currentColor;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     box-shadow: none; }
   GtkModelButton.button:hover, GtkModelButton.button.flat:hover, GtkModelButton.button:backdrop:hover, GtkModelButton.button:backdrop.flat:hover {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, transparent, transparent);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
     border-color: shade(alpha(currentColor,0.4),0.8);
     color: currentColor;
     box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.32); }
@@ -2367,14 +2367,14 @@ GtkModelButton.button, GtkModelButton.button:backdrop {
     GtkModelButton.button:hover:active:insensitive, GtkModelButton.button:hover:checked:insensitive, GtkModelButton.button.flat:hover:active:insensitive, GtkModelButton.button.flat:hover:checked:insensitive, GtkModelButton.button:backdrop:hover:active:insensitive, GtkModelButton.button:backdrop:hover:checked:insensitive, GtkModelButton.button:backdrop.flat:hover:active:insensitive, GtkModelButton.button:backdrop.flat:hover:checked:insensitive {
       border-color: shade(alpha(currentColor,0.4),0.8); }
   GtkModelButton.button:focus, GtkModelButton.button.flat:focus, GtkModelButton.button:backdrop:focus, GtkModelButton.button:backdrop.flat:focus {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, transparent, transparent);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
     border-color: alpha(currentColor,0.32);
     color: currentColor;
     box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
     GtkModelButton.button:focus:hover, GtkModelButton.button.flat:focus:hover, GtkModelButton.button:backdrop:focus:hover, GtkModelButton.button:backdrop.flat:focus:hover {
-      background-color: transparent;
-      background-image: linear-gradient(to bottom, transparent, transparent);
+      background-color: rgba(0, 0, 0, 0);
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
       border-color: shade(alpha(currentColor,0.4),0.8);
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.48); }
       GtkModelButton.button:focus:hover:focus, GtkModelButton.button:focus:hover:hover, GtkModelButton.button.flat:focus:hover:focus, GtkModelButton.button.flat:focus:hover:hover, GtkModelButton.button:backdrop:focus:hover:focus, GtkModelButton.button:backdrop:focus:hover:hover, GtkModelButton.button:backdrop.flat:focus:hover:focus, GtkModelButton.button:backdrop.flat:focus:hover:hover {
@@ -2422,9 +2422,9 @@ GtkModelButton.button, GtkModelButton.button:backdrop {
       color: rgba(33, 33, 33, 0.85); }
   GtkModelButton.button.separator, GtkModelButton.button .separator, GtkModelButton.button:backdrop.separator, GtkModelButton.button:backdrop .separator {
     border: 1px solid currentColor;
-    color: transparent; }
+    color: rgba(0, 0, 0, 0); }
     GtkModelButton.button.separator:insensitive, GtkModelButton.button .separator:insensitive, GtkModelButton.button:backdrop.separator:insensitive, GtkModelButton.button:backdrop .separator:insensitive {
-      color: transparent; }
+      color: rgba(0, 0, 0, 0); }
   GtkModelButton.button:focus:hover, GtkModelButton.button.flat:checked:hover, GtkModelButton.button:active:hover, GtkModelButton.button:hover, GtkModelButton.button:selected, GtkModelButton.button:backdrop:focus:hover, GtkModelButton.button:backdrop.flat:checked:hover, GtkModelButton.button:backdrop:active:hover, GtkModelButton.button:backdrop:hover, GtkModelButton.button:backdrop:selected {
     background-image: none;
     background-color: #b294bb;
