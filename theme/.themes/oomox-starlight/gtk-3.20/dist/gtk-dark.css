@@ -106,7 +106,7 @@
   -GtkWidget-cursor-aspect-ratio: 0.08;
   outline-color: rgba(178, 148, 187, 0.5);
   outline-style: dashed;
-  outline-width: 4px;
+  outline-width: 2px;
   outline-offset: -1px;
   -gtk-outline-radius: 8px; }
 
@@ -219,7 +219,7 @@ button, headerbar button, .titlebar:not(headerbar) button, toolbar button, toolb
   border-width: 1px;
   border-style: solid;
   border-radius: 8px;
-  -gtk-outline-radius: 8px;
+  -gtk-outline-radius: 9.6px;
   transition: 150ms ease;
   outline-color: transparent; }
 
@@ -261,13 +261,13 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat {
   toolbar.inline-toolbar toolbutton:backdrop:first-child > button.flat, popover.background .linked > button:first-child, .nemo-window toolbar toolitem stack widget button:first-child {
     border-width: 1px;
     border-radius: 8px 0 0 8px;
-    -gtk-outline-radius: 8px 0 0 8px; }
+    -gtk-outline-radius: 9.6px 0 0 9.6px; }
   .inline-toolbar button:last-child,
   .linked > button:last-child, combobox box button:last-child, combobox box entry:last-child, .linked:not(.vertical) > combobox:last-child > box > button.combo, headerbar .linked > button:last-child, .titlebar:not(headerbar) .linked > button:last-child, toolbar .linked > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat,
   toolbar.inline-toolbar toolbutton:backdrop:last-child > button.flat, popover.background .linked > button:last-child, .nemo-window toolbar toolitem stack widget button:last-child {
     border-width: 1px;
     border-radius: 0 8px 8px 0;
-    -gtk-outline-radius: 0 8px 8px 0; }
+    -gtk-outline-radius: 0 9.6px 9.6px 0; }
   .inline-toolbar button:only-child,
   .linked > button:only-child, combobox box button:only-child, combobox box entry:only-child, .linked:not(.vertical) > combobox:only-child > box > button.combo, headerbar .linked > button:only-child, .titlebar:not(headerbar) .linked > button:only-child, toolbar .linked > button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat,
   toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat, popover.background .linked > button:only-child, .nemo-window toolbar toolitem stack widget button:only-child {
@@ -277,7 +277,7 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat {
   .linked > button:only-child, combobox box button:only-child, combobox box entry:only-child, .linked:not(.vertical) > combobox:only-child > box > button.combo, headerbar .linked > button:only-child, .titlebar:not(headerbar) .linked > button:only-child, toolbar .linked > button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat,
   toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat, popover.background .linked > button:only-child, .nemo-window toolbar toolitem stack widget button:only-child {
     border-radius: 8px;
-    -gtk-outline-radius: 8px; }
+    -gtk-outline-radius: 9.6px; }
 
 .linked.vertical > button {
   border-width: 1px;
@@ -287,16 +287,16 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat {
   .linked.vertical > button:first-child, .linked.vertical > combobox:first-child > box > button.combo {
     border-width: 1px;
     border-radius: 8px 8px 0 0;
-    -gtk-outline-radius: 8px 8px 0 0; }
+    -gtk-outline-radius: 9.6px 9.6px 0 0; }
   .linked.vertical > button:last-child, .linked.vertical > combobox:last-child > box > button.combo {
     border-width: 1px;
     border-radius: 0 0 8px 8px;
-    -gtk-outline-radius: 0 0 8px 8px; }
+    -gtk-outline-radius: 0 0 9.6px 9.6px; }
   .linked.vertical > button:only-child, .linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > button:first-child:only-child, .linked.vertical > combobox:first-child > box > button.combo:only-child, .linked.vertical > combobox:only-child > box > button.combo:first-child {
     border-width: 1px; }
   .linked.vertical > button:only-child, .linked.vertical > combobox:only-child > box > button.combo {
     border-radius: 8px;
-    -gtk-outline-radius: 8px; }
+    -gtk-outline-radius: 9.6px; }
 
 infobar.info button.close, infobar.warning button.close, infobar.question button.close, infobar.error button.close, notebook > header > tabs > arrow {
   border: 1px solid transparent;
@@ -393,9 +393,9 @@ button {
     background-image: linear-gradient(to bottom, #252525, #202020);
     border-color: rgba(199, 199, 199, 0.22);
     outline-color: rgba(178, 148, 187, 0.5);
-    outline-width: 4px;
+    outline-width: 2px;
     outline-style: solid;
-    outline-offset: -2px;
+    outline-offset: 0px;
     color: #c7c7c7;
     box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
     button:focus:hover, button.flat:focus:hover {
@@ -571,7 +571,7 @@ spinbutton:not(.vertical) {
   /*@include border($base_color);*/
   padding: 0;
   border-radius: 8px;
-  -gtk-outline-radius: 8px;
+  -gtk-outline-radius: 9.6px;
   color: #c7c7c7;
   caret-color: #c7c7c7;
   /*&:focus, &:active { border-color: border_focus($borders_color); }*/ }
@@ -581,7 +581,7 @@ spinbutton:not(.vertical) {
     color: mix(#212121,#c7c7c7,0.5); }
   spinbutton:not(.vertical) entry {
     border-radius: 8px 0 0 8px;
-    -gtk-outline-radius: 8px 0 0 8px;
+    -gtk-outline-radius: 9.6px 0 0 9.6px;
     border-right-width: 0;
     box-shadow: none; }
   spinbutton:not(.vertical) button {
@@ -604,7 +604,7 @@ spinbutton:not(.vertical) {
     spinbutton:not(.vertical) button.down:dir(rtl) {
       border-right-style: none;
       border-radius: 8px 0 0 8px;
-      -gtk-outline-radius: 8px 0 0 8px; }
+      -gtk-outline-radius: 9.6px 0 0 9.6px; }
       spinbutton:not(.vertical) button.down:dir(rtl):focus {
         border-top-color: mix(#b294bb,mix(#212121,#c7c7c7,0.18),0.3);
         border-bottom-color: mix(#b294bb,mix(#212121,#c7c7c7,0.18),0.3);
@@ -615,7 +615,7 @@ spinbutton:not(.vertical) {
     spinbutton:not(.vertical) button.up:dir(ltr) {
       border-left-style: none;
       border-radius: 0 8px 8px 0;
-      -gtk-outline-radius: 0 8px 8px 0; }
+      -gtk-outline-radius: 0 9.6px 9.6px 0; }
       spinbutton:not(.vertical) button.up:dir(ltr):focus {
         border-top-color: mix(#b294bb,mix(#212121,#c7c7c7,0.18),0.3);
         border-bottom-color: mix(#b294bb,mix(#212121,#c7c7c7,0.18),0.3);
@@ -640,7 +640,7 @@ spinbutton.vertical button.up:focus:hover, spinbutton.vertical button.down:focus
 
 spinbutton.vertical button.up {
   border-radius: 8px 8px 0 0;
-  -gtk-outline-radius: 8px 8px 0 0; }
+  -gtk-outline-radius: 9.6px 9.6px 0 0; }
   spinbutton.vertical button.up:focus {
     border-top-color: mix(#b294bb,mix(#212121,#c7c7c7,0.18),0.3);
     border-left-color: mix(#b294bb,mix(#212121,#c7c7c7,0.18),0.3);
@@ -648,7 +648,7 @@ spinbutton.vertical button.up {
 
 spinbutton.vertical button.down {
   border-radius: 0 0 8px 8px;
-  -gtk-outline-radius: 0 0 8px 8px; }
+  -gtk-outline-radius: 0 0 9.6px 9.6px; }
   spinbutton.vertical button.down:focus {
     border-bottom-color: mix(#b294bb,mix(#212121,#c7c7c7,0.18),0.3);
     border-left-color: mix(#b294bb,mix(#212121,#c7c7c7,0.18),0.3);
@@ -1008,9 +1008,9 @@ headerbar, .titlebar:not(headerbar) {
       background-image: linear-gradient(to bottom, #252525, #202020);
       border-color: rgba(199, 199, 199, 0.22);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #c7c7c7;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
       headerbar button:focus:hover, .titlebar:not(headerbar) button:focus:hover, headerbar button.flat:focus:hover, .titlebar:not(headerbar) button.flat:focus:hover {
@@ -1219,9 +1219,9 @@ headerbar, .titlebar:not(headerbar) {
       background-image: linear-gradient(to bottom, #252525, #202020);
       border-color: rgba(199, 199, 199, 0.22);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #c7c7c7;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
       headerbar button:focus:hover, .titlebar:not(headerbar) button:focus:hover, headerbar button.flat:focus:hover, .titlebar:not(headerbar) button.flat:focus:hover {
@@ -1416,9 +1416,9 @@ toolbar {
       background-image: linear-gradient(to bottom, #252525, #202020);
       border-color: rgba(199, 199, 199, 0.22);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #c7c7c7;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
       toolbar button:focus:hover, toolbar button.flat:focus:hover {
@@ -1597,9 +1597,9 @@ toolbar {
         background-image: linear-gradient(to bottom, #252525, #202020);
         border-color: rgba(199, 199, 199, 0.22);
         outline-color: rgba(178, 148, 187, 0.5);
-        outline-width: 4px;
+        outline-width: 2px;
         outline-style: solid;
-        outline-offset: -2px;
+        outline-offset: 0px;
         color: #c7c7c7;
         box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
         toolbar.inline-toolbar button:focus:hover, toolbar.inline-toolbar button.flat:focus:hover {
@@ -1843,9 +1843,9 @@ searchbar,
     background-image: linear-gradient(to bottom, #abd9a4, #89c97e);
     border-color: rgba(33, 33, 33, 0.32);
     outline-color: rgba(178, 148, 187, 0.5);
-    outline-width: 4px;
+    outline-width: 2px;
     outline-style: solid;
-    outline-offset: -2px;
+    outline-offset: 0px;
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.32); }
     .suggested-action:focus:hover,
@@ -2012,9 +2012,9 @@ searchbar,
     background-image: linear-gradient(to bottom, #e5aa81, #dc8e57);
     border-color: rgba(33, 33, 33, 0.32);
     outline-color: rgba(178, 148, 187, 0.5);
-    outline-width: 4px;
+    outline-width: 2px;
     outline-style: solid;
-    outline-offset: -2px;
+    outline-offset: 0px;
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.32); }
     .destructive-action:focus:hover, .destructive-action.flat:focus:hover {
@@ -2285,9 +2285,9 @@ headerbar.selection-mode,
       background-image: linear-gradient(to bottom, #c5aecc, #ae8eb7);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #212121;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.32); }
       headerbar.selection-mode button:focus:hover, headerbar.selection-mode button.flat:focus:hover,
@@ -2698,9 +2698,9 @@ headerbar.selection-mode,
       background-image: linear-gradient(to bottom, #c5aecc, #ae8eb7);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #212121;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.32); }
       headerbar.selection-mode button:focus:hover, headerbar.selection-mode button.flat:focus:hover,
@@ -3190,9 +3190,9 @@ infobar {
       background-image: linear-gradient(to bottom, #aec3da, #88a8c9);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #212121;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.32); }
       infobar.info button:focus:hover, infobar.info button.flat:focus:hover {
@@ -3337,9 +3337,9 @@ infobar {
       background-image: linear-gradient(to bottom, #f4d79d, #efc26b);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #212121;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.32); }
       infobar.warning button:focus:hover, infobar.warning button.flat:focus:hover {
@@ -3484,9 +3484,9 @@ infobar {
       background-image: linear-gradient(to bottom, #aec3da, #88a8c9);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #212121;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.32); }
       infobar.question button:focus:hover, infobar.question button.flat:focus:hover {
@@ -3631,9 +3631,9 @@ infobar {
       background-image: linear-gradient(to bottom, #e5aa81, #dc8e57);
       border-color: rgba(33, 33, 33, 0.32);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #212121;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.32); }
       infobar.error button:focus:hover, infobar.error button.flat:focus:hover {
@@ -4260,9 +4260,9 @@ popover.background {
       background-image: linear-gradient(to bottom, #252525, #202020);
       border-color: rgba(199, 199, 199, 0.22);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #c7c7c7;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
       popover.background button:focus:hover, popover.background button.flat:focus:hover {
@@ -4511,9 +4511,9 @@ frame.app-notification {
       background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
       border-color: rgba(199, 199, 199, 0.22);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #c7c7c7;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
       frame.app-notification button:focus:hover, frame.app-notification button.flat:focus:hover {
@@ -5126,9 +5126,9 @@ button.osd,
     background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
     border-color: rgba(199, 199, 199, 0.22);
     outline-color: rgba(178, 148, 187, 0.5);
-    outline-width: 4px;
+    outline-width: 2px;
     outline-style: solid;
-    outline-offset: -2px;
+    outline-offset: 0px;
     color: #c7c7c7;
     box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
     button.osd:focus:hover, button.osd.flat:focus:hover,
@@ -5511,9 +5511,9 @@ progressbar.osd {
       background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
       border-color: rgba(199, 199, 199, 0.22);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #c7c7c7;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
       .osd button:focus:hover, .osd button.flat:focus:hover,
@@ -6048,9 +6048,9 @@ progressbar.osd {
         background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
         border-color: rgba(199, 199, 199, 0.22);
         outline-color: rgba(178, 148, 187, 0.5);
-        outline-width: 4px;
+        outline-width: 2px;
         outline-style: solid;
-        outline-offset: -2px;
+        outline-offset: 0px;
         color: #c7c7c7;
         box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
         .osd spinbutton:not(.vertical) button:focus:hover, .osd spinbutton:not(.vertical) button.flat:focus:hover,
@@ -6415,9 +6415,9 @@ progressbar.osd {
       background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.8), rgba(32, 32, 32, 0.8));
       border-color: rgba(199, 199, 199, 0.22);
       outline-color: rgba(178, 148, 187, 0.5);
-      outline-width: 4px;
+      outline-width: 2px;
       outline-style: solid;
-      outline-offset: -2px;
+      outline-offset: 0px;
       color: #c7c7c7;
       box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
       .osd spinbutton.vertical button:first-child:focus:hover, .osd spinbutton.vertical button:first-child.flat:focus:hover,
@@ -8178,9 +8178,9 @@ paned.titlebar {
         background-image: linear-gradient(to bottom, #252525, #202020);
         border-color: rgba(199, 199, 199, 0.22);
         outline-color: rgba(178, 148, 187, 0.5);
-        outline-width: 4px;
+        outline-width: 2px;
         outline-style: solid;
-        outline-offset: -2px;
+        outline-offset: 0px;
         color: #c7c7c7;
         box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
         .nemo-window toolbar button:focus:hover, .nemo-window toolbar button.flat:focus:hover {
@@ -8580,9 +8580,9 @@ SheetStyleDialog.unity-force-quit {
     background-image: linear-gradient(to bottom, #252525, #202020);
     border-color: rgba(199, 199, 199, 0.22);
     outline-color: rgba(178, 148, 187, 0.5);
-    outline-width: 4px;
+    outline-width: 2px;
     outline-style: solid;
-    outline-offset: -2px;
+    outline-offset: 0px;
     color: #c7c7c7;
     box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.42); }
     #login_window button:focus:hover, #login_window button.flat:focus:hover {
@@ -8775,9 +8775,9 @@ SheetStyleDialog.unity-force-quit {
     background-image: linear-gradient(to bottom, #e5aa81, #dc8e57);
     border-color: rgba(33, 33, 33, 0.32);
     outline-color: rgba(178, 148, 187, 0.5);
-    outline-width: 4px;
+    outline-width: 2px;
     outline-style: solid;
-    outline-offset: -2px;
+    outline-offset: 0px;
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.32); }
     #shutdown_button button:focus:hover, #shutdown_button button.flat:focus:hover {
@@ -8917,9 +8917,9 @@ SheetStyleDialog.unity-force-quit {
     background-image: linear-gradient(to bottom, #f4d79d, #efc26b);
     border-color: rgba(33, 33, 33, 0.32);
     outline-color: rgba(178, 148, 187, 0.5);
-    outline-width: 4px;
+    outline-width: 2px;
     outline-style: solid;
-    outline-offset: -2px;
+    outline-offset: 0px;
     color: #212121;
     box-shadow: 0 1px 2px -1px rgba(40, 40, 40, 0.32); }
     #restart_button button:focus:hover, #restart_button button.flat:focus:hover {
