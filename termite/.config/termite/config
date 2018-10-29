@@ -1,5 +1,5 @@
 [options]
-font            = Input 15
+font            = Input 16
 allow_bold      = false
 cursor_shape    = underline
 dynamic_title   = true
