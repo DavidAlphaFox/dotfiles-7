@@ -20,7 +20,7 @@ yellow = ${xrdb:color11}
 blue = ${xrdb:color12}
 purple = ${xrdb:color13}
 cyan = ${xrdb:color14}
-primary = ${colors.purple}
+primary = ${colors.blue}
 secondary = ${xrdb:color4}
 alert = ${xrdb:color1}
 
