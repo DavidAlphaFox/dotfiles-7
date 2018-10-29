@@ -4,6 +4,13 @@ cd $HOME
 ./.dotfiles/base/.local/bin/restow
 yay --norebuild --noconfirm --needed -S $(cat ~/.pkgs)
 
+# detect virtualbox
+if [ "$(systemd-detect-virt)" = "oracle" ]; then
+  yay -S --needed --noconfirm virtualbox-guest-utils virtualbox-guest-modules-arch haveged
+  sudo systemctl enable vboxservice
+  sudo systemctl enable haveged
+fi
+
 # sddm
 sudo systemctl enable sddm
 sudo tee /etc/sddm.conf <<EOF
@@ -40,7 +47,9 @@ sudo sed -i 's/#CacheDir.*/CacheDir = \/tmp\/pacman\/pkg/' /etc/pacman.conf
 sudo sed -i 's/#LogFile.*/LogFile = \/tmp\/pacman\/pacman.log/' /etc/pacman.conf
 
 # mkinitcpio
-sudo sed -i 's/MODULES=()/MODULES=(vboxvideo)/' /etc/mkinitcpio.conf
+if [ "$(systemd-detect-virt)" = "oracle" ]; then
+  sudo sed -i 's/MODULES=()/MODULES=(vboxvideo)/' /etc/mkinitcpio.conf
+fi
 #sudo sed -i 's/base udev/base udev plymouth/' /etc/mkinitcpio.conf
 sudo tee -a /etc/mkinitcpio.conf <<EOF
 COMPRESSION="cat"
