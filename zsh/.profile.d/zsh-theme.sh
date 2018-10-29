@@ -6,7 +6,7 @@ spc=""
 if [ ! "$TERM" = "screen" ]; then
   spc=" "
 fi
-primary='magenta'
+primary='blue'
 sh_sym="${spc}"
 sh2_sym=' '
 err_sym="${spc}"
