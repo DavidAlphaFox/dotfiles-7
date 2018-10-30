@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-echo -e "\n🗜️   Deduplicating filesystem..."
+echo -e "\n\e[1;34m\e[0m Deduplicating filesystem..."
 device="$(findmnt -nvo SOURCE /)"
 mntpnt="$(mktemp -d --tmpdir duperemove-XXXXXX)"
 mkdir -p $mntpnt
@@ -8,13 +8,13 @@ sudo mount -o compress=lzo $device $mntpnt
 pushd -q $mntpnt
 sudo duperemove -rdhv root home
 
-echo -e "\n🗜️   Rebalancing filesystem..."
+echo -e "\n\e[1;34m\e[0m Rebalancing filesystem..."
 sudo btrfs balance start -dusage=80 -musage=80 /mnt
 
 popd -q
 sudo umount $mntpnt
 rmdir $mntpnt
 
-echo -e "\n🗜️   Discarding unused blocks..."
+echo -e "\n\e[1;34m\e[0m Discarding unused blocks..."
 sudo fstrim -av
 
