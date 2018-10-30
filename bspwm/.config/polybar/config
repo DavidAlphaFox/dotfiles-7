@@ -87,7 +87,7 @@ format-foreground = ${colors.foreground-alt}
 type = custom/script
 exec = date '+%a %l:%M %p' | sed 's/  / /'
 interval = 30
-format-foreground = ${colors.foreground-alt}
+format-foreground = ${colors.background-alt}
 label-font = 5
 
 [module/xwindow]
