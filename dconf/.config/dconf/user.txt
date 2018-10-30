@@ -76,6 +76,8 @@ auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
 
+session-start=1540923682
+
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
 panel=''
@@ -106,7 +108,7 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/org/mate/desktop/interface/gtk-theme'
+saved-view='/org/mate/desktop/interface/icon-theme'
 window-height=961
 window-width=1920
 
@@ -121,7 +123,7 @@ favorites=['💀', 'ፅ', '⍅', '🇧🇴', '🔊', '☠️', '🤞']
 
 [desktop/ibus/panel]
 show-icon-on-systray=true
-xkb-icon-rgba='#787878'
+xkb-icon-rgba='#59748F'
 
 show=0
 
@@ -201,6 +203,10 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gtk/settings/color-chooser]
+
+selected-color=(true, 0.34901960784313718, 0.45490196078431372, 0.5607843137254902, 1.0)
+
+custom-colors=[(0.34901960784313718, 0.45490196078431372, 0.5607843137254902, 1.0), (0.12941176470588237, 0.12941176470588237, 0.12941176470588237, 1.0)]
 
 [org/onboard]
 schema-version='2.3'

@@ -52,7 +52,7 @@ bindkey '^ ' my-autosuggest-accept
 ZSH_AUTOSUGGEST_ACCEPT_WIDGETS=''
 ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS+=vi-forward-char
 ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black,bold'
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black'
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets cursor)
 export ZSH_HIGHLIGHT_STYLES[cursor]='fg=yellow,bold'
 export ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
@@ -62,8 +62,9 @@ export ZSH_HIGHLIGHT_STYLES[globbing]='fg=cyan,bold'
 export ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=yellow'
 export ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=yellow,bold'
 export ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=red,bold,underline'
-export ZSH_HIGHLIGHT_STYLES[command]='fg=green,bold'
+export ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=green'
 export ZSH_HIGHLIGHT_STYLES[alias]='fg=green'
+export ZSH_HIGHLIGHT_STYLES[command]='fg=green,bold'
 export ZSH_HIGHLIGHT_STYLES[builtin]='fg=magenta,bold'
 export ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=magenta'
 export ZSH_HIGHLIGHT_STYLES[redirection]='fg=magenta'
@@ -101,7 +102,7 @@ fi
 if [ -e "/usr/share/fzf/key-bindings.zsh" ]; then
   export FZF_TMUX=1
   export FZF_DEFAULT_COMMAND='ag -f -g "" --hidden --depth 16 --ignore dosdevices'
-  export FZF_DEFAULT_OPTS='-m --ansi --tac'
+  export FZF_DEFAULT_OPTS='-m --ansi --color=16,bg:-1,bg+:-1 --tac'
   export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
   export FZF_ALT_C_COMMAND="find -L . -maxdepth 16 -type d 2>/dev/null"
   source /usr/share/fzf/key-bindings.zsh

@@ -1,7 +1,7 @@
 set line-graphics = utf-8
-color cursor black blue
-color status blue black bold
-color title-focus black magenta
-color title-blur magenta black bold
-color date black black bold
-color author magenta black
+color cursor white blue bold
+color status blue default bold
+color title-focus white magenta bold
+color title-blur magenta default bold
+color date black default bold
+color author magenta default

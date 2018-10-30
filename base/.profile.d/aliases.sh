@@ -7,6 +7,7 @@ alias pa='pt -al'
 alias umbriel="nethack -u Umbriel-Hum-Mal-Pri-Law"
 alias hat='highlight -q -O ansi -c stdout --force'
 alias cp='cp --reflink=auto'
+alias xz='xz --threads=0'
 alias la='ls -AhF'
 alias l='ls -hF'
 alias pasnoop='pacmd list-sink-inputs | grep -e "media.name" -e spec; pacmd list-sinks | grep -e device.description -e spec'

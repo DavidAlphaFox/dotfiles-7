@@ -9,9 +9,11 @@
 
 [colors]
 background = ${xrdb:background}
-background-alt = ${xrdb:color8}
+background-alt = ${xrdb:color4}
 foreground = ${xrdb:foreground}
-foreground-alt = ${xrdb:color7}
+foreground-alt = ${xrdb:color12}
+black = ${xrdb:color0}
+gray = ${xrdb:color8}
 red = ${xrdb:color1}
 orange = ${xrdb:color9}
 dark_green = ${xrdb:color2}
@@ -85,7 +87,7 @@ format-foreground = ${colors.foreground-alt}
 type = custom/script
 exec = date '+%a %l:%M %p' | sed 's/  / /'
 interval = 30
-format-foreground = ${colors.foreground-alt}
+format-foreground = ${colors.background-alt}
 label-font = 5
 
 [module/xwindow]
@@ -104,8 +106,8 @@ format = <label-mode><label-state>
 format-foreground = ${colors.primary}
 
 label-focused = %name%
-label-focused-foreground = ${colors.primary}
-label-focused-underline= ${colors.primary}
+label-focused-foreground = ${colors.foreground}
+label-focused-underline= ${colors.foreground}
 label-focused-padding = 2
 
 label-occupied = %name%
@@ -127,7 +129,7 @@ label-occupied-font = 3
 label-urgent-font = 3
 label-empty-font = 3
 
-label-dimmed-focused-foreground = ${colors.foreground-alt}
+label-dimmed-focused-foreground = ${colors.foreground}
 
 label-monocle = " "
 label-floating = " "
