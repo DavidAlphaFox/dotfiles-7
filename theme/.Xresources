@@ -33,10 +33,10 @@ rofi.fake-transparency: false
 ! "scrolling method. (0: Page, 1: Centered)"
 rofi.scroll-method:     1
 ! State:           'bg',   'fg',   'bgalt','hlbg', 'hlfg'
-rofi.color-normal: #212121,#787878,#212121,#212121,#c7c7c7
-rofi.color-urgent: #212121,#cc6666,#212121,#212121,#8fadcc
-rofi.color-active: #212121,#59748f,#212121,#212121,#8fadcc
-rofi.color-window: #212121,#212121,#212121
+rofi.color-normal: #081021,#787878,#081021,#081021,#c7c7c7
+rofi.color-urgent: #081021,#cc6666,#081021,#081021,#8fadcc
+rofi.color-active: #081021,#59748f,#081021,#081021,#8fadcc
+rofi.color-window: #081021,#081021,#081021
 rofi.display-drun: 
 rofi.display-run: 
 rofi.display-window: 
