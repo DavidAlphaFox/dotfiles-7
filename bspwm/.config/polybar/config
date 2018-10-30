@@ -9,9 +9,11 @@
 
 [colors]
 background = ${xrdb:background}
-background-alt = ${xrdb:color4}
+background-alt = ${xrdb:color8}
 foreground = ${xrdb:foreground}
-foreground-alt = ${xrdb:color7}
+foreground-alt = ${xrdb:color4}
+black = ${xrdb:color0}
+gray = ${xrdb:color8}
 red = ${xrdb:color1}
 orange = ${xrdb:color9}
 dark_green = ${xrdb:color2}
@@ -42,7 +44,7 @@ line-size = 3
 line-color = ${colors.primary}
 
 border-size = 2
-border-color = ${colors.background-alt}
+border-color = ${colors.foreground-alt}
 
 padding-left = 2
 padding-right = 0

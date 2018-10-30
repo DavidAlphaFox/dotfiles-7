@@ -8,7 +8,6 @@ Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
 ! ROFI
-!rofi.font:              Iosevka Term Medium 15
 rofi.font:              Exo 2 SemiBold 18
 rofi.modi:              window,run,drun,combi
 rofi.width:             38
@@ -33,9 +32,9 @@ rofi.fake-transparency: false
 ! "scrolling method. (0: Page, 1: Centered)"
 rofi.scroll-method:     1
 ! State:           'bg',   'fg',   'bgalt','hlbg', 'hlfg'
-rofi.color-normal: #081021,#787878,#081021,#081021,#c7c7c7
+rofi.color-normal: #081021,#59748f,#081021,#081021,#c7c7c7
 rofi.color-urgent: #081021,#cc6666,#081021,#081021,#8fadcc
-rofi.color-active: #081021,#59748f,#081021,#081021,#8fadcc
+rofi.color-active: #081021,#8fadcc,#081021,#081021,#c7c7c7
 rofi.color-window: #081021,#081021,#081021
 rofi.display-drun: 
 rofi.display-run: 
@@ -48,8 +47,7 @@ rofi.monitor: -1
 
 ! special
 *.foreground:   #c7c7c7
-!*.background:   #212121
-*.background: #081021
+*.background:   #081021
 *.cursorColor:  #c7c7c7
 
 ! black
