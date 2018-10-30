@@ -46,7 +46,7 @@ active=false
 menus-have-icons=true
 gtk-decoration-layout='menu:close'
 cursor-blink-time=1000
-icon-theme='oomox-starlight'
+icon-theme='oomox-extra'
 monospace-font-name='Input 11'
 
 gtk-im-module='ibus'
@@ -58,7 +58,7 @@ accessibility=true
 font-name='Exo2 14'
 
 
-gtk-theme='oomox-starlight'
+gtk-theme='oomox-extra'
 
 [org/mate/desktop/applications/browser]
 exec='chromium'
@@ -75,6 +75,8 @@ autorun-never=true
 auto-save-session=false
 idle-delay=10
 required-components-list=['windowmanager']
+
+session-start=1540923682
 
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
@@ -106,9 +108,9 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/org/mate/desktop/interface/gtk-theme'
-window-height=961
-window-width=1920
+saved-view='/desktop/ibus/panel/xkb-icon-rgba'
+window-height=957
+window-width=956
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
@@ -121,7 +123,7 @@ favorites=['💀', 'ፅ', '⍅', '🇧🇴', '🔊', '☠️', '🤞']
 
 [desktop/ibus/panel]
 show-icon-on-systray=true
-xkb-icon-rgba='#787878'
+xkb-icon-rgba='#59748F'
 
 show=0
 
@@ -201,6 +203,10 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gtk/settings/color-chooser]
+
+selected-color=(true, 0.34901960784313718, 0.45490196078431372, 0.5607843137254902, 1.0)
+
+custom-colors=[(0.34901960784313718, 0.45490196078431372, 0.5607843137254902, 1.0), (0.12941176470588237, 0.12941176470588237, 0.12941176470588237, 1.0)]
 
 [org/onboard]
 schema-version='2.3'

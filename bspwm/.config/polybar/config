@@ -9,7 +9,7 @@
 
 [colors]
 background = ${xrdb:background}
-background-alt = ${xrdb:color8}
+background-alt = ${xrdb:color4}
 foreground = ${xrdb:foreground}
 foreground-alt = ${xrdb:color7}
 red = ${xrdb:color1}

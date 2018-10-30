@@ -48,7 +48,8 @@ rofi.monitor: -1
 
 ! special
 *.foreground:   #c7c7c7
-*.background:   #212121
+!*.background:   #212121
+*.background: #081021
 *.cursorColor:  #c7c7c7
 
 ! black
