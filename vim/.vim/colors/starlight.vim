@@ -152,10 +152,10 @@ call s:h("ModeMsg", { "fg": s:primary }) " 'showmode' message (e.g., "-- INSERT 
 call s:h("MoreMsg", {}) " more-prompt
 call s:h("NonText", { "fg": s:dark_grey }) " '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
 call s:h("Normal", { "fg": s:white }) " normal text
-call s:h("Pmenu", { "bg": s:dark_grey }) " Popup menu: normal item.
-call s:h("PmenuSel", { "fg": s:black, "bg": s:primary }) " Popup menu: selected item.
-call s:h("PmenuSbar", { "bg": s:black }) " Popup menu: scrollbar.
-call s:h("PmenuThumb", { "bg": s:white }) " Popup menu: Thumb of the scrollbar.
+call s:h("Pmenu", { "bg": s:visual_black }) " Popup menu: normal item.
+call s:h("PmenuSel", { "fg": s:visual_black, "bg": s:secondary }) " Popup menu: selected item.
+call s:h("PmenuSbar", { "bg": s:secondary }) " Popup menu: scrollbar.
+call s:h("PmenuThumb", { "bg": s:primary }) " Popup menu: Thumb of the scrollbar.
 call s:h("Question", { "fg": s:purple }) " hit-enter prompt and yes/no questions
 call s:h("Search", { "fg": s:visual_black, "bg": s:dark_grey }) " Last search pattern highlighting (see 'hlsearch'). Also used for highlighting the current line in the quickfix window and similar items that need to stand out.
 call s:h("SpecialKey", { "fg": s:dark_grey }) " Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
