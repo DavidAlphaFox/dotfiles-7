@@ -46,7 +46,7 @@ active=false
 menus-have-icons=true
 gtk-decoration-layout='menu:close'
 cursor-blink-time=1000
-icon-theme='oomox-extra'
+icon-theme='oomox-starlight'
 monospace-font-name='Input 11'
 
 gtk-im-module='ibus'
@@ -58,7 +58,7 @@ accessibility=true
 font-name='Exo2 14'
 
 
-gtk-theme='oomox-extra'
+gtk-theme='oomox-starlight'
 
 [org/mate/desktop/applications/browser]
 exec='chromium'
@@ -108,9 +108,9 @@ server-auto-publish=false
 show-warning=false
 window-is-maximized=false
 
-saved-view='/desktop/ibus/panel/xkb-icon-rgba'
-window-height=957
-window-width=956
+saved-view='/org/mate/desktop/interface/icon-theme'
+window-height=961
+window-width=1920
 
 [desktop/ibus/panel/emoji]
 partial-match-condition=2
