@@ -23,12 +23,12 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
     </window>
 
     <layer> <color element="background" rgb="#000000" opacity="1.0"/> </layer>
-    <layer> <color element="background" rgb="#212121" opacity="0.9"/> </layer>
-    <layer> <color element="background" rgb="#212121" opacity="0.9"/> </layer>
+    <layer> <color element="background" rgb="#081021" opacity="0.9"/> </layer>
+    <layer> <color element="background" rgb="#081021" opacity="0.9"/> </layer>
 
     <key_group>
-        <color element="fill"   rgb="#212121"/>
-        <color element="stroke" rgb="#373b41"/>
+        <color element="fill"   rgb="#081021"/>
+        <color element="stroke" rgb="#59748F"/>
         <color element="label"  rgb="#c5c8c6"/>
         icon0
 
@@ -39,8 +39,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
         <!-- dark keys -->
         <key_group>
-            <color element="fill" rgb="#212121"/>
-            <color element="stroke" rgb="#373b41"/>
+            <color element="fill" rgb="#081021"/>
+            <color element="stroke" rgb="#59748F"/>
             <color element="label" rgb="#c5c8c6"/>
             icon3,
             RCTL, LCTL, RALT, LALT, LWIN, CAPS,
@@ -56,10 +56,10 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
             <!-- word suggestions -->
             <key_group>
-                <color element="fill" rgb="#212121"/>
+                <color element="fill" rgb="#081021"/>
                 prediction
                 <key_group>
-                    <color element="fill" rgb="#212121" opacity="0.8"/>
+                    <color element="fill" rgb="#081021" opacity="0.8"/>
                     wordlist, pause-learning.wordlist, language.wordlist, hide.wordlist
                 </key_group>
             </key_group>
