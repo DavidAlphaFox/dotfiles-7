@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # update dotfiles
-echo -e "\e[1;34m \e[0mUpdating dotfiles..."
+echo -e "\e[1;34m  \e[0mUpdating dotfiles..."
 cd ~/.dotfiles
 git stash -q
 git pull 
@@ -9,25 +9,25 @@ git stash pop
 ~/.dotfiles/base/.local/bin/restow
 
 # upgrade all packages
-echo -e "\n\e[1;34m \e[0mUpdating system..."
+echo -e "\n\e[1;34m  \e[0mUpdating system..."
 yay -Syu
 
 # removed orphaned packages
 orphans="$(yay -Qdtq)"
 if [ -n "$orphans" ]; then
-  echo -e "\n\e[1;34m \e[0mRemoving orphaned packages..."
+  echo -e "\n\e[1;34m  \e[0mRemoving orphaned packages..."
   yay -Rns $(echo $orphans)
 fi
 
 # removed cached packages
 if [ -n "$(find /tmp/pacman/pkg -type f)" ]; then
-  echo -e "\n\e[1;34m \e[0mRemoving cached packages..."
+  echo -e "\n\e[1;34m  \e[0mRemoving cached packages..."
   yes | sudo yay -Scc 2>&1 >/dev/null
 fi
 
 # dedup btrfs
 if [ -n "$dodedup" ]; then
-  echo -e "\n\e[1;34m \e[0mDeduplicating filesystem..."
+  echo -e "\n\e[1;34m  \e[0mDeduplicating filesystem..."
   device="$(findmnt -nvo SOURCE /)"
   mntpnt="$(mktemp -d --tmpdir duperemove-XXXXXX)"
   mkdir -p $mntpnt
