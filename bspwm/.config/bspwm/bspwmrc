@@ -53,7 +53,7 @@ fi
 if [ -e "$HOME/.fehbg" ]; then
   source "$HOME/.fehbg"
 else
-  feh --bg-scale "$HOME/Pictures/basket.png"
+  feh --bg-tile "$HOME/Pictures/basket.png"
 fi
 numlockx on
 if [ -e "$HOME/.bspwmrc_local" ]; then
