@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+clear
+uname -srm
+colorpanes
+echo
