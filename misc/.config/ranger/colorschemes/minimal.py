@@ -17,7 +17,6 @@ class base(ColorScheme):
                 attr = normal
             if context.empty or context.error:
                 fg = 8
-                bg = 0
             if context.border:
                 fg = 238
             if context.image:
@@ -48,7 +47,6 @@ class base(ColorScheme):
                     attr |= bold
             if context.link:
                 fg = context.good and 4 or 1
-                bg = 0
             if context.bad:
                 fg = 1
             if context.tag_marker and not context.selected:
