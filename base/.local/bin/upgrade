@@ -12,6 +12,13 @@ git stash pop
 echo -e "\n\e[1;34m  \e[0mUpdating system..."
 yay -Syu
 
+# add missing pkgs
+missing="$(lneeded)"
+if [ -n "$missing" ]; then
+  echo -e "\n\e[1;34m  \e[0mInstalling missing packages..."
+  yay -S $(echo $missing) --noconfirm
+fi
+
 # removed orphaned packages
 orphans="$(yay -Qdtq)"
 if [ -n "$orphans" ]; then
