@@ -13,7 +13,7 @@ if [ -z "$NOTIFY" ]; then
   fi
 fi
 if [ -n "$NOTIFY" ]; then
-  notify-info "Updates" "Software updates are available"
+  notify-info -i software-update-available "Updates" "Software updates are available"
 else
   exit 1
 fi

@@ -2,4 +2,4 @@
 
 pkill -USR1 -x sxhkd
 pkill -USR1 -x polybar
-notify-info 'reload' 'reloaded bar and keybindings'
+notify-info -i keyboard 'reloaded' 'reloaded bar and keybindings'

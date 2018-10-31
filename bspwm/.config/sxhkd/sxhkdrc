@@ -46,7 +46,7 @@ super + bracket{left,right}
 
 # screen/window/selection shot
 super + {_,shift +,ctrl +} + @Print
-  scrot {_,-u,-s} -e "notify-send 'scrot' 'image saved as \n\$f'"
+  scrot {_,-u,-s} -e "notify-send -i image 'scrot' 'image saved as \n\$f'"
 
 # clipboard select
 super + Insert
