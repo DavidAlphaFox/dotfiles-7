@@ -9,6 +9,9 @@ if [ "$(systemd-detect-virt)" = "oracle" ]; then
   yay -S --needed --noconfirm virtualbox-guest-utils virtualbox-guest-modules-arch haveged
   sudo systemctl enable vboxservice
   sudo systemctl enable haveged
+  sudo tee /etc/ld.so.preload <<EOF
+/usr/lib/VBoxOGL.so
+EOF
 fi
 
 # sddm
