@@ -77,6 +77,8 @@ idle-delay=10
 required-components-list=['windowmanager']
 
 
+session-start=1541112596
+
 [org/mate/desktop/session/required-components]
 windowmanager='bspwm'
 panel=''
@@ -239,11 +241,11 @@ key-gradient-direction=-23.0
 
 key-style='gradient'
 
-roundrect-radius=8.0
+roundrect-radius=16.0
 
-key-size=95.0
+key-size=96.0
 
-key-shadow-strength=25.0
+key-shadow-strength=50.0
 
 key-shadow-size=50.0
 
@@ -253,7 +255,7 @@ key-label-font='Exo 2 bold'
 
 key-stroke-width=50.0
 
-key-label-overrides=['LWIN::', 'RWIN::']
+key-label-overrides=['LWIN:•:super', 'RWIN:•:super']
 
 [org/onboard/window/landscape]
 
