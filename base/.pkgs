@@ -33,7 +33,6 @@ haveged
 highlight
 ibus
 ibus-qt
-iftop
 inetutils
 iputils
 libcanberra-pulse
