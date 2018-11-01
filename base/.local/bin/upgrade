@@ -16,7 +16,7 @@ yay -Syu
 missing="$(lneeded)"
 if [ -n "$missing" ]; then
   echo -e "\n\e[1;34m  \e[0mInstalling missing packages..."
-  yay -S $(echo $missing) --noconfirm
+  yay -S $(echo $missing)
 fi
 
 # removed orphaned packages
