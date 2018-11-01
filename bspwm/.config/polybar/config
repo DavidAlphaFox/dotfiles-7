@@ -107,8 +107,8 @@ format-foreground = ${colors.primary}
 
 label-focused = %name%
 label-focused-foreground = ${colors.foreground}
-label-focused-overline= ${colors.background-alt}
-label-focused-underline= ${colors.background-alt}
+;label-focused-background = ${colors.background-alt}
+label-focused-underline = ${colors.background-alt}
 label-focused-padding = 2
 
 label-occupied = %name%
