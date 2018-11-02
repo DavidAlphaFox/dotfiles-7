@@ -12,6 +12,8 @@ git stash pop
 echo -e "\n\e[1;34m  \e[0mUpdating system..."
 yay -Syu
 
+vim +PlugUpdate +qa
+
 # add missing pkgs
 missing="$(lneeded)"
 if [ -n "$missing" ]; then
