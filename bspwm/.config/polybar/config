@@ -60,7 +60,7 @@ font-4 = Exo 2:style=Bold:size=14;4
 
 modules-left = xwindow
 modules-center =
-modules-right = cal onboard temperature bspwm
+modules-right = cal temperature bspwm
 
 tray-position = center
 tray-padding = 2
