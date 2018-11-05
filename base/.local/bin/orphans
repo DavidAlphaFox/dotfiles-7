@@ -1,6 +1,0 @@
-#!/bin/bash
-
-
-# adjust install reasons
-yay -D --asdeps $(yay -Qq)
-yay -D --asexplicit $(yay -Qtq)

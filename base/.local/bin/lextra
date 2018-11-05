@@ -1,7 +1,0 @@
-#!/bin/bash
-
-yay -Qttq > /tmp/pkgs
-sort /tmp/pkgs ~/.pkgs | uniq -u > /tmp/uniq
-sort /tmp/pkgs /tmp/uniq | uniq -d
-rm /tmp/pkgs /tmp/uniq
-

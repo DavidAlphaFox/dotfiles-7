@@ -1,4 +1,0 @@
-#!/bin/zsh
-
-notify-send -i dialog-error -u critical $@
-

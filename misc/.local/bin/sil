@@ -1,4 +1,0 @@
-#!/bin/zsh
-
-set-title Sil
-/usr/bin/sil -mgcu

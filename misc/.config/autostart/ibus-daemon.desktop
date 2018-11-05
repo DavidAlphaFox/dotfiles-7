@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=ibus-daemon -rd --xim
-Hidden=false
-X-MATE-Autostart-enabled=true
-Name[en_US]=IBus
-Name=IBus
-Comment[en_US]=ibus input
-Comment=ibus input

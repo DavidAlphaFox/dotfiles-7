@@ -1,16 +1,13 @@
 [core]
-  editor = vim
   filemode = true
   autocrlf = false
-[credential]
-  helper = gnome-keyring
 [push]
   default = current
 [help]
   autocorrect = 30
 [merge]
-	tool = vimdiff
-	conflictstyle = diff3
+  tool = vimdiff
+  conflictstyle = diff3
 [mergetool]
   prompt = false
   keepBackup = false
