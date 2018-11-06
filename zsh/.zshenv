@@ -1,10 +1,1 @@
-#export CM_LAUNCHER="cliprofi"
-#export LC_CTYPE=$LANG
-#export LC_NUMERIC=$LANG
-#export LC_TIME=$LANG
-#export LC_COLLATE="C"
-#export LC_MONETARY=$LANG
-#export LC_MESSAGES=$LANG
-#export LD_LIBRARY_PATH=.
 export LESS="-erFX"
-#export QT_QPA_PLATFORMTHEME=qt5ct

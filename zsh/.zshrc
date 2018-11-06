@@ -10,16 +10,6 @@ if test -e "$HOME/.profile.d/"; then
     done
     unset profile
 fi
-# source a file not in git repo...
-if [ -e "$HOME/.zlocal" ]; then
-  source "$HOME/.zlocal"
-fi
-# shorter delay on cmd-mode
-export KEYTIMEOUT=1
-if [ -e "$HOME/go" ]; then
-  GOPATH="$HOME/go"
-  PATH="$PATH:$HOME/go/bin"
-fi
 if [ -e "/usr/share/fzf/key-bindings.zsh" ]; then
   export FZF_TMUX=1
   export FZF_DEFAULT_COMMAND='ag -f -g "" --hidden --depth 16 --ignore dosdevices'
