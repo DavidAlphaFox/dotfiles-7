@@ -3,10 +3,11 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " colors
-let g:starlight_termcolors=16
+"let g:starlight_termcolors=16
 " ..italics don't look right
-let g:starlight_terminal_italics=0
-colorscheme starlight
+"let g:starlight_terminal_italics=0
+colorscheme solarized
+set background=light
 
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
@@ -304,5 +305,6 @@ Plug 'majutsushi/tagbar'
 Plug 'w0rp/ale'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'LnL7/vim-nix'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
