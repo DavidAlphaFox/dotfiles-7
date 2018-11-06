@@ -16,9 +16,6 @@ if [ -e "$HOME/.zlocal" ]; then
 fi
 # shorter delay on cmd-mode
 export KEYTIMEOUT=1
-if [ -e "/usr/share/nvm/init-nvm.sh" ]; then
-  source /usr/share/nvm/init-nvm.sh
-fi
 if [ -e "$HOME/go" ]; then
   GOPATH="$HOME/go"
   PATH="$PATH:$HOME/go/bin"
@@ -32,4 +29,6 @@ if [ -e "/usr/share/fzf/key-bindings.zsh" ]; then
   source /usr/share/fzf/key-bindings.zsh
   source /usr/share/fzf/completion.zsh
 fi
+
+export GIT_TEMPLATE_DIR="$HOME/.git-templates/"
 

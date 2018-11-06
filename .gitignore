@@ -24,3 +24,4 @@ theme/.local/share/sddm/
 theme/.local/share/zathura/
 vim/.vim/plugged/
 xarchiver/xarchiverrc
+fonts/.local/share/fonts/.uuid
