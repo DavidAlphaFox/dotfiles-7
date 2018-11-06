@@ -2,11 +2,6 @@
 set encoding=utf-8
 set fileencoding=utf-8
 
-" colors
-"let g:starlight_termcolors=16
-" ..italics don't look right
-"let g:starlight_terminal_italics=0
-colorscheme solarized
 set background=light
 
 " Treat long lines as break lines (useful when moving around in them)
@@ -307,4 +302,5 @@ Plug 'lifepillar/vim-mucomplete'
 Plug 'LnL7/vim-nix'
 Plug 'altercation/vim-colors-solarized'
 call plug#end()
+colorscheme solarized
 
