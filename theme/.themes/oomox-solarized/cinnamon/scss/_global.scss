@@ -15,8 +15,8 @@ $dark_fg_color: #657b83;
 $dark_bg_color_trans: fade-out(#fdf6e3, 1 - (1.0 / 2));
 
 // used to calculate gradients for gradient values > 0
-$lighten_amount: 1 + (0.040000000000000001 / 2);
-$darken_amount: 1 - (0.040000000000000001 / 2);
+$lighten_amount: 1 + (0.10000000000000001 / 2);
+$darken_amount: 1 - (0.10000000000000001 / 2);
 
 // main background surface gradient start and end colors
 $light_bg_grad: if($lighten_amount > 1, lighten($dark_bg_color, ($lighten_amount - 1) * lightness($dark_bg_color)), $dark_bg_color);
