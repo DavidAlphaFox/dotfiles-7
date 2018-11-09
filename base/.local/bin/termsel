@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
-CLASS_NAME="term"
-#SESSION_NAME=" "
+CLASS_NAME="URxvt"
 SESSION_NAME="0"
 # does term with CLASS_NAME exist?
 if xdo id -N "$CLASS_NAME">/dev/null; then
@@ -13,6 +12,6 @@ if xdo id -N "$CLASS_NAME">/dev/null; then
 else
   # create new term with CLASS_NAME
   # create new tmux session, or attach if exists
-  urxvt -e $SHELL -c ".local/bin/tmuxsession ${SESSION_NAME}" -name "${CLASS_NAME}"
+  urxvt -e $SHELL -c ".local/bin/tmuxsession ${SESSION_NAME}"
 fi
 
