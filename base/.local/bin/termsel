@@ -1,8 +1,8 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 CLASS_NAME="terminal"
 #SESSION_NAME=" "
-SESSION_NAME=" "
+SESSION_NAME="0"
 # does term with CLASS_NAME exist?
 if xdo id -N "$CLASS_NAME">/dev/null; then
   # focus, move to current desktop the existing term with CLASS_NAME
@@ -13,6 +13,6 @@ if xdo id -N "$CLASS_NAME">/dev/null; then
 else
   # create new term with CLASS_NAME
   # create new tmux session, or attach if exists
-  exec termite -e "tmuxsession '${SESSION_NAME}'" --class "${CLASS_NAME}"
+  exec urxvt -e "tmuxsession ${SESSION_NAME}" --class "${CLASS_NAME}"
 fi
 
