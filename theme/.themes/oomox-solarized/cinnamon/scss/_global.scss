@@ -5,7 +5,7 @@
 $button_bg_color: #fdf6e3;
 $button_fg_color: #657b83;
 $selected_bg_color: #eee8d5;
-$selected_fg_color: #657b83;
+$selected_fg_color: #586e75;
 $tooltip_bg_color: #fdf6e3;
 $tooltip_fg_color: #657b83;
 $dark_bg_color: fade-out(#fdf6e3, 1 - 1.0);
@@ -15,8 +15,8 @@ $dark_fg_color: #657b83;
 $dark_bg_color_trans: fade-out(#fdf6e3, 1 - (1.0 / 2));
 
 // used to calculate gradients for gradient values > 0
-$lighten_amount: 1 + (0.10000000000000001 / 2);
-$darken_amount: 1 - (0.10000000000000001 / 2);
+$lighten_amount: 1 + (0.14999999999999999 / 2);
+$darken_amount: 1 - (0.14999999999999999 / 2);
 
 // main background surface gradient start and end colors
 $light_bg_grad: if($lighten_amount > 1, lighten($dark_bg_color, ($lighten_amount - 1) * lightness($dark_bg_color)), $dark_bg_color);
@@ -68,12 +68,12 @@ $scrollbar_slider_hover_color: mix($dark_bg_color, $selected_bg_color, 20%);
 $primary_caret_color: #657b83;
 
 // other colors used in the theme
-$link_color: #01a0e4;
-$success_color: #01a252;
-$warning_color: #fded02;
-$error_color: #db2d20;
-$info_fg_color: #3a3432;
-$info_bg_color: #01a0e4;
+$link_color: #268bd2;
+$success_color: #859900;
+$warning_color: #b58900;
+$error_color: #dc322f;
+$info_fg_color: #fdf6e3;
+$info_bg_color: #268bd2;
 
 // used for border-radius throughout theme
 $roundness: 8px;
