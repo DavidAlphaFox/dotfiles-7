@@ -17,7 +17,7 @@
 @define-color theme_bg_color #fdf6e3;
 @define-color theme_fg_color #657b83;
 @define-color theme_base_color #fdf6e3;
-@define-color theme_text_color #073642;
+@define-color theme_text_color #657b83;
 @define-color theme_selected_bg_color #eee8d5;
 @define-color theme_selected_fg_color #586e75;
 @define-color theme_tooltip_bg_color #fdf6e3;
@@ -72,7 +72,7 @@
 /* widget text/foreground color on backdrop windows */
 @define-color theme_unfocused_fg_color mix(#657b83,#fdf6e3,0.5);
 /* text color for entries, views and content in general on backdrop windows */
-@define-color theme_unfocused_text_color #073642;
+@define-color theme_unfocused_text_color #657b83;
 /* widget base background color on backdrop windows */
 @define-color theme_unfocused_bg_color #fdf6e3;
 /* text widgets and the like base background color on backdrop windows */
@@ -572,13 +572,13 @@ spinbutton:not(.vertical) {
   padding: 0;
   border-radius: 8px;
   -gtk-outline-radius: 9.6px;
-  color: #073642;
-  caret-color: #073642;
+  color: #657b83;
+  caret-color: #657b83;
   /*&:focus, &:active { border-color: border_focus($borders_color); }*/ }
   spinbutton:not(.vertical):disabled {
     background-color: #fae8b6;
     background-image: linear-gradient(to top, #fcf1d4, #f8de98);
-    color: mix(#fdf6e3,#073642,0.5); }
+    color: mix(#fdf6e3,#657b83,0.5); }
   spinbutton:not(.vertical) entry {
     border-radius: 8px 0 0 8px;
     -gtk-outline-radius: 9.6px 0 0 9.6px;
@@ -818,26 +818,26 @@ entry, menuitem entry, popover.background entry, .osd entry,
 entry {
   background-color: #fdf6e3;
   background-image: linear-gradient(to top, white, #fbebc1);
-  border-color: shade(mix(#fdf6e3,#073642,0.2),0.8);
+  border-color: shade(mix(#fdf6e3,#657b83,0.2),0.8);
   padding: 10px 8px;
-  color: #073642;
+  color: #657b83;
   caret-color: #657b83;
   -gtk-secondary-caret-color: #93a1a1; }
   entry:focus, entry:hover {
-    border-color: mix(#eee8d5,mix(#fdf6e3,#073642,0.2),0.3); }
+    border-color: mix(#eee8d5,mix(#fdf6e3,#657b83,0.2),0.3); }
   entry:active, entry:active:hover, entry:active:focus, entry:active:hover:focus, entry:checked, entry:checked:hover, entry:checked:focus, entry:checked:hover:focus {
-    border-color: shade(mix(#fdf6e3,#073642,0.2),0.7); }
+    border-color: shade(mix(#fdf6e3,#657b83,0.2),0.7); }
   entry:disabled {
-    border-color: shade(mix(#fdf6e3,#073642,0.2),0.85); }
+    border-color: shade(mix(#fdf6e3,#657b83,0.2),0.85); }
   entry:active:disabled, entry:checked:disabled {
-    border-color: shade(mix(#fdf6e3,#073642,0.2),0.8); }
+    border-color: shade(mix(#fdf6e3,#657b83,0.2),0.8); }
   entry:focus, entry:active {
     border-color: mix(#eee8d5,mix(#fdf6e3,#657b83,0.1),0.3); }
   entry:disabled {
-    background-color: mix(#fdf6e3,#073642,0.07);
-    background-image: linear-gradient(to top, shade(mix(#fdf6e3,#073642,0.07),1.075), shade(mix(#fdf6e3,#073642,0.07),0.925));
+    background-color: mix(#fdf6e3,#657b83,0.07);
+    background-image: linear-gradient(to top, shade(mix(#fdf6e3,#657b83,0.07),1.075), shade(mix(#fdf6e3,#657b83,0.07),0.925));
     opacity: .9;
-    color: mix(#fdf6e3,#073642,0.9); }
+    color: mix(#fdf6e3,#657b83,0.9); }
 
 /*********
  ! Buttons
@@ -2884,7 +2884,7 @@ headerbar.selection-mode,
 calendar {
   padding: 1px 3px;
   outline-offset: -1px;
-  color: #073642; }
+  color: #657b83; }
   calendar:selected {
     border-radius: 8px; }
   calendar.header {
@@ -2906,12 +2906,12 @@ calendar {
     font-size: smaller;
     color: mix(#eee8d5,#657b83,0.5); }
   calendar:backdrop {
-    color: mix(#fdf6e3,#073642,0.8); }
+    color: mix(#fdf6e3,#657b83,0.8); }
 
 /* gnome-calendar */
 .calendar-view {
   background-color: #fdf6e3;
-  color: #073642; }
+  color: #657b83; }
 
 /***************
  ! Color chooser
@@ -2955,11 +2955,11 @@ colorswatch.dark overlay {
     color: mix(#eee8d5,#586e75,0.66); }
 
 colorswatch.light overlay {
-  color: #073642; }
+  color: #657b83; }
   colorswatch.light overlay:hover {
     border-color: rgba(40, 49, 52, 0.5); }
   colorswatch.light overlay:backdrop {
-    color: mix(#fdf6e3,#073642,0.8); }
+    color: mix(#fdf6e3,#657b83,0.8); }
 
 colorswatch:drop(active) {
   box-shadow: none; }
@@ -3032,7 +3032,7 @@ filechooserbutton:drop(active) {
  ! Grid and flowbox
 *******************/
 list {
-  color: #073642;
+  color: #657b83;
   background-color: #fdf6e3;
   border-color: mix(#fdf6e3,#657b83,0.1); }
   list:backdrop {
@@ -4134,26 +4134,26 @@ popover.background {
   popover.background entry {
     background-color: #fdf6e3;
     background-image: linear-gradient(to top, white, #fbebc1);
-    border-color: shade(mix(#fdf6e3,#073642,0.2),0.8);
+    border-color: shade(mix(#fdf6e3,#657b83,0.2),0.8);
     padding: 10px 8px;
-    color: #073642;
+    color: #657b83;
     caret-color: #657b83;
     -gtk-secondary-caret-color: #93a1a1; }
     popover.background entry:focus, popover.background entry:hover {
-      border-color: mix(#eee8d5,mix(#fdf6e3,#073642,0.2),0.3); }
+      border-color: mix(#eee8d5,mix(#fdf6e3,#657b83,0.2),0.3); }
     popover.background entry:active, popover.background entry:active:hover, popover.background entry:active:focus, popover.background entry:active:hover:focus, popover.background entry:checked, popover.background entry:checked:hover, popover.background entry:checked:focus, popover.background entry:checked:hover:focus {
-      border-color: shade(mix(#fdf6e3,#073642,0.2),0.7); }
+      border-color: shade(mix(#fdf6e3,#657b83,0.2),0.7); }
     popover.background entry:disabled {
-      border-color: shade(mix(#fdf6e3,#073642,0.2),0.85); }
+      border-color: shade(mix(#fdf6e3,#657b83,0.2),0.85); }
     popover.background entry:active:disabled, popover.background entry:checked:disabled {
-      border-color: shade(mix(#fdf6e3,#073642,0.2),0.8); }
+      border-color: shade(mix(#fdf6e3,#657b83,0.2),0.8); }
     popover.background entry:focus, popover.background entry:active {
       border-color: mix(#eee8d5,mix(#fdf6e3,#657b83,0.1),0.3); }
     popover.background entry:disabled {
-      background-color: mix(#fdf6e3,#073642,0.07);
-      background-image: linear-gradient(to top, shade(mix(#fdf6e3,#073642,0.07),1.075), shade(mix(#fdf6e3,#073642,0.07),0.925));
+      background-color: mix(#fdf6e3,#657b83,0.07);
+      background-image: linear-gradient(to top, shade(mix(#fdf6e3,#657b83,0.07),1.075), shade(mix(#fdf6e3,#657b83,0.07),0.925));
       opacity: .9;
-      color: mix(#fdf6e3,#073642,0.9); }
+      color: mix(#fdf6e3,#657b83,0.9); }
   popover.background button {
     background-color: #fdf6e3;
     background-image: linear-gradient(to bottom, white, #fbebc1);
@@ -4624,14 +4624,14 @@ SushiFontWidget {
 **************/
 GucharmapChartable {
   background-color: #fdf6e3;
-  color: #073642; }
+  color: #657b83; }
 
 /*************
  ! Evolution *
 **************/
 EPreviewPane .entry {
   background-color: #fdf6e3;
-  color: #073642; }
+  color: #657b83; }
 
 /*******************
  ! Gnome Bluetooth *
@@ -7314,10 +7314,10 @@ switch {
   min-width: 88px;
   min-height: 24px;
   background-color: mix(#fdf6e3,#fdf6e3,0.3);
-  color: #073642;
+  color: #657b83;
   box-shadow: inset 1px -1px 0 rgba(20, 25, 26, 0.06), inset -1px 1px 0 rgba(20, 25, 26, 0.06); }
   switch slider {
-    background-color: mix(#073642,#fdf6e3,0.5);
+    background-color: mix(#657b83,#fdf6e3,0.5);
     transition: all .3s ease-in;
     box-shadow: 0 1px 2px 0 rgba(20, 25, 26, 0.07), 1px 0 2px 0 rgba(20, 25, 26, 0.07);
     border-radius: 8px; }
@@ -7344,7 +7344,7 @@ switch {
       background-color: mix(mix(#fdf6e3,#fdf6e3,0.5),#fdf6e3,0.4); }
     list row:selected switch:checked {
       color: #eee8d5;
-      background-color: mix(#073642,#fdf6e3,0.5); }
+      background-color: mix(#657b83,#fdf6e3,0.5); }
       list row:selected switch:checked slider {
         background-color: #eee8d5; }
 
@@ -7364,7 +7364,7 @@ switch {
 .view text,
 iconview text,
 textview text {
-  color: #073642;
+  color: #657b83;
   background-color: #fdf6e3;
   caret-color: #657b83;
   -gtk-secondary-caret-color: #93a1a1; }
@@ -7372,7 +7372,7 @@ textview text {
   .view text:backdrop,
   iconview text:backdrop,
   textview text:backdrop {
-    color: mix(#fdf6e3,#073642,0.8);
+    color: mix(#fdf6e3,#657b83,0.8);
     background-color: #fdf6e3; }
   .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
   .view text:selected:focus,
@@ -7570,7 +7570,7 @@ frame.border-ridge > border {
 
 viewport {
   background-color: mix(#fdf6e3,#fdf6e3,0.28);
-  color: mix(#073642,#657b83,0.28);
+  color: mix(#657b83,#657b83,0.28);
   border: 1px solid shade(mix(#fdf6e3,#fdf6e3,0.78),0.8); }
 
 /* avoid double borders when a viewport is packed into a GtkScrolledWindow */
@@ -7979,7 +7979,7 @@ GeditFileBrowserWidget .toolbar {
 .gedit-search-entry-occurrences-tag {
   margin: 4px;
   padding: 4px;
-  color: mix(#073642,#fdf6e3,0.5); }
+  color: mix(#657b83,#fdf6e3,0.5); }
 
 .gedit-bottom-panel-paned,
 .gedit-side-panel-paned,
@@ -8065,8 +8065,8 @@ paned.titlebar {
 .nemo-window {
   /* Status Bar */ }
   .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-    background-color: mix(#fdf6e3,#073642,0.12);
-    color: #073642; }
+    background-color: mix(#fdf6e3,#657b83,0.12);
+    color: #657b83; }
   .nemo-window toolbar {
     border-width: 0 0 1px;
     border-style: solid;
@@ -8357,7 +8357,7 @@ GtkWindow > GtkVBox > .dock, GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar 
   border: 0;
   background-image: none;
   background-color: #fdf6e3;
-  color: #073642; }
+  color: #657b83; }
 
 .xfce4-panel {
   font: inherit; }
