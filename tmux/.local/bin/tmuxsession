@@ -1,5 +1,0 @@
-#!/bin/sh
-
-echo tmuxsession
-tmux -2 new-session -A -s "$1"
-
