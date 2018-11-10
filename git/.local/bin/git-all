@@ -3,11 +3,11 @@
 echo
 for i in $(find -L . -maxdepth 7 -iname '.git' -type d -printf '%P\0' 2>/dev/null | xargs -0 dirname | sort); do
   if grep "github" "$i/.git/config">/dev/null; then
-    SYM="\e[0;37m  "
+    SYM="\e[0;30m🐱"
   elif grep -e "sirius" "$i/.git/config">/dev/null; then
-    SYM="\e[0;37m•  "
+    SYM="\e[0;33m🌟"
   elif grep -e "src\." -e "gitlab" "$i/.git/config">/dev/null; then
-    SYM="\e[1;31m  "
+    SYM="\e[1;31m🔭"
   else
     SYM=" "
   fi

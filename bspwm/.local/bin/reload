@@ -1,5 +1,0 @@
-#!/usr/bin/env zsh
-
-pkill -USR1 -x sxhkd
-pkill -USR1 -x polybar
-notify-send -i keyboard 'reloaded' 'reloaded bar and keybindings'
