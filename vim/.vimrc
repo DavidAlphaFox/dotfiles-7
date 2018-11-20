@@ -2,7 +2,7 @@
 set encoding=utf-8
 set fileencoding=utf-8
 
-set background=light
+set background=dark
 
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
