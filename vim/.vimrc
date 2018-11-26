@@ -301,5 +301,4 @@ Plug 'w0rp/ale'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'LnL7/vim-nix'
 call plug#end()
-"colorscheme solarized
 
