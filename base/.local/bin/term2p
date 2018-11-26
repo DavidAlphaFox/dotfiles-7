@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+termite -c ~/.config/press_start_2p.config
