@@ -300,7 +300,6 @@ Plug 'majutsushi/tagbar'
 Plug 'w0rp/ale'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'LnL7/vim-nix'
-Plug 'altercation/vim-colors-solarized'
 call plug#end()
-colorscheme solarized
+"colorscheme solarized
 
