@@ -11,7 +11,7 @@ alias pasnoop='pacmd list-sink-inputs | grep -e "media.name" -e spec; pacmd list
 alias gal='git all pull'
 alias gas='git all status -sb'
 alias garp='git all remote prune origin'
-alias drmi="docker images | fzf-tmux -m --tac | awk '{print \$3}' | sort -u | xargs docker rmi"
+alias drmi="docker images | fzf-tmux -m --tac | awk '{print \$3}' | sort -u | xargs docker rmi -f"
 alias fa='cat ~/Documents/fa_cheat.txt | grep -v Name | grep -i -B1 -e '
 alias ncdu='ncdu --color dark'
 
