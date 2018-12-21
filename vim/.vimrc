@@ -301,10 +301,9 @@ Plug 'w0rp/ale'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'LnL7/vim-nix'
 Plug 'joegesualdo/jsdoc.vim'
-Plug 'jonathanfilip/vim-lucius'
+Plug 'rakr/vim-one'
 call plug#end()
 let g:lucius_no_term_bg=1
 let g:lucius_contrast="low"
-colorscheme lucius
-hi LineNr guifg=#9e9e9e guibg=NONE ctermbg=NONE
-
+colorscheme one-dark
+hi Normal guibg=#212121 ctermbg=NONE
