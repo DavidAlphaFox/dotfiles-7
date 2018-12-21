@@ -82,7 +82,7 @@ let s:visual_black = { "gui": "NONE", "cterm": "NONE", "cterm16": "NONE" } " Bla
 let s:light_grey = { "gui": "#5C6370", "cterm": "59", "cterm16": "7" }
 let s:dark_grey = { "gui": "#636D83", "cterm": "238", "cterm16": "8" }
 let s:primary = s:blue
-let s:secondary = s:dark_blue
+let s:secondary = s:dark_grey
 
 " +---------------------------------------------------------+
 " | Syntax Groups (descriptions and ordering from `:h w18`) |
@@ -163,7 +163,7 @@ call s:h("SpellBad", { "fg": s:red, "gui": "underline", "cterm": "underline" }) 
 call s:h("SpellCap", { "fg": s:brown }) " Word that should start with a capital. This will be combined with the highlighting used otherwise.
 call s:h("SpellLocal", { "fg": s:brown }) " Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
 call s:h("SpellRare", { "fg": s:brown }) " Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
-call s:h("StatusLine", { "fg": s:white, "bg": s:secondary })  "status line of current window
+call s:h("StatusLine", { "fg": s:white, "bg": s:dark_grey })  "status line of current window
 call s:h("StatusLineNC", { "fg": s:dark_grey }) " status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 call s:h("TabLine", { "fg": s:secondary }) " tab pages line, not active tab page label
 call s:h("TabLineFill", {}) " tab pages line, where there are no labels

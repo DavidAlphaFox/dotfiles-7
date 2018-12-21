@@ -247,7 +247,7 @@ autocmd FileType coco setl number
 autocmd FileType gdscript3 setl number
 autocmd FileType gdscript3 setl noexpandtab
 set numberwidth=1
-"set cursorline
+set cursorline
 
 " git shortcuts
 map <leader>gw :Gwrite<CR>
