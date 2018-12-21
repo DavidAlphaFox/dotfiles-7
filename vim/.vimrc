@@ -247,7 +247,7 @@ autocmd FileType coco setl number
 autocmd FileType gdscript3 setl number
 autocmd FileType gdscript3 setl noexpandtab
 set numberwidth=1
-set cursorline
+"set cursorline
 
 " git shortcuts
 map <leader>gw :Gwrite<CR>
@@ -300,5 +300,11 @@ Plug 'majutsushi/tagbar'
 Plug 'w0rp/ale'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'LnL7/vim-nix'
+Plug 'joegesualdo/jsdoc.vim'
+Plug 'jonathanfilip/vim-lucius'
 call plug#end()
+let g:lucius_no_term_bg=1
+let g:lucius_contrast="low"
+colorscheme lucius
+hi LineNr guifg=#9e9e9e guibg=NONE ctermbg=NONE
 
