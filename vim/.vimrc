@@ -303,4 +303,3 @@ Plug 'LnL7/vim-nix'
 Plug 'joegesualdo/jsdoc.vim'
 call plug#end()
 colorscheme starlight
-hi Normal guibg=#212121 ctermbg=NONE
