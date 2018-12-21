@@ -17,7 +17,7 @@ let g:colors_name="starlight"
 " Set to "256" for 256-color terminals, or
 " set to "16" to use your terminal emulator's native colors
 if !exists("g:starlight_termcolors")
-  let g:starlight_termcolors = 256
+  let g:starlight_termcolors = 16
 endif
 
 " Not all terminals support italics properly. If yours does, opt-in.

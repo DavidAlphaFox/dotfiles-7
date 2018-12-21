@@ -301,7 +301,6 @@ Plug 'w0rp/ale'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'LnL7/vim-nix'
 Plug 'joegesualdo/jsdoc.vim'
-Plug 'drewtempelmeyer/palenight.vim'
 call plug#end()
-colorscheme palenight
+colorscheme starlight
 hi Normal guibg=#212121 ctermbg=NONE
