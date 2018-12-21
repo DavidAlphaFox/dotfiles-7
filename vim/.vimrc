@@ -301,9 +301,7 @@ Plug 'w0rp/ale'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'LnL7/vim-nix'
 Plug 'joegesualdo/jsdoc.vim'
-Plug 'rakr/vim-one'
+Plug 'drewtempelmeyer/palenight.vim'
 call plug#end()
-let g:lucius_no_term_bg=1
-let g:lucius_contrast="low"
-colorscheme one-dark
+colorscheme palenight
 hi Normal guibg=#212121 ctermbg=NONE
