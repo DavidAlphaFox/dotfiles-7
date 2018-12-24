@@ -81,7 +81,7 @@ let s:black = { "gui": "#282C34", "cterm": "234", "cterm16": "0" }
 let s:visual_black = { "gui": "NONE", "cterm": "NONE", "cterm16": "NONE" } " Black out selected text in 16-color visual mode
 let s:light_grey = { "gui": "#5C6370", "cterm": "59", "cterm16": "7" }
 let s:dark_grey = { "gui": "#636D83", "cterm": "238", "cterm16": "8" }
-let s:primary = s:blue
+let s:primary = s:light_grey
 let s:secondary = s:dark_grey
 
 " +---------------------------------------------------------+
