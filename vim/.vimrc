@@ -304,3 +304,4 @@ Plug 'LnL7/vim-nix'
 Plug 'joegesualdo/jsdoc.vim'
 call plug#end()
 colorscheme starlight
+
