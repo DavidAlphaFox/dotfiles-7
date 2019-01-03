@@ -3,13 +3,12 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 set background=dark
+colorscheme starlight
 
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
 
-" turn on syntax completion
-set omnifunc=syntaxcomplete#Complete
 
 set whichwrap+=<,>,h,l
 " no timeout (onscreen keyboard compat)
@@ -268,6 +267,8 @@ if exists('$TMUX')
   set title
 endif
 
+" turn on syntax completion
+set omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,noinsert
 set shortmess+=c   " Shut off completion messages
 set belloff+=ctrlg " If Vim beeps during completion
@@ -288,5 +289,4 @@ Plug 'lifepillar/vim-mucomplete'
 Plug 'LnL7/vim-nix'
 Plug 'joegesualdo/jsdoc.vim'
 call plug#end()
-colorscheme starlight
 
