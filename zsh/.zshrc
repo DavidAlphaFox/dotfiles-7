@@ -11,3 +11,4 @@ export GIT_TEMPLATE_DIR="$HOME/.git-templates/"
 typeset -U path
 path=(~/.local/bin $path[@])
 path=(~/.npm-global/bin $path[@])
+export EDITOR=nvim

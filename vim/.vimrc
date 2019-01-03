@@ -7,10 +7,6 @@ set background=dark
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
-map <DOWN> j
-map <UP> k
-map <RIGHT> l
-map <LEFT> h
 
 " turn on syntax completion
 set omnifunc=syntaxcomplete#Complete
@@ -32,17 +28,6 @@ set wildignore=*.o,*~,*.pyc,*.so,*.class,.DS_Store
 set wildmode=longest:full,full
 
 set fileformats+=mac
-
-""""""""""""""
-" tmux fixes "
-""""""""""""""
-" Handle tmux $TERM quirks in vim
-if $TERM =~ '^screen-256color'
-    map <Esc>OH <Home>
-    map! <Esc>OH <Home>
-    map <Esc>OF <End>
-    map! <Esc>OF <End>
-endif
 
 " change leader key from '\' to ';'
 let mapleader=';'
