@@ -9,7 +9,6 @@ colorscheme starlight
 map j gj
 map k gk
 
-
 set whichwrap+=<,>,h,l
 " no timeout (onscreen keyboard compat)
 set notimeout
