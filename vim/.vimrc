@@ -258,14 +258,6 @@ let NERDTreeQuitOnOpen=1
 set showtabline=1
 set statusline=%<\ %f\ %m%r%=%y\ %-2.(%l,%c%V%)\ 
 
-" tmux title
-if exists('$TMUX')
-  autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
-  autocmd VimLeavePre * call system("tmux setw automatic-rename")
-  autocmd BufEnter * let &titlestring = ' ' . expand("%:t")
-  set title
-endif
-
 " turn on syntax completion
 set omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,noinsert
