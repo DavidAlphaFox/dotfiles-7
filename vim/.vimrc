@@ -275,6 +275,8 @@ let g:mucomplete#enable_auto_at_startup=1
 let g:mucomplete#completion_delay=500
 let g:gitgutter_sign_modified='*'
 
+set guicursor=n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20
+
 " plug
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'

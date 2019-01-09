@@ -9,7 +9,7 @@ pushd -q $mntpnt
 sudo duperemove -Ardhv root/nix/store
 
 echo -e "\n\e[1;34m\e[0m Rebalancing filesystem..."
-sudo btrfs balance start -dusage=80 -musage=80 /mnt
+sudo btrfs balance start -dusage=80 -musage=80 $mntpnt
 
 popd -q
 sudo umount $mntpnt
