@@ -12,4 +12,4 @@ typeset -U path
 path=(~/.local/bin $path[@])
 path=(~/.npm-global/bin $path[@])
 export EDITOR=nvim
-export ZSH_THEME_HOME_PROMPT='🐧'
+

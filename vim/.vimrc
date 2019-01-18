@@ -229,6 +229,7 @@ autocmd FileType javascript setl number
 autocmd FileType coco setl number
 autocmd FileType gdscript3 setl number
 autocmd FileType gdscript3 setl noexpandtab
+autocmd FileType go setl number
 set numberwidth=1
 set cursorline
 
