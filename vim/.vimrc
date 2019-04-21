@@ -224,7 +224,6 @@ autocmd FileType gitcommit set spell spelllang=en_us
 autocmd FileType markdown set spell spelllang=en_us
 " line numbers for specific filetypes
 autocmd FileType python setl number
-autocmd FileType vala setl number
 autocmd FileType javascript setl number
 autocmd FileType coco setl number
 autocmd FileType gdscript3 setl number
@@ -243,19 +242,6 @@ map <leader>gr :Grevert<CR>
 set diffopt=filler,vertical
 command! Grevert :Git checkout -- %
 
-" activate tagbar (requires ctags)
-let g:tagbar_usearrows=1
-let g:tagbar_autofocus=1
-let g:tagbar_zoomwidth=0
-let g:tagbar_compact=1
-let g:tagbar_autoclose=1
-nnoremap <leader>l :TagbarToggle<CR>
-
-" nerdtree
-map <leader>nl :NERDTreeToggle<CR>
-map <leader>ne :NERDTree<SPACE>
-let NERDTreeIgnore=['\.pyc$[[file]]','\.so$[[file]]','\.class$[[file]]']
-let NERDTreeQuitOnOpen=1
 set showtabline=1
 set statusline=%<\ %f\ %m%r%=%y\ %-2.(%l,%c%V%)\ 
 
@@ -276,11 +262,8 @@ Plug 'tpope/vim-sensible'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'scrooloose/nerdtree'
-Plug 'majutsushi/tagbar'
 Plug 'w0rp/ale'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'LnL7/vim-nix'
-Plug 'joegesualdo/jsdoc.vim'
 call plug#end()
 
