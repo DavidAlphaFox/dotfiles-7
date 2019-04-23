@@ -25,3 +25,4 @@ theme/.local/share/zathura/
 vim/.vim.bak/plugged/
 xarchiver/xarchiverrc
 fonts/.local/share/fonts/.uuid
+.netrwhist
