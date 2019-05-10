@@ -7,7 +7,7 @@ if test -e "$HOME/.profile.d/"; then
     unset profile
 fi
 
-export GIT_TEMPLATE_DIR="$HOME/.git-templates/"
+#export GIT_TEMPLATE_DIR="$HOME/.git-templates/"
 typeset -U path
 path=(~/.local/bin $path[@])
 path=(~/.npm-global/bin $path[@])
