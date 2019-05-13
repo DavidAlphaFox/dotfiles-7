@@ -1,6 +1,0 @@
-#!/bin/zsh
-
-echo -e " \e[0;31m \e[0m"
-sudo chown ${USER}: * -R
-git all clean -fxd
-

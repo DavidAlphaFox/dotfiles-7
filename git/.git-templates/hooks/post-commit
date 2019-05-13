@@ -1,6 +1,0 @@
-#!/bin/sh
-
-log="$(git log -1 --format='format:%B')"
-notify-send "Commit successful" "$log"
-
-
