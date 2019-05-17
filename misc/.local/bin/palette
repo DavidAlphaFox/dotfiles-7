@@ -1,0 +1,27 @@
+#!/usr/bin/env zsh
+#colors:
+
+#blk gry1 red org grn grn2 brn yel blu blu2 prp prp2 cyn cyn2 gry2 wht (16)
+
+#blk gry1 gry2 wht			4 gray scale
+#red org yel grn2 cyn2 blu2 prp2	7 bright color scale
+#brn grn cyn blu prp			5 cool color scale
+
+echo -en "              \e[1;30m "
+echo -e "\e[0m"
+echo -en "    \e[0;33m "
+echo -en "\e[0;32m "
+echo -en "\e[0;36m "
+echo -en "\e[0;34m "
+echo -en "\e[0;35m "
+echo -en "\e[0;37m "
+echo -e "\e[0m"
+echo -en "\e[0;31m "
+echo -en "\e[1;31m "
+echo -en "\e[1;33m "
+echo -en "\e[1;32m "
+echo -en "\e[1;36m "
+echo -en "\e[1;34m "
+echo -en "\e[1;35m "
+echo -en "\e[1;37m "
+echo -e "\e[0m"
