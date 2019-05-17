@@ -1,7 +1,7 @@
-
+# .zshrc
 typeset -U PATH path
-path=(~/.local/bin $path[@])
 path=(~/go/bin $path[@])
+path=(~/.local/bin $path[@])
 path=(~/.npm-global/bin $path[@])
 
 alias lt='tree -aFC -I .git'
