@@ -3,6 +3,7 @@ typeset -U PATH path
 path=(~/go/bin $path[@])
 path=(~/.local/bin $path[@])
 path=(~/.npm-global/bin $path[@])
+export GOPATH="$HOME/go"
 
 alias lt='tree -aFC -I .git'
 alias pt='pstree -U'
