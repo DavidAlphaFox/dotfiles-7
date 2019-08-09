@@ -4,7 +4,7 @@ path=(~/go/bin $path[@])
 path=(~/.local/bin $path[@])
 path=(~/.npm-global/bin $path[@])
 export GOPATH="$HOME/go"
-
+export NPM_CONFIG_CACHE="/tmp/.npm-$USER"
 alias lt='tree -aFC -I .git'
 alias pt='pstree -U'
 alias hat='highlight -q -O ansi -c stdout --force'
@@ -15,3 +15,4 @@ alias garp='git all remote prune origin'
 alias drmi="docker images | fzf-tmux -m --tac | awk '{print \$3}' | sort -u | xargs docker rmi -f"
 alias fa='cat ~/Documents/fa_cheat.txt | grep -v Name | grep -i -B1 -e '
 alias sil='sil -mgcu'
+alias say='notify-send -i info'
